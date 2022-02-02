@@ -9833,7 +9833,7 @@
 			"model_player"	"models/workshop/weapons/c_models/c_buffalo_steak/c_buffalo_steak.mdl"
 			"propername"	"1"
 			"inspect_panel_dist" "31"
-			"show_in_armory"	"0"
+			"show_in_armory"	"1"
 			"used_by_classes"
 			{
 				"heavy"	"1"
@@ -9870,7 +9870,7 @@
 				"energy buff dmg taken multiplier"
 				{
 					"attribute_class"	"energy_buff_dmg_taken_multiplier"
-					"value"	"1.2"
+					"value"	"0.7"
 				}
 			}
 		}
@@ -14293,7 +14293,7 @@
 			"item_type_name""#TF_Wearable_Hat"
 			"item_name"	"Hat"
 			"item_description"	"Base Hat, No Use"
-			"item_slot"	"shirt"
+			"item_slot"	"misc2"
 			"equip_region"		"shirt"
 			"item_quality"	"unique"
 			"baseitem" "1"
@@ -14400,7 +14400,7 @@
 			"item_type_name"	"#TF_Wearable_Balloon"
 			"item_name"	"Reindoonicorn"
 			"item_description"	"Reindoonicorn"
-			"item_slot"	"misc"
+			"item_slot"	"misc2"
 			"equip_region"		"disconnected_floating_item"
 			"item_quality"	"unique"
 			"min_ilevel"	"20"
@@ -14513,7 +14513,7 @@
 			}
 			"item_logname"	"ham_shank"
 			"item_iconname"	"ham_shank"
-			"show_in_armory"	"0"
+			"show_in_armory"	"1"
 			"item_type_name"	"#TF_Weapon_Pork_Product"
 			"item_name"	"#TF_HamShank"
 			"item_description"	"#TF_HamShank_Desc"
@@ -14646,7 +14646,7 @@
 			}
 			"item_logname"	"golden_fryingpan"
 			"item_iconname"	"golden_fryingpan"
-			"show_in_armory"	"0"
+			"show_in_armory"	"1"
 			"item_type_name"	"#TF_Weapon_GoldFryingPan"
 			"item_name"	"#TF_Gold_FryingPan"
 			"item_slot"	"melee"
@@ -14697,15 +14697,6 @@
 				"sound_melee_hit_world"	"FryingPan.HitWorld"
 				"sound_melee_miss"	"Weapon_Machete.Miss"
 				"sound_burst"		"Weapon_Machete.MissCrit"
-
-				"styles"
-				{
-					"0"
-					{
-						"skin_red" "2"
-						"skin_blu" "3"
-					}
-				}
 			}
 			"mouse_pressed_sound"	"ui/item_metal_weapon_pickup.wav"
 			"drop_sound"		"ui/item_metal_weapon_drop.wav"
@@ -19412,21 +19403,27 @@
 			{
 				"scout"	"1"
 				"engineer"	"1"
+				"sniper" "1"
 			}
 			"mouse_pressed_sound"	"ui/item_light_gun_pickup.wav"
 			"drop_sound"		"ui/item_light_gun_drop.wav"
+									"visuals"
+			{
+				"sound_single_shot"	"Weapon_SMG1.Single"
+				"sound_burst"	"Weapon_SMG1.Single"
+			}
 			"xifier_class_remap"	"TTG Max Pistol"
 			"attributes"
 			{
 				"damage penalty"
 				{
 					"attribute_class"	"mult_dmg"
-					"value"	"1.25"
+					"value"	"0.35"
 				}
 				"clip size bonus"
 				{
 				"attribute_class"	"mult_clipsize"
-				"value"	"1.50"
+				"value"	"3.75"
 				}
 				"maxammo secondary increased"
 				{
@@ -19442,6 +19439,11 @@
 				{
 				"attribute_class"	"mult_reload_time"
 				"value"	"2"
+				}
+								"fire rate bonus"
+				{
+				"attribute_class"	"mult_postfiredelay"
+				"value"	"0.4"
 				}
 			}
 		}
@@ -19472,7 +19474,7 @@
 			"prefab"	"weapon_jarate"
 			"propername"	"0"
 			"craft_class"	""
-			"show_in_armory" "0"
+			"show_in_armory" "1"
 			"item_name"			"Festive Jarate"
 			"min_ilevel"	"1"
 			"max_ilevel"	"99"
@@ -22336,65 +22338,29 @@
 		}
 				"6916"
 		{
-			"name"	"The Buffalo Steak Sandvich"
-			"first_sale_date"	"2010/12/08"
-			"prefab"	"weapon_lunchbox"
-			"craft_class"	"weapon"
-			"craft_material_type"	"weapon"
+			"name"	"Aqua Flops"
+			"first_sale_date"	"2012/12/13"
+			"prefab"	"misc"
 			"capabilities"
 			{
-				"nameable"		"1"
+				"paintable"		"1"
+				"can_craft_count"	"1"
 			}
-			"tags"
-			{
-				"can_heal_allies"		"1"
-			}
-			"item_name"	"#TF_BuffaloSteak"
-			"item_description"	"#TF_BuffaloSteak_Desc"
-			"image_inventory"	"backpack/workshop/weapons/c_models/c_buffalo_steak/c_buffalo_steak"
-			"model_player"	"models/workshop/weapons/c_models/c_buffalo_steak/c_buffalo_steak.mdl"
-			"propername"	"1"
-			"inspect_panel_dist" "31"
+			"item_type_name"	"#TF_Wearable_FlipFlops"
+			"item_name"	"#TF_Heavy_AquaFlops"
+			"item_description"	"#TF_Heavy_AquaFlops_Desc"
+			"equip_region"	"feet"
+			"image_inventory"	"backpack/workshop_partner/player/items/heavy/heavy_carl_flops/heavy_carl_flops"
+			"model_player"	"models/workshop_partner/player/items/heavy/heavy_carl_flops/heavy_carl_flops.mdl"
+			"show_in_armory" "1"
 			"used_by_classes"
 			{
 				"heavy"	"1"
 			}
-			"static_attrs"
-			{
-				"min_viewmodel_offset"				"10 0 -11"
-				"item_meter_charge_type"					"1"
-				"item_meter_charge_rate"		"30"
-				"meter_label"						"#TF_Sandwich"
-			}
-			"attributes"
-			{
-				"kill eater score type"
-				{
-					"attribute_class"	"kill_eater_score_type"
-					"value" 	"50" 
-				}
-				"lunchbox adds minicrits"
-				{
-					"attribute_class"	"set_weapon_mode"
-					"value"	"2"
-				}
-				"special taunt"
-				{
-					"attribute_class"	"special_taunt"
-					"value" "1"
-				}
-				"allowed in medieval mode"
-				{
-					"attribute_class"	"allowed_in_medieval_mode"
-					"value"	"1"
-				}
-				"energy buff dmg taken multiplier"
-				{
-					"attribute_class"	"energy_buff_dmg_taken_multiplier"
-					"value"	"0.4"
-				}
-			}
+			"mouse_pressed_sound"	"ui/item_hat_pickup.wav"
+			"drop_sound"		"ui/item_hat_drop.wav"
 		}
+
 				"6917"
 		{
 			"name"		"test taunt"
@@ -22436,6 +22402,177 @@
 				}
 			}
 		}
+				"6918"
+		{
+			"name"			"Festive Holy Mackerel"
+			"prefab"		"weapon_holymackerel"
+			"craft_class"	""
+			"item_name"			"#TF_Weapon_HolyMackerel_Festive2012"
+			"image_inventory"	"backpack/workshop/weapons/c_models/c_holymackerel/c_holymackerel_xmas"
+			"model_player"		"models/workshop/weapons/c_models/c_holymackerel/c_holymackerel_xmas.mdl"
+			"set_item_remap"	"The Holy Mackerel"
+			"show_in_armory" "1"
+			"visuals_red"
+			{
+				"skin" "0"
+				"sound_melee_hit"	"Weapon_HolyMackerel.HitFlesh"
+				"sound_melee_hit_world"	"Weapon_HolyMackerel.HitWorld"
+			}
+			"visuals_blu"
+			{
+				"skin" "1"
+				"sound_melee_hit"	"Weapon_HolyMackerel.HitFlesh"
+				"sound_melee_hit_world"	"Weapon_HolyMackerel.HitWorld"
+			}
+			"static_attrs"
+			{
+				"limited quantity item"		"1"
+			}
+			"xifier_class_remap"	"holymackerel"
+		}
+						"6919"
+		{
+			"name"	"The Lamarr Lid"
+			"prefab"	"hat"
+			"craft_class"	""
+			"item_name"	"The Lamarr Lid"
+			"item_description"	"Lamarr? There you are!"
+			"image_inventory"	"materials\models\gman\gman_facehirez.vtf"
+			"model_player"	"models/lamarr.mdl"
+			"propername"	"1"
+			"drop_type"	"none"
+			"used_by_classes"
+			{
+				"scout"	"1"
+				"sniper"	"1"
+				"soldier"	"1"
+				"demoman"	"1"
+				"medic"	"1"
+				"heavy"	"1"
+				"spy" "1"
+				"engineer" "1"
+				"pyro" "1"
+			}
+			"mouse_pressed_sound"	"sound\npc\headcrab\idle1.wav"
+			"drop_sound"		"ui/item_default_drop.wav"
+		}
+				"6920"
+		{
+			"name"		"Fortunate Son"
+			"prefab"		"no_craft hat marketable"
+			"item_name"		"#TF_cc_summer2015_fortunate_son"
+			"item_description"		"#TF_cc_summer2015_fortunate_son_Desc"
+			"item_type_name"		"#TF_Wearable_Helmet"
+			"equip_region"		"hat"
+			"visuals"
+			{
+				"player_bodygroups"
+				{
+					"hat"		"1"
+					"headphones"		"1"
+				}
+			}
+			"image_inventory"		"backpack/workshop/player/items/scout/cc_summer2015_fortunate_son/cc_summer2015_fortunate_son"
+			"capabilities"
+			{
+				"can_craft_count"		"1"
+			}
+			"model_player"		"models/workshop/player/items/scout/cc_summer2015_fortunate_son/cc_summer2015_fortunate_son.mdl"
+			"used_by_classes"
+			{
+				"scout"		"1"
+			}
+			"mouse_pressed_sound"		"ui/item_helmet_pickup.wav"
+			"drop_sound"		"ui/item_helmet_drop.wav"
+		}
+
+				"6922"
+		{
+			"name"	"The Cooler Bostom Boom-Bringer"
+			"first_sale_date"	"2012/02/09"
+			"prefab"	"misc"
+			"equip_region"	"scout_backpack"
+			"item_name"	"The Cooler Bostom Boom-Bringer"
+			"item_type_name"	"The Cooler Bostom Boom-Bringer"
+			"item_description"	"Plays random music when you taunt"
+			"image_inventory"	"backpack/player/items/scout/boombox"
+			"model_player"	"models/player/items/scout/boombox.mdl"
+			"propername"	"1"
+			"drop_type"	"none"
+			"used_by_classes"
+			{
+				"scout"	"1"
+			}
+			"attributes"
+			{
+				"cosmetic taunt sound"
+				{
+					"attribute_class"	"cosmetic_taunt_sound"
+					"value"				"CYOA.MenuMusic"
+				}
+			}
+			"visuals"
+			{
+				"custom_sound0"		"CYOA.MenuMusic"
+			}
+			"mouse_pressed_sound"	"ui/item_bag_pickup.wav"
+			"drop_sound"		"ui/item_bag_drop.wav"
+		}
+
+		"6922"
+		{
+			"name"	"The B.M.O.C."
+			"first_sale_date"	"2011/12/15"
+			"prefab"	"hat"
+			"craft_class"	""
+			"capabilities"
+			{
+				"paintable"		"1"
+			}
+			"item_name"	"#TF_Winter2011_SantaHat"
+			"item_description"	"#TF_Winter2011_SantaHat_Desc"
+			"item_type_name"		"#TF_Wearable_Holiday_Hat"
+			"image_inventory"	"backpack/player/items/all_class/xms_santa_hat_demo"
+			"propername" "1"
+			"drop_type"	"drop"
+			"model_player_per_class"
+			{
+				"scout"	"models/player/items/all_class/xms_santa_hat_scout.mdl"
+				"soldier"	"models/player/items/all_class/xms_santa_hat_soldier.mdl"
+				"pyro"	"models/player/items/all_class/xms_santa_hat_pyro.mdl"
+				"demoman"	"models/player/items/all_class/xms_santa_hat_demo.mdl"
+				"heavy"	"models/player/items/all_class/xms_santa_hat_heavy.mdl"
+				"engineer"	"models/player/items/all_class/xms_santa_hat_engineer.mdl"
+				"medic"	"models/player/items/all_class/xms_santa_hat_medic.mdl"
+				"sniper"	"models/player/items/all_class/xms_santa_hat_sniper.mdl"
+				"spy"	"models/player/items/all_class/xms_santa_hat_spy.mdl"
+			}
+			"used_by_classes"
+			{
+				"scout"	"1"
+				"sniper"	"1"
+				"soldier"	"1"
+				"demoman"	"1"
+				"medic"	"1"
+				"heavy"	"1"
+				"spy" "1"
+				"engineer" "1"
+				"pyro" "1"
+			}
+			"visuals"
+			{
+				"player_bodygroups"
+				{
+					"hat"			"1"
+					"headphones"	"1"
+				}
+			}
+			"static_attrs"
+			{
+				"limited quantity item"		"1"
+			}
+		}
+
 		"30570"
 		{
 			"name"		"Pool Party Taunt"
