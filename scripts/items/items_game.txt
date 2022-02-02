@@ -22535,6 +22535,7 @@
 			"image_inventory"	"backpack/player/items/all_class/xms_santa_hat_demo"
 			"propername" "1"
 			"drop_type"	"drop"
+			"show_in_armory" "1"
 			"model_player_per_class"
 			{
 				"scout"	"models/player/items/all_class/xms_santa_hat_scout.mdl"
