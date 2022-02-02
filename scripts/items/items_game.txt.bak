@@ -8655,7 +8655,7 @@
 				"can_deal_critical_damage"	"1"
 				"can_destroy_sappers"		"1"
 			}
-			"show_in_armory"	"0"
+			"show_in_armory"	"1"
 			"item_type_name"	"#TF_Weapon_Wrench"
 			"item_name"	"#TF_Unique_Golden_Wrench"
 			"item_slot"	"melee"
@@ -21867,7 +21867,6 @@
 			"capabilities"
 			{
 				"nameable"		"1"
-				"paintable"		"1"
 				"can_craft_if_purchased"	"1"
 			}
 			"show_in_armory"	"1"
@@ -22103,7 +22102,7 @@
 			"show_in_armory"	"1"
 			"item_type_name"	"#TF_Weapon_Pistol"
 			"item_name"	"Glock"
-			"item_description"	"Just a Glock, I guess."
+			"item_description"	"Just a Glock, I guess. Animation is broken on Demoman."
 			"item_slot"	"secondary"
 			"item_logname"	"maxgun"
 			"item_iconname"	"pistol"
@@ -22112,7 +22111,7 @@
 			"image_inventory_size_h"		"82"
 			"model_player"	"models/weapons/c_models/c_pistolg/c_pistolg.mdl"
 			"attach_to_hands"	"1"
-			"item_quality"	"unique"
+			"item_quality"	"rarity3"
 			"propername"	"1"
 			"min_ilevel"	"5"
 			"max_ilevel"	"5"
@@ -22120,6 +22119,7 @@
 			{
 				"scout"	"1"
 				"engineer"	"1"
+				"demoman"	"1"
 			}
 			"mouse_pressed_sound"	"ui/item_light_gun_pickup.wav"
 			"drop_sound"		"ui/item_light_gun_drop.wav"
@@ -22142,32 +22142,291 @@
 					"value" "1.20"
 				}
 			}
-		"8937"
+		}
+				"6910"
 		{
-			"name"	"Eternaween Enchantment"
-			"item_class"	"tool"
-			"craft_class"	"tool"
-			"craft_material_type"	"tool"
-			"tool"
-			{
-				"type"			"tf_event_enable"
-				"use_string"	"#CastServerEnchantment"
-			}
+			"name"		"The Lurking Legionnaire"
+			"prefab"		"no_craft misc marketable"
+			"item_name"		"#TF_may16_lurking_legionnaire"
+			"item_description"		"#TF_may16_lurking_legionnaire_Desc"
+			"item_type_name"		"#TF_Wearable_Uniform"
+			"equip_region"		"shirt"
+			"propername"		"1"
+			"image_inventory"		"backpack/workshop/player/items/spy/majors_mark/majors_mark"
 			"capabilities"
 			{
-				"usable_gc"		"1"
+				"can_craft_count"		"1"
+				"paintable"		"1"
 			}
-			"item_type_name"	"#TF_ServerEnchantmentType"
-			"item_name"		"#TF_Eternaween"
-			"item_description"	"#TF_Eternaween_Desc"
-			"image_inventory"	"backpack/crafting/server_halloween"
-			"image_inventory_size_w"	"128"
-			"image_inventory_size_h"	"82"
-			"item_quality"		"unique"
-			"min_ilevel"	"5"
-			"max_ilevel"	"5"
-			"show_in_armory"	"1"
+			"model_player"		"models/workshop/player/items/spy/majors_mark/majors_mark.mdl"
+			"used_by_classes"
+			{
+				"spy"		"1"
+			}
+			"mouse_pressed_sound"		"ui/item_hat_pickup.wav"
+			"drop_sound"		"ui/item_hat_drop.wav"
 		}
+				"6911"	
+		{
+			"name"	"Fancy Fedora"
+			"prefab"	"valve hat"
+			"craft_class"	""
+			"first_sale_date"	"2010/09/29"
+			"capabilities"
+			{
+				"paintable"		"1"
+			}
+			"item_name"	"#TF_Spy_Hat_1"
+			"item_description"	"#TF_Spy_Hat_1_Desc"
+			"image_inventory"	"backpack/player/items/spy/spy_hat"
+			"model_player"	"models/player/items/spy/spy_hat.mdl"
+			"drop_type"	"drop"
+			"used_by_classes"
+			{
+				"spy"	"1"
+			}
+			"static_attrs"
+			{
+				"limited quantity item"		"1"
+			}
+		}
+				"6912"
+		{
+			"name"	"The Sydney Sleeper"
+			"first_sale_date"	"2010/09/29"
+			"prefab"	"weapon_sniperrifle_alt1"
+			"item_class"	"tf_weapon_sniperrifle"
+			"craft_class"	"weapon"
+			"craft_material_type"	"weapon"
+			"capabilities"
+			{
+				"nameable"		"1"
+			}
+			"tags"
+			{
+				"can_deal_damage"			"1"
+				"can_deal_mvm_penetration_damage"	"1"
+				"can_deal_long_distance_damage"	"1"
+				"can_extinguish"			"1"
+			}
+			"item_logname"	"sydney_sleeper"
+			"item_iconname"	"sydney_sleeper"
+			"show_in_armory"	"1"
+			"item_type_name"	"#TF_Weapon_SniperRifle"
+			"item_name"	"#TF_SydneySleeper"
+			"item_slot"	"primary"
+			"item_quality"	"unique"
+			"propername"	"1"
+			"min_ilevel"	"1"
+			"max_ilevel"	"1"
+			"image_inventory"	"backpack/workshop/weapons/c_models/c_sydney_sleeper/c_sydney_sleeper"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"82"
+			"model_player"	"models/workshop/weapons/c_models/c_sydney_sleeper/c_sydney_sleeper.mdl"
+			"attach_to_hands"	"1"
+			"visuals"
+			{
+				"player_bodygroups"
+				{
+					"bullets"		"1"
+				}
+				"sound_single_shot"	"Weapon_SydneySleeper.Single"
+				"sound_burst"	"Weapon_SydneySleeper.SingleCrit"
+			}
+			"used_by_classes"
+			{
+				"sniper"	"1"
+			}
+			"static_attrs"
+			{
+				"min_viewmodel_offset"		"5 0 -8"				
+			}
+			"mouse_pressed_sound"	"ui/item_heavy_gun_pickup.wav"
+			"drop_sound"		"ui/item_heavy_gun_drop.wav"
+			"brass_eject_model"	""	
+			"attributes"
+			{
+				"sniper no headshots"
+				{
+					"attribute_class" "set_weapon_mode"
+					"value" "1"
+				}
+				"jarate duration"
+				{
+					"attribute_class" "jarate_duration"
+					"value" "5"
+				}
+				"crit mod disabled"
+				{
+					"attribute_class"	"mult_crit_chance"
+					"value"	"0"
+				}
+				"sniper charge per sec"
+				{
+					"attribute_class"	"mult_sniper_charge_per_sec"
+					"value"	"1.25"
+				}
+			}
+		}
+				"6913"
+		{
+			"name"		"The Allbrero"
+			"prefab"		"valve hat"
+			"first_sale_date"		"2014/06/16"
+			"item_name"		"#TF_DemoSombrero"
+			"item_description"		"#TF_DemoSombrero_Desc"
+			"image_inventory"		"backpack/player/items/demo/demo_fiesta_sombrero"
+			"model_player"		"models/player/items/demo/demo_fiesta_sombrero.mdl"
+			"propername"		"1"
+			"valid_for_shuffle"		"1"
+			"used_by_classes"
+			{
+				"demoman"		"1"
+			}
+			"mouse_pressed_sound"		"ui/item_hat_pickup.wav"
+			"drop_sound"		"ui/item_hat_drop.wav"
+		}
+				"6914"
+		{
+			"name"		"Seeing Double"
+			"prefab"		"valve misc"
+			"first_sale_date"		"2014/06/16"
+			"equip_region"		"glasses"
+			"item_type_name"		"#TF_Wearable_Glasses"
+			"item_name"		"#TF_DemomanMargaritaShades"
+			"item_description"		"#TF_DemomanMargaritaShades_Desc"
+			"image_inventory"		"backpack/player/items/demo/demo_fiesta_shades"
+			"model_player"		"models/player/items/demo/demo_fiesta_shades.mdl"
+			"valid_for_shuffle"		"1"
+			"used_by_classes"
+			{
+				"demoman"		"1"
+			}
+			"mouse_pressed_sound"		"ui/item_hat_pickup.wav"
+			"drop_sound"		"ui/item_hat_drop.wav"
+		}
+				"6915"
+		{
+			"name"		"Mannvich"
+			"prefab"		"no_craft hat marketable"
+			"item_name"		"#TF_hwn2020_mannvich"
+			"item_description"		"#TF_hwn2020_mannvich_Desc"
+			"item_type_name"		"#TF_Wearable_Costume"
+			"equip_region"		"hat"
+			"image_inventory"		"backpack/workshop/player/items/heavy/hwn2020_mannvich/hwn2020_mannvich"
+			"capabilities"
+			{
+				"can_craft_count"		"1"
+			}
+			"model_player"		"models/workshop/player/items/heavy/hwn2020_mannvich/hwn2020_mannvich.mdl"
+			"used_by_classes"
+			{
+				"heavy"		"1"
+			}
+			"mouse_pressed_sound"		"ui/item_gooey_pickup.wav"
+			"drop_sound"		"ui/item_gooey_pickup.wav"
+		}
+				"6916"
+		{
+			"name"	"The Buffalo Steak Sandvich"
+			"first_sale_date"	"2010/12/08"
+			"prefab"	"weapon_lunchbox"
+			"craft_class"	"weapon"
+			"craft_material_type"	"weapon"
+			"capabilities"
+			{
+				"nameable"		"1"
+			}
+			"tags"
+			{
+				"can_heal_allies"		"1"
+			}
+			"item_name"	"#TF_BuffaloSteak"
+			"item_description"	"#TF_BuffaloSteak_Desc"
+			"image_inventory"	"backpack/workshop/weapons/c_models/c_buffalo_steak/c_buffalo_steak"
+			"model_player"	"models/workshop/weapons/c_models/c_buffalo_steak/c_buffalo_steak.mdl"
+			"propername"	"1"
+			"inspect_panel_dist" "31"
+			"used_by_classes"
+			{
+				"heavy"	"1"
+			}
+			"static_attrs"
+			{
+				"min_viewmodel_offset"				"10 0 -11"
+				"item_meter_charge_type"					"1"
+				"item_meter_charge_rate"		"30"
+				"meter_label"						"#TF_Sandwich"
+			}
+			"attributes"
+			{
+				"kill eater score type"
+				{
+					"attribute_class"	"kill_eater_score_type"
+					"value" 	"50" 
+				}
+				"lunchbox adds minicrits"
+				{
+					"attribute_class"	"set_weapon_mode"
+					"value"	"2"
+				}
+				"special taunt"
+				{
+					"attribute_class"	"special_taunt"
+					"value" "1"
+				}
+				"allowed in medieval mode"
+				{
+					"attribute_class"	"allowed_in_medieval_mode"
+					"value"	"1"
+				}
+				"energy buff dmg taken multiplier"
+				{
+					"attribute_class"	"energy_buff_dmg_taken_multiplier"
+					"value"	"0.4"
+				}
+			}
+		}
+				"6917"
+		{
+			"name"		"test taunt"
+			"first_sale_date"		"2017/12/20"
+			"prefab"		"no_craft taunt"
+			"item_name"		"taunt test"
+			"item_description"		"xdddzs"
+			"image_inventory"		"backpack/workshop/player/items/medic/taunt_surgeons_squeezebox/taunt_surgeons_squeezebox"
+			"capabilities"
+			{
+				"can_craft_count"		"1"
+			}
+			"used_by_classes"
+			{
+				"medic"		"1"
+			}
+			"attributes"
+			{
+				"taunt is press and hold"
+				{
+					"attribute_class"		"enable_misc2_holdtaunt"
+					"value"		"1"
+				}
+				"taunt success sound loop"
+				{
+					"attribute_class"		"taunt_success_sound_loop"
+					"value"		"song_hl1_17"
+				}
+			}
+			"taunt"
+			{
+				"custom_taunt_scene_per_class"
+				{
+					"medic"		"scenes/workshop/player/medic/low/taunt_surgeons_squeezebox.vcd"
+				}
+				"custom_taunt_prop_per_class"
+				{
+					"medic"		"models/workshop/player/items/medic/taunt_surgeons_squeezebox/taunt_surgeons_squeezebox.mdl"
+				}
+			}
 		}
 		"30570"
 		{
