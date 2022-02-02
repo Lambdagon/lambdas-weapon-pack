@@ -1,0 +1,23 @@
+"VertexLitGeneric"
+{
+	"$basetexture"	"models/weapons/c_items/12gauge_stock"
+	"$bumpmap" "models/effects/flat_normal" 
+
+	"$nocull" "1"
+
+	"$normalmapalphaenvmapmask" "1"
+	"$normalmapalphaphongmask"    "1"
+
+	"$phong" "1"
+//	"$phongexponent"   "250"
+	"$phongboost" "0.30"	
+	"$lightwarptexture" "models\lightwarps\weapon_lightwarp"
+	"$phongfresnelranges" "[0.05 0.5 1]"
+	"$phongalbedotint" "1"
+//	"$halflambert"   "1"
+
+	"$rimlight" "1"
+//	"$rimlightexponent" "250"
+	"$rimlightboost" "0.30"	
+	"$rimmask" "1"
+}
