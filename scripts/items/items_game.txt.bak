@@ -9870,7 +9870,7 @@
 				"energy buff dmg taken multiplier"
 				{
 					"attribute_class"	"energy_buff_dmg_taken_multiplier"
-					"value"	"1.2"
+					"value"	"0.7"
 				}
 			}
 		}
@@ -22368,6 +22368,7 @@
 			"prefab"		"no_craft taunt"
 			"item_name"		"taunt test"
 			"item_description"		"xdddzs"
+			"attach_to_hands" "1"
 			"image_inventory"		"backpack/workshop/player/items/medic/taunt_surgeons_squeezebox/taunt_surgeons_squeezebox"
 			"capabilities"
 			{
@@ -22398,7 +22399,7 @@
 				}
 				"custom_taunt_prop_per_class"
 				{
-					"medic"		"models/workshop/player/items/medic/taunt_surgeons_squeezebox/taunt_surgeons_squeezebox.mdl"
+					"medic"		"models/lamarr.mdl"
 				}
 			}
 		}
@@ -22485,48 +22486,7 @@
 			"mouse_pressed_sound"		"ui/item_helmet_pickup.wav"
 			"drop_sound"		"ui/item_helmet_drop.wav"
 		}
-				"6921"
-		{
-			"name"		"Captain Space Mann"
-			"prefab"		"no_craft misc marketable"
-			"item_name"		"#TF_invasion_captain_space_mann"
-			"item_description"		"#TF_invasion_captain_space_mann_Desc"
-			"equip_region"		"face"
-			"item_slot" "head"
-			"item_type_name"		"#TF_Wearable_Helmet"
-			"visuals"
-			{
-				"player_bodygroups"
-				{
-					"backpack"		"1"
-					"hat"		"1"
-					"headphones"		"1"
-				}
-			}
-			"image_inventory"		"backpack/workshop/player/items/all_class/invasion_captain_space_mann/invasion_captain_space_mann"
-			"capabilities"
-			{
-				"can_craft_count"		"1"
-			}
-			"model_player_per_class"
-			{
-				"basename"		"models/workshop/player/items/all_class/invasion_captain_space_mann/invasion_captain_space_mann_%s.mdl"
-			}
-			"used_by_classes"
-			{
-				"scout"		"1"
-				"sniper"		"1"
-				"soldier"		"1"
-				"demoman"		"1"
-				"medic"		"1"
-				"heavy"		"1"
-				"pyro"		"1"
-				"spy"		"1"
-				"engineer"		"1"
-			}
-			"mouse_pressed_sound"		"ui/item_default_pickup.wav"
-			"drop_sound"		"ui/item_default_drop.wav"
-		}
+
 				"6922"
 		{
 			"name"	"The Cooler Bostom Boom-Bringer"
@@ -22576,6 +22536,7 @@
 			"image_inventory"	"backpack/player/items/all_class/xms_santa_hat_demo"
 			"propername" "1"
 			"drop_type"	"drop"
+			"show_in_armory" "1"
 			"model_player_per_class"
 			{
 				"scout"	"models/player/items/all_class/xms_santa_hat_scout.mdl"
