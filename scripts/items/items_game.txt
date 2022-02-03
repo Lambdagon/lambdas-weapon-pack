@@ -22368,6 +22368,7 @@
 			"prefab"		"no_craft taunt"
 			"item_name"		"taunt test"
 			"item_description"		"xdddzs"
+			"attach_to_hands" "1"
 			"image_inventory"		"backpack/workshop/player/items/medic/taunt_surgeons_squeezebox/taunt_surgeons_squeezebox"
 			"capabilities"
 			{
@@ -22398,7 +22399,7 @@
 				}
 				"custom_taunt_prop_per_class"
 				{
-					"medic"		"models/workshop/player/items/medic/taunt_surgeons_squeezebox/taunt_surgeons_squeezebox.mdl"
+					"medic"		"models/lamarr.mdl"
 				}
 			}
 		}
