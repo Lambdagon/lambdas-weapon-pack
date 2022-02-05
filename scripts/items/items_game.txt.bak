@@ -11211,7 +11211,7 @@
 				"can_deal_damage"			"1"
 				"can_deal_critical_damage"	"1"
 			}
-			"show_in_armory"	"0"
+			"show_in_armory"	"1"
 			"item_type_name"	"#TF_Weapon_Gloves"
 			"item_name"	"#TF_EvictionNotice"
 			"item_slot"	"melee"
@@ -22895,7 +22895,7 @@
 				"can_be_equipped_by_soldier_or_demo"	"1"
 				"can_deal_critical_damage"	"1"
 			}
-			"show_in_armory"	"1"
+			"show_in_armory"	"0"
 			"item_type_name"	"#TF_Weapon_Sign"
 			"item_name"	"Objector - YOW's Sussy Objector"
 			"item_description"	"Uhhhhhhhhhhhhhhhhhhhhhhhhhhhhh"
@@ -23196,6 +23196,128 @@
 			"mouse_pressed_sound"		"ui/item_hat_pickup.wav"
 			"drop_sound"		"ui/item_hat_drop.wav"
 		}
+				"6935"
+		{
+			"name"		"Thousand-Yard Stare"
+			"prefab"		"no_craft hat marketable"
+			"item_name"		"#TF_sum21_thousand_yard"
+			"item_description"		"#TF_sum21_thousand_yard_Desc"
+			"equip_region"		"hat"
+			"drop_type"		"drop"
+			"image_inventory"		"backpack/workshop/player/items/soldier/sum21_thousand_yard_style1/sum21_thousand_yard_style1"
+			"capabilities"
+			{
+				"can_craft_count"		"1"
+				"paintable"		"1"
+			}
+			"model_player"		"models/workshop/player/items/soldier/sum21_thousand_yard_style2/sum21_thousand_yard_style2.mdl"
+			"used_by_classes"
+			{
+				"soldier"		"1"
+			}
+			"visuals"
+			{
+				"player_bodygroups"
+				{
+					"hat"		"1"
+				}
+				"styles"
+				{
+					"0"
+					{
+						"name"		"#TF_sum21_thousand_yard_style2"
+						"model_player"		"models/workshop/player/items/soldier/sum21_thousand_yard_style2/sum21_thousand_yard_style2.mdl"
+						"skin_red"		"0"
+						"skin_blu"		"1"
+					}
+					"1"
+					{
+						"name"		"#TF_sum21_thousand_yard_style1"
+						"model_player"		"models/workshop/player/items/soldier/sum21_thousand_yard_style1/sum21_thousand_yard_style1.mdl"
+						"skin_red"		"0"
+						"skin_blu"		"1"
+					}
+				}
+			}
+		}
+		"6936"
+		{
+			"capabilities"
+			{
+				"nameable"		"1"
+			}
+			"tags"
+			{
+				"can_deal_damage"			"1"
+			}
+			"first_sale_date"	"2010/09/29"
+			"enabled"	"0"
+			"show_in_armory" "1"
+			"item_class"	"tf_weapon_fists"
+			"craft_class"	"weapon"
+			"craft_material_type"	"weapon"
+			"item_type_name"	"#TF_Weapon_Fists"
+			"item_name"	"Standing here, I realize"
+			"item_slot"	"melee"
+			"item_quality"	"normal"
+			"min_ilevel"	"1"
+			"max_ilevel"	"1"
+			"image_inventory"	"backpack/weapons/v_models/v_fist_heavy"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"82"
+			"model_player"	""
+			"attach_to_hands" "1"
+			"used_by_classes"
+			{
+				"heavy"	"1"
+			}
+						"attributes"
+			{
+				"damage penalty"
+				{
+					"attribute_class"	"mult_dmg"
+					"value"	"0.2"
+				}
+				"fire rate bonus"
+				{
+					"attribute_class"	"mult_postfiredelay"
+					"value" "0.4"
+				}
+				"speed_boost_on_hit"
+				{
+					"attribute_class"	"speed_boost_on_hit"
+					"value"	"3"
+				}
+			}
+			"visuals"
+			{
+				"animation_replacement"
+				{
+					"ACT_VM_IDLE"	"ACT_FISTS_VM_IDLE"
+					"ACT_VM_HITLEFT"	"ACT_FISTS_VM_HITLEFT"
+					"ACT_VM_HITRIGHT"	"ACT_FISTS_VM_HITRIGHT"
+					"ACT_VM_HITCENTER"	"ACT_ITEM2_VM_HITCENTER"
+					"ACT_VM_SWINGHARD"	"ACT_FISTS_VM_SWINGHARD"
+					"ACT_VM_DRAW"	"ACT_FISTS_VM_DRAW"
+				}
+				"styles"
+				{
+					"0"
+					{
+						"skin_red"	"2"
+						"skin_blu"	"3"
+						"v_skin_red"	"2"
+						"v_skin_blu"	"3"
+						"selectable"	"0"
+					}
+				}
+			}
+			"static_attrs"
+			{
+			"min_viewmodel_offset"		"10 0 -7"
+			}
+		}
+
 		"30570"
 		{
 			"name"		"Pool Party Taunt"
