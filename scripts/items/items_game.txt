@@ -23317,7 +23317,120 @@
 			"min_viewmodel_offset"		"10 0 -7"
 			}
 		}
-
+				"6937"
+		{
+			"name"	"The Direct Hit"
+			"prefab"	"valve"
+			"first_sale_date"	"2010/09/29"
+			"item_class"	"tf_weapon_rocketlauncher_directhit"
+			"craft_class"	"weapon"
+			"craft_material_type"	"weapon"
+			"capabilities"
+			{
+				"nameable"		"1"
+			}
+			"tags"
+			{
+				"can_deal_damage"		"1"
+				"can_deal_gib_damage"	"1"
+				"can_be_equipped_by_soldier_or_demo"	"1"
+				"can_deal_posthumous_damage"	"1"
+				"can_deal_critical_damage"	"1"
+				"can_deal_long_distance_damage"	"1"
+			}
+			"show_in_armory"	"1"
+			"item_type_name"	"#TF_Weapon_RocketLauncher"
+			"item_name"	"Indirect Flop"
+			"item_slot"	"primary"
+			"item_quality"	"unique"
+			"propername"	"1"
+			"min_ilevel"	"1"
+			"max_ilevel"	"1"
+			"image_inventory"	"backpack/weapons/c_models/c_directhit/c_directhit"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"82"
+			"model_player"	"models/weapons/c_models/c_directhit/c_directhit.mdl"
+			"attach_to_hands" "1"
+			"used_by_classes"
+			{
+				"soldier"	"1"
+			}
+			"static_attrs"
+			{
+				"min_viewmodel_offset"					"10 -3 -10"				
+			}
+			"attributes"
+			{
+				"Blast radius increased"
+				{
+					"attribute_class"	"mult_explosion_radius"
+					"value"	"1.7"
+				}
+				"Projectile speed decreased"
+				{
+					"attribute_class"	"mult_projectile_speed"
+					"value"	"0.2"
+				}
+				"damage penalty"
+				{
+					"attribute_class"	"mult_dmg"
+					"value"	"0.75"
+				}
+				"mod mini-crit airborne"
+				{
+					"attribute_class"	"mini_crit_airborne"
+					"value" "1"
+				}
+				"disable fancy class select anim"
+				{
+					"attribute_class"	"disable_fancy_class_select_anim"
+					"value"	"1"
+				}
+			}
+			"mouse_pressed_sound"	"ui/item_heavy_gun_pickup.wav"
+			"drop_sound"		"ui/item_heavy_gun_drop.wav"
+		}
+		"6938"
+		{
+			"name"			"The Cum Cannon"
+			"prefab"		"weapon_demo_cannon"
+			"first_sale_date"	"2012/12/19"
+			"particle_suffix" 	"loose_cannon"
+			"item_name"		"Energy Ball Launcher"
+			"item_description"		"#TF_Weapon_Cannon_desc"
+			"show_in_armory"	"1"
+			"image_inventory"	"backpack/workshop/weapons/c_models/c_demo_cannon/c_demo_cannon"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"82"
+			"model_player"	"models/workshop/weapons/c_models/c_demo_cannon/c_demo_cannon.mdl"
+			"tags"
+			{
+				"can_be_festivized"		"1"
+			}
+						"attributes"
+			{
+				"override projectile type"
+				{
+					"attribute_class"	"override_projectile_type"
+					"value"				"15"
+				}
+				"charge rate penalty"
+				{
+					"attribute_class" "stickybomb_charge_rate"
+					"value" "-15000"
+				}
+			}
+			"visuals"
+			{
+				"attached_models_festive"
+				{
+					"0"
+					{
+						"model"	"models/workshop/weapons/c_models/c_demo_cannon/c_demo_cannon_festivizer.mdl"
+					}
+				}
+			}
+		}
 		"30570"
 		{
 			"name"		"Pool Party Taunt"
