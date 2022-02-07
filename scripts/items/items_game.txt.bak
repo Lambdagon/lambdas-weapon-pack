@@ -21043,6 +21043,7 @@
 			"item_type_name"		"Vest"
 			"item_name"		"Extra Layer"
 			"equip_region"		"sniper_vest"
+			"item_slot" "misc2"
 			"propername"		"1"
 			"image_inventory"		"backpack/workshop/player/items/sniper/xms2013_sniper_layer_vest/xms2013_sniper_layer_vest"
 			"model_player"		"models/workshop/player/items/sniper/xms2013_sniper_layer_vest/xms2013_sniper_layer_vest.mdl"
@@ -25630,6 +25631,47 @@
 				}
 			}
 		}
+				"31233"
+		{
+			"name"		"Taunt: The Homerunner's Hobby"
+			"prefab"		"no_craft taunt"
+			"first_sale_date"		"2021/10/02"
+			"item_name"		"#TF_taunt_the_homerunners_hobby"
+			"item_description"		"#TF_taunt_the_homerunners_hobby_Desc"
+			"ad_text"		"#TF_taunt_the_homerunners_hobby_AdText"
+			"attributes"
+			{
+				"taunt is press and hold"
+				{
+					"attribute_class"		"enable_misc2_holdtaunt"
+					"value"		"1"
+				}
+			}
+			"image_inventory"		"backpack/workshop/player/items/scout/taunt_the_homerunners_hobby/taunt_the_homerunners_hobby"
+			"capabilities"
+			{
+				"can_craft_count"		"1"
+			}
+			"used_by_classes"
+			{
+				"scout"		"1"
+			}
+			"taunt"
+			{
+				"custom_taunt_scene_per_class"
+				{
+					"scout"		"scenes/workshop/player/scout/low/taunt_the_homerunners_hobby.vcd"
+				}
+				"custom_taunt_outro_scene_per_class"
+				{
+					"scout"		"scenes/workshop/player/scout/low/taunt_the_homerunners_hobby_outro.vcd"
+				}
+				"custom_taunt_prop_per_class"
+				{
+					"scout"		"models/workshop/player/items/scout/taunt_the_homerunners_hobby/taunt_the_homerunners_hobby.mdl"
+				}
+			}
+		}
 		"30922"
 		{
 			"name"		"Taunt: Luxury Lounge"
@@ -25671,6 +25713,7 @@
 			}
 		}
 	}
+
 	"attributes"
 	{
 
