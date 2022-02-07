@@ -21043,6 +21043,7 @@
 			"item_type_name"		"Vest"
 			"item_name"		"Extra Layer"
 			"equip_region"		"sniper_vest"
+			"item_slot" "misc2"
 			"propername"		"1"
 			"image_inventory"		"backpack/workshop/player/items/sniper/xms2013_sniper_layer_vest/xms2013_sniper_layer_vest"
 			"model_player"		"models/workshop/player/items/sniper/xms2013_sniper_layer_vest/xms2013_sniper_layer_vest.mdl"
