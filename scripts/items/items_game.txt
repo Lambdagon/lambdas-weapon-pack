@@ -665,7 +665,6 @@
 			"static_attrs"
 			{
 				"min_viewmodel_offset"		"10 0 -6"
-				"crit_dmg_falloff"			"1"
 			}
 			"attributes"
 			{

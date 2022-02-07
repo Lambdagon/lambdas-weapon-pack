@@ -24305,6 +24305,7 @@
 			"item_name"		"#TF_hwn2015_firebug_suit"
 			"item_description"		"#TF_hwn2015_firebug_suit_Desc"
 			"equip_region"		"shirt"
+			"item_slot" "misc2"
 			"item_type_name"		"#TF_Wearable_Apparel"
 			"visuals"
 			{
