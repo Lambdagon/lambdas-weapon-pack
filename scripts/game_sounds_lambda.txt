@@ -1,0 +1,26 @@
+
+"lambda.bananaman"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"pitch"		"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_90dB"
+
+	"wave"		"*#music/lambda/banana.wav"
+}
+
+"lambda.careless"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"pitch"		"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_90dB"
+
+	"wave"		"*#music/lambda/careless.wav"
+}
+
+
+
+
