@@ -24572,9 +24572,9 @@
 			}
 			"visuals"
 			{
-				"sound_double_shot"	"Weapon_Rocket_Jumper.Single"
+				"sound_double_shot"	"lambda.jetpack"
 				"sound_special1"		"Weapon_Rocket_Jumper.Explode"
-				"sound_special3"	"lambda.jetpack"
+				"sound_special3"	"Dragon_Minigun.Spin"
 			}
 			"static_attrs"
 			{
@@ -24627,7 +24627,207 @@
 			"mouse_pressed_sound"	"ui/item_heavy_gun_pickup.wav"
 			"drop_sound"		"ui/item_heavy_gun_drop.wav"
 		}
+				"6960"
+		{
+			"name"	"USP Match"
+			"first_sale_date"	"2010/09/29"
+			"item_class"	"tf_weapon_pistol"
+			"prefab"	"weapon_pistol"
+			"craft_class"	""
+			"craft_material_type"		""
+			"capabilities"
+			{
+				"nameable"		"1"
+			}
+			"tags"
+			{
+				"can_deal_damage"			"1"
+				"can_deal_critical_damage"	"1"
+				"can_deal_long_distance_damage"	"1"
+			}
+			"show_in_armory"	"1"
+			"item_type_name"	"#TF_Weapon_Pistol"
+			"item_name"	"USP Match"
+			"item_description"	"Part of Lambda's  Weapon pack"
+			"item_slot"	"secondary"
+			"item_logname"	"maxgun"
+			"item_iconname"	"pistol"
+			"image_inventory"	"backpack/weapons/w_models/w_pistol"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"82"
+			"model_player"	"models/weapons/c_models/c_pistolo/c_pistol.mdl"
+			"attach_to_hands"	"1"
+			"item_quality"	"unique"
+			"propername"	"1"
+			"min_ilevel"	"5"
+			"max_ilevel"	"5"
+			"used_by_classes"
+			{
+				"scout"	"1"
+				"engineer"	"1"
+			}
+			"mouse_pressed_sound"	"ui/item_light_gun_pickup.wav"
+			"drop_sound"		"ui/item_light_gun_drop.wav"
+									"visuals"
+			{
+				"sound_single_shot"	"HL2_Weapon_Pistol.Single"
+				"sound_burst"	"HL2_Weapon_Pistol.NPC_Single"
+				"sound_reload"	"HL2_Weapon_Pistol.Reload"
+			}
+			"xifier_class_remap"	"TTG Max Pistol"
+			"attributes"
+			{
+				"damage bonus"
+				{
+					"attribute_class"	"mult_dmg"
+					"value"	"1.2"
+				}
+				"clip size bonus"
+				{
+				"attribute_class"	"mult_clipsize"
+				"value"	"1.45"
+				}
+				"fire rate penalty"
+				{
+				"attribute_class"	"mult_postfiredelay"
+				"value"	"1.4"
+				}
+				"weapon spread bonus"
+				{
+					"attribute_class"	"mult_spread_scale"
+					"value"	"0.4"
+				}
+				"dmg bonus while half dead"
+				{
+					"attribute_class"	"mult_dmg_bonus_while_half_dead"
+					"value"	"1.25"
+				}
+			}
+		}
+				"6961"
+		{
+			"name"		"Caffeine"
+			"item_class"	"tf_wearable"
+			"craft_class"	"weapon"
+			"craft_material_type"	"weapon"
+			"capabilities"
+			{
+				"nameable"		"1"
+			}
+			"show_in_armory" "1"
+			"item_type_name"	"Central Nervous System Stimulant"
+			"item_name"	"TOO. MUCH. FREAKIN'. CAFFEINE."
+			"item_description"	"yes"
+			"item_logname"	"grappling_hook"
+			"item_iconname"	"grappling_hook"
+			"item_slot"	"action"
+			"item_quality"	"normal"
+			"min_ilevel"	"1"
+			"max_ilevel"	"1"
+			"image_inventory"	"backpack/weapons/c_models/c_wrangler"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"82"
+			"model_player"	"models/player/items/scout/scout_nohat.mdl"
+			"attach_to_hands"	"1"
+			"act_as_weapon"		"0"
+			"anim_slot" "MELEE_ALLCLASS"
+			"used_by_classes"
+			{
+				"scout"		"1"
+			}
+			"attributes"
+			{
+				"move speed bonus"
+				{
+					"attribute_class"	"mult_player_movespeed"
+					"value" "1.25"
+				}
+				"dmg from melee increased"
+				{
+					"attribute_class"	"dmg_from_melee"
+					"value"	"1.9"
+				}
 
+			}
+			"mouse_pressed_sound"	"ui/item_light_gun_pickup.wav"
+			"drop_sound"		"ui/item_light_gun_drop.wav"
+		}
+				"6962"
+		{
+			"name"	"The .357"
+			"first_sale_date"	"2011/08/11"
+			"item_class"	"tf_weapon_revolver"
+			"craft_material_type"	"weapon"
+			"craft_class"	"weapon"
+			"capabilities"
+			{
+				"nameable"		"1"
+				"can_craft_count"	"1"
+			}
+			"tags"
+			{
+				"can_deal_damage"			"1"
+				"can_deal_critical_damage"	"1"
+				"can_deal_mvm_penetration_damage"	"1"
+				"can_deal_long_distance_damage"	"1"
+			}
+			"show_in_armory"	"1"
+			"item_type_name"	"#TF_Weapon_Revolver"
+			"item_name" ".357 Magnum"
+			"item_description"	""
+			"item_slot"	"secondary"
+			"item_quality"	"unique"
+			"propername"	"1"
+			"item_logname"	"357"
+			"item_iconname"	"357"
+			"min_ilevel"	"5"
+			"max_ilevel"	"5"
+			"image_inventory"	"backpack/workshop_partner/weapons/w_models/w_revolver"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"82"
+			"inspect_panel_dist" 			"32"
+			"model_player"	"models/weapons/c_models/c_revolvero/c_revolver.mdl"
+			"attach_to_hands" "1"
+			"used_by_classes"
+			{
+				"spy"	"1"
+			}
+			"static_attrs"
+			{
+				"min_viewmodel_offset"		"10 0 -6"				
+			}
+			"attributes"
+			{
+				"revolver use hit locations"
+				{
+					"attribute_class"	"set_weapon_mode"
+					"value"	"1"
+				}
+				"fire rate penalty"
+				{
+					"attribute_class"	"mult_postfiredelay"
+					"value"	"1.9"
+				}
+				"weapon spread bonus"
+				{
+					"attribute_class"	"mult_spread_scale"
+					"value"	"0.01"
+				}
+				"mult cloak meter regen rate"
+				{
+					"attribute_class"	"mult_cloak_meter_regen_rate"
+					"value"	"1.5"
+				}
+			
+			}
+			"visuals"
+			{
+				"sound_single_shot"	"Weapon_357.Single"
+				"sound_burst"	"Weapon_357.Single"
+			}
+			"mouse_pressed_sound"	"ui/item_light_gun_pickup.wav"
+			"drop_sound"		"ui/item_light_gun_drop.wav"
+		}
 		"30570"
 		{
 			"name"		"Pool Party Taunt"
