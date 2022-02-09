@@ -24501,6 +24501,17 @@
 			"used_by_classes"
 			{
 				"scout"		"1"
+				"soldier"		"1"
+				"pyro"		"1"
+				"demoman"		"1"
+				"heavy"		"1"
+				"engineer"		"1"
+				"medic"		"1"
+				"sniper"		"1"
+				"spy"		"1"
+				"combine"		"1"
+				"antlion"		"1"
+				
 			}
 			"taunt"
 			{
@@ -24520,6 +24531,103 @@
 				}
 			}
 		}
+				"6959"
+		{
+			"first_sale_date"	"2012/08/02"
+			"enabled"	"1"
+			"item_class"	"tf_weapon_minigun"
+			"craft_class"	"weapon"
+			"craft_material_type"	"weapon"
+			"capabilities"
+			{
+				"nameable"		"1"
+				"can_craft_count"	"1"
+			}
+			"tags"
+			{
+				"can_deal_damage"			"1"
+				"can_deal_critical_damage"	"1"
+				"can_deal_mvm_penetration_damage"	"1"
+				"can_deal_long_distance_damage"	"1"
+				"can_deal_posthumous_damage"	"1"
+			}
+			"base_item_name"	"The Minigun Jumper"
+			"item_type_name"	"#TF_Weapon_Minigun"
+			"item_name"	"Minigun Jumper"
+			"item_slot"	"primary"
+			"item_logname"	"long_heatmaker"
+			"item_iconname"	"long_heatmaker"
+			"image_inventory"	"backpack/workshop_partner/weapons/c_models/c_canton/c_canton"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"82"
+			"model_player"	"models/workshop_partner/weapons/c_models/c_canton/c_canton.mdl"
+			"attach_to_hands"	"1"
+			"show_in_armory"	"1"
+			"propername"	"1"
+			"item_quality"	"unique"
+			"xifier_class_remap"	"long_heatmaker"
+			"used_by_classes"
+			{
+				"heavy"	"1"
+			}
+			"visuals"
+			{
+				"sound_double_shot"	"lambda.jetpack"
+				"sound_special1"		"Weapon_Rocket_Jumper.Explode"
+				"sound_special3"	"Dragon_Minigun.Spin"
+			}
+			"static_attrs"
+			{
+				"min_viewmodel_offset"		"10 0 -9"
+			}
+			"attributes"
+			{
+				"damage penalty"
+				{
+					"attribute_class"	"mult_dmg"
+					"value"	"0"
+				}
+				"crit mod disabled"
+				{
+					"attribute_class"	"mult_crit_chance"
+					"value"	"0"
+				}
+				"no self blast dmg"
+				{
+					"attribute_class"	"no_self_blast_dmg"
+					"value" "2"
+				}
+				"maxammo primary increased"
+				{
+					"attribute_class"	"mult_maxammo_primary"
+					"value" "3.0"
+				}
+				"cannot pick up intelligence"
+				{
+					"attribute_class"	"cannot_pick_up_intelligence"
+					"value"				"1"
+				}
+				"override projectile type"
+				{
+					"attribute_class"	"override_projectile_type"
+					"value"				"2" 
+				}
+				"minigun spinup time decreased"
+				{
+					"attribute_class"	"mult_minigun_spinup_time"
+					"value" "0.05"
+				}
+				"self dmg push force increased"
+				{
+					"attribute_class"	"mult_dmgself_push_force"
+					"value"		"3.0"
+				}
+				
+			}
+			"mouse_pressed_sound"	"ui/item_heavy_gun_pickup.wav"
+			"drop_sound"		"ui/item_heavy_gun_drop.wav"
+		}
+
 		"30570"
 		{
 			"name"		"Pool Party Taunt"
