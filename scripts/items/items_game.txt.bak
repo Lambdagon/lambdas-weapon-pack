@@ -24360,10 +24360,10 @@
 			{
 				"engineer"		"1"
 			}
-					"attributes"
-					{
-						"SPELL: set item tint RGB"	"4"
-					}
+			"attributes"
+			{
+				"SPELL: set item tint RGB"	"4"
+			}
 			"mouse_pressed_sound"		"ui/item_hat_pickup.wav"
 			"drop_sound"		"ui/item_hat_drop.wav"
 		}
@@ -24627,6 +24627,11 @@
 				{
 					"attribute_class"	"mult_dmgself_push_force"
 					"value"		"3.0"
+				}
+				"parachute attribute"
+				{
+					"attribute_class"	"parachute_attribute"
+					"value"	"1"
 				}
 				
 			}
