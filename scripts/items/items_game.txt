@@ -23041,7 +23041,8 @@
 				{
 					"attribute_class"	"speed_boost_on_hit"
 					"value"	"15"
-				}	
+				}
+				
 			}
 			"used_by_classes"
 			{
@@ -24359,6 +24360,10 @@
 			{
 				"engineer"		"1"
 			}
+			"attributes"
+			{
+				"SPELL: set item tint RGB"	"4"
+			}
 			"mouse_pressed_sound"		"ui/item_hat_pickup.wav"
 			"drop_sound"		"ui/item_hat_drop.wav"
 		}
@@ -24820,7 +24825,11 @@
 					"attribute_class"	"mult_cloak_meter_regen_rate"
 					"value"	"0.7"
 				}
-			
+				"elevate quality"
+				{
+					"attribute_class"	"set_elevated_quality"
+					"value"	"1"
+				}
 			}
 			"visuals"
 			{
@@ -24829,6 +24838,111 @@
 			}
 			"mouse_pressed_sound"	"ui/item_light_gun_pickup.wav"
 			"drop_sound"		"ui/item_light_gun_drop.wav"
+		}
+				"6963"
+		{
+			"name"		"Sir Shootsalot"
+			"prefab"		"halloween2013 hat"
+			"item_type_name"		"#TF_Wearable_BirdHead"
+			"item_name"		"#TF_hw2013_sir_shootsalot"
+			"item_description"		"#TF_hw2013_sir_shootsalot_Desc"
+			"equip_region"		"whole_head"
+			"visuals"
+			{
+				"player_bodygroups"
+				{
+					"hat"		"1"
+				}
+			}
+			"image_inventory"		"backpack/workshop/player/items/sniper/hw2013_sir_shootsalot/hw2013_sir_shootsalot"
+			"model_player"		"models/workshop/player/items/sniper/hw2013_sir_shootsalot/hw2013_sir_shootsalot.mdl"
+			"used_by_classes"
+			{
+				"sniper"		"1"
+			}
+			"attributes"
+			{
+				"additional halloween response criteria name"
+				{
+					"attribute_class"		"additional_halloween_response_criteria_name"
+					"value"		"IsSniperBirdHead"
+				}
+			}
+			"mouse_pressed_sound"		"ui/item_hat_pickup.wav"
+			"drop_sound"		"ui/item_hat_drop.wav"
+		}
+				"6964"
+		{
+			"name"		"Ramses' Regalia"
+			"prefab"		"halloween2013 misc"
+			"item_type_name"		"#TF_Wearable_Costume"
+			"item_name"		"#TF_hw2013_ramses_regalia"
+			"item_description"		"#TF_hw2013_ramses_regalia_Desc"
+			"item_slot" "misc2"
+			"equip_regions"
+			{
+				"shirt"		"1"
+				"sleeves"		"1"
+			}
+			"image_inventory"		"backpack/workshop/player/items/medic/hw2013_ramses_regalia/hw2013_ramses_regalia"
+			"model_player"		"models/workshop/player/items/medic/hw2013_ramses_regalia/hw2013_ramses_regalia.mdl"
+			"used_by_classes"
+			{
+				"medic"		"1"
+			}
+			"mouse_pressed_sound"		"ui/item_hat_pickup.wav"
+			"drop_sound"		"ui/item_hat_drop.wav"
+		}
+				"6965"
+		{
+			"name"		"Tiny Timber"
+			"prefab"		"misc"
+			"first_sale_date"		"2013/12/19"
+			"item_type_name"		"#TF_Wearable_Backpack"
+			"item_name"		"#TF_xms2013_pyro_wood"
+			"item_description"		"#TF_xms2013_pyro_wood_Desc"
+			"equip_region"		"back"
+			"visuals"
+			{
+				"player_bodygroups"
+				{
+					"backpack"		"1"
+				}
+			}
+			"image_inventory"		"backpack/workshop/player/items/pyro/xms2013_pyro_wood/xms2013_pyro_wood"
+			"capabilities"
+			{
+				"paintable"		"1"
+			}
+			"model_player"		"models/workshop/player/items/pyro/xms2013_pyro_wood/xms2013_pyro_wood.mdl"
+			"used_by_classes"
+			{
+				"pyro"		"1"
+			}
+			"mouse_pressed_sound"		"ui/item_bag_pickup.wav"
+			"drop_sound"		"ui/item_bag_drop.wav"
+		}
+				"6966"
+		{
+			"name"		"Antarctic Parka"
+			"prefab"		"misc"
+			"first_sale_date"		"2013/12/19"
+			"item_type_name"		"#TF_Wearable_Coat"
+			"item_name"		"#TF_xms2013_soldier_parka"
+			"item_description"		"#TF_xms2013_soldier_parka_Desc"
+			"equip_region"		"soldier_coat"
+			"image_inventory"		"backpack/workshop/player/items/soldier/xms2013_soldier_parka/xms2013_soldier_parka"
+			"capabilities"
+			{
+				"paintable"		"1"
+			}
+			"model_player"		"models/workshop/player/items/soldier/xms2013_soldier_parka/xms2013_soldier_parka.mdl"
+			"used_by_classes"
+			{
+				"soldier"		"1"
+			}
+			"mouse_pressed_sound"		"ui/item_hat_pickup.wav"
+			"drop_sound"		"ui/item_hat_drop.wav"
 		}
 		"30570"
 		{
