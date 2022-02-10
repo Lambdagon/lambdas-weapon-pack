@@ -3102,6 +3102,7 @@
 			"used_by_classes"
 			{
 				"soldier"	"1"
+				"demoman"	"1"
 			}
 			"attributes"
 			{
@@ -24791,6 +24792,7 @@
 			"used_by_classes"
 			{
 				"spy"	"1"
+				"kleiner" "1"
 			}
 			"static_attrs"
 			{
@@ -24816,7 +24818,7 @@
 				"mult cloak meter regen rate"
 				{
 					"attribute_class"	"mult_cloak_meter_regen_rate"
-					"value"	"1.5"
+					"value"	"0.7"
 				}
 			
 			}
@@ -24828,6 +24830,7 @@
 			"mouse_pressed_sound"	"ui/item_light_gun_pickup.wav"
 			"drop_sound"		"ui/item_light_gun_drop.wav"
 		}
+		
 		"30570"
 		{
 			"name"		"Pool Party Taunt"

@@ -3101,7 +3101,8 @@
 			"act_as_wearable" "1"
 			"used_by_classes"
 			{
-				"soldier"	"1"
+				"soldier"	"secondary"
+				"demoman"	"primary"
 			}
 			"attributes"
 			{
@@ -24791,6 +24792,7 @@
 			"used_by_classes"
 			{
 				"spy"	"1"
+				"kleiner" "1"
 			}
 			"static_attrs"
 			{
