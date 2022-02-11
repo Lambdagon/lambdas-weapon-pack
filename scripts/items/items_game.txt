@@ -5861,7 +5861,7 @@
 			"drop_sound"				"#ui/item_heavy_gun_drop.wav"
 		}
 		
-		"weapon_stengun"
+		"weapon_uzi"
 		{
 			"tags"
 			{
@@ -5897,6 +5897,39 @@
 					"attribute_class"	"mult_maxammo_secondary"
 					"value"	"3.1"
 				}
+			}
+			"mouse_pressed_sound"		"#ui/item_heavy_gun_pickup.wav"
+			"drop_sound"				"#ui/item_heavy_gun_drop.wav"
+		}
+		
+		"weapon_leaverrifle"
+		{
+			"tags"
+			{
+				"can_deal_damage"						"1"
+				"can_deal_critical_damage"				"1"
+				"can_deal_mvm_penetration_damage"		"1"
+				"can_deal_long_distance_damage"			"1"
+			}
+			"show_in_armory"			"1"
+			"item_class"				"tf_weapon_scattergun"
+			"item_type_name"			"Leaver Action rifle"
+			"item_name"					"Leaver Action"
+			"item_slot"					"primary"
+			"anim_slot"					"item2"
+			"item_quality"				"normal"
+			"propername"				"1"
+			"min_ilevel"				"5"
+			"max_ilevel"				"5"
+			"image_inventory"			"backpack/weapons/c_models/c_scattergun"
+			"image_inventory_size_w"	"128"
+			"image_inventory_size_h"	"82"
+			"attach_to_hands"			"2"
+			"model_player"				"models/weapons/v_models/v_scattergun_scout.mdl"
+			"model_world"				"models/weapons/w_models/w_scattergun.mdl"
+			"used_by_classes"
+			{
+				"scout"					"1"
 			}
 			"mouse_pressed_sound"		"#ui/item_heavy_gun_pickup.wav"
 			"drop_sound"				"#ui/item_heavy_gun_drop.wav"
@@ -25241,7 +25274,7 @@
 		}
 		"6971"
 		{
-			"name"						"Sten"
+			"name"						"Uzi"
 			"prefab"					"weapon_uzi"
 			"item_description"			"Stengun"
 			"image_inventory" "sprites/w_smg.vtf"
@@ -25262,6 +25295,24 @@
 				"value"	"2"
 				}
 			}
+		}
+		"6972"
+		{
+			"name"						"Leaver"
+			"prefab"					"weapon_leaverrifle"
+			"item_description"			"Leaver Action rifle"
+			"image_inventory"			"backpack/weapons/c_models/c_scattergun"
+			"image_inventory_size_w"	"128"
+			"image_inventory_size_h"	"82"
+			"attach_to_hands"			"2"
+			"model_player"				"models/weapons/v_models/v_scattergun_scout.mdl"
+			"model_world"				"models/weapons/w_models/w_scattergun.mdl"
+			"used_by_classes"
+			{
+				"scout"					"1"
+			}
+			"mouse_pressed_sound"		"#ui/item_heavy_gun_pickup.wav"
+			"drop_sound"				"#ui/item_heavy_gun_drop.wav"
 		}
 		"30570"
 		{
