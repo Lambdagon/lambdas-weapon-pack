@@ -5820,6 +5820,121 @@
 			"drop_sound"				"#ui/item_heavy_gun_drop.wav"
 		}
 		
+		"weapon_stengun"
+		{
+			"tags"
+			{
+				"can_deal_damage"						"1"
+				"can_deal_critical_damage"				"1"
+				"can_deal_mvm_penetration_damage"		"1"
+				"can_deal_long_distance_damage"			"1"
+			}
+			"show_in_armory"			"1"
+			"item_class"				"tf_weapon_smg"
+			"item_type_name"			"Sten gun"
+			"item_name"					"Sten gun"
+			"item_slot"					"secondary"
+			"anim_slot"					"item2"
+			"item_quality"				"normal"
+			"propername"				"1"
+			"min_ilevel"				"5"
+			"max_ilevel"				"5"
+			"image_inventory"			"backpack/weapons/w_models/w_nailgun"
+			"image_inventory_size_w"	"128"
+			"image_inventory_size_h"	"82"
+			"attach_to_hands"			"2"
+			"model_world"				"models/weapons/w_models/w_nailgun.mdl"
+			"model_player"				"models/weapons/v_models/v_pistol_scout.mdl"
+			"used_by_classes"
+			{
+				"scout"					"1"
+			}
+			"attributes"
+			{
+							"hidden secondary max ammo bonus"
+				{
+					"attribute_class"	"mult_maxammo_secondary"
+					"value"	"3.1"
+				}
+			}
+			"mouse_pressed_sound"		"#ui/item_heavy_gun_pickup.wav"
+			"drop_sound"				"#ui/item_heavy_gun_drop.wav"
+		}
+		
+		"weapon_uzi"
+		{
+			"tags"
+			{
+				"can_deal_damage"						"1"
+				"can_deal_critical_damage"				"1"
+				"can_deal_mvm_penetration_damage"		"1"
+				"can_deal_long_distance_damage"			"1"
+			}
+			"show_in_armory"			"1"
+			"item_class"				"tf_weapon_smg"
+			"item_type_name"			"Uzi"
+			"item_name"					"Uzi"
+			"item_slot"					"secondary"
+			"anim_slot"					"item2"
+			"item_quality"				"normal"
+			"propername"				"1"
+			"min_ilevel"				"5"
+			"max_ilevel"				"5"
+			"image_inventory"			"sprites/smg"
+			"image_inventory_size_w"	"128"
+			"image_inventory_size_h"	"82"
+			"attach_to_hands"			"2"
+			"model_world"				"models/weapons/w_models/w_smg.mdl"
+			"model_player"				"models/weapons/v_models/v_smg_sniper.mdl"
+			"used_by_classes"
+			{
+				"sniper"					"1"
+			}
+			"attributes"
+			{
+							"hidden secondary max ammo bonus"
+				{
+					"attribute_class"	"mult_maxammo_secondary"
+					"value"	"3.1"
+				}
+			}
+			"mouse_pressed_sound"		"#ui/item_heavy_gun_pickup.wav"
+			"drop_sound"				"#ui/item_heavy_gun_drop.wav"
+		}
+		
+		"weapon_leaverrifle"
+		{
+			"tags"
+			{
+				"can_deal_damage"						"1"
+				"can_deal_critical_damage"				"1"
+				"can_deal_mvm_penetration_damage"		"1"
+				"can_deal_long_distance_damage"			"1"
+			}
+			"show_in_armory"			"1"
+			"item_class"				"tf_weapon_scattergun"
+			"item_type_name"			"Leaver Action rifle"
+			"item_name"					"Leaver Action"
+			"item_slot"					"primary"
+			"anim_slot"					"item2"
+			"item_quality"				"normal"
+			"propername"				"1"
+			"min_ilevel"				"5"
+			"max_ilevel"				"5"
+			"image_inventory"			"backpack/weapons/c_models/c_scattergun"
+			"image_inventory_size_w"	"128"
+			"image_inventory_size_h"	"82"
+			"attach_to_hands"			"2"
+			"model_player"				"models/weapons/v_models/v_scattergun_scout.mdl"
+			"model_world"				"models/weapons/w_models/w_scattergun.mdl"
+			"used_by_classes"
+			{
+				"scout"					"1"
+			}
+			"mouse_pressed_sound"		"#ui/item_heavy_gun_pickup.wav"
+			"drop_sound"				"#ui/item_heavy_gun_drop.wav"
+		}
+		
 		"weapon_targe"
 		{
 			"enabled"		"1"
@@ -12036,76 +12151,6 @@
 			}
 			"mouse_pressed_sound"	"ui/item_heavy_gun_pickup.wav"
 			"drop_sound"		"ui/item_heavy_gun_drop.wav"
-		}
-		"525"
-		{
-			"name"	"The Diamondback"
-			"first_sale_date"	"2011/08/11"
-			"item_class"	"tf_weapon_revolver"
-			"craft_material_type"	"weapon"
-			"craft_class"	"weapon"
-			"capabilities"
-			{
-				"nameable"		"1"
-				"can_craft_count"	"1"
-			}
-			"tags"
-			{
-				"can_deal_damage"			"1"
-				"can_deal_critical_damage"	"1"
-				"can_deal_mvm_penetration_damage"	"1"
-				"can_deal_long_distance_damage"	"1"
-			}
-			"show_in_armory"	"0"
-			"item_type_name"	"#TF_Weapon_Revolver"
-			"item_name"	"Diamondback"
-			"item_description"	"Part of Lambda's  Weapon pack"
-			"item_slot"	"secondary"
-			"item_quality"	"unique"
-			"propername"	"1"
-			"item_logname"	"diamondback"
-			"item_iconname"	"diamondback"
-			"min_ilevel"	"5"
-			"max_ilevel"	"5"
-			"image_inventory"	"backpack/workshop_partner/weapons/c_models/c_dex_revolver/c_dex_revolver"
-			"image_inventory_size_w"		"128"
-			"image_inventory_size_h"		"82"
-			"inspect_panel_dist" 			"32"
-			"model_player"	"models/workshop_partner/weapons/c_models/c_dex_revolver/c_dex_revolver.mdl"
-			"attach_to_hands" "1"
-			"used_by_classes"
-			{
-				"spy"	"1"
-			}
-			"static_attrs"
-			{
-				"min_viewmodel_offset"		"10 0 -6"				
-			}
-			"attributes"
-			{
-				"sapper kills collect crits"
-				{
-					"attribute_class"	"sapper_kills_collect_crits"
-					"value"	"1"
-				}
-				"damage penalty"
-				{
-					"attribute_class"	"mult_dmg"
-					"value"	"0.85"
-				}
-				"crit mod disabled"
-				{
-					"attribute_class"	"mult_crit_chance"
-					"value"	"0"
-				}
-			}
-			"visuals"
-			{
-				"sound_single_shot"	"Weapon_Diamond_Back.Single"
-				"sound_burst"	"Weapon_Diamond_Back.SingleCrit"
-			}
-			"mouse_pressed_sound"	"ui/item_light_gun_pickup.wav"
-			"drop_sound"		"ui/item_light_gun_drop.wav"
 		}
 		"526"
 		{
@@ -19537,7 +19582,7 @@
 				"reload time increased"
 				{
 				"attribute_class"	"mult_reload_time"
-				"value"	"2"
+				"value"	"0.5"
 				}
 								"fire rate bonus"
 				{
@@ -21819,6 +21864,14 @@
 			"used_by_classes"
 			{
 				"scout"					"1"
+			}
+			"attributes"
+			{
+							"hidden primary max ammo bonus"
+				{
+					"attribute_class"	"mult_maxammo_primary"
+					"value"	"5.1"
+				}
 			}
 			"static_attrs"
 			{
@@ -24948,6 +25001,493 @@
 			}
 			"mouse_pressed_sound"		"ui/item_hat_pickup.wav"
 			"drop_sound"		"ui/item_hat_drop.wav"
+		}
+				"6967"
+		{
+			"name"	"Drgregs' Mini-Jumper"
+			"prefab"	"valve"
+			"first_sale_date"	"2010/09/29"
+			"item_class"	"tf_weapon_rocketlauncher"
+			"craft_class"	"weapon"
+			"craft_material_type"	"weapon"
+			"capabilities"
+			{
+				"nameable"		"1"
+			}
+			"tags"
+			{
+				"can_deal_damage"			"1"
+				"can_deal_critical_damage"	"1"
+				"can_deal_mvm_penetration_damage"	"1"
+				"can_deal_long_distance_damage"	"1"
+				"can_be_festivized"		"1"
+			}
+			"show_in_armory"	"1"
+			"item_type_name"	"#TF_Weapon_RocketLauncher"
+			"item_name"	"Drgregs' Mini-Jumper"
+			"item_slot"	"primary"
+			"item_logname"	"iron_curtain"
+			"item_iconname"	"iron_curtain"
+			"image_inventory"	"backpack/workshop/weapons/c_models/c_iron_curtain/c_iron_curtain"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"82"
+			"model_player"	"models/workshop/weapons/c_models/c_iron_curtain/c_iron_curtain.mdl"
+			"inspect_panel_dist" "88"
+			"attach_to_hands"	"1"
+			"item_quality"	"unique"
+			"min_ilevel"	"5"
+			"max_ilevel"	"5"
+			"used_by_classes"
+			{
+				"heavy"	"1"
+			}
+			"static_attrs"
+			{
+				"min_viewmodel_offset"		"10 0 -9"
+			}
+			"attributes"
+			{
+				"damage penalty"
+				{
+					"attribute_class"	"mult_dmg"
+					"value"	"0"
+				}
+				"crit mod disabled"
+				{
+					"attribute_class"	"mult_crit_chance"
+					"value"	"0"
+				}
+				"reload time decreased"
+				{
+				"attribute_class"	"mult_reload_time"
+				"value"	"0.50"
+				}
+				"clip size bonus"
+				{
+					"attribute_class"	"mult_clipsize"
+					"value" "6"
+				}
+				"fire rate bonus"
+				{
+				"attribute_class"	"mult_postfiredelay"
+				"value"	"-1.0"
+				}
+				"no self blast dmg"
+				{
+					"attribute_class"	"no_self_blast_dmg"
+					"value" "2"
+				}
+				"maxammo primary increased"
+				{
+					"attribute_class"	"mult_maxammo_primary"
+					"value" "3.5"
+				}
+				"cannot pick up intelligence"
+				{
+					"attribute_class"	"cannot_pick_up_intelligence"
+					"value"				"1"
+				}
+			}
+			"visuals"
+			{
+				"sound_reload"	"Weapon_Minifun.Reload"
+				"sound_empty"	"Weapon_Minifun.ClipEmpty"
+				"sound_double_shot"	"Weapon_Minifun.Fire"
+				"sound_special1"	"Weapon_Minifun.WindUp"
+				"sound_special2"	"Weapon_Minifun.WindDown"
+				"sound_special3"	"Weapon_Minifun.Spin"
+				"sound_burst"	"Weapon_Minifun.FireCrit"
+			}
+			"mouse_pressed_sound"	"ui/item_heavy_gun_pickup.wav"
+			"drop_sound"		"ui/item_heavy_gun_drop.wav"
+		}
+		"6968"
+		{
+			"name"	"Rocketlauncher Shotgun"
+			"prefab"	"valve"
+			"first_sale_date"	"2010/09/29"
+			"item_class"	"tf_weapon_rocketlauncher"
+			"craft_class"	"weapon"
+			"craft_material_type"	"weapon"
+			"capabilities"
+			{
+				"nameable"		"1"
+			}
+			"show_in_armory"	"1"
+			"item_type_name"	"#TF_Weapon_RocketLauncher"
+			"item_name"	"Rocket Shotgun"
+			"item_description"	"A"
+			"item_slot"	"primary"
+			"item_quality"	"unique"
+			"min_ilevel"	"1"
+			"max_ilevel"	"1"
+			"image_inventory"	"backpack/weapons/c_models/c_rocketjumper/c_rocketjumper"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"82"
+			"item_quality"		"unique"
+			"attach_to_hands"	"1"
+			"image_inventory"	"backpack/weapons/w_models/w_shotgun"
+			"model_player"	"models/weapons/c_models/c_shotgun/c_shotgun.mdl"
+			"used_by_classes"
+			{
+				"engineer"	"primary"
+				"pyro" "secondary"
+				"soldier" "secondary"
+				"heavy" "primary"
+			}
+			"static_attrs"
+			{
+				"min_viewmodel_offset"		"10 -3 -10"				
+			}
+			"mouse_pressed_sound"	"ui/item_heavy_gun_pickup.wav"
+			"drop_sound"		"ui/item_heavy_gun_drop.wav"
+			"attributes"
+			{
+				"damage penalty"
+				{
+					"attribute_class"	"mult_dmg"
+					"value"	"0.9"
+				}
+				"maxammo primary increased"
+				{
+					"attribute_class"	"mult_maxammo_primary"
+					"value" "3.0"
+				}
+				"clip size bonus"
+				{
+					"attribute_class"	"mult_clipsize"
+					"value" "6"
+				}
+				"fire rate bonus"
+				{
+				"attribute_class"	"mult_postfiredelay"
+				"value"	"0.8"
+				}
+				"rocket jump damage reduction"
+				{
+					"attribute_class"	"rocket_jump_dmg_reduction"
+					"value" "0.1"
+				}
+			}
+			"visuals"
+			{
+				"sound_single_shot"	"Weapon_Rocket_Jumper.Single"
+				"sound_special1"		"Weapon_Rocket_Jumper.Explode"
+			}
+		}
+		"6969"
+		{
+			"name"	"Rocketlauncher Pistol"
+			"prefab"	"valve"
+			"first_sale_date"	"2010/09/29"
+			"item_class"	"tf_weapon_rocketlauncher"
+			"craft_class"	"weapon"
+			"craft_material_type"	"weapon"
+			"capabilities"
+			{
+				"nameable"		"1"
+			}
+			"show_in_armory"	"1"
+			"item_type_name"	"#TF_Weapon_RocketLauncher"
+			"item_name"	"Rocket Pistol"
+			"item_description"	"A"
+			"item_slot"	"primary"
+			"item_quality"	"unique"
+			"min_ilevel"	"5"
+			"max_ilevel"	"5"
+			"image_inventory"	"backpack/workshop/weapons/c_models/c_ttg_max_gun/c_ttg_max_gun"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"82"
+			"model_player"	"models/workshop/weapons/c_models/c_ttg_max_gun/c_ttg_max_gun.mdl"
+			"propername"	"1"
+			"used_by_classes"
+			{
+				"scout"	"1"
+				"engineer"	"1"
+			}
+			"mouse_pressed_sound"	"ui/item_light_gun_pickup.wav"
+			"drop_sound"		"ui/item_light_gun_drop.wav"
+			"xifier_class_remap"	"TTG Max Pistol"
+			"static_attrs"
+			{
+				"min_viewmodel_offset"		"10 -3 -10"				
+			}
+			"mouse_pressed_sound"	"ui/item_heavy_gun_pickup.wav"
+			"drop_sound"		"ui/item_heavy_gun_drop.wav"
+			"attributes"
+			{
+				"damage penalty"
+				{
+					"attribute_class"	"mult_dmg"
+					"value"	"0.9"
+				}
+				"maxammo primary increased"
+				{
+					"attribute_class"	"mult_maxammo_primary"
+					"value" "3.0"
+				}
+				"clip size bonus"
+				{
+					"attribute_class"	"mult_clipsize"
+					"value" "6"
+				}
+				"fire rate bonus"
+				{
+				"attribute_class"	"mult_postfiredelay"
+				"value"	"0.8"
+				}
+				"rocket jump damage reduction"
+				{
+					"attribute_class"	"rocket_jump_dmg_reduction"
+					"value" "0.1"
+				}
+			}
+			"visuals"
+			{
+				"sound_single_shot"	"Weapon_Rocket_Jumper.Single"
+				"sound_special1"		"Weapon_Rocket_Jumper.Explode"
+			}
+		}
+		"6970"
+		{
+			"name"						"Sten"
+			"prefab"					"weapon_stengun"
+			"item_description"			"Stengun"
+			"image_inventory" "backpack\weapons\w_models\w_nailgun_large.vtf"
+			"used_by_classes"
+			{
+				"scout"					"1"
+			}
+			"attributes"
+			{
+				"clip size bonus"
+				{
+				"attribute_class"	"mult_clipsize"
+				"value"	"0.75"
+				}
+				"maxammo secondary increased"
+				{
+				"attribute_class"	"mult_maxammo_secondary"
+				"value"	"2"
+				}
+			}
+		}
+		"6971"
+		{
+			"name"						"Uzi"
+			"prefab"					"weapon_uzi"
+			"item_description"			"Stengun"
+			"image_inventory" "sprites/w_smg.vtf"
+			"used_by_classes"
+			{
+				"sniper"					"1"
+			}
+			"attributes"
+			{
+				"clip size bonus"
+				{
+				"attribute_class"	"mult_clipsize"
+				"value"	"0.75"
+				}
+				"maxammo secondary increased"
+				{
+				"attribute_class"	"mult_maxammo_secondary"
+				"value"	"2"
+				}
+			}
+		}
+		"6972"
+		{
+			"name"						"Leaver"
+			"prefab"					"weapon_leaverrifle"
+			"item_description"			"Leaver Action rifle"
+			"image_inventory"			"backpack/weapons/c_models/c_scattergun"
+			"image_inventory_size_w"	"128"
+			"image_inventory_size_h"	"82"
+			"attach_to_hands"			"2"
+			"model_player"				"models/weapons/v_models/v_scattergun_scout.mdl"
+			"model_world"				"models/weapons/w_models/w_scattergun.mdl"
+			"used_by_classes"
+			{
+				"scout"					"1"
+			}
+			"mouse_pressed_sound"		"#ui/item_heavy_gun_pickup.wav"
+			"drop_sound"				"#ui/item_heavy_gun_drop.wav"
+		}
+		"6973"
+		{
+			"name"	"Annabelle"
+			"prefab"	"valve weapon_revolver"
+			"first_sale_date"		"2014/06/18"
+			"item_class"	"tf_weapon_revolver"
+			"craft_class"	"weapon"
+			"craft_material_type"	"weapon"
+			"capabilities"
+			{
+				"nameable"		"1"
+			}
+			"tags"
+			{
+				"can_deal_damage"		"1"
+				"can_headshot"			"1"
+				"can_deal_mvm_penetration_damage"	"1"
+				"can_deal_long_distance_damage"	"1"
+				"can_deal_gib_damage"	"1"
+			}
+			"item_logname"	"annabelle"
+			"item_iconname"	"annabelle"
+			"show_in_armory"	"1"
+			"item_type_name"	"Rifle"
+			"item_name"	"Annabelle"
+			"item_description"	"You have already met... my congregation."
+			"item_slot"	"primary"
+			"item_quality"	"unique"
+			"propername"	"1"
+			"min_ilevel"	"1"
+			"max_ilevel"	"100"
+			"image_inventory"	"backpack/weapons/c_models/c_tfc_sniperrifle/c_tfc_sniperrifle"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"82"
+			"model_player"	"models/weapons/v_shotgun.mdl"
+			"model_world"	"models/weapons/w_annabelle.mdl"
+			"attach_to_hands"	"0"
+			
+			"visuals"
+			{
+				"show_player_bodygroup_name"	"bullets"
+				"sound_empty"				"HL2_Weapon_Shotgun.Empty"
+				"sound_reload"			"HL2_Weapon_Shotgun.Reload"
+				"sound_special1"			"HL2_Weapon_Shotgun.Special1"
+				"sound_single_shot"		"HL2_Weapon_Shotgun.Single"
+				"sound_burst"		"HL2_Weapon_Shotgun.Single"
+				"sound_double_shot"		"HL2_Weapon_Shotgun.Double"
+			}
+			"used_by_classes"
+			{
+				"sniper"	"1"
+			}
+			"static_attrs"
+			{
+				"min_viewmodel_offset"		"10 0 -9"
+			}
+			"attributes"
+			{
+				"revolver use hit locations"
+				{
+					"attribute_class"	"set_weapon_mode"
+					"value" "1"
+				}
+				"scattergun no reload single"
+				{
+					"attribute_class"	"set_scattergun_no_reload_single"
+					"value"	"0"
+				}
+				"clip size penalty"
+				{
+					"attribute_class"	"mult_clipsize"
+					"value"	"0.33"
+				}
+				"fire rate penalty"
+				{
+				"attribute_class"	"mult_postfiredelay"
+				"value"	"2"
+				}
+				"damage penalty on bodyshot"
+				{
+					"attribute_class"	"bodyshot_damage_modify"
+					"value"	"0.70"
+				}
+				"weapon spread bonus"
+				{
+					"attribute_class"	"mult_spread_scale"
+					"value"	"0.30"
+				}
+				"damage bonus"
+				{
+					"attribute_class"	"mult_dmg"
+					"value"	"1.35"
+				}
+			}
+			"mouse_pressed_sound"	"ui/item_heavy_gun_pickup.wav"
+			"drop_sound"		"ui/item_heavy_gun_drop.wav"
+		}
+				"6974"
+		{
+			"name"	"The Hornet's Nest"
+			"first_sale_date"	"2011/03/23"
+			"item_class"	"tf_weapon_rocketlauncher"
+			"craft_class"	"weapon"
+			"craft_material_type"	"weapon"
+			"capabilities"
+			{
+				"nameable"		"1"
+				"can_craft_count"	"1"
+			}
+			"tags"
+			{
+				"can_deal_damage"		"1"
+				"can_deal_gib_damage"	"1"
+				"can_be_equipped_by_soldier_or_demo"	"1"
+				"can_deal_posthumous_damage"	"1"
+				"can_deal_critical_damage"	"1"
+				"can_deal_long_distance_damage"	"1"
+			}
+			"show_in_armory"	"1"
+			"item_type_name"	"#TF_Weapon_RocketLauncher"
+			"item_name"	"Hornet's Nest"
+			"item_slot"	"primary"
+			"item_quality"	"unique"
+			"item_logname"	"hornets_nest"
+			"item_iconname"	"shotgun"
+			"propername"	"1"
+			"min_ilevel"	"25"
+			"max_ilevel"	"25"
+			"inspect_panel_dist" "68"
+			"image_inventory"	"backpack/workshop/weapons/c_models/c_blackbox/c_blackbox"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"82"
+			"model_player"	"models/workshop/weapons/c_models/c_blackbox/c_blackbox.mdl"
+			"attach_to_hands" "1"
+			"used_by_classes"
+			{
+				"soldier"	"1"
+			}
+			"static_attrs"
+			{
+				"min_viewmodel_offset"					"10 -3 -10"				
+			}
+			"mouse_pressed_sound"	"ui/item_heavy_gun_pickup.wav"
+			"drop_sound"		"ui/item_heavy_gun_drop.wav"
+			"attributes"
+			{
+				"damage penalty"
+				{
+					"attribute_class"	"mult_dmg"
+					"value" "0.75"
+				}
+				"clip size penalty"
+				{
+					"attribute_class"	"mult_clipsize"
+					"value" "0.25"
+				}
+				"override projectile type"
+				{
+					"attribute_class"	"override_projectile_type"
+					"value"				"21"
+				}
+				"bullets per shot bonus"
+				{
+					"attribute_class"	"mult_bullets_per_shot"
+					"value" "12"
+				}
+				
+			}
+			"visuals"
+			{
+				"sound_single_shot"	"Weapon_RPG_BlackBox.Single"
+				"sound_burst"		"Weapon_RPG_BlackBox.SingleCrit"
+				"sound_special1"	"Weapon_RPG_BlackBox.Explode"
+			}
 		}
 		"30570"
 		{
