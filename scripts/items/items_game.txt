@@ -25411,6 +25411,76 @@
 			"mouse_pressed_sound"	"ui/item_heavy_gun_pickup.wav"
 			"drop_sound"		"ui/item_heavy_gun_drop.wav"
 		}
+		"6974"
+        {
+            "name"        "The Tool-Gun"
+            "prefab"        "no_craft weapon_pistol marketable"
+            "craft_class"        ""
+            "item_name"        "The Tool-Gun"
+            "item_description"        "Lambda's Mod"
+            "item_logname"        "the_toolgun"
+            "item_iconname"        "the_toolgun"
+            "propername"        "1"
+            "image_inventory"        "backpack/weapons/w_models/w_revolver"
+            "image_inventory_size_w"        "128"
+            "image_inventory_size_h"        "82"
+            "attach_to_hands"            "2"
+            "model_player"        "models/weapons/v_models/v_toolgun.mdl"
+            "model_world"        "models/weapons/c_models/c_revolver/c_revolver.mdl"
+			"used_by_classes"
+			{
+				"spy"					"1"
+				"scout"					"secondary"
+				"engineer"				"secondary"
+			}
+            "static_attrs"
+            {
+                "weapon_allow_inspect"        "1"
+                "ragdolls become ash"        "1"
+            }
+            "attributes"
+            {
+                "turn to gold"
+                {
+                    "attribute_class"    "set_turn_to_gold"
+                    "value" "1"
+                }
+				"scattergun no reload single"
+				{
+					"attribute_class"	"set_scattergun_no_reload_single"
+					"value"	"1"
+				}
+            }
+            "visuals"
+            {
+                "sound_single_shot"        "Airboat.FireGunRevDown"
+                "sound_burst"        "Weapon_Capper.SingleCrit"
+                "styles"
+                {
+                    "0"
+                    {
+                        "skin_red"        "0"
+                        "skin_blu"        "1"
+                    }
+                }
+            }
+            "visuals_red"    
+            {
+                "skin"        "0"
+                "sound_single_shot"        "Airboat.FireGunRevDown"
+                "sound_burst"        "Weapon_Capper.SingleCrit"
+                "muzzle_flash"        "muzzle_raygun_red"
+                "tracer_effect"        "bullet_tracer_raygun"
+            }
+            "visuals_blu"
+            {
+                "skin"        "1"
+                "sound_single_shot"        "Weapon_Capper.Single"
+                "sound_burst"        "Weapon_Capper.SingleCrit"
+                "muzzle_flash"        "muzzle_raygun_blue"
+                "tracer_effect"        "bullet_tracer_raygun"
+            }
+        }
 		"30570"
 		{
 			"name"		"Pool Party Taunt"
