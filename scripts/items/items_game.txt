@@ -21959,8 +21959,8 @@
 				"can_craft_if_purchased"	"1"
 			}
 			"show_in_armory"	"1"
-			"item_type_name" "#TF_Wearable_Hat"
-			"item_name"	"#TF_BucketHat"
+			"item_type_name" "Glasses"
+			"item_name"	"Security Shades"
 			"item_description"	"#TF_BucketHat_Desc"
 			"item_slot"	"head"
 			"equip_regions"
@@ -25763,6 +25763,74 @@
 			}
 			"mouse_pressed_sound"	"ui/item_light_gun_pickup.wav"
 			"drop_sound"		"ui/item_light_gun_drop.wav"
+		}
+				"6981"
+		{
+			"name"	"The SPAS-12"
+			"item_class"	"tf_weapon_shotgun"
+			"tags"
+			{
+				"can_deal_damage"			"1"
+				"can_deal_mvm_penetration_damage"	"1"
+				"can_deal_long_distance_damage"	"1"
+			}
+			"item_type_name"	"#TF_Weapon_Shotgun"
+			"item_name"	"The SPAS-12"
+			"item_slot"	"secondary"
+			"image_inventory"	"backpack/weapons/w_models/w_shotgun"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"82"
+			"model_world"	"models/weapons/c_models/c_shotguno/c_shotgun.mdl"
+			"model_player"	"models/weapons/c_models/c_shotguno/c_shotgun.mdl"
+			"attach_to_hands" "1"
+			"inspect_panel_dist" "40"
+			"show_in_armory" "1"
+			"item_quality"	"unique"
+			"propername"	"1"
+			"min_ilevel"	"5"
+			"max_ilevel"	"5"
+			"used_by_classes"
+			{
+				"engineer"			"primary"
+				"pyro"			"secondary"
+				"soldier"			"secondary"
+				"heavy"			"secondary"
+			}
+			"particle_suffix"		"shotgun"
+			"mouse_pressed_sound"	"ui/item_heavy_gun_pickup.wav"
+			"drop_sound"		"ui/item_heavy_gun_drop.wav"
+			"static_attrs"
+			{
+				"min_viewmodel_offset"		"10 0 -9"
+			}
+			
+			"visuals"
+			{
+				"sound_single_shot"		"HL2_Weapon_Shotgun.Single"
+				"sound_double_shot"		"HL2_Weapon_Shotgun.Double"
+				"sound_burst"			"HL2_Weapon_Shotgun.Single"
+				"sound_empty"			"HL2_Weapon_Shotgun.Empty"
+				"sound_reload"			"HL2_Weapon_Shotgun.Reload"
+				"sound_special1"		"HL2_Weapon_Shotgun.Special1"
+			}
+			"attributes"
+			{
+				"bullets per shot bonus"
+				{
+					"attribute_class" 	"mult_bullets_per_shot"
+					"value" "1.7"
+				}
+				"spread penalty"
+				{
+					"attribute_class" 	"mult_spread_scale"
+					"value" "1.40"
+				}
+				"special taunt"
+				{
+					"attribute_class"	"special_taunt"
+					"value" "1"
+				}
+			}
 		}
 		"30570"
 		{
