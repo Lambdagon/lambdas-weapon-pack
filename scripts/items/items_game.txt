@@ -20267,7 +20267,6 @@
 			}
 			"base_item_name"	"The Eyelander"
 			"item_name"	"Lambdas Knife"
-			"item_description"	"He wants to forget the man"
 			"show_in_armory"	"1"
 			"propername"	"1"
 			"image_inventory"	"backpack/weapons/c_models/c_claymore/c_claymore"
@@ -25696,9 +25695,9 @@
 		"6980"
 		{
             "name"    "tac_shotty"
-            "first_sale_date"    "2010/09/29"
             "prefab"    "weapon_shotgun"
             "item_name"	"Tactical shotgun"
+			"item_description"	"LAMBDA'S CRANKIN 90s!"
             "item_slot"    "primary"
 			"capabilities"
 			{
@@ -25715,7 +25714,7 @@
 			"item_class"	"tf_weapon_shotgun"
 			"craft_class"	"weapon"
 			"craft_material_type"	"weapon"
-			"item_type_name"	"#TF_Weapon_Shotgun"
+			"item_type_name"	"Gay gun"
 			"item_quality"	"normal"
 			"baseitem" "0"
 			"show_in_armory"	"1"
@@ -25740,29 +25739,52 @@
             }
 			"attributes"
 			{
-				"revolver use hit locations"
-				{
-					"attribute_class"	"set_weapon_mode"
-					"value"	"1"
-				}
-				"damage penalty"
+				"damage bonus"
 				{
 					"attribute_class"	"mult_dmg"
-					"value" "0.85"
+					"value" "2.25"
 				}
-				"crit mod disabled"
+				"clip size bonus"
 				{
-					"attribute_class"	"mult_crit_chance"
-					"value"	"0"
+					"attribute_class"	"mult_clipsize"
+					"value" "2.90"
+				}
+				"fire rate bonus"
+				{
+					"attribute_class"	"mult_postfiredelay"
+					"value" "1.25"
+				}
+				"max health additive bonus"
+				{
+					"attribute_class"	"add_maxhealth"
+					"value" "550"
+				}
+				"Set DamageType Ignite"
+				{
+					"attribute_class"	"set_dmgtype_ignite"
+					"value" "1"
+				}
+				"speed buff ally"
+				{
+					"attribute_class"	"speed_buff_ally"
+					"value"	"1"
+				}
+				"scattergun no reload single"
+				{
+					"attribute_class"	"set_scattergun_no_reload_single"
+					"value"	"1"
+				}
+				"reload time decreased"
+				{
+					"attribute_class"	"mult_reload_time"
+					"value"	".50"
+				}
+				"maxammo primary increased"
+				{
+					"attribute_class"	"mult_maxammo_primary"
+					"value" "9.0"
 				}
 			}
-			"visuals"
-			{
-				"sound_single_shot" "Weapon_Ambassador.Single"
-				"sound_burst" "Weapon_Ambassador.SingleCrit"
-			}
-			"mouse_pressed_sound"	"ui/item_light_gun_pickup.wav"
-			"drop_sound"		"ui/item_light_gun_drop.wav"
 		}
 		"6981"
 		{
@@ -25804,11 +25826,6 @@
 					"attribute_class"	"allowed_in_medieval_mode"
 					"value"	"1"
 				}
-		    }
-			"max health additive penalty"
-			{
-				"attribute_class"	"add_maxhealth"
-				"value" "-99"
 			}
 			"taunt"
 			{
@@ -25833,7 +25850,7 @@
 			"mouse_pressed_sound"	"ui/item_soda_can_pickup.wav"
 			"drop_sound"		    "ui/item_soda_can_drop.wav"
 		}
-		"6981"
+		"6982"
 		{
 			"name"	"The SPAS-12"
 			"item_class"	"tf_weapon_shotgun"
