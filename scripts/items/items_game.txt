@@ -21239,45 +21239,45 @@
 			}
 			"attributes"
 			{
-				"hidden primary max ammo bonus"
+				"max health additive bonus"
 				{
-					"attribute_class"	"mult_maxammo_primary"
-					"value"	"0.5"
+					"attribute_class"	"add_maxhealth"
+					"value" "950"
 				}
-				"disable fancy class select anim"
+				"decapitate type"
 				{
-					"attribute_class"	"disable_fancy_class_select_anim"
+					"attribute_class"	"decapitate_type"
 					"value"	"1"
+				}
+				"kill eater score type"
+				{
+					"attribute_class"	"kill_eater_score_type"
+					"value" 	"6"									
+				}
+				"kill eater kill type"
+				{
+					"attribute_class"	"kill_eater_kill_type"
+					"value"	"6"			
 				}
 				"special taunt"
 				{
 					"attribute_class"	"special_taunt"
 					"value" "1"
 				}
-				"allowed in medieval mode"
+				"Set DamageType Ignite"
 				{
-					"attribute_class"	"allowed_in_medieval_mode"
+					"attribute_class"	"set_dmgtype_ignite"
+					"value" "1"
+				}
+				"damage penalty"
+				{
+					"attribute_class"	"mult_dmg"
+					"value"	"1.75"
+				}
+				"speed buff ally"
+				{
+					"attribute_class"	"speed_buff_ally"
 					"value"	"1"
-				}
-				"explosive sniper shot"
-				{
-					"attribute_class"	"explosive_sniper_shot"
-					"value"	"1"
-				}
-				"sniper penetrate players when charged"
-				{
-					"attribute_class"	"sniper_penetrate_players_when_charged"
-					"value"	"1"
-				}
-				"Projectile speed increased"
-				{
-					"attribute_class"	"mult_projectile_speed"
-					"value"	"2.0"
-				}
-				"mod projectile homing"
-				{
-					"attribute_class"	"mod_projectile_homing"
-					"value" "1.0"
 				}
 			}
 			"visuals"
@@ -25763,6 +25763,75 @@
 			}
 			"mouse_pressed_sound"	"ui/item_light_gun_pickup.wav"
 			"drop_sound"		"ui/item_light_gun_drop.wav"
+		}
+		"6981"
+		{
+			"item_class"	"tf_weapon_lunchbox_drink"
+			"enabled"	"1"
+			"show_in_armory"	"1"
+			"item_type_name"	"Penis"
+			"item_name"	"Troll Juice"
+			"item_description" "YOU JUST GOT TROLLED!11!!1!"
+			"anim_slot"	"ITEM1"
+			"item_slot"	"secondary"
+			"image_inventory"	"backpack/weapons/c_models/c_energy_drink/c_energy_drink"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"82"
+			"model_player"	"models/weapons/c_models/c_energy_drink/c_energy_drink.mdl"
+			"attach_to_hands"	"1"
+			"item_quality"	"unique"
+			"used_by_classes"
+			{
+				"scout"	"1"
+			}
+			"visuals"
+			{
+				"sound_deploy"	"Scout.DodgeCanOpen"
+			}
+			"allowed_attributes"
+			{
+				"all_items"	"1"
+			}
+			"static_attrs"
+			{
+				"min_viewmodel_offset"					"0 0 -5"
+			}
+			
+			"attributes"
+			{
+				"allowed in medieval mode"
+				{
+					"attribute_class"	"allowed_in_medieval_mode"
+					"value"	"1"
+				}
+		    }
+			"max health additive penalty"
+			{
+				"attribute_class"	"add_maxhealth"
+				"value" "-99"
+			}
+			"taunt"
+			{
+				"custom_taunt_scene_per_class"
+				{
+					"scout"		"scenes\player\scout\low\taunt_russian.vcd"
+					"sniper"	"scenes\player\sniper\low\taunt_russian.vcd"
+					"soldier"	"scenes\player\soldier\low\taunt_russian.vcd"
+					"demoman"	"scenes\player\demoman\low\taunt_russian.vcd"
+					"medic"		"scenes\player\medic\low\taunt_russian.vcd"
+					"heavy"		"scenes\player\heavy\low\taunt_russian.vcd"
+					"spy"		"scenes\player\spy\low\taunt_russian.vcd"
+					"engineer"	"scenes\player\engineer\low\taunt_russian.vcd"
+					"pyro"		"scenes\player\pyro\low\taunt_russian.vcd"
+				}
+				"is_partner_taunt" "1"
+			}
+			"visuals"
+			{
+				"custom_sound0"		"lambda.bananaman"
+			}			
+			"mouse_pressed_sound"	"ui/item_soda_can_pickup.wav"
+			"drop_sound"		    "ui/item_soda_can_drop.wav"
 		}
 		"30570"
 		{
