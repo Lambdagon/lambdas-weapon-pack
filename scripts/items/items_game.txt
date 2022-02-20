@@ -26402,6 +26402,160 @@
 				}
 			}
 		}
+		"6990"
+		{
+			"name"		"Packable Provisions"
+			"prefab"		"no_craft misc marketable"
+			"first_sale_date"		"2016/12/15"
+			"item_name"		"#TF_dec16_packable_provisions"
+			"item_description"		"#TF_dec16_packable_provisions_Desc"
+			"item_type_name"		"#TF_Wearable_Provisions"
+			"equip_region"		"Back"
+			"image_inventory"		"backpack/workshop/player/items/engineer/dec16_packable_provisions/dec16_packable_provisions"
+			"capabilities"
+			{
+				"can_craft_count"		"1"
+			}
+			"model_player"		"models/workshop/player/items/engineer/dec16_packable_provisions/dec16_packable_provisions.mdl"
+			"used_by_classes"
+			{
+				"engineer"		"1"
+			}
+			"mouse_pressed_sound"		"ui/item_bag_pickup.wav"
+			"drop_sound"		"ui/item_bag_drop.wav"
+		}
+		"6991"
+		{
+			"name"		"The Egghead's Overalls"
+			"prefab"		"misc"
+			"first_sale_date"		"2014/06/16"
+			"propername"		"1"
+			"valid_for_shuffle"		"1"
+			"item_name"		"#TF_short2014_engineer_nerd_shirt"
+			"item_description"		"#TF_short2014_engineer_nerd_shirt_Desc"
+			"item_type_name"		"#TF_Wearable_Shirt"
+			"equip_region"		"shirt"
+			"image_inventory"		"backpack/workshop/player/items/engineer/short2014_engineer_nerd_shirt/short2014_engineer_nerd_shirt"
+			"capabilities"
+			{
+				"can_craft_count"		"1"
+			}
+			"model_player"		"models/workshop/player/items/engineer/short2014_engineer_nerd_shirt/short2014_engineer_nerd_shirt.mdl"
+			"used_by_classes"
+			{
+				"engineer"		"1"
+			}
+			"mouse_pressed_sound"		"ui/item_hat_pickup.wav"
+			"drop_sound"		"ui/item_hat_drop.wav"
+		}
+		"6992"
+		{
+			"name"	"Texas Slim's Dome Shine"
+			"prefab"	"valve base_hat"
+			"first_sale_date"	"2010/09/29"
+			"item_class"	"tf_wearable"
+			"craft_class"	"hat"
+			"craft_material_type"	"hat"
+			"capabilities"
+			{
+				"nameable"		"1"
+				"can_craft_if_purchased"	"1"
+			}
+			"show_in_armory"	"1"
+			"item_type_name"	"#TF_Wearable_CosmeticItem"
+			"item_name"	"#TF_Hatless_Engineer"
+			"item_description"	"#TF_Hatless_Engineer_Desc"
+			"item_slot"	"head"
+			"equip_region"	"hat"
+			"item_quality"	"unique"
+			"image_inventory"	"backpack/player/items/engineer/engineer_nohat"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"82"
+			"model_player"	"models/player/items/engineer/engineer_nohat.mdl"
+			"drop_type"	"none"
+			"used_by_classes"
+			{
+				"engineer"		"1"
+			}
+			"visuals"
+			{
+				"player_bodygroups"
+				{
+					"hat"			"1"
+				}
+			}
+			"mouse_pressed_sound" 	"ui/item_bald_head_pickup.wav"
+			"drop_sound" 		"ui/item_bald_head_pickup.wav"
+		}
+		"6993"
+		{
+			"name"	"Industrial Festivizer"
+			"first_sale_date"	"2010/12/20"
+			"prefab"	"hat_decoration"
+			"item_name"	"#TF_ColoredLights"
+			"image_inventory"	"backpack/player/items/engineer/engineer_colored_lights"
+			"model_player"	"models/player/items/engineer/engineer_colored_lights.mdl"
+			"used_by_classes"
+			{
+				"engineer"	"1"
+			}
+		}
+		"6994"
+		{
+			"name"		"The Level Three Chin"
+			"prefab"		"misc"
+			"first_sale_date"		"2014/06/16"
+			"propername"		"1"
+			"valid_for_shuffle"		"1"
+			"item_name"		"#TF_short2014_engineer_nerd_chin"
+			"item_description"		"#TF_short2014_engineer_nerd_chin_Desc"
+			"item_type_name"		"#TF_Wearable_Chin"
+			"equip_region"		"beard"
+			"image_inventory"		"backpack/workshop/player/items/engineer/short2014_engineer_nerd_chin/short2014_engineer_nerd_chin"
+			"min_ilevel"		"3"
+			"max_ilevel"		"3"
+			"capabilities"
+			{
+				"can_craft_count"		"1"
+			}
+			"model_player"		"models/workshop/player/items/engineer/short2014_engineer_nerd_chin/short2014_engineer_nerd_chin.mdl"
+			"used_by_classes"
+			{
+				"engineer"		"1"
+			}
+			"mouse_pressed_sound"		"ui/item_gooey_pickup.wav"
+			"drop_sound"		"ui/item_gooey_pickup.wav"
+		}
+		"6996"
+		{
+			"name"		"Ein"
+			"prefab"		"misc"
+			"first_sale_date"		"2014/09/15"
+			"item_type_name"		"#TF_Wearable_Mascot"
+			"item_name"		"#TF_sbox2014_einstein"
+			"item_description"		"#TF_sbox2014_einstein_Desc"
+			"equip_region"		"left_shoulder"
+			"image_inventory"		"backpack/workshop/player/items/engineer/sbox2014_einstein/sbox2014_einstein"
+			"capabilities"
+			{
+				"can_craft_count"		"1"
+			}
+			"model_player"		"models/workshop/player/items/engineer/sbox2014_einstein/sbox2014_einstein.mdl"
+			"used_by_classes"
+			{
+				"engineer"		"1"
+			}
+			"attributes"
+			{
+				"counts as assister is some kind of pet this update is going to be awesome"
+				{
+					"attribute_class"		"counts_as_assister"
+					"value"		"1"
+				}
+			}
+			"mouse_pressed_sound"		"ui/item_hat_pickup.wav"
+			"drop_sound"		"ui/item_hat_drop.wav"
+		}
 		"30570"
 		{
 			"name"		"Pool Party Taunt"
