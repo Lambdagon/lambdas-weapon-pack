@@ -26556,6 +26556,113 @@
 			"mouse_pressed_sound"		"ui/item_hat_pickup.wav"
 			"drop_sound"		"ui/item_hat_drop.wav"
 		}
+		"6997"
+		{
+			"name"	"Emerald Jarate"
+			"prefab"	"valve halloween_costume_piece_2011 base_misc"
+			"item_name"	"#TF_Hwn_MedicMisc2"
+			"item_description"	"#TF_Hwn_MedicMisc2_Desc"
+			"propername"	"1"
+			"item_slot"	"misc"
+			"equip_region"	"medigun_accessories"
+			"image_inventory"	"backpack/player/items/medic/hwn_medic_misc2"
+			"model_player"	"models/player/items/medic/hwn_medic_misc2.mdl"
+			"used_by_classes"
+			{
+				"medic"	"1"
+			}
+		}
+		"6998"
+		{
+			"name"		"Burly Beast"
+			"prefab"		"no_craft misc marketable"
+			"item_name"		"#TF_hwn2016_burly_beast"
+			"item_description"		"#TF_hwn2016_burly_beast_Desc"
+			"item_type_name"		"#TF_Wearable_Shirt"
+			"equip_region"		"shirt"
+			"image_inventory"		"backpack/workshop/player/items/medic/hwn2016_burly_beast/hwn2016_burly_beast"
+			"capabilities"
+			{
+				"can_craft_count"		"1"
+			}
+			"model_player"		"models/workshop/player/items/medic/hwn2016_burly_beast/hwn2016_burly_beast.mdl"
+			"used_by_classes"
+			{
+				"medic"		"1"
+			}
+			"mouse_pressed_sound"		"ui/item_rubber_pickup.wav"
+			"drop_sound"		"ui/item_rubber_pickup.wav"
+		}
+		"6999"
+		{
+			"name"		"The Angel of Death"
+			"prefab"		"misc"
+			"first_sale_date"		"2013/12/19"
+			"item_type_name"		"#TF_Wearable_Apparel"
+			"item_name"		"#TF_xms2013_medic_robe"
+			"item_description"		"#TF_xms2013_medic_robe_Desc"
+			"equip_region"		"shirt"
+			"propername"		"1"
+			"image_inventory"		"backpack/workshop/player/items/medic/xms2013_medic_robe/xms2013_medic_robe"
+			"model_player"		"models/workshop/player/items/medic/xms2013_medic_robe/xms2013_medic_robe.mdl"
+			"used_by_classes"
+			{
+				"medic"		"1"
+			}
+			"mouse_pressed_sound"		"ui/item_hat_pickup.wav"
+			"drop_sound"		"ui/item_hat_drop.wav"
+		}
+		"7000"
+		{
+			"name"	"Archimedes"
+			"first_sale_date"	"2012/08/15"
+			"prefab"	"valve misc"
+			"capabilities"
+			{
+				"can_craft_count"	"1"
+			}
+			"equip_region"	"left_shoulder"
+			"item_type_name"	"#TF_Wearable_Mascot"
+			"item_name"	"#TF_Archimedes"
+			"item_description"	"#TF_Archimedes_Desc"
+			"image_inventory"	"backpack/player/items/medic/archimedes"
+			"model_player"	"models/player/items/medic/archimedes.mdl"
+			"used_by_classes"
+			{
+				"medic"	"1"
+			}
+			"attributes"
+			{
+				"counts as assister is some kind of pet this update is going to be awesome"
+				{
+					"attribute_class"	"counts_as_assister"
+					"value"				"1"
+				}
+			}
+			"mouse_pressed_sound"	"ui/item_hat_pickup.wav"
+			"drop_sound"		"ui/item_hat_drop.wav"
+		}
+		"7001"
+		{
+			"name"		"Halogen Head Lamp"
+			"prefab"		"no_craft hat"
+			"capabilities"
+			{
+				"can_craft_count"		"1"
+			}
+			"item_name"		"#TF_robo_medic_otolaryngologists_mirror"
+			"item_description"		"#TF_robo_medic_otolaryngologists_mirror_Desc"
+			"equip_region"		"hat"
+			"item_type_name"		"#TF_Wearable_Hat"
+			"image_inventory"		"backpack/workshop/player/items/medic/robo_medic_otolaryngologists_mirror/robo_medic_otolaryngologists_mirror"
+			"model_player"		"models/workshop/player/items/medic/robo_medic_otolaryngologists_mirror/robo_medic_otolaryngologists_mirror.mdl"
+			"used_by_classes"
+			{
+				"medic"		"1"
+			}
+			"mouse_pressed_sound"		"ui/item_default_pickup.wav"
+			"drop_sound"		"ui/item_default_drop.wav"
+		}
 		"30570"
 		{
 			"name"		"Pool Party Taunt"
