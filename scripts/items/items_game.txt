@@ -1789,6 +1789,7 @@
 			"used_by_classes"
 			{
 				"medic"	"1"
+				"sniper"	"1"
 			}
 			"static_attrs"
 			{
@@ -2088,6 +2089,7 @@
 			"used_by_classes"
 			{
 				"demoman"	"1"
+				"scout"	"1"
 			}
 			"attributes"
 			{
@@ -2414,6 +2416,7 @@
 			"used_by_classes"
 			{
 				"demoman"	"1"
+				"scout"		"1"
 			}
 			"static_attrs"
 			{
@@ -3521,6 +3524,7 @@
 			"used_by_classes"
 			{
 				"sniper"	"1"
+				"scout"	"1"
 			}
 			"static_attrs"
 			{
@@ -3995,6 +3999,7 @@
 			"used_by_classes"
 			{
 				"scout"	"1"
+				"sniper"	"1"
 			}
 			"attributes"
 			{
@@ -6132,6 +6137,7 @@
 				"pyro" "secondary"
 				"soldier" "secondary"
 				"heavy" "secondary"
+				"medic" "primary"
 			}
 			"static_attrs"
 			{
@@ -6774,6 +6780,7 @@
             "used_by_classes"
             {
                 "engineer"    "1"
+		"medic"	      "1"
             }
         }
 		"10"
@@ -14959,6 +14966,7 @@
 			"used_by_classes"
 			{
 				"demoman"	"1"
+				"scout"		"1"
 			}
 			"attributes"
 			{
@@ -26662,6 +26670,240 @@
 			}
 			"mouse_pressed_sound"		"ui/item_default_pickup.wav"
 			"drop_sound"		"ui/item_default_drop.wav"
+		}
+		"7002"
+		{
+			"name"	"Ol' Snaggletooth"
+			"first_sale_date"	"2010/09/29"
+			"prefab"		"base_hat"
+			"item_class"	"tf_wearable"
+			"loadondemand" "1"
+			"craft_class"	"hat"
+			"craft_material_type"	"hat"
+			"capabilities"
+			{
+				"nameable"		"1"
+				"can_craft_if_purchased"	"1"
+			}
+			"show_in_armory"	"1"
+			"item_type_name"	"#TF_Wearable_Hat"
+			"item_name"	"#TF_OlSnaggletooth"
+			"item_description"	"#TF_OlSnaggletooth_Desc"
+			"item_slot"	"head"
+			"equip_region"	"hat"
+			"item_quality"	"unique"
+			"image_inventory"	"backpack/player/items/sniper/snaggletooth"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"82"
+			"model_player"	"models/player/items/sniper/snaggletooth.mdl"
+			"drop_type"	"drop"
+			"used_by_classes"
+			{
+				"sniper"	"1"
+			}
+			"visuals"
+			{
+				"player_bodygroups"
+				{
+					"hat"			"1"
+				}
+			}
+			"mouse_pressed_sound"	"ui/item_leather_pickup.wav"
+			"drop_sound"		"ui/item_leather_pickup.wav"
+		}
+		"7003"
+		{
+			"name"		"Wild Brim Slouch"
+			"prefab"		"no_craft hat marketable"
+			"item_name"		"#TF_sum21_wild_brim_slouch"
+			"item_description"		"#TF_sum21_wild_brim_slouch_Desc"
+			"equip_region"		"hat"
+			"drop_type"		"drop"
+			"image_inventory"		"backpack/workshop/player/items/sniper/sum21_wild_brim_slouch/sum21_wild_brim_slouch"
+			"capabilities"
+			{
+				"can_craft_count"		"1"
+				"paintable"		"1"
+			}
+			"model_player"		"models/workshop/player/items/sniper/sum21_wild_brim_slouch/sum21_wild_brim_slouch.mdl"
+			"used_by_classes"
+			{
+				"sniper"		"1"
+			}
+		}
+		"7004"
+		{
+			"name"		"Crocodile Dandy"
+			"prefab"		"no_craft misc marketable"
+			"item_name"		"#TF_sum21_crocodile_dandy"
+			"item_description"		"#TF_sum21_crocodile_dandy_Desc"
+			"item_type_name"		"#TF_Wearable_Vest"
+			"equip_region"		"sniper_vest"
+			"image_inventory"		"backpack/workshop/player/items/sniper/sum21_crocodile_dandy/sum21_crocodile_dandy"
+			"capabilities"
+			{
+				"can_craft_count"		"1"
+				"paintable"		"1"
+			}
+			"model_player"		"models/workshop/player/items/sniper/sum21_crocodile_dandy/sum21_crocodile_dandy.mdl"
+			"used_by_classes"
+			{
+				"sniper"		"1"
+			}
+			"mouse_pressed_sound"		"ui/item_leather_pickup.wav"
+			"drop_sound"		"ui/item_leather_pickup.wav"
+		}
+		"7005"	
+		{
+			"name"	"Trophy Belt"
+			"prefab"	"valve base_hat"
+			"first_sale_date"	"2010/09/29"
+			"item_class"	"tf_wearable"
+			"loadondemand" "1"
+			"craft_class"	""
+			"craft_material_type"	"hat"
+			"capabilities"
+			{
+				"nameable"		"1"
+				"paintable"		"1"
+				"can_craft_if_purchased"	"1"
+			}
+			"show_in_armory"	"1"
+			"item_type_name"	"#TF_Wearable_Hat"
+			"item_name"	"#TF_Sniper_Hat_1"
+			"item_description"	"#TF_Sniper_Hat_1_Desc"
+			"item_slot"	"head"
+			"equip_region"	"hat"
+			"item_quality"	"unique"
+			"image_inventory"	"backpack/player/items/sniper/tooth_hat"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"82"
+			"model_player"	"models/player/items/sniper/tooth_hat.mdl"
+			"drop_type"	"none"
+			"used_by_classes"
+			{
+				"sniper"	"1"
+			}
+			"static_attrs"
+			{
+				"limited quantity item"		"1"
+			}
+			"mouse_pressed_sound" 	"ui/item_hat_pickup.wav"
+			"drop_sound" 		"ui/item_hat_drop.wav"
+		}
+		"7006"
+		{
+			"name"	"The Flamingo Kid"
+			"prefab"	"promo hat"
+			"capabilities"
+			{
+			}
+			"item_name"	"#TF_SuperMNC_Sniper"
+			"item_description"	"#TF_SuperMNC_Sniper_Desc"
+			"min_ilevel"	"10"
+			"max_ilevel"	"10"
+			"propername"	"1"
+			"drop_type"	"drop"
+			"image_inventory"	"backpack/player/items/sniper/smnc_sniper"
+			"model_player"	"models/player/items/sniper/smnc_sniper.mdl"
+			"used_by_classes"
+			{
+				"sniper" "1"
+			}
+			"visuals"
+			{
+				"player_bodygroups"
+				{
+					"hat"			"1"
+				}
+			}
+			"mouse_pressed_sound"	"ui/item_hat_pickup.wav"
+			"drop_sound"		"ui/item_hat_drop.wav"
+		}
+		"7007"
+		{
+			"name"	"Sniper's Snipin' Glass"
+			"prefab"		"base_misc"
+			"item_class"	"tf_wearable"
+			"loadondemand" "1"
+			"capabilities"
+			{
+				"nameable"		"1"
+			}
+			"show_in_armory"	"1"
+			"min_ilevel"	"20"
+			"max_ilevel"	"20"
+			"item_type_name"	"#TF_Wearable_Hat"
+			"item_name"	"#TF_DotaSniper_Hat"
+			"item_description"	"#TF_DotaGamescom2011_Hat_Desc"
+			"item_slot"	"misc"
+			"equip_region"	"glasses"
+			"item_quality"	"unique"
+			"image_inventory"	"backpack/player/items/sniper/dotasniper_hat"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"82"
+			"model_player"	"models/player/items/sniper/dotasniper_hat.mdl"
+			"drop_type"	"none"
+			"used_by_classes"
+			{
+				"sniper"	"1"
+			}
+			"visuals"
+			{
+				"player_bodygroups"
+				{
+					"hat"			"1"
+				}
+			}
+			"attributes"
+			{
+				"cannot trade"
+				{
+					"attribute_class"	"cannot_trade"
+					"value"				"1"
+				}
+			}
+			"mouse_pressed_sound" 	"ui/item_hat_pickup.wav"
+			"drop_sound" 		"ui/item_hat_drop.wav"
+		}
+		"7008"
+		{
+			"name" "Halloween 2012 Community Bundle"
+			"prefab"	"default_bundle_payment"
+			"first_sale_date"	"2012/10/24"
+			"item_class"	"bundle"
+			"bundle"
+			{
+				"Sir Hootsalot"				"1"
+				"The Master Mind"			"1"
+				"The Rump-o'-Lantern"		"1"
+				"The Scarecrow"				"1"
+				"The Crone's Dome"			"1"
+				"The Executioner"			"1"
+				"The Bonedolier"			"1"
+				"The Plutonidome"			"1"
+				"The Spooky Shoes"			"1"
+				"The Spooky Sleeves"		"1"
+				"The Zipperface"			"1"
+				"The Boo Balloon"			"1"
+				"The Unknown Monkeynaut"	"1"
+				"The Grand Duchess Tutu"		"1"
+				"The Grand Duchess Fairy Wings"	"1"
+				"The Grand Duchess Tiara"		"1"
+				"The Dead Little Buddy"		"1"
+				"The Exorcizor"				"1"
+				"The Voodoo Juju (Slight Return)"	"1"
+				"The Wraith Wrap"			"1"
+				"The Coffin Kit"			"1"
+				"The Bat Outta Hell"		"1"
+			}
+			"item_type_name"	"#TF_StoreBundle"
+			"item_name"		"#TF_Halloween2012CommunityBundle"
+			"item_description"	"#TF_Halloween2012CommunityBundle_Desc"
+			"image_inventory"	"backpack/player/items/crafting/halloween_bundle"
+			"image_inventory_size_w"	"128"
+			"image_inventory_size_h"	"82"
+			"item_quality"		"unique"
 		}
 		"30570"
 		{
