@@ -26905,6 +26905,265 @@
 			"image_inventory_size_h"	"82"
 			"item_quality"		"unique"
 		}
+		"7009"
+		{
+			"name"		"The Antarctic Researcher"
+			"propername"		"1"
+			"prefab"		"misc"
+			"first_sale_date"		"2014/09/15"
+			"item_type_name"		"#TF_Wearable_Coat"
+			"item_name"		"#TF_sbox2014_antarctic_researcher"
+			"item_description"		"#TF_sbox2014_antarctic_researcher_Desc"
+			"equip_region"		"shirt"
+			"image_inventory"		"backpack/workshop/player/items/engineer/sbox2014_antarctic_researcher/sbox2014_antarctic_researcher"
+			"capabilities"
+			{
+				"can_craft_count"		"1"
+			}
+			"model_player"		"models/workshop/player/items/engineer/sbox2014_antarctic_researcher/sbox2014_antarctic_researcher.mdl"
+			"used_by_classes"
+			{
+				"engineer"		"1"
+			}
+			"mouse_pressed_sound"		"ui/item_hat_pickup.wav"
+			"drop_sound"		"ui/item_hat_drop.wav"
+		}
+		"7010"
+		{
+			"name"		"The Trencher's Tunic"
+			"propername"		"1"
+			"prefab"		"misc"
+			"first_sale_date"		"2014/09/15"
+			"item_type_name"		"#TF_Wearable_Apparel"
+			"item_name"		"#TF_sbox2014_trenchers_tunic"
+			"item_description"		"#TF_sbox2014_trenchers_tunic_Desc"
+			"equip_region"		"shirt"
+			"image_inventory"		"backpack/workshop/player/items/engineer/sbox2014_trenchers_tunic/sbox2014_trenchers_tunic"
+			"capabilities"
+			{
+				"can_craft_count"		"1"
+			}
+			"model_player"		"models/workshop/player/items/engineer/sbox2014_trenchers_tunic/sbox2014_trenchers_tunic.mdl"
+			"used_by_classes"
+			{
+				"engineer"		"1"
+			}
+			"mouse_pressed_sound"		"ui/item_hat_pickup.wav"
+			"drop_sound"		"ui/item_hat_drop.wav"
+		}
+		"7011"
+		{
+			"name"		"The Endothermic Exowear"
+			"prefab"		"misc"
+			"first_sale_date"		"2014/06/16"
+			"valid_for_shuffle"		"1"
+			"item_name"		"#TF_short2014_endothermic_exowear"
+			"item_description"		"#TF_short2014_endothermic_exowear_Desc"
+			"item_type_name"		"#TF_Wearable_Shirt"
+			"equip_region"		"shirt"
+			"image_inventory"		"backpack/workshop/player/items/engineer/short2014_endothermic_exowear/short2014_endothermic_exowear"
+			"capabilities"
+			{
+				"can_craft_count"		"1"
+				"paintable"		"1"
+			}
+			"model_player"		"models/workshop/player/items/engineer/short2014_endothermic_exowear/short2014_endothermic_exowear.mdl"
+			"used_by_classes"
+			{
+				"engineer"		"1"
+			}
+			"mouse_pressed_sound"		"ui/item_hat_pickup.wav"
+			"drop_sound"		"ui/item_hat_drop.wav"
+		}
+		"7012"
+		{
+			"name"		"The Tools of the Trade"
+			"prefab"		"misc"
+			"first_sale_date"		"2014/06/16"
+			"propername"		"1"
+			"valid_for_shuffle"		"1"
+			"item_name"		"#TF_short2014_engie_toolbelt"
+			"item_description"		"#TF_short2014_engie_toolbelt_Desc"
+			"item_type_name"		"#TF_Wearable_ToolBelt"
+			"image_inventory"		"backpack/workshop/player/items/engineer/short2014_engie_toolbelt/short2014_engie_toolbelt"
+			"capabilities"
+			{
+				"can_craft_count"		"1"
+			}
+			"model_player"		"models/workshop/player/items/engineer/short2014_engie_toolbelt/short2014_engie_toolbelt.mdl"
+			"used_by_classes"
+			{
+				"engineer"		"1"
+			}
+			"mouse_pressed_sound"		"ui/item_bag_pickup.wav"
+			"drop_sound"		"ui/item_bag_drop.wav"
+		}
+		"7013"
+		{
+			"name"		"The Joe-on-the-Go"
+			"prefab"		"misc"
+			"first_sale_date"		"2014/06/16"
+			"propername"		"1"
+			"valid_for_shuffle"		"1"
+			"item_name"		"#TF_short2014_poopyj_backpack"
+			"item_description"		"#TF_short2014_poopyj_backpack_Desc"
+			"item_type_name"		"#TF_Wearable_Backpack"
+			"equip_region"		"back"
+			"image_inventory"		"backpack/workshop/player/items/engineer/short2014_poopyj_backpack/short2014_poopyj_backpack"
+			"capabilities"
+			{
+				"can_craft_count"		"1"
+				"paintable"		"1"
+			}
+			"model_player"		"models/workshop/player/items/engineer/short2014_poopyj_backpack/short2014_poopyj_backpack.mdl"
+			"used_by_classes"
+			{
+				"engineer"		"1"
+			}
+			"mouse_pressed_sound"		"ui/item_bag_pickup.wav"
+			"drop_sound"		"ui/item_bag_drop.wav"
+		}
+		"7014"
+		{
+			"name"		"EOTL_Insulated_innovator"
+			"prefab"		"no_craft misc"
+			"item_type_name"		"#TF_Wearable_Coat"
+			"item_name"		"#TF_EOTL_insulated_innovator"
+			"item_description"		"#TF_insulated_innovator_Desc"
+			"equip_region"		"shirt"
+			"image_inventory"		"backpack/workshop/player/items/engineer/insulated_innovator/insulated_innovator"
+			"capabilities"
+			{
+				"can_craft_count"		"1"
+				"paintable"		"1"
+			}
+			"model_player"		"models/workshop/player/items/engineer/insulated_innovator/insulated_innovator.mdl"
+			"used_by_classes"
+			{
+				"engineer"		"1"
+			}
+			"mouse_pressed_sound"		"ui/item_hat_pickup.wav"
+			"drop_sound"		"ui/item_hat_drop.wav"
+		}
+		"7015"
+		{
+			"name"		"dec2014 Thermal Insulation Layer"
+			"prefab"		"no_craft misc"
+			"item_name"		"#TF_dec2014_thermal_insulation_layer"
+			"item_description"		"#TF_dec2014_cosmetic_desc"
+			"item_type_name"		"#TF_Wearable_Apparel"
+			"equip_region"		"shirt"
+			"image_inventory"		"backpack/workshop/player/items/engineer/dec2014_thermal_insulation_layer/dec2014_thermal_insulation_layer"
+			"capabilities"
+			{
+				"can_craft_count"		"1"
+			}
+			"model_player"		"models/workshop/player/items/engineer/dec2014_thermal_insulation_layer/dec2014_thermal_insulation_layer.mdl"
+			"used_by_classes"
+			{
+				"engineer"		"1"
+			}
+			"static_attrs"
+			{
+				"limited quantity item"		"1"
+			}
+			"mouse_pressed_sound"		"ui/item_hat_pickup.wav"
+			"drop_sound"		"ui/item_hat_drop.wav"
+		}
+		"7016"
+		{
+			"name"		"Wild West Waistcoat"
+			"prefab"		"no_craft misc marketable"
+			"item_name"		"#TF_cc_summer2015_wild_west_waistcoat"
+			"item_description"		"#TF_cc_summer2015_wild_west_waistcoat_Desc"
+			"item_type_name"		"#TF_Wearable_Vest"
+			"equip_region"		"shirt"
+			"image_inventory"		"backpack/workshop/player/items/engineer/cc_summer2015_wild_west_waistcoat/cc_summer2015_wild_west_waistcoat"
+			"capabilities"
+			{
+				"can_craft_count"		"1"
+				"paintable"		"1"
+			}
+			"model_player"		"models/workshop/player/items/engineer/cc_summer2015_wild_west_waistcoat/cc_summer2015_wild_west_waistcoat.mdl"
+			"used_by_classes"
+			{
+				"engineer"		"1"
+			}
+			"mouse_pressed_sound"		"ui/item_hat_pickup.wav"
+			"drop_sound"		"ui/item_hat_drop.wav"
+		}
+		"7017"
+		{
+			"name"		"Rocket Operator"
+			"prefab"		"no_craft misc marketable"
+			"item_name"		"#TF_invasion_rocket_operator"
+			"item_description"		"#TF_invasion_rocket_operator_Desc"
+			"equip_region"		"shirt"
+			"item_type_name"		"#TF_Wearable_Apparel"
+			"image_inventory"		"backpack/workshop/player/items/engineer/invasion_rocket_operator/invasion_rocket_operator"
+			"capabilities"
+			{
+				"can_craft_count"		"1"
+			}
+			"model_player"		"models/workshop/player/items/engineer/invasion_rocket_operator/invasion_rocket_operator.mdl"
+			"used_by_classes"
+			{
+				"engineer"		"1"
+			}
+			"mouse_pressed_sound"		"ui/item_hat_pickup.wav"
+			"drop_sound"		"ui/item_hat_drop.wav"
+		}
+		"7018"
+		{
+			"name"		"A Shell of a Mann"
+			"prefab"		"no_craft misc marketable"
+			"item_name"		"#TF_hwn2018_shell_of_a_mann"
+			"item_description"		"#TF_hwn2018_shell_of_a_mann_Desc"
+			"item_type_name"		"#TF_Wearable_Costume"
+			"equip_region"		"back"
+			"image_inventory"		"backpack/workshop/player/items/engineer/hwn2018_shell_of_a_mann/hwn2018_shell_of_a_mann"
+			"capabilities"
+			{
+				"can_craft_count"		"1"
+			}
+			"holiday_restriction"		"halloween_or_fullmoon"
+			"model_player"		"models/workshop/player/items/engineer/hwn2018_shell_of_a_mann/hwn2018_shell_of_a_mann.mdl"
+			"used_by_classes"
+			{
+				"engineer"		"1"
+			}
+		}
+		"7019"
+		{
+			"name"		"The Puggyback"
+			"prefab"		"no_craft misc marketable"
+			"item_name"		"#TF_dec18_puggyback"
+			"item_description"		"#TF_dec18_puggyback_Desc"
+			"item_type_name"		"#TF_Wearable_Mascot"
+			"equip_region"		"back"
+			"image_inventory"		"backpack/workshop/player/items/engineer/dec18_puggyback/dec18_puggyback"
+			"capabilities"
+			{
+				"can_craft_count"		"1"
+				"paintable"		"1"
+			}
+			"propername"		"1"
+			"model_player"		"models/workshop/player/items/engineer/dec18_puggyback/dec18_puggyback.mdl"
+			"used_by_classes"
+			{
+				"engineer"		"1"
+			}
+			"attributes"
+			{
+				"counts as assister is some kind of pet this update is going to be awesome"
+				{
+					"attribute_class"		"counts_as_assister"
+					"value"		"1"
+				}
+			}
+			"mouse_pressed_sound"		"ui/item_bag_pickup.wav"
+			"drop_sound"		"ui/item_bag_drop.wav"
+		}
 		"30570"
 		{
 			"name"		"Pool Party Taunt"
