@@ -8830,12 +8830,12 @@
 				"Construction rate increased"
 				{
 					"attribute_class"	"mult_construction_value"
-					"value"		"25"
+					"value"		"250"
 				}
 				"fire rate bonus"
 				{
 					"attribute_class"	"mult_postfiredelay"
-					"value"	"0.85"
+					"value"	"0.80"
 				}
 			}
 			"static_attrs"
@@ -29900,6 +29900,355 @@
 			"used_by_classes"
 			{
 				"pyro"		"1"
+			}
+			"mouse_pressed_sound"		"ui/item_hat_pickup.wav"
+			"drop_sound"		"ui/item_hat_drop.wav"
+		}
+		"7101"
+		{
+			"name"		"The Space Diver"
+			"prefab"		"no_craft misc marketable"
+			"item_name"		"#TF_invasion_the_space_diver"
+			"item_description"		"#TF_invasion_the_space_diver_Desc"
+			"equip_region"		"shirt"
+			"propername"		"1"
+			"item_type_name"		"#TF_Wearable_Apparel"
+			"visuals"
+			{
+				"player_bodygroups"
+				{
+					"grenades"		"1"
+				}
+			}
+			"image_inventory"		"backpack/workshop/player/items/pyro/invasion_the_space_diver/invasion_the_space_diver"
+			"capabilities"
+			{
+				"can_craft_count"		"1"
+				"paintable"		"1"
+			}
+			"model_player"		"models/workshop/player/items/pyro/invasion_the_space_diver/invasion_the_space_diver.mdl"
+			"used_by_classes"
+			{
+				"pyro"		"1"
+			}
+			"mouse_pressed_sound"		"ui/item_hat_pickup.wav"
+			"drop_sound"		"ui/item_hat_drop.wav"
+		}
+		"7102"
+		{
+			"name"	"Scotch Bonnet"
+			"first_sale_date"	"2010/12/08"
+			"prefab"		"base_hat"
+			"loadondemand" "1"
+			"item_class"	"tf_wearable"
+			"craft_class"	"hat"
+			"craft_material_type"	"hat"
+			"capabilities"
+			{
+				"nameable"		"1"
+				"can_craft_if_purchased"	"1"
+			}
+			"show_in_armory"	"1"
+			"item_type_name" "#TF_Wearable_Headgear"
+			"item_name"	"#TF_ScotchBonnet"
+			"item_description"	"#TF_ScotchBonnet_Desc"
+			"item_slot"	"head"
+			"equip_region"	"hat"
+			"item_quality"	"unique"
+			"image_inventory"	"backpack/player/items/demo/demo_scotchbonnet"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"82"
+			"model_player"	"models/player/items/demo/demo_scotchbonnet.mdl"
+			"drop_type"	"drop"
+			"propername"	"0"
+			"used_by_classes"
+			{
+				"demoman"	"1"
+			}
+			"mouse_pressed_sound"	"ui/item_helmet_pickup.wav"
+			"drop_sound"		"ui/item_helmet_drop.wav"
+		}
+		"7103"
+		{
+			"name"	"Scotsman's Stove Pipe"
+			"prefab"	"valve base_hat"
+			"first_sale_date"	"2010/09/29"
+			"item_class"	"tf_wearable"
+			"loadondemand" "1"
+			"craft_class"	"hat"
+			"craft_material_type"	"hat"
+			"capabilities"
+			{
+				"nameable"		"1"
+				"paintable"		"1"
+				"can_craft_if_purchased"	"1"
+			}
+			"show_in_armory"	"1"
+			"item_type_name"	"#TF_Wearable_Hat"
+			"item_name"	"#TF_Demo_Top_Hat"
+			"item_description"	"#TF_Demo_Top_Hat_Desc"
+			"item_slot"	"head"
+			"equip_region"	"hat"
+			"item_quality"	"unique"
+			"image_inventory"	"backpack/player/items/demo/top_hat"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"82"
+			"model_player"	"models/player/items/demo/top_hat.mdl"
+			"drop_type"	"drop"
+			"used_by_classes"
+			{
+				"demoman"	"1"
+			}
+			"visuals"
+			{
+				"styles"
+				{
+					"0"
+					{
+						"skin"	"0"
+						"name"	"#TF_StovePipe_Style0"
+					}
+					"1"
+					{
+						"skin"	"1"
+						"name"	"#TF_StovePipe_Style1"
+					}
+				}
+			}
+			"mouse_pressed_sound" 	"ui/item_hat_pickup.wav"
+			"drop_sound" 		"ui/item_hat_drop.wav"
+		}
+		"7104"
+		{
+			"name"	"Prince Tavish's Crown"
+			"first_sale_date"	"2010/12/20"
+			"prefab"	"valve hat"
+			"capabilities"
+			{
+				"paintable"		"1"
+			}
+			"item_name"	"#TF_TavishCrown"
+			"image_inventory"	"backpack/player/items/demo/crown"
+			"model_player"	"models/player/items/demo/crown.mdl"
+			"drop_type"	"drop"
+			"used_by_classes"
+			{
+				"demoman"	"1"
+			}
+			"visuals"
+			{
+				"player_bodygroups"
+				{
+					"hat"			"1"
+					"headphones"	"1"
+				}
+			}
+			"mouse_pressed_sound" 	"ui/item_helmet_pickup.wav"
+			"drop_sound" 		"ui/item_helmet_drop.wav"
+		}
+		"7105"
+		{
+			"name"	"The Buccaneer's Bicorne"
+			"prefab"		"base_hat"
+			"first_sale_date"	"2011/09/07"
+			"item_class"	"tf_wearable"
+			"craft_class"	"hat"
+			"craft_material_type"	"hat"
+			"capabilities"
+			{
+				"nameable"		"1"
+				"paintable"		"1"
+				"can_craft_count"	"1"
+				"can_craft_if_purchased"	"1"
+			}
+			"loadondemand" "1"
+			"show_in_armory"	"1"
+			"item_type_name"	"#TF_Wearable_Hat"
+			"item_name"	"#TF_BuccaneersBicorne"
+			"item_description"	"#TF_BuccaneersBicorne_Desc"
+			"min_ilevel"	"10"
+			"max_ilevel"	"10"
+			"item_slot"	"head"
+			"equip_region"	"hat"
+			"item_quality"	"unique"
+			"propername"	"1"
+			"image_inventory"	"backpack/player/items/demo/mightypirate"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"82"
+			"model_player"	"models/player/items/demo/mighty_pirate.mdl"
+			"drop_type"	"drop"
+			"used_by_classes"
+			{
+				"demoman"	"1"
+			}
+			"mouse_pressed_sound" 	"ui/item_hat_pickup.wav"
+			"drop_sound" 		"ui/item_hat_drop.wav"
+		}
+		"7106"
+		{
+			"name"	"A Whiff of the Old Brimstone"
+			"prefab"	"grenades"
+			"first_sale_date"	"2011/09/07"
+			"capabilities"
+			{
+				"can_craft_count"	"1"
+			}
+			"item_name"	"#TF_OldBrimstone"
+			"item_description"	"#TF_OldBrimstone_Desc"
+			"image_inventory"	"backpack/player/items/demo/bombs"
+			"min_ilevel"	"20"
+			"max_ilevel"	"20"
+			"model_player"	"models/player/items/demo/demo_bombs.mdl"
+			"model_vision_filtered"	"models/player/items/all_class/mtp_bottle_demo.mdl"
+			"used_by_classes"
+			{
+				"demoman"	"1"
+			}
+		}
+		"7107"
+		{
+			"name"	"Sultan's Ceremonial"
+			"prefab"		"base_hat"
+			"first_sale_date"	"2011/03/17"
+			"loadondemand"	"1"
+			"hidden"	"0"
+			"item_class"	"tf_wearable"
+			"craft_class"	"hat"
+			"craft_material_type"	"hat"
+			"capabilities"
+			{
+				"nameable"				"1"
+				"can_craft_count"		"1"
+				"can_craft_if_purchased"	"1"
+			}
+			"show_in_armory"	"1"
+			"item_type_name" "#TF_Wearable_Hat"
+			"item_name"	"#TF_SultansCeremonial"
+			"item_slot"	"head"
+			"equip_region"	"hat"
+			"item_quality"	"unique"
+			"image_inventory"	"backpack/player/items/demo/demo_sultan_hat"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"82"
+			"model_player"	"models/player/items/demo/demo_sultan_hat.mdl"
+			"drop_type"	"drop"
+			"used_by_classes"
+			{
+				"demoman"	"1"
+			}
+			"visuals"
+			{
+				"player_bodygroups"
+				{
+					"hat"			"1"
+				}
+			}
+			"mouse_pressed_sound" 	"ui/item_hat_pickup.wav"
+			"drop_sound" 		"ui/item_hat_drop.wav"
+		}
+		"7108"
+		{
+			"name"	"The King of Scotland Cape"
+			"first_sale_date"	"2012/10/09"
+			"prefab"	"misc"
+			"capabilities"
+			{
+				"can_craft_count"	"1"
+			}
+			"item_slot"	"misc"
+			"equip_region"	"back"
+			"item_type_name"	"TF_Wearable_Cape"
+			"item_name"	"#TF_TW_Cape"
+			"item_description"	"#TF_TW_Cape_Desc"
+			"propername"	"1"
+			"image_inventory"	"backpack/workshop_partner/player/items/demo/tw_kingcape/tw_kingcape"
+			"model_player"	"models/workshop_partner/player/items/demo/tw_kingcape/tw_kingcape.mdl"
+			"used_by_classes"
+			{
+				"demoman"	"1"
+			}
+			"mouse_pressed_sound"	"ui/item_hat_pickup.wav"
+			"drop_sound"		"ui/item_hat_drop.wav"
+		}
+		"7109"
+		{
+			"name"		"The Bomber Knight"
+			"prefab"		"no_craft hat marketable"
+			"first_sale_date"		"2016/12/15"
+			"item_name"		"#TF_dec16_bomber_knight"
+			"item_description"		"#TF_dec16_bomber_knight_Desc"
+			"item_type_name"		"#TF_Wearable_Helmet"
+			"equip_region"		"hat"
+			"propername"		"1"
+			"image_inventory"		"backpack/workshop/player/items/demo/dec16_bomber_knight/dec16_bomber_knight"
+			"capabilities"
+			{
+				"can_craft_count"		"1"
+				"paintable"		"1"
+			}
+			"model_player"		"models/workshop/player/items/demo/dec16_bomber_knight/dec16_bomber_knight.mdl"
+			"used_by_classes"
+			{
+				"demoman"		"1"
+			}
+			"attributes"
+			{
+				"attach particle effect static"
+				{
+					"attribute_class"		"set_attached_particle_static"
+					"value"		"28"
+				}
+			}
+			"mouse_pressed_sound"		"ui/item_helmet_pickup.wav"
+			"drop_sound"		"ui/item_helmet_drop.wav"
+		}
+		"7110"
+		{
+			"name"		"Helm Helm"
+			"prefab"		"no_craft hat marketable"
+			"item_name"		"#TF_dec20_helm_helm"
+			"item_description"		"#TF_dec20_helm_helm_Desc"
+			"equip_region"		"hat"
+			"drop_type"		"drop"
+			"image_inventory"		"backpack/workshop/player/items/demo/dec20_helm_helm/dec20_helm_helm"
+			"capabilities"
+			{
+				"can_craft_count"		"1"
+				"paintable"		"1"
+			}
+			"model_player"		"models/workshop/player/items/demo/dec20_helm_helm/dec20_helm_helm.mdl"
+			"used_by_classes"
+			{
+				"demoman"		"1"
+			}
+		}
+		"7111"
+		{
+			"name"		"The Juggernaut Jacket"
+			"propername"		"1"
+			"prefab"		"misc"
+			"first_sale_date"		"2014/09/15"
+			"item_type_name"		"#TF_Wearable_Apparel"
+			"item_name"		"#TF_sbox2014_juggernaut_jacket"
+			"item_description"		"#TF_sbox2014_juggernaut_jacket_Desc"
+			"equip_region"		"left_shoulder"
+			"visuals"
+			{
+				"player_bodygroups"
+				{
+					"grenades"		"1"
+				}
+			}
+			"image_inventory"		"backpack/workshop/player/items/demo/sbox2014_juggernaut_jacket/sbox2014_juggernaut_jacket"
+			"capabilities"
+			{
+				"can_craft_count"		"1"
+				"paintable"		"1"
+			}
+			"model_player"		"models/workshop/player/items/demo/sbox2014_juggernaut_jacket/sbox2014_juggernaut_jacket.mdl"
+			"used_by_classes"
+			{
+				"demoman"		"1"
 			}
 			"mouse_pressed_sound"		"ui/item_hat_pickup.wav"
 			"drop_sound"		"ui/item_hat_drop.wav"
