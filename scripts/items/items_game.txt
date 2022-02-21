@@ -24643,7 +24643,7 @@
 			"item_description"		"#TF_dec15_heavy_sweater_Desc"
 			"item_type_name"		"#TF_Wearable_Sweater"
 			"equip_region"		"shirt"
-			"item_slot" 	"misc2"
+			"item_slot" 	"misc"
 			"image_inventory"		"backpack/workshop/player/items/heavy/dec15_heavy_sweater/dec15_heavy_sweater"
 			"capabilities"
 			{
