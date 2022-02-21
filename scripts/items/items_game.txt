@@ -31074,7 +31074,7 @@
 				"Projectile speed decreased"
 				{
 					"attribute_class"	"mult_projectile_speed"
-					"value"	"0.001"
+					"value"	"0.00001"
 				}
 				"disable fancy class select anim"
 				{
