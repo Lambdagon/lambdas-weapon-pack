@@ -30253,6 +30253,770 @@
 			"mouse_pressed_sound"		"ui/item_hat_pickup.wav"
 			"drop_sound"		"ui/item_hat_drop.wav"
 		}
+		"7112"
+		{
+			"name"	"The Cool Breeze"
+			"first_sale_date"	"2013/01/24"
+			"prefab"	"misc"
+			"equip_region"	"pants"
+			"item_type_name"	"#TF_Wearable_Kilt"
+			"item_name"	"#TF_TheCoolBreeze"
+			"item_description"	"#TF_TheCoolBreeze_Desc"
+			"image_inventory"	"backpack/workshop/player/items/demo/demo_kilt/demo_kilt"	
+			"model_player"	"models/workshop/player/items/demo/demo_kilt/demo_kilt.mdl"
+			"propername"	"1"
+			"drop_type"	"none"
+			"capabilities"
+			{
+				"can_craft_count"	"1"
+			}
+			"used_by_classes"
+			{
+				"demoman"	"1"
+			}
+			"mouse_pressed_sound"	"ui/item_hat_pickup.wav"
+			"drop_sound"		"ui/item_hat_drop.wav"
+		}
+		"7113"
+		{
+			"name"		"Spiky Viking"
+			"prefab"		"no_craft hat marketable"
+			"item_name"		"#TF_dec19_spiky_viking"
+			"item_description"		"#TF_dec19_spiky_viking_Desc"
+			"item_type_name"		"#TF_Wearable_Helmet"
+			"equip_region"		"hat"
+			"image_inventory"		"backpack/workshop/player/items/demo/dec19_spiky_viking/dec19_spiky_viking"
+			"capabilities"
+			{
+				"can_craft_count"		"1"
+				"paintable"		"1"
+			}
+			"model_player"		"models/workshop/player/items/demo/dec19_spiky_viking/dec19_spiky_viking.mdl"
+			"used_by_classes"
+			{
+				"demoman"		"1"
+			}
+			"mouse_pressed_sound"		"ui/item_helmet_pickup.wav"
+			"drop_sound"		"ui/item_helmet_drop.wav"
+			"visuals"
+			{
+				"styles"
+				{
+					"0"
+					{
+						"name"		"#TF_dec19_spiky_viking_style0"
+						"model_player"		"models/workshop/player/items/demo/dec19_spiky_viking/dec19_spiky_viking.mdl"
+						"skin_red"		"0"
+						"skin_blu"		"1"
+					}
+					"1"
+					{
+						"name"		"#TF_dec19_spiky_viking_style1"
+						"model_player"		"models/workshop/player/items/demo/dec19_spiky_viking_s2/dec19_spiky_viking_s2.mdl"
+						"skin_red"		"0"
+						"skin_blu"		"1"
+					}
+				}
+			}
+		}
+		"7114"
+		{
+			"name"		"Mann of the Seven Sees"
+			"prefab"		"no_craft misc"
+			"item_type_name"		"#TF_Wearable_Coat"
+			"item_name"		"#TF_sept2014_mann_of_the_seven_sees"
+			"item_description"		"#TF_sept2014_cosmetic_desc"
+			"equip_region"		"sleeves"
+			"image_inventory"		"backpack/workshop/player/items/demo/sept2014_mann_of_the_seven_sees/sept2014_mann_of_the_seven_sees"
+			"capabilities"
+			{
+				"can_craft_count"		"1"
+				"paintable"		"1"
+			}
+			"model_player"		"models/workshop/player/items/demo/sept2014_mann_of_the_seven_sees/sept2014_mann_of_the_seven_sees.mdl"
+			"used_by_classes"
+			{
+				"demoman"		"1"
+			}
+			"static_attrs"
+			{
+				"limited quantity item"		"1"
+			}
+			"mouse_pressed_sound"		"ui/item_hat_pickup.wav"
+			"drop_sound"		"ui/item_hat_drop.wav"
+		}
+		"7115"
+		{
+			"name"		"Stylish DeGroot"
+			"prefab"		"hat"
+			"first_sale_date"		"2014/09/15"
+			"item_name"		"#TF_sbox2014_stylish_degroot"
+			"item_description"		"#TF_sbox2014_stylish_degroot_Desc"
+			"equip_region"		"head_skin"
+			"image_inventory"		"backpack/workshop/player/items/demo/sbox2014_stylish_degroot/sbox2014_stylish_degroot"
+			"capabilities"
+			{
+				"can_craft_count"		"1"
+				"paintable"		"1"
+			}
+			"model_player"		"models/workshop/player/items/demo/sbox2014_stylish_degroot/sbox2014_stylish_degroot.mdl"
+			"used_by_classes"
+			{
+				"demoman"		"1"
+			}
+			"mouse_pressed_sound"		"ui/item_hat_pickup.wav"
+			"drop_sound"		"ui/item_hat_drop.wav"
+		}
+		"7116"
+		{
+			"name"	"Magnificent Mongolian"
+			"prefab"		"base_hat"
+			"first_sale_date"	"2010/12/20"
+			"loadondemand"	"1"
+			"hidden"	"0"
+			"item_class"	"tf_wearable"
+			"craft_class"	"hat"
+			"craft_material_type"	"hat"
+			"capabilities"
+			{
+				"nameable"		"1"
+				"paintable"		"1"
+				"can_craft_if_purchased"	"1"
+			}
+			"show_in_armory"	"1"
+			"item_type_name" "#TF_Wearable_Hat"
+			"item_name"	"#TF_MagnificentMongolian"
+			"item_slot"	"head"
+			"equip_region"	"hat"
+			"item_quality"	"unique"
+			"image_inventory"	"backpack/player/items/heavy/heavy_magnificent_mongolian"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"82"
+			"model_player"	"models/player/items/heavy/heavy_magnificent_mongolian.mdl"
+			"drop_type"	"drop"
+			"propername"	"0"
+			"used_by_classes"
+			{
+				"heavy"	"1"
+			}
+			"mouse_pressed_sound" 	"ui/item_hat_pickup.wav"
+			"drop_sound" 		"ui/item_hat_drop.wav"
+		}
+		"7117"
+		{
+			"name"	"Tough Guy's Toque"
+			"prefab"	"valve base_hat"
+			"first_sale_date"	"2010/09/29"
+			"item_class"	"tf_wearable"
+			"loadondemand" "1"
+			"craft_class"	"hat"
+			"craft_material_type"	"hat"
+			"capabilities"
+			{
+				"nameable"		"1"
+				"paintable"		"1"
+				"can_craft_if_purchased"	"1"
+			}
+			"show_in_armory"	"1"
+			"item_type_name"	"#TF_Wearable_Hat"
+			"item_name"	"#TF_Heavy_Stocking_cap"
+			"item_description"	"#TF_Heavy_Stocking_cap_Desc"
+			"item_slot"	"head"
+			"equip_region"	"hat"
+			"item_quality"	"unique"
+			"image_inventory"	"backpack/player/items/heavy/heavy_stocking_cap"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"82"
+			"model_player"	"models/player/items/heavy/heavy_stocking_cap.mdl"
+			"drop_type"	"drop"
+			"used_by_classes"
+			{
+				"heavy"	"1"
+			}
+			"mouse_pressed_sound" 	"ui/item_hat_pickup.wav"
+			"drop_sound" 		"ui/item_hat_drop.wav"
+		}
+		"7118"
+		{
+			"name"		"The Heavy Lifter"
+			"propername"		"1"
+			"prefab"		"misc"
+			"first_sale_date"		"2014/09/15"
+			"item_type_name"		"#TF_Wearable_Apparel"
+			"item_name"		"#TF_sbox2014_heavy_gunshow"
+			"item_description"		"#TF_sbox2014_heavy_gunshow_Desc"
+			"equip_region"		"shirt"
+			"image_inventory"		"backpack/workshop/player/items/heavy/sbox2014_heavy_gunshow/sbox2014_heavy_gunshow"
+			"capabilities"
+			{
+				"can_craft_count"		"1"
+			}
+			"model_player"		"models/workshop/player/items/heavy/sbox2014_heavy_gunshow/sbox2014_heavy_gunshow.mdl"
+			"used_by_classes"
+			{
+				"heavy"		"1"
+			}
+			"mouse_pressed_sound"		"ui/item_hat_pickup.wav"
+			"drop_sound"		"ui/item_hat_drop.wav"
+		}
+		"7119"
+		{
+			"name"		"The Bear Necessities"
+			"prefab"		"hat"
+			"first_sale_date"		"2013/08/26"
+			"item_type_name"		"#TF_Wearable_SpiritAnimal"
+			"item_name"		"#TF_jul13_bear_necessitys"
+			"item_description"		"#TF_jul13_bear_necessitys_Desc"
+			"equip_region"		"hat"
+			"image_inventory"		"backpack/workshop/player/items/heavy/jul13_bear_necessitys/jul13_bear_necessitys"
+			"capabilities"
+			{
+				"can_craft_count"		"1"
+			}
+			"model_player"		"models/workshop/player/items/heavy/jul13_bear_necessitys/jul13_bear_necessitys.mdl"
+			"propername"		"1"
+			"used_by_classes"
+			{
+				"heavy"		"1"
+			}
+			"mouse_pressed_sound"		"ui/item_hat_pickup.wav"
+			"drop_sound"		"ui/item_hat_drop.wav"
+		}
+		"7120"
+		{
+			"name"		"The Boom Boxers"
+			"prefab"		"no_craft misc marketable"
+			"item_name"		"#TF_hwn2020_boom_boxers"
+			"item_description"		"#TF_hwn2020_boom_boxers_Desc"
+			"item_type_name"		"#TF_Wearable_TornPants"
+			"equip_region"		"pants"
+			"image_inventory"		"backpack/workshop/player/items/all_class/hwn2020_boom_boxers/hwn2020_boom_boxers"
+			"propername"		"1"
+			"capabilities"
+			{
+				"can_craft_count"		"1"
+				"paintable"		"1"
+			}
+			"model_player_per_class"
+			{
+				"basename"		"models/workshop/player/items/all_class/hwn2020_boom_boxers/hwn2020_boom_boxers_%s.mdl"
+			}
+			"used_by_classes"
+			{
+				"scout"		"1"
+				"demoman"		"1"
+				"heavy"		"1"
+				"pyro"		"1"
+				"engineer"		"1"
+			}
+			"mouse_pressed_sound"		"ui/item_rubber_pickup.wav"
+			"drop_sound"		"ui/item_rubber_pickup.wav"
+		}
+		"7121"
+		{
+			"name"		"Snack Stack"
+			"prefab"		"no_craft hat marketable"
+			"item_name"		"#TF_sum21_snack_stack"
+			"item_description"		"#TF_sum21_snack_stack_Desc"
+			"item_type_name"		"#TF_Wearable_Snack"
+			"equip_region"		"hat"
+			"drop_type"		"drop"
+			"image_inventory"		"backpack/workshop/player/items/heavy/sum21_snack_stack/sum21_snack_stack"
+			"capabilities"
+			{
+				"can_craft_count"		"1"
+				"paintable"		"1"
+			}
+			"model_player"		"models/workshop/player/items/heavy/sum21_snack_stack/sum21_snack_stack.mdl"
+			"used_by_classes"
+			{
+				"heavy"		"1"
+			}
+		}
+		"7122"
+		{
+			"name"		"The Sammy Cap"
+			"propername"		"1"
+			"prefab"		"hat"
+			"first_sale_date"		"2014/09/15"
+			"item_name"		"#TF_sbox2014_sammy_cap"
+			"item_description"		"#TF_sbox2014_sammy_cap_Desc"
+			"equip_region"		"hat"
+			"image_inventory"		"backpack/workshop/player/items/heavy/sbox2014_sammy_cap/sbox2014_sammy_cap"
+			"capabilities"
+			{
+				"can_craft_count"		"1"
+				"paintable"		"1"
+			}
+			"model_player"		"models/workshop/player/items/heavy/sbox2014_sammy_cap/sbox2014_sammy_cap.mdl"
+			"used_by_classes"
+			{
+				"heavy"		"1"
+			}
+			"mouse_pressed_sound"		"ui/item_hat_pickup.wav"
+			"drop_sound"		"ui/item_hat_drop.wav"
+		}
+		"7123"
+		{
+			"name"		"Paka Parka"
+			"prefab"		"no_craft misc marketable"
+			"item_name"		"#TF_dec18_paka_parka"
+			"item_description"		"#TF_dec18_paka_parka_Desc"
+			"item_type_name"		"#TF_Wearable_Coat"
+			"equip_region"		"shirt"
+			"image_inventory"		"backpack/workshop/player/items/heavy/dec18_paka_parka/dec18_paka_parka"
+			"capabilities"
+			{
+				"can_craft_count"		"1"
+				"paintable"		"1"
+			}
+			"model_player"		"models/workshop/player/items/heavy/dec18_paka_parka/dec18_paka_parka.mdl"
+			"used_by_classes"
+			{
+				"heavy"		"1"
+			}
+			"mouse_pressed_sound"		"ui/item_hat_pickup.wav"
+			"drop_sound"		"ui/item_hat_drop.wav"
+		}
+		"7124"
+		{
+			"name"	"Yeti_Head"
+			"prefab"	"hat"
+			"hidden"	"0"
+			"item_class"	"tf_wearable"
+			"craft_class"	""		
+			"craft_material_type"	"hat"
+			"capabilities"
+			{
+				"nameable"		"1"
+			}
+			"loadondemand" "1"
+			"propername"		"1"
+			"show_in_armory"	"1"
+			"item_type_name" "#TF_Wearable_Costume"
+			"item_name"	"#TF_KathmanHairdo"
+			"item_description"	"#TF_KathmanHairdo_Desc"
+			"equip_region"	"whole_head"
+			"item_quality"	"unique"
+			"min_ilevel"	"50"
+			"max_ilevel"	"50"
+			"image_inventory"	"backpack/player/items/heavy/yeti_head"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"82"
+			"model_player"		"models/player/items/heavy/yeti_head.mdl"
+			"used_by_classes"
+			{
+				"heavy"	"1"
+			}
+			"visuals"
+			{
+				"player_bodygroups"
+				{
+					"hat"			"1"
+				}
+			}
+			"mouse_pressed_sound"	"ui/item_hat_pickup.wav"
+			"drop_sound"		"ui/item_hat_drop.wav"
+		}
+		"7125"
+		{
+			"name"	"Yeti_Legs"
+			"prefab"	"misc"
+			"hidden"	"0"
+			"item_class"	"tf_wearable"
+			"craft_class"	""		
+			"craft_material_type"	"hat"
+			"capabilities"
+			{
+				"nameable"		"1"
+			}
+			"loadondemand" "1"
+			"propername"		"1"
+			"show_in_armory"	"1"
+			"item_type_name" "#TF_Wearable_Costume"
+			"item_name"	"#TF_AbominableSnowPants"
+			"item_description"	"#TF_AbominableSnowPants_Desc"
+			"equip_region"	"feet"
+			"item_quality"	"unique"
+			"min_ilevel"	"50"
+			"max_ilevel"	"50"
+			"image_inventory"	"backpack/player/items/heavy/yeti_legs"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"82"
+			"model_player"		"models/player/items/heavy/yeti_legs.mdl"
+			"used_by_classes"
+			{
+				"heavy"	"1"
+			}
+			"mouse_pressed_sound"	"ui/item_hat_pickup.wav"
+			"drop_sound"		"ui/item_hat_drop.wav"
+		}
+		"7126"
+		{
+			"name"	"Yeti_Arms"
+			"prefab"	"misc"
+			"hidden"	"0"
+			"item_class"	"tf_wearable"
+			"craft_class"	""		
+			"craft_material_type"	"hat"
+			"capabilities"
+			{
+				"nameable"		"1"
+			}
+			"loadondemand" "1"
+			"propername"		"1"
+			"show_in_armory"	"1"
+			"item_type_name" "#TF_Wearable_Costume"
+			"item_name"	"#TF_HimalayanHairShirt"
+			"item_description"	"#TF_HimalayanHairShirt_Desc"
+			"equip_region"	"arms"
+			"item_quality"	"unique"
+			"min_ilevel"	"50"
+			"max_ilevel"	"50"
+			"image_inventory"	"backpack/player/items/heavy/yeti_arms"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"82"
+			"model_player"		"models/player/items/heavy/yeti_arms.mdl"
+			"used_by_classes"
+			{
+				"heavy"	"1"
+			}
+			"visuals"
+			{
+				"player_bodygroups"
+				{
+					"hands"		"1"
+				}
+			}
+			"mouse_pressed_sound"	"ui/item_hat_pickup.wav"
+			"drop_sound"		"ui/item_hat_drop.wav"
+		}
+		"7127"
+		{
+			"name"		"Bone-Cut Belt"
+			"prefab"		"halloween2014 no_craft misc"
+			"item_name"		"#TF_sf14_halloween_bone_cut_belt"
+			"item_description"		"#TF_sf14_halloween_bone_cut_belt_Desc"
+			"item_type_name"		"#TF_Wearable_Costume"
+			"equip_region"
+			{
+				"left_shoulder"		"1"
+				"shirt"		"1"
+			}
+			"propername"		"1"
+			"image_inventory"		"backpack/workshop/player/items/heavy/sf14_halloween_bone_cut_belt/sf14_halloween_bone_cut_belt"
+			"capabilities"
+			{
+				"can_craft_count"		"1"
+				"paintable"		"1"
+			}
+			"model_player"		"models/workshop/player/items/heavy/sf14_halloween_bone_cut_belt/sf14_halloween_bone_cut_belt.mdl"
+			"used_by_classes"
+			{
+				"heavy"		"1"
+			}
+			"mouse_pressed_sound"		"ui/item_hat_pickup.wav"
+			"drop_sound"		"ui/item_hat_drop.wav"
+		}
+		"7128"
+		{
+			"name"		"The Last Bite"
+			"prefab"		"halloween2013 misc"
+			"item_type_name"		"#TF_Wearable_Coffin"
+			"item_name"		"#TF_hw2013_last_bite"
+			"item_description"		"#TF_hw2013_last_bite_Desc"
+			"equip_region"		"heavy_belt_back"
+			"propername"		"1"
+			"image_inventory"		"backpack/workshop/player/items/heavy/hw2013_last_bite/hw2013_last_bite"
+			"capabilities"
+			{
+				"paintable"		"1"
+			}
+			"model_player"		"models/workshop/player/items/heavy/hw2013_last_bite/hw2013_last_bite.mdl"
+			"used_by_classes"
+			{
+				"heavy"		"1"
+			}
+			"mouse_pressed_sound"		"ui/item_pack_pickup.wav"
+			"drop_sound"		"ui/item_pack_drop.wav"
+		}
+		"7129"
+		{
+			"name"	"The Spooky Sleeves"
+			"first_sale_date"	"2012/10/26"
+			"prefab"	"misc"
+			"capabilities"
+			{
+				"paintable"	"1"
+			}
+			"equip_region"	"sleeves"
+			"item_type_name"	"#TF_Wearable_Apparel"
+			"item_name"	"#TF_SpookySleeves"
+			"item_description"	"#TF_SpookySleeves_Desc"
+			"propername"	"1"
+			"image_inventory"		"backpack/workshop/player/items/all_class/halloweenjacket/halloweenjacket"
+			"model_player_per_class"
+			{
+				"basename"	"models/workshop/player/items/all_class/halloweenjacket/halloweenjacket_%s.mdl"
+			}
+			"used_by_classes"
+			{
+				"scout"		"1"
+				"sniper"		"1"
+				"Demoman"		"1"
+				"heavy"		"1"
+				"engineer"		"1"
+			}
+			"mouse_pressed_sound"	"ui/item_hat_pickup.wav"
+			"drop_sound"		"ui/item_hat_drop.wav"
+		}
+		"7130"
+		{
+			"name"	"Steel-Toed Stompers"
+			"prefab"	"valve halloween_costume_piece_2011 base_misc"
+			"item_name"	"#TF_Hwn_HeavyMisc2"
+			"item_description"	"#TF_Hwn_HeavyMisc2_Desc"
+			"propername"	"1"
+			"item_slot"	"misc"
+			"equip_region"	"feet"
+			"image_inventory"	"backpack/player/items/heavy/hwn_heavy_misc2"
+			"model_player"	"models/player/items/heavy/hwn_heavy_misc2.mdl"
+			"used_by_classes"
+			{
+				"heavy"	"1"
+			}
+		}
+		"7131"
+		{
+			"name"	"Soviet Stitch-Up"
+			"prefab"	"valve halloween_costume_piece_2011 base_misc"
+			"item_name"	"#TF_Hwn_HeavyMisc1"
+			"item_description"	"#TF_Hwn_HeavyMisc1_Desc"
+			"propername"	"1"
+			"item_slot"	"misc"
+			"equip_region"	"sleeves"
+			"item_quality"	"unique"
+			"image_inventory"	"backpack/player/items/heavy/hwn_heavy_misc1"
+			"model_player"	"models/player/items/heavy/hwn_heavy_misc1.mdl"
+			"used_by_classes"
+			{
+				"heavy"	"1"
+			}
+		}
+		"7132"
+		{
+			"name"	"Can Opener"
+			"prefab"	"valve halloween_costume_piece_2011 base_hat"
+			"item_name"	"#TF_Hwn_HeavyHat"
+			"item_description"	"#TF_Hwn_HeavyHat_Desc"
+			"item_slot"	"head"
+			"equip_region"	"hat"
+			"propername"	"1"
+			"image_inventory"	"backpack/player/items/heavy/hwn_heavy_hat"
+			"model_player"	"models/player/items/heavy/hwn_heavy_hat.mdl"
+			"used_by_classes"
+			{
+				"heavy"	"1"
+			}
+		}
+		"7133"
+		{
+			"name"	"Big Chief"
+			"prefab"		"base_hat"
+			"first_sale_date"	"2010/12/08"
+			"loadondemand" "1"
+			"item_class"	"tf_wearable"
+			"craft_class"	"hat"
+			"craft_material_type"	"hat"
+			"capabilities"
+			{
+				"nameable"		"1"
+				"can_craft_if_purchased"	"1"
+			}
+			"show_in_armory"	"1"
+			"item_type_name" "#TF_Wearable_Hat"
+			"item_name"	"#TF_BigChief"
+			"item_description"	"#TF_BigChief_Desc"
+			"item_slot"	"head"
+			"equip_region"	"hat"
+			"item_quality"	"unique"
+			"image_inventory"	"backpack/player/items/heavy/heavy_big_chief"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"82"
+			"model_player"	"models/player/items/heavy/heavy_big_chief.mdl"
+			"drop_type"	"drop"
+			"propername"	"1"
+			"used_by_classes"
+			{
+				"heavy"		"1"
+			}
+			"mouse_pressed_sound"	"ui/item_hat_pickup.wav"
+			"drop_sound"		"ui/item_hat_drop.wav"
+		}
+		"7134"
+		{
+			"name"	"The Little Bear"
+			"first_sale_date"	"2014/04/01"
+			"prefab"	"valve misc"
+			"equip_region"		"heavy_hip_pouch"
+			"capabilities"
+			{
+				"can_craft_count"	"1"
+			}
+			"item_type_name"	"#TF_Wearable_PocketBuddy"
+			"item_name"	"#TF_LittleBear"
+			"item_description"	"#TF_LittleBear_Desc"
+			"propername" "1"
+			"image_inventory"	"backpack/player/items/heavy/heavy_pocket_bot"
+			"model_player"	"models/player/items/heavy/heavy_pocket_bot.mdl"
+			"used_by_classes"
+			{
+				"heavy" "1"
+			}
+			"attributes"
+			{
+				"counts as assister is some kind of pet this update is going to be awesome"
+				{
+					"attribute_class"	"counts_as_assister"
+					"value"				"1"
+				}
+			}
+		}
+		"7135"
+		{
+			"name"	"The Hunger Force"
+			"first_sale_date"	"2012/12/13"
+			"prefab"	"misc"
+			"capabilities"
+			{
+				"can_craft_count"	"1"
+			}
+			"item_type_name"	"#TF_Wearable_Shirt"
+			"item_name"	"#TF_Heavy_HungerForce"
+			"item_description"	"#TF_Heavy_HungerForce_Desc"
+			"equip_regions"
+			{
+				"shirt"	"1"
+				"necklace" "1"
+			}
+			"image_inventory"	"backpack/workshop_partner/player/items/heavy/heavy_carl_medallion_shirt/heavy_carl_medallion_shirt"
+			"model_player"	"models/workshop_partner/player/items/heavy/heavy_carl_medallion_shirt/heavy_carl_medallion_shirt.mdl"
+			"propername"	"1"
+			"used_by_classes"
+			{
+				"heavy"	"1"
+			}
+			"mouse_pressed_sound"	"ui/item_hat_pickup.wav"
+			"drop_sound"		"ui/item_hat_drop.wav"
+		}
+		"7136"
+		{
+			"name"		"BedBug Protection"
+			"prefab"		"no_craft misc marketable"
+			"item_name"		"#TF_dec20_bedbug_protection"
+			"item_description"		"#TF_dec20_bedbug_protection_Desc"
+			"item_type_name"		"#TF_Wearable_Shirt"
+			"equip_region"		"shirt"
+			"image_inventory"		"backpack/workshop/player/items/heavy/dec20_bedbug_protection/dec20_bedbug_protection"
+			"capabilities"
+			{
+				"can_craft_count"		"1"
+				"paintable"		"1"
+			}
+			"model_player"		"models/workshop/player/items/heavy/dec20_bedbug_protection/dec20_bedbug_protection.mdl"
+			"used_by_classes"
+			{
+				"heavy"		"1"
+			}
+		}
+		"7137"
+		{
+			"name"	"The Grand Duchess Tiara"
+			"first_sale_date"	"2012/10/26"
+			"prefab"	"halloween hat"
+			"capabilities"
+			{
+				"paintable"	"1"
+			}
+			"item_name"	"#TF_GrandDuchessTiara"
+			"item_type_name"	"#TF_Wearable_Costume"
+			"item_description"	"#TF_GrandDuchessTiara_Desc"
+			"image_inventory"	"backpack/player/items/heavy/heavy_fairy_tiara"
+			"model_player"		"models/player/items/heavy/heavy_fairy_tiara.mdl"
+			"propername"	"1"
+			"used_by_classes"
+			{
+				"heavy"	"1"
+			}
+			"mouse_pressed_sound"	"ui/item_metal_tiny_pickup.wav"
+			"drop_sound"		"ui/item_metal_tiny_drop.wav"
+		}
+		"7138"
+		{
+			"name"		"Paka Parka"
+			"prefab"		"no_craft misc marketable"
+			"item_name"		"#TF_dec18_paka_parka"
+			"item_description"		"#TF_dec18_paka_parka_Desc"
+			"item_type_name"		"#TF_Wearable_Coat"
+			"equip_region"		"shirt"
+			"image_inventory"		"backpack/workshop/player/items/heavy/dec18_paka_parka/dec18_paka_parka"
+			"capabilities"
+			{
+				"can_craft_count"		"1"
+				"paintable"		"1"
+			}
+			"model_player"		"models/workshop/player/items/heavy/dec18_paka_parka/dec18_paka_parka.mdl"
+			"used_by_classes"
+			{
+				"heavy"		"1"
+			}
+			"mouse_pressed_sound"		"ui/item_hat_pickup.wav"
+			"drop_sound"		"ui/item_hat_drop.wav"
+		}
+		"7139"
+		{
+			"name"		"Siberian Tigerstripe"
+			"prefab"		"no_craft misc marketable"
+			"item_name"		"#TF_fall17_siberian_tigerstripe"
+			"item_description"		"#TF_fall17_siberian_tigerstripe_Desc"
+			"item_type_name"		"#TF_Wearable_Uniform"
+			"equip_region"		"shirt"
+			"image_inventory"		"backpack/workshop/player/items/heavy/fall17_siberian_tigerstripe/fall17_siberian_tigerstripe"
+			"capabilities"
+			{
+				"can_craft_count"		"1"
+				"paintable"		"1"
+			}
+			"model_player"		"models/workshop/player/items/heavy/fall17_siberian_tigerstripe/fall17_siberian_tigerstripe.mdl"
+			"used_by_classes"
+			{
+				"heavy"		"1"
+			}
+			"mouse_pressed_sound"		"ui/item_hat_pickup.wav"
+			"drop_sound"		"ui/item_hat_drop.wav"
+		}
+		"7140"
+		{
+			"name"		"Kapitan's Kaftan"
+			"prefab"		"no_craft misc marketable"
+			"item_name"		"#TF_sum19_kapitans_kaftan"
+			"item_description"		"#TF_sum19_kapitans_kaftan_Desc"
+			"item_type_name"		"#TF_Wearable_Apparel"
+			"equip_region"		"shirt"
+			"image_inventory"		"backpack/workshop/player/items/heavy/sum19_kapitans_kaftan/sum19_kapitans_kaftan"
+			"capabilities"
+			{
+				"can_craft_count"		"1"
+				"paintable"		"1"
+			}
+			"model_player"		"models/workshop/player/items/heavy/sum19_kapitans_kaftan/sum19_kapitans_kaftan.mdl"
+			"used_by_classes"
+			{
+				"heavy"		"1"
+			}
+			"mouse_pressed_sound"		"ui/item_hat_pickup.wav"
+			"drop_sound"		"ui/item_hat_drop.wav"
+		}
 		"30570"
 		{
 			"name"		"Pool Party Taunt"
