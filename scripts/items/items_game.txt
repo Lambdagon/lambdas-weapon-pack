@@ -26289,7 +26289,7 @@
 		"6986"
 		{
 			"name"	"rehcnuaL tekcoR"
-                        "item_description"	"Rockets fire backward"
+                        "item_description"	"Rockets fire backward lol"
 			"first_sale_date"	"2011/03/23"
 			"item_class"	"tf_weapon_rocketlauncher"
 			"craft_class"	"weapon"
@@ -26377,6 +26377,20 @@
 			}
 			"mouse_pressed_sound"		"ui/item_helmet_pickup.wav"
 			"drop_sound"		"ui/item_helmet_drop.wav"
+		}
+		"6988"
+		{
+			"name"			"Deflector"
+			"prefab"		"weapon_minigun"
+			"craft_class"	""
+			"baseitem"		"0"
+			"show_in_armory"	"0"
+			"item_name"		"#TF_Minigun_Deflector"
+			"item_quality"	"unique"
+			"visuals"
+			{
+				"tracer_effect"	"bullet_tracer02"
+			}
 		}
 		"6989"
 		{
@@ -27816,6 +27830,1074 @@
 			}
 			"mouse_pressed_sound"	"ui/item_heavy_gun_pickup.wav"
 			"drop_sound"		"ui/item_heavy_gun_drop.wav"
+		}
+		"7036"
+		{
+			"name"		"The Biomech Backpack"
+			"prefab"		"misc"
+			"first_sale_date"		"2014/11/13"
+			"item_type_name"		"#TF_Wearable_Costume"
+			"item_name"		"#TF_BiomechBackpack"
+			"item_description"		"#TF_BiomechBackpack_Desc"
+			"equip_region"		"back"
+			"propername"		"1"
+			"image_inventory"		"backpack/workshop_partner/player/items/scout/ai_body/ai_body"
+			"capabilities"
+			{
+				"can_craft_count"		"1"
+			}
+			"model_player"		"models/workshop_partner/player/items/scout/ai_body/ai_body.mdl"
+			"holiday_restriction"		"halloween_or_fullmoon"
+			"used_by_classes"
+			{
+				"scout"		"1"
+			}
+		}
+		"7037"
+		{
+			"name"		"The Alien Cranium"
+			"prefab"		"hat"
+			"first_sale_date"		"2014/11/13"
+			"item_type_name"		"#TF_Wearable_Costume"
+			"item_name"		"#TF_AlienCranium"
+			"item_description"		"#TF_AlienCranium_Desc"
+			"propername"		"1"
+			"visuals"
+			{
+				"player_bodygroups"
+				{
+					"hat"		"1"
+					"headphones"		"1"
+				}
+			}
+			"image_inventory"		"backpack/workshop_partner/player/items/scout/ai_head/ai_head"
+			"capabilities"
+			{
+				"can_craft_count"		"1"
+			}
+			"model_player"		"models/workshop_partner/player/items/scout/ai_head/ai_head.mdl"
+			"holiday_restriction"		"halloween_or_fullmoon"
+			"used_by_classes"
+			{
+				"scout"		"1"
+			}
+		}
+		"7038"
+		{
+			"name"		"The Xeno Suit"
+			"prefab"		"misc"
+			"first_sale_date"		"2014/11/13"
+			"item_type_name"		"#TF_Wearable_Costume"
+			"item_name"		"#TF_XenoSuit"
+			"item_description"		"#TF_XenoSuit_Desc"
+			"propername"		"1"
+			"equip_region"		"feet"
+			"visuals"
+			{
+				"player_bodygroups"
+				{
+					"shoes_socks"		"1"
+				}
+			}
+			"image_inventory"		"backpack/workshop_partner/player/items/scout/ai_legs/ai_legs"
+			"capabilities"
+			{
+				"can_craft_count"		"1"
+			}
+			"model_player"		"models/workshop_partner/player/items/scout/ai_legs/ai_legs.mdl"
+			"holiday_restriction"		"halloween_or_fullmoon"
+			"used_by_classes"
+			{
+				"scout"		"1"
+			}
+		}
+		"7039"
+		{
+			"name"		"The Paisley Pro"
+			"prefab"		"valve misc"
+			"first_sale_date"		"2014/06/16"
+			"equip_regions"
+			{
+				"shirt"		"1"
+				"arm_tatoos"		"1"
+			}
+			"valid_for_shuffle"		"1"
+			"item_type_name"		"#TF_Wearable_Shirt"
+			"item_name"		"#TF_ScoutFancyShirt"
+			"item_description"		"#TF_ScoutFancyShirt_Desc"
+			"image_inventory"		"backpack/player/items/scout/scout_fancy_shirt"
+			"model_player"		"models/player/items/scout/scout_fancy_shirt.mdl"
+			"propername"		"1"
+			"used_by_classes"
+			{
+				"scout"		"1"
+			}
+			"mouse_pressed_sound"		"ui/item_hat_pickup.wav"
+			"drop_sound"		"ui/item_hat_drop.wav"
+		}
+		"7040"
+		{
+			"name"		"The Pomade Prince"
+			"prefab"		"valve hat"
+			"first_sale_date"		"2014/06/16"
+			"item_type_name"		"#TF_Wearable_Hair"
+			"item_name"		"#TF_ScoutFancyHair"
+			"item_description"		"#TF_ScoutFancyHair_Desc"
+			"image_inventory"		"backpack/player/items/scout/scout_pompadour"
+			"model_player"		"models/player/items/scout/scout_pompadour.mdl"
+			"propername"		"1"
+			"valid_for_shuffle"		"1"
+			"used_by_classes"
+			{
+				"scout"		"1"
+			}
+			"visuals"
+			{
+				"player_bodygroups"
+				{
+					"hat"		"1"
+					"headphones"		"1"
+				}
+			}
+			"mouse_pressed_sound"		"ui/item_hat_pickup.wav"
+			"drop_sound"		"ui/item_hat_drop.wav"
+		}
+		"7041"
+		{
+			"name"		"The Argyle Ace"
+			"prefab"		"valve misc"
+			"first_sale_date"		"2014/06/16"
+			"equip_region"		"feet"
+			"item_type_name"		"#TF_Wearable_Shoes"
+			"item_name"		"#TF_ScoutFancyShoes"
+			"item_description"		"#TF_ScoutFancyShoes_Desc"
+			"image_inventory"		"backpack/player/items/scout/scout_brogues"
+			"model_player"		"models/player/items/scout/scout_brogues.mdl"
+			"propername"		"1"
+			"valid_for_shuffle"		"1"
+			"used_by_classes"
+			{
+				"scout"		"1"
+			}
+			"visuals"
+			{
+				"player_bodygroups"
+				{
+					"shoes_socks"		"1"
+				}
+			}
+			"mouse_pressed_sound"		"ui/item_hat_pickup.wav"
+			"drop_sound"		"ui/item_hat_drop.wav"
+		}
+		"7042"
+		{
+			"name"	"The Tomb Wrapper"
+			"first_sale_date"	"2013/03/04"
+			"prefab"	"misc"
+			"capabilities"
+			{
+				"can_craft_count"	"1"
+			}
+			"item_type_name"	"#TF_Wearable_Bandages"
+			"item_name"	"#TF_TombWrapper"
+			"item_description"	"#TF_TombWrapper_Desc"
+			"propername"	"1"
+			"equip_region"	"scout_bandages"
+			"image_inventory"	"backpack/player/items/scout/tomb_tourniquet"
+			"model_player"	"models/player/items/scout/tomb_tourniquet.mdl"
+			"used_by_classes"
+			{
+				"scout"	"1"
+			}
+			"mouse_pressed_sound"	"ui/item_hat_pickup.wav"
+			"drop_sound"		"ui/item_hat_drop.wav"
+		}
+		"7043"
+		{
+			"name"	"Baseball Bill's Sports Shine"
+			"prefab"	"valve base_hat"
+			"first_sale_date"	"2010/09/29"
+			"item_class"	"tf_wearable"
+			"craft_class"	"hat"
+			"craft_material_type"	"hat"
+			"capabilities"
+			{
+				"nameable"		"1"
+				"can_craft_if_purchased"	"1"
+			}
+			"show_in_armory"	"1"
+			"item_type_name"	"#TF_Wearable_CosmeticItem"
+			"item_name"	"#TF_Hatless_Scout"
+			"item_description"	"#TF_Hatless_Scout_Desc"
+			"item_slot"	"head"
+			"equip_region"	"hat"
+			"item_quality"	"unique"
+			"image_inventory"	"backpack/player/items/scout/scout_nohat"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"82"
+			"model_player"	"models/player/items/scout/scout_nohat.mdl"
+			"drop_type"	"none"
+			"used_by_classes"
+			{
+				"scout"		"1"
+			}
+			"visuals"
+			{
+				"player_bodygroups"
+				{
+					"hat"			"1"
+					"headphones"	"1"
+				}
+			}
+			"mouse_pressed_sound" 	"ui/item_hat_pickup.wav"
+			"drop_sound" 		"ui/item_hat_drop.wav"
+		}
+		"7044"
+		{
+			"name"	"Wrap Battler"
+			"prefab"	"valve halloween_costume_piece_2011 base_hat"
+			"item_name"	"#TF_Hwn_ScoutHat"
+			"item_description"	"#TF_Hwn_ScoutHat_Desc"
+			"item_slot"	"head"
+			"equip_region"	"hat"
+			"propername"	"1"
+			"image_inventory"	"backpack/player/items/scout/hwn_scout_hat"
+			"model_player"	"models/player/items/scout/hwn_scout_hat.mdl"
+			"used_by_classes"
+			{
+				"scout"	"1"
+			}
+			"visuals"
+			{
+				"player_bodygroups"
+				{
+					"hat"			"1"
+					"headphones"	"1"
+				}
+			}
+		}
+		"7045"
+		{
+			"name"	"B-ankh!"
+			"prefab"	"valve halloween_costume_piece_2011 base_misc"
+			"item_name"	"#TF_Hwn_ScoutMisc1"
+			"item_description"	"#TF_Hwn_ScoutMisc1_Desc"
+			"equip_regions"
+			{
+				"sleeves"		"1"
+				"necklace"		"1"
+			}
+			"item_slot"	"misc"
+			"propername"	"0"
+			"image_inventory"	"backpack/player/items/scout/hwn_scout_misc1"
+			"model_player"	"models/player/items/scout/hwn_scout_misc1.mdl"
+			"used_by_classes"
+			{
+				"scout"	"1"
+			}
+			"visuals"
+			{
+				"player_bodygroups"
+				{
+					"dogtags"			"1"
+				}
+			}
+		}
+		"7046"
+		{
+			"name"	"Futankhamun"
+			"prefab"	"valve halloween_costume_piece_2011 base_misc"
+			"item_name"	"#TF_Hwn_ScoutMisc2"
+			"item_description"	"#TF_Hwn_ScoutMisc2_Desc"
+			"propername"	"1"
+			"item_slot"	"misc"
+			"equip_region"	"feet"
+			"image_inventory"	"backpack/player/items/scout/hwn_scout_misc2"
+			"model_player"	"models/player/items/scout/hwn_scout_misc2.mdl"
+			"used_by_classes"
+			{
+				"scout"	"1"
+			}
+			"visuals"
+			{
+				"player_bodygroups"
+				{
+					"shoes_socks"			"1"
+				}
+			}
+		}
+		"7047"
+		{
+			"name"		"Seasonal Employee"
+			"prefab"		"no_craft misc marketable"
+			"item_name"		"#TF_dec21_seasonal_employee"
+			"item_description"		"#TF_dec21_seasonal_employee_Desc"
+			"item_type_name"		"#TF_Wearable_Shirt"
+			"equip_region"		"shirt"
+			"image_inventory"		"backpack/workshop/player/items/scout/dec21_seasonal_employee/dec21_seasonal_employee"
+			"capabilities"
+			{
+				"can_craft_count"		"1"
+				"paintable"		"1"
+			}
+			"model_player"		"models/workshop/player/items/scout/dec21_seasonal_employee/dec21_seasonal_employee.mdl"
+			"used_by_classes"
+			{
+				"scout"		"1"
+			}
+			"visuals"
+			{
+				"player_bodygroups"
+				{
+					"dogtags"		"1"
+				}
+				"styles"
+				{
+					"0"
+					{
+						"model_player"		"models/workshop/player/items/scout/dec21_seasonal_employee/dec21_seasonal_employee.mdl"
+						"skin_red"		"0"
+						"skin_blu"		"1"
+						"name"		"#TF_dec21_seasonal_employee_style0"
+					}
+					"1"
+					{
+						"model_player"		"models/workshop/player/items/scout/dec21_seasonal_employee_style1/dec21_seasonal_employee_style1.mdl"
+						"skin_red"		"0"
+						"skin_blu"		"1"
+						"name"		"#TF_dec21_seasonal_employee_style1"
+					}
+				}
+			}
+			"attributes"
+			{
+				"add jingle to footsteps"
+				{
+					"attribute_class"		"add_jingle_to_footsteps"
+					"value"		"1"
+				}
+			}
+		}
+		"7048"
+		{
+			"name"		"Meal Dealer"
+			"prefab"		"no_craft misc marketable"
+			"item_name"		"#TF_sum21_meal_dealer"
+			"item_description"		"#TF_sum21_meal_dealer_Desc"
+			"item_type_name"		"#TF_Wearable_Uniform"
+			"equip_region"		"shirt"
+			"visuals"
+			{
+				"player_bodygroups"
+				{
+					"dogtags"		"1"
+				}
+			}
+			"image_inventory"		"backpack/workshop/player/items/scout/sum21_meal_dealer/sum21_meal_dealer"
+			"capabilities"
+			{
+				"can_craft_count"		"1"
+				"paintable"		"1"
+			}
+			"model_player"		"models/workshop/player/items/scout/sum21_meal_dealer/sum21_meal_dealer.mdl"
+			"used_by_classes"
+			{
+				"scout"		"1"
+			}
+			"mouse_pressed_sound"		"ui/item_hat_pickup.wav"
+			"drop_sound"		"ui/item_hat_drop.wav"
+		}
+		"7049"
+		{
+			"name"		"Poolside Polo"
+			"prefab"		"no_craft misc marketable"
+			"item_name"		"#TF_sum20_poolside_polo"
+			"item_description"		"#TF_sum20_poolside_polo_Desc"
+			"item_type_name"		"#TF_Wearable_Shirt"
+			"equip_region"		"shirt"
+			"visuals"
+			{
+				"player_bodygroups"
+				{
+					"dogtags"		"1"
+				}
+			}
+			"image_inventory"		"backpack/workshop/player/items/scout/sum20_poolside_polo/sum20_poolside_polo"
+			"capabilities"
+			{
+				"can_craft_count"		"1"
+				"paintable"		"1"
+			}
+			"model_player"		"models/workshop/player/items/scout/sum20_poolside_polo/sum20_poolside_polo.mdl"
+			"used_by_classes"
+			{
+				"scout"		"1"
+			}
+		}
+		"7050"
+		{
+			"name"	"The Stereoscopic Shades"
+			"prefab"		"base_misc"
+			"first_sale_date"	"2011/09/20"
+			"item_class"	"tf_wearable"
+			"craft_class"	"hat"
+			"craft_material_type"	"hat"
+			"capabilities"
+			{
+				"nameable"			"1"
+				"can_craft_count"	"1"
+				"paintable"			"1"
+				"can_craft_if_purchased"	"1"
+			}
+			"loadondemand" "1"
+			"show_in_armory"	"1"
+			"item_type_name"	"#TF_Wearable_Glasses"
+			"item_name"	"#TF_ScoutGlasses"
+			"item_description"	"#TF_ScoutGlasses_Desc"
+			"item_slot"	"misc"
+			"equip_region"	"glasses"
+			"image_inventory"	"backpack/player/items/scout/fwk_scout_3d"
+			"image_inventory_size_w"	"128"
+			"image_inventory_size_h"	"82"
+			"item_quality"		"unique"
+			"propername"	"1"
+			"model_player"	"models/player/items/scout/fwk_scout_3d.mdl"
+			"min_ilevel"	"20"
+			"max_ilevel"	"20"
+			"drop_type"		"drop"
+			"used_by_classes"
+			{
+				"scout"	"1"
+			}
+			"mouse_pressed_sound"	"ui/item_hat_pickup.wav"
+			"drop_sound"		"ui/item_hat_drop.wav"
+		}
+		"7051"	
+		{
+			"name"	"Soldier's Stash"
+			"prefab"	"valve misc"
+			"first_sale_date"	"2010/09/29"
+			"item_class"	"tf_wearable"
+			"loadondemand" "1"
+			"craft_class"	""
+			"craft_material_type"	"hat"
+			"capabilities"
+			{
+				"nameable"		"1"
+				"paintable"		"1"
+				"can_craft_if_purchased"	"1"
+			}
+			"show_in_armory"	"1"
+			"item_name"	"#TF_Soldier_Hat_1"
+			"item_description"	"#TF_Soldier_Hat_1_Desc"
+			"item_slot"	"head"
+			"item_quality"	"unique"
+			"image_inventory"	"backpack/player/items/soldier/soldier_hat"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"82"
+			"model_player"	"models/player/items/soldier/soldier_hat.mdl"
+			"drop_type"	"none"
+			"used_by_classes"
+			{
+				"soldier"	"1"
+			}
+			"static_attrs"
+			{
+				"limited quantity item"		"1"
+			}
+			"mouse_pressed_sound" 	"ui/item_helmet_pickup.wav"
+			"drop_sound" 		"ui/item_helmet_drop.wav"
+		}
+		"7052"
+		{
+			"name"	"Tyrant's Helm"
+			"prefab"	"valve base_hat"
+			"first_sale_date"	"2010/09/29"
+			"item_class"	"tf_wearable"
+			"loadondemand" "1"
+			"craft_class"	"hat"
+			"craft_material_type"	"hat"
+			"capabilities"
+			{
+				"nameable"		"1"
+				"paintable"		"1"
+				"can_craft_if_purchased"	"1"
+			}
+			"show_in_armory"	"1"
+			"item_type_name"	"#TF_Wearable_Helmet"
+			"item_name"	"#TF_Soldier_Viking_Hat"
+			"item_description"	"#TF_Soldier_Viking_Hat_Desc"
+			"item_slot"	"head"
+			"equip_region"	"hat"
+			"item_quality"	"unique"
+			"image_inventory"	"backpack/player/items/soldier/soldier_viking"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"82"
+			"model_player"	"models/player/items/soldier/soldier_viking.mdl"
+			"drop_type"	"drop"
+			"used_by_classes"
+			{
+				"soldier"	"1"
+			}
+			"visuals"
+			{
+				"player_bodygroups"
+				{
+					"hat"		"1"
+				}
+			}
+			"mouse_pressed_sound" 	"ui/item_helmet_pickup.wav"
+			"drop_sound" 		"ui/item_helmet_drop.wav"
+		}
+		"7053"
+		{
+			"name"	"The Lucky Shot"
+			"first_sale_date"	"2012/01/10"
+			"prefab"	"hat"
+			"item_name"	"#TF_LuckyShot"
+			"item_description"	"#TF_LuckyShot_Desc"
+			"item_type_name"		"#TF_Wearable_Helmet"
+			"image_inventory"	"backpack/player/items/soldier/luckyshot"
+			"model_player"	"models/player/items/soldier/luckyShot.mdl"
+			"propername"	"1"
+			"drop_type"	"drop"
+			"used_by_classes"
+			{
+				"soldier"	"1"
+			}
+			"mouse_pressed_sound" 	"ui/item_helmet_pickup.wav"
+			"drop_sound" 		"ui/item_helmet_drop.wav"
+		}
+		"7054"
+		{
+			"name"	"The Team Captain"
+			"prefab"		"base_hat"
+			"first_sale_date"	"2011/04/25"
+			"item_class"	"tf_wearable"
+			"craft_class"	"hat"
+			"craft_material_type"	"hat"
+			"capabilities"
+			{
+				"nameable"		"1"
+				"can_craft_count"	"1"
+				"can_craft_mark"	"1"
+				"can_craft_if_purchased"	"1"
+			}
+			"loadondemand" "1"
+			"show_in_armory"	"1"
+			"item_type_name"	"#TF_Wearable_Hat"
+			"item_name"	"#TF_TeamCaptain"
+			"item_description"	"#TF_TeamCaptain_Desc"
+			"item_slot"	"head"
+			"equip_region"	"hat"
+			"item_quality"	"unique"
+			"propername" "1"
+			"image_inventory"	"backpack/player/items/soldier/soldier_officer"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"82"
+			"model_player"	"models/player/items/soldier/soldier_officer.mdl"
+			"model_player_per_class"
+			{
+				"basename"	"models/player/items/%s/%s_officer.mdl"
+			}
+			"drop_type"	"drop"
+			"used_by_classes"
+			{
+				"heavy"		"1"
+				"soldier"	"1"
+				"medic"		"1"
+			}
+			"visuals"
+			{
+				"player_bodygroups"
+				{
+					"hat"			"1"
+				}
+			}
+			"mouse_pressed_sound" 	"ui/item_hat_pickup.wav"
+			"drop_sound" 		"ui/item_hat_drop.wav"
+		}
+		"7055"
+		{
+			"name"	"The Tin Pot"
+			"prefab"	"hat"
+			"craft_class"	""
+			"item_name"	"#TF_Soldier_Robot_Helmet"
+			"item_description"	"#TF_Soldier_Robot_Helmet_Desc"
+			"image_inventory"	"backpack/player/items/mvm_loot/soldier/robot_helmet"
+			"propername"	"1"
+			"drop_type"	"drop"
+			"visuals"
+			{
+				"styles"
+				{
+					"0"
+					{
+						"model_player"	"models/player/items/mvm_loot/soldier/robot_helmet_bullet.mdl"
+						"skin_red"	"0"
+						"skin_blu"	"1"
+						"name"	"#TF_Soldier_Robot_Helmet_Style0"
+					}
+					"1"
+					{
+						"model_player"	"models/player/items/mvm_loot/soldier/robot_helmet.mdl"
+						"skin_red"	"0"
+						"skin_blu"	"1"
+						"name"	"#TF_Soldier_Robot_Helmet_Style1"
+					}
+				}
+			}
+			"used_by_classes"
+			{
+				"soldier"	"1"
+			}
+			"mouse_pressed_sound"	"ui/item_default_pickup.wav"
+			"drop_sound"		"ui/item_default_drop.wav"
+		}
+		"7056"
+		{
+			"name"		"The Classified Coif"
+			"first_sale_date"		"2014/06/16"
+			"prefab"		"misc"
+			"propername"		"1"
+			"valid_for_shuffle"		"1"
+			"item_name"		"#TF_short2014_soldier_fed_coat"
+			"item_description"		"#TF_short2014_soldier_fed_coat_Desc"
+			"item_type_name"		"#TF_Wearable_Coat"
+			"equip_region"		"soldier_coat"
+			"image_inventory"		"backpack/workshop/player/items/soldier/short2014_soldier_fed_coat/short2014_soldier_fed_coat"
+			"capabilities"
+			{
+				"can_craft_count"		"1"
+				"paintable"		"1"
+			}
+			"model_player"		"models/workshop/player/items/soldier/short2014_soldier_fed_coat/short2014_soldier_fed_coat.mdl"
+			"used_by_classes"
+			{
+				"soldier"		"1"
+			}
+			"mouse_pressed_sound"		"ui/item_hat_pickup.wav"
+			"drop_sound"		"ui/item_hat_drop.wav"
+		}
+		"7057"
+		{
+			"name"		"Public Speaker"
+			"prefab"		"no_craft misc marketable"
+			"item_name"		"#TF_dec19_public_speaker"
+			"item_description"		"#TF_dec19_public_speaker_Desc"
+			"item_type_name"		"#TF_Wearable_Speaker"
+			"image_inventory"		"backpack/workshop/player/items/soldier/dec19_public_speaker/dec19_public_speaker"
+			"capabilities"
+			{
+				"can_craft_count"		"1"
+				"paintable"		"1"
+			}
+			"model_player"		"models/workshop/player/items/soldier/dec19_public_speaker/dec19_public_speaker.mdl"
+			"used_by_classes"
+			{
+				"soldier"		"1"
+			}
+			"mouse_pressed_sound"		"ui/item_helmet_pickup.wav"
+			"drop_sound"		"ui/item_helmet_drop.wav"
+		}
+		"7058"
+		{
+			"name"	"Armored Authority"
+			"first_sale_date"	"2011/05/10"
+			"prefab"		"base_hat"
+			"item_class"	"tf_wearable"
+			"craft_class"	"hat"
+			"craft_material_type"	"hat"
+			"capabilities"
+			{
+				"nameable"				"1"
+				"can_craft_count"		"1"
+				"can_craft_if_purchased"	"1"
+			}
+			"loadondemand" "1"
+			"show_in_armory"	"1"
+			"item_type_name"	"#TF_Wearable_Helmet"
+			"item_name"	"#TF_ArmoredAuthority"
+			"item_description"	"#TF_ArmoredAuthority_Desc"
+			"item_slot"	"head"
+			"equip_region"	"hat"
+			"item_quality"	"unique"
+			"propername" "0"
+			"image_inventory"	"backpack/player/items/soldier/armored_authority"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"82"
+			"model_player"	"models/player/items/soldier/armored_authority.mdl"
+			"drop_type"	"drop"
+			"used_by_classes"
+			{
+				"soldier"	"1"
+			}
+			"visuals"
+			{
+				"player_bodygroups"
+				{
+					"hat"			"1"
+				}
+			}
+			"mouse_pressed_sound" 	"ui/item_helmet_pickup.wav"
+			"drop_sound" 		"ui/item_helmet_drop.wav"
+		}
+		"7059"
+		{
+			"name"	"Lord Cockswain's Novelty Mutton Chops and Pipe"
+			"first_sale_date"	"2011/07/13"
+			"prefab"		"base_misc"
+			"item_class"	"tf_wearable"
+			"craft_class"	"hat"
+			"craft_material_type"	"hat"
+			"capabilities"
+			{
+				"nameable"		"1"
+				"can_craft_count"	"1"
+				"can_craft_mark"	"1"
+				"paintable"			"1"
+				"can_craft_if_purchased"	"1"
+			}
+			"loadondemand" "1"
+			"show_in_armory"	"1"
+			"item_type_name"	"#TF_Wearable_FacialHair"
+			"item_name"	"#TF_LordCockswainChops"
+			"item_description"	"#TF_LordCockswainChops_Desc"
+			"item_slot"	"misc"
+			"equip_regions"
+			{
+				"beard"	"1"
+				"soldier_cigar"	"1"
+			}
+			"item_quality"	"unique"
+			"propername" "0"
+			"image_inventory"	"backpack/player/items/crafting/drg_hair_beard_icon"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"82"
+			"model_player"	"models/player/items/soldier/drg_hair_beard.mdl"
+			"drop_type"	"none"
+			"used_by_classes"
+			{
+				"soldier"	"1"
+			}
+			"visuals"
+			{
+				"player_bodygroups"
+				{
+					"hat"			"0"
+				}
+				"styles"
+				{
+					"0"
+					{
+						"name"	"#TF_LordCockswainChops_style0"
+					}
+					"1"
+					{
+						"name"	"#TF_LordCockswainChops_style1"
+						"additional_hidden_bodygroups"
+						{
+							"hat"			"1"
+						}
+					}
+				}
+			}
+			"attributes"
+			{
+				"attach particle effect static"
+				{
+					"attribute_class"	"set_attached_particle_static"
+					"value"	"28"
+				}
+			}
+			"mouse_pressed_sound" 	"ui/item_hat_pickup.wav"
+			"drop_sound" 		"ui/item_hat_drop.wav"
+		}
+		"7060"
+		{
+			"name"	"Stainless Pot"
+			"prefab"	"valve base_hat"
+			"first_sale_date"	"2010/09/29"
+			"item_class"	"tf_wearable"
+			"loadondemand" "1"
+			"craft_class"	"hat"
+			"craft_material_type"	"hat"
+			"capabilities"
+			{
+				"nameable"		"1"
+				"can_craft_if_purchased"	"1"
+			}
+			"show_in_armory"	"1"
+			"item_type_name"	"#TF_Wearable_Hat"
+			"item_name"	"#TF_Soldier_Pot_Hat"
+			"item_description"	"#TF_Soldier_Pot_Hat_Desc"
+			"item_slot"	"head"
+			"equip_region"	"hat"
+			"item_quality"	"unique"
+			"image_inventory"	"backpack/player/items/soldier/soldier_pot"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"82"
+			"model_player"	"models/player/items/soldier/soldier_pot.mdl"
+			"drop_type"	"drop"
+			"used_by_classes"
+			{
+				"soldier"	"1"
+			}
+			"visuals"
+			{
+				"player_bodygroups"
+				{
+					"hat"		"1"
+				}
+			}
+			"mouse_pressed_sound" 	"ui/item_metal_pot_pickup.wav"
+			"drop_sound" 		"ui/item_metal_pot_drop.wav"
+		}
+		"7061"
+		{
+			"name"		"Trickster's Treats"
+			"prefab"		"no_craft misc marketable"
+			"item_name"		"#TF_hwn2021_tricksters_treats"
+			"item_description"		"#TF_hwn2021_tricksters_treats_Desc"
+			"item_type_name"		"#TF_Wearable_Treats"
+			"equip_region"		"grenades"
+			"image_inventory"		"backpack/workshop/player/items/all_class/hwn2021_tricksters_treats/hwn2021_tricksters_treats"
+			"capabilities"
+			{
+				"can_craft_count"		"1"
+				"paintable"		"1"
+			}
+			"model_player_per_class"
+			{
+				"soldier"		"models/workshop/player/items/all_class/hwn2021_tricksters_treats/hwn2021_tricksters_treats_soldier.mdl"
+				"demoman"		"models/workshop/player/items/all_class/hwn2021_tricksters_treats/hwn2021_tricksters_treats_demo.mdl"
+				"pyro"		"models/workshop/player/items/all_class/hwn2021_tricksters_treats/hwn2021_tricksters_treats_pyro.mdl"
+			}
+			"used_by_classes"
+			{
+				"soldier"		"1"
+				"demoman"		"1"
+				"pyro"		"1"
+			}
+			"visuals"
+			{
+				"player_bodygroups"
+				{
+					"grenades"		"1"
+				}
+				"styles"
+				{
+					"0"
+					{
+						"model_player_per_class"
+						{
+							"soldier"		"models/workshop/player/items/all_class/hwn2021_tricksters_treats/hwn2021_tricksters_treats_soldier.mdl"
+							"demoman"		"models/workshop/player/items/all_class/hwn2021_tricksters_treats/hwn2021_tricksters_treats_demo.mdl"
+							"pyro"		"models/workshop/player/items/all_class/hwn2021_tricksters_treats/hwn2021_tricksters_treats_pyro.mdl"
+						}
+						"skin_red"		"0"
+						"skin_blu"		"1"
+						"name"		"#TF_hwn2021_tricksters_treats_style0"
+					}
+					"1"
+					{
+						"model_player_per_class"
+						{
+							"soldier"		"models/workshop/player/items/all_class/hwn2021_tricksters_treats_style2/hwn2021_tricksters_treats_style2_soldier.mdl"
+							"demoman"		"models/workshop/player/items/all_class/hwn2021_tricksters_treats_style2/hwn2021_tricksters_treats_style2_demo.mdl"
+							"pyro"		"models/workshop/player/items/all_class/hwn2021_tricksters_treats_style2/hwn2021_tricksters_treats_style2_pyro.mdl"
+						}
+						"skin_red"		"0"
+						"skin_blu"		"1"
+						"name"		"#TF_hwn2021_tricksters_treats_style1"
+					}
+				}
+			}
+			"mouse_pressed_sound"		"ui/item_hat_pickup.wav"
+			"drop_sound"		"ui/item_hat_drop.wav"
+		}
+		"7062"
+		{
+			"name"		"Veterans Attire"
+			"prefab"		"no_craft misc marketable"
+			"item_name"		"#TF_spr18_veterans_attire"
+			"item_description"		"#TF_spr18_veterans_attire_Desc"
+			"item_type_name"		"#TF_Wearable_Coat"
+			"equip_region"		"soldier_coat"
+			"image_inventory"		"backpack/workshop/player/items/soldier/spr18_veterans_attire/spr18_veterans_attire"
+			"capabilities"
+			{
+				"can_craft_count"		"1"
+				"paintable"		"1"
+			}
+			"model_player"		"models/workshop/player/items/soldier/spr18_veterans_attire/spr18_veterans_attire.mdl"
+			"used_by_classes"
+			{
+				"soldier"		"1"
+			}
+			"mouse_pressed_sound"		"ui/item_hat_pickup.wav"
+			"drop_sound"		"ui/item_hat_drop.wav"
+		}
+		"7063"
+		{
+			"name"		"The Crack Pot"
+			"prefab"		"no_craft hat marketable"
+			"item_name"		"#TF_dec18_crack_pot"
+			"item_description"		"#TF_dec18_crack_pot_Desc"
+			"item_type_name"		"#TF_Wearable_FlowerPot"
+			"equip_region"		"hat"
+			"drop_type"		"drop"
+			"visuals"
+			{
+				"player_bodygroups"
+				{
+					"hat"		"1"
+				}
+			}
+			"image_inventory"		"backpack/workshop/player/items/soldier/dec18_crack_pot/dec18_crack_pot"
+			"capabilities"
+			{
+				"can_craft_count"		"1"
+				"paintable"		"1"
+			}
+			"propername"		"1"
+			"model_player"		"models/workshop/player/items/soldier/dec18_crack_pot/dec18_crack_pot.mdl"
+			"used_by_classes"
+			{
+				"soldier"		"1"
+			}
+			"mouse_pressed_sound"		"ui/item_default_pickup.wav"
+			"drop_sound"		"ui/item_default_drop.wav"
+		}
+		"7064"
+		{
+			"name"		"Climbing Commander"
+			"prefab"		"no_craft hat marketable"
+			"item_name"		"#TF_dec18_climbing_commander"
+			"item_description"		"#TF_dec18_climbing_commander_Desc"
+			"item_type_name"		"#TF_Wearable_Hood"
+			"equip_region"		"hat"
+			"visuals"
+			{
+				"player_bodygroups"
+				{
+					"hat"		"1"
+				}
+			}
+			"image_inventory"		"backpack/workshop/player/items/soldier/dec18_climbing_commander/dec18_climbing_commander"
+			"capabilities"
+			{
+				"can_craft_count"		"1"
+				"paintable"		"1"
+			}
+			"model_player"		"models/workshop/player/items/soldier/dec18_climbing_commander/dec18_climbing_commander.mdl"
+			"used_by_classes"
+			{
+				"soldier"		"1"
+			}
+			"mouse_pressed_sound"		"ui/item_hat_pickup.wav"
+			"drop_sound"		"ui/item_hat_drop.wav"
+		}
+		"7065"
+		{
+			"name"		"The Gift Bringer"
+			"prefab"		"no_craft misc marketable"
+			"item_name"		"#TF_dec15_gift_bringer"
+			"item_description"		"#TF_dec15_gift_bringer_Desc"
+			"item_type_name"		"#TF_Wearable_Coat"
+			"equip_region"		"soldier_coat"
+			"propername"		"1"
+			"visuals"
+			{
+				"player_bodygroups"
+				{
+					"grenades"		"1"
+				}
+			}
+			"image_inventory"		"backpack/workshop/player/items/all_class/dec15_gift_bringer/dec15_gift_bringer"
+			"capabilities"
+			{
+				"can_craft_count"		"1"
+				"paintable"		"1"
+			}
+			"model_player_per_class"
+			{
+				"basename"		"models/workshop/player/items/all_class/dec15_gift_bringer/dec15_gift_bringer_%s.mdl"
+			}
+			"used_by_classes"
+			{
+				"soldier"		"1"
+				"heavy"		"1"
+			}
+			"mouse_pressed_sound"		"ui/item_hat_pickup.wav"
+			"drop_sound"		"ui/item_hat_drop.wav"
+		}
+		"7066"
+		{
+			"name"	"The First American"
+			"prefab"	"hat"
+			"capabilities"
+			{
+				"can_craft_count"	"1"
+			}
+			"item_type_name"	"#TF_Wearable_Mask"
+			"item_name"	"#TF_FirstAmerican"
+			"item_description"	"#TF_FirstAmerican_Desc"
+			"image_inventory"	"backpack/workshop/player/items/soldier/bi_franklin_mask/bi_franklin_mask"
+			"model_player"	"models/workshop/player/items/soldier/bi_franklin_mask/bi_franklin_mask.mdl"
+			"equip_region"	"whole_head"
+			"propername" "1"
+			"used_by_classes"
+			{
+				"soldier" "1"
+			}
+			"mouse_pressed_sound" 	"ui/item_helmet_pickup.wav"
+			"drop_sound" 		"ui/item_helmet_drop.wav"
+		}
+		"7067"
+		{
+			"name"	"The Big Daddy"
+			"prefab"	"hat"
+			"capabilities"
+			{
+				"can_craft_count"	"1"
+			}
+			"item_type_name"	"#TF_Wearable_Mask"
+			"item_name"	"#TF_BigDaddy"
+			"item_description"	"#TF_BigDaddy_Desc"
+			"image_inventory"	"backpack/workshop/player/items/soldier/bi_washington_mask/bi_washington_mask"
+			"model_player"	"models/workshop/player/items/soldier/bi_washington_mask/bi_washington_mask.mdl"
+			"equip_region"	"whole_head"
+			"propername" "1"
+			"used_by_classes"
+			{
+				"soldier" "1"
+			}
+			"mouse_pressed_sound" 	"ui/item_helmet_pickup.wav"
+			"drop_sound" 		"ui/item_helmet_drop.wav"
+		}
+		"7068"
+		{
+			"name"		"The Founding Father"
+			"prefab"		"misc"
+			"first_sale_date"		"2013/08/26"
+			"item_type_name"		"#TF_Wearable_Apparel"
+			"item_name"		"#TF_jul13_dandy_yankee"
+			"item_description"		"#TF_jul13_dandy_yankee_Desc"
+			"equip_region"		"shirt"
+			"image_inventory"		"backpack/workshop/player/items/soldier/jul13_dandy_yankee/jul13_dandy_yankee"
+			"capabilities"
+			{
+				"can_craft_count"		"1"
+			}
+			"model_player"		"models/workshop/player/items/soldier/jul13_dandy_yankee/jul13_dandy_yankee.mdl"
+			"propername"		"1"
+			"used_by_classes"
+			{
+				"soldier"		"1"
+			}
+			"mouse_pressed_sound"		"ui/item_hat_pickup.wav"
+			"drop_sound"		"ui/item_hat_drop.wav"
 		}
 		"30570"
 		{
