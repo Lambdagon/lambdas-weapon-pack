@@ -31061,20 +31061,25 @@
 			}
 			"attributes"
 			{
-				"Blast radius decreased"
-				{
-					"attribute_class"	"mult_explosion_radius"
-					"value"	"0.1"
-				}
 				"damage bonus"
 				{
 					"attribute_class"	"mult_dmg"
 					"value"	"1.65"
 				}
+				"clip size bonus"
+				{
+					"attribute_class"	"mult_clipsize"
+					"value" "1.25"
+				}
 				"Projectile speed decreased"
 				{
 					"attribute_class"	"mult_projectile_speed"
 					"value"	"0.00001"
+				}
+				"Blast radius decreased"
+				{
+					"attribute_class"	"mult_explosion_radius"
+					"value"	"0.1"
 				}
 				"disable fancy class select anim"
 				{
