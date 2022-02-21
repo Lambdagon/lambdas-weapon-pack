@@ -31401,6 +31401,53 @@
 			"drop_sound"		"ui/item_medal_pickup.wav"
 			"xifier_class_remap"	"wrench"
 		}
+		"7146"
+		{
+			"name"	"The Mini-Banana"
+			"item_class"	"tf_weapon_minigun"
+			"prefab"	"weapon_minigun"
+			"capabilities"
+			{
+				"nameable"		"1"
+			}
+			"tags"
+			{
+				"can_deal_damage"			"1"
+				"can_deal_critical_damage"	"1"
+				"can_deal_mvm_penetration_damage"	"1"
+				"can_deal_long_distance_damage"	"1"
+			}
+			"craft_class"	""
+			"craft_material_type"		""
+			"show_in_armory"	"1"
+			"item_type_name"	"#TF_Weapon_Minigun"
+			"item_name"	"Mini-Banana"
+			"item_slot"	"primary"
+			"item_logname"	"banana_minigun"
+			"item_iconname"	"banana_minigun"
+			"image_inventory"	"backpack/weapons/c_models/c_banana/c_banana"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"82"
+			"model_player"	"models/weapons/c_models/c_banana/c_banana.mdl"
+			"attach_to_hands"	"1"
+			"item_quality"	"unique"
+			"min_ilevel"	"5"
+			"max_ilevel"	"5"
+			"used_by_classes"
+			{
+				"heavy"	"1"
+			}
+			"mouse_pressed_sound"	"ui/item_heavy_gun_pickup.wav"
+			"drop_sound"		"ui/item_heavy_gun_drop.wav"
+			"attributes"
+			{
+				"cannot trade"
+				{
+					"attribute_class"	"cannot_trade"
+					"value"				"1"
+				}
+			}
+		}
 		"30570"
 		{
 			"name"		"Pool Party Taunt"
