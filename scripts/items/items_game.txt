@@ -29721,6 +29721,189 @@
 				"pyro"		"1"
 			}
 		}
+		"7094"
+		{
+			"name"		"The Hollowhead"
+			"prefab"		"halloween2013 misc"
+			"item_type_name"		"#TF_Wearable_Mask"
+			"item_name"		"#TF_hw2013_hollowhead"
+			"item_description"		"#TF_hw2013_hollowhead_Desc"
+			"equip_region"		"pyro_head_replacement"
+			"propername"		"1"
+			"visuals"
+			{
+				"player_bodygroups"
+				{
+					"head"		"1"
+				}
+			}
+			"image_inventory"		"backpack/workshop/player/items/pyro/hw2013_hollowhead/hw2013_hollowhead"
+			"model_player"		"models/workshop/player/items/pyro/hw2013_hollowhead/hw2013_hollowhead.mdl"
+			"used_by_classes"
+			{
+				"pyro"		"1"
+			}
+			"mouse_pressed_sound"		"ui/item_helmet_pickup.wav"
+			"drop_sound"		"ui/item_helmet_drop.wav"
+		}
+		"7095"
+		{
+			"name"		"Trickster's Turnout Gear"
+			"prefab"		"misc"
+			"first_sale_date"		"2013/10/09"
+			"item_type_name"		"#TF_Wearable_Coat"
+			"item_name"		"#TF_fall2013_the_insidious_incinerator"
+			"item_description"		"#TF_fall2013_the_insidious_incinerator_Desc"
+			"equip_region"		"shirt"
+			"image_inventory"		"backpack/workshop/player/items/pyro/fall2013_the_insidious_incinerator/fall2013_the_insidious_incinerator"
+			"capabilities"
+			{
+				"can_craft_count"		"1"
+				"paintable"		"1"
+			}
+			"model_player"		"models/workshop/player/items/pyro/fall2013_the_insidious_incinerator/fall2013_the_insidious_incinerator.mdl"
+			"used_by_classes"
+			{
+				"pyro"		"1"
+			}
+			"mouse_pressed_sound"		"ui/item_hat_pickup.wav"
+			"drop_sound"		"ui/item_hat_drop.wav"
+		}
+		"7096"
+		{
+			"name"	"The Little Buddy"
+			"first_sale_date"	"2011/09/09"
+			"prefab"	"hat"
+			"capabilities"
+			{
+				"paintable"		"1"
+				"can_craft_count"	"1"
+			}
+			"item_name"	"#TF_PyroHat1"
+			"item_description"	"#TF_PyroHat1_Desc"
+			"min_ilevel"	"10"
+			"max_ilevel"	"10"
+			"propername"	"1"
+			"image_inventory"	"backpack/player/items/pyro/fwk_pyro_sailor"
+			"model_player"	"models/player/items/pyro/fwk_pyro_sailor.mdl"
+			"drop_type"		"drop"
+			"used_by_classes"
+			{
+				"pyro"	"1"
+			}
+		}
+		"7097"
+		{
+			"name"	"The Pyrotechnic Tote"
+			"first_sale_date"	"2012/11/27"
+			"prefab"	"backpack"
+			"capabilities"
+			{
+				"paintable"		"1"
+				"can_craft_count"	"1"
+			}
+			"item_type_name"	"#TF_Wearable_Backpack"
+			"item_name"	"#TF_Pyro_FireworksBag"
+			"item_description"	"#TF_Pyro_FireworksBag_Desc"
+			"image_inventory"	"backpack/player/items/pyro/pyro_fireworksbag"
+			"propername" "1"
+			"model_player"	"models/player/items/pyro/pyro_fireworksbag.mdl"
+			"used_by_classes"
+			{
+				"pyro" "1"
+			}
+			"mouse_pressed_sound"	"ui/item_pack_pickup.wav"
+			"drop_sound"		"ui/item_pack_drop.wav"
+		}
+		"7098"
+		{
+			"name"		"The External Organ"
+			"prefab"		"halloween2013 misc"
+			"item_type_name"		"#TF_Wearable_Backpack"
+			"item_name"		"#TF_hw2013_dark_orchestra"
+			"item_description"		"#TF_hw2013_dark_orchestra_Desc"
+			"equip_region"		"back"
+			"propername"		"1"
+			"visuals"
+			{
+				"player_bodygroups"
+				{
+					"backpack"		"1"
+				}
+			}
+			"image_inventory"		"backpack/workshop/player/items/pyro/hw2013_dark_orchestra/hw2013_dark_orchestra"
+			"model_player"		"models/workshop/player/items/pyro/hw2013_dark_orchestra/hw2013_dark_orchestra.mdl"
+			"used_by_classes"
+			{
+				"pyro"		"1"
+			}
+			"capabilities"
+			{
+				"paintable"		"1"
+			}
+			"mouse_pressed_sound"		"ui/item_pack_pickup.wav"
+			"drop_sound"		"ui/item_pack_drop.wav"
+		}
+		"7099"
+		{
+			"name"		"The Soot Suit"
+			"prefab"		"misc"
+			"first_sale_date"		"2013/08/26"
+			"item_type_name"		"#TF_Wearable_Shirt"
+			"item_name"		"#TF_jul13_soot_suit"
+			"item_description"		"#TF_jul13_soot_suit_Desc"
+			"equip_region"		"shirt"
+			"propername"		"1"
+			"visuals"
+			{
+				"player_bodygroups"
+				{
+					"grenades"		"1"
+				}
+			}
+			"image_inventory"		"backpack/workshop/player/items/pyro/jul13_soot_suit/jul13_soot_suit"
+			"capabilities"
+			{
+				"paintable"		"1"
+				"can_craft_count"		"1"
+			}
+			"model_player"		"models/workshop/player/items/pyro/jul13_soot_suit/jul13_soot_suit.mdl"
+			"used_by_classes"
+			{
+				"pyro"		"1"
+			}
+			"mouse_pressed_sound"		"ui/item_hat_pickup.wav"
+			"drop_sound"		"ui/item_hat_drop.wav"
+		}
+		"7100"
+		{
+			"name"		"Sweet Smissmas Sweater"
+			"prefab"		"no_craft misc marketable"
+			"first_sale_date"		"2016/12/15"
+			"item_name"		"#TF_dec16_smissmas_sweater"
+			"item_description"		"#TF_dec16_smissmas_sweater_Desc"
+			"item_type_name"		"#TF_Wearable_Sweater"
+			"equip_region"		"shirt"
+			"visuals"
+			{
+				"player_bodygroups"
+				{
+					"grenades"		"1"
+				}
+			}
+			"image_inventory"		"backpack/workshop/player/items/pyro/dec16_smissmas_sweater/dec16_smissmas_sweater"
+			"capabilities"
+			{
+				"can_craft_count"		"1"
+			}
+			"model_player"		"models/workshop/player/items/pyro/dec16_smissmas_sweater/dec16_smissmas_sweater.mdl"
+			"used_by_classes"
+			{
+				"pyro"		"1"
+			}
+			"mouse_pressed_sound"		"ui/item_hat_pickup.wav"
+			"drop_sound"		"ui/item_hat_drop.wav"
+		}
 		"30570"
 		{
 			"name"		"Pool Party Taunt"
