@@ -31541,6 +31541,7 @@
 			"prefab"		"no_craft misc marketable"
 			"item_name"		"#TF_hwn2019_binoculus"
 			"item_description"		"#TF_hwn2019_binoculus_Desc"
+			"item_slot"	"misc2"
 			"item_type_name"		"#TF_Wearable_Eyes"
 			"image_inventory"		"backpack/workshop/player/items/all_class/hwn2019_binoculus/hwn2019_binoculus"
 			"capabilities"
