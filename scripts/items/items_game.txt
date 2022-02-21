@@ -21718,6 +21718,7 @@
 			{
 				"scout"	"1"
 				"heavy"	"1"
+				"demoman"	"1"
 			}
 			"visuals"
 			{
