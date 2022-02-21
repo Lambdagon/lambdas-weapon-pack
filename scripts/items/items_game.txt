@@ -3547,6 +3547,11 @@
 					"attribute_class" "extinguish_reduces_cooldown"
 					"value" "0.8"
 				}
+				"allowed in medieval mode"
+				{
+					"attribute_class"	"allowed_in_medieval_mode"
+					"value"	"1"
+				}
 			}
 			"visuals"
 			{
@@ -19766,6 +19771,11 @@
 					"attribute_class"	"override_projectile_type"
 					"value"				"22" 
 				}
+				"allowed in medieval mode"
+				{
+					"attribute_class"	"allowed_in_medieval_mode"
+					"value"	"1"
+				}
 			}
 			"static_attrs"
 			{
@@ -29188,6 +29198,528 @@
 			}
 			"mouse_pressed_sound"	"ui/item_metal_weapon_pickup.wav"
 			"drop_sound"		"ui/item_metal_weapon_drop.wav"
+		}
+		"7078"
+		{
+			"name"	"The Cremator's Conscience"
+			"first_sale_date"	"2011/09/21"
+			"prefab"	"grenades"
+			"capabilities"
+			{
+				"can_craft_count"	"1"
+				"paintable"			"1"
+			}
+			"item_type_name"	"#TF_Wearable_Conscience"
+			"item_name"	"#TF_PyroConscience"
+			"item_description"	"#TF_PyroConscience_Desc"
+			"image_inventory"	"backpack/player/items/pyro/fwk_pyro_conscience"
+			"model_player"	"models/player/items/pyro/fwk_pyro_conscience.mdl"
+			"propername"	"1"
+			"min_ilevel"	"15"
+			"max_ilevel"	"15"
+			"used_by_classes"
+			{
+				"pyro"	"1"
+			}
+			"attributes"
+			{
+				"counts as assister is some kind of pet this update is going to be awesome"
+				{
+					"attribute_class"	"counts_as_assister"
+					"value"				"1"
+				}
+			}
+		}
+		"7079"
+		{
+			"name"		"The Blizzard Breather"
+			"prefab"		"misc"
+			"first_sale_date"		"2013/12/19"
+			"item_type_name"		"#TF_Wearable_Mask"
+			"item_name"		"#TF_xms2013_pyro_arctic_mask"
+			"item_description"		"#TF_xms2013_pyro_arctic_mask_Desc"
+			"equip_region"		"pyro_head_replacement"
+			"propername"		"1"
+			"visuals"
+			{
+				"player_bodygroups"
+				{
+					"head"		"1"
+				}
+			}
+			"image_inventory"		"backpack/workshop/player/items/pyro/xms2013_pyro_arctic_mask/xms2013_pyro_arctic_mask"
+			"capabilities"
+			{
+				"paintable"		"1"
+			}
+			"model_player"		"models/workshop/player/items/pyro/xms2013_pyro_arctic_mask/xms2013_pyro_arctic_mask.mdl"
+			"used_by_classes"
+			{
+				"pyro"		"1"
+			}
+		}
+		"7080"
+		{
+			"name"	"The Triclops"
+			"prefab"	"promo hat"
+			"capabilities"
+			{
+				"paintable"			"1"
+			}
+			"item_name"	"#TF_SuperMNC_Pyro"
+			"item_description"	"#TF_SuperMNC_Pyro_Desc"
+			"item_type_name"		"#TF_Wearable_Mask"
+			"equip_region"	"whole_head"
+			"min_ilevel"	"10"
+			"max_ilevel"	"10"
+			"propername"	"1"
+			"image_inventory"	"backpack/player/items/pyro/smnc_pyro"
+			"model_player"	"models/player/items/pyro/smnc_pyro.mdl"
+			"used_by_classes"
+			{
+				"pyro" "1"
+			}
+			"mouse_pressed_sound"	"ui/item_default_pickup.wav"
+			"drop_sound"		"ui/item_default_drop.wav"
+			"visuals"
+			{
+				"styles"
+				{
+					"0"
+					{
+						"skin_red"	"0"
+						"skin_blu"	"1"
+						"name"	"#TF_SuperMNC_Pyro_Style0"
+					}
+					"1"
+					{
+						"skin_red"	"2"
+						"skin_blu"	"3"
+						"name"	"#TF_SuperMNC_Pyro_Style1"
+					}
+				}
+			}
+		}
+		"7081"
+		{
+			"name"	"The Infernal Orchestrina"
+			"prefab"	"valve base_misc"
+			"first_sale_date"	"2012/07/10"
+			"item_class"			"tf_wearable"
+			"loadondemand"			"1"
+			"craft_class"			"hat"
+			"craft_material_type"	"hat"
+			"show_in_armory"		"1"
+			"item_quality"			"unique"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"82"
+			"drop_type"				"none"
+			"item_slot"	"misc"
+			"equip_region"	"back"
+			"vision_filter_flags" "1"
+			"capabilities"
+			{
+				"nameable"		"1"
+				"can_craft_count"	"1"
+			}
+			"item_type_name"	"#TF_Wearable_Backpack"
+			"item_name"	"#TF_PyroMusicDevice"
+			"item_description"	"#TF_PyroMusicDevice_Desc"
+			"image_inventory"	"backpack/player/items/pyro/mtp_backpack"
+			"propername" "1"
+			"model_player_per_class"
+			{
+				"basename"	"models/player/items/%s/mtp_backpack.mdl"
+			}
+			"used_by_classes"
+			{
+				"pyro" "1"
+			}
+			"attributes"
+			{
+				"vision opt in flags"
+				{
+					"attribute_class"	"vision_opt_in_flags"
+					"value"				"1"
+				}
+				"pyrovision only DISPLAY ONLY"
+				{
+					"attribute_class"	"pyrovision_only_display"
+					"value"				"1"
+				}
+				"pyrovision opt in DISPLAY ONLY"
+				{
+					"attribute_class" 	"pyrovision_opt_in_display_only"
+					"value"		  		"1"
+				}
+				"cosmetic taunt sound"
+				{
+					"attribute_class"	"cosmetic_taunt_sound"
+					"value"				"pyro.music_backpack"
+				}
+			}
+			"visuals"
+			{
+				"player_bodygroups"
+				{
+					"backpack"			"1"
+				}
+				"playback_activity"
+				{
+					"on_spawn"	"ACT_IDLE"
+					"start_taunting"	"ACT_RUN"
+					"stop_taunting"	"ACT_IDLE"
+				}
+				"custom_sound0"		"pyro.music_backpack"
+			}
+			"mouse_pressed_sound" 	"ui/item_hat_pickup.wav"
+			"drop_sound" 			"ui/item_hat_drop.wav"
+		}
+		"7082"
+		{
+			"name"	"The Plutonidome"
+			"first_sale_date"	"2012/10/26"
+			"prefab"	"halloween misc"
+			"equip_region"	"pyro_head_replacement"
+			"item_type_name"	"#TF_Wearable_Mask"
+			"item_name"	"#TF_Plutonidome"
+			"item_description"	"#TF_Plutonidome_Desc"
+			"image_inventory"	"backpack/player/items/pyro/pyro_brainhead"
+			"model_player"	"models/player/items/pyro/pyro_brainhead.mdl"
+			"propername"	"1"
+			"drop_type"	"none"
+			"capabilities"
+			{
+				"paintable"		"1"
+			}
+			"used_by_classes"
+			{
+				"pyro"	"1"
+			}
+			"visuals"
+			{
+				"player_bodygroups"
+				{
+					"hat"			"1"
+					"head"			"1"
+				}
+				"styles"
+				{
+					"0"
+					{
+						"model_player"	"models/player/items/pyro/pyro_brainhead.mdl"
+						"name"	"#TF_Plutonidome_Style0"
+					}
+					"1"
+					{
+						"model_player"	"models/player/items/pyro/pyro_brainhead_s1.mdl"
+						"name"	"#TF_Plutonidome_Style1"
+					}
+				}
+			}
+			"mouse_pressed_sound"	"ui/item_robot_arm_pickup.wav"
+			"drop_sound"		"ui/item_robot_arm_drop.wav"
+		}
+		"7083"
+		{
+			"name"	"The Person in the Iron Mask"
+			"first_sale_date"	"2013/02/21"
+			"prefab"	"hat"
+			"equip_region"	"whole_head"
+			"capabilities"
+			{
+				"paintable"	"1"
+				"can_craft_count"	"1"
+			}
+			"item_name"	"#TF_IronMask"
+			"item_description"	"#TF_IronMask_Desc"
+			"item_type_name"		"#TF_Wearable_Mask"
+			"propername"	"1"
+			"image_inventory"	"backpack/player/items/pyro/bio_fireman"
+			"model_player"	"models/player/items/pyro/bio_fireman.mdl"
+			"used_by_classes"
+			{
+				"pyro"	"1"
+			}
+			"mouse_pressed_sound"	"ui/item_default_pickup.wav"
+			"drop_sound"		"ui/item_default_drop.wav"
+		}
+		"7084"
+		{
+			"name"		"Plumber's Pipe"
+			"prefab"		"no_craft hat"
+			"capabilities"
+			{
+				"can_craft_count"		"1"
+				"paintable"		"1"
+			}
+			"item_name"		"#TF_robo_pyro_prancers_pride"
+			"item_description"		"#TF_robo_pyro_prancers_pride_Desc"
+			"equip_region"		"hat"
+			"item_type_name"		"#TF_Wearable_Hat"
+			"image_inventory"		"backpack/workshop/player/items/pyro/robo_pyro_prancers_pride/robo_pyro_prancers_pride"
+			"model_player"		"models/workshop/player/items/pyro/robo_pyro_prancers_pride/robo_pyro_prancers_pride.mdl"
+			"used_by_classes"
+			{
+				"pyro"		"1"
+			}
+			"mouse_pressed_sound"		"ui/item_default_pickup.wav"
+			"drop_sound"		"ui/item_default_drop.wav"
+		}
+		"7085"
+		{
+			"name"		"The Sub Zero Suit"
+			"prefab"		"misc"
+			"first_sale_date"		"2013/12/19"
+			"item_type_name"		"#TF_Wearable_Apparel"
+			"item_name"		"#TF_xms2013_pyro_arctic_suit"
+			"item_description"		"#TF_xms2013_pyro_arctic_suit_Desc"
+			"equip_region"		"shirt"
+			"image_inventory"		"backpack/workshop/player/items/all_class/xms2013_arctic_suit/xms2013_arctic_suit"
+			"propername"		"1"
+			"capabilities"
+			{
+				"paintable"		"1"
+			}
+			"model_player_per_class"
+			{
+				"demoman"		"models/workshop/player/items/all_class/xms2013_arctic_suit/xms2013_arctic_suit_demo.mdl"
+				"pyro"		"models/workshop/player/items/all_class/xms2013_arctic_suit/xms2013_arctic_suit_pyro.mdl"
+			}
+			"used_by_classes"
+			{
+				"demoman"		"1"
+				"pyro"		"1"
+			}
+			"mouse_pressed_sound"		"ui/item_hat_pickup.wav"
+			"drop_sound"		"ui/item_hat_drop.wav"
+		}
+		"7086"
+		{
+			"name"		"The Frymaster"
+			"prefab"		"misc"
+			"first_sale_date"		"2014/06/16"
+			"propername"		"1"
+			"valid_for_shuffle"		"1"
+			"item_name"		"#TF_short2014_fowl_fryer"
+			"item_description"		"#TF_short2014_fowl_fryer_Desc"
+			"item_type_name"		"#TF_Wearable_Backpack"
+			"equip_region"		"back"
+			"visuals"
+			{
+				"player_bodygroups"
+				{
+					"backpack"		"1"
+				}
+			}
+			"image_inventory"		"backpack/workshop/player/items/pyro/short2014_fowl_fryer/short2014_fowl_fryer"
+			"capabilities"
+			{
+				"can_craft_count"		"1"
+			}
+			"model_player"		"models/workshop/player/items/pyro/short2014_fowl_fryer/short2014_fowl_fryer.mdl"
+			"used_by_classes"
+			{
+				"pyro"		"1"
+			}
+		}
+		"7087"
+		{
+			"name"	"The Scrap Pack"
+			"prefab"	"backpack"
+			"capabilities"
+			{
+				"paintable"		"1"
+				"can_craft_count"	"1"
+			}
+			"item_type_name"	"#TF_Wearable_Robot"
+			"item_name"	"#TF_ShootManyRobotsPack"
+			"item_description"	"#TF_ShootManyRobotsPack_Desc"
+			"image_inventory"	"backpack/player/items/pyro/shootmanyrobots_pyro"
+			"propername" "1"
+			"model_player_per_class"
+			{
+				"basename"	"models/player/items/%s/shootmanyrobots_%s.mdl"
+			}
+			"used_by_classes"
+			{
+				"medic"	"1"
+				"pyro" "1"
+			}
+			"attributes"
+			{
+				"counts as assister is some kind of pet this update is going to be awesome"
+				{
+					"attribute_class"	"counts_as_assister"
+					"value"				"1"
+				}
+			}
+			"mouse_pressed_sound"	"ui/item_robot_arm_pickup.wav"
+			"drop_sound"		"ui/item_robot_arm_drop.wav"
+		}
+		"7088"
+		{
+			"name"	"The Texas Half-Pants"
+			"first_sale_date"	"2012/04/17"
+			"prefab"	"misc"
+			"capabilities"
+			{
+				"paintable"		"1"
+			}
+			"equip_region"	"pants"
+			"item_type_name"	"TF_Wearable_Pants"
+			"item_name"	"#TF_EngineerChaps"
+			"item_description"	"#TF_EngineerChaps_Desc"
+			"image_inventory"	"backpack/player/items/engineer/engineer_chaps"
+			"model_player"	"models/player/items/engineer/engineer_chaps.mdl"
+			"propername"	"1"
+			"visuals"
+			{
+				"styles"
+				{
+					"0"
+					{
+						"skin"	"0"
+						"name"	"#TF_EngineerChaps_Style0"
+					}
+					"1"
+					{
+						"skin"	"1"
+						"name"	"#TF_EngineerChaps_Style1"
+					}
+				}
+			}
+			"used_by_classes"
+			{
+				"engineer"	"1"
+			}
+			"mouse_pressed_sound"	"ui/item_hat_pickup.wav"
+			"drop_sound"		"ui/item_hat_drop.wav"
+		}
+		"7089"
+		{
+			"name"		"Respectless Robo-Glove"
+			"prefab"		"no_craft hat"
+			"item_name"		"#TF_robo_pyro_respectless_glove"
+			"item_description"		"#TF_robo_pyro_respectless_glove_Desc"
+			"equip_region"		"hat"
+			"drop_type"		"drop"
+			"item_type_name"		"#TF_Wearable_Hat"
+			"image_inventory"		"backpack/workshop/player/items/pyro/robo_pyro_respectless_glove/robo_pyro_respectless_glove"
+			"capabilities"
+			{
+				"can_craft_count"		"1"
+				"paintable"		"1"
+			}
+			"model_player"		"models/workshop/player/items/pyro/robo_pyro_respectless_glove/robo_pyro_respectless_glove.mdl"
+			"used_by_classes"
+			{
+				"pyro"		"1"
+			}
+			"mouse_pressed_sound"		"ui/item_robot_arm_pickup.wav"
+			"drop_sound"		"ui/item_robot_arm_drop.wav"
+		}
+		"7090"
+		{
+			"name"	"The Moonman Backpack"
+			"first_sale_date"	"2011/12/15"
+			"prefab"	"backpack"
+			"capabilities"
+			{
+				"can_craft_count"	"1"
+			}
+			"item_type_name"	"#TF_Wearable_FuelTank"
+			"item_name"	"#TF_GrordbortPyro_Tank"
+			"item_description"	"#TF_GrordbortPyro_Tank_Desc"
+			"image_inventory"	"backpack/player/items/pyro/drg_pyro_fueltank"
+			"propername"	"1"
+			"model_player"	"models/player/items/pyro/drg_pyro_fuelTank.mdl"
+			"min_ilevel"	"15"
+			"max_ilevel"	"15"
+			"used_by_classes"
+			{
+				"pyro"	"1"
+			}
+		}
+		"7091"
+		{
+			"name"	"The Bubble Pipe"
+			"first_sale_date"	"2011/12/15"
+			"prefab"	"hat"
+			"capabilities"
+			{
+				"can_craft_count"	"1"
+			}
+			"item_name"	"#TF_Bubble_Helmet"
+			"item_description"	"#TF_Bubble_Helmet_Desc"
+			"item_type_name"		"#TF_Wearable_Helmet"
+			"propername"	"1"
+			"image_inventory"	"backpack/player/items/pyro/drg_pyro_bubblehelmet"
+			"model_player"	"models/player/items/pyro/drg_pyro_bubbleHelmet.mdl"
+			"attributes"
+			{
+				"attach particle effect static"
+				{
+					"attribute_class"	"set_attached_particle_static"
+					"value"	"28"
+				}
+			}
+			"used_by_classes"
+			{
+				"pyro"	"1"
+			}
+			"mouse_pressed_sound" 	"ui/item_helmet_pickup.wav"
+			"drop_sound" 		"ui/item_helmet_drop.wav"
+		}
+		"7092"
+		{
+			"name"		"The Mucous Membrain"
+			"prefab"		"halloween2013 hat"
+			"item_type_name"		"#TF_Wearable_Costume"
+			"item_name"		"#TF_hw2013_mucus_membrane"
+			"item_description"		"#TF_hw2013_mucus_membrane_Desc"
+			"equip_region"
+			{
+				"hat"		"1"
+				"pyro_head_replacement"		"1"
+			}
+			"propername"		"1"
+			"image_inventory"		"backpack/workshop/player/items/pyro/hw2013_mucus_membrane/hw2013_mucus_membrane"
+			"model_player"		"models/workshop/player/items/pyro/hw2013_mucus_membrane/hw2013_mucus_membrane.mdl"
+			"used_by_classes"
+			{
+				"pyro"		"1"
+			}
+			"mouse_pressed_sound"		"ui/item_gooey_pickup.wav"
+			"drop_sound"		"ui/item_gooey_pickup.wav"
+		}
+		"7093"
+		{
+			"name"		"Creature's Grin"
+			"prefab"		"halloween2014 no_craft misc"
+			"item_name"		"#TF_sf14_the_creatures_grin"
+			"item_description"		"#TF_sf14_the_creatures_grin_Desc"
+			"item_type_name"		"#TF_Wearable_Mask"
+			"equip_region"		"pyro_head_replacement"
+			"propername"		"1"
+			"visuals"
+			{
+				"player_bodygroups"
+				{
+					"head"		"1"
+				}
+			}
+			"image_inventory"		"backpack/workshop/player/items/pyro/sf14_the_creatures_grin/sf14_the_creatures_grin"
+			"capabilities"
+			{
+				"can_craft_count"		"1"
+				"paintable"		"1"
+			}
+			"model_player"		"models/workshop/player/items/pyro/sf14_the_creatures_grin/sf14_the_creatures_grin.mdl"
+			"used_by_classes"
+			{
+				"pyro"		"1"
+			}
 		}
 		"30570"
 		{
