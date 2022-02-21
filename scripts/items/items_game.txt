@@ -21707,6 +21707,7 @@
 			"craft_class"	""				
 			"craft_material_type"	""	
 			"item_type_name"	"boots"
+			"item_slot" "misc2"
 			"item_name"	"Long Fall Loafers"
 			"item_description"	"cosmetic"
 			"propername"	"1"
@@ -21716,6 +21717,7 @@
 			"used_by_classes"
 			{
 				"scout"	"1"
+				"heavy"	"1"
 			}
 			"visuals"
 			{
@@ -22353,6 +22355,7 @@
 			}
 			"equip_region"	"soldier_cigar"
 			"item_type_name"	"#TF_Wearable_Cigar"
+			"item_slot" "misc2"
 			"item_name"	"#TF_SoldierCigar"
 			"item_description"	"HES SMOKING A FUCKIN BLUNT!!!!"
 			"image_inventory"	"backpack/player/items/soldier/cigar"
@@ -22657,6 +22660,7 @@
 				"can_craft_count"	"1"
 			}
 			"item_type_name"	"#TF_Wearable_FlipFlops"
+			"item_slot" "misc2"
 			"item_name"	"#TF_Heavy_AquaFlops"
 			"item_description"	"#TF_Heavy_AquaFlops_Desc"
 			"equip_region"	"feet"
@@ -26456,6 +26460,7 @@
 			"item_name"		"#TF_dec16_packable_provisions"
 			"item_description"		"#TF_dec16_packable_provisions_Desc"
 			"item_type_name"		"#TF_Wearable_Provisions"
+			"item_slot" "misc2"
 			"equip_region"		"Back"
 			"image_inventory"		"backpack/workshop/player/items/engineer/dec16_packable_provisions/dec16_packable_provisions"
 			"capabilities"
@@ -26466,6 +26471,7 @@
 			"used_by_classes"
 			{
 				"engineer"		"1"
+				"heavy"		"1"
 			}
 			"mouse_pressed_sound"		"ui/item_bag_pickup.wav"
 			"drop_sound"		"ui/item_bag_drop.wav"
@@ -26608,6 +26614,7 @@
 			"prefab"	"valve halloween_costume_piece_2011 base_misc"
 			"item_name"	"#TF_Hwn_MedicMisc2"
 			"item_description"	"#TF_Hwn_MedicMisc2_Desc"
+			"item_slot" "misc"
 			"propername"	"1"
 			"item_slot"	"misc"
 			"equip_region"	"medigun_accessories"
@@ -27982,6 +27989,7 @@
 			"first_sale_date"		"2014/06/16"
 			"equip_region"		"feet"
 			"item_type_name"		"#TF_Wearable_Shoes"
+			"item_slot" "misc2"
 			"item_name"		"#TF_ScoutFancyShoes"
 			"item_description"		"#TF_ScoutFancyShoes_Desc"
 			"image_inventory"		"backpack/player/items/scout/scout_brogues"
@@ -28012,6 +28020,7 @@
 				"can_craft_count"	"1"
 			}
 			"item_type_name"	"#TF_Wearable_Bandages"
+			"item_slot" "misc2"
 			"item_name"	"#TF_TombWrapper"
 			"item_description"	"#TF_TombWrapper_Desc"
 			"propername"	"1"
@@ -28430,43 +28439,6 @@
 			"mouse_pressed_sound" 	"ui/item_hat_pickup.wav"
 			"drop_sound" 		"ui/item_hat_drop.wav"
 		}
-		"7055"
-		{
-			"name"	"The Tin Pot"
-			"prefab"	"hat"
-			"craft_class"	""
-			"item_name"	"#TF_Soldier_Robot_Helmet"
-			"item_description"	"#TF_Soldier_Robot_Helmet_Desc"
-			"image_inventory"	"backpack/player/items/mvm_loot/soldier/robot_helmet"
-			"propername"	"1"
-			"drop_type"	"drop"
-			"visuals"
-			{
-				"styles"
-				{
-					"0"
-					{
-						"model_player"	"models/player/items/mvm_loot/soldier/robot_helmet_bullet.mdl"
-						"skin_red"	"0"
-						"skin_blu"	"1"
-						"name"	"#TF_Soldier_Robot_Helmet_Style0"
-					}
-					"1"
-					{
-						"model_player"	"models/player/items/mvm_loot/soldier/robot_helmet.mdl"
-						"skin_red"	"0"
-						"skin_blu"	"1"
-						"name"	"#TF_Soldier_Robot_Helmet_Style1"
-					}
-				}
-			}
-			"used_by_classes"
-			{
-				"soldier"	"1"
-			}
-			"mouse_pressed_sound"	"ui/item_default_pickup.wav"
-			"drop_sound"		"ui/item_default_drop.wav"
-		}
 		"7056"
 		{
 			"name"		"The Classified Coif"
@@ -28499,6 +28471,7 @@
 			"item_name"		"#TF_dec19_public_speaker"
 			"item_description"		"#TF_dec19_public_speaker_Desc"
 			"item_type_name"		"#TF_Wearable_Speaker"
+			"item_slot" "misc2"
 			"image_inventory"		"backpack/workshop/player/items/soldier/dec19_public_speaker/dec19_public_speaker"
 			"capabilities"
 			{
@@ -28574,6 +28547,7 @@
 			"loadondemand" "1"
 			"show_in_armory"	"1"
 			"item_type_name"	"#TF_Wearable_FacialHair"
+			"item_slot" "misc2"
 			"item_name"	"#TF_LordCockswainChops"
 			"item_description"	"#TF_LordCockswainChops_Desc"
 			"item_slot"	"misc"
@@ -28673,6 +28647,7 @@
 			"item_name"		"#TF_hwn2021_tricksters_treats"
 			"item_description"		"#TF_hwn2021_tricksters_treats_Desc"
 			"item_type_name"		"#TF_Wearable_Treats"
+			"item_slot" "misc2"
 			"equip_region"		"grenades"
 			"image_inventory"		"backpack/workshop/player/items/all_class/hwn2021_tricksters_treats/hwn2021_tricksters_treats"
 			"capabilities"
@@ -30094,6 +30069,7 @@
 				"can_craft_count"	"1"
 			}
 			"item_name"	"#TF_OldBrimstone"
+			"item_slot" "misc2"
 			"item_description"	"#TF_OldBrimstone_Desc"
 			"image_inventory"	"backpack/player/items/demo/bombs"
 			"min_ilevel"	"20"
@@ -30489,6 +30465,7 @@
 			"item_name"		"#TF_hwn2020_boom_boxers"
 			"item_description"		"#TF_hwn2020_boom_boxers_Desc"
 			"item_type_name"		"#TF_Wearable_TornPants"
+			"item_slot" "misc2"
 			"equip_region"		"pants"
 			"image_inventory"		"backpack/workshop/player/items/all_class/hwn2020_boom_boxers/hwn2020_boom_boxers"
 			"propername"		"1"
@@ -30723,6 +30700,7 @@
 			"name"		"The Last Bite"
 			"prefab"		"halloween2013 misc"
 			"item_type_name"		"#TF_Wearable_Coffin"
+			"item_slot" "misc2"
 			"item_name"		"#TF_hw2013_last_bite"
 			"item_description"		"#TF_hw2013_last_bite_Desc"
 			"equip_region"		"heavy_belt_back"
