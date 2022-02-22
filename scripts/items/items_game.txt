@@ -14985,6 +14985,7 @@
 			{
 				"demoman"	"1"
 				"scout"		"1"
+				"spy"		"pda2"
 			}
 			"attributes"
 			{
