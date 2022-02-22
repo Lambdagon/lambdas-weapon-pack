@@ -31136,6 +31136,11 @@
 					"attribute_class"	"sticky_arm_time"
 					"value"	"-0.8"
 				}
+				"stickybomb charge rate"
+				{
+					"attribute_class"	"stickybomb_charge_rate"
+					"value"	"0.3"
+				}
 				"damage bonus"
 				{
 					"attribute_class"	"mult_dmg"
