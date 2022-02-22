@@ -31537,10 +31537,10 @@
 			"attach_to_hands"	"1"
 			"item_logname"	"Golden_Bat-Saber"
 			"item_iconname"	"Golden_Bat-Saber"
-			"image_inventory"	"backpack/weapons/c_models/c_wrench/gold_wrench"
+			"image_inventory"		"backpack/workshop/weapons/c_models/c_invasion_bat/c_invasion_bat"
 			"image_inventory_size_w"		"128"
 			"image_inventory_size_h"		"82"
-			"model_player"	"models/weapons/c_models/c_wrench/c_wrench.mdl"
+			"model_player"		"models/workshop/weapons/c_models/c_invasion_bat/c_invasion_bat.mdl"
 			"used_by_classes"
 			{
 				"engineer"	"1"
@@ -31580,6 +31580,136 @@
 			"mouse_pressed_sound"	"ui/item_medal_pickup.wav"
 			"drop_sound"		"ui/item_medal_pickup.wav"
 			"xifier_class_remap"	"wrench"
+		}
+		"7149"
+		{
+			"enabled"	"1"
+			"item_class"	"tf_weapon_compound_bow"
+			"craft_class"	"weapon"
+			"craft_material_type"	"weapon"
+			"capabilities"
+			{
+				"nameable"		"1"
+			}
+			"tags"
+			{
+				"can_deal_damage"			"1"
+				"can_headshot"				"1"
+				"can_deal_posthumous_damage"	"1"
+				"can_deal_critical_damage"	"1"
+				"can_deal_mvm_penetration_damage"	"1"
+				"can_deal_long_distance_damage"	"1"
+				"can_deal_taunt_damage"		"1"
+			}
+			"base_item_name"	"The Huntsman"
+			"show_in_armory"	"1"
+			"item_type_name"	"bow"
+			"item_name"	"Daedalus Stormbow"
+			"item_slot"	"primary"
+			"item_quality"	"unique"
+			"propername"	"1"
+			"item_iconname"	"The_Daedalus_Stormbow"
+			"min_ilevel"	"10"
+			"max_ilevel"	"10"
+			"anim_slot"	"item2"
+			"image_inventory"	"backpack/weapons/c_models/c_bow/c_bow"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"82"
+			"inspect_panel_dist"	 			"65"
+			"model_player"	"models/weapons/c_models/c_dbow/c_bow.mdl"
+			"attach_to_hands"	"1"
+			"flip_viewmodel"	"1"
+			"used_by_classes"
+			{
+				"sniper"	"1"
+			}
+			"static_attrs"
+			{
+				"min_viewmodel_offset"		"10 -4 -10"
+				"crits_become_minicrits"				"1"
+			}
+			"attributes"
+			{
+				"max health additive bonus"
+				{
+					"attribute_class"	"add_maxhealth"
+					"value" "275"
+				}
+				"special taunt"
+				{
+					"attribute_class"	"special_taunt"
+					"value" "1"
+				}
+				"scattergun has knockback"
+				{
+					"attribute_class"	"set_scattergun_has_knockback"
+					"value"	"1"
+				}
+				"damage bonus"
+				{
+					"attribute_class"	"mult_dmg"
+					"value"	"1.15"
+				}
+				"mod see enemy health"
+				{
+					"attribute_class"	"see_enemy_health"
+					"value" "1"
+				}
+				"crit mod disabled"
+				{
+					"attribute_class"	"mult_crit_chance"
+					"value"	"0"
+				}
+				"dmg taken from fire increased"
+				{
+					"attribute_class"	"mult_dmgtaken_from_fire"
+					"value"			"2"
+				}
+				"move speed penelty"
+				{
+					"attribute_class"	"mult_player_movespeed"
+					"value" "1.10"
+				}
+				"dmg taken increased"
+				{
+					"attribute_class"	"mult_dmgtaken"
+					"value"	"1.2"
+				}
+			}
+			"visuals"
+			{
+				"player_bodygroups"
+				{
+					"arrows"		"1"
+				}
+				"animation_replacement"
+				{
+					"ACT_PRIMARY_VM_INSPECT_START"		"ACT_ITEM2_VM_INSPECT_START"
+					"ACT_PRIMARY_VM_INSPECT_IDLE"		"ACT_ITEM2_VM_INSPECT_IDLE"
+					"ACT_PRIMARY_VM_INSPECT_END"		"ACT_ITEM2_VM_INSPECT_END"
+				}
+			}
+			"mouse_pressed_sound"	"ui/item_wood_pole_pickup.wav"
+			"drop_sound"		"ui/item_wood_pole_drop.wav"
+		}
+		"7150"
+		{
+			"name"	"The Fortified Compound"
+			"first_sale_date"	"2014/03/07"
+			"prefab"	"weapon_huntsman"
+			"capabilities"
+			{
+				"can_craft_count"	"1"
+			}
+			"static_attrs"
+			{
+				"min_viewmodel_offset"		"10 -4 -10"				
+			}
+			"item_name"	"#TF_FortifiedCompound"
+			"item_description"	"#TF_FortifiedCompound_Desc"
+			"image_inventory"	"backpack/workshop_partner/weapons/c_models/c_bow_thief/c_bow_thief"
+			"model_player"	"models/workshop_partner/weapons/c_models/c_bow_thief/c_bow_thief.mdl"
+			"inspect_panel_dist" 			"55"
 		}
 		"30570"
 		{
