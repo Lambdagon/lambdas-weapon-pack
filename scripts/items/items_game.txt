@@ -5781,7 +5781,6 @@
 			"used_by_classes"
 			{
 				"medic"	"1"
-				"scout"	"primary"
 			}
 			"static_attrs"
 			{
@@ -31710,6 +31709,42 @@
 			"image_inventory"	"backpack/workshop_partner/weapons/c_models/c_bow_thief/c_bow_thief"
 			"model_player"	"models/workshop_partner/weapons/c_models/c_bow_thief/c_bow_thief.mdl"
 			"inspect_panel_dist" 			"55"
+		}
+		"7151"
+		{
+			"name"		"The First Banana"
+			"first_sale_date"		"2017/09/13"
+			"prefab"		"weapon_sandvich"
+			"craft_class"	"" 
+			"craft_material_type"	"weapon"
+			"item_name"		"#TF_Unique_Lunchbox_Banana"
+			"item_description"		"#TF_Lunchbox_Banana_desc"
+			"image_inventory"		"backpack/weapons/c_models/c_banana/c_banana"
+			"model_player"		"models/weapons/c_models/c_banana/c_banana.mdl"
+			"propername"		"1"
+			"show_in_armory"	"1"
+			"static_attrs"
+			{
+				"item_meter_charge_rate"	"10"
+			}
+			"attributes"
+			{
+				"lunchbox adds minicrits"
+				{
+					"attribute_class"	"set_weapon_mode"
+					"value"	"6"
+				}
+				"lunchbox healing increased"
+				{
+					"attribute_class" "lunchbox_healing_scale"
+					"value" "1.67"
+				}
+				"charge recharge rate increased"
+				{
+					"attribute_class"	"charge_recharge_rate"
+					"value"	"1.5"
+				}
+			}
 		}
 		"30570"
 		{
