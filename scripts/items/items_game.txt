@@ -2740,6 +2740,7 @@
 			"used_by_classes"
 			{
 				"scout"	"1"
+				"engineer"	"1"
 			}
 			"static_attrs"
 			{
@@ -4829,6 +4830,10 @@
 			"used_by_classes"
 			{
 				"heavy"	"1"
+				"engineer"	"1"
+				"scout"	"primary"
+				"soldier"	"1"
+				"pyro"	"1"
 			}
 			"static_attrs"
 			{
@@ -5291,6 +5296,7 @@
 			"used_by_classes"
 			{
 				"scout"	"1"
+				"engineer"	"1"
 			}
 			"attributes"
 			{
@@ -5299,7 +5305,7 @@
 					"attribute_class"	"provide_on_active"
 					"value" "1"
 				}
-				"reload time increased hidden"
+				"reload time increased"
 				{
 					"attribute_class"	"mult_reload_time_hidden"
 					"value"	"1.5"
@@ -5314,7 +5320,7 @@
 					"attribute_class"	"damage_force_reduction"
 					"value" "1"
 				}
-				"damage force increase hidden"
+				"damage force increase"
 				{
 					"attribute_class"	"damage_force_reduction"
 					"value" "1.2"
@@ -5775,6 +5781,7 @@
 			"used_by_classes"
 			{
 				"medic"	"1"
+				"scout"	"primary"
 			}
 			"static_attrs"
 			{
@@ -6311,6 +6318,7 @@
 			"used_by_classes"
 			{
 				"scout"	"1"
+				"engineer"	"1"
 			}
 			"static_attrs"
 			{
@@ -14005,6 +14013,7 @@
 			"used_by_classes"
 			{
 				"scout"	"1"
+				"engineer"	"1"
 			}
 			"static_attrs"
 			{
@@ -31458,6 +31467,76 @@
 			"attach_to_hands"	"1"
 			"item_logname"	"golden_scunt"
 			"item_iconname"	"golden_scunt"
+			"image_inventory"	"backpack/weapons/c_models/c_wrench/gold_wrench"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"82"
+			"model_player"	"models/weapons/c_models/c_wrench/c_wrench.mdl"
+			"used_by_classes"
+			{
+				"engineer"	"1"
+			}
+			"visuals"
+			{
+				"material_override"	"models/weapons/c_items/gold_wrench.vmt"
+			}
+			"attributes"
+			{
+				"turn to gold"
+				{
+					"attribute_class"	"set_turn_to_gold"
+					"value" "1"
+				}
+				"cannot trade"
+				{
+					"attribute_class"	"cannot_trade"
+					"value"				"1"
+				}
+				"Construction rate increased"
+				{
+					"attribute_class"	"mult_construction_value"
+					"value"		"250"
+				}
+				"fire rate bonus"
+				{
+					"attribute_class"	"mult_postfiredelay"
+					"value"	"0.80"
+				}
+			}
+			"static_attrs"
+			{
+				"limited quantity item"		"1"
+				"min_viewmodel_offset"		"10 -2 -9"
+			}
+			"mouse_pressed_sound"	"ui/item_medal_pickup.wav"
+			"drop_sound"		"ui/item_medal_pickup.wav"
+			"xifier_class_remap"	"wrench"
+		}
+		"7148"
+		{
+			"name"	"The Golden Bat-Saber"
+			"first_sale_date"	"2010/09/29"
+			"item_class"	"tf_weapon_wrench"
+			"capabilities"
+			{
+				"nameable"		"1"
+			}
+			"tags"
+			{
+				"can_deal_damage"			"1"
+				"can_deal_critical_damage"	"1"
+				"can_destroy_sappers"		"1"
+			}
+			"show_in_armory"	"1"
+			"item_type_name"	"#TF_Weapon_Wrench"
+			"item_name"	"Golden Bat-Saber"
+			"item_slot"	"melee"
+			"item_quality"	"unique"
+			"min_ilevel"	"25"
+			"max_ilevel"	"25"
+			"propername"	"1"
+			"attach_to_hands"	"1"
+			"item_logname"	"Golden_Bat-Saber"
+			"item_iconname"	"Golden_Bat-Saber"
 			"image_inventory"	"backpack/weapons/c_models/c_wrench/gold_wrench"
 			"image_inventory_size_w"		"128"
 			"image_inventory_size_h"		"82"
