@@ -2089,7 +2089,6 @@
 			"used_by_classes"
 			{
 				"demoman"	"1"
-				"scout"	"1"
 			}
 			"attributes"
 			{
@@ -2416,7 +2415,6 @@
 			"used_by_classes"
 			{
 				"demoman"	"1"
-				"scout"		"1"
 			}
 			"static_attrs"
 			{
@@ -12545,7 +12543,7 @@
 				"can_deal_damage"			"1"
 				"can_deal_critical_damage"	"1"
 			}
-			"show_in_armory"	"1"
+			"show_in_armory"	"0"
 			"item_type_name"	"#TF_Weapon_Severed_Arm"
 			"item_name"	"Unarmed Combat"
 			"item_description"	"Part of Lambda's Weapon Pack"
@@ -19964,6 +19962,7 @@
 			"item_name"	"?"
 			"item_description"	"Part of Lambda's  Weapon pack"
 			"item_slot"	"secondary"
+			"show_in_armory"	"0"
 			"item_quality"	"normal"
 			"min_ilevel"	"1"
 			"max_ilevel"	"1"
@@ -20836,7 +20835,7 @@
 				"can_deal_damage"			"1"
 				"can_deal_critical_damage"	"1"
 			}
-			"show_in_armory"	"1"
+			"show_in_armory"	"0"
 			"item_type_name"	"bat"
 			"item_name"	"Lead Pipe"
 			"item_logname"	"lead_pipe"
@@ -21042,7 +21041,7 @@
 			"item_type_name"	"Jumper Scattergun"
 			"item_name"	"Jumper Scattergun"
 			"item_description"	"A fun little scattergun"
-			"item_slot"	"primary"
+			"item_slot"	"misc2"
 			"anim_slot"	"item2"
 			"item_quality"	"unique"
 			"propername"	"1"
@@ -22736,7 +22735,7 @@
 			"image_inventory"	"backpack/workshop/weapons/c_models/c_holymackerel/c_holymackerel_xmas"
 			"model_player"		"models/workshop/weapons/c_models/c_holymackerel/c_holymackerel_xmas.mdl"
 			"set_item_remap"	"The Holy Mackerel"
-			"show_in_armory" "1"
+			"show_in_armory" "0"
 			"visuals_red"
 			{
 				"skin" "0"
@@ -24417,6 +24416,7 @@
 			"craft_class"		""
 			"item_name"		"#TF_invasion_bat"
 			"item_description"		"#TF_invasion_bat_Desc"
+			"show_in_armory"		"0"
 			"item_logname"		"batsaber"
 			"item_iconname"		"batsaber"
 			"item_quality"		"unique"
@@ -24455,6 +24455,7 @@
 			"item_description"		"#TF_invasion_wrangler_Desc"
 			"item_logname"		"giger_counter"
 			"item_iconname"		"giger_counter"
+			"show_in_armory"	"0"
 			"propername"		"1"
 			"image_inventory"		"backpack/workshop/weapons/c_models/c_invasion_wrangler/c_invasion_wrangler"
 			"image_inventory_size_w"		"128"
@@ -31026,7 +31027,7 @@
 				"can_deal_critical_damage"	"1"
 				"can_deal_long_distance_damage"	"1"
 			}
-			"show_in_armory"	"1"
+			"show_in_armory"	"0"
 			"item_type_name"	"#TF_Weapon_RocketLauncher"
 			"item_name"	"Trapper"
 			"item_slot"	"primary"
