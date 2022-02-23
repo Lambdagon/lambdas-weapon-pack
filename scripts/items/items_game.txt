@@ -15019,6 +15019,21 @@
 					"attribute_class"	"kill_refills_meter"
 					"value"			"0.75"
 				}
+				"set cloak is movement based"
+				{
+					"attribute_class"	"set_weapon_mode"
+					"value"	"2"
+				}
+				"mult cloak meter regen rate"
+				{
+					"attribute_class"	"mult_cloak_meter_regen_rate"
+					"value"	"0"
+				}
+				"cloak consume rate increased"
+				{
+					"attribute_class"	"mult_cloak_meter_consume_rate"
+					"value"	"3333"
+				}
 			}
 			"mouse_pressed_sound"	"ui/item_wood_pole_pickup.wav"
 			"drop_sound"		"ui/item_wood_pole_drop.wav"
