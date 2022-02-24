@@ -8845,6 +8845,11 @@
 					"attribute_class"	"mult_postfiredelay"
 					"value"	"0.80"
 				}
+				"is australium item"
+				{
+					"attribute_class"	"is_australium_item"
+					"value"				"1"
+				}
 			}
 			"static_attrs"
 			{
@@ -14850,6 +14855,11 @@
 					"attribute_class"	"is_marketable"
 					"value"	"1"
 				}
+				"is australium item"
+				{
+					"attribute_class"	"is_australium_item"
+					"value"				"1"
+				}
 			}
 			"visuals"
 			{
@@ -20442,7 +20452,7 @@
 			}
 			"base_item_name"	"The Eyelander"
 			"item_name"	"Lambdas Knife"
-			"show_in_armory"	"1"
+			"show_in_armory"	"0"
 			"propername"	"1"
 			"image_inventory"	"backpack/weapons/c_models/c_claymore/c_claymore"
 			"model_player"	"models/weapons/c_models/c_claymore/c_claymore.mdl"
@@ -25728,6 +25738,14 @@
 			{
 				"medic"		"1"
 			}
+			"attributes"
+			{
+				"attach particle effect name"
+				{
+					"atribute_class"	"set_attached_particle_static"
+					"value"	"superrare_circling_heart"
+				}
+			}
 			"mouse_pressed_sound"		"ui/item_default_pickup.wav"
 			"drop_sound"		"ui/item_default_drop.wav"
 		}
@@ -28434,6 +28452,14 @@
 				"player_bodygroups"
 				{
 					"hat"			"1"
+				}
+			}
+			"attributes"
+			{
+				"attach particle effect name"
+				{
+					"atribute_class"	"set_attached_particle_name"
+					"value"	"burningplayer_flyingbits"
 				}
 			}
 			"mouse_pressed_sound" 	"ui/item_hat_pickup.wav"
@@ -31978,7 +32004,7 @@
 			"item_logname"	"grappling_hook"
 			"item_iconname"	"grappling_hook"
 			"item_slot"	"misc2"
-			"item_quality"	"normal"
+			"item_quality"	"developer"
 			"min_ilevel"	"1"
 			"max_ilevel"	"1"
 			"image_inventory"	"backpack/workshop/player/items/all_class/blapature_2018_tier3/blapature_2018_tier3"
@@ -32023,10 +32049,15 @@
 					"attribute_class"	"add_maxhealth"
 					"value" "950"
 				}
-				"attach particle effect"
+				"attach particle effect name"
 				{
-					"attribute_class"	"set_attached_particle"
-					"value"	"58"
+					"atribute_class"	"set_attached_particle_name"
+					"value"	"superrare_circling_heart"
+				}
+				"attach particle effect name"
+				{
+					"atribute_class"	"set_attached_particle_name"
+					"value"	"unusual_hearts_bubbling"
 				}
 			}
 			"mouse_pressed_sound"	"ui/item_light_gun_pickup.wav"
@@ -32090,7 +32121,7 @@
 				"attach particle effect name"
 				{
 					"atribute_class"	"set_attached_particle_static"
-					"value"	"superrare_circling_heart"
+					"value"	"stamp_spin"
 				}
 			}
 			"visuals"
@@ -32108,6 +32139,112 @@
 			}
 			"mouse_pressed_sound"	"ui/item_hat_pickup.wav"
 			"drop_sound"		"ui/item_hat_drop.wav"
+		}
+		"7160"
+		{
+			"name"	"GGibus"
+			"prefab"		"base_hat"
+			"item_class"	"tf_wearable"
+			"capabilities"
+			{
+				"nameable"		"1"
+			}
+			"loadondemand" "1"
+			"show_in_armory"	"1"
+			"item_type_name" 	"#TF_Wearable_Hat"
+			"item_name"	"Shit"
+			"item_description"	"you asked for this"
+			"item_slot"	"head"
+			"equip_region"	"hat"
+			"item_quality"	"unique"
+			"min_ilevel"	"10"
+			"max_ilevel"	"10"
+			"image_inventory"	"backpack/player/items/all_class/ghostly_gibus_demo"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"82"
+			"model_player_per_class"
+			{
+				"scout"		"models/player/items/all_class/ghostly_gibus_scout.mdl"
+				"sniper"	"models/player/items/all_class/ghostly_gibus_sniper.mdl"
+				"soldier"	"models/player/items/all_class/ghostly_gibus_soldier.mdl"
+				"demoman"	"models/player/items/all_class/ghostly_gibus_demoman.mdl"
+				"medic"		"models/player/items/all_class/ghostly_gibus_medic.mdl"
+				"heavy"		"models/player/items/all_class/ghostly_gibus_heavy.mdl"
+				"spy" 		"models/player/items/all_class/ghostly_gibus_spy.mdl"
+				"engineer" 	"models/player/items/all_class/ghostly_gibus_engineer.mdl"
+				"pyro" 		"models/player/items/all_class/ghostly_gibus_pyro.mdl"
+			}
+			"drop_type"	"drop"
+			"used_by_classes"
+			{
+				"scout"	"1"
+				"sniper"	"1"
+				"soldier"	"1"
+				"demoman"	"1"
+				"medic"	"1"
+				"heavy"	"1"
+				"spy" "1"
+				"engineer" "1"
+				"pyro" "1"
+			}
+			"attributes"
+			{
+				"attach particle effect name"
+				{
+					"atribute_class"	"set_attached_particle_static"
+					"value"	"unusual_orbit_nutsnbolts"
+				}
+			}
+			"visuals"
+			{
+				"player_bodygroups"
+				{
+					"hat"			"1"
+					"headphones"	"1"
+				}
+			}
+			"mouse_pressed_sound" 	"ui/item_hat_pickup.wav"
+			"drop_sound" 			"ui/item_hat_drop.wav"
+		}
+		"7161"
+		{
+			"name"		"Bread Biter"
+			"prefab"		"no_craft misc marketable"
+			"item_name"		"Bread Biter"
+			"item_description"		"#TF_hwn2019_bread_biter_Desc"
+			"item_type_name"		"#TF_Wearable_Bread"
+			"equip_region"		"beard"
+			"image_inventory"		"backpack/workshop/player/items/all_class/hwn2019_bread_biter/hwn2019_bread_biter"
+			"capabilities"
+			{
+				"can_craft_count"		"1"
+			}
+			"model_player_per_class"
+			{
+				"scout"		"models/workshop/player/items/all_class/hwn2019_bread_biter/hwn2019_bread_biter_scout.mdl"
+				"sniper"	"models/workshop/player/items/all_class/hwn2019_bread_biter/hwn2019_bread_biter_sniper.mdl"
+				"soldier"	"models/workshop/player/items/all_class/hwn2019_bread_biter/hwn2019_bread_biter_soldier.mdl"
+				"demoman"	"models/workshop/player/items/all_class/hwn2019_bread_biter/hwn2019_bread_biter_demoman.mdl"
+				"medic"		"models/workshop/player/items/all_class/hwn2019_bread_biter/hwn2019_bread_biter_medic.mdl"
+				"heavy"		"models/workshop/player/items/all_class/hwn2019_bread_biter/hwn2019_bread_biter_heavy.mdl"
+				"pyro"		"models/workshop/player/items/all_class/hwn2019_bread_biter/hwn2019_bread_biter_pyro.mdl"
+				"spy"		"models/workshop/player/items/all_class/hwn2019_bread_biter/hwn2019_bread_biter_spy.mdl"
+				"engineer"	"models/workshop/player/items/all_class/hwn2019_bread_biter/hwn2019_bread_biter_engineer.mdl"
+			}
+			"used_by_classes"
+			{
+				"scout"		"1"
+				"sniper"		"1"
+				"soldier"		"1"
+				"demoman"		"1"
+				"medic"		"1"
+				"heavy"		"1"
+				"pyro"		"1"
+				"spy"		"1"
+				"engineer"		"1"
+			}
+			"mouse_pressed_sound"		"ui/item_gooey_pickup.wav"
+			"drop_sound"		"ui/item_gooey_pickup.wav"
 		}
 		"30570"
 		{
@@ -41980,489 +42117,1693 @@
 			"system"	"halopoint"
 			"attachment"	"halopoint1"
 		}
-		"6"
-		{
-			"system"	"superrare_confetti_green"
-		}
-		"7"
-		{
-			"system"	"superrare_confetti_purple"
-		}
-		"8"
-		{
-			"system"	"superrare_ghosts"
-			"attach_to_rootbone"	"1"
-			"attachment"	"muzzle"
-		}
-		"9"
-		{
-			"system"	"superrare_greenenergy"
-			"attach_to_rootbone"	"1"
-		}
-		"10"
-		{
-			"system"	"superrare_purpleenergy"
-			"attach_to_rootbone"	"1"
-		}
-		"11"
-		{
-			"system"	"superrare_circling_tf"
-			"attach_to_rootbone"	"1"
-			"attachment"	"muzzle"
-		}
-		"12"
-		{
-			"system"	"superrare_flies"
-			"attach_to_rootbone"	"1"
-		}
-		"13"
-		{
-			"system"	"superrare_burning1"
-			"attach_to_rootbone"	"1"
-			"attachment"	"muzzle"
-		}
-		"14"
-		{
-			"system"	"superrare_burning2"
-			"attach_to_rootbone"	"1"
-			"attachment"	"unusual"
-		}
-		"15"
-		{
-			"system"	"superrare_plasma1"
-			"attach_to_rootbone"	"1"
-			"attachment"	"muzzle"
-		}
-		"16"
-		{
-			"system"	"superrare_plasma2"
-			"attach_to_rootbone"	"1"
-			"attachment"	"muzzle"
-		}
-		"17"
-		{
-			"system"	"superrare_beams1"
-			"attach_to_rootbone"	"1"
-		}
-		"18"
-		{
-			"system"	"superrare_circling_peacesign"
-			"attach_to_rootbone"	"1"
-			"attachment"	"muzzle"
-		}
-		"19"
-		{
-			"system"	"superrare_circling_heart"
-			"attach_to_rootbone"	"1"
-			"attachment"	"muzzle"
-		}
-		"20"
-		{
-			"system"	"stamp_spin"
-			"attach_to_rootbone"	"1"
-		}
-		"28"
-		{
-			"system"	"drg_pipe_smoke"
-			"attach_to_rootbone"	"0"
-			"attachment"	"cig_drg_smoke"
-		}
-		"29"
-		{
-			"system"	"unusual_storm"
-			"attach_to_rootbone"	"1"
-		}
-		"30"
-		{
-			"system"	"unusual_blizzard"
-			"attach_to_rootbone"	"1"
-		}
-		"31"
-		{
-			"system"	"unusual_orbit_nutsnbolts"
-			"attach_to_rootbone"	"1"
-		}
-		"32"
-		{
-			"system"	"unusual_orbit_planets"
-			"attach_to_rootbone"	"1"
-		}
-		"33"
-		{
-			"system"	"unusual_orbit_fire"
-			"attach_to_rootbone"	"1"
-		}
-		"34"
-		{
-			"system"	"unusual_bubbles"
-			"attach_to_rootbone"	"1"
-		}
-		"35"
-		{
-			"system"	"unusual_smoking"
-			"attach_to_rootbone"	"1"
-		}
-		"36"
-		{
-			"system"	"unusual_steaming"
-			"attach_to_rootbone"	"1"
-		}
-		"37"
-		{
-			"system"	"unusual_orbit_jack_flaming"
-			"attach_to_rootbone"	"1"
-		}
-		"38"
-		{
-			"system"	"unusual_fullmoon_cloudy"
-			"attach_to_rootbone"	"1"
-		}
-		"39"
-		{
-			"system"	"unusual_bubbles_green"
-			"attach_to_rootbone"	"1"
-		}
-		"40"
-		{
-			"system"	"unusual_orbit_fire_dark"
-			"attach_to_rootbone"	"1"
-		}
-		"43"
-		{
-			"system"	"unusual_storm_knives"
-			"attach_to_rootbone"	"1"
-			"attachment"	"muzzle"
-		}
-		"44"
-		{
-			"system"	"unusual_skull_misty"
-			"attach_to_rootbone"	"1"
-			"attachment"	"muzzle"
-		}
-		"45"
-		{
-			"system"	"unusual_fullmoon_cloudy_green"
-			"attach_to_rootbone"	"1"
-			"attachment"	"muzzle"
-		}
-		"46"
-		{
-			"system"	"unusual_fullmoon_cloudy_secret"
-			"attach_to_rootbone"	"1"
-			"attachment"	"muzzle"
-		}
-		"47"
-		{
-			"system"	"unusual_storm_spooky"
-			"attach_to_rootbone"	"1"
-			"attachment"	"muzzle"
-		}
-		"55"
-		{
-			"system"	"unusual_orbit_cards_teamcolor_blue"
-			"attach_to_rootbone"	"1"
-			"attachment"	"unusual"
-		}
-		"56"
-		{
-			"system"	"unusual_zap_yellow"
-			"attach_to_rootbone"	"1"
-			"attachment"	"unusual"
-		}
-		"57"
-		{
-			"system"	"unusual_zap_green"
-			"attach_to_rootbone"	"1"
-			"attachment"	"unusual"
-		}
-		"58"
-		{
-			"system"	"unusual_hearts_bubbling"
-			"attach_to_rootbone"	"1"
-			"attachment"	"unusual"
-		}
-		"59"
-		{
-			"system"	"unusual_orbit_cards_teamcolor_red"
-			"attach_to_rootbone"	"1"
-			"attachment"	"unusual"
-		}
-		"60"
-		{
-			"system"	"unusual_orbit_cash"
-			"attach_to_rootbone"	"1"
-			"attachment"	"unusual"
-		}
-		"61"
-		{
-			"system"	"unusual_crisp_spotlights"
-			"attach_to_rootbone"	"1"
-			"attachment"	"unusual"
-		}
-		"62"
-		{
-			"system"	"unusual_spotlights"
-			"attach_to_rootbone"	"1"
-			"attachment"	"unusual"
-		}
-		"63"
-		{
-			"system"	"unusual_robot_holo_glow_green"
-			"attach_to_rootbone"	"1"
-			"attachment"	"unusual"
-		}
-		"64"
-		{
-			"system"	"unusual_robot_holo_glow_orange"
-			"attach_to_rootbone"	"1"
-			"attachment"	"unusual"
-		}
-		"65"
-		{
-			"system"	"unusual_robot_orbit_binary"
-			"attach_to_rootbone"	"1"
-			"attachment"	"unusual"
-		}
-		"66"
-		{
-			"system"	"unusual_robot_orbit_binary2"
-			"attach_to_rootbone"	"1"
-			"attachment"	"unusual"
-		}
-		"67"
-		{
-			"system"	"unusual_robot_orbiting_sparks"
-			"attach_to_rootbone"	"1"
-			"attachment"	"unusual"
-		}
-		"68"
-		{
-			"system"	"unusual_robot_orbiting_sparks2"
-			"attach_to_rootbone"	"1"
-			"attachment"	"unusual"
-		}
-		"69"
-		{
-			"system"	"unusual_robot_radioactive"
-			"attach_to_rootbone"	"1"
-			"attachment"	"unusual"
-		}
-		"70"
-		{
-			"system"	"unusual_robot_time_warp"
-			"attach_to_rootbone"	"1"
-			"attachment"	"unusual"
-		}
-		"71"
-		{
-			"system"	"unusual_robot_time_warp2"
-			"attach_to_rootbone"	"1"
-			"attachment"	"unusual"
-		}
-		"72"
-		{
-			"system"	"unusual_robot_radioactive2"
-			"attach_to_rootbone"	"1"
-			"attachment"	"unusual"
-		}
-		"73"
-		{
-			"system"	"unusual_spellbook_circle_green"
-			"attach_to_rootbone"	"1"
-			"attachment"	"unusual"
-		}
-		"74"
-		{
-			"system"	"unusual_spellbook_circle_purple"
-			"attach_to_rootbone"	"1"
-			"attachment"	"unusual"
-		}
-		"75"
-		{
-			"system"	"unusual_bats_flaming_proxy_green"
-			"attach_to_rootbone"	"1"
-			"attachment"	"unusual"
-		}
-		"76"
-		{
-			"system"	"unusual_bats_flaming_proxy_purple"
-			"attach_to_rootbone"	"1"
-			"attachment"	"unusual"
-		}
-		"77"
-		{
-			"system"	"unusual_bats_flaming_proxy_orange"
-			"attach_to_rootbone"	"1"
-			"attachment"	"unusual"
-		}
-		"78"
-		{
-			"system"	"unusual_meteor_shower_parent_orange"
-			"attach_to_rootbone"	"1"
-			"attachment"	"unusual"
-		}
-		"79"
-		{
-			"system"	"unusual_meteor_shower_parent_purple"
-			"attach_to_rootbone"	"1"
-			"attachment"	"unusual"
-		}
-		"80"
-		{
-			"system"	"unusual_meteor_shower_parent_green"
-			"attach_to_rootbone"	"1"
-			"attachment"	"unusual"
-		}
-		"81"
-		{
-			"system"	"unusual_tentmonster_purple_parent"
-			"attach_to_rootbone"	"1"
-			"attachment"	"unusual"
-		}
-		"82"
-		{
-			"system"	"unusual_eyes_purple_parent"
-			"attach_to_rootbone"	"1"
-			"attachment"	"unusual"
-		}
-		"83"
-		{
-			"system"	"unusual_eyes_orange_parent"
-			"attach_to_rootbone"	"1"
-			"attachment"	"unusual"
-		}
-		"84"
-		{
-			"system"	"unusual_eyes_green_parent"
-			"attach_to_rootbone"	"1"
-			"attachment"	"unusual"
-		}
-		"85"
-		{
-			"system"	"unusual_souls_purple_parent"
-			"attach_to_rootbone"	"1"
-			"attachment"	"unusual"
-		}
-		"86"
-		{
-			"system"	"unusual_souls_green_parent"
-			"attach_to_rootbone"	"1"
-			"attachment"	"unusual"
-		}
-		"2001"
-		{
-			"system"	"killstreak_eyeglow_1_teamcolor_red"
-		}
-		"22001"
-		{
-			"system"	"killstreak_eyeglow_4_teamcolor_red"
-		}
-		"2002"
-		{
-			"system"	"killstreak_t1_lvl1"
-		}
-		"22002"
-		{
-			"system"	"killstreak_t1_lvl2"
-		}
-		"2003"
-		{
-			"system"	"killstreak_t2_lvl1"
-		}
-		"22003"
-		{
-			"system"	"killstreak_t2_lvl2"
-		}
-		"2004"
-		{
-			"system"	"killstreak_t3_lvl1"
-		}
-		"22004"
-		{
-			"system"	"killstreak_t3_lvl2"
-		}
-		"2005"
-		{
-			"system"	"killstreak_t4_lvl1"
-		}
-		"22005"
-		{
-			"system"	"killstreak_t4_lvl2"
-		}
-		"2006"
-		{
-			"system"	"killstreak_t5_lvl1"
-		}
-		"22006"
-		{
-			"system"	"killstreak_t5_lvl2"
-		}
-		"2007"
-		{
-			"system"	"killstreak_t6_lvl1"
-		}
-		"22007"
-		{
-			"system"	"killstreak_t6_lvl2"
-		}
-		"2008"
-		{
-			"system"	"killstreak_t7_lvl1"
-		}
-		"22008"
-		{
-			"system"	"killstreak_t7_lvl2"
-		}
-		"3001"
-		{
-			"system"	"utaunt_firework_teamcolor_red"
-			"refire_time"	"2.6"
-		}
-		"3002"
-		{
-			"system"	"utaunt_firework_teamcolor_blue"
-			"refire_time"	"2.6"
-		}
-		"3003"
-		{
-			"system"	"utaunt_beams_yellow"
-		}
-		"3004"
-		{
-			"system"	"utaunt_disco_party"
-		}
-		"3005"
-		{
-			"system"	"utaunt_hearts_glow_parent"
-		}
-		"3006"
-		{
-			"system"	"utaunt_meteor_parent"
-		}
-		"3007"
-		{
-			"system"	"utaunt_cash_confetti"
-		}
-		"3008"
-		{
-			"system"	"utaunt_tornado_parent_black"
-		}
-		"3009"
-		{
-			"system"	"utaunt_tornado_parent_white"
-		}
-		"3010"
-		{
-			"system"	"utaunt_lightning_parent"
-			"refire_time"	"0.9"
-		}
-		"3011"
-		{
-			"system"	"utaunt_souls_green_parent"
-		}
-		"3012"
-		{
-			"system"	"utaunt_souls_purple_parent"
+		"cosmetic_unusual_effects"
+		{
+			"6"
+			{
+				"system"			"superrare_confetti_green"	
+			}
+			"7"
+			{
+				"system"			"superrare_confetti_purple"
+			}
+			"8"
+			{
+				"system"			"superrare_ghosts"
+				"attach_to_rootbone"	"1"
+				"attachment"		"muzzle"
+			}
+			"9"
+			{
+				"system"			"superrare_greenenergy"
+				"attach_to_rootbone"	"1"
+			}
+			"10"
+			{
+				"system"			"superrare_purpleenergy"
+				"attach_to_rootbone"	"1"
+			}
+			"11"
+			{
+				"system"			"superrare_circling_tf"
+				"attach_to_rootbone"	"1"
+				"attachment"		"muzzle"
+			}
+			"12"
+			{
+				"system"			"superrare_flies"
+				"attach_to_rootbone"	"1"
+			}
+
+			"13"
+			{
+				"system"			"superrare_burning1"
+				"attach_to_rootbone"	"1"
+				"attachment"		"muzzle"
+			}
+			"14"
+			{
+				"system"			"superrare_burning2"
+				"attach_to_rootbone"	"1"
+				"attachment"		"unusual"
+			}
+
+			"15"
+			{
+				"system"			"superrare_plasma1"
+				"attach_to_rootbone"	"1"
+				"attachment"		"muzzle"
+			}
+			"16"
+			{
+				"system"			"superrare_plasma2"
+				"attach_to_rootbone"	"1"
+				"attachment"		"muzzle"
+			}
+			"17"
+			{
+				"system"			"superrare_beams1"
+				"attach_to_rootbone"	"1"
+			}
+			"18"
+			{
+				"system"			"superrare_circling_peacesign"
+				"attach_to_rootbone"	"1"
+				"attachment"		"muzzle"
+			}
+			"19"
+			{
+				"system"			"superrare_circling_heart"
+				"attach_to_rootbone"	"1"
+				"attachment"		"muzzle"
+			}
+			"20"
+			{
+				"system"			"stamp_spin"
+				"attach_to_rootbone"	"1"
+			}
+			"28"
+			{
+				"system"				"drg_pipe_smoke"
+				"attach_to_rootbone"	"0"
+				"attachment"			"cig_drg_smoke"
+			}
+
+			"29"
+			{
+				"system"			"unusual_storm"
+				"attach_to_rootbone"	"1"
+			}
+			"30"
+			{
+				"system"			"unusual_blizzard"
+				"attach_to_rootbone"	"1"
+			}
+			"31"
+			{
+				"system"			"unusual_orbit_nutsnbolts"
+				"attach_to_rootbone"	"1"
+			}
+			"32"
+			{
+				"system"			"unusual_orbit_planets"
+				"attach_to_rootbone"	"1"
+			}
+			"33"
+			{
+				"system"			"unusual_orbit_fire"
+				"attach_to_rootbone"	"1"
+			}
+			"34"
+			{
+				"system"			"unusual_bubbles"
+				"attach_to_rootbone"	"1"
+			}
+			"35"
+			{
+				"system"			"unusual_smoking"
+				"attach_to_rootbone"	"1"
+			}
+			"36"
+			{
+				"system"			"unusual_steaming"
+				"attach_to_rootbone"	"1"
+			}
+			
+			
+			"37"
+			{
+				"system"			"unusual_orbit_jack_flaming"
+				"attach_to_rootbone"	"1"
+			}
+			"38"
+			{
+				"system"			"unusual_fullmoon_cloudy"
+				"attach_to_rootbone"	"1"
+			}
+			"39"
+			{
+				"system"			"unusual_bubbles_green"
+				"attach_to_rootbone"	"1"
+			}
+			"40"
+			{
+				"system"			"unusual_orbit_fire_dark"
+				"attach_to_rootbone"	"1"
+			}
+			
+
+			"43"
+			{
+				"system"			"unusual_storm_knives" 
+				"attach_to_rootbone"	"1"
+				"attachment"		"muzzle"
+			}
+			"44"
+			{
+				"system"			"unusual_skull_misty"
+				"attach_to_rootbone"	"1"
+				"attachment"		"muzzle"
+			}
+			"45"
+			{
+				"system"			"unusual_fullmoon_cloudy_green"
+				"attach_to_rootbone"	"1"
+				"attachment"		"muzzle"
+			}
+			"46"
+			{
+				"system"			"unusual_fullmoon_cloudy_secret"
+				"attach_to_rootbone"	"1"
+				"attachment"		"muzzle"
+			}
+			"47"
+			{
+				"system"			"unusual_storm_spooky"
+				"attach_to_rootbone"	"1"
+				"attachment"		"muzzle" 
+			}
+			
+			"55"
+			{
+				"system"			"unusual_orbit_cards_teamcolor_blue"
+				"attach_to_rootbone"	"1"
+				"attachment"		"unusual"
+			}
+			
+			"56"
+			{
+				"system"			"unusual_zap_yellow"
+				"attach_to_rootbone"	"1"
+				"attachment"		"unusual"
+			}
+			"57"
+			{
+				"system"			"unusual_zap_green"
+				"attach_to_rootbone"	"1"
+				"attachment"		"unusual"
+			}
+			"58"
+			{
+				"system"			"unusual_hearts_bubbling" 
+				"attach_to_rootbone"	"1"
+				"attachment"		"unusual"
+			}
+			"59"
+			{
+				"system"			"unusual_orbit_cards_teamcolor_red"
+				"attach_to_rootbone"	"1"
+				"attachment"		"unusual"
+			}
+			"60"
+			{
+				"system"			"unusual_orbit_cash"
+				"attach_to_rootbone"	"1"
+				"attachment"		"unusual"
+			}
+			"61"
+			{
+				"system"			"unusual_crisp_spotlights"
+				"attach_to_rootbone"	"1"
+				"attachment"		"unusual"
+			}
+			"62"
+			{
+				"system"			"unusual_spotlights"
+				"attach_to_rootbone"	"1"
+				"attachment"		"unusual"
+			}
+			
+			"63"
+			{
+				"system"			"unusual_robot_holo_glow_green"
+				"attach_to_rootbone"	"1"
+				"attachment"		"unusual"
+			}
+			"64"
+			{
+				"system"			"unusual_robot_holo_glow_orange"
+				"attach_to_rootbone"	"1"
+				"attachment"		"unusual"
+			}
+			"65"
+			{
+				"system"			"unusual_robot_orbit_binary"
+				"attach_to_rootbone"	"1"
+				"attachment"		"unusual"
+			}
+			"66"
+			{
+				"system"			"unusual_robot_orbit_binary2"
+				"attach_to_rootbone"	"1"
+				"attachment"		"unusual"
+			}
+			"67"
+			{
+				"system"			"unusual_robot_orbiting_sparks"
+				"attach_to_rootbone"	"1"
+				"attachment"		"unusual"
+			}
+			"68"
+			{
+				"system"			"unusual_robot_orbiting_sparks2"
+				"attach_to_rootbone"	"1"
+				"attachment"		"unusual"
+			}
+			"69"
+			{
+				"system"			"unusual_robot_radioactive"
+				"attach_to_rootbone"	"1"
+				"attachment"		"unusual"
+			}
+			"70"
+			{
+				"system"			"unusual_robot_time_warp"
+				"attach_to_rootbone"	"1"
+				"attachment"		"unusual"
+			}
+			"71"
+			{
+				"system"			"unusual_robot_time_warp2"
+				"attach_to_rootbone"	"1"
+				"attachment"		"unusual"
+			}
+			"72"
+			{
+				"system"			"unusual_robot_radioactive2"
+				"attach_to_rootbone"	"1"
+				"attachment"		"unusual"
+			}
+			
+			"73"
+			{
+				"system"			"unusual_spellbook_circle_green"
+				"attach_to_rootbone"	"1"
+				"attachment"		"unusual"
+			}
+			"74"
+			{
+				"system"			"unusual_spellbook_circle_purple"
+				"attach_to_rootbone"	"1"
+				"attachment"		"unusual"
+			}
+			"75"
+			{
+				"system"			"unusual_bats_flaming_proxy_green"
+				"attach_to_rootbone"	"1"
+				"attachment"		"unusual"
+			}
+			"76"
+			{
+				"system"			"unusual_bats_flaming_proxy_purple"
+				"attach_to_rootbone"	"1"
+				"attachment"		"unusual"
+			}
+			"77"
+			{
+				"system"			"unusual_bats_flaming_proxy_orange"
+				"attach_to_rootbone"	"1"
+				"attachment"		"unusual"
+			}
+			"78"
+			{
+				"system"			"unusual_meteor_shower_parent_orange"
+				"attach_to_rootbone"	"1"
+				"attachment"		"unusual"
+			}
+			"79"
+			{
+				"system"			"unusual_meteor_shower_parent_purple"
+				"attach_to_rootbone"	"1"
+				"attachment"		"unusual"
+			}
+			"80"
+			{
+				"system"			"unusual_meteor_shower_parent_green"
+				"attach_to_rootbone"	"1"
+				"attachment"		"unusual"
+			}
+
+			"81"
+			{
+				"system"			"unusual_tentmonster_purple_parent"
+				"attach_to_rootbone"	"1"
+				"attachment"		"unusual"
+			}
+			"82"
+			{
+				"system"			"unusual_eyes_purple_parent"
+				"attach_to_rootbone"	"1"
+				"attachment"		"unusual"
+			}
+			"83"
+			{
+				"system"			"unusual_eyes_orange_parent"
+				"attach_to_rootbone"	"1"
+				"attachment"		"unusual"
+			}
+			"84"
+			{
+				"system"			"unusual_eyes_green_parent"
+				"attach_to_rootbone"	"1"
+				"attachment"		"unusual"
+			}
+			"85"
+			{
+				"system"			"unusual_souls_purple_parent"
+				"attach_to_rootbone"	"1"
+				"attachment"		"unusual"
+			}
+			"86"
+			{
+				"system"			"unusual_souls_green_parent"
+				"attach_to_rootbone"	"1"
+				"attachment"		"unusual"
+			}
+			
+			"87"
+			{
+				"system"			"unusual_eotl_frostbite"
+				"attach_to_rootbone"	"1"
+				"attachment"		"unusual"
+			}
+			"88"
+			{
+				"system"			"unusual_eotl_oribiting_burning_duck_parent"
+				"attach_to_rootbone"	"1"
+				"attachment"		"unusual"
+			}
+			"89"
+			{
+				"system"			"unusual_eotl_sunrise"
+				"attach_to_rootbone"	"1"
+				"attachment"		"unusual"
+			}
+			"90"
+			{
+				"system"			"unusual_eotl_sunset"
+				"attach_to_rootbone"	"1"
+				"attachment"		"unusual"
+			}
+			
+			"91"
+			{
+				"system"			"unusual_invasion_abduction"
+				"attach_to_rootbone"	"1"
+				"attachment"		"unusual"
+			}
+			"92"
+			{
+				"system"			"unusual_invasion_atomic"
+				"attach_to_rootbone"	"1"
+				"attachment"		"unusual"
+			}
+			"93"
+			{
+				"system"			"unusual_invasion_atomic_green"
+				"attach_to_rootbone"	"1"
+				"attachment"		"unusual"
+			}
+			"94"
+			{
+				"system"			"unusual_invasion_boogaloop"
+				"attach_to_rootbone"	"1"
+				"attachment"		"unusual"
+			}
+			"95"
+			{
+				"system"			"unusual_invasion_boogaloop_2"
+				"attach_to_rootbone"	"1"
+				"attachment"		"unusual"
+			}
+			"96"
+			{
+				"system"			"unusual_invasion_boogaloop_3"
+				"attach_to_rootbone"	"1"
+				"attachment"		"unusual"
+			}
+			"97"
+			{
+				"system"			"unusual_invasion_codex"
+				"attach_to_rootbone"	"1"
+				"attachment"		"unusual"
+			}
+			"98"
+			{
+				"system"			"unusual_invasion_codex_2"
+				"attach_to_rootbone"	"1"
+				"attachment"		"unusual"
+			}
+			"99"
+			{
+				"system"			"unusual_invasion_nebula"
+				"attach_to_rootbone"	"1"
+				"attachment"		"unusual"
+			}
+			
+			"100"
+			{
+				"system"			"unusual_hw_deathbydisco_parent"
+				"attach_to_rootbone"	"1"
+				"attachment"		"unusual"
+			}
+			"101"
+			{
+				"system"			"unusual_mystery_parent"
+				"attach_to_rootbone"	"1"
+				"attachment"		"unusual"
+			}
+			"102"
+			{
+				"system"			"unusual_mystery_parent_green"
+				"attach_to_rootbone"	"1"
+				"attachment"		"unusual"
+			}
+			"103"
+			{
+				"system"			"unusual_nether_blue"
+				"attach_to_rootbone"	"1"
+				"attachment"		"unusual"
+			}
+			"104"
+			{
+				"system"			"unusual_nether_pink"
+				"attach_to_rootbone"	"1"
+				"attachment"		"unusual"
+			}
+			"105"
+			{
+				"system"			"unusual_eldritch_flames_purple"
+				"attach_to_rootbone"	"1"
+				"attachment"		"unusual"
+			}
+			"106"
+			{
+				"system"			"unusual_eldritch_flames_orange"
+				"attach_to_rootbone"	"1"
+				"attachment"		"unusual"
+			}
+			"107"
+			{
+				"system"			"unusual_universe"
+				"attach_to_rootbone"	"1"
+				"attachment"		"unusual"
+			}
+			"108"
+			{
+				"system"			"unusual_tesla_flash"
+				"attach_to_rootbone"	"1"
+				"attachment"		"unusual"
+			}
+			"109"
+			{
+				"system"			"unusual_star_green_parent"
+				"attach_to_rootbone"	"1"
+				"attachment"		"unusual"
+			}
+			"110"
+			{
+				"system"			"unusual_star_purple_parent"
+				"attach_to_rootbone"	"1"
+				"attachment"		"unusual"
+			}
+			"111"
+			{
+				"system"			"unusual_bubble_mess_parent_green"
+				"attach_to_rootbone"	"1"
+				"attachment"		"unusual"
+			}
+			"112"
+			{
+				"system"			"unusual_bubble_mess_parent_orange"
+				"attach_to_rootbone"	"1"
+				"attachment"		"unusual"
+			}
+			"113"
+			{
+				"system"			"unusual_bubble_mess_parent_purple"
+				"attach_to_rootbone"	"1"
+				"attachment"		"unusual"
+			}
+			"114"
+			{
+				"system"			"unusual_constellations_blue"
+				"attach_to_rootbone"	"1"
+				"attachment"		"unusual"
+			}
+			"115"
+			{
+				"system"			"unusual_constellations_pink"
+				"attach_to_rootbone"	"1"
+				"attachment"		"unusual"
+			}
+			"116"
+			{
+				"system"			"unusual_constellations_purple"
+				"attach_to_rootbone"	"1"
+				"attachment"		"unusual"
+			}
+			"117"
+			{
+				"system"			"unusual_symbols_parent_fire"
+				"attach_to_rootbone"	"1"
+				"attachment"		"unusual"
+			}
+			"118"
+			{
+				"system"			"unusual_symbols_parent_dead"
+				"attach_to_rootbone"	"1"
+				"attachment"		"unusual"
+			}
+			"119"
+			{
+				"system"			"unusual_symbols_parent_lightning"
+				"attach_to_rootbone"	"1"
+				"attachment"		"unusual"
+			}
+			"120"
+			{
+				"system"			"unusual_crystalball"
+				"attach_to_rootbone"	"1"
+				"attachment"		"unusual"
+			}
+			"121"
+			{
+				"system"			"unusual_psychic_eye"
+				"attach_to_rootbone"	"1"
+				"attachment"		"unusual"
+			}
+			"122"
+			{
+				"system"			"unusual_dimension_parent"
+				"attach_to_rootbone"	"1"
+				"attachment"		"unusual"
+			}
+			"123"
+			{
+				"system"			"unusual_aura_purple_parent"
+				"attach_to_rootbone"	"1"
+				"attachment"		"unusual"
+			}
+			"124"
+			{
+				"system"			"unusual_aura_green_parent"
+				"attach_to_rootbone"	"1"
+				"attachment"		"unusual"
+			}	
+			"125"
+			{
+				"system"			"unusual_aura_red_parent"
+				"attach_to_rootbone"	"1"
+				"attachment"		"unusual"
+			}
+			"126"
+			{
+				"system"			"unusual_forest_scene_parent_purple"
+				"attach_to_rootbone"	"1"
+				"attachment"		"unusual"
+			}
+			"127"
+			{
+				"system"			"unusual_forest_scene_parent_green"
+				"attach_to_rootbone"	"1"
+				"attachment"		"unusual"
+			}
+			"128"
+			{
+				"system"			"unusual_magicsmoke_purple_parent"
+				"attach_to_rootbone"	"1"
+				"attachment"		"unusual"
+			}
+			"129"
+			{
+				"system"			"unusual_magicsmoke_green_parent"
+				"attach_to_rootbone"	"1"
+				"attachment"		"unusual"
+			}
+			"130"
+			{
+				"system"			"unusual_magicsmoke_blue_parent"
+				"attach_to_rootbone"	"1"
+				"attachment"		"unusual"
+			}
+			"131"
+			{
+				"system"			"unusual_vortex_energy_parent_p"
+				"attach_to_rootbone"	"1"
+				"attachment"		"unusual"
+			}
+			"132"
+			{
+				"system"			"unusual_vortex_energy_parent_g"
+				"attach_to_rootbone"	"1"
+				"attachment"		"unusual"
+			}
+			"133"
+			{
+				"system"			"unusual_vortex_energy_parent_o"
+				"attach_to_rootbone"	"1"
+				"attachment"		"unusual"
+			}
+			"134"
+			{
+				"system"			"unusual_sparkling_lights_parent02"
+				"attach_to_rootbone"	"1"
+				"attachment"		"unusual"
+			}
+			"135"
+			{
+				"system"			"unusual_icecave_parent"
+				"attach_to_rootbone"	"1"
+				"attachment"		"unusual"
+			}
+			"136"
+			{
+				"system"			"unusual_aurora_parent_green"
+				"attach_to_rootbone"	"1"
+				"attachment"		"unusual"
+			}
+			"137"
+			{
+				"system"			"unusual_aurora_parent_orange"
+				"attach_to_rootbone"	"1"
+				"attachment"		"unusual"
+			}
+			"138"
+			{
+				"system"			"unusual_aurora_parent_purple"
+				"attach_to_rootbone"	"1"
+				"attachment"		"unusual"
+			}
+			"139"
+			{
+				"system"			"unusual_polygon_teamcolor_red"
+				"attach_to_rootbone"	"1"
+				"attachment"		"unusual"
+			}
+			"140"
+			{
+				"system"			"unusual_polygon_teamcolor_blue"
+				"attach_to_rootbone"	"1"
+				"attachment"		"unusual"
+			}
+			"141"
+			{
+				"system"			"unusual_polygon_green"
+				"attach_to_rootbone"	"1"
+				"attachment"		"unusual"
+			}
+			"142"
+			{
+				"system"			"unusual_polygon_amber"
+				"attach_to_rootbone"	"1"
+				"attachment"		"unusual"
+			}
+			"143"
+			{
+				"system"			"unusual_snowfall_blue"
+				"attach_to_rootbone"	"1"
+				"attachment"		"unusual"
+			}
+			"144"
+			{
+				"system"			"unusual_snowfall_white"
+				"attach_to_rootbone"	"1"
+				"attachment"		"unusual"
+			}
+			"145"
+			{
+				"system"			"unusual_mayor_balloonicorn_teamcolor_red"
+				"attach_to_rootbone"	"1"
+				"attachment"		"unusual"
+			}
+			"146"
+			{
+				"system"			"unusual_mayor_balloonicorn_teamcolor_blue"
+				"attach_to_rootbone"	"1"
+				"attachment"		"unusual"
+			}
+
+			"147"
+			{
+				"system"			"unusual_circling_spell_green_parent"
+				"attach_to_rootbone"	"1"
+				"attachment"		"unusual"
+			}
+			"148"
+			{
+				"system"			"unusual_circling_spell_orange_parent"
+				"attach_to_rootbone"	"1"
+				"attachment"		"unusual"
+			}
+			"149"
+			{
+				"system"			"unusual_circling_spell_purple_parent"
+				"attach_to_rootbone"	"1"
+				"attachment"		"unusual"
+			}
+			"150"
+			{
+				"system"			"unusual_circling_spell_blue_parent"
+				"attach_to_rootbone"	"1"
+				"attachment"		"unusual"
+			}
+			"151"
+			{
+				"system"			"unusual_bees"
+				"attach_to_rootbone"	"1"
+				"attachment"		"unusual"
+			}
+			"152"
+			{
+				"system"			"unusual_playflies_green_parent"
+				"attach_to_rootbone"	"1"
+				"attachment"		"unusual"
+			}
+			"153"
+			{
+				"system"			"unusual_playflies_orange_parent"
+				"attach_to_rootbone"	"1"
+				"attachment"		"unusual"
+			}
+			"154"
+			{
+				"system"			"unusual_playflies_purple_parent"
+				"attach_to_rootbone"	"1"
+				"attachment"		"unusual"
+			}
+			"155"
+			{
+				"system"			"unusual_kaleido_scope_parent"
+				"attach_to_rootbone"	"1"
+				"attachment"		"unusual"
+			}
+			"156"
+			{
+				"system"			"unusual_face_parent_G"
+				"attach_to_rootbone"	"1"
+				"attachment"		"unusual"
+			}
+			"157"
+			{
+				"system"			"unusual_face_parent_O"
+				"attach_to_rootbone"	"1"
+				"attachment"		"unusual"
+			}
+			"158"
+			{
+				"system"			"unusual_face_parent_P"
+				"attach_to_rootbone"	"1"
+				"attachment"		"unusual"
+			}
+			"159"
+			{
+				"system"			"unusual_undead_mayor_balloonicorn"
+				"attach_to_rootbone"	"1"
+				"attachment"		"unusual"
+			}
+			"160"
+			{
+				"system"			"unusual_gargoyle"
+				"attach_to_rootbone"	"1"
+				"attachment"		"unusual"
+			}
+			"161"
+			{
+				"system"			"unusual_gargoyle2"
+				"attach_to_rootbone"	"1"
+				"attachment"		"unusual"
+			}
+			"162"
+			{
+				"system"			"unusual_candy_parent"
+				"attach_to_rootbone"	"1"
+				"attachment"		"unusual"
+			}
+			"163"
+			{
+				"system"			"unusual_pumpkinhead_parent"
+				"attach_to_rootbone"	"1"
+				"attachment"		"unusual"
+			}
+			"164"
+			{
+				"system"			"unusual_froststorm_blue_parent"
+				"attach_to_rootbone"	"1"
+				"attachment"		"unusual"
+			}
+			"165"
+			{
+				"system"			"unusual_froststorm_purple_parent"
+				"attach_to_rootbone"	"1"
+				"attachment"		"unusual"
+			}
+			"166"
+			{
+				"system"			"unusual_froststorm_yellow_parent"
+				"attach_to_rootbone"	"1"
+				"attachment"		"unusual"
+			}
+			"167"
+			{
+				"system"			"unusual_swirlybeams_goldpurple_parent"
+				"attach_to_rootbone"	"1"
+				"attachment"		"unusual"
+			}
+			"168"
+			{
+				"system"			"unusual_swirlybeams_pinkblue_parent"
+				"attach_to_rootbone"	"1"
+				"attachment"		"unusual"
+			}
+			"169"
+			{
+				"system"			"unusual_icetornado_blue_parent"
+				"attach_to_rootbone"	"1"
+				"attachment"		"unusual"
+			}
+			"170"
+			{
+				"system"			"unusual_icetornado_purple_parent"
+				"attach_to_rootbone"	"1"
+				"attachment"		"unusual"
+			}
+			"171"
+			{
+				"system"			"unusual_icetornado_white_parent"
+				"attach_to_rootbone"	"1"
+				"attachment"		"unusual"
+			}
+			"172"
+			{
+				"system"			"unusual_genplasmos_parent"
+				"attach_to_rootbone"	"1"
+				"attachment"		"unusual"
+			}
+			"173"
+			{
+				"system"			"unusual_genplasmos_b_parent"
+				"attach_to_rootbone"	"1"
+				"attachment"		"unusual"
+			}
+			"174"
+			{
+				"system"			"unusual_genplasmos_c_parent"
+				"attach_to_rootbone"	"1"
+				"attachment"		"unusual"
+			}
+			"175"
+			{
+				"system"			"unusual_mistletoe_teamcolor_red"
+				"attach_to_rootbone"	"1"
+				"attachment"		"unusual"
+			}
+			"176"
+			{
+				"system"			"unusual_mistletoe_teamcolor_blue"
+				"attach_to_rootbone"	"1"
+				"attachment"		"unusual"
+			}
+
+			"177"
+			{
+				"system"			"unusual_breaker_green_parent"
+				"attach_to_rootbone"	"1"
+				"attachment"		"unusual"
+			}
+			"178"
+			{
+				"system"			"unusual_breaker_orange_parent"
+				"attach_to_rootbone"	"1"
+				"attachment"		"unusual"
+			}
+			"179"
+			{
+				"system"			"unusual_breaker_purple_parent"
+				"attach_to_rootbone"	"1"
+				"attachment"		"unusual"
+			}
+			"180"
+			{
+				"system"			"unusual_star_parent"
+				"attach_to_rootbone"	"1"
+				"attachment"		"unusual"
+			}
+			"181"
+			{
+				"system"			"unusual_magic_stingers_orange_parent"
+				"attach_to_rootbone"	"1"
+				"attachment"		"unusual"
+			}
+			"182"
+			{
+				"system"			"unusual_magic_stingers_pink_parent"
+				"attach_to_rootbone"	"1"
+				"attachment"		"unusual"
+			}
+			"183"
+			{
+				"system"			"unusual_magic_stingers_teamcolor_red"
+				"attach_to_rootbone"	"1"
+				"attachment"		"unusual"
+			}
+			"184"
+			{
+				"system"			"unusual_magic_stingers_teamcolor_blue"
+				"attach_to_rootbone"	"1"
+				"attachment"		"unusual"
+			}
+			"185"
+			{
+				"system"			"unusual_flowers_parent"
+				"attach_to_rootbone"	"1"
+				"attachment"		"unusual"
+			}			
+			"186"
+			{
+				"system"			"unusual_bloomhead_orangepurple_parent"
+				"attach_to_rootbone"	"1"
+				"attachment"		"unusual"
+			}
+			"187"
+			{
+				"system"			"unusual_bloomhead_pinkgreen_parent"
+				"attach_to_rootbone"	"1"
+				"attachment"		"unusual"
+			}			
+			"188"
+			{
+				"system"			"unusual_magicalorb_parent"
+				"attach_to_rootbone"	"1"
+				"attachment"		"unusual"
+			}
+
+			"189"
+			{
+				"system"			"unusual_demonhorns_green_parent"
+				"attach_to_rootbone"	"1"
+				"attachment"		"unusual"
+			}
+			"190"
+			{
+				"system"			"unusual_demonhorns_orange_parent"
+				"attach_to_rootbone"	"1"
+				"attachment"		"unusual"
+			}
+			"191"
+			{
+				"system"			"unusual_demonhorns_purple_parent"
+				"attach_to_rootbone"	"1"
+				"attachment"		"unusual"
+			}
+			"192"
+			{
+				"system"			"unusual_souls_shades_parent"
+				"attach_to_rootbone"	"1"
+				"attachment"		"unusual"
+			}
+			"193"
+			{
+				"system"			"unusual_souls_teamcolor_red"
+				"attach_to_rootbone"	"1"
+				"attachment"		"unusual"
+			}
+			"194"
+			{
+				"system"			"unusual_souls_teamcolor_blue"
+				"attach_to_rootbone"	"1"
+				"attachment"		"unusual"
+			}
+			"195"
+			{
+				"system"			"unusual_phantomcrown_green_parent"
+				"attach_to_rootbone"	"1"
+				"attachment"		"unusual"
+			}
+			"196"
+			{
+				"system"			"unusual_phantomcrown_purple_parent"
+				"attach_to_rootbone"	"1"
+				"attachment"		"unusual"
+			}
+			"197"
+			{
+				"system"			"unusual_phantomcrown_yellow_parent"
+				"attach_to_rootbone"	"1"
+				"attachment"		"unusual"
+			}
+			"198"
+			{
+				"system"			"unusual_lurking_eyes_parent_g"
+				"attach_to_rootbone"	"1"
+				"attachment"		"unusual"
+			}
+			"199"
+			{
+				"system"			"unusual_lurking_eyes_parent_o"
+				"attach_to_rootbone"	"1"
+				"attachment"		"unusual"
+			}
+			"200"
+			{
+				"system"			"unusual_lurking_eyes_parent_p"
+				"attach_to_rootbone"	"1"
+				"attachment"		"unusual"
+			}
+			"201"
+			{
+				"system"			"unusual_pumpkin_moon_parent"
+				"attach_to_rootbone"	"1"
+				"attachment"		"unusual"
+			}	
+			"202"
+			{
+				"system"			"unusual_wacky_spooky_ghost_parent_g"
+				"attach_to_rootbone"	"1"
+				"attachment"		"unusual"
+			}
+			"203"
+			{
+				"system"			"unusual_wacky_spooky_ghost_parent_o"
+				"attach_to_rootbone"	"1"
+				"attachment"		"unusual"
+			}
+			"204"
+			{
+				"system"			"unusual_wacky_spooky_ghost_parent_p"
+				"attach_to_rootbone"	"1"
+				"attachment"		"unusual"
+			}
+
+			"205"
+			{
+				"system"			"unusual_smissmas_tree_parent"
+				"attach_to_rootbone"	"1"
+				"attachment"		"unusual"
+			}
+			"206"
+			{
+				"system"			"unusual_tree3_yellow_parent"
+				"attach_to_rootbone"	"1"
+				"attachment"		"unusual"
+			}
+			"207"
+			{
+				"system"			"unusual_tree3_teamcolor_red"
+				"attach_to_rootbone"	"1"
+				"attachment"		"unusual"
+			}
+			"208"
+			{
+				"system"			"unusual_tree3_teamcolor_blue"
+				"attach_to_rootbone"	"1"
+				"attachment"		"unusual"
+			}
+			"209"
+			{
+				"system"			"unusual_sparkletree_gold_parent"
+				"attach_to_rootbone"	"1"
+				"attachment"		"unusual"
+			}
+			"210"
+			{
+				"system"			"unusual_sparkletree_silver_parent"
+				"attach_to_rootbone"	"1"
+				"attachment"		"unusual"
+			}
+			"211"
+			{
+				"system"			"unusual_sparkletree_RGB_parent"
+				"attach_to_rootbone"	"1"
+				"attachment"		"unusual"
+			}
+			"212"
+			{
+				"system"			"unusual_fairylights_green_parent"
+				"attach_to_rootbone"	"1"
+				"attachment"		"unusual"
+			}
+			"213"
+			{
+				"system"			"unusual_fairylights_purple_parent"
+				"attach_to_rootbone"	"1"
+				"attachment"		"unusual"
+			}
+			"214"
+			{
+				"system"			"unusual_spire_star_parent"
+				"attach_to_rootbone"	"1"
+				"attachment"		"unusual"
+			}
+			"215"
+			{
+				"system"			"unusual_spire_snowball_parent"
+				"attach_to_rootbone"	"1"
+				"attachment"		"unusual"
+			}
+			"216"
+			{
+				"system"			"unusual_spire_firework_teamcolor_red"
+				"attach_to_rootbone"	"1"
+				"attachment"		"unusual"
+			}
+			"217"
+			{
+				"system"			"unusual_spire_firework_teamcolor_blue"
+				"attach_to_rootbone"	"1"
+				"attachment"		"unusual"
+			}
+			"218"
+			{
+				"system"			"unusual_snowflake_parent"
+				"attach_to_rootbone"	"1"
+				"attachment"		"unusual"
+			}
+			"219"
+			{
+				"system"			"unusual_antlers_gold_parent"
+				"attach_to_rootbone"	"1"
+				"attachment"		"unusual"
+			}
+			"220"
+			{
+				"system"			"unusual_antlers_purple_parent"
+				"attach_to_rootbone"	"1"
+				"attachment"		"unusual"
+			}
+			"221"
+			{
+				"system"			"unusual_antlers_teamcolor_red"
+				"attach_to_rootbone"	"1"
+				"attachment"		"unusual"
+			}
+			"222"
+			{
+				"system"			"unusual_antlers_teamcolor_blue"
+				"attach_to_rootbone"	"1"
+				"attachment"		"unusual"
+			}
+			"223"
+			{
+				"system"			"unusual_festive_lights_lights1_parent"
+				"attach_to_rootbone"	"1"
+				"attachment"		"unusual"
+			}
+		}
+		
+		"weapon_unusual_effects"
+		{
+			"701"
+			{
+				"system"				"weapon_unusual_hot"
+				"draw_in_viewmodel"		"1"
+				"use_suffix_name"		"1"
+				
+				"attachment"			"unusual_0"
+				"control_point_1"		"unusual_1"
+				"control_point_2"		"unusual_2"
+				"control_point_3"		"unusual_3"
+				"control_point_4"		"unusual_4"
+				"control_point_5"		"unusual_5"
+			}
+			"702"
+			{
+				"system"				"weapon_unusual_isotope"
+				"draw_in_viewmodel"		"1"
+				"use_suffix_name"		"1"
+				
+				"attachment"			"unusual_0"
+				"control_point_1"		"unusual_1"
+				"control_point_2"		"unusual_2"
+				"control_point_3"		"unusual_3"
+				"control_point_4"		"unusual_4"
+				"control_point_5"		"unusual_5"
+			}
+			"703"
+			{
+				"system"				"weapon_unusual_cool"
+				"draw_in_viewmodel"		"1"
+				"use_suffix_name"		"1"
+				
+				"attachment"			"unusual_0"
+				"control_point_1"		"unusual_1"
+				"control_point_2"		"unusual_2"
+				"control_point_3"		"unusual_3"
+				"control_point_4"		"unusual_4"
+				"control_point_5"		"unusual_5"
+			}
+			"704"
+			{
+				"system"				"weapon_unusual_energyorb"
+				"draw_in_viewmodel"		"1"
+				"use_suffix_name"		"1"
+				
+				"attachment"			"unusual_0"
+				"control_point_1"		"unusual_1"
+				"control_point_2"		"unusual_2"
+				"control_point_3"		"unusual_3"
+				"control_point_4"		"unusual_4"
+				"control_point_5"		"unusual_5"
+			}
+		}
+		
+		
+		"killstreak_eyeglows"
+		{
+			"2001"
+			{
+				"system"			"killstreak_eyeglow_1_teamcolor_red"
+			}
+			"22001"
+			{
+				"system"			"killstreak_eyeglow_4_teamcolor_red"
+			}
+			"2002"
+			{
+				"system"			"killstreak_t1_lvl1"
+			}
+			"22002"
+			{
+				"system"			"killstreak_t1_lvl2"
+			}
+			"2003"
+			{
+				"system"			"killstreak_t2_lvl1"
+			}
+			"22003"
+			{
+				"system"			"killstreak_t2_lvl2"
+			}
+			"2004"
+			{
+				"system"			"killstreak_t3_lvl1"
+			}
+			"22004"
+			{
+				"system"			"killstreak_t3_lvl2"
+			}
+			"2005"
+			{
+				"system"			"killstreak_t4_lvl1"
+			}
+			"22005"
+			{
+				"system"			"killstreak_t4_lvl2"
+			}
+			"2006"
+			{
+				"system"			"killstreak_t5_lvl1"
+			}
+			"22006"
+			{
+				"system"			"killstreak_t5_lvl2"
+			}
+			"2007"
+			{
+				"system"			"killstreak_t6_lvl1"
+			}
+			"22007"
+			{
+				"system"			"killstreak_t6_lvl2"
+			}
+			"2008"
+			{
+				"system"			"killstreak_t7_lvl1"
+			}
+			"22008"
+			{
+				"system"			"killstreak_t7_lvl2"
+			}
+		}
+		
+		"taunt_unusual_effects"
+		{
+			"3001"
+			{
+				"system"			"utaunt_firework_teamcolor_red"
+				"refire_time"		"2.6"
+			}		
+			"3002"
+			{
+				"system"			"utaunt_firework_teamcolor_blue"
+				"refire_time"		"2.6"
+			}		
+			"3003"
+			{
+				"system"			"utaunt_beams_yellow"
+			}		
+			"3004"
+			{
+				"system"			"utaunt_disco_party"
+			}		
+			"3005"
+			{
+				"system"			"utaunt_hearts_glow_parent"
+			}		
+			"3006"
+			{
+				"system"			"utaunt_meteor_parent"
+			}		
+			"3007"
+			{
+				"system"			"utaunt_cash_confetti"
+			}				
+			"3008"
+			{
+				"system"			"utaunt_tornado_parent_black"
+			}				
+			"3009"
+			{
+				"system"			"utaunt_tornado_parent_white"
+			}			
+			"3010"
+			{
+				"system"			"utaunt_lightning_parent"
+				"refire_time"		"0.9"
+			}	
+			"3011"
+			{
+				"system"			"utaunt_souls_green_parent"
+			}				
+			"3012"
+			{
+				"system"			"utaunt_souls_purple_parent"
+			}
+			"3013"
+			{
+				"system"			"utaunt_hellpit_parent"
+			}
+			"3014"
+			{
+				"system"			"utaunt_hellswirl"
+			}
+			"3015"
+			{
+				"system"			"utaunt_headless"
+			}
+			"3016"
+			{
+				"system"			"utaunt_merasmus"
+			}
+			"3017"
+			{
+				"system"			"utaunt_bubbles_glow_green_parent"
+			}
+			"3018"
+			{
+				"system"			"utaunt_bubbles_glow_orange_parent"
+			}
+			"3019"
+			{
+				"system"			"utaunt_bubbles_glow_purple_parent"
+			}
+			"3020"
+			{
+				"system"			"utaunt_firework_dragon_parent"
+				"refire_time"		"5.25"
+			}
+			"3021"
+			{
+				"system"			"utaunt_smoke_moon_parent"
+			}
+			"3022"
+			{
+				"system"			"utaunt_smoke_moon_green_parent"
+			}
+			"3023"
+			{
+				"system"			"utaunt_arcane_purple_parent"
+			}
+			"3024"
+			{
+				"system"			"utaunt_arcane_green_parent"
+			}
+			"3025"
+			{
+				"system"			"utaunt_arcane_yellow_parent"
+			}
+			"3026"
+			{
+				"system"			"utaunt_electric_mist_parent"
+			}
+			"3027"
+			{
+				"system"			"utaunt_electricity_cloud_parent_WP"
+			}
+			"3028"
+			{
+				"system"			"utaunt_electricity_cloud_parent_WB"
+			}
+			"3029"
+			{
+				"system"			"utaunt_electricity_cloud_parent_WY"
+			}
+			"3030"
+			{
+				"system"			"utaunt_portalswirl_purple_parent"
+			}
+			"3031"
+			{
+				"system"			"utaunt_present_parent"
+			}
+			"3032"
+			{
+				"system"			"utaunt_snowring_icy_parent"
+			}
+			"3033"
+			{
+				"system"			"utaunt_snowring_space_parent"
+			}
+			"3034"
+			{
+				"system"			"utaunt_spirit_winter_parent"
+			}
+			"3035"
+			{
+				"system"			"utaunt_spirit_festive_parent"
+			}
+			"3036"
+			{
+				"system"			"utaunt_spirit_magical_parent"
+			}
+			"3037"
+			{
+				"system"			"utaunt_astralbodies_greenorange_parent"
+			}
+			"3038"
+			{
+				"system"			"utaunt_astralbodies_tealpurple_parent"
+			}
+			"3039"
+			{
+				"system"			"utaunt_astralbodies_teamcolor_red"
+			}
+			"3040"
+			{
+				"system"			"utaunt_astralbodies_teamcolor_blue"
+			}
+			"3041"
+			{
+				"system"			"utaunt_glowyplayer_green_parent"
+			}
+			"3042"
+			{
+				"system"			"utaunt_glowyplayer_orange_parent"
+			}
+			"3043"
+			{
+				"system"			"utaunt_glowyplayer_purple_parent"
+			}
+			"3044"
+			{
+				"system"			"utaunt_electricity_parent"
+			}
+			"3045"
+			{
+				"system"			"utaunt_electricity_purple_parent"
+			}
+			"3046"
+			{
+				"system"			"utaunt_spider_green_parent"
+			}
+			"3047"
+			{
+				"system"			"utaunt_spider_orange_parent"
+			}
+			"3048"
+			{
+				"system"			"utaunt_spider_purple_parent"
+			}
+			"3049"
+			{
+				"system"			"utaunt_tf2smissmas_tree_parent"
+			}
+			"3050"
+			{
+				"system"			"utaunt_tf2smissmas_tree_parent_w"
+			}
+			"3051"
+			{
+				"system"			"utaunt_spirits_blue_parent"
+			}
+			"3052"
+			{
+				"system"			"utaunt_spirits_purple_parent"
+			}
+			"3053"
+			{
+				"system"			"utaunt_balloonicorn_reindeer_teamcolor_red"
+			}
+			"3054"
+			{
+				"system"			"utaunt_balloonicorn_reindeer_teamcolor_blue"
+			}
+			"3055"
+			{
+				"system"			"utaunt_twinkling_rgb_parent"
+			}
+			"3056"
+			{
+				"system"			"utaunt_twinkling_goldsilver_parent"
+			}
+
+			"3059"
+			{
+				"system"			"utaunt_chain_green_parent"
+			}
+			"3060"
+			{
+				"system"			"utaunt_chain_purple_parent"
+			}
+			"3061"
+			{
+				"system"			"utaunt_tarotcard_teamcolor_red"
+			}
+			"3062"
+			{
+				"system"			"utaunt_tarotcard_teamcolor_blue"
+			}
+			"3063"
+			{
+				"system"			"utaunt_tarotcard_orange_parent"
+			}
+			"3064"
+			{
+				"system"			"utaunt_tarotcard_purple_parent"
+			}
+			"3065"
+			{
+				"system"			"utaunt_elebound_green_parent"
+			}
+			"3066"
+			{
+				"system"			"utaunt_elebound_purple_parent"
+			}
+			"3067"
+			{
+				"system"			"utaunt_elebound_yellow_parent"
+			}
+			"3068"
+			{
+				"system"			"utaunt_wispy_parent_g"
+			}
+			"3069"
+			{
+				"system"			"utaunt_wispy_parent_p"
+			}
+			"3070"
+			{
+				"system"			"utaunt_auroraglow_green_parent"
+			}
+			"3071"
+			{
+				"system"			"utaunt_auroraglow_orange_parent"
+			}
+			"3072"
+			{
+				"system"			"utaunt_auroraglow_purple_parent"
+			}
+
+			"3073"
+			{
+				"system"			"utaunt_snowswirl_purple_parent"
+			}
+			"3074"
+			{
+				"system"			"utaunt_snowswirl_yellow_parent"
+			}
+			"3075"
+			{
+				"system"			"utaunt_snowswirl_teamcolor_red"
+			}
+			"3076"
+			{
+				"system"			"utaunt_snowswirl_teamcolor_blue"
+			}
+			"3077"
+			{
+				"system"			"utaunt_treespiral_green_parent"
+			}
+			"3078"
+			{
+				"system"			"utaunt_treespiral_purple_parent"
+			}
+			"3079"
+			{
+				"system"			"utaunt_treespiral_teamcolor_red"
+			}
+			"3080"
+			{
+				"system"			"utaunt_treespiral_teamcolor_blue"
+			}
+			"3081"
+			{
+				"system"			"utaunt_gifts_teamcolor_red"
+			}
+			"3082"
+			{
+				"system"			"utaunt_gifts_teamcolor_blue"
+			}
+			"3083"
+			{
+				"system"			"utaunt_glitter_parent_gold"
+			}
+			"3084"
+			{
+				"system"			"utaunt_glitter_parent_silver"
+			}
+			"3085"
+			{
+				"system"			"utaunt_glitter_teamcolor_red"
+			}
+			"3086"
+			{
+				"system"			"utaunt_glitter_teamcolor_blue"
+			}
+			"3087"
+			{
+				"system"			"utaunt_ice_parent"
+			}
 		}
 	}
 	"item_levels"
