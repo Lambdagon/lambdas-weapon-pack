@@ -19316,8 +19316,8 @@
 			"image_inventory_size_w"		"128"
 			"image_inventory_size_h"		"82"
 			"model_world"	"models/weapons/w_irifle.mdl"
-			"model_player"	"models/weapons/v_irifle.mdl"
-			"attach_to_hands" "1"
+			"model_player"	"models/weapons/v_models/v_irifle.mdl"
+			"attach_to_hands" "0"
 			"inspect_panel_dist" "40"
 			"item_quality"	"unique"
 			"propername"	"1"
@@ -20625,7 +20625,7 @@
 				"can_heal_allies"		"1"
 				"can_be_festivized"		"1"
 			}
-			"show_in_armory"	"1"
+			"show_in_armory"	"0"
 			"item_type_name"	"Unstable Medi-gun Prototype"
 			"item_name"		"Lamb's Old Quick-Fix"
 			"item_description"	"He wants to forget the past"
@@ -21397,7 +21397,7 @@
 				"can_deal_taunt_damage"		"1"
 			}
 			"base_item_name"	"The Huntsman"
-			"show_in_armory"	"1"
+			"show_in_armory"	"0"
 			"item_type_name"	"bow"
 			"item_name"	"Lambda's bow"
 			"item_slot"	"primary"
@@ -25903,7 +25903,7 @@
 			"item_class"	"tf_weapon_shotgun"
 			"craft_class"	"weapon"
 			"craft_material_type"	"weapon"
-			"item_type_name"	"Gay gun"
+			"item_type_name"	"shotgun"
 			"item_quality"	"normal"
 			"baseitem" "0"
 			"show_in_armory"	"1"
@@ -25931,47 +25931,17 @@
 				"damage bonus"
 				{
 					"attribute_class"	"mult_dmg"
-					"value" "2.25"
+					"value" "1.25"
 				}
 				"clip size bonus"
 				{
 					"attribute_class"	"mult_clipsize"
-					"value" "2.90"
+					"value" "1.33"
 				}
-				"fire rate bonus"
+				"attach particle effect"
 				{
-					"attribute_class"	"mult_postfiredelay"
-					"value" "1.25"
-				}
-				"max health additive bonus"
-				{
-					"attribute_class"	"add_maxhealth"
-					"value" "550"
-				}
-				"Set DamageType Ignite"
-				{
-					"attribute_class"	"set_dmgtype_ignite"
-					"value" "1"
-				}
-				"speed buff ally"
-				{
-					"attribute_class"	"speed_buff_ally"
-					"value"	"1"
-				}
-				"scattergun no reload single"
-				{
-					"attribute_class"	"set_scattergun_no_reload_single"
-					"value"	"1"
-				}
-				"reload time decreased"
-				{
-					"attribute_class"	"mult_reload_time"
-					"value"	".50"
-				}
-				"maxammo primary increased"
-				{
-					"attribute_class"	"mult_maxammo_primary"
-					"value" "9.0"
+					"attribute_class"	"set_attached_particle"
+					"value"	"58"
 				}
 			}
 		}
@@ -28306,7 +28276,7 @@
 			"item_type_name"	"#TF_Wearable_Glasses"
 			"item_name"	"#TF_ScoutGlasses"
 			"item_description"	"#TF_ScoutGlasses_Desc"
-			"item_slot"	"misc"
+			"item_slot"	"misc2"
 			"equip_region"	"glasses"
 			"image_inventory"	"backpack/player/items/scout/fwk_scout_3d"
 			"image_inventory_size_w"	"128"
@@ -31897,12 +31867,82 @@
 				"damage bonus"
 				{
 					"attribute_class"	"mult_dmg"
-					"value"	"1.6"
+					"value"	"1.8"
 				}
-				"clip size penalty"
+				"clip size bonus"
 				{
 					"attribute_class"	"mult_clipsize"
-					"value" "0.85"
+					"value" "2.8"
+				}
+				"maxammo secondary increased"
+				{
+					"attribute_class"	"mult_maxammo_secondary"
+					"value"	"2.0"
+				}
+			}
+		}
+		"7157"
+		{
+			"name"	"dualpistol_combine"
+			"first_sale_date"	"2010/09/29"
+			"item_class"	"tf_weapon_pistol"
+			"baseitem"		"1"
+			"prefab"	"weapon_pistol"
+			"craft_class"	""
+			"craft_material_type"		""
+			"capabilities"
+			{
+				"nameable"		"1"
+			}
+			"tags"
+			{
+				"can_deal_damage"			"1"
+				"can_deal_critical_damage"	"1"
+				"can_deal_long_distance_damage"	"1"
+			}
+			"show_in_armory"	"0"
+			"item_type_name"	"#TF_Weapon_Pistol"
+			"item_name"	"HL2 Akimbo Pistol"
+			"item_description"	"Part of Lambda's  Weapon pack"
+			"item_slot"	"action"
+			"item_logname"	"maxgun"
+			"item_iconname"	"pistol"
+			"image_inventory"	"backpack/weapons/c_models/c_pistol"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"82"
+			"model_player"	"models/weapons/v_models/v_pistol.mdl"
+			"model_world"	"models/weapons/c_models/c_pistolo/c_pistol.mdl"
+			"attach_to_hands"	"0"
+			"item_quality"	"unique"
+			"propername"	"1"
+			"min_ilevel"	"5"
+			"max_ilevel"	"5"
+			"used_by_classes"
+			{
+				"combine"	"1"
+				"antlion"	"1"
+				"zombiefast"	"1"
+				"civilian"		"1"
+			}
+			"mouse_pressed_sound"	"ui/item_light_gun_pickup.wav"
+			"drop_sound"		"ui/item_light_gun_drop.wav"
+			"xifier_class_remap"	"TTG Max Pistol"
+			"static_attrs"
+			{
+				"min_viewmodel_offset"		"10 0 -9"
+			}
+			"visuals"
+			{
+				"sound_single_shot"	"HL2_Weapon_Pistol.Single"
+				"sound_burst"	"HL2_Weapon_Pistol.NPC_Single"
+				"sound_reload"	"HL2_Weapon_Pistol.Reload"
+			}	
+			"attributes"
+			{
+				"damage bonus"
+				{
+					"attribute_class"	"mult_dmg"
+					"value"	"1.9"
 				}
 				"max health additive penalty"
 				{
@@ -31912,14 +31952,162 @@
 				"clip size bonus"
 				{
 					"attribute_class"	"mult_clipsize"
-					"value" "2.5"
+					"value" "2.8"
 				}
 				"maxammo secondary increased"
 				{
 					"attribute_class"	"mult_maxammo_secondary"
-					"value"	"1.5"
+					"value"	"2.0"
 				}
 			}
+		}
+		"7158"
+		{
+			"name"		"lambdas_final_god"
+			"item_class"	"tf_wearable"
+			"craft_class"	"weapon"
+			"craft_material_type"	"weapon"
+			"capabilities"
+			{
+				"nameable"		"1"
+			}
+			"show_in_armory" "1"
+			"item_type_name"	"memory"
+			"item_name"	"Lamb's Special item"
+			"item_description"	"yes"
+			"item_logname"	"grappling_hook"
+			"item_iconname"	"grappling_hook"
+			"item_slot"	"misc2"
+			"item_quality"	"normal"
+			"min_ilevel"	"1"
+			"max_ilevel"	"1"
+			"image_inventory"	"backpack/workshop/player/items/all_class/blapature_2018_tier3/blapature_2018_tier3"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"82"
+			"model_player_per_class"
+			{
+				"scout"		"models/workshop/player/items/all_class/blapature_2018_tier3/blapature_2018_tier3_scout.mdl"
+				"sniper"		"models/workshop/player/items/all_class/blapature_2018_tier3/blapature_2018_tier3_sniper.mdl"
+				"soldier"		"models/workshop/player/items/all_class/blapature_2018_tier3/blapature_2018_tier3_soldier.mdl"
+				"demoman"		"models/workshop/player/items/all_class/blapature_2018_tier3/blapature_2018_tier3_demoman.mdl"
+				"medic"		"models/workshop/player/items/all_class/blapature_2018_tier3/blapature_2018_tier3_medic.mdl"
+				"heavy"		"models/workshop/player/items/all_class/blapature_2018_tier3/blapature_2018_tier3_heavy.mdl"
+				"pyro"		"models/workshop/player/items/all_class/blapature_2018_tier3/blapature_2018_tier3_pyro.mdl"
+				"spy"		"models/workshop/player/items/all_class/blapature_2018_tier3/blapature_2018_tier3_spy.mdl"
+				"engineer"		"models/workshop/player/items/all_class/blapature_2018_tier3/blapature_2018_tier3_engineer.mdl"
+			}
+			"attach_to_hands"	"1"
+			"act_as_weapon"		"0"
+			"anim_slot" "MELEE_ALLCLASS"
+			"used_by_classes"
+			{
+				"scout"		"1"
+				"sniper"	"1"
+				"soldier"	"1"
+				"demoman"	"1"	
+				"medic"		"1"
+				"heavy"		"1"
+				"pyro"		"1"
+				"spy"		"1"
+				"engineer"	"1"
+			}
+			"attributes"
+			{
+				"move speed bonus"
+				{
+					"attribute_class"	"mult_player_movespeed"
+					"value" "2.25"
+				}
+				"max health additive bonus"
+				{
+					"attribute_class"	"add_maxhealth"
+					"value" "950"
+				}
+				"attach particle effect"
+				{
+					"attribute_class"	"set_attached_particle"
+					"value"	"58"
+				}
+			}
+			"mouse_pressed_sound"	"ui/item_light_gun_pickup.wav"
+			"drop_sound"		"ui/item_light_gun_drop.wav"
+		}
+		"7159"
+		{
+			"name"	"World Traveler"
+			"loadondemand"	"1"
+			"prefab"	"base_hat"
+			"item_class"	"tf_wearable"
+			"capabilities"
+			{
+				"nameable"		"1"
+				"paintable"		"1"
+			}
+			"show_in_armory"	"1"
+			"item_type_name"	"#TF_Wearable_Hat"
+			"item_name"	"#TF_WorldTraveler"
+			"item_description"	"#TF_WorldTraveler_Desc"
+			"item_slot"	"head"
+			"equip_region"	"hat"
+			"image_inventory"	"backpack/player/items/all_class/world_traveller"
+			"image_inventory_size_w"	"128"
+			"image_inventory_size_h"	"82"
+			"item_quality"		"unique"
+			"min_ilevel"	"20"
+			"max_ilevel"	"20"
+			"model_player_per_class"
+			{
+				"scout"		"models/player/items/all_class/world_traveller_scout.mdl"
+				"sniper"	"models/player/items/all_class/world_traveller_sniper.mdl"
+				"soldier"	"models/player/items/all_class/world_traveller_soldier.mdl"
+				"demoman"	"models/player/items/all_class/world_traveller_demoman.mdl"
+				"medic"		"models/player/items/all_class/world_traveller_medic.mdl"
+				"heavy"		"models/player/items/all_class/world_traveller_heavy.mdl"
+				"spy"		"models/player/items/all_class/world_traveller_spy.mdl"
+				"engineer"		"models/player/items/all_class/world_traveller_engineer.mdl"
+				"pyro"		"models/player/items/all_class/world_traveller_pyro.mdl"
+			
+			}
+			"drop_type"	"drop"
+			"used_by_classes"
+			{
+				"scout"	"1"
+				"sniper"	"1"
+				"soldier"	"1"
+				"demoman"	"1"
+				"medic"	"1"
+				"heavy"	"1"
+				"spy" "1"
+				"engineer" "1"
+				"pyro" "1"
+			}
+			"static_attrs"
+			{
+				"cosmetic_allow_inspect"				"1"
+			}
+			"attributes"
+			{
+				"attach particle effect name"
+				{
+					"atribute_class"	"set_attached_particle_static"
+					"value"	"superrare_circling_heart"
+				}
+			}
+			"visuals"
+			{
+				"player_bodygroups"
+				{
+					"hat"			"1"
+					"headphones"	"1"
+				}
+				"code_controlled_bodygroup"
+				{
+					"function"	"map_contributor"
+					"bodygroup"	"medal"
+				}
+			}
+			"mouse_pressed_sound"	"ui/item_hat_pickup.wav"
+			"drop_sound"		"ui/item_hat_drop.wav"
 		}
 		"30570"
 		{
