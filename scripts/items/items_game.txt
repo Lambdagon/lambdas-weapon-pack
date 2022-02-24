@@ -32701,6 +32701,7 @@
 			"item_description"		"#TF_sum20_jarmaments_Desc"
 			"item_type_name"		"#TF_Wearable_Jars"
 			"equip_region"		"sniper_bullets"
+			"item_quality"	"strange"
 			"image_inventory"		"backpack/workshop/player/items/sniper/sum20_jarmaments/sum20_jarmaments"
 			"propername"		"1"
 			"capabilities"
@@ -32712,6 +32713,133 @@
 			"used_by_classes"
 			{
 				"sniper"		"1"
+			}
+			"attributes"
+			{
+				"kill eater score type"
+				{
+					"attribute_class"	"kill_eater_score_type"
+					"value" 	"64"			
+				}
+				"kill eater kill type"
+				{
+					"attribute_class"	"kill_eater_kill_type"
+					"value"		"64"			
+				}
+			}
+		}
+		"7184"
+		{
+			"name"		"Taunt: Spin-to-Win"
+			"first_sale_date"		"2020/12/02"
+			"prefab"		"no_craft taunt"
+			"item_name"		"#TF_taunt_spintowin"
+			"item_description"		"#TF_taunt_spintowin_Desc"
+			"attributes"
+			{
+				"taunt is press and hold"
+				{
+					"attribute_class"		"enable_misc2_holdtaunt"
+					"value"		"1"
+				}
+			}
+			"image_inventory"		"backpack/workshop/player/items/scout/taunt_spintowin/taunt_spintowin"
+			"capabilities"
+			{
+				"can_craft_count"		"1"
+			}
+			"used_by_classes"
+			{
+				"scout"		"1"
+			}
+			"taunt"
+			{
+				"custom_taunt_scene_per_class"
+				{
+					"scout"		"scenes/workshop/player/scout/low/taunt_spintowin.vcd"
+				}
+				"custom_taunt_outro_scene_per_class"
+				{
+					"scout"		"scenes/workshop/player/scout/low/taunt_spintowin_outro.vcd"
+				}
+				"custom_taunt_input_remap"
+				{
+					"IN_ATTACK"
+					{
+						"pressed"
+						{
+							"scout"		"scenes/workshop/player/scout/low/taunt_spintowin_a1.vcd"
+						}
+					}
+					"IN_ATTACK2"
+					{
+						"pressed"
+						{
+							"scout"		"scenes/workshop/player/scout/low/taunt_spintowin_a2.vcd"
+						}
+					}
+				}
+				"custom_taunt_prop_per_class"
+				{
+					"scout"		"models/workshop/player/items/scout/taunt_spintowinalt/taunt_spintowin.mdl"
+				}
+			}
+		}
+		"7185"
+		{
+			"name"		"Taunt: Spin-to-Win"
+			"first_sale_date"		"2020/12/02"
+			"prefab"		"no_craft taunt"
+			"item_name"		"#TF_taunt_spintowin"
+			"item_description"		"#TF_taunt_spintowin_Desc"
+			"attributes"
+			{
+				"taunt is press and hold"
+				{
+					"attribute_class"		"enable_misc2_holdtaunt"
+					"value"		"1"
+				}
+			}
+			"image_inventory"		"backpack/workshop/player/items/scout/taunt_spintowin/taunt_spintowin"
+			"capabilities"
+			{
+				"can_craft_count"		"1"
+			}
+			"used_by_classes"
+			{
+				"scout"		"1"
+			}
+			"taunt"
+			{
+				"custom_taunt_scene_per_class"
+				{
+					"scout"		"scenes/workshop/player/scout/low/taunt_spintowin.vcd"
+				}
+				"custom_taunt_outro_scene_per_class"
+				{
+					"scout"		"scenes/workshop/player/scout/low/taunt_spintowin_outro.vcd"
+				}
+				"custom_taunt_input_remap"
+				{
+					"IN_ATTACK"
+					{
+						"pressed"
+						{
+							"scout"		"scenes/workshop/player/scout/low/taunt_spintowin_a1.vcd"
+						}
+					}
+					"IN_ATTACK2"
+					{
+						"pressed"
+						{
+							"scout"		"scenes/workshop/player/scout/low/taunt_spintowin_a2.vcd"
+						}
+					}
+				}
+				"custom_taunt_prop_per_class"
+				{
+					"scout"		"models/workshop/player/items/scout/taunt_spintowinalt1/taunt_spintowin.mdl"
+				}
 			}
 		}
 		"30570"
@@ -34290,6 +34418,7 @@
 				}
 			}
 		}
+		
 				"31207"
 		{
 			"name"		"Taunt: Bare Knuckle Beatdown"
