@@ -14510,6 +14510,7 @@
 			"item_type_name"		"#TF_Wearable_FacialHair"
 			"item_name"		"Five-Month Shadow"
 			"item_description"		"Beard"
+			"item_slot"	"misc2"
 			"equip_region"		"beard"
 			"propername"		"1"
 			"image_inventory"		"backpack/workshop/player/items/sniper/xms2013_sniper_beard/xms2013_sniper_beard"
@@ -21375,7 +21376,7 @@
 			"item_type_name"		"Vest"
 			"item_name"		"Extra Layer"
 			"equip_region"		"sniper_vest"
-			"item_slot" "misc2"
+			"item_slot" "misc"
 			"propername"		"1"
 			"image_inventory"		"backpack/workshop/player/items/sniper/xms2013_sniper_layer_vest/xms2013_sniper_layer_vest"
 			"model_player"		"models/workshop/player/items/sniper/xms2013_sniper_layer_vest/xms2013_sniper_layer_vest.mdl"
@@ -26696,6 +26697,7 @@
 			"item_type_name"	"#TF_Wearable_Mascot"
 			"item_name"	"#TF_Archimedes"
 			"item_description"	"#TF_Archimedes_Desc"
+			"item_slot"	"misc2"
 			"image_inventory"	"backpack/player/items/medic/archimedes"
 			"model_player"	"models/player/items/medic/archimedes.mdl"
 			"used_by_classes"
@@ -26899,7 +26901,7 @@
 			"item_type_name"	"#TF_Wearable_Hat"
 			"item_name"	"#TF_DotaSniper_Hat"
 			"item_description"	"#TF_DotaGamescom2011_Hat_Desc"
-			"item_slot"	"misc"
+			"item_slot"	"misc2"
 			"equip_region"	"glasses"
 			"item_quality"	"unique"
 			"image_inventory"	"backpack/player/items/sniper/dotasniper_hat"
@@ -27605,6 +27607,7 @@
 			"first_sale_date"	"2010/12/20"
 			"prefab"	"mask"
 			"item_name"	"#TF_PartyPhantom"
+			"item_slot"	"misc2"
 			"image_inventory"	"backpack/player/items/spy/spy_party_phantom"
 			"model_player"	"models/player/items/spy/spy_party_phantom.mdl"
 			"used_by_classes"
@@ -29015,6 +29018,7 @@
 			"prefab"	"backpack"
 			"craft_class"	""
 			"item_name"	"#TF_Medic_Robot_Backpack"
+			"item_slot"	"misc2"
 			"item_description"	"#TF_Medic_Robot_Backpack_Desc"
 			"image_inventory"	"backpack/player/items/mvm_loot/medic/robo_backpack"
 			"model_player"	"models/player/items/mvm_loot/medic/robo_backpack.mdl"
@@ -29536,6 +29540,7 @@
 			"item_type_name"	"#TF_Wearable_Robot"
 			"item_name"	"#TF_ShootManyRobotsPack"
 			"item_description"	"#TF_ShootManyRobotsPack_Desc"
+			"item_slot"	"misc2"
 			"image_inventory"	"backpack/player/items/pyro/shootmanyrobots_pyro"
 			"propername" "1"
 			"model_player_per_class"
@@ -32152,7 +32157,7 @@
 			"loadondemand" "1"
 			"show_in_armory"	"1"
 			"item_type_name" 	"#TF_Wearable_Hat"
-			"item_name"	"Shit"
+			"item_name"	"Ghostly Gibus"
 			"item_description"	"you asked for this"
 			"item_slot"	"head"
 			"equip_region"	"hat"
@@ -32213,6 +32218,7 @@
 			"item_name"		"Bread Biter"
 			"item_description"		"#TF_hwn2019_bread_biter_Desc"
 			"item_type_name"		"#TF_Wearable_Bread"
+			"item_slot"	"misc2"
 			"equip_region"		"beard"
 			"image_inventory"		"backpack/workshop/player/items/all_class/hwn2019_bread_biter/hwn2019_bread_biter"
 			"capabilities"
@@ -32245,6 +32251,468 @@
 			}
 			"mouse_pressed_sound"		"ui/item_gooey_pickup.wav"
 			"drop_sound"		"ui/item_gooey_pickup.wav"
+		}
+		"7162"
+		{
+			"name"		"Starduster"
+			"prefab"		"no_craft misc marketable"
+			"item_name"		"#TF_invasion_starduster"
+			"item_description"		"#TF_invasion_starduster_Desc"
+			"equip_region"		"sniper_vest"
+			"item_type_name"		"#TF_Wearable_Cape"
+			"image_inventory"		"backpack/workshop/player/items/sniper/invasion_starduster/invasion_starduster"
+			"capabilities"
+			{
+				"can_craft_count"		"1"
+			}
+			"model_player"		"models/workshop/player/items/sniper/invasion_starduster/invasion_starduster.mdl"
+			"used_by_classes"
+			{
+				"sniper"		"1"
+			}
+			"mouse_pressed_sound"		"ui/item_bag_pickup.wav"
+			"drop_sound"		"ui/item_bag_drop.wav"
+		}
+		"7163"
+		{
+			"name"		"The Second Opinion"
+			"prefab"		"halloween2013 misc"
+			"item_type_name"		"#TF_Wearable_Mask"
+			"item_name"		"#TF_hw2013_second_opinion"
+			"item_description"		"#TF_hw2013_second_opinion_Desc"
+			"equip_region"		"head_skin"
+			"propername"		"1"
+			"image_inventory"		"backpack/workshop/player/items/medic/hw2013_second_opinion/hw2013_second_opinion"
+			"model_player"		"models/workshop/player/items/medic/hw2013_second_opinion/hw2013_second_opinion.mdl"
+			"used_by_classes"
+			{
+				"medic"		"1"
+			}
+			"attributes"
+			{
+				"additional halloween response criteria name"
+				{
+					"attribute_class"		"additional_halloween_response_criteria_name"
+					"value"		"IsMedicDoubleFace"
+				}
+			}
+			"mouse_pressed_sound"		"ui/item_gooey_pickup.wav"
+			"drop_sound"		"ui/item_gooey_pickup.wav"
+		}
+		"7164"
+		{
+			"name"		"Herzensbrecher"
+			"prefab"		"halloween2014 no_craft misc"
+			"item_name"		"#TF_sf14_medic_herzensbrecher"
+			"item_description"		"#TF_sf14_medic_herzensbrecher_Desc"
+			"equip_regions"
+			{
+				"medic_hip"		"1"
+				"shirt"		"1"
+			}
+			"propername"		"1"
+			"image_inventory"		"backpack/workshop/player/items/medic/sf14_medic_herzensbrecher/sf14_medic_herzensbrecher"
+			"capabilities"
+			{
+				"can_craft_count"		"1"
+			}
+			"model_player"		"models/workshop/player/items/medic/sf14_medic_herzensbrecher/sf14_medic_herzensbrecher.mdl"
+			"used_by_classes"
+			{
+				"medic"		"1"
+			}
+		}
+		"7165"
+		{
+			"name"		"Kriegsmaschine-9000"
+			"prefab"		"halloween2014 no_craft misc"
+			"item_name"		"#TF_sf14_medic_kriegsmaschine_9000"
+			"item_description"		"#TF_sf14_medic_kriegsmaschine_9000_Desc"
+			"equip_region"		"sleeves"
+			"propername"		"1"
+			"image_inventory"		"backpack/workshop/player/items/medic/sf14_medic_kriegsmaschine_9000/sf14_medic_kriegsmaschine_9000"
+			"capabilities"
+			{
+				"can_craft_count"		"1"
+			}
+			"model_player"		"models/workshop/player/items/medic/sf14_medic_kriegsmaschine_9000/sf14_medic_kriegsmaschine_9000.mdl"
+			"used_by_classes"
+			{
+				"medic"		"1"
+			}
+		}
+		"7166"
+		{
+			"name"		"The Lo-Grav Loafers"
+			"prefab"		"halloween2013 misc"
+			"item_type_name"		"#TF_Wearable_Costume"
+			"item_name"		"#TF_hw2013_moon_boots"
+			"item_description"		"#TF_hw2013_moon_boots_Desc"
+			"equip_region"		"feet"
+			"propername"		"1"
+			"image_inventory"		"backpack/workshop/player/items/medic/hw2013_moon_boots/hw2013_moon_boots"
+			"model_player"		"models/workshop/player/items/medic/hw2013_moon_boots/hw2013_moon_boots.mdl"
+			"used_by_classes"
+			{
+				"medic"		"1"
+			}
+			"mouse_pressed_sound"		"ui/item_rubber_pickup.wav"
+			"drop_sound"		"ui/item_cardboard_drop.wav"
+		}
+		"7167"
+		{
+			"name"		"The Surgeon's Space Suit"
+			"prefab"		"halloween2013 misc"
+			"item_type_name"		"#TF_Wearable_Costume"
+			"item_name"		"#TF_hw2013_spacemans_suit"
+			"item_description"		"#TF_hw2013_spacemans_suit_Desc"
+			"equip_region"		"shirt"
+			"propername"		"1"
+			"image_inventory"		"backpack/workshop/player/items/medic/hw2013_spacemans_suit/hw2013_spacemans_suit"
+			"model_player"		"models/workshop/player/items/medic/hw2013_spacemans_suit/hw2013_spacemans_suit.mdl"
+			"used_by_classes"
+			{
+				"medic"		"1"
+			}
+			"mouse_pressed_sound"		"ui/item_rubber_pickup.wav"
+			"drop_sound"		"ui/item_hat_drop.wav"
+		}
+		"7168"
+		{
+			"name"		"Pocket Heavy"
+			"prefab"		"no_craft misc"
+			"item_type_name"		"#TF_Wearable_PocketBuddy"
+			"item_name"		"#TF_sept2014_pocket_heavy"
+			"item_description"		"#TF_sept2014_cosmetic_desc"
+			"equip_region"		"medal"
+			"image_inventory"		"backpack/workshop/player/items/medic/sept2014_pocket_heavy/sept2014_pocket_heavy"
+			"capabilities"
+			{
+				"can_craft_count"		"1"
+				"paintable"		"1"
+			}
+			"model_player"		"models/workshop/player/items/medic/sept2014_pocket_heavy/sept2014_pocket_heavy.mdl"
+			"used_by_classes"
+			{
+				"medic"		"1"
+			}
+			"static_attrs"
+			{
+				"limited quantity item"		"1"
+			}
+			"attributes"
+			{
+				"counts as assister is some kind of pet this update is going to be awesome"
+				{
+					"attribute_class"		"counts_as_assister"
+					"value"		"1"
+				}
+			}
+			"mouse_pressed_sound"		"ui/item_hat_pickup.wav"
+			"drop_sound"		"ui/item_hat_drop.wav"
+		}
+		"7169"
+		{
+			"name"		"Berlin Brain Bowl"
+			"prefab"		"no_craft hat marketable"
+			"item_name"		"#TF_dec15_berlin_brain_bowl"
+			"item_description"		"#TF_dec15_berlin_brain_bowl_Desc"
+			"item_type_name"		"#TF_Wearable_Headgear"
+			"equip_regions"
+			{
+				"hat"		"1"
+				"beard"		"1"
+			}
+			"image_inventory"		"backpack/workshop/player/items/medic/dec15_berlin_brain_bowl/dec15_berlin_brain_bowl"
+			"capabilities"
+			{
+				"can_craft_count"		"1"
+				"paintable"		"1"
+			}
+			"model_player"		"models/workshop/player/items/medic/dec15_berlin_brain_bowl/dec15_berlin_brain_bowl.mdl"
+			"used_by_classes"
+			{
+				"medic"		"1"
+			}
+			"mouse_pressed_sound"		"ui/item_helmet_pickup.wav"
+			"drop_sound"		"ui/item_helmet_drop.wav"
+		}
+		"7170"
+		{
+			"name"		"The Byte'd Beak"
+			"prefab"		"no_craft misc"
+			"capabilities"
+			{
+				"can_craft_count"		"1"
+				"paintable"		"1"
+			}
+			"item_name"		"#TF_robo_medic_blighted_beak"
+			"item_description"		"#TF_robo_medic_blighted_beak_Desc"
+			"equip_region"		"face"
+			"item_type_name"		"#TF_Wearable_Mask"
+			"propername"		"1"
+			"image_inventory"		"backpack/workshop/player/items/medic/robo_medic_blighted_beak/robo_medic_blighted_beak"
+			"model_player"		"models/workshop/player/items/medic/robo_medic_blighted_beak/robo_medic_blighted_beak.mdl"
+			"used_by_classes"
+			{
+				"medic"		"1"
+			}
+		}
+		"7171"
+		{
+			"name" "Red Medic Action Figure Promo" 
+			"item_class"	"bundle"
+			"bundle"
+			{
+				"Otolaryngologist's Mirror"	"1"
+			}
+			"item_type_name"	"#TF_StoreBundle"
+			"item_name"		"#TF_RedMedic_ActionFigure_Promo"
+			"item_description"	"#TF_RedMedic_ActionFigure_Promo_Desc"
+			"image_inventory"	"backpack/player/items/crafting/mysterious_promo"
+			"image_inventory_size_w"	"128"
+			"image_inventory_size_h"	"82"
+			"item_quality"		"unique"
+			"min_ilevel"	"50"
+			"max_ilevel"	"50"
+			"used_by_classes"
+			{
+				"medic"	"1"
+			}
+			"mouse_pressed_sound"	"ui/item_bag_pickup.wav"
+			"drop_sound"		"ui/item_bag_drop.wav"
+			"attributes"
+			{
+				"elevate quality"
+				{
+					"attribute_class"	"set_elevated_quality"
+					"value"	"1"
+				}
+			}
+		}
+		"7172"
+		{
+			"name"		"The Red Army Robin"
+			"prefab"		"misc"
+			"first_sale_date"		"2013/08/26"
+			"item_type_name"		"#TF_Wearable_Mascot"
+			"item_name"		"#TF_jul13_red_army_robin"
+			"item_description"		"#TF_jul13_red_army_robin_Desc"
+			"equip_region"		"left_shoulder"
+			"image_inventory"		"backpack/workshop/player/items/heavy/jul13_red_army_robin/jul13_red_army_robin"
+			"capabilities"
+			{
+				"can_craft_count"		"1"
+			}
+			"model_player"		"models/workshop/player/items/heavy/jul13_red_army_robin/jul13_red_army_robin.mdl"
+			"propername"		"1"
+			"used_by_classes"
+			{
+				"heavy"		"1"
+			}
+			"attributes"
+			{
+				"counts as assister is some kind of pet this update is going to be awesome"
+				{
+					"attribute_class"		"counts_as_assister"
+					"value"		"1"
+				}
+			}
+			"mouse_pressed_sound"		"ui/item_hat_pickup.wav"
+			"drop_sound"		"ui/item_hat_drop.wav"
+		}
+		"7175"
+		{
+			"name"	"Soviet Stitch-Up"
+			"prefab"	"valve halloween_costume_piece_2011 base_misc"
+			"item_name"	"#TF_Hwn_HeavyMisc1"
+			"item_description"	"#TF_Hwn_HeavyMisc1_Desc"
+			"propername"	"1"
+			"item_slot"	"misc"
+			"equip_region"	"sleeves"
+			"item_quality"	"unique"
+			"image_inventory"	"backpack/player/items/heavy/hwn_heavy_misc1"
+			"model_player"	"models/player/items/heavy/hwn_heavy_misc1.mdl"
+			"used_by_classes"
+			{
+				"heavy"	"1"
+			}
+		}
+		"7176"
+		{
+			"name"	"Under Cover"
+			"prefab"	"valve halloween_costume_piece_2011 base_hat"
+			"item_name"	"#TF_Hwn_SpyHat"
+			"item_description"	"#TF_Hwn_SpyHat_Desc"
+			"item_slot"	"head"
+			"equip_region"	"hat"
+			"propername"	"1"
+			"image_inventory"	"backpack/player/items/spy/hwn_spy_hat"
+			"model_player"	"models/player/items/spy/hwn_spy_hat.mdl"
+			"used_by_classes"
+			{
+				"spy"	"1"
+			}
+		}
+		"7178"
+		{
+			"name"	"Griffin's Gog"
+			"prefab"	"valve halloween_costume_piece_2011 base_misc"
+			"item_name"	"#TF_Hwn_SpyMisc1"
+			"item_description"	"#TF_Hwn_SpyMisc1_Desc"
+			"propername"	"0"
+			"item_slot"	"misc"
+			"equip_region"	"glasses"
+			"image_inventory"	"backpack/player/items/spy/hwn_spy_misc1"
+			"model_player"	"models/player/items/spy/hwn_spy_misc1.mdl"
+			"used_by_classes"
+			{
+				"spy"	"1"
+			}
+		}
+		"7179"
+		{
+			"name"		"Marsupial Man"
+			"prefab"		"halloween2014 no_craft misc"
+			"item_name"		"#TF_sf14_marsupial_man"
+			"item_description"		"#TF_sf14_marsupial_man_Desc"
+			"item_type_name"		"#TF_Wearable_Mask"
+			"equip_region"		"hat"
+			"propername"		"1"
+			"visuals"
+			{
+				"player_bodygroups"
+				{
+					"hat"		"1"
+				}
+			}
+			"image_inventory"		"backpack/workshop/player/items/sniper/sf14_marsupial_man/sf14_marsupial_man"
+			"capabilities"
+			{
+				"can_craft_count"		"1"
+				"paintable"		"1"
+			}
+			"model_player"		"models/workshop/player/items/sniper/sf14_marsupial_man/sf14_marsupial_man.mdl"
+			"used_by_classes"
+			{
+				"sniper"		"1"
+			}
+			"mouse_pressed_sound"		"ui/item_rubber_pickup.wav"
+			"drop_sound"		"ui/item_rubber_pickup.wav"
+		}
+		"7180"
+		{
+			"name"		"Kanga Kickers"
+			"prefab"		"halloween2014 no_craft misc"
+			"item_name"		"#TF_sf14_kanga_kickers"
+			"item_description"		"#TF_sf14_kanga_kickers_Desc"
+			"item_type_name"		"#TF_Wearable_Costume"
+			"equip_region"		"feet"
+			"propername"		"1"
+			"image_inventory"		"backpack/workshop/player/items/sniper/sf14_kanga_kickers/sf14_kanga_kickers"
+			"capabilities"
+			{
+				"can_craft_count"		"1"
+			}
+			"model_player"		"models/workshop/player/items/sniper/sf14_kanga_kickers/sf14_kanga_kickers.mdl"
+			"used_by_classes"
+			{
+				"sniper"		"1"
+			}
+			"mouse_pressed_sound"		"ui/item_hat_pickup.wav"
+			"drop_sound"		"ui/item_hat_drop.wav"
+		}
+		"7181"
+		{
+			"name"		"Glow from Below"
+			"prefab"		"no_craft hat marketable"
+			"item_name"		"#TF_hwn2020_glow_below"
+			"item_description"		"#TF_hwn2020_glow_below_Desc"
+			"item_type_name"		"#TF_Wearable_Fish"
+			"image_inventory"		"backpack/workshop/player/items/sniper/hwn2020_glow_below/hwn2020_glow_below"
+			"capabilities"
+			{
+				"can_craft_count"		"1"
+				"paintable"		"1"
+			}
+			"model_player"		"models/workshop/player/items/sniper/hwn2020_glow_below/hwn2020_glow_below.mdl"
+			"used_by_classes"
+			{
+				"sniper"		"1"
+			}
+			"mouse_pressed_sound"		"ui/item_gooey_pickup.wav"
+			"drop_sound"		"ui/item_gooey_pickup.wav"
+			"visuals"
+			{
+				"player_bodygroups"
+				{
+					"hat"		"1"
+				}
+				"styles"
+				{
+					"0"
+					{
+						"name"		"#TF_hwn2020_glow_below_style1"
+						"model_player"		"models/workshop/player/items/sniper/hwn2020_glow_below/hwn2020_glow_below.mdl"
+					}
+					"1"
+					{
+						"name"		"#TF_hwn2020_glow_below_style2"
+						"model_player"		"models/workshop/player/items/sniper/hwn2020_glow_below_style2/hwn2020_glow_below_style2.mdl"
+					}
+				}
+			}
+			"attributes"
+			{
+				"counts as assister is some kind of pet this update is going to be awesome"
+				{
+					"attribute_class"		"counts_as_assister"
+					"value"		"1"
+				}
+			}
+		}
+		"7182"
+		{
+			"name"		"Wagga Wagga Wear"
+			"prefab"		"no_craft misc marketable"
+			"item_name"		"#TF_sum19_wagga_wagga_wear"
+			"item_description"		"#TF_sum19_wagga_wagga_wear_Desc"
+			"item_type_name"		"#TF_Wearable_Coat"
+			"equip_region"		"shirt"
+			"image_inventory"		"backpack/workshop/player/items/sniper/sum19_wagga_wagga_wear/sum19_wagga_wagga_wear"
+			"capabilities"
+			{
+				"can_craft_count"		"1"
+				"paintable"		"1"
+			}
+			"model_player"		"models/workshop/player/items/sniper/sum19_wagga_wagga_wear/sum19_wagga_wagga_wear.mdl"
+			"used_by_classes"
+			{
+				"sniper"		"1"
+			}
+			"mouse_pressed_sound"		"ui/item_hat_pickup.wav"
+			"drop_sound"		"ui/item_hat_drop.wav"
+		}
+		"7183"
+		{
+			"name"		"The Jarmaments"
+			"prefab"		"no_craft misc marketable"
+			"item_name"		"#TF_sum20_jarmaments"
+			"item_description"		"#TF_sum20_jarmaments_Desc"
+			"item_type_name"		"#TF_Wearable_Jars"
+			"equip_region"		"sniper_bullets"
+			"image_inventory"		"backpack/workshop/player/items/sniper/sum20_jarmaments/sum20_jarmaments"
+			"propername"		"1"
+			"capabilities"
+			{
+				"can_craft_count"		"1"
+				"paintable"		"1"
+			}
+			"model_player"		"models/workshop/player/items/sniper/sum20_jarmaments/sum20_jarmaments.mdl"
+			"used_by_classes"
+			{
+				"sniper"		"1"
+			}
 		}
 		"30570"
 		{
