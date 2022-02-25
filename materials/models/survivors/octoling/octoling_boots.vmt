@@ -1,0 +1,18 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "models/survivors/octoling\octoling_boots"
+	"$bumpmap" "models/survivors/octoling\octoling_boots_normal"
+	"$lightwarptexture" "models/survivors/octoling/inkling_lightwarp7"
+
+	"$phong" "1"
+	"$phongexponent" "100"
+	"$phongboost" "5"	
+	"$phongfresnelranges"	"[.3 1 8]"
+
+//	"$selfillum" "1"
+
+//	"$envmap" "models/props_splatoon/inklings/inkling_eye_env"
+//	"$envmaptint" "[.5 .5 .5]"	
+//	"$normalmapalphaenvmapmask" "1"
+
+}

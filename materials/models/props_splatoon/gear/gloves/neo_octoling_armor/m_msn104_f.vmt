@@ -1,0 +1,18 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "models/props_splatoon/gear/gloves/neo_octoling_armor/M_MSN104_F_Alb"
+	"$bumpmap" "models/props_splatoon/gear/gloves/neo_octoling_armor/M_MSN104_F_Nrm"
+
+	"$lightwarptexture" "models/props_splatoon/octos/octoling/gear_lightwarp"
+
+	"$phong" "1"
+	"$phongexponent" "15"
+	"$phongboost" "5"	
+	"$phongfresnelranges"	"[.3 1 2]"
+//	"$halflambert" "1"
+
+	"$rimlight" "1"
+	"$rimlightexponent" "4"
+	"$rimlightboost" ".2"
+
+}
