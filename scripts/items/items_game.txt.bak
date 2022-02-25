@@ -14360,6 +14360,7 @@
 				"spy" "1"
 				"engineer" "1"
 				"pyro" "1"
+				"combine"	"1"
 			}
 			"attributes"
 			{
@@ -14586,6 +14587,7 @@
 				"spy" "1"
 				"engineer" "1"
 				"pyro" "1"
+				"combine" "1"
 			}
 			"attributes"
 			{
@@ -17007,7 +17009,7 @@
 			{
 				"nameable"		"1"
 			}
-			"show_in_armory"	"0"
+			"show_in_armory"	"1"
 			"item_type_name"	"#TF_Weapon_Jar_Gas"
 			"item_name"	"#TF_GasPasser"
 			"item_description"	"#TF_GasPasser_Desc"
@@ -17030,12 +17032,8 @@
 			{
 				"min_viewmodel_offset"					"10 3 -7"				
 				"item_meter_charge_type"						"3"
-				"item_meter_charge_rate"			"60"
-				"item_meter_damage_for_full_charge"			"750"
-				"item_meter_resupply_denied"		"1"
-				"grenades1_resupply_denied"				"1"
-				"item_meter_starts_empty_DISPLAY_ONLY"	"1"
-				"item_meter_charge_type_3_DISPLAY_ONLY"	"1"
+				"item_meter_charge_rate"			"20"
+				"item_meter_damage_for_full_charge"			"100"
 				"meter_label"							"#TF_Gas"
 			}
 			"visuals"
@@ -17610,7 +17608,7 @@
 		{
 			"name"	"Activated Campaign 3 Pass"
 			"item_class"	"tf_wearable"	
-			"show_in_armory"	"0"
+			"show_in_armory"	"1"
 			"item_type_name"	"#TF_Tracker"
 			"item_name"			"#TF_ActivatedCampaign3Pass"
 			"item_description"	"#TF_ActivatedCampaign3Pass_desc"						
@@ -19267,7 +19265,7 @@
 			}
 			"item_type_name"	"#TF_Weapon_Shotgun"
 			"item_name"	"#TF_Weapon_Shotgun"
-			"item_slot"	"secondary"
+			"item_slot"	"primary"
 			"image_inventory"	"backpack/weapons/w_models/w_shotgun"
 			"image_inventory_size_w"		"128"
 			"image_inventory_size_h"		"82"
@@ -19311,7 +19309,7 @@
 				"9042"
 		{
 			"name"	"HL2 AR2"
-			"item_class"	"tf_weapon_smg"
+			"item_class"	"tf_weapon_syringegun_medic"
 			"baseitem" "1"
 			"tags"
 			{
@@ -19322,7 +19320,7 @@
 			"item_type_name"	"Pulse Rifle"
 			"item_name"	"The Oppressor"
 			"item_description" "Model by Choev"
-			"item_slot"	"primary"
+			"item_slot"	"misc2"
 			"image_inventory"	"backpack/weapons/w_models/w_smg"
 			"image_inventory_size_w"		"128"
 			"image_inventory_size_h"		"82"
@@ -19353,12 +19351,76 @@
 					"damage bonus"
 				{
 					"attribute_class"	"mult_dmg"
-					"value"	"1.5"
+					"value"	"1.3"
 				}
-								"clip size bonus"
+					"clip size penalty"
 				{
 					"attribute_class"	"mult_clipsize"
-					"value" "1.2"
+					"value" "0.975"
+				}
+				"override projectile type"
+				{
+					"attribute_class"	"override_projectile_type"
+					"value"				"1" 
+				}
+				
+			}
+			"static_attrs"
+			{
+				"min_viewmodel_offset"		"10 0 -7"
+			}
+		}
+							"9043"
+		{
+			"name"	"HL2 SMG"
+			"item_class"	"tf_weapon_smg"
+			"baseitem" "1"
+			"tags"
+			{
+				"can_deal_damage"			"1"
+				"can_deal_mvm_penetration_damage"	"1"
+				"can_deal_long_distance_damage"	"1"
+			}
+			"item_type_name"	"Pulse Rifle"
+			"item_name"	"SMG1"
+			"item_description" ""
+			"item_slot"	"secondary"
+			"image_inventory"	"backpack/weapons/w_models/w_smg"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"82"
+			"model_world"	"models/weapons/w_smg1.mdl"
+			"model_player"	"models/weapons/v_smg1.mdl"
+			"attach_to_hands" "0"
+			"inspect_panel_dist" "40"
+			"item_quality"	"unique"
+			"propername"	"1"
+			"min_ilevel"	"5"
+			"max_ilevel"	"5"
+			"used_by_classes"
+			{
+				"combine"			"1"
+			}
+			"visuals"
+			{
+				"sound_single_shot"	"Weapon_SMG1.Single"
+				"sound_burst"	"Weapon_SMG1.Single"
+			}
+			"attributes"
+			{
+				"damage bonus"
+				{
+					"attribute_class"	"mult_dmg"
+					"value"	"1.0"
+				}
+				"clip size bonus"
+				{
+					"attribute_class"	"mult_clipsize"
+					"value" "1.8"
+				}
+				"fire rate bonus"
+				{
+					"attribute_class"	"mult_postfiredelay"
+					"value"	"0.6"
 				}
 			}
 			"static_attrs"
@@ -19764,7 +19826,7 @@
 				"attribute_class"	"mult_reload_time"
 				"value"	"0.5"
 				}
-								"fire rate bonus"
+				"fire rate bonus"
 				{
 				"attribute_class"	"mult_postfiredelay"
 				"value"	"0.4"
@@ -22038,6 +22100,7 @@
 			"prefab"		"no_craft misc marketable"
 			"item_name"		"Roboot"
 			"item_description"		"Robotic leg"
+			"item_slot"	"misc2"
 			"equip_region"		"feet"
 			"image_inventory"		"backpack/workshop/player/items/engineer/hwn2015_roboot/hwn2015_roboot"
 			"item_type_name"		"Robot Leg"
@@ -23871,7 +23934,7 @@
 		{
 			"name"	"HL2 AR2"
 			"item_class"	"tf_weapon_smg"
-			"baseitem" "1"
+			"baseitem" "0"
 			"tags"
 			{
 				"can_deal_damage"			"1"
@@ -26580,6 +26643,7 @@
 			"valid_for_shuffle"		"1"
 			"item_name"		"#TF_short2014_engineer_nerd_chin"
 			"item_description"		"#TF_short2014_engineer_nerd_chin_Desc"
+			"item_slot"	"misc2"
 			"item_type_name"		"#TF_Wearable_Chin"
 			"equip_region"		"beard"
 			"image_inventory"		"backpack/workshop/player/items/engineer/short2014_engineer_nerd_chin/short2014_engineer_nerd_chin"
@@ -26604,6 +26668,7 @@
 			"first_sale_date"		"2014/09/15"
 			"item_type_name"		"#TF_Wearable_Mascot"
 			"item_name"		"#TF_sbox2014_einstein"
+			"item_slot"	"misc2"
 			"item_description"		"#TF_sbox2014_einstein_Desc"
 			"equip_region"		"left_shoulder"
 			"image_inventory"		"backpack/workshop/player/items/engineer/sbox2014_einstein/sbox2014_einstein"
@@ -27073,6 +27138,7 @@
 			"item_name"		"#TF_short2014_poopyj_backpack"
 			"item_description"		"#TF_short2014_poopyj_backpack_Desc"
 			"item_type_name"		"#TF_Wearable_Backpack"
+			"item_slot"	"misc2"
 			"equip_region"		"back"
 			"image_inventory"		"backpack/workshop/player/items/engineer/short2014_poopyj_backpack/short2014_poopyj_backpack"
 			"capabilities"
@@ -27184,6 +27250,7 @@
 			"prefab"		"no_craft misc marketable"
 			"item_name"		"#TF_hwn2018_shell_of_a_mann"
 			"item_description"		"#TF_hwn2018_shell_of_a_mann_Desc"
+			"item_slot"	"misc2"
 			"item_type_name"		"#TF_Wearable_Costume"
 			"equip_region"		"back"
 			"image_inventory"		"backpack/workshop/player/items/engineer/hwn2018_shell_of_a_mann/hwn2018_shell_of_a_mann"
@@ -27205,6 +27272,7 @@
 			"item_name"		"#TF_dec18_puggyback"
 			"item_description"		"#TF_dec18_puggyback_Desc"
 			"item_type_name"		"#TF_Wearable_Mascot"
+			"item_slot"	"misc2"
 			"equip_region"		"back"
 			"image_inventory"		"backpack/workshop/player/items/engineer/dec18_puggyback/dec18_puggyback"
 			"capabilities"
@@ -29576,6 +29644,7 @@
 			"item_type_name"	"TF_Wearable_Pants"
 			"item_name"	"#TF_EngineerChaps"
 			"item_description"	"#TF_EngineerChaps_Desc"
+			"item_slot"	"misc2"
 			"image_inventory"	"backpack/player/items/engineer/engineer_chaps"
 			"model_player"	"models/player/items/engineer/engineer_chaps.mdl"
 			"propername"	"1"
@@ -31706,7 +31775,11 @@
 			"act_as_wearable" "1"
 			"used_by_classes"
 			{
+				"scout"	"1"
 				"soldier"	"1"
+				"demoman"	"primary"
+				"heavy"	"1"
+				"engineer"	"1"
 			}
 			"attributes"
 			{
@@ -31879,6 +31952,7 @@
 			{
 				"scout"	"1"
 				"engineer"	"1"
+				"combine"	"1"
 			}
 			"mouse_pressed_sound"	"ui/item_light_gun_pickup.wav"
 			"drop_sound"		"ui/item_light_gun_drop.wav"
@@ -31975,19 +32049,16 @@
 					"attribute_class"	"mult_dmg"
 					"value"	"1.9"
 				}
-				"max health additive penalty"
-				{
-					"attribute_class"	"add_maxhealth"
-					"value" "-10"
-				}
 				"clip size bonus"
 				{
 					"attribute_class"	"mult_clipsize"
+					"value" "2.5"
 					"value" "2.8"
 				}
 				"maxammo secondary increased"
 				{
 					"attribute_class"	"mult_maxammo_secondary"
+					"value"	"1.5"
 					"value"	"2.0"
 				}
 			}
@@ -32100,7 +32171,7 @@
 				"medic"		"models/player/items/all_class/world_traveller_medic.mdl"
 				"heavy"		"models/player/items/all_class/world_traveller_heavy.mdl"
 				"spy"		"models/player/items/all_class/world_traveller_spy.mdl"
-				"engineer"		"models/player/items/all_class/world_traveller_engineer.mdl"
+				"engineer"	"models/player/items/all_class/world_traveller_engineer.mdl"
 				"pyro"		"models/player/items/all_class/world_traveller_pyro.mdl"
 			
 			}
@@ -32561,7 +32632,7 @@
 			"item_name"	"#TF_Hwn_SpyMisc1"
 			"item_description"	"#TF_Hwn_SpyMisc1_Desc"
 			"propername"	"0"
-			"item_slot"	"misc"
+			"item_slot"	"misc2	"
 			"equip_region"	"glasses"
 			"image_inventory"	"backpack/player/items/spy/hwn_spy_misc1"
 			"model_player"	"models/player/items/spy/hwn_spy_misc1.mdl"
@@ -32570,42 +32641,13 @@
 				"spy"	"1"
 			}
 		}
-		"7179"
-		{
-			"name"		"Marsupial Man"
-			"prefab"		"halloween2014 no_craft misc"
-			"item_name"		"#TF_sf14_marsupial_man"
-			"item_description"		"#TF_sf14_marsupial_man_Desc"
-			"item_type_name"		"#TF_Wearable_Mask"
-			"equip_region"		"hat"
-			"propername"		"1"
-			"visuals"
-			{
-				"player_bodygroups"
-				{
-					"hat"		"1"
-				}
-			}
-			"image_inventory"		"backpack/workshop/player/items/sniper/sf14_marsupial_man/sf14_marsupial_man"
-			"capabilities"
-			{
-				"can_craft_count"		"1"
-				"paintable"		"1"
-			}
-			"model_player"		"models/workshop/player/items/sniper/sf14_marsupial_man/sf14_marsupial_man.mdl"
-			"used_by_classes"
-			{
-				"sniper"		"1"
-			}
-			"mouse_pressed_sound"		"ui/item_rubber_pickup.wav"
-			"drop_sound"		"ui/item_rubber_pickup.wav"
-		}
 		"7180"
 		{
 			"name"		"Kanga Kickers"
 			"prefab"		"halloween2014 no_craft misc"
 			"item_name"		"#TF_sf14_kanga_kickers"
 			"item_description"		"#TF_sf14_kanga_kickers_Desc"
+			"item_slot"	"misc2"
 			"item_type_name"		"#TF_Wearable_Costume"
 			"equip_region"		"feet"
 			"propername"		"1"
@@ -32728,7 +32770,7 @@
 				}
 			}
 		}
-						"31161"
+		"7184"
 		{
 			"name"		"Taunt: Spin-to-Win"
 			"first_sale_date"		"2020/12/02"
@@ -32785,7 +32827,1159 @@
 				}
 			}
 		}
+		"7185"
+		{
+			"name"		"Taunt: Spin-to-Win"
+			"first_sale_date"		"2020/12/02"
+			"prefab"		"no_craft taunt"
+			"item_name"		"#TF_taunt_spintowin"
+			"item_description"		"#TF_taunt_spintowin_Desc"
+			"attributes"
+			{
+				"taunt is press and hold"
+				{
+					"attribute_class"		"enable_misc2_holdtaunt"
+					"value"		"1"
+				}
+			}
+			"image_inventory"		"backpack/workshop/player/items/scout/taunt_spintowin/taunt_spintowin"
+			"capabilities"
+			{
+				"can_craft_count"		"1"
+			}
+			"used_by_classes"
+			{
+				"scout"		"1"
+			}
+			"taunt"
+			{
+				"custom_taunt_scene_per_class"
+				{
+					"scout"		"scenes/workshop/player/scout/low/taunt_spintowin.vcd"
+				}
+				"custom_taunt_outro_scene_per_class"
+				{
+					"scout"		"scenes/workshop/player/scout/low/taunt_spintowin_outro.vcd"
+				}
+				"custom_taunt_input_remap"
+				{
+					"IN_ATTACK"
+					{
+						"pressed"
+						{
+							"scout"		"scenes/workshop/player/scout/low/taunt_spintowin_a1.vcd"
+						}
+					}
+					"IN_ATTACK2"
+					{
+						"pressed"
+						{
+							"scout"		"scenes/workshop/player/scout/low/taunt_spintowin_a2.vcd"
+						}
+					}
+				}
+				"custom_taunt_prop_per_class"
+				{
+					"scout"		"models/workshop/player/items/scout/taunt_spintowinalt1/taunt_spintowin.mdl"
+				}
+			}
+		}
+		"7186"
+		{
+			"name"	"Sir Hootsalot"
+			"first_sale_date"	"2012/10/26"
+			"prefab"	"misc"
+			"capabilities"
+			{
+				"paintable"	"1"
+			}
+			"equip_region"	"left_shoulder"
+			"item_type_name"	"#TF_Wearable_Mascot"
+			"item_name"	"#TF_SirHootsalot"
+			"item_description"	"#TF_SirHootsalot_desc"
+			"item_slot"	"misc2"
+			"image_inventory"	"backpack/player/items/sniper/sniper_owl"
+			"model_player"	"models/player/items/sniper/sniper_owl.mdl"
+			"propername"	"0"
+			"visuals"
+			{
+				"styles"
+				{
+					"0"
+					{
+						"skin"	"0"
+						"name"	"#TF_SirHootsalot_Style0"
+					}
+					"1"
+					{
+						"skin"	"1"
+						"name"	"#TF_SirHootsalot_Style1"
+					}
+				}
+			}
+			"used_by_classes"
+			{
+				"sniper"	"1"
+			}
+			"attributes"
+			{
+				"counts as assister is some kind of pet this update is going to be awesome"
+				{
+					"attribute_class"	"counts_as_assister"
+					"value"				"1"
+				}
+			}
+			"mouse_pressed_sound"	"ui/item_hat_pickup.wav"
+			"drop_sound"		"ui/item_hat_drop.wav"
+		}
+		"7187"
+		{
+			"name"		"The Classy Capper"
+			"prefab"		"no_craft hat marketable"
+			"item_name"		"#TF_fall17_classy_capper"
+			"item_description"		"#TF_fall17_classy_capper_Desc"
+			"equip_region"		"hat"
+			"propername"		"1"
+			"drop_type"		"drop"
+			"visuals"
+			{
+				"player_bodygroups"
+				{
+					"hat"		"1"
+				}
+			}
+			"image_inventory"		"backpack/workshop/player/items/sniper/fall17_hunter/fall17_hunter"
+			"capabilities"
+			{
+				"can_craft_count"		"1"
+				"paintable"		"1"
+			}
+			"model_player"		"models/workshop/player/items/sniper/fall17_hunter/fall17_hunter.mdl"
+			"used_by_classes"
+			{
+				"sniper"		"1"
+			}
+			"mouse_pressed_sound"		"ui/item_hat_pickup.wav"
+			"drop_sound"		"ui/item_hat_drop.wav"
+		}
+		"7188"
+		{
+			"name"	"The Crocodile Smile"
+			"prefab"		"base_misc"
+			"first_sale_date"	"2011/09/14"
+			"item_class"	"tf_wearable"
+			"craft_class"	"hat"
+			"craft_material_type"	"hat"
+			"capabilities"
+			{
+				"nameable"			"1"
+				"can_craft_count"	"1"
+				"can_craft_if_purchased"	"1"
+			}
+			"loadondemand" "1"
+			"show_in_armory"	"1"
+			"item_type_name"	"#TF_Wearable_Necklace"
+			"item_name"	"#TF_SniperNecklace"
+			"item_description"	"#TF_SniperNecklace_Desc"
+			"propername"	"1"
+			"item_slot"	"misc2"
+			"equip_region"	"necklace"
+			"image_inventory"	"backpack/player/items/sniper/fwk_sniper_necklace"
+			"image_inventory_size_w"	"128"
+			"image_inventory_size_h"	"82"
+			"item_quality"		"unique"
+			"model_player"	"models/player/items/sniper/fwk_sniper_necklace.mdl"
+			"min_ilevel"	"20"
+			"max_ilevel"	"20"
+			"drop_type"		"none"
+			"used_by_classes"
+			{
+				"sniper"	"1"
+			}
+			"mouse_pressed_sound" 	"ui/item_hat_pickup.wav"
+			"drop_sound" 		"ui/item_hat_drop.wav"
+		}
+		"7189"
+		{
+			"name"	"Holy Hunter"
+			"prefab"	"valve halloween_costume_piece_2011 base_hat"
+			"item_name"	"#TF_Hwn_SniperHat"
+			"item_description"	"#TF_Hwn_SniperHat_Desc"
+			"item_slot"	"head"
+			"equip_region"	"hat"
+			"propername"	"1"
+			"image_inventory"	"backpack/player/items/sniper/hwn_sniper_hat"
+			"model_player"	"models/player/items/sniper/hwn_sniper_hat.mdl"
+			"used_by_classes"
+			{
+				"sniper"	"1"
+			}
+			"visuals"
+			{
+				"player_bodygroups"
+				{
+					"hat"			"1"
+				}
+			}
+		}
+		"7190"
+		{
+			"name"	"Silver Bullets"
+			"prefab"	"valve halloween_costume_piece_2011 base_misc"
+			"item_name"	"#TF_Hwn_SniperMisc1"
+			"item_description"	"#TF_Hwn_SniperMisc1_Desc"
+			"propername"	"0"
+			"item_slot"	"misc"
+			"equip_regions"
+			{
+				"necklace"			"1"
+				"sniper_bullets"	"1"
+			}
+			"image_inventory"	"backpack/player/items/sniper/hwn_sniper_misc1"
+			"model_player"	"models/player/items/sniper/hwn_sniper_misc1.mdl"
+			"used_by_classes"
+			{
+				"sniper"	"1"
+			}
+		}
+		"7191"
+		{
+			"name"	"Garlic Flank Stake"
+			"prefab"	"valve halloween_costume_piece_2011 base_misc"
+			"item_name"	"#TF_Hwn_SniperMisc2"
+			"item_description"	"#TF_Hwn_SniperMisc2_Desc"
+			"propername"	"0"
+			"item_slot"	"misc"
+			"equip_region"	"sniper_legs"
+			"image_inventory"	"backpack/player/items/sniper/hwn_sniper_misc2"
+			"model_player"	"models/player/items/sniper/hwn_sniper_misc2.mdl"
+			"used_by_classes"
+			{
+				"sniper"	"1"
+			}
+		}
+		"7192"
+		{
+			"name"	"Buzz Killer"
+			"prefab"	"valve halloween_costume_piece_2011 base_hat"
+			"item_name"	"#TF_Hwn_EngineerHat"
+			"item_description"	"#TF_Hwn_EngineerHat_Desc"
+			"item_slot"	"head"
+			"equip_region"	"whole_head"
+			"propername"	"1"
+			"image_inventory"	"backpack/player/items/engineer/hwn_engineer_hat"
+			"model_player"	"models/player/items/engineer/hwn_engineer_hat.mdl"
+			"used_by_classes"
+			{
+				"engineer"	"1"
+			}
+			"visuals"
+			{
+				"player_bodygroups"
+				{
+					"hat"			"1"
+				}
+			}
+		}
+		"7193"
+		{
+			"name"	"Frontier Flyboy"
+			"prefab"	"valve halloween_costume_piece_2011 base_misc"
+			"item_name"	"#TF_Hwn_EngineerMisc1"
+			"item_description"	"#TF_Hwn_EngineerMisc1_Desc"
+			"propername"	"1"
+			"item_slot"	"misc"
+			"equip_region"	"engineer_wings"
+			"image_inventory"	"backpack/player/items/engineer/hwn_engineer_misc1"
+			"model_player"	"models/player/items/engineer/hwn_engineer_misc1.mdl"
+			"used_by_classes"
+			{
+				"engineer"	"1"
+			}
+		}
+		"7194"
+		{
+			"name"	"Legend of Bugfoot"
+			"prefab"	"valve halloween_costume_piece_2011 base_misc"
+			"item_name"	"#TF_Hwn_EngineerMisc2"
+			"item_description"	"#TF_Hwn_EngineerMisc2_Desc"
+			"propername"	"1"
+			"item_slot"	"misc"
+			"equip_region"	"feet"
+			"image_inventory"	"backpack/player/items/engineer/hwn_engineer_misc2"
+			"model_player"	"models/player/items/engineer/hwn_engineer_misc2.mdl"
+			"used_by_classes"
+			{
+				"engineer"	"1"
+			}
+		}
+		"7195	"
+		{
+			"name"	"Ritzy Rick's Hair Fixative"
+			"prefab"	"valve base_hat"
+			"first_sale_date"	"2010/09/29"
+			"item_class"	"tf_wearable"
+			"craft_class"	"hat"
+			"craft_material_type"	"hat"
+			"capabilities"
+			{
+				"nameable"		"1"
+				"can_craft_if_purchased"	"1"
+			}
+			"show_in_armory"	"1"
+			"item_type_name"	"#TF_Wearable_CosmeticItem"
+			"item_name"	"#TF_Hatless_Sniper"
+			"item_description"	"#TF_Hatless_Sniper_Desc"
+			"item_slot"	"head"
+			"equip_region"	"hat"
+			"item_quality"	"unique"
+			"image_inventory"	"backpack/player/items/sniper/sniper_nohat"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"82"
+			"model_player"	"models/player/items/sniper/sniper_nohat.mdl"
+			"drop_type"	"none"
+			"used_by_classes"
+			{
+				"sniper"	"1"
+			}
+			"visuals"
+			{
+				"player_bodygroups"
+				{
+					"hat"			"1"
+				}
+			}
+			"mouse_pressed_sound" 	"ui/item_hat_pickup.wav"
+			"drop_sound" 		"ui/item_hat_drop.wav"
+		}
+		"7196"
+		{
+			"name"		"Roo Rippers"
+			"prefab"		"halloween2014 no_craft misc"
+			"item_name"		"#TF_sf14_roo_rippers"
+			"item_description"		"#TF_sf14_roo_rippers_Desc"
+			"item_slot"	"misc2"
+			"item_type_name"		"#TF_Wearable_Costume"
+			"equip_region"		"sleeves"
+			"propername"		"1"
+			"image_inventory"		"backpack/workshop/player/items/sniper/sf14_roo_rippers/sf14_roo_rippers"
+			"capabilities"
+			{
+				"can_craft_count"		"1"
+			}
+			"model_player"		"models/workshop/player/items/sniper/sf14_roo_rippers/sf14_roo_rippers.mdl"
+			"used_by_classes"
+			{
+				"sniper"		"1"
+			}
+			"mouse_pressed_sound"		"ui/item_hat_pickup.wav"
+			"drop_sound"		"ui/item_hat_drop.wav"
+		}
+		"7197"
+		{
+			"name"		"Marsupial Muzzle"
+			"prefab"		"halloween2014 no_craft misc"
+			"item_name"		"#TF_sf14_marsupial_muzzle"
+			"item_description"		"#TF_sf14_marsupial_muzzle_Desc"
+			"item_slot"	"misc2"
+			"item_type_name"		"#TF_Wearable_Costume"
+			"equip_region"		"whole_head"
+			"propername"		"1"
+			"visuals"
+			{
+				"player_bodygroups"
+				{
+					"hat"		"1"
+				}
+			}
+			"image_inventory"		"backpack/workshop/player/items/sniper/sf14_marsupial_muzzle/sf14_marsupial_muzzle"
+			"capabilities"
+			{
+				"can_craft_count"		"1"
+			}
+			"model_player"		"models/workshop/player/items/sniper/sf14_marsupial_muzzle/sf14_marsupial_muzzle.mdl"
+			"used_by_classes"
+			{
+				"sniper"		"1"
+			}
+			"mouse_pressed_sound"		"ui/item_hat_pickup.wav"
+			"drop_sound"		"ui/item_hat_drop.wav"
+		}
+		"7198"
+		{
+			"name"		"Poacher's Safari Jacket"
+			"prefab"		"no_craft misc"
+			"item_type_name"		"#TF_Wearable_Jacket"
+			"item_name"		"#TF_sept2014_poachers_safari_jacket"
+			"item_description"		"#TF_sept2014_cosmetic_desc"
+			"equip_region"		"sniper_vest"
+			"image_inventory"		"backpack/workshop/player/items/sniper/sept2014_poachers_safari_jacket/sept2014_poachers_safari_jacket"
+			"capabilities"
+			{
+				"can_craft_count"		"1"
+				"paintable"		"1"
+			}
+			"model_player"		"models/workshop/player/items/sniper/sept2014_poachers_safari_jacket/sept2014_poachers_safari_jacket.mdl"
+			"used_by_classes"
+			{
+				"sniper"		"1"
+			}
+			"static_attrs"
+			{
+				"limited quantity item"		"1"
+			}
+			"mouse_pressed_sound"		"ui/item_hat_pickup.wav"
+			"drop_sound"		"ui/item_hat_drop.wav"
+		}
+		"7199"
+		{
+			"name"		"Mr. Mundee's Wild Ride"
+			"prefab"		"halloween2014 no_craft misc"
+			"item_name"		"#TF_sf14_sniper_ostrich_legs"
+			"item_description"		"#TF_sf14_sniper_ostrich_legs_Desc"
+			"item_slot"	"misc2"
+			"equip_region"		"sniper_legs"
+			"image_inventory"		"backpack/workshop/player/items/sniper/sf14_sniper_ostrich_legs/sf14_sniper_ostrich_legs"
+			"capabilities"
+			{
+				"can_craft_count"		"1"
+			}
+			"model_player"		"models/workshop/player/items/sniper/sf14_sniper_ostrich_legs/sf14_sniper_ostrich_legs.mdl"
+			"used_by_classes"
+			{
+				"sniper"		"1"
+			}
+			"mouse_pressed_sound"		"ui/item_rubber_pickup.wav"
+			"drop_sound"		"ui/item_rubber_pickup.wav"
+		}
+		"7200"
+		{
+			"name"	"The Dread Hiding Hood"
+			"first_sale_date"	"2014/03/07"
+			"prefab"	"hat"
+			"capabilities"
+			{
+				"can_craft_count"	"1"
+			}
+			"item_name"	"#TF_DreadHidingHood"
+			"item_description"	"#TF_DreadHidingHood_Desc"
+			"item_type_name"		"#TF_Wearable_Hood"
+			"propername" "1"
+			"equip_regions"
+			{
+				"hat"		"1"
+				"beard"		"1"
+			}
+			"image_inventory"	"backpack/workshop_partner/player/items/sniper/thief_sniper_hood/thief_sniper_hood"
+			"model_player"	"models/workshop_partner/player/items/sniper/thief_sniper_hood/thief_sniper_hood.mdl"
+			"used_by_classes"
+			{
+				"sniper" "1"
+			}
+			"mouse_pressed_sound"	"ui/item_hat_pickup.wav"
+			"drop_sound"		"ui/item_hat_drop.wav"
+		}
+		"7201"
+		{
+			"name"		"The Scoper's Smoke"
+			"prefab"		"misc"
+			"first_sale_date"		"2014/06/16"
+			"propername"		"1"
+			"valid_for_shuffle"		"1"
+			"item_name"		"#TF_short2014_scopers_smoke"
+			"item_description"		"#TF_short2014_scopers_smoke_Desc"
+			"item_slot"	"misc2"
+			"item_type_name"		"#TF_Wearable_FacialHair"
+			"equip_region"		"beard"
+			"image_inventory"		"backpack/workshop/player/items/sniper/short2014_scopers_smoke/short2014_scopers_smoke"
+			"capabilities"
+			{
+				"can_craft_count"		"1"
+				"paintable"		"1"
+			}
+			"model_player"		"models/workshop/player/items/sniper/short2014_scopers_smoke/short2014_scopers_smoke.mdl"
+			"used_by_classes"
+			{
+				"sniper"		"1"
+			}
+			"mouse_pressed_sound"		"ui/item_hat_pickup.wav"
+			"drop_sound"		"ui/item_hat_drop.wav"
+		}
+		"7202"
+		{
+			"name"		"Final Frontiersman"
+			"prefab"		"no_craft misc marketable"
+			"item_name"		"#TF_invasion_final_frontiersman"
+			"item_slot"	"misc2"
+			"item_description"		"#TF_invasion_final_frontiersman_Desc"
+			"equip_region"		"feet"
+			"item_type_name"		"#TF_Wearable_Apparel"
+			"image_inventory"		"backpack/workshop/player/items/sniper/invasion_final_frontiersman/invasion_final_frontiersman"
+			"capabilities"
+			{
+				"can_craft_count"		"1"
+			}
+			"model_player"		"models/workshop/player/items/sniper/invasion_final_frontiersman/invasion_final_frontiersman.mdl"
+			"used_by_classes"
+			{
+				"sniper"		"1"
+			}
+			"mouse_pressed_sound"		"ui/item_hat_pickup.wav"
+			"drop_sound"		"ui/item_hat_drop.wav"
+		}
+		"7203"
+		{
+			"name"		"The Cammy Jammies"
+			"prefab"		"no_craft misc marketable"
+			"item_name"		"#TF_fall17_cammy_jammies"
+			"item_description"		"#TF_fall17_cammy_jammies_Desc"
+			"item_slot"	"misc2"
+			"item_type_name"		"#TF_Wearable_Pants"
+			"equip_region"		"pants"
+			"propername"		"1"
+			"image_inventory"		"backpack/workshop/player/items/sniper/fall17_cammy_jammies/fall17_cammy_jammies"
+			"capabilities"
+			{
+				"can_craft_count"		"1"
+			}
+			"model_player"		"models/workshop/player/items/sniper/fall17_cammy_jammies/fall17_cammy_jammies.mdl"
+			"used_by_classes"
+			{
+				"sniper"		"1"
+			}
+			"mouse_pressed_sound"		"ui/item_hat_pickup.wav"
+			"drop_sound"		"ui/item_hat_drop.wav"
+		}
+		"7204"
+		{
+			"name"		"The Killing Tree"
+			"prefab"		"no_craft hat marketable"
+			"item_name"		"#TF_dec20_killing_tree"
+			"item_description"		"#TF_dec20_killing_tree_Desc"
+			"equip_region"		"hat"
+			"drop_type"		"drop"
+			"image_inventory"		"backpack/workshop/player/items/sniper/dec20_killing_tree/dec20_killing_tree"
+			"propername"		"1"
+			"capabilities"
+			{
+				"can_craft_count"		"1"
+			}
+			"model_player"		"models/workshop/player/items/sniper/dec20_killing_tree/dec20_killing_tree.mdl"
+			"used_by_classes"
+			{
+				"sniper"		"1"
+			}
+		}
+		"7205"
+		{
+			"name"		"Chicago Overcoat"
+			"prefab"		"no_craft misc marketable"
+			"item_name"		"#TF_dec15_chicago_overcoat"
+			"item_description"		"#TF_dec15_chicago_overcoat_Desc"
+			"item_type_name"		"#TF_Wearable_Coat"
+			"equip_region"		"spy_coat"
+			"image_inventory"		"backpack/workshop/player/items/spy/dec15_chicago_overcoat/dec15_chicago_overcoat"
+			"capabilities"
+			{
+				"can_craft_count"		"1"
+				"paintable"		"1"
+			}
+			"model_player"		"models/workshop/player/items/spy/dec15_chicago_overcoat/dec15_chicago_overcoat.mdl"
+			"used_by_classes"
+			{
+				"spy"		"1"
+			}
+			"mouse_pressed_sound"		"ui/item_hat_pickup.wav"
+			"drop_sound"		"ui/item_hat_drop.wav"
+		}
+		"7206"
+		{
+			"name"		"Facepeeler"
+			"prefab"		"halloween2014 no_craft misc"
+			"item_name"		"#TF_sf14_spy_facepeeler"
+			"item_description"		"#TF_sf14_spy_facepeeler_Desc"
+			"item_slot"	"misc2"
+			"item_type_name"		"#TF_Wearable_Mask"
+			"equip_region"		"face"
+			"propername"		"1"
+			"image_inventory"		"backpack/workshop/player/items/spy/sf14_spy_facepeeler/sf14_spy_facepeeler"
+			"capabilities"
+			{
+				"can_craft_count"		"1"
+			}
+			"model_player"		"models/workshop/player/items/spy/sf14_spy_facepeeler/sf14_spy_facepeeler.mdl"
+			"used_by_classes"
+			{
+				"spy"		"1"
+			}
+			"mouse_pressed_sound"		"ui/item_gooey_pickup.wav"
+			"drop_sound"		"ui/item_gooey_pickup.wav"
+		}
+		"7207"
+		{
+			"name"		"Lurker's Leathers"
+			"prefab"		"no_craft misc marketable"
+			"item_name"		"#TF_cc_summer2015_lurkers_leathers"
+			"item_description"		"#TF_cc_summer2015_lurkers_leathers_Desc"
+			"item_type_name"		"#TF_Wearable_Coat"
+			"equip_region"		"spy_coat"
+			"image_inventory"		"backpack/workshop/player/items/spy/cc_summer2015_lurkers_leathers/cc_summer2015_lurkers_leathers"
+			"capabilities"
+			{
+				"can_craft_count"		"1"
+				"paintable"		"1"
+			}
+			"model_player"		"models/workshop/player/items/spy/cc_summer2015_lurkers_leathers/cc_summer2015_lurkers_leathers.mdl"
+			"used_by_classes"
+			{
+				"spy"		"1"
+			}
+			"mouse_pressed_sound"		"ui/item_leather_pickup.wav"
+			"drop_sound"		"ui/item_hat_drop.wav"
+			"visuals"
+			{
+				"styles"
+				{
+					"0"
+					{
+						"model_player"		"models/workshop/player/items/spy/cc_summer2015_lurkers_leathers/cc_summer2015_lurkers_leathers.mdl"
+						"name"		"#TF_cc_summer2015_lurkers_leathers_style0"
+						"image_inventory"		"backpack/workshop/player/items/spy/cc_summer2015_lurkers_leathers/cc_summer2015_lurkers_leathers"
+						"skin_red"		"0"
+						"skin_blu"		"1"
+					}
+					"1"
+					{
+						"model_player"		"models/workshop/player/items/spy/cc_summer2015_lurkers_leathers_2/cc_summer2015_lurkers_leathers_2.mdl"
+						"name"		"#TF_cc_summer2015_lurkers_leathers_style1"
+						"image_inventory"		"backpack/workshop/player/items/spy/cc_summer2015_lurkers_leathers_2/cc_summer2015_lurkers_leathers_2"
+						"skin_red"		"0"
+						"skin_blu"		"1"
+					}
+				}
+			}
+		}
+		"7208"
+		{
+			"name"		"Rogue's Rabbit"
+			"prefab"		"halloween2014 no_craft hat"
+			"item_name"		"#TF_sf14_the_rogues_rabbit"
+			"item_description"		"#TF_sf14_the_rogues_rabbit_Desc"
+			"item_slot"	"misc2"
+			"equip_region"		"hat"
+			"propername"		"1"
+			"image_inventory"		"backpack/workshop/player/items/spy/sf14_the_rogues_rabbit/sf14_the_rogues_rabbit"
+			"capabilities"
+			{
+				"can_craft_count"		"1"
+			}
+			"model_player"		"models/workshop/player/items/spy/sf14_the_rogues_rabbit/sf14_the_rogues_rabbit.mdl"
+			"used_by_classes"
+			{
+				"spy"		"1"
+			}
+			"mouse_pressed_sound"		"ui/item_hat_pickup.wav"
+			"drop_sound"		"ui/item_hat_drop.wav"
+		}
+		"7209"
+		{
+			"name"		"The Dead Head"
+			"prefab"		"no_craft misc marketable"
+			"item_name"		"#TF_may16_skullcap"
+			"item_description"		"#TF_may16_skullcap_Desc"
+			"item_type_name"		"#TF_Wearable_Mask"
+			"equip_region"		"face"
+			"propername"		"1"
+			"image_inventory"		"backpack/workshop/player/items/spy/skullmask/skullmask"
+			"capabilities"
+			{
+				"can_craft_count"		"1"
+				"paintable"		"1"
+			}
+			"model_player"		"models/workshop/player/items/spy/skullmask/skullmask.mdl"
+			"used_by_classes"
+			{
+				"spy"		"1"
+			}
+			"mouse_pressed_sound"		"ui/item_helmet_pickup.wav"
+			"drop_sound"		"ui/item_helmet_drop.wav"
+		}
+		"7210"
+		{
+			"name"		"Shutterbug"
+			"prefab"		"no_craft hat marketable"
+			"item_name"		"#TF_sum19_camera_hat"
+			"item_description"		"#TF_sum19_camera_hat_Desc"
+			"equip_region"		"hat"
+			"drop_type"		"drop"
+			"image_inventory"		"backpack/workshop/player/items/spy/sum19_camera_hat/sum19_camera_hat"
+			"capabilities"
+			{
+				"can_craft_count"		"1"
+				"paintable"		"1"
+			}
+			"model_player"		"models/workshop/player/items/spy/sum19_camera_hat/sum19_camera_hat.mdl"
+			"used_by_classes"
+			{
+				"spy"		"1"
+			}
+			"mouse_pressed_sound"		"ui/item_hat_pickup.wav"
+			"drop_sound"		"ui/item_hat_drop.wav"
+			"visuals"
+			{
+				"styles"
+				{
+					"0"
+					{
+						"model_player"		"models/workshop/player/items/spy/sum19_camera_hat/sum19_camera_hat.mdl"
+						"skin_red"		"0"
+						"skin_blu"		"1"
+						"name"		"#TF_sum19_camera_hat_style1"
+					}
+					"1"
+					{
+						"model_player"		"models/workshop/player/items/spy/sum19_camera_hat_style1/sum19_camera_hat_style1.mdl"
+						"skin_red"		"0"
+						"skin_blu"		"1"
+						"name"		"#TF_sum19_camera_hat_style2"
+					}
+					"2"
+					{
+						"model_player"		"models/workshop/player/items/spy/sum19_camera_hat_style2/sum19_camera_hat_style2.mdl"
+						"skin_red"		"0"
+						"skin_blu"		"1"
+						"name"		"#TF_sum19_camera_hat_style3"
+					}
+				}
+			}
+		}
+		"7211"	
+		{
+			"name"	"Mining Light"
+			"first_sale_date"	"2010/09/29"
+			"prefab"	"valve misc"
+			"craft_class"	""
+			"item_name"	"#TF_Engineer_Hat_1"
+			"item_description"	"#TF_Engineer_Hat_1_Desc"
+			"image_inventory"	"backpack/player/items/engineer/mining_hat"
+			"model_player"	"models/player/items/engineer/mining_hat.mdl"
+			"used_by_classes"
+			{
+				"engineer"	"1"
+			}
+			"static_attrs"
+			{
+				"limited quantity item"		"1"
+			}
+			"mouse_pressed_sound" 	"ui/item_helmet_pickup.wav"
+			"drop_sound" 		"ui/item_helmet_drop.wav"
+		}
+		"7212"
+		{
+			"name"	"Wingstick"
+			"prefab"		"base_misc"
+			"first_sale_date"	"2011/08/09"
+			"item_class"	"tf_wearable"
+			"item_slot"	"misc2"
+			"loadondemand" "1"
+			"craft_material_type"	"hat"
+			"craft_class"	"hat"
+			"capabilities"
+			{
+				"nameable"			"1"
+				"can_craft_count"	"1"
+				"can_craft_if_purchased"	"1"
+			}
+			"show_in_armory"	"1"
+			"propername"	"1"
+			"min_ilevel"	"10"
+			"max_ilevel"	"10"
+			"item_type_name"	"#TF_Wearable_Wingstick"
+			"item_name"	"#TF_Wingstick"
+			"item_slot"	"misc"
+			"equip_region"	"engineer_belt"
+			"item_quality"	"unique"
+			"image_inventory"	"backpack/workshop_partner/player/items/engineer/bet_wingstick/bet_wingstick"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"82"
+			"drop_type"	"none"
+			"model_player"	"models/workshop_partner/player/items/engineer/bet_wingstick/bet_wingstick.mdl"
+			"used_by_classes"
+			{
+				"engineer" 		"1"
+			}
+			"mouse_pressed_sound"	"ui/item_hat_pickup.wav"
+			"drop_sound"		"ui/item_hat_drop.wav"
+		}
+		"7213"
+		{
+			"name"	"Pip-Boy"
+			"prefab"		"base_misc"
+			"first_sale_date"	"2011/08/09"
+			"item_class"	"tf_wearable"
+			"loadondemand" "1"
+			"craft_material_type"	"hat"
+			"craft_class"	"hat"
+			"capabilities"
+			{
+				"nameable"			"1"
+				"can_craft_count"	"1"
+				"can_craft_if_purchased"	"1"
+			}
+			"show_in_armory"	"1"
+			"min_ilevel"	"10"
+			"max_ilevel"	"10"
+			"item_type_name"	"#TF_Wearable_Armband"
+			"item_name"	"#TF_Pipboy"
+			"item_description"	"#TF_Pipboy_Desc"
+			"item_slot"	"misc2"
+			"equip_region"	"engineer_left_arm"
+			"item_quality"	"unique"
+			"image_inventory"	"backpack/workshop_partner/player/items/engineer/bet_pb/bet_pb"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"82"
+			"drop_type"	"none"
+			"model_player"	"models/workshop_partner/player/items/engineer/bet_pb/bet_pb.mdl"
+			"used_by_classes"
+			{
+				"engineer" 		"1"
+			}
+			"attributes"
+			{
+				"has pipboy build interface"
+				{
+					"attribute_class"	"set_custom_buildmenu"
+					"value"				"1"
+				}
+				"kill eater score type"
+				{
+					"attribute_class"	"kill_eater_score_type"
+					"value" 	"3"									
+				}
+				"kill eater score type 2"
+				{
+					"attribute_class"	"kill_eater_score_type_2"
+					"value" 	"0"									
+				}
+			}
+			"mouse_pressed_sound"	"ui/item_hat_pickup.wav"
+			"drop_sound"		"ui/item_hat_drop.wav"
+		}
 
+		"7215"
+		{
+			"name"		"Festive Cover-Up"
+			"prefab"		"no_craft hat marketable"
+			"item_name"		"#TF_dec21_festive_cover_up"
+			"item_description"		"#TF_dec21_festive_cover_up_Desc"
+			"equip_region"		"hat"
+			"image_inventory"		"backpack/workshop/player/items/spy/dec21_festive_cover_up/dec21_festive_cover_up"
+			"capabilities"
+			{
+				"can_craft_count"		"1"
+				"paintable"		"1"
+			}
+			"model_player"		"models/workshop/player/items/spy/dec21_festive_cover_up/dec21_festive_cover_up.mdl"
+			"used_by_classes"
+			{
+				"spy"		"1"
+			}
+		}
+		"7216"
+		{
+			"name"	"The Dapper Disguise"
+			"first_sale_date"	"2013/03/11"
+			"prefab"	"misc"
+			"craft_class"	""				
+			"craft_material_type"	""	
+			"item_type_name"	"#TF_Wearable_Mask"
+			"item_name"	"#TF_DapperDisguise"
+			"item_description"	"#TF_DapperDisguise_Desc"
+			"item_slot"	"misc2"
+			"propername"	"1"
+			"equip_region"	"face"
+			"image_inventory"	"backpack/player/items/spy/pn2_mask"
+			"model_player"	"models/player/items/spy/pn2_mask.mdl"
+			"used_by_classes"
+			{
+				"spy"	"1"
+			}
+		}
+		"7217"
+		{
+			"name"	"The Scarecrow"
+			"first_sale_date"	"2012/10/26"
+			"prefab"	"misc"
+			"equip_region"	"face"
+			"item_type_name" "#TF_Wearable_Hat"
+			"item_name"	"#TF_Scarecrow"
+			"item_description"	"#TF_Scarecrow_Desc"
+			"image_inventory"	"backpack/workshop/player/items/spy/spy_scarecrowface/spy_scarecrowface"
+			"model_player"	"models/workshop/player/items/spy/spy_scarecrowface/spy_scarecrowface.mdl"
+			"propername"	"1"
+			"drop_type"	"none"
+			"used_by_classes"
+			{
+				"spy" "1"
+			}
+			"mouse_pressed_sound"	"ui/item_hat_pickup.wav"
+			"drop_sound"		"ui/item_hat_drop.wav"
+		}
+		"7218"
+		{
+			"name"		"The Megapixel Beard"
+			"prefab"		"no_craft misc"
+			"capabilities"
+			{
+				"can_craft_count"		"1"
+			}
+			"item_name"		"#TF_robo_spy_camera_beard"
+			"item_description"		"#TF_robo_spy_camera_beard_Desc"
+			"equip_region"		"beard"
+			"item_type_name"		"#TF_Wearable_FacialHair"
+			"propername"		"1"
+			"image_inventory"		"backpack/workshop/player/items/spy/robo_spy_camera_beard/robo_spy_camera_beard"
+			"model_player"		"models/workshop/player/items/spy/robo_spy_camera_beard/robo_spy_camera_beard.mdl"
+			"used_by_classes"
+			{
+				"spy"		"1"
+			}
+		}
+		"7219"
+		{
+			"name"	"The Hornet's Nest"
+			"first_sale_date"	"2011/08/11"
+			"item_class"	"tf_weapon_smg"
+			"craft_material_type"	"weapon"
+			"craft_class"	"weapon"
+			"capabilities"
+			{
+				"nameable"		"1"
+				"can_craft_count"	"1"
+			}
+			"tags"
+			{
+				"can_deal_damage"			"1"
+				"can_deal_critical_damage"	"1"
+				"can_deal_mvm_penetration_damage"	"1"
+				"can_deal_long_distance_damage"	"1"
+			}
+			"item_type_name"	"#TF_Weapon_Shotgun"
+			"item_logname" "widowmaker"
+			"item_iconname" "widowmaker"
+			"item_name"	"The Hornet's Nest"
+			"item_description"	"Grenade launcher converted to fire extremely potent shotgun shells."
+			"item_slot"	"primary"
+			"show_in_armory"	"1"
+			"item_quality"	"unique"
+			"propername"	"1"
+			"min_ilevel"	"5"
+			"max_ilevel"	"5"
+			"inspect_panel_dist" "40"
+			"image_inventory"	"backpack/workshop/weapons/c_models/c_lochnload/c_lochnload"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"82"
+			"model_player"	"models/workshop/weapons/c_models/c_lochnload/c_lochnload.mdl"
+			"attach_to_hands" "1"
+			"used_by_classes"
+			{
+				"demoman"	"1"
+			}
+			"static_attrs"
+			{
+				"min_viewmodel_offset"		"10 0 -9"
+			}
+			"attributes"
+			{
+				"bullets per shot bonus"
+				{
+					"attribute_class"	"mult_bullets_per_shot"
+					"value" "25"
+				}
+				"spread penalty"
+				{
+					"attribute_class"	"mult_spread_scale"
+					"value"	"2.5"
+				}
+				"override projectile type"
+				{
+					"attribute_class"	"override_projectile_type"
+					"value"				"1"
+				}
+				"reload time increased"
+				{
+					"attribute_class"	"mult_reload_time_hidden"
+					"value"	"2.1"
+				}
+				"clip size penalty"
+				{
+					"attribute_class"	"mult_clipsize"
+					"value" "0.04"
+				}
+				"fire rate bonus"
+				{
+					"attribute_class"	"mult_postfiredelay"
+					"value" "2.2"
+				}
+				"item in slot 1"
+				{
+					"attribute_class"	"item_in_slot"
+					"value"	"1"
+				
+				}
+				"item slot criteria 1"
+				{
+					"attribute_class"	"item_slot_criteria"
+					"value"	"1"
+				
+				}
+				
+			}
+			"visuals"
+			{
+				"sound_single_shot"	"Weapon_SMG1.Double"
+				"sound_burst"		"Weapon_SMG1.Double"
+				"sound_reload"			"HL2_Weapon_Shotgun.Reload"
+				"animation_replacement"
+				{
+					"ACT_VM_PRIMARYATTACK"	"ACT_VM_PRIMARYATTACK"
+					"ACT_PRIMARY_VM_INSPECT_START"		"ACT_PRIMARY_ALT1_VM_INSPECT_START"
+					"ACT_PRIMARY_VM_INSPECT_IDLE"		"ACT_PRIMARY_ALT1_VM_INSPECT_IDLE"
+					"ACT_PRIMARY_VM_INSPECT_END"		"ACT_PRIMARY_ALT1_VM_INSPECT_END"
+				}
+			}
+			"mouse_pressed_sound"	"ui/item_heavy_gun_pickup.wav"
+			"drop_sound"		"ui/item_heavy_gun_drop.wav"
+		}
+				"7220"
+		{
+			"name"	"HL2 Crowbar"
+			"item_class"	"tf_weapon_tfc_crowbar"
+			"capabilities"
+			{
+				"nameable"		"1"
+			}
+			"tags"
+			{
+				"can_deal_damage"			"1"
+				"can_deal_critical_damage"	"1"
+				"can_be_equipped_by_soldier_or_demo"	"1"
+			}
+			"show_in_armory"	"1"
+			"item_type_name"	"#TF_Weapon_Crowbar"
+			"item_name"	"#TF_Weapon_Crowbar"
+			"item_slot"	"melee"
+			"image_inventory"	"backpack/player/items/all_class/all_pan"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"82"
+			"model_world"	"models/weapons/w_crowbar.mdl"
+			"model_player"	"models/weapons/v_crowbar.mdl"
+			"attach_to_hands"	"0"
+			"baseitem" "1"
+			"inspect_panel_dist" "40"
+			"item_quality"	"unique"
+			"propername"	"1"
+			"min_ilevel"	"5"
+			"max_ilevel"	"5"
+			"used_by_classes"
+			{
+				"combine"	"1"
+			}
+			"static_attrs"
+			{
+				"min_viewmodel_offset"		"10 0 -7"
+				"override footstep sound set"
+				{
+					"attribute_class"		"override_footstep_sound_set"
+					"value"		"2"
+				}
+			}
+			"visuals"
+			{
+				"sound_melee_hit"		"HL2_Weapon_Crowbar.HitFlesh"
+				"sound_melee_hit_world"	"HL2_Weapon_Crowbar.HitWorld"
+				"sound_melee_miss"		"HL2_Weapon_Crowbar.Miss"
+				"sound_burst"			"Weapon_Machete.MissCrit"
+				
+			}
+			"mouse_pressed_sound"	"ui/item_metal_weapon_pickup.wav"
+			"drop_sound"		"ui/item_metal_weapon_drop.wav"
+		}
+				"7221"
+		{
+			"name"	"The .357"
+			"first_sale_date"	"2011/08/11"
+			"item_class"	"tf_weapon_revolver"
+			"craft_material_type"	"weapon"
+			"craft_class"	"weapon"
+			"capabilities"
+			{
+				"nameable"		"1"
+				"can_craft_count"	"1"
+			}
+			"tags"
+			{
+				"can_deal_damage"			"1"
+				"can_deal_critical_damage"	"1"
+				"can_deal_mvm_penetration_damage"	"1"
+				"can_deal_long_distance_damage"	"1"
+			}
+			"show_in_armory"	"1"
+			"item_type_name"	"#TF_Weapon_Revolver"
+			"item_name" ".357 Magnum"
+			"item_description"	""
+			"item_slot"	"primary"
+			"item_quality"	"rarity4"
+			"propername"	"1"
+			"item_logname"	"357"
+			"item_iconname"	"357"
+			"min_ilevel"	"5"
+			"max_ilevel"	"5"
+			"image_inventory"	"backpack/workshop_partner/weapons/w_models/w_revolver"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"82"
+			"inspect_panel_dist" 			"32"
+			"model_player"	"models/weapons/c_models/c_revolvero/c_revolver.mdl"
+			"attach_to_hands" "1"
+			"used_by_classes"
+			{
+				"combine"	"1"
+			}
+			"static_attrs"
+			{
+				"min_viewmodel_offset"		"10 0 -6"				
+			}
+			"attributes"
+			{
+				"revolver use hit locations"
+				{
+					"attribute_class"	"set_weapon_mode"
+					"value"	"1"
+				}
+				"fire rate penalty"
+				{
+					"attribute_class"	"mult_postfiredelay"
+					"value"	"2.1"
+				}
+				"weapon spread bonus"
+				{
+					"attribute_class"	"mult_spread_scale"
+					"value"	"0.01"
+				}
+				"elevate quality"
+				{
+					"attribute_class"	"set_elevated_quality"
+					"value"	"1"
+				}
+			}
+			"visuals"
+			{
+				"sound_single_shot"	"Weapon_357.Single"
+				"sound_burst"	"Weapon_357.Single"
+			}
+			"mouse_pressed_sound"	"ui/item_light_gun_pickup.wav"
+			"drop_sound"		"ui/item_light_gun_drop.wav"
+		}
 		"30570"
 		{
 			"name"		"Pool Party Taunt"
