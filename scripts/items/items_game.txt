@@ -33985,6 +33985,40 @@
 			"mouse_pressed_sound"	"ui/item_light_gun_pickup.wav"
 			"drop_sound"		"ui/item_light_gun_drop.wav"
 		}
+		"7222"
+		{
+			"name"	"Toilet Paper Hat"
+			"prefab"	"valve base_hat"
+			"first_sale_date"	"2010/09/29"
+			"item_class"	"tf_wearable"
+			"loadondemand" "1"
+			"craft_class"	"hat"
+			"craft_material_type"	"hat"
+			"capabilities"
+			{
+				"nameable"		"1"
+				"paintable"		"1"
+				"can_craft_if_purchased"	"1"
+			}
+			"show_in_armory"	"1"
+			"item_type_name"	"#TF_Wearable_Hat"
+			"item_name"	"Toilet Paper Hat"
+			"item_description"	"Need to shit? Out of Toilet Paper? Just take some off your head!"
+			"item_slot"	"head"
+			"equip_region"	"hat"
+			"item_quality"	"unique"
+			"image_inventory"	"backpack/player/items/heavy/heavy_boxingtowel"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"82"
+			"model_player"	"models/player/items/all_class/all_halo.mdl"
+			"drop_type"	"drop"
+			"used_by_classes"
+			{
+				"heavy"	"1"
+			}
+			"mouse_pressed_sound" 	"ui/item_hat_pickup.wav"
+			"drop_sound" 		"ui/item_hat_drop.wav"
+		}
 		"30570"
 		{
 			"name"		"Pool Party Taunt"
