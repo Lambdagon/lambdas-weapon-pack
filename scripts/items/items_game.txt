@@ -17738,6 +17738,13 @@
 				"sound_burst"			"Weapon_PhysCannon.LaunchCrit"
 				"skin"	"0"
 			}
+			"taunt"
+			{
+				"custom_taunt_scene_per_class"
+				{
+					"antlion"		"scenes\npc\male01\question06.vcd"
+				}
+			}
 			"mouse_pressed_sound"	"ui/item_heavy_gun_pickup.wav"
 			"drop_sound"		"ui/item_heavy_gun_drop.wav"
 		}

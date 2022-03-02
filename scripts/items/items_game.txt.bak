@@ -17738,6 +17738,13 @@
 				"sound_burst"			"Weapon_PhysCannon.LaunchCrit"
 				"skin"	"0"
 			}
+			"taunt"
+			{
+				"custom_taunt_scene_per_class"
+				{
+					"antlion"		"scenes\npc\question06.vcd"
+				}
+			}
 			"mouse_pressed_sound"	"ui/item_heavy_gun_pickup.wav"
 			"drop_sound"		"ui/item_heavy_gun_drop.wav"
 		}
@@ -34453,11 +34460,6 @@
 				{
 					"attribute_class"	"mult_maxammo_secondary"
 					"value"	"955"
-				}
-				"self dmg push force increased"
-				{
-					"attribute_class"	"mult_dmgself_push_force"
-					"value"		"15.5"
 				}
 			}
 			"visuals"
