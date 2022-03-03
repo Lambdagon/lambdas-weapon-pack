@@ -30,6 +30,27 @@
 
 	"wave"		"*#music/lambda/jetpack.wav"
 }
+"lambda.scotland"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"pitch"		"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_90dB"
+
+	"wave"		"*#music/lambda/scotland.mp3"
+}
+"lambda.freebird"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"pitch"		"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_90dB"
+
+	"wave"		"*#music/lambda/freebird.mp3"
+}
+
 
 
 

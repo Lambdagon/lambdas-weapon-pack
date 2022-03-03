@@ -20944,7 +20944,7 @@
 			"image_inventory_size_w"		"128"
 			"image_inventory_size_h"		"82"
 			"inspect_panel_dist"        "45"					
-			"model_player"	"models/workshop/player/items/scout/taunt_spintowinalt1/taunt_spintowin.mdl"
+			"model_player"	"models/workshop/weapons/c_models/c_lead_pipe/c_candy_cane.mdl"
 
 			"used_by_classes"
 			{
@@ -20954,6 +20954,15 @@
 			{
 				"min_viewmodel_offset"					"10 0 -6"
 			}
+			"attributes"
+			{
+				"damage bonus"
+				{
+					"attribute_class"	"mult_dmg"
+					"value"	"1.75"
+				}
+			}
+			
 			"mouse_pressed_sound"	"ui/item_wood_pole_pickup.wav"
 			"drop_sound"		"ui/item_wood_pole_drop.wav"
 			"visuals_red"
@@ -34483,7 +34492,7 @@
 			"item_class"	"tf_wearable"	
 			"show_in_armory"	"1"
 			"item_type_name"	"Particle"
-			"item_name"			"Effect: Flying Bits"
+			"item_name"			"Effect: Circling Heart"
 			"item_description"	""						
 			"image_inventory"	"backpack/player/items/cyoa_pda/cyoa_pda"
 			"image_inventory_size_w"	"128"
@@ -36274,7 +36283,181 @@
 				}
 			}
 		}
-		
+				"200002"
+		{
+			"name"		"Taunt: True Scotsman's Call"
+			"first_sale_date"		"2015/12/14"
+			"prefab"		"no_craft taunt"
+			"item_name"		"#TF_true_scotsmans_call"
+			"item_description"		"#TF_true_scotsmans_call_Desc"
+			"image_inventory"		"backpack/workshop/player/items/demo/true_scotsmans_call/true_scotsmans_call"
+			"capabilities"
+			{
+				"can_craft_count"		"1"
+			}
+			"used_by_classes"
+			{
+				"demoman"		"1"
+			}
+			"attributes"
+			{
+				"taunt is press and hold"
+				{
+					"attribute_class"		"enable_misc2_holdtaunt"
+					"value"		"1"
+				}
+				"taunt force move forward"
+				{
+					"attribute_class"		"taunt_force_move_forward"
+					"value"		"1"
+				}
+				"taunt move speed"
+				{
+					"attribute_class"		"taunt_move_speed"
+					"value"		"55"
+				}
+				"taunt move acceleration time"
+				{
+					"attribute_class"		"taunt_move_acceleration_time"
+					"value"		"1"
+				}
+				"taunt turn speed"
+				{
+					"attribute_class"		"taunt_turn_speed"
+					"value"		"40"
+				}
+				"taunt turn acceleration time"
+				{
+					"attribute_class"		"taunt_turn_acceleration_time"
+					"value"		"0.200000"
+				}
+				"taunt success sound loop"
+				{
+					"attribute_class"		"taunt_success_sound_loop"
+					"value"		"lambda.scotland"
+				}
+			}
+			"taunt"
+			{
+				"custom_taunt_scene_per_class"
+				{
+					"demoman"	"scenes/workshop/player/demoman/low/taunt_scotsmans_stagger.vcd"
+				}
+				"custom_taunt_prop_per_class"
+				{
+					"demoman"		"models/workshop/player/items/demo/bagpipes/bagpipes.mdl"
+				}
+				
+			}
+		}
+						"200003"
+		{
+			"name"		"Taunt: Bare Knuckle Beatdown"
+			"prefab"		"no_craft taunt"
+			"first_sale_date"		"2021/10/02"
+			"item_name"		"#TF_taunt_bare_knuckle_beatdown"
+			"item_description"		"#TF_taunt_bare_knuckle_beatdown_Desc"
+			"ad_text"		"#TF_taunt_bare_knuckle_beatdown_AdText"
+			"attributes"
+			{
+				"taunt is press and hold"
+				{
+					"attribute_class"		"enable_misc2_holdtaunt"
+					"value"		"1"
+				}
+			}
+			"image_inventory"		"backpack/workshop/player/items/heavy/taunt_bare_knuckle_beatdown/taunt_bare_knuckle_beatdown"
+			"capabilities"
+			{
+				"can_craft_count"		"1"
+			}
+			"used_by_classes"
+			{
+				"heavy"		"1"
+			}
+			"taunt"
+			{
+				"custom_taunt_scene_per_class"
+				{
+					"heavy"		"scenes/workshop/player/heavy/low/taunt_bare_knuckle_beatdown.vcd"
+				}
+				"custom_taunt_outro_scene_per_class"
+				{
+					"heavy"		"scenes/workshop/player/heavy/low/taunt_bare_knuckle_beatdown_outro.vcd"
+				}
+				"custom_taunt_prop_per_class"
+				{
+					"heavy"		"models/workshop/player/items/heavy/taunt_bare_knuckle_beatdown_alt/taunt_bare_knuckle_beatdown.mdl"
+				}
+			}
+		}
+				"200004"
+		{
+			"name"	"The Shred Alert"
+			"prefab"	"taunt"
+			"first_sale_date"	"2013/02/13"
+			"item_name"		"#TF_ShredAlert"
+			"item_description"	"#TF_ShredAlert_Desc"
+			"propername"	"1"
+			"image_inventory"	"backpack/workshop_partner/player/items/taunts/brutal_guitar/brutal_guitar"
+			"image_inventory_size_w"	"128"
+			"image_inventory_size_h"	"82"
+			"item_quality"		"unique"
+			"min_ilevel"	"5"
+			"max_ilevel"	"5"
+			"used_by_classes"
+			{
+				"scout"		"1"
+				"sniper"	"1"
+				"soldier"	"1"
+				"demoman"	"1"
+				"medic"		"1"
+				"heavy"		"1"
+				"spy" 		"1"
+				"engineer" 	"1"
+				"pyro" 		"1"
+			}
+			"attributes"
+			{
+				"taunt attack time"
+				{
+					"attribute_class"	"taunt_attack_time"
+					"value"				"0"
+				}
+				"taunt success sound loop"
+				{
+					"attribute_class"		"taunt_success_sound_loop"
+					"value"		"lambda.freebird"
+				}
+			}
+			"taunt"
+			{
+				"custom_taunt_scene_per_class"
+				{
+					"scout"		"scenes\player\scout\low\taunt_brutalLegend.vcd"
+					"sniper"	"scenes\player\sniper\low\taunt_brutalLegend.vcd"
+					"soldier"	"scenes\player\soldier\low\taunt_brutalLegend.vcd"
+					"demoman"	"scenes\player\demoman\low\taunt_brutalLegend.vcd"
+					"medic"		"scenes\player\medic\low\taunt_brutalLegend.vcd"
+					"heavy"		"scenes\player\heavy\low\taunt_brutalLegend.vcd"
+					"spy"		"scenes\player\spy\low\taunt_brutalLegend.vcd"
+					"engineer"	"scenes\player\engineer\low\taunt_brutalLegend.vcd"
+					"pyro"		"scenes\player\pyro\low\taunt_brutalLegend.vcd"
+				}
+				"custom_taunt_prop_per_class"
+				{
+					"scout"		"models/workshop_partner/player/items/taunts/brutal_guitar_alt/brutal_guitar.mdl"
+					"sniper"	"models/workshop_partner/player/items/taunts/brutal_guitar_alt/brutal_guitar.mdl"
+					"soldier"	"models/workshop_partner/player/items/taunts/brutal_guitar_alt/brutal_guitar.mdl"
+					"demoman"	"models/workshop_partner/player/items/taunts/brutal_guitar_alt/brutal_guitar.mdl"
+					"medic"		"models/workshop_partner/player/items/taunts/brutal_guitar_alt/brutal_guitar.mdl"
+					"heavy"		"models/workshop_partner/player/items/taunts/brutal_guitar_alt/brutal_guitar.mdl"
+					"spy"		"models/workshop_partner/player/items/taunts/brutal_guitar_alt/brutal_guitar.mdl"
+					"engineer"	"models/workshop_partner/player/items/taunts/brutal_guitar_alt/brutal_guitar.mdl"
+					"pyro"		"models/workshop_partner/player/items/taunts/brutal_guitar_alt/brutal_guitar.mdl"
+				}
+			}
+		}
 		"30922"
 		{
 			"name"		"Taunt: Luxury Lounge"
