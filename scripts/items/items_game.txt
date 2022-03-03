@@ -20961,6 +20961,11 @@
 					"attribute_class"	"mult_dmg"
 					"value"	"1.75"
 				}
+				"dmg from melee decreased"
+				{
+					"attribute_class"	"dmg_from_melee"
+					"value"	"0.3"
+				}
 				"hit self on miss"
 				{
 					"attribute_class"	"hit_self_on_miss"

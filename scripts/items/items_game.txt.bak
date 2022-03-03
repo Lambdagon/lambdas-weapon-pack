@@ -20961,6 +20961,11 @@
 					"attribute_class"	"mult_dmg"
 					"value"	"1.75"
 				}
+				"hit self on miss"
+				{
+					"attribute_class"	"hit_self_on_miss"
+					"value"	"1"
+				}
 			}
 			
 			"mouse_pressed_sound"	"ui/item_wood_pole_pickup.wav"
