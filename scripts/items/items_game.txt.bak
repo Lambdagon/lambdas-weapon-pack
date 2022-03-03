@@ -20961,7 +20961,7 @@
 					"attribute_class"	"mult_dmg"
 					"value"	"1.75"
 				}
-				"dmg from melee decreased"
+				"dmg from melee reduced"
 				{
 					"attribute_class"	"dmg_from_melee"
 					"value"	"0.3"
@@ -25061,54 +25061,6 @@
 				}
 			}
 		}
-				"6961"
-		{
-			"name"		"Caffeine"
-			"item_class"	"tf_wearable"
-			"craft_class"	"weapon"
-			"craft_material_type"	"weapon"
-			"capabilities"
-			{
-				"nameable"		"1"
-			}
-			"show_in_armory" "1"
-			"item_type_name"	"Central Nervous System Stimulant"
-			"item_name"	"TOO. MUCH. FREAKIN'. CAFFEINE."
-			"item_description"	"yes"
-			"item_logname"	"grappling_hook"
-			"item_iconname"	"grappling_hook"
-			"item_slot"	"action"
-			"item_quality"	"normal"
-			"min_ilevel"	"1"
-			"max_ilevel"	"1"
-			"image_inventory"	"backpack/weapons/c_models/c_wrangler"
-			"image_inventory_size_w"		"128"
-			"image_inventory_size_h"		"82"
-			"model_player"	"models/player/items/scout/scout_nohat.mdl"
-			"attach_to_hands"	"1"
-			"act_as_weapon"		"0"
-			"anim_slot" "MELEE_ALLCLASS"
-			"used_by_classes"
-			{
-				"scout"		"1"
-			}
-			"attributes"
-			{
-				"move speed bonus"
-				{
-					"attribute_class"	"mult_player_movespeed"
-					"value" "1.25"
-				}
-				"dmg from melee increased"
-				{
-					"attribute_class"	"dmg_from_melee"
-					"value"	"1.9"
-				}
-
-			}
-			"mouse_pressed_sound"	"ui/item_light_gun_pickup.wav"
-			"drop_sound"		"ui/item_light_gun_drop.wav"
-		}
 		"6962"
 		{
 			"name"	"The .357"
@@ -26619,6 +26571,19 @@
 				"heavy"		"1"
 			}
 			"mouse_pressed_sound"		"ui/item_bag_pickup.wav"
+			"attributes"
+			{
+				"health regen"
+				{
+					"attribute_class"	"add_health_regen"
+					"value"	"4"
+				}
+				"ammo regen"
+				{
+					"attribute_class"	"addperc_ammo_regen"
+					"value"	"15"
+				}
+			}
 			"drop_sound"		"ui/item_bag_drop.wav"
 		}
 		"6991"
