@@ -33814,7 +33814,7 @@
 		{
 			"name"	"The Hornet's Nest"
 			"first_sale_date"	"2011/08/11"
-			"item_class"	"tf_weapon_smg"
+			"item_class"	"tf_weapon_revolver"
 			"craft_material_type"	"weapon"
 			"craft_class"	"weapon"
 			"capabilities"
@@ -33879,7 +33879,7 @@
 				"clip size penalty"
 				{
 					"attribute_class"	"mult_clipsize"
-					"value" "0.04"
+					"value" "0.17"
 				}
 				"fire rate bonus"
 				{
@@ -34476,6 +34476,50 @@
 			}
 			"mouse_pressed_sound"	"ui/item_light_gun_pickup.wav"
 			"drop_sound"		"ui/item_light_gun_drop.wav"
+		}
+				"7229"
+		{
+			"name"	"Unusual Effect: Circling Heart"
+			"item_class"	"tf_wearable"	
+			"show_in_armory"	"1"
+			"item_type_name"	"Particle"
+			"item_name"			"Effect: Circling Heart"
+			"item_description"	""						
+			"image_inventory"	"backpack/player/items/cyoa_pda/cyoa_pda"
+			"image_inventory_size_w"	"128"
+			"image_inventory_size_h"	"82"
+			"item_quality"		"rarity4"
+			"model_player"		"models/empty.mdl"
+			"item_slot"			"action"
+			"inspect_panel_dist" "20"	
+			"used_by_classes"
+			{
+				"scout"	"1"
+				"sniper"	"1"
+				"soldier"	"1"
+				"demoman"	"1"
+				"medic"	"1"
+				"heavy"	"1"
+				"spy" "1"
+				"engineer" "1"
+				"pyro" "1"
+			}
+			"attributes"
+			{
+				"attach particle effect name"
+				{
+					"atribute_class"	"set_attached_particle_name"
+					"value"	"superrare_circling_heart"
+				}
+				"elevate to unusual if applicable"
+				{
+					"attribute_class"	"elevate_to_unusual_if_applicable"
+					"value"	"1"
+				}
+			}
+			"visuals"
+			{
+			}
 		}
 		"30570"
 		{
