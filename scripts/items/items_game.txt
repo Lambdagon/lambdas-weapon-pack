@@ -30212,7 +30212,7 @@
 				"can_craft_count"	"1"
 			}
 			"item_name"	"#TF_OldBrimstone"
-			"item_slot" "misc2"
+			"item_slot" "misc"
 			"item_description"	"#TF_OldBrimstone_Desc"
 			"image_inventory"	"backpack/player/items/demo/bombs"
 			"min_ilevel"	"20"
