@@ -1,0 +1,14 @@
+ "VertexlitGeneric"
+{
+"$basetexture" "models/spring trap/body diffuse"
+"$bumpmap" "models/spring trap/body normspec"
+
+"$basealphaenvmapmask" "1"
+
+"$ambientocclusion" "1"
+
+"$phong" "1"	
+"$phongboost""1"
+
+"$phongfresnelranges""[0.5 1 1]"
+}

@@ -50,7 +50,15 @@
 
 	"wave"		"*#music/lambda/freebird.mp3"
 }
+"lambda.dicks"
+{
+	"channel"	"CHAN_BODY"
+	"volume"	"1.0"
+	"soundlevel"	"SNDLVL_75dB"
+	"pitch"		"PITCH_NORM"
 
+	"wave"		"*#cracklife/blip1.wav"
+}
 
 
 
