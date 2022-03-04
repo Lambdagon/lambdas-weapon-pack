@@ -28187,6 +28187,14 @@
 			{
 				"scout"		"1"
 			}
+			"attributes"
+			{
+				"move speed bonus"
+				{
+					"attribute_class"	"mult_player_movespeed"
+					"value" "1.10"
+				}
+			}
 			"visuals"
 			{
 				"player_bodygroups"
