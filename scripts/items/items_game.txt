@@ -35240,6 +35240,205 @@
 			"mouse_pressed_sound"	"ui/item_heavy_gun_pickup.wav"
 			"drop_sound"		"ui/item_heavy_gun_drop.wav"
 		}
+		"7238"
+		{
+			"name"	"Peashooter"
+			"first_sale_date"	"2010/09/29"
+			"item_class"	"tf_weapon_pistol"
+			"prefab"	"weapon_pistol"
+			"craft_class"	""
+			"craft_material_type"		""
+			"capabilities"
+			{
+				"nameable"		"1"
+			}
+			"tags"
+			{
+				"can_deal_damage"			"1"
+				"can_deal_critical_damage"	"1"
+				"can_deal_long_distance_damage"	"1"
+			}
+			"show_in_armory"	"0"
+			"item_type_name"	"#TF_Weapon_Pistol"
+			"item_name"	"Peashooter"
+			"item_description"	"Cuphead"
+			"item_slot"	"secondary"
+			"item_logname"	"Peashooter_gun"
+			"item_iconname"	"Peashooter_gun"
+			"image_inventory"	"backpack/workshop/weapons/c_models/c_winger_pistol/c_winger_pistol"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"82"
+                        "model_player"        ""
+        	        "model_world"        ""
+			"attach_to_hands"	"1"
+			"item_quality"	"unique"
+			"propername"	"1"
+			"min_ilevel"	"5"
+			"max_ilevel"	"5"
+			"used_by_classes"
+			{
+				"scout"	"1"
+				"engineer"	"1"
+			}
+			"mouse_pressed_sound"	"ui/item_light_gun_pickup.wav"
+			"drop_sound"		"ui/item_light_gun_drop.wav"
+									"visuals"
+			{
+				"sound_single_shot"		"Weapon_Capper.Single"
+				"sound_burst"		"Weapon_Capper.SingleCrit"
+			}
+			"static_attrs"
+			{
+				"min_viewmodel_offset"		"10 0 -9"
+				"crits_become_minicrits"				"1"
+			}
+			"xifier_class_remap"	"TTG Max Pistol"
+			"attributes"
+			{
+				"damage bonus"
+				{
+					"attribute_class"	"mult_dmg"
+					"value"	"1.10"
+				}
+				"clip size bonus"
+				{
+				"attribute_class"	"mult_clipsize"
+				"value"	"11"
+				}
+				"bullets per shot bonus"
+				{
+					"attribute_class" 	"mult_bullets_per_shot"
+					"value" "1.1"
+				}
+				"fire rate bonus"
+				{
+				"attribute_class"	"mult_postfiredelay"
+				"value"	"0.85"
+				}
+				"max health additive penalty"
+				{
+					"attribute_class"	"add_maxhealth"
+					"value" "-25"
+				}
+				"crit mod disabled"
+				{
+					"attribute_class"	"mult_crit_chance"
+					"value"	"0"
+				}
+				"weapon spread penalty"
+				{
+					"attribute_class"	"mult_spread_scale"
+					"value"	"0.95"
+				}
+				"damage penalty on bodyshot"
+				{
+					"attribute_class"	"bodyshot_damage_modify"
+					"value"	"0.80"
+				}
+			}
+		}
+		"7239"
+		{
+			"name"	"Spread-Shot"
+			"first_sale_date"	"2010/09/29"
+			"item_class"	"tf_weapon_pistol"
+			"prefab"	"weapon_pistol"
+			"craft_class"	""
+			"craft_material_type"		""
+			"capabilities"
+			{
+				"nameable"		"1"
+			}
+			"tags"
+			{
+				"can_deal_damage"			"1"
+				"can_deal_critical_damage"	"1"
+				"can_deal_long_distance_damage"	"1"
+			}
+			"show_in_armory"	"0"
+			"item_type_name"	"#TF_Weapon_Pistol"
+			"item_name"	"Spread-Shot"
+			"item_description"	"Mugman"
+			"item_slot"	"secondary"
+			"item_logname"	"Spread-Shot_cool"
+			"item_iconname"	"Spread-Shot_cool"
+			"image_inventory"	"backpack/workshop/weapons/c_models/c_invasion_pistol/c_invasion_pistol"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"82"
+                        "model_player"        ""
+        	        "model_world"        ""
+			"attach_to_hands"	"1"
+			"item_quality"	"unique"
+			"propername"	"1"
+			"min_ilevel"	"5"
+			"max_ilevel"	"5"
+			"used_by_classes"
+			{
+				"scout"	"1"
+				"engineer"	"1"
+			}
+			"mouse_pressed_sound"	"ui/item_light_gun_pickup.wav"
+			"drop_sound"		"ui/item_light_gun_drop.wav"
+									"visuals"
+			{
+				"sound_single_shot"		"Weapon_Capper.Single"
+				"sound_burst"		"Weapon_Capper.SingleCrit"
+			}
+			"static_attrs"
+			{
+				"min_viewmodel_offset"		"10 0 -9"
+				"crits_become_minicrits"				"1"
+			}
+			"xifier_class_remap"	"TTG Max Pistol"
+			"attributes"
+			{
+				"damage bonus"
+				{
+					"attribute_class"	"mult_dmg"
+					"value"	"1.25"
+				}
+				"clip size bonus"
+				{
+				"attribute_class"	"mult_clipsize"
+				"value"	"11"
+				}
+				"bullets per shot bonus"
+				{
+					"attribute_class" 	"mult_bullets_per_shot"
+					"value" "1.2"
+				}
+				"fire rate bonus"
+				{
+				"attribute_class"	"mult_postfiredelay"
+				"value"	"0.90	"
+				}
+				"max health additive penalty"
+				{
+					"attribute_class"	"add_maxhealth"
+					"value" "30"
+				}
+				"crit mod disabled"
+				{
+					"attribute_class"	"mult_crit_chance"
+					"value"	"0"
+				}
+				"weapon spread penalty"
+				{
+					"attribute_class"	"mult_spread_scale"
+					"value"	"0.10"
+				}
+				"dmg taken from fire increased"
+				{
+					"attribute_class"	"mult_dmgtaken_from_fire"
+					"value"			"1.20"
+				}
+				"move speed penalty"
+				{
+					"attribute_class"	"mult_player_movespeed"
+					"value" "0.85"
+				}
+			}
+		}
 		"30570"
 		{
 			"name"		"Pool Party Taunt"
