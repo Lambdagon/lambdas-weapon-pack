@@ -34956,6 +34956,290 @@
 			"mouse_pressed_sound"	"ui/item_heavy_gun_pickup.wav"
 			"drop_sound"		"ui/item_heavy_gun_drop.wav"
                 }
+		"7235"
+		{
+			"name"	"The Slow-Hurt"
+			"prefab"	"valve"
+			"first_sale_date"	"2011/03/22"
+			"item_class"	"tf_weapon_medigun"
+			"craft_class"	"weapon"
+			"craft_material_type"	"weapon"
+			"capabilities"
+			{
+				"nameable"		"1"
+			}
+			"tags"
+			{
+				"can_heal_allies"		"1"
+				"can_be_festivized"		"1"
+			}
+			"show_in_armory"	"1"
+			"item_type_name"	"#TF_Weapon_Medigun_Prototype"
+			"item_name"		"Slow-Hurt"
+			"item_description"	"If all else fails, do harm"
+			"propername"		"1"
+			"item_slot"		"secondary"
+			"equip_region"	"medigun_backpack"
+			"image_inventory"	"backpack/weapons/c_models/c_proto_medigun/c_proto_medigun"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"82"
+			"model_player"	"models/weapons/c_models/c_proto_medigun/c_proto_medigun.mdl"
+			"extra_wearable" "models/weapons/c_models/c_proto_backpack/c_proto_backpack.mdl"
+			"attach_to_hands"	"1"
+			"item_quality"	"unusual"
+			"min_ilevel"	"8"
+			"max_ilevel"	"8"
+			"used_by_classes"
+			{
+				"medic"	"1"
+			}
+			"static_attrs"
+			{
+				"min_viewmodel_offset"		"10 0 -9"
+			}
+			"attributes"
+			{
+				"lunchbox adds minicrits"
+				{
+					"attribute_class"	"set_weapon_mode"
+					"value"	"2"
+				}
+				"medigun charge is megaheal"
+				{
+					"attribute_class"	"set_charge_type"
+					"value"	"2"
+				}
+				"overheal bonus"
+				{
+					"attribute_class"	"mult_medigun_overheal_amount"
+					"value"	"1.5"
+				}
+				"heal rate penalty"
+				{
+					"attribute_class"	"mult_medigun_healrate"
+					"value" "1.4"
+				}
+				"ubercharge rate penalty"
+				{
+					"attribute_class"	"mult_medigun_uberchargerate"
+					"value"	"1.1"
+				}
+				"kill eater score type"
+				{
+					"attribute_class"	"kill_eater_score_type"
+					"value"				"1"								
+				}
+				"kill eater score type 2"
+				{
+					"attribute_class"	"kill_eater_score_type_2"
+					"value" 			"2"								
+				}
+			}
+			"visuals"
+			{
+				"player_bodygroups"
+				{
+					"medic_backpack"			"1"
+				}
+			}
+			"visuals_red"
+			{
+				"attached_models_festive"
+				{
+					"0"
+					{
+						"model"	"models/weapons/c_models/c_proto_medigun/c_proto_medigun_festivizer.mdl"
+					}
+				}
+				"skin" "0"
+				"custom_particlesystem"
+				{
+					"system"	"medicgun_beam_attrib_overheal_red"
+				}
+			}
+			"visuals_blu"
+			{
+				"attached_models_festive"
+				{
+					"0"
+					{
+						"model"	"models/weapons/c_models/c_proto_medigun/c_proto_medigun_festivizer.mdl"
+					}
+				}
+				"skin" "1"
+				"custom_particlesystem"
+				{
+					"system"	"medicgun_beam_attrib_overheal_blue"
+				}
+			}
+			"mouse_pressed_sound"	"ui/item_heavy_gun_pickup.wav"
+			"drop_sound"		"ui/item_heavy_gun_drop.wav"
+		}
+		"7236"
+		{
+			"name"	"The Killing Slingers"
+			"prefab"	"valve"
+			"first_sale_date"	"2010/09/29"
+			"item_class"	"tf_weapon_fists"
+			"craft_class"	"weapon"
+			"craft_material_type"	"weapon"
+			"capabilities"
+			{
+				"nameable"		"1"
+			}
+			"tags"
+			{
+				"can_deal_damage"			"1"
+				"can_deal_critical_damage"	"1"
+			}
+			"show_in_armory"	"1"
+			"item_type_name"	"#TF_Weapon_Gloves"
+			"item_name"	"The Killing Slingers"
+			"item_slot"	"melee"
+			"item_logname"	"killing_slingers"
+			"item_iconname"	"killing_slingers"
+			"image_inventory"	"backpack/weapons/gunslinger"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"82"
+			"inspect_panel_dist" 				"53"					
+			"model_player"	"models/weapons/c_models/c_boxing_gloves/c_boxing_gloves.mdl"
+			"model_world"	"models/workshop/weapons/c_models/c_fists_of_steel/c_fists_of_steel.mdl"
+			"attach_to_hands"	"1"
+			"item_quality"	"unique"
+			"propername"	"1"
+			"min_ilevel"	"7"
+			"max_ilevel"	"7"
+			"used_by_classes"
+			{
+				"heavy"	"1"
+			}
+			"static_attrs"
+			{
+				"min_viewmodel_offset"		"10 0 -10"
+			}
+			"attributes"
+			{
+				"critboost on kill"
+				{
+					"attribute_class"	"add_onkill_critboost_time"
+					"value"	"5"
+				}
+				"max health additive bonus"
+				{
+					"attribute_class"	"add_maxhealth"
+					"value" "25"
+				}	
+				"fire rate penalty"
+				{
+					"attribute_class"	"mult_postfiredelay"
+					"value"	"1.2"
+				}
+				"crit mod disabled"
+				{
+					"attribute_class"	"mult_crit_chance"
+					"value"	"0"
+				}
+
+			}
+			"hide_bodygroups_deployed_only"	"1"
+			"visuals"
+			{
+				"player_bodygroups"
+				{
+					"hands"		"1"
+				}
+				"sound_melee_miss"	"Weapon_BoxingGloves.Miss"
+				"sound_melee_hit"	"Weapon_BoxingGloves.HitFlesh"
+				"sound_melee_hit_world"	"Weapon_BoxingGloves.HitWorld"
+				"sound_burst"	"Weapon_BoxingGloves.MissCrit"
+				"animation_replacement"
+				{
+					"ACT_MELEE_VM_INSPECT_START"	"ACT_MELEE_ALT1_VM_INSPECT_START"
+					"ACT_MELEE_VM_INSPECT_IDLE"		"ACT_MELEE_ALT1_VM_INSPECT_IDLE"
+					"ACT_MELEE_VM_INSPECT_END"		"ACT_MELEE_ALT1_VM_INSPECT_END"
+				}
+			}
+			"mouse_pressed_sound" 	"ui/item_boxing_gloves_pickup.wav"
+			"drop_sound" 		"ui/item_boxing_gloves_drop.wav"
+		}
+		"7237"
+		{
+			"name"	"The TRUE Direct Hit"
+			"prefab"	"valve"
+			"first_sale_date"	"2010/09/29"
+			"item_class"	"tf_weapon_rocketlauncher_directhit"
+			"craft_class"	"weapon"
+			"craft_material_type"	"weapon"
+			"capabilities"
+			{
+				"nameable"		"1"
+			}
+			"tags"
+			{
+				"can_deal_damage"		"1"
+				"can_deal_gib_damage"	"1"
+				"can_be_equipped_by_soldier_or_demo"	"1"
+				"can_deal_posthumous_damage"	"1"
+				"can_deal_critical_damage"	"1"
+				"can_deal_long_distance_damage"	"1"
+			}
+			"show_in_armory"	"1"
+			"item_type_name"	"#TF_Weapon_RocketLauncher"
+			"item_name"	"TRUE Direct Hit"
+			"item_slot"	"primary"
+			"item_quality"	"unique"
+			"propername"	"1"
+			"min_ilevel"	"1"
+			"max_ilevel"	"1"
+			"image_inventory"	"backpack/weapons/c_models/c_directhit/c_directhit"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"82"
+			"model_player"	"models/weapons/c_models/c_directhit/c_directhit.mdl"
+			"attach_to_hands" "1"
+			"used_by_classes"
+			{
+				"soldier"	"1"
+			}
+			"static_attrs"
+			{
+				"min_viewmodel_offset"					"10 -3 -10"				
+			}
+			"attributes"
+			{
+				"Blast radius decreased"
+				{
+					"attribute_class"	"mult_explosion_radius"
+					"value"	"0.01"
+				}
+				"fire rate penalty"
+				{
+					"attribute_class"	"mult_postfiredelay"
+					"value"	"1.15"
+				}
+				"Projectile speed increased"
+				{
+					"attribute_class"	"mult_projectile_speed"
+					"value"	"2"
+				}
+				"damage bonus"
+				{
+					"attribute_class"	"mult_dmg"
+					"value"	"1.35"
+				}
+				"mod mini-crit airborne"
+				{
+					"attribute_class"	"mini_crit_airborne"
+					"value" "1"
+				}
+				"disable fancy class select anim"
+				{
+					"attribute_class"	"disable_fancy_class_select_anim"
+					"value"	"1"
+				}
+			}
+			"mouse_pressed_sound"	"ui/item_heavy_gun_pickup.wav"
+			"drop_sound"		"ui/item_heavy_gun_drop.wav"
+		}
 		"30570"
 		{
 			"name"		"Pool Party Taunt"
