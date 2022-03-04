@@ -2740,7 +2740,6 @@
 			"used_by_classes"
 			{
 				"scout"	"1"
-				"engineer"	"1"
 			}
 			"static_attrs"
 			{
@@ -4548,7 +4547,7 @@
 			"item_name"	"#TF_Weapon_Shotgun_Building_Rescue"
 			"item_slot"	"primary"
 			"item_quality"	"unique"
-			"show_in_armory"	"1"
+			"show_in_armory"	"0"
 			"propername"	"1"
 			"min_ilevel"	"1"
 			"max_ilevel"	"100"
@@ -4830,10 +4829,7 @@
 			"used_by_classes"
 			{
 				"heavy"	"1"
-				"engineer"	"1"
-				"scout"	"primary"
-				"soldier"	"1"
-				"pyro"	"1"
+				"engineer"	"primary"
 			}
 			"static_attrs"
 			{
@@ -5296,7 +5292,6 @@
 			"used_by_classes"
 			{
 				"scout"	"1"
-				"engineer"	"1"
 			}
 			"attributes"
 			{
@@ -20057,6 +20052,7 @@
 			"item_description"	"Part of Lambda's  Weapon pack"
 			"item_slot"	"secondary"
 			"item_quality"	"normal"
+			"show_in_armory"	"0"
 			"min_ilevel"	"1"
 			"max_ilevel"	"1"
 			"attach_to_hands"	"1"
@@ -34047,7 +34043,7 @@
 			"show_in_armory"	"1"
 			"item_type_name"	"#TF_Wearable_Hat"
 			"item_name"	"Toilet Paper Hat"
-			"item_description"	"Need to shit? Out of Toilet Paper? Just take some off your head!"
+			"item_description"	"Need to shit?"
 			"item_slot"	"head"
 			"equip_region"	"hat"
 			"item_quality"	"unique"
