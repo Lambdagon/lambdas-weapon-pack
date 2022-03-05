@@ -14855,6 +14855,7 @@
 				"sound_melee_hit_world"	"FryingPan.HitWorld"
 				"sound_melee_miss"	"Weapon_Machete.Miss"
 				"sound_burst"		"Weapon_Machete.MissCrit"
+				"material_override"	"materials/models/weapons/c_items/c_frying_pan.vmt"
 			}
 			"mouse_pressed_sound"	"ui/item_metal_weapon_pickup.wav"
 			"drop_sound"		"ui/item_metal_weapon_drop.wav"
