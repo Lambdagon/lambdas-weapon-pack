@@ -26644,6 +26644,14 @@
 			{
 				"engineer"		"1"
 			}
+			"attributes"
+			{
+				"move speed bonus"
+				{
+					"attribute_class"	"mult_player_movespeed"
+					"value" "1.10"
+				}
+			}
 			"visuals"
 			{
 				"player_bodygroups"
@@ -33193,7 +33201,7 @@
 				"engineer"	"1"
 			}
 		}
-		"7195	"
+		"7195"
 		{
 			"name"	"Ritzy Rick's Hair Fixative"
 			"prefab"	"valve base_hat"
@@ -33221,6 +33229,14 @@
 			"used_by_classes"
 			{
 				"sniper"	"1"
+			}
+			"attributes"
+			{
+				"move speed bonus"
+				{
+					"attribute_class"	"mult_player_movespeed"
+					"value" "1.10"
+				}
 			}
 			"visuals"
 			{
