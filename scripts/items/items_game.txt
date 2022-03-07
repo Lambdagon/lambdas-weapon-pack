@@ -34723,7 +34723,7 @@
 				"damage bonus"
 				{
 					"attribute_class"	"mult_dmg"
-					"value"	"2.25"
+					"value"	"3.5"
 				}
 				"clip size penalty"
 				{
@@ -35683,6 +35683,16 @@
 				{
 					"attribute_class"	"set_scattergun_has_knockback"
 					"value"	"1"
+				}
+				"speed buff ally"
+				{
+					"attribute_class"	"speed_buff_ally"
+					"value"	"1"
+				}
+				"melee range multiplier"
+				{
+					"attribute_class"	"melee_range_multiplier"
+					"value"	"1.5"
 				}
 				"damage penalty"
 				{
