@@ -19744,6 +19744,11 @@
 					"attribute_class"	"minicrits_become_crits"
 					"value" "1"
 				}
+				"headshot damage increase"
+				{
+					"attribute_class"	"headshot_damage_modify"
+					"value"	"2"
+				}
 			}
 		}
 		"9055"
@@ -35464,6 +35469,121 @@
 				}
 			}
 		}
+				"7240"
+		{
+			"name"	"Gluon-Hurting-Device"
+			"prefab"	"valve"
+			"first_sale_date"	"2011/03/22"
+			"item_class"	"tf_weapon_pistol"
+			"craft_class"	"weapon"
+			"craft_material_type"	"weapon"
+			"capabilities"
+			{
+				"nameable"		"1"
+			}
+			"tags"
+			{
+				"can_heal_allies"		"1"
+				"can_be_festivized"		"1"
+			}
+			"show_in_armory"	"1"
+			"item_type_name"	"#TF_Weapon_Medigun_Prototype"
+			"item_name"		"Gluon-Hurting-Device"
+			"item_description"	"For when ze hurting is required."
+			"propername"		"1"
+			"item_slot"		"secondary"
+			"equip_region"	"medigun_backpack"
+			"image_inventory"	"backpack/workshop/weapons/c_models/c_medigun_defense/c_medigun_defense"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"82"
+			"model_player"	"workshop/weapons/c_models/c_medigun_defense/c_medigun_defense.mdl"
+			"extra_wearable" "workshop/weapons/c_models/c_medigun_defense/c_medigun_defensepack.mdl"
+			"attach_to_hands"	"1"
+			"item_quality"	"unique"
+			"min_ilevel"	"8"
+			"max_ilevel"	"8"
+			"used_by_classes"
+			{
+				"medic"	"1"
+			}
+			"static_attrs"
+			{
+				"min_viewmodel_offset"		"10 0 -9"
+			}
+			"attributes"
+			{
+				"mod max primary clip override"
+				{
+					"attribute_class"	"mod_max_primary_clip_override"
+					"value"	"-1"
+				}
+				"fire rate bonus"
+				{
+					"attribute_class"	"mult_postfiredelay"
+					"value" "0.4"
+				}
+				"maxammo secondary increased"
+				{
+					"attribute_class"	"mult_maxammo_secondary"
+					"value"	"2.34"
+				}
+				"damage penalty"
+				{
+					"attribute_class"	"mult_dmg"
+					"value"	"0.5"
+				}
+				"weapon spread bonus"
+				{
+					"attribute_class"	"mult_spread_scale"
+					"value"	"0.7"
+				}
+			}
+			"visuals"
+			{
+				"player_bodygroups"
+				{
+					"medic_backpack"			"1"
+				}
+				"sound_single_shot"	"Weapon_Bison.Single"
+				"sound_burst"		"Weapon_Bison.SingleCrit"
+				"sound_reload"		"Weapon_Bison.Reload"
+				"muzzle_flash"		"muzzle_raygun_red"
+				"tracer_effect"	"bullet_tracer02"
+			}
+			"visuals_red"
+			{
+				"attached_models_festive"
+				{
+					"0"
+					{
+						"model"	"models/weapons/c_models/c_proto_medigun/c_proto_medigun_festivizer.mdl"
+					}
+				}
+				"skin" "0"
+				"custom_particlesystem"
+				{
+					"system"	"medicgun_beam_attrib_overheal_red"
+				}
+			}
+			"visuals_blu"
+			{
+				"attached_models_festive"
+				{
+					"0"
+					{
+						"model"	"models/weapons/c_models/c_proto_medigun/c_proto_medigun_festivizer.mdl"
+					}
+				}
+				"skin" "1"
+				"custom_particlesystem"
+				{
+					"system"	"medicgun_beam_attrib_overheal_blue"
+				}
+			}
+			"mouse_pressed_sound"	"ui/item_heavy_gun_pickup.wav"
+			"drop_sound"		"ui/item_heavy_gun_drop.wav"
+		}
+
 		"30570"
 		{
 			"name"		"Pool Party Taunt"
