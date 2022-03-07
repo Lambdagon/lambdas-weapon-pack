@@ -34213,7 +34213,7 @@
 			"show_in_armory"	"1"
 			"item_type_name"	"#TF_Weapon_Flamethrower"
 			"item_name"	"Cremator's Touch"
-			"item_description"	"yep."
+			"item_description"	"BUBBLES BURN"
 			"item_slot"	"primary"
 			"image_inventory"	"backpack/workshop/weapons/c_models/c_drg_phlogistinator/c_drg_phlogistinator"
 			"image_inventory_size_w"		"128"
@@ -34231,6 +34231,7 @@
 			"static_attrs"
 			{
 				"min_viewmodel_offset"					"10 0 -12"		
+				"crits_become_minicrits"				"1"
 			}
 			"visuals"
 			{
@@ -34261,7 +34262,22 @@
 				"damage bonus"
 				{
 					"attribute_class"	"mult_dmg"
-					"value"	"1.45"
+					"value"	"1.50"
+				}
+				"crit mod disabled"
+				{
+					"attribute_class"	"mult_crit_chance"
+					"value"	"1"
+				}
+				"max health additive penalty"
+				{
+					"attribute_class"	"add_maxhealth"
+					"value" "-15"
+				}
+				"dmg taken from fire increased"
+				{
+					"attribute_class"	"mult_dmgtaken_from_fire"
+					"value"			"1.75"
 				}
 			}
 			"mouse_pressed_sound"	"ui/item_heavy_gun_pickup.wav"
