@@ -3524,7 +3524,6 @@
 			"used_by_classes"
 			{
 				"sniper"	"1"
-				"scout"	"1"
 			}
 			"static_attrs"
 			{
@@ -21356,7 +21355,7 @@
 			"name"		"The Head Prize"
 			"prefab"		"no_craft hat marketable"
 			"first_sale_date"		"2016/12/15"
-			"item_name"		"The Head Prize"
+			"item_name"		"Head Prize"
 			"item_description"		"Why did Lambdagon add this"
 			"equip_region"		"hat"
 			"propername"		"1"
@@ -22645,7 +22644,7 @@
 				"limited quantity item"		"1"
 			}
 		}
-				"6912"
+		"6912"
 		{
 			"name"	"The Sydney Sleeper"
 			"first_sale_date"	"2010/09/29"
@@ -22883,7 +22882,7 @@
 			"name"	"The Lamarr Lid"
 			"prefab"	"hat"
 			"craft_class"	""
-			"item_name"	"The Lamarr Lid"
+			"item_name"	"Lamarr Lid"
 			"item_description"	"Lamarr? There you are!"
 			"image_inventory"	"materials\models\gman\gman_facehirez.vtf"
 			"model_player"	"models/lamarr.mdl"
@@ -23599,6 +23598,7 @@
 			"item_type_name"		"#TF_Wearable_Costume"
 			"item_name"		"#TF_hw2013_grease_monkey"
 			"item_description"		"This pic goes so hard. 20 Etherium to screenshot."
+			"item_slot"	"misc2"
 			"equip_region"		"face"
 			"propername"		"1"
 			"visuals"
@@ -23896,7 +23896,7 @@
 			"image_inventory"	"backpack/workshop/weapons/c_models/c_demo_cannon/c_demo_cannon"
 			"model_player"		"models/workshop/weapons/c_models/c_demo_cannon/c_demo_cannon.mdl"
 			"item_slot"			"secondary"
-			"show_in_armory" "1"
+			"show_in_armory" "0"
 			"min_ilevel"	"1"
 			"max_ilevel"	"99"
 			"anim_slot" "MELEE_ALLCLASS"
@@ -23960,7 +23960,7 @@
 			}
 			"set_item_remap"	"Mad Milk"
 		}
-				"6940"
+		"6940"
 		{
 			"name"	"HL2 AR2"
 			"item_class"	"tf_weapon_smg"
@@ -25945,7 +25945,7 @@
 			"item_type_name"	"Shield Pot"
 			"item_name"	"Shield Pot (thrown)"
 			"item_slot"	"secondary"
-			"show_in_armory"	"1"
+			"show_in_armory"	"0"
 			"item_quality"	"unique"
 			"anim_slot"	"item1"
 			"min_ilevel"	"5"
@@ -26745,9 +26745,8 @@
 			"prefab"	"valve halloween_costume_piece_2011 base_misc"
 			"item_name"	"#TF_Hwn_MedicMisc2"
 			"item_description"	"#TF_Hwn_MedicMisc2_Desc"
-			"item_slot" "misc"
+			"item_slot" "misc2"
 			"propername"	"1"
-			"item_slot"	"misc"
 			"equip_region"	"medigun_accessories"
 			"image_inventory"	"backpack/player/items/medic/hwn_medic_misc2"
 			"model_player"	"models/player/items/medic/hwn_medic_misc2.mdl"
@@ -29144,7 +29143,6 @@
 			"prefab"	"backpack"
 			"craft_class"	""
 			"item_name"	"#TF_Medic_Robot_Backpack"
-			"item_slot"	"misc2"
 			"item_description"	"#TF_Medic_Robot_Backpack_Desc"
 			"image_inventory"	"backpack/player/items/mvm_loot/medic/robo_backpack"
 			"model_player"	"models/player/items/mvm_loot/medic/robo_backpack.mdl"
@@ -29287,7 +29285,7 @@
 			"inspect_panel_dist"        "45"			
 			"attach_to_hands"	"1"
 			"model_player"	"models/workshop/weapons/c_models/c_invasion_bat/c_invasion_bat.mdl"
-			"show_in_armory"	"1"
+			"show_in_armory"	"0"
 			"used_by_classes"
 			{
 				"scout"	"1"
@@ -34829,7 +34827,7 @@
 				"max health additive bonus"
 				{
 					"attribute_class"	"add_maxhealth"
-					"value" "15"
+					"value" "20"
 				}
 				"overheal penalty"
 				{
@@ -35469,7 +35467,7 @@
 				}
 			}
 		}
-				"7240"
+		"7240"
 		{
 			"name"	"Gluon-Hurting-Device"
 			"prefab"	"valve"
@@ -35532,11 +35530,15 @@
 					"attribute_class"	"mult_dmg"
 					"value"	"0.5"
 				}
+				"crit mod disabled"
+				{
+					"attribute_class"	"mult_crit_chance"
+					"value"	"0"
+				}
 				"weapon spread bonus"
 				{
 					"attribute_class"	"mult_spread_scale"
 					"value"	"0.7"
-				}
 			}
 			"visuals"
 			{
@@ -35583,7 +35585,24 @@
 			"mouse_pressed_sound"	"ui/item_heavy_gun_pickup.wav"
 			"drop_sound"		"ui/item_heavy_gun_drop.wav"
 		}
-
+		"7241"
+		{
+			"name"	"Emerald Piss"
+			"prefab"	"backpack"
+			"craft_class"	""
+			"item_name"	"Emerald Piss"
+			"item_slot"	"misc2"
+			"item_description"	"Piss"
+			"image_inventory"	"backpack/player/items/medic/hwn_medic_misc2"
+			"model_player"	"models/player/items/medic/hwn_medic_misc2.mdl"
+			"propername"	"1"
+			"used_by_classes"
+			{
+				"medic" "1"
+			}
+			"mouse_pressed_sound"	"ui/item_pack_pickup.wav"
+			"drop_sound"		"ui/item_pack_drop.wav"
+		}
 		"30570"
 		{
 			"name"		"Pool Party Taunt"
