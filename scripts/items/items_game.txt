@@ -15095,6 +15095,7 @@
 			"mouse_pressed_sound"	"ui/item_pack_pickup.wav"
 			"drop_sound"		"ui/item_pack_drop.wav"
 		}
+
 		"1102"
 		{
 			"name"	"The Snack Attack"
@@ -20902,6 +20903,11 @@
 			}
 			"attributes"
 			{
+				"sanguisuge"
+				{
+					"attribute_class"	"sanguisuge"
+					"value"	"1"
+				}
 				"max health additive penalty"
 				{
 					"attribute_class"	"add_maxhealth"
@@ -27821,7 +27827,7 @@
 			"item_type_name"	"#TF_Weapon_Knife"
 			"propername"	"1"
 			"item_quality"	"unique"
-			"item_name"			"The Butter Knife"
+			"item_name"			"Butter Knife"
 			"item_description"	"Butter Side Down"
 			"item_slot"	"melee"
 			"item_logname"	"The_Butter_Knife"
@@ -29075,6 +29081,11 @@
 					"attribute_class"	"add_maxhealth"
 					"value" "50"
 				}
+ 		                "turn to gold"
+           		        {
+              		        "attribute_class"    "set_turn_to_gold"
+          		        "value" "1"
+            			}
 				"move speed bonus"
 				{
 					"attribute_class"	"mult_player_movespeed"
@@ -29144,6 +29155,7 @@
 			"craft_class"	""
 			"item_name"	"#TF_Medic_Robot_Backpack"
 			"item_description"	"#TF_Medic_Robot_Backpack_Desc"
+			"item_slot"	"misc2"
 			"image_inventory"	"backpack/player/items/mvm_loot/medic/robo_backpack"
 			"model_player"	"models/player/items/mvm_loot/medic/robo_backpack.mdl"
 			"propername"	"1"
@@ -29154,7 +29166,7 @@
 			"mouse_pressed_sound"	"ui/item_pack_pickup.wav"
 			"drop_sound"		"ui/item_pack_drop.wav"
 		}
-		"7073"
+		"7073"	
 		{
 			"name"	"The Tin Pot"
 			"prefab"	"hat"
@@ -31378,30 +31390,40 @@
 			}
 			"attributes"
 			{
-				"revolver use hit locations"
+				"damage bonus"
 				{
-					"attribute_class"	"set_weapon_mode"
-					"value"	"1"
+					"attribute_class"	"mult_dmg"
+					"value"	"1.15"
 				}
-				"fire rate penalty"
+ 		                "turn to gold"
+           		        {
+              		        "attribute_class"    "set_turn_to_gold"
+          		        "value" "1"
+            			}
+				"max health additive bonus"
+				{
+					"attribute_class"	"add_maxhealth"
+					"value" "15"
+				}
+				"fire rate bonus"
 				{
 					"attribute_class"	"mult_postfiredelay"
-					"value"	"1.9"
+					"value" "0.80"
 				}
-				"weapon spread bonus"
+				"dmg taken from bullets increased"
 				{
-					"attribute_class"	"mult_spread_scale"
-					"value"	"0.01"
+					"attribute_class"	"mult_dmgtaken_from_bullets"
+					"value"	"1.25"
 				}
-				"mult cloak meter regen rate"
+				"clip size penalty"
 				{
-					"attribute_class"	"mult_cloak_meter_regen_rate"
-					"value"	"0.7"
+					"attribute_class"	"mult_clipsize"
+					"value" "0.75"
 				}
-				"elevate quality"
+				"crit mod disabled"
 				{
-					"attribute_class"	"set_elevated_quality"
-					"value"	"1"
+					"attribute_class"	"mult_crit_chance"
+					"value"	"0"
 				}
 			}
 			"visuals"
@@ -34159,6 +34181,11 @@
 					"attribute_class"	"mult_player_movespeed"
 					"value" "1.70"
 				}
+				"damage penalty"
+				{
+					"attribute_class"	"mult_dmg"
+					"value"	"0.65"
+				}
 			}
 		}
 		"7224"
@@ -35539,6 +35566,7 @@
 				{
 					"attribute_class"	"mult_spread_scale"
 					"value"	"0.7"
+				}
 			}
 			"visuals"
 			{
@@ -35602,6 +35630,288 @@
 			}
 			"mouse_pressed_sound"	"ui/item_pack_pickup.wav"
 			"drop_sound"		"ui/item_pack_drop.wav"
+		}
+		"7242"
+		{
+			"name"	"Unarmed Combat With Stats"
+			"first_sale_date"	"2011/10/28"
+			"item_class"	"tf_weapon_bat_fish"
+			"craft_material_type"	"weapon"
+			"craft_class"		"weapon"
+			"capabilities"
+			{
+				"nameable"		"1"
+				"can_craft_count"	"1"
+			}
+			"tags"
+			{
+				"can_deal_damage"			"1"
+				"can_deal_critical_damage"	"1"
+			}
+			"show_in_armory"	"1"
+			"item_type_name"	"#TF_Weapon_Severed_Arm"
+			"item_name"	"Unarmed Combat With Stats"
+			"item_description"	"So nice of the Spy to lend an arm..."
+			"item_slot"	"melee"
+			"item_quality"	"unique"
+			"item_logname"	"unarmed_combat"
+			"item_iconname"	"unarmed_combat"
+			"min_ilevel"	"1"
+			"max_ilevel"	"100"
+			"attach_to_hands"	"1"
+			"image_inventory"	"backpack/workshop/weapons/c_models/c_unarmed_combat/c_unarmed_combat"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"82"
+			"inspect_panel_dist" 				"45"
+			"model_player"	"models/workshop/weapons/c_models/c_unarmed_combat/c_unarmed_combat.mdl"
+			"used_by_classes"
+			{
+				"scout"	"1"
+			}
+			"static_attrs"
+			{
+				"min_viewmodel_offset"					"15 11 -9"
+			}
+			"attributes"
+			{
+				"fish damage override"
+				{
+					"attribute_class"	"fish_damage_override"
+					"value"				"1"
+				}
+				"scattergun has knockback"
+				{
+					"attribute_class"	"set_scattergun_has_knockback"
+					"value"	"1"
+				}
+				"damage penalty"
+				{
+					"attribute_class"	"mult_dmg"
+					"value"	"0.65"
+				}
+				"kill eater score type"
+				{
+					"attribute_class"	"kill_eater_score_type"
+					"value" 	"7"									
+				}
+				"kill eater kill type"
+				{
+					"attribute_class"	"kill_eater_kill_type"
+					"value"	"7"			
+				}
+			}
+			"visuals"
+			{
+				"sound_melee_hit"	"Weapon_HolyMackerel.HitFlesh"
+				"sound_melee_hit_world"	"Weapon_HolyMackerel.HitWorld"
+			}
+			"visuals_red"
+			{
+				"skin"  "0"
+				"sound_melee_hit"  "Weapon_HolyMackerel.HitFlesh"
+				"sound_melee_hit_world"  "Weapon_HolyMackerel.HitWorld"
+			}
+			"visuals_blu"
+			{
+				"skin"  "1"
+				"sound_melee_hit"  "Weapon_HolyMackerel.HitFlesh"
+				"sound_melee_hit_world"  "Weapon_HolyMackerel.HitWorld"
+			}
+			"mouse_pressed_sound"	"ui/item_gooey_pickup.wav"
+			"drop_sound"		"ui/item_gooey_pickup.wav"
+		}
+		"7243"
+		{
+			"name"	"The Wanga Prick"
+			"first_sale_date"	"2010/09/29"
+			"prefab"	"weapon_eternal_reward"
+			"capabilities"
+			{
+				"nameable"		"1"
+			}
+			"tags"
+			{
+				"can_deal_damage"			"1"
+				"can_deal_taunt_damage"		"1"
+			}
+			"show_in_armory"	"1"
+			"item_name"	"Wanga Prick"
+			"propername"	"0"
+			"item_logname"	"voodoo_pin"
+			"item_iconname"	"voodoo_pin"
+			"inspect_panel_dist" "38"
+			"image_inventory"	"backpack/workshop/weapons/c_models/c_voodoo_pin/c_voodoo_pin"
+			"model_player"	"models/workshop/weapons/c_models/c_voodoo_pin/c_voodoo_pin.mdl"
+			"static_attrs"
+			{
+				"min_viewmodel_offset"		"5 0 -4"
+			}
+		}
+		"7244"
+		{
+			"name"	"The Sharp Dresser"
+			"first_sale_date"	"2011/03/08"
+			"prefab"	"weapon_spy_knife_item2"
+			"show_in_armory"	"1"
+			"capabilities"
+			{
+				"nameable"		"1"
+			}
+			"tags"
+			{
+				"can_deal_damage"			"1"
+				"can_deal_taunt_damage"		"1"
+			}
+			"item_name"	"Sharp Dresser"
+			"item_description"	"Every merc's crazy for a sharp-dressed man. With 15th century murder-knives extruding from his cufflinks."
+			"propername"	"0"
+			"item_logname"	"sharp_dresser"
+			"item_iconname"	"sharp_dresser"
+			"inspect_panel_dist" "35"
+			"image_inventory"	"models/workshop/weapons/c_models/c_acr_hookblade/c_acr_hookblade.mdl"
+			"model_player"	"models/workshop/weapons/c_models/c_acr_hookblade/c_acr_hookblade.mdl"
+			"static_attrs"
+			{
+				"min_viewmodel_offset"		"10 0 -6"
+			}
+			"anim_slot"	"ITEM1"
+			"visuals"
+			{
+				"sound_melee_hit"	"Weapon_Assassin_Knife.HitFlesh"
+
+				"animation_replacement"
+				{
+					"ACT_VM_DRAW"	"ACT_ITEM1_VM_DRAW"
+					"ACT_VM_IDLE"	"ACT_ITEM1_VM_IDLE"
+					"ACT_VM_HITCENTER"	"ACT_ITEM1_VM_HITCENTER"
+					"ACT_VM_HITCENTER2"	"ACT_ITEM1_VM_HITCENTER2"
+					"ACT_VM_SWINGHARD"	"ACT_ITEM1_VM_SWINGHARD"
+					"ACT_BACKSTAB_VM_UP"	"ACT_ITEM1_BACKSTAB_VM_UP"
+					"ACT_BACKSTAB_VM_DOWN"	"ACT_ITEM1_BACKSTAB_VM_DOWN"
+					"ACT_BACKSTAB_VM_IDLE"	"ACT_ITEM1_BACKSTAB_VM_IDLE"
+					"ACT_MELEE_VM_STUN"	"ACT_MELEE_VM_ITEM1_STUN"
+					"ACT_MELEE_VM_INSPECT_START"	"ACT_ITEM1_VM_INSPECT_START"
+					"ACT_MELEE_VM_INSPECT_IDLE"		"ACT_ITEM1_VM_INSPECT_IDLE"
+					"ACT_MELEE_VM_INSPECT_END"		"ACT_ITEM1_VM_INSPECT_END"
+				}
+			}
+			"attributes"
+			{
+				"special taunt"
+				{
+					"attribute_class"	"special_taunt"
+					"value" "1"
+				}
+			}
+		}
+		"7245"
+		{
+			"name"	"The Banana Attack"
+			"prefab"	"valve weapon_sapper"
+			"first_sale_date"		"2014/06/18"
+			"capabilities"
+			{
+				"nameable"		"1"
+			}
+			"item_class"	"tf_weapon_sapper"
+			"craft_class" ""
+			"craft_material_type"	"weapon"
+			"show_in_armory"	"1"
+			"propername"	"1"
+			"item_type_name"	"#TF_Weapon_Spy_Sapper"
+			"item_name"	"Banana Attack"
+			"item_description"	"Banana man"
+			"item_logname"	"bananana_attack"
+			"item_iconname"	"bananana_attack"
+			"image_inventory"	"backpack/weapons/c_models/c_banana/c_banana"
+			"min_ilevel"	"1"
+			"max_ilevel"	"100"
+			"inspect_panel_dist" 			"25"
+			"anim_slot"	"building"
+			"model_player"	"models/weapons/c_models/c_banana/c_banana.mdl"
+			"model_world"	"models/weapons/c_models/c_banana/c_banana.mdl"
+			"visuals"
+			{
+				"animation_replacement"
+				{
+					"ACT_VM_DRAW"			"ACT_BREADSAPPER_VM_DRAW"
+					"ACT_VM_DRAW_DEPLOYED"	"ACT_BREADSAPPER_VM_DRAW"
+					"ACT_VM_IDLE"			"ACT_BREADSAPPER_VM_IDLE"
+
+					"ACT_BUILDING_VM_INSPECT_START"		"ACT_BREADMONSTER_VM_INSPECT_START"
+					"ACT_BUILDING_VM_INSPECT_IDLE"		"ACT_BREADMONSTER_VM_INSPECT_IDLE"
+					"ACT_BUILDING_VM_INSPECT_END"		"ACT_BREADMONSTER_VM_INSPECT_END"
+				}
+			}
+			"static_attrs"
+			{
+				"limited quantity item"		"1"
+				"min_viewmodel_offset"		"10 0 -6"				
+			}
+		}
+		"7246"
+		{
+			"name"	"The Banana and Bagger"
+			"prefab"	"valve"
+			"first_sale_date"	"2010/09/29"
+			"item_class"	"tf_weapon_invis"
+			"craft_class"	"weapon"
+			"craft_material_type"	"weapon"
+			"capabilities"
+			{
+				"nameable"		"1"
+			}
+			"show_in_armory"	"1"
+			"item_type_name"	"#TF_Weapon_Watch"
+			"item_name"	"Banana and Bagger"
+			"item_slot"	"pda2"
+			"anim_slot" "FORCE_NOT_USED"
+			"item_quality"	"unique"
+			"propername"	"1"
+			"min_ilevel"	"5"
+			"max_ilevel"	"5"
+			"image_inventory"	"backpack/weapons/c_models/c_banana/c_banana"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"82"
+			"model_player"	"models/weapons/c_models/c_banana/c_banana.mdl"
+			"used_by_classes"
+			{
+				"spy"	"1"
+			}
+			"static_attrs"
+			{
+				"min_viewmodel_offset"					"8 0 -6"	
+			}
+			"attributes"
+			{
+				"kill eater score type"
+				{
+					"attribute_class"	"kill_eater_score_type"
+					"value" 	"58" 
+				}
+				"set cloak is movement based"
+				{
+					"attribute_class"	"set_weapon_mode"
+					"value"	"2"
+				}
+				"mult cloak meter regen rate"
+				{
+					"attribute_class"	"mult_cloak_meter_regen_rate"
+					"value"	"2.0"
+				}
+				"NoCloakWhenCloaked"
+				{
+					"attribute_class"	"NoCloakWhenCloaked"
+					"value"	"1"
+				}
+				"ReducedCloakFromAmmo"
+				{
+					"attribute_class"	"ReducedCloakFromAmmo"
+					"value"	"0.65"
+				}
+			}
+			"mouse_pressed_sound"	"ui/item_watch_pickup.wav"
+			"drop_sound"		"ui/item_watch_drop.wav"
 		}
 		"30570"
 		{
