@@ -34698,7 +34698,7 @@
 			"image_inventory_size_w"		"128"
 			"image_inventory_size_h"		"82"
                         "model_player"        "models/weapons/v_pistol.mdl"
-        	        "model_world"        "models/weapons/w_pistol.mdl"
+        	        "model_world"        "models/workshop/weapons/c_models/c_pep_pistol/c_pep_pistol.mdl"
 			"attach_to_hands"	"0"
 			"item_quality"	"unique"
 			"propername"	"1"
@@ -34723,7 +34723,7 @@
 				"damage bonus"
 				{
 					"attribute_class"	"mult_dmg"
-					"value"	"3.5"
+					"value"	"4"
 				}
 				"clip size penalty"
 				{
@@ -35689,6 +35689,11 @@
 					"attribute_class"	"speed_buff_ally"
 					"value"	"1"
 				}
+				"scattergun knockback mult"
+				{
+					"attribute_class"	"scattergun_knockback_mult"
+					"value"	"2.5"
+				}
 				"melee range multiplier"
 				{
 					"attribute_class"	"melee_range_multiplier"
@@ -35922,6 +35927,322 @@
 			}
 			"mouse_pressed_sound"	"ui/item_watch_pickup.wav"
 			"drop_sound"		"ui/item_watch_drop.wav"
+		}
+		"7247"
+		{
+			"name"		"The Ticket Boy"
+			"propername"		"1"
+			"prefab"		"misc"
+			"first_sale_date"		"2014/09/15"
+			"item_type_name"		"#TF_Wearable_Apparel"
+			"item_name"		"#TF_sbox2014_ticket_boy"
+			"item_description"		"#TF_sbox2014_ticket_boy_Desc"
+			"equip_region"		"shirt"
+			"visuals"
+			{
+				"player_bodygroups"
+				{
+					"dogtags"		"1"
+				}
+			}
+			"image_inventory"		"backpack/workshop/player/items/scout/sbox2014_ticket_boy/sbox2014_ticket_boy"
+			"capabilities"
+			{
+				"can_craft_count"		"1"
+				"paintable"		"1"
+			}
+			"model_player"		"models/workshop/player/items/scout/sbox2014_ticket_boy/sbox2014_ticket_boy.mdl"
+			"used_by_classes"
+			{
+				"scout"		"1"
+			}
+			"mouse_pressed_sound"		"ui/item_hat_pickup.wav"
+			"drop_sound"		"ui/item_hat_drop.wav"
+		}
+		"7248"
+		{
+			"name"		"Jungle Jersey"
+			"prefab"		"no_craft misc marketable"
+			"item_name"		"#TF_fall17_jungle_jersey"
+			"item_description"		"#TF_fall17_jungle_jersey_Desc"
+			"item_type_name"		"#TF_Wearable_Apparel"
+			"equip_region"		"shirt"
+			"visuals"
+			{
+				"player_bodygroups"
+				{
+					"dogtags"		"1"
+				}
+			}
+			"image_inventory"		"backpack/workshop/player/items/scout/fall17_jungle_jersey/fall17_jungle_jersey"
+			"capabilities"
+			{
+				"can_craft_count"		"1"
+				"paintable"		"1"
+			}
+			"model_player"		"models/workshop/player/items/scout/fall17_jungle_jersey/fall17_jungle_jersey.mdl"
+			"used_by_classes"
+			{
+				"scout"		"1"
+			}
+			"mouse_pressed_sound"		"ui/item_hat_pickup.wav"
+			"drop_sound"		"ui/item_hat_drop.wav"
+		}
+		"7249"
+		{
+			"name"		"The Cool Cat Cardigan"
+			"prefab"		"misc"
+			"first_sale_date"		"2013/08/26"
+			"item_type_name"		"#TF_Wearable_Apparel"
+			"item_name"		"#TF_jul13_the_cunningmann"
+			"item_description"		"#TF_jul13_the_cunningmann_Desc"
+			"equip_region"		"shirt"
+			"propername"		"1"
+			"visuals"
+			{
+				"player_bodygroups"
+				{
+					"dogtags"		"1"
+				}
+			}
+			"image_inventory"		"backpack/workshop/player/items/scout/jul13_the_cunningmann/jul13_the_cunningmann"
+			"capabilities"
+			{
+				"paintable"		"1"
+				"can_craft_count"		"1"
+			}
+			"model_player"		"models/workshop/player/items/scout/jul13_the_cunningmann/jul13_the_cunningmann.mdl"
+			"used_by_classes"
+			{
+				"scout"		"1"
+			}
+			"mouse_pressed_sound"		"ui/item_hat_pickup.wav"
+			"drop_sound"		"ui/item_hat_drop.wav"
+		}
+		"7250"
+		{
+			"name"		"Fowl Fists"
+			"prefab"		"halloween2014 no_craft misc"
+			"item_name"		"#TF_sf14_fowl_fists"
+			"item_description"		"#TF_sf14_fowl_fists_Desc"
+			"item_type_name"		"#TF_Wearable_Costume"
+			"equip_region"		"sleeves"
+			"propername"		"1"
+			"image_inventory"		"backpack/workshop/player/items/scout/sf14_fowl_fists/sf14_fowl_fists"
+			"capabilities"
+			{
+				"can_craft_count"		"1"
+				"paintable"		"1"
+			}
+			"model_player"		"models/workshop/player/items/scout/sf14_fowl_fists/sf14_fowl_fists.mdl"
+			"used_by_classes"
+			{
+				"scout"		"1"
+			}
+			"mouse_pressed_sound"		"ui/item_hat_pickup.wav"
+			"drop_sound"		"ui/item_hat_drop.wav"
+		}
+		"7251"
+		{
+			"name"		"Messenger's Mail Bag"
+			"prefab"		"no_craft misc marketable"
+			"item_name"		"#TF_spr17_messengers_mail_bag"
+			"item_description"		"#TF_spr17_messengers_mail_bag_Desc"
+			"item_slot"	"misc2"
+			"item_type_name"		"#TF_Wearable_MailBag"
+			"equip_region"		"scout_backpack"
+			"image_inventory"		"backpack/workshop/player/items/scout/spr17_messengers_mail_bag/spr17_messengers_mail_bag"
+			"capabilities"
+			{
+				"can_craft_count"		"1"
+			}
+			"model_player"		"models/workshop/player/items/scout/spr17_messengers_mail_bag/spr17_messengers_mail_bag.mdl"
+			"used_by_classes"
+			{
+				"scout"		"1"
+			}
+			"mouse_pressed_sound"		"ui/item_bag_pickup.wav"
+			"drop_sound"		"ui/item_bag_drop.wav"
+		}
+		"7252"
+		{
+			"name"		"Courtly Cuirass"
+			"prefab"		"no_craft misc marketable"
+			"item_name"		"#TF_may16_courtly_cuirass"
+			"item_description"		"#TF_may16_courtly_cuirass_Desc"
+			"item_type_name"		"#TF_Wearable_Armor"
+			"equip_region"		"shirt"
+			"image_inventory"		"backpack/workshop/player/items/scout/medieval_glory_armor/medieval_glory_armor"
+			"capabilities"
+			{
+				"can_craft_count"		"1"
+			}
+			"model_player"		"models/workshop/player/items/scout/medieval_glory_armor/medieval_glory_armor.mdl"
+			"used_by_classes"
+			{
+				"scout"		"1"
+			}
+			"mouse_pressed_sound"		"ui/item_hat_pickup.wav"
+			"drop_sound"		"ui/item_hat_drop.wav"
+		}
+		"7253"
+		{
+			"name"		"Flak Jack"
+			"prefab"		"no_craft misc marketable"
+			"item_name"		"#TF_cc_summer2015_flak_jack"
+			"item_description"		"#TF_cc_summer2015_flak_jack_Desc"
+			"item_slot"	"misc2"
+			"item_type_name"		"#TF_Wearable_Vest"
+			"equip_region"		"shirt"
+			"image_inventory"		"backpack/workshop/player/items/scout/cc_summer2015_flak_jack/cc_summer2015_flak_jack"
+			"capabilities"
+			{
+				"can_craft_count"		"1"
+			}
+			"model_player"		"models/workshop/player/items/scout/cc_summer2015_flak_jack/cc_summer2015_flak_jack.mdl"
+			"used_by_classes"
+			{
+				"scout"		"1"
+			}
+			"mouse_pressed_sound"		"ui/item_hat_pickup.wav"
+			"drop_sound"		"ui/item_hat_drop.wav"
+		}
+		"7254"
+		{
+			"name"		"Pocket Pauling"
+			"prefab"		"no_craft misc marketable"
+			"item_name"		"#TF_spr17_pocket_pauling"
+			"item_description"		"#TF_spr17_pocket_pauling_Desc"
+			"item_slot"	"misc2"
+			"item_type_name"		"#TF_Wearable_PocketBuddy"
+			"equip_region"		"scout_backpack"
+			"image_inventory"		"backpack/workshop/player/items/scout/spr17_pocket_pauling/spr17_pocket_pauling"
+			"capabilities"
+			{
+				"can_craft_count"		"1"
+			}
+			"model_player"		"models/workshop/player/items/scout/spr17_pocket_pauling/spr17_pocket_pauling.mdl"
+			"used_by_classes"
+			{
+				"scout"		"1"
+			}
+			"attributes"
+			{
+				"counts as assister is some kind of pet this update is going to be awesome"
+				{
+					"attribute_class"		"counts_as_assister"
+					"value"		"1"
+				}
+			}
+			"mouse_pressed_sound"		"ui/item_hat_pickup.wav"
+			"drop_sound"		"ui/item_hat_drop.wav"
+		}
+		"7255"
+		{
+			"name"		"The Flapjack"
+			"prefab"		"misc"
+			"first_sale_date"		"2013/10/09"
+			"item_type_name"		"#TF_Wearable_Apparel"
+			"item_name"		"#TF_fall2013_neo_tokyo_runner"
+			"item_description"		"#TF_fall2013_neo_tokyo_runner_Desc"
+			"equip_region"		"shirt"
+			"propername"		"1"
+			"visuals"
+			{
+				"player_bodygroups"
+				{
+					"dogtags"		"1"
+				}
+			}
+			"image_inventory"		"backpack/workshop/player/items/scout/fall2013_neo_tokyo_runner/fall2013_neo_tokyo_runner"
+			"capabilities"
+			{
+				"paintable"		"1"
+				"can_craft_count"		"1"
+			}
+			"model_player"		"models/workshop/player/items/scout/fall2013_neo_tokyo_runner/fall2013_neo_tokyo_runner.mdl"
+			"used_by_classes"
+			{
+				"scout"		"1"
+			}
+			"mouse_pressed_sound"		"ui/item_hat_pickup.wav"
+			"drop_sound"		"ui/item_hat_drop.wav"
+		}
+		"7256"
+		{
+			"name"		"The Delinquent's Down Vest"
+			"prefab"		"misc"
+			"first_sale_date"		"2013/08/26"
+			"item_type_name"		"#TF_Wearable_Apparel"
+			"item_name"		"#TF_jul13_scout_vestjacket"
+			"item_description"		"#TF_jul13_scout_vestjacket_Desc"
+			"equip_region"		"shirt"
+			"image_inventory"		"backpack/workshop/player/items/scout/jul13_scout_vestjacket/jul13_scout_vestjacket"
+			"propername"		"1"
+			"capabilities"
+			{
+				"paintable"		"1"
+				"can_craft_count"		"1"
+			}
+			"model_player"		"models/workshop/player/items/scout/jul13_scout_vestjacket/jul13_scout_vestjacket.mdl"
+			"used_by_classes"
+			{
+				"scout"		"1"
+			}
+			"mouse_pressed_sound"		"ui/item_hat_pickup.wav"
+			"drop_sound"		"ui/item_hat_drop.wav"
+		}
+		"7257"
+		{
+			"name"		"The Little Drummer Mann"
+			"prefab"		"misc"
+			"first_sale_date"		"2013/12/19"
+			"item_type_name"		"#TF_Wearable_Shirt"
+			"item_name"		"#TF_xms2013_scout_drummer_shirt"
+			"item_description"		"#TF_xms2013_scout_drummer_shirt_Desc"
+			"equip_region"		"shirt"
+			"propername"		"1"
+			"image_inventory"		"backpack/workshop/player/items/scout/xms2013_scout_drummer_shirt/xms2013_scout_drummer_shirt"
+			"capabilities"
+			{
+				"paintable"		"1"
+			}
+			"model_player"		"models/workshop/player/items/scout/xms2013_scout_drummer_shirt/xms2013_scout_drummer_shirt.mdl"
+			"used_by_classes"
+			{
+				"scout"		"1"
+			}
+			"mouse_pressed_sound"		"ui/item_hat_pickup.wav"
+			"drop_sound"		"ui/item_hat_drop.wav"
+		}
+		"7258"
+		{
+			"name"		"The Pompous Privateer"
+			"prefab"		"no_craft misc marketable"
+			"item_name"		"#TF_sum19_pompous_privateer"
+			"item_description"		"#TF_sum19_pompous_privateer_Desc"
+			"item_type_name"		"#TF_Wearable_Shirt"
+			"equip_region"		"shirt"
+			"propername"		"1"
+			"visuals"
+			{
+				"player_bodygroups"
+				{
+					"dogtags"		"1"
+				}
+			}
+			"image_inventory"		"backpack/workshop/player/items/scout/sum19_pompous_privateer/sum19_pompous_privateer"
+			"capabilities"
+			{
+				"can_craft_count"		"1"
+			}
+			"model_player"		"models/workshop/player/items/scout/sum19_pompous_privateer/sum19_pompous_privateer.mdl"
+			"used_by_classes"
+			{
+				"scout"		"1"
+			}
+			"mouse_pressed_sound"		"ui/item_hat_pickup.wav"
+			"drop_sound"		"ui/item_hat_drop.wav"
 		}
 		"30570"
 		{
