@@ -26308,12 +26308,12 @@
 				"Blast radius increased"
 				{
 					"attribute_class"	"mult_explosion_radius"
-					"value"	"1.60"
+					"value"	"1.50"
 				}
 				"damage bonus"
 				{
 					"attribute_class"	"mult_dmg"
-					"value"	"1.75"
+					"value"	"1.60"
 				}
 				"reload time increased"
 				{
@@ -36262,7 +36262,7 @@
 		}
 		"7259"
 		{
-			"name" "Festive Lugermorph"
+			"name" "Festive Lugermorph BETA"
 			"capabilities"
 			{
 				"nameable"		"1"
@@ -36280,22 +36280,22 @@
 			"craft_class"	"weapon"
 			"craft_material_type"	"weapon"
 			"item_type_name"	"#TF_Weapon_Pistol"
-			"item_name"	"Festive Lugermorph"
-			"item_description"	"#TF_Weapon_PEP_Pistol_Desc"
-			"item_logname"	"pep_pistol"
-			"item_iconname"	"pep_pistol"
+			"item_name"	"Festive Lugermorph BETA"
+			"item_description"	"Yes I know the model isn't festive"
+			"item_logname"	"maxgun"
+			"item_iconname"	"maxgun"
 			"item_slot"	"secondary"
 			"item_quality"	"unique"
 			"baseitem" "0"
 			"min_ilevel"	"10"
 			"max_ilevel"	"10"
-			"show_in_armory"	"0"
+			"show_in_armory"	"1"
 			"attach_to_hands"	"1"
 			"image_inventory"	"backpack/workshop/weapons/c_models/c_ttg_max_gun/c_ttg_max_gun"
 			"image_inventory_size_w"		"128"
 			"image_inventory_size_h"		"82"
 			"inspect_panel_dist" 			"31"
-			"model_player"	"models/workshop/weapons/c_models/c_ttg_max_gun1/c_ttg_max_gun1.mdl"
+			"model_player"	"models/workshop/weapons/c_models/c_ttg_max_gun/c_ttg_max_gun.mdl"
 			"capabilities"
 			{
 				"can_collect" "1"
@@ -36323,13 +36323,18 @@
 				}
 				"fire rate penalty"
 				{
-				"attribute_class"	"mult_postfiredelay"
-				"value"	"0.3"
+					"attribute_class"	"mult_postfiredelay"
+					"value"	"1.7"
 				}
 				"reload time increased"
 				{
 				"attribute_class"	"mult_reload_time"
-				"value"	"0.8"
+				"value"	"1.20"
+				}
+				"crit mod disabled"
+				{
+					"attribute_class"	"mult_crit_chance"
+					"value"	"0"
 				}
 				"special taunt"
 				{
