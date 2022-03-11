@@ -22841,7 +22841,7 @@
 				"taunt success sound loop"
 				{
 					"attribute_class"		"taunt_success_sound_loop"
-					"value"		"Portal.song_credits"
+					"value"		"lambda.jetstreamsam"
 				}
 			}
 			"taunt"
@@ -37114,6 +37114,46 @@
 			}
 			"mouse_pressed_sound"	"ui/item_light_gun_pickup.wav"
 			"drop_sound"		"ui/item_light_gun_drop.wav"
+		}
+				"7286"
+		{
+			"name"	"Your Infernal Reward"
+			"first_sale_date"	"2010/09/29"
+			"prefab"	"weapon_eternal_reward"
+			"capabilities"
+			{
+				"nameable"		"1"
+			}
+			"tags"
+			{
+				"can_deal_damage"			"1"
+				"can_deal_taunt_damage"		"1"
+			}
+			"show_in_armory"	"1"
+			"item_name"	"Your Infernal Reward"
+			"propername"	"0"
+			"item_logname"	"eternal_reward"
+			"item_iconname"	"eternal_reward"
+			"inspect_panel_dist" "38"
+			"image_inventory"	"backpack/workshop/weapons/c_models/c_eternal_reward/c_eternal_reward"
+			"model_player"	"models/workshop/weapons/c_models/c_eternal_reward/c_eternal_reward.mdl"
+			"used_by_classes"
+			{
+				"pyro"	"1"
+				"spy"	"1"
+			}
+			"static_attrs"
+			{
+				"min_viewmodel_offset"		"5 0 -4"
+			}
+			"attributes"
+			{
+				"Set DamageType Ignite"
+				{
+					"attribute_class"	"set_dmgtype_ignite"
+					"value" "1"
+				}
+			}
 		}
 		"30570"
 		{

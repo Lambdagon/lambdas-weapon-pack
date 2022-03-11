@@ -37082,6 +37082,79 @@
 				}
 			}
 		}
+						"7285"
+		{
+			"name"						"Long scattergun"
+			"prefab"					"weapon_leaverrifle"
+			"item_description"			"what"
+			"item_name"		"Long Scattergun"
+			"item_type_name"		"Anomaly"
+			"image_inventory"			"backpack/weapons/c_models/c_scattergun"
+			"image_inventory_size_w"	"128"
+			"image_inventory_size_h"	"82"
+			"attach_to_hands"			"2"
+			"model_player"				"models/weapons/v_models/v_scattergunalt_scout.mdl"
+			"model_world"				"models/weapons/w_models/w_scattergunalt.mdl"
+			"used_by_classes"
+			{
+				"scout"					"1"
+			}
+			"attributes"
+			{
+				"weapon spread bonus"
+				{
+					"attribute_class"	"mult_spread_scale"
+					"value"	"0.6"
+				}
+				"reload time increased"
+				{
+					"attribute_class"	"mult_reload_time_hidden"
+					"value"	"1.5"
+				}
+			}
+			"mouse_pressed_sound"	"ui/item_light_gun_pickup.wav"
+			"drop_sound"		"ui/item_light_gun_drop.wav"
+		}
+				"7286"
+		{
+			"name"	"Your Infernal Reward"
+			"first_sale_date"	"2010/09/29"
+			"prefab"	"weapon_eternal_reward"
+			"capabilities"
+			{
+				"nameable"		"1"
+			}
+			"tags"
+			{
+				"can_deal_damage"			"1"
+				"can_deal_taunt_damage"		"1"
+			}
+			"show_in_armory"	"1"
+			"item_name"	"Your Infernal Reward"
+			"propername"	"0"
+			"item_logname"	"eternal_reward"
+			"item_iconname"	"eternal_reward"
+			"inspect_panel_dist" "38"
+			"image_inventory"	"backpack/workshop/weapons/c_models/c_eternal_reward/c_eternal_reward"
+			"model_player"	"models/workshop/weapons/c_models/c_eternal_reward/c_eternal_reward.mdl"
+			"used_by_classes"
+			{
+				"pyro"	"1"
+				"spy"	"1"
+			}
+			"static_attrs"
+			{
+				"min_viewmodel_offset"		"5 0 -4"
+			}
+			"attributes"
+			{
+				"Set DamageType Ignite"
+				{
+					"attribute_class"	"set_dmgtype_ignite"
+					"value" "1"
+				}
+			}
+		}
 		"30570"
 		{
 			"name"		"Pool Party Taunt"

@@ -59,15 +59,6 @@
 
 	"wave"		"*#cracklife/blip1.wav"
 }
-"lambda.jetstreamsam"
-{
-	"channel"	"CHAN_BODY"
-	"volume"	"1.0"
-	"soundlevel"	"SNDLVL_75dB"
-	"pitch"		"PITCH_NORM"
-
-	"wave"		"#music/lambda/therewillbeblood.mp3"
-}
 
 
 
