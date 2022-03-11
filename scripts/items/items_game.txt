@@ -26682,6 +26682,7 @@
 			"first_sale_date"	"2010/12/20"
 			"prefab"	"hat_decoration"
 			"item_name"	"#TF_ColoredLights"
+			"item_description"	"Drgregs seems to love this hat"
 			"image_inventory"	"backpack/player/items/engineer/engineer_colored_lights"
 			"model_player"	"models/player/items/engineer/engineer_colored_lights.mdl"
 			"used_by_classes"
