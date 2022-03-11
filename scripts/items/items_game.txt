@@ -33720,7 +33720,7 @@
 				"can_craft_count"	"1"
 				"can_craft_if_purchased"	"1"
 			}
-			"show_in_armory"	"1"
+			"show_in_armory"	"0"
 			"propername"	"1"
 			"min_ilevel"	"10"
 			"max_ilevel"	"10"
@@ -36754,6 +36754,333 @@
 			}
 			"mouse_pressed_sound"		"ui/item_hat_pickup.wav"
 			"drop_sound"		"ui/item_hat_drop.wav"
+		}
+		"7273"
+		{
+			"name"	"Texas Ten Gallon"
+			"prefab"	"valve base_hat"
+			"first_sale_date"	"2010/09/29"
+			"item_class"	"tf_wearable"
+			"loadondemand" "1"
+			"craft_class"	"hat"
+			"craft_material_type"	"hat"
+			"capabilities"
+			{
+				"nameable"		"1"
+				"paintable"		"1"
+				"can_craft_if_purchased"	"1"
+			}
+			"show_in_armory"	"1"
+			"item_type_name"	"#TF_Wearable_Hat"
+			"item_name"	"#TF_Engineer_Cowboy_Hat"
+			"item_description"	"#TF_Engineer_Cowboy_Hat_Desc"
+			"item_slot"	"head"
+			"equip_region"	"hat"
+			"item_quality"	"unique"
+			"image_inventory"	"backpack/player/items/engineer/engineer_cowboy_hat"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"82"
+			"model_player"	"models/player/items/engineer/engineer_cowboy_hat.mdl"
+			"drop_type"	"drop"
+			"used_by_classes"
+			{
+				"engineer"	"1"
+			}
+			"visuals"
+			{
+				"player_bodygroups"
+				{
+					"hat"		"1"
+				}
+			}
+			"mouse_pressed_sound" 	"ui/item_hat_pickup.wav"
+			"drop_sound" 		"ui/item_hat_drop.wav"
+		}
+		"7274"
+		{
+			"name"		"Soul of 'Spenser's Past"
+			"prefab"		"halloween2014 no_craft misc"
+			"item_name"		"#TF_sf14__soul_of_spensers_past"
+			"item_description"		"#TF_sf14__soul_of_spensers_past_Desc"
+			"item_type_name"		"#TF_Wearable_SpookyCompanion"
+			"item_slot"	"misc2"
+			"equip_region"		"disconnected_floating_item"
+			"propername"		"1"
+			"image_inventory"		"backpack/workshop/player/items/engineer/sf14__soul_of_spensers_past/sf14__soul_of_spensers_past"
+			"capabilities"
+			{
+				"can_craft_count"		"1"
+				"paintable"		"1"
+			}
+			"model_player"		"models/workshop/player/items/engineer/sf14__soul_of_spensers_past/sf14__soul_of_spensers_past.mdl"
+			"used_by_classes"
+			{
+				"engineer"		"1"
+			}
+		}
+		"7275"
+		{
+			"name"		"The Hook, Line, and Thinker"
+			"prefab"		"no_craft hat marketable"
+			"item_name"		"#TF_hwn2021_hook_line_thinker"
+			"item_description"		"#TF_hwn2021_hook_line_thinker_Desc"
+			"item_slot"	"head"
+			"equip_region"		"head_skin"
+			"propername"		"1"
+			"visuals"
+			{
+				"player_bodygroups"
+				{
+					"hat"		"1"
+				}
+			}
+			"image_inventory"		"backpack/workshop/player/items/engineer/hwn2021_hook_line_thinker/hwn2021_hook_line_thinker"
+			"capabilities"
+			{
+				"can_craft_count"		"1"
+			}
+			"model_player"		"models/workshop/player/items/engineer/hwn2021_hook_line_thinker/hwn2021_hook_line_thinker.mdl"
+			"used_by_classes"
+			{
+				"engineer"		"1"
+			}
+		}
+		"7276"
+		{
+			"name"		"Iron Lung"
+			"prefab"		"no_craft misc marketable"
+			"item_name"		"#TF_hwn2015_iron_lung"
+			"item_description"		"#TF_hwn2015_iron_lung_Desc"
+			"item_slot"	"misc"
+			"equip_region"		"shirt"
+			"item_type_name"		"#TF_Wearable_Augmentation"
+			"image_inventory"		"backpack/workshop/player/items/engineer/hwn2015_iron_lung/hwn2015_iron_lung"
+			"capabilities"
+			{
+				"can_craft_count"		"1"
+			}
+			"model_player"		"models/workshop/player/items/engineer/hwn2015_iron_lung/hwn2015_iron_lung.mdl"
+			"used_by_classes"
+			{
+				"engineer"		"1"
+			}
+			"mouse_pressed_sound"		"ui/item_robot_arm_pickup.wav"
+			"drop_sound"		"ui/item_robot_arm_drop.wav"
+		}
+		"7277"
+		{
+			"name"		"Head Mounted Double Observatory"
+			"prefab"		"no_craft misc marketable"
+			"item_name"		"#TF_spr17_double_observatory"
+			"item_description"		"#TF_spr17_double_observatory_Desc"
+			"item_slot"	"misc2"
+			"item_type_name"		"#TF_Wearable_Augmentation"
+			"equip_region"		"glasses"
+			"image_inventory"		"backpack/workshop/player/items/engineer/spr17_double_observatory/spr17_double_observatory"
+			"capabilities"
+			{
+				"can_craft_count"		"1"
+				"paintable"		"1"
+			}
+			"model_player"		"models/workshop/player/items/engineer/spr17_double_observatory/spr17_double_observatory.mdl"
+			"used_by_classes"
+			{
+				"engineer"		"1"
+			}
+			"mouse_pressed_sound"		"ui/item_helmet_pickup.wav"
+			"drop_sound"		"ui/item_helmet_drop.wav"
+		}
+		"7278"
+		{
+			"name"		"Life Support System"
+			"prefab"		"no_craft misc marketable"
+			"item_name"		"#TF_invasion_life_support_system"
+			"item_description"		"#TF_invasion_life_support_system_Desc"
+			"item_slot"	"misc2"
+			"equip_region"		"engineer_pocket"
+			"item_type_name"		"#TF_Wearable_Life_Support"
+			"image_inventory"		"backpack/workshop/player/items/engineer/invasion_life_support_system/invasion_life_support_system"
+			"capabilities"
+			{
+				"can_craft_count"		"1"
+			}
+			"model_player"		"models/workshop/player/items/engineer/invasion_life_support_system/invasion_life_support_system.mdl"
+			"used_by_classes"
+			{
+				"engineer"		"1"
+			}
+			"mouse_pressed_sound"		"ui/item_pack_pickup.wav"
+			"drop_sound"		"ui/item_pack_drop.wav"
+		}
+		"7279"
+		{
+			"name"		"The Ghoul Box"
+			"prefab"		"no_craft misc marketable"
+			"item_name"		"#TF_hwn2020_ghoul_box"
+			"item_description"		"#TF_hwn2020_ghoul_box_Desc"
+			"item_slot"	"misc2"
+			"item_type_name"		"#TF_Wearable_Tools"
+			"equip_region"		"back"
+			"propername"		"1"
+			"image_inventory"		"backpack/workshop/player/items/engineer/hwn2020_ghoul_box/hwn2020_ghoul_box"
+			"capabilities"
+			{
+				"can_craft_count"		"1"
+				"paintable"		"1"
+			}
+			"model_player"		"models/workshop/player/items/engineer/hwn2020_ghoul_box/hwn2020_ghoul_box.mdl"
+			"used_by_classes"
+			{
+				"engineer"		"1"
+			}
+			"mouse_pressed_sound"		"ui/item_metal_scrap_pickup.wav"
+			"drop_sound"		"ui/item_metal_scrap_drop.wav"
+		}
+		"7280"
+		{
+			"name"		"Mini-Engy"
+			"prefab"		"no_craft misc marketable"
+			"item_name"		"#TF_hwn2018_mini_engy"
+			"item_description"		"#TF_hwn2018_mini_engy_Desc"
+			"item_slot"	"misc2"
+			"item_type_name"		"#TF_Wearable_Mascot"
+			"equip_region"		"engineer_belt"
+			"image_inventory"		"backpack/workshop/player/items/engineer/hwn2018_mini_engy/hwn2018_mini_engy"
+			"capabilities"
+			{
+				"can_craft_count"		"1"
+				"paintable"		"1"
+			}
+			"model_player"		"models/workshop/player/items/engineer/hwn2018_mini_engy/hwn2018_mini_engy.mdl"
+			"used_by_classes"
+			{
+				"engineer"		"1"
+			}
+			"attributes"
+			{
+				"counts as assister is some kind of pet this update is going to be awesome"
+				{
+					"attribute_class"		"counts_as_assister"
+					"value"		"1"
+				}
+			}
+			"mouse_pressed_sound"		"ui/item_hat_pickup.wav"
+			"drop_sound"		"ui/item_hat_drop.wav"
+		}
+		"7281"
+		{
+			"name"		"The Lonesome Loafers"
+			"prefab"		"misc"
+			"first_sale_date"		"2014/06/16"
+			"propername"		"1"
+			"valid_for_shuffle"		"1"
+			"item_name"		"#TF_short2014_engineer_nerd_feet"
+			"item_description"		"#TF_short2014_engineer_nerd_feet_Desc"
+			"item_slot"	"misc2"
+			"item_type_name"		"TF_Wearable_Shoes"
+			"equip_region"		"feet"
+			"image_inventory"		"backpack/workshop/player/items/engineer/short2014_engineer_nerd_feet/short2014_engineer_nerd_feet"
+			"capabilities"
+			{
+				"can_craft_count"		"1"
+				"paintable"		"1"
+			}
+			"model_player"		"models/workshop/player/items/engineer/short2014_engineer_nerd_feet/short2014_engineer_nerd_feet.mdl"
+			"used_by_classes"
+			{
+				"engineer"		"1"
+			}
+			"mouse_pressed_sound"		"ui/item_hat_pickup.wav"
+			"drop_sound"		"ui/item_hat_drop.wav"
+		}
+		"7282"
+		{
+			"name"		"The Snaggletoothed Stetson"
+			"prefab"		"halloween2013 hat"
+			"item_type_name"		"#TF_Wearable_Hat"
+			"item_name"		"#TF_hw2013_leather_face"
+			"item_description"		"#TF_hw2013_leather_face_Desc"
+			"item_slot"	"head"
+			"equip_region"		"hat"
+			"propername"		"1"
+			"visuals"
+			{
+				"player_bodygroups"
+				{
+					"hat"		"1"
+					"headphones"		"1"
+				}
+			}
+			"image_inventory"		"backpack/workshop/player/items/all_class/hw2013_leather_face/hw2013_leather_face"
+			"model_player_per_class"
+			{
+				"basename"		"models/workshop/player/items/all_class/hw2013_leather_face/hw2013_leather_face_%s.mdl"
+			}
+			"used_by_classes"
+			{
+				"sniper"		"1"
+				"pyro"		"1"
+				"engineer"		"1"
+			}
+			"capabilities"
+			{
+				"paintable"		"1"
+			}
+			"mouse_pressed_sound"		"ui/item_hat_pickup.wav"
+			"drop_sound"		"ui/item_hat_drop.wav"
+		}
+		"7283"
+		{
+			"name"		"Face Full of Festive"
+			"prefab"		"misc"
+			"first_sale_date"		"2013/12/19"
+			"item_type_name"		"#TF_Wearable_FacialHair"
+			"item_name"		"#TF_xms2013_festive_beard"
+			"item_description"		"#TF_xms2013_festive_beard_Desc"
+			"item_slot"	"misc2"
+			"image_inventory"		"backpack/workshop/player/items/engineer/xms2013_festive_beard/xms2013_festive_beard"
+			"capabilities"
+			{
+				"paintable"		"1"
+			}
+			"model_player"		"models/workshop/player/items/engineer/xms2013_festive_beard/xms2013_festive_beard.mdl"
+			"used_by_classes"
+			{
+				"engineer"		"1"
+			}
+			"mouse_pressed_sound"		"ui/item_hat_pickup.wav"
+			"drop_sound"		"ui/item_hat_drop.wav"
+		}
+		"7284"
+		{
+			"name"	"The Pencil Pusher"
+			"first_sale_date"	"2011/09/07"
+			"prefab"	"misc"
+			"capabilities"
+			{
+				"can_craft_count"	"1"
+			}
+			"item_name"	"#TF_EngineerHat1"
+			"item_description"	"#TF_EngineerHat1_Desc"
+			"item_slot"	"head"
+			"item_type_name"		"#TF_Wearable_Hair"
+			"min_ilevel"	"10"
+			"max_ilevel"	"10"
+			"propername"	"1"
+			"image_inventory"	"backpack/player/items/all_class/heavy_thinker"
+			"model_player"	"models/player/items/engineer/heavy_thinker.mdl"
+			"drop_type"		"none"
+			"used_by_classes"
+			{
+				"engineer"	"1"
+			}
+			"visuals"
+			{
+				"player_bodygroups"
+				{
+					"hat"			"1"
+				}
+			}
 		}
 		"30570"
 		{
