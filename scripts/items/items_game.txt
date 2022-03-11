@@ -19824,7 +19824,7 @@
 				"reload time increased"
 				{
 				"attribute_class"	"mult_reload_time"
-				"value"	"0.5"
+				"value"	"1.5"
 				}
 				"fire rate bonus"
 				{
@@ -22311,7 +22311,6 @@
 			"first_sale_date"	"2010/12/20"
 			"loadondemand"	"1"
 			"item_description" "need a medic gf will pay 3 refined"
-			"item_slot"	"head"
 			"item_class"	"tf_wearable"
 			"craft_class"	"hat"
 			"craft_material_type"	"hat"
@@ -22323,7 +22322,7 @@
 			"show_in_armory"	"1"
 			"item_type_name" "#TF_Wearable_Mask"
 			"item_name"	"#TF_BlightedBeak"
-			"item_slot"	"misc"
+			"item_slot"	"misc2"
 			"equip_region"	"face"
 			"item_quality"	"unique"
 			"image_inventory"	"backpack/player/items/medic/blighted_beak"
@@ -26331,6 +26330,11 @@
 				{
 					"attribute_class"	"mult_projectile_speed"
 					"value"	"0.20"
+				}
+				"crit mod disabled"
+				{
+					"attribute_class"	"mult_crit_chance"
+					"value"	"0"
 				}
 				"disable fancy class select anim"
 				{
@@ -31337,12 +31341,17 @@
 				"max pipebombs decreased"
 				{
 					"attribute_class"	"add_max_pipebombs"
-					"value" "-2"
+					"value" "-5"
 				}
 				"clip size penalty"
 				{
 					"attribute_class"	"mult_clipsize"
 					"value" "0.50"
+				}
+				"crit mod disabled"
+				{
+					"attribute_class"	"mult_crit_chance"
+					"value"	"0"
 				}
 			}
 			"mouse_pressed_sound"	"ui/item_heavy_gun_pickup.wav"
@@ -32637,7 +32646,7 @@
 			}
 			"item_name"		"#TF_robo_medic_blighted_beak"
 			"item_description"		"#TF_robo_medic_blighted_beak_Desc"
-			"item_slot"	"head"
+			"item_slot"	"misc2"
 			"equip_region"		"face"
 			"item_type_name"		"#TF_Wearable_Mask"
 			"propername"		"1"
@@ -36942,6 +36951,7 @@
 			"prefab"		"no_craft misc marketable"
 			"item_name"		"#TF_hwn2018_mini_engy"
 			"item_description"		"#TF_hwn2018_mini_engy_Desc"
+			"show_in_armory"	"0"
 			"item_slot"	"misc2"
 			"item_type_name"		"#TF_Wearable_Mascot"
 			"equip_region"		"engineer_belt"
