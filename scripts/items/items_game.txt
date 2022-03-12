@@ -17576,8 +17576,10 @@
 		"5617"
 		{
 			"name"		"Zombie Scout"
+			"show_in_armory"	"1"
 			"prefab"	"zombie"
 			"item_name"	"#TF_Item_ZombieScout"
+			"item_slot"	"misc2"
 			"model_player"	"models/player/items/scout/scout_zombie.mdl"
 			"equip_regions"
 			{
@@ -17594,8 +17596,10 @@
 		"5618"
 		{
 			"name"		"Zombie Soldier"
+			"show_in_armory"	"1"
 			"prefab"	"zombie"
 			"item_name"	"#TF_Item_ZombieSoldier"
+			"item_slot"	"misc2"
 			"model_player"	"models/player/items/soldier/soldier_zombie.mdl"
 			"used_by_classes"
 			{
@@ -17607,8 +17611,10 @@
 		"5619"
 		{
 			"name"		"Zombie Heavy"
+			"show_in_armory"	"1"
 			"prefab"	"zombie"
 			"item_name"	"#TF_Item_ZombieHeavy"
+			"item_slot"	"misc2"
 			"model_player"	"models/player/items/heavy/heavy_zombie.mdl"
 			"used_by_classes"
 			{
@@ -17620,8 +17626,10 @@
 		"5620"
 		{
 			"name"		"Zombie Demo"
+			"show_in_armory"	"1"
 			"prefab"	"zombie"
 			"item_name"	"#TF_Item_ZombieDemoman"
+			"item_slot"	"misc2"
 			"model_player"	"models/player/items/demo/demo_zombie.mdl"
 			"used_by_classes"
 			{
@@ -17633,8 +17641,10 @@
 		"5621"
 		{
 			"name"		"Zombie Engineer"
+			"show_in_armory"	"1"
 			"prefab"	"zombie"
 			"item_name"	"#TF_Item_ZombieEngineer"
+			"item_slot"	"misc2"
 			"model_player"	"models/player/items/engineer/engineer_zombie.mdl"
 			"used_by_classes"
 			{
@@ -17646,8 +17656,10 @@
 		"5622"
 		{
 			"name"		"Zombie Medic"
+			"show_in_armory"	"1"
 			"prefab"	"zombie"
 			"item_name"	"#TF_Item_ZombieMedic"
+			"item_slot"	"misc2"
 			"model_player"	"models/player/items/medic/medic_zombie.mdl"
 			"used_by_classes"
 			{
@@ -17659,8 +17671,10 @@
 		"5623"
 		{
 			"name"		"Zombie Spy"
+			"show_in_armory"	"1"
 			"prefab"	"zombie"
 			"item_name"	"#TF_Item_ZombieSpy"
+			"item_slot"	"misc2"
 			"model_player"	"models/player/items/spy/spy_zombie.mdl"
 			"used_by_classes"
 			{
@@ -17672,8 +17686,10 @@
 		"5624"
 		{
 			"name"		"Zombie Pyro"
+			"show_in_armory"	"1"
 			"prefab"	"zombie"
 			"item_name"	"#TF_Item_ZombiePyro"
+			"item_slot"	"misc2"
 			"model_player"	"models/player/items/pyro/pyro_zombie.mdl"
 			"equip_regions"
 			{
@@ -17690,8 +17706,10 @@
 		"5625"
 		{
 			"name"		"Zombie Sniper"
+			"show_in_armory"	"1"
 			"prefab"	"zombie"
 			"item_name"	"#TF_Item_ZombieSniper"
+			"item_slot"	"misc2"
 			"model_player"	"models/player/items/sniper/sniper_zombie.mdl"
 			"used_by_classes"
 			{
@@ -26838,6 +26856,7 @@
 			"first_sale_date"		"2014/09/15"
 			"item_type_name"		"#TF_Wearable_Mascot"
 			"item_name"		"#TF_sbox2014_einstein"
+			"show_in_armory"	"0"
 			"item_slot"	"misc2"
 			"item_description"		"#TF_sbox2014_einstein_Desc"
 			"equip_region"		"left_shoulder"
