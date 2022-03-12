@@ -6420,6 +6420,126 @@
 			}
 		}
 
+		"weapon_demo_cannon_jumper"
+		{
+			"enabled"		"1"
+			"item_class"		"tf_weapon_cannon"
+			"craft_class"		"weapon"
+			"craft_material_type"		"weapon"
+			"capabilities"
+			{
+				"nameable"		"1"
+			}
+			"tags"
+			{
+				"can_deal_damage"		"1"
+				"can_be_equipped_by_soldier_or_demo"	"1"
+				"can_deal_posthumous_damage"	"1"
+				"can_deal_gib_damage"	"1"
+				"can_deal_critical_damage"	"1"
+				"can_deal_long_distance_damage"	"1"
+			}
+			"item_logname"	"loose_cannon_jumper"
+			"item_iconname"	"loose_cannon_explosion_jumper"
+			"item_type_name"	"#TF_Weapon_GrenadeLauncher"
+			"item_name"		"Loose Jumper"
+			"item_description"		"#TF_Weapon_Cannon_desc"
+			"item_slot"		"primary"
+			"anim_slot"		"secondary"
+			"item_quality"		"unique"
+			"min_ilevel"		"10"
+			"max_ilevel"		"10"
+			"propername"		"1"
+			"attach_to_hands"	"1"
+			"inspect_panel_dist" "50"
+			"image_inventory"	"backpack/weapons/c_models/c_rocketjumper/c_rocketjumper"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"82"
+			"model_player"	"models/workshop/weapons/c_models/c_demo_cannon/c_demo_cannon.mdl"
+			"used_by_classes"
+			{
+				"demoman"	"1"
+			}
+			"static_attrs"
+			{
+				"min_viewmodel_offset"					"10 0 -10"
+			}
+			"mouse_pressed_sound"	"ui/item_heavy_gun_pickup.wav"
+			"drop_sound"		"ui/item_heavy_gun_drop.wav"
+			"attributes"
+			{
+				"damage penalty"
+				{
+					"attribute_class"	"mult_dmg"
+					"value"	"0"
+				}
+				"crit mod disabled"
+				{
+					"attribute_class"	"mult_crit_chance"
+					"value"	"0"
+				}
+				"no self blast dmg"
+				{
+					"attribute_class"	"no_self_blast_dmg"
+					"value" "2"
+				}
+				"stickybomb charge rate"
+				{
+					"attribute_class"	"stickybomb_charge_rate"
+					"value"	"0.3"
+				}
+				"maxammo primary increased"
+				{
+					"attribute_class"	"mult_maxammo_primary"
+					"value" "20.0"
+				}
+				"cannot pick up intelligence"
+				{
+					"attribute_class"	"cannot_pick_up_intelligence"
+					"value"				"1"
+				}
+				"override projectile type"
+				{
+					"attribute_class"	"override_projectile_type"
+					"value"				"17"
+				}
+				"grenade launcher mortar mode"
+				{
+					"attribute_class"	"grenade_launcher_mortar_mode"
+					"value"				"1"
+				}
+				"grenade not explode on impact"
+				{
+					"attribute_class"	"grenade_not_explode_on_impact"
+					"value"				"1"
+				}
+				"Projectile speed increased"
+				{
+					"attribute_class"	"mult_projectile_speed"
+					"value"	"1.2"
+				}
+				"cannonball push back"
+				{
+					"attribute_class"	"cannonball_push_back"
+					"value"	"1"
+				}
+				"kill eater score type 2"
+				{
+					"attribute_class"	"kill_eater_score_type_2"
+					"value" 	"65"	
+				}
+			}
+			"visuals"
+			{
+				"animation_replacement"
+				{
+					"ACT_PRIMARY_VM_INSPECT_START"		"ACT_PRIMARY_ALT1_VM_INSPECT_START"
+					"ACT_PRIMARY_VM_INSPECT_IDLE"		"ACT_PRIMARY_ALT1_VM_INSPECT_IDLE"
+					"ACT_PRIMARY_VM_INSPECT_END"		"ACT_PRIMARY_ALT1_VM_INSPECT_END"
+				}
+			}
+		}
+
 		"weapon_wrench"
 		{
 			"capabilities"
@@ -9558,11 +9678,6 @@
 					"attribute_class"	"mult_dmg"
 					"value"	"0"
 				}
-				"crit mod disabled"
-				{
-					"attribute_class"	"mult_crit_chance"
-					"value"	"0"
-				}
 				"no self blast dmg"
 				{
 					"attribute_class"	"no_self_blast_dmg"
@@ -9720,11 +9835,6 @@
 				"damage penalty"
 				{
 					"attribute_class"	"mult_dmg"
-					"value"	"0"
-				}
-				"crit mod disabled"
-				{
-					"attribute_class"	"mult_crit_chance"
 					"value"	"0"
 				}
 				"no self blast dmg"
@@ -15051,7 +15161,7 @@
 			{
 				"nameable"		"1"
 			}
-			"show_in_armory"	"0"
+			"show_in_armory"	"1"
 			"item_type_name"	"#TF_Weapon_Parachute"
 			"item_name"	"#TF_Weapon_BaseJumper"
 			"item_description"	"#TF_Weapon_BaseJumper_Desc"
@@ -15073,6 +15183,9 @@
 			{
 				"soldier"	"secondary"
 				"demoman"	"primary"
+				"engineer"	"secondary"
+				"heavy"	"secondary"
+				"sniper"	"secondary"
 			}
 			"attributes"
 			{
@@ -16013,7 +16126,7 @@
 				}
 				"particle_attachment"		"taunt_effect"
 				"min_taunt_time"		"5"
-				"stop_taunt_if_moved"	"1"
+				"stop_taunt_if_moved"	"0"
 			}
 		}
 		"1116"
@@ -17466,8 +17579,10 @@
 		"5617"
 		{
 			"name"		"Zombie Scout"
+			"show_in_armory"	"1"
 			"prefab"	"zombie"
 			"item_name"	"#TF_Item_ZombieScout"
+			"item_slot"	"misc2"
 			"model_player"	"models/player/items/scout/scout_zombie.mdl"
 			"equip_regions"
 			{
@@ -17484,8 +17599,10 @@
 		"5618"
 		{
 			"name"		"Zombie Soldier"
+			"show_in_armory"	"1"
 			"prefab"	"zombie"
 			"item_name"	"#TF_Item_ZombieSoldier"
+			"item_slot"	"misc2"
 			"model_player"	"models/player/items/soldier/soldier_zombie.mdl"
 			"used_by_classes"
 			{
@@ -17497,8 +17614,10 @@
 		"5619"
 		{
 			"name"		"Zombie Heavy"
+			"show_in_armory"	"1"
 			"prefab"	"zombie"
 			"item_name"	"#TF_Item_ZombieHeavy"
+			"item_slot"	"misc2"
 			"model_player"	"models/player/items/heavy/heavy_zombie.mdl"
 			"used_by_classes"
 			{
@@ -17510,8 +17629,10 @@
 		"5620"
 		{
 			"name"		"Zombie Demo"
+			"show_in_armory"	"1"
 			"prefab"	"zombie"
 			"item_name"	"#TF_Item_ZombieDemoman"
+			"item_slot"	"misc2"
 			"model_player"	"models/player/items/demo/demo_zombie.mdl"
 			"used_by_classes"
 			{
@@ -17523,8 +17644,10 @@
 		"5621"
 		{
 			"name"		"Zombie Engineer"
+			"show_in_armory"	"1"
 			"prefab"	"zombie"
 			"item_name"	"#TF_Item_ZombieEngineer"
+			"item_slot"	"misc2"
 			"model_player"	"models/player/items/engineer/engineer_zombie.mdl"
 			"used_by_classes"
 			{
@@ -17536,8 +17659,10 @@
 		"5622"
 		{
 			"name"		"Zombie Medic"
+			"show_in_armory"	"1"
 			"prefab"	"zombie"
 			"item_name"	"#TF_Item_ZombieMedic"
+			"item_slot"	"misc2"
 			"model_player"	"models/player/items/medic/medic_zombie.mdl"
 			"used_by_classes"
 			{
@@ -17549,8 +17674,10 @@
 		"5623"
 		{
 			"name"		"Zombie Spy"
+			"show_in_armory"	"1"
 			"prefab"	"zombie"
 			"item_name"	"#TF_Item_ZombieSpy"
+			"item_slot"	"misc2"
 			"model_player"	"models/player/items/spy/spy_zombie.mdl"
 			"used_by_classes"
 			{
@@ -17562,8 +17689,10 @@
 		"5624"
 		{
 			"name"		"Zombie Pyro"
+			"show_in_armory"	"1"
 			"prefab"	"zombie"
 			"item_name"	"#TF_Item_ZombiePyro"
+			"item_slot"	"misc2"
 			"model_player"	"models/player/items/pyro/pyro_zombie.mdl"
 			"equip_regions"
 			{
@@ -17580,8 +17709,10 @@
 		"5625"
 		{
 			"name"		"Zombie Sniper"
+			"show_in_armory"	"1"
 			"prefab"	"zombie"
 			"item_name"	"#TF_Item_ZombieSniper"
+			"item_slot"	"misc2"
 			"model_player"	"models/player/items/sniper/sniper_zombie.mdl"
 			"used_by_classes"
 			{
@@ -19824,7 +19955,7 @@
 				"reload time increased"
 				{
 				"attribute_class"	"mult_reload_time"
-				"value"	"0.5"
+				"value"	"1.5"
 				}
 				"fire rate bonus"
 				{
@@ -22311,7 +22442,6 @@
 			"first_sale_date"	"2010/12/20"
 			"loadondemand"	"1"
 			"item_description" "need a medic gf will pay 3 refined"
-			"item_slot"	"head"
 			"item_class"	"tf_wearable"
 			"craft_class"	"hat"
 			"craft_material_type"	"hat"
@@ -22323,7 +22453,7 @@
 			"show_in_armory"	"1"
 			"item_type_name" "#TF_Wearable_Mask"
 			"item_name"	"#TF_BlightedBeak"
-			"item_slot"	"misc"
+			"item_slot"	"misc2"
 			"equip_region"	"face"
 			"item_quality"	"unique"
 			"image_inventory"	"backpack/player/items/medic/blighted_beak"
@@ -22841,7 +22971,7 @@
 				"taunt success sound loop"
 				{
 					"attribute_class"		"taunt_success_sound_loop"
-					"value"		"Portal.song_credits"
+					"value"		"lambda.jetstreamsam"
 				}
 			}
 			"taunt"
@@ -26065,7 +26195,7 @@
 		{
 			"item_class"	"tf_weapon_lunchbox_drink"
 			"enabled"	"1"
-			"show_in_armory"	"1"
+			"show_in_armory"	"0"
 			"item_type_name"	"Penis"
 			"item_name"	"Troll Juice"
 			"item_description" "YOU JUST GOT TROLLED!11!!1!"
@@ -26331,6 +26461,11 @@
 				{
 					"attribute_class"	"mult_projectile_speed"
 					"value"	"0.20"
+				}
+				"crit mod disabled"
+				{
+					"attribute_class"	"mult_crit_chance"
+					"value"	"0"
 				}
 				"disable fancy class select anim"
 				{
@@ -26724,6 +26859,7 @@
 			"first_sale_date"		"2014/09/15"
 			"item_type_name"		"#TF_Wearable_Mascot"
 			"item_name"		"#TF_sbox2014_einstein"
+			"show_in_armory"	"0"
 			"item_slot"	"misc2"
 			"item_description"		"#TF_sbox2014_einstein_Desc"
 			"equip_region"		"left_shoulder"
@@ -31337,12 +31473,17 @@
 				"max pipebombs decreased"
 				{
 					"attribute_class"	"add_max_pipebombs"
-					"value" "-2"
+					"value" "-5"
 				}
 				"clip size penalty"
 				{
 					"attribute_class"	"mult_clipsize"
 					"value" "0.50"
+				}
+				"crit mod disabled"
+				{
+					"attribute_class"	"mult_crit_chance"
+					"value"	"0"
 				}
 			}
 			"mouse_pressed_sound"	"ui/item_heavy_gun_pickup.wav"
@@ -31896,6 +32037,8 @@
 				"demoman"	"primary"
 				"heavy"	"1"
 				"engineer"	"1"
+				"sniper"	"secondary"
+				"demoman"	"secondary"
 			}
 			"attributes"
 			{
@@ -32637,7 +32780,7 @@
 			}
 			"item_name"		"#TF_robo_medic_blighted_beak"
 			"item_description"		"#TF_robo_medic_blighted_beak_Desc"
-			"item_slot"	"head"
+			"item_slot"	"misc2"
 			"equip_region"		"face"
 			"item_type_name"		"#TF_Wearable_Mask"
 			"propername"		"1"
@@ -36942,6 +37085,7 @@
 			"prefab"		"no_craft misc marketable"
 			"item_name"		"#TF_hwn2018_mini_engy"
 			"item_description"		"#TF_hwn2018_mini_engy_Desc"
+			"show_in_armory"	"0"
 			"item_slot"	"misc2"
 			"item_type_name"		"#TF_Wearable_Mascot"
 			"equip_region"		"engineer_belt"
@@ -37154,6 +37298,806 @@
 					"value" "1"
 				}
 			}
+		}
+		"7287"
+		{
+			"name"	"Drgregs Rancho Relaxo Taunt"
+			"prefab"	"valve taunt"
+			"first_sale_date"		"2014/06/17"
+			"item_name"			"#TF_TauntEngineerRancho"
+			"item_description"	"#TF_TauntEngineerRancho_Desc"
+			"image_inventory"	"backpack/player/items/all_class/taunt_rancho_relaxo"
+			"image_inventory_size_w"	"128"
+			"image_inventory_size_h"	"82"
+			"item_quality"		"unique"
+			"min_ilevel"	"1"
+			"max_ilevel"	"100"
+			"valid_for_shuffle"	"1"
+			"used_by_classes"
+			{
+				"engineer"	"1"
+				"scout"	"1"
+				"combinesoldier"	"1"
+				"civilian"	"1"
+			}
+			"attributes"
+			{
+				"taunt is press and hold"
+				{
+					"attribute_class"	"enable_misc2_holdtaunt"
+					"value"				"1"
+				}
+				"taunt success sound loop"
+				{
+					"attribute_class"		"taunt_success_sound_loop"
+					"value"		"Portal.song_credits"
+				}
+				"max health additive bonus"
+				{
+					"attribute_class"	"add_maxhealth"
+					"value" "1500"
+				}
+			}
+			"taunt"
+			{
+				"custom_taunt_scene_per_class"
+				{
+					"engineer"	"scenes/player/engineer/low/taunt_killer_time_intro.vcd"
+				}
+				"custom_taunt_outro_scene_per_class"
+				{
+					"engineer"	"scenes/player/engineer/low/taunt_killer_time_outro.vcd"
+				}
+				"custom_taunt_prop_per_class"
+				{
+					"engineer"	"models/player/items/taunts/engys_new_chair/engys_new_chair_articlulated.mdl"
+				}
+				"custom_taunt_prop_scene_per_class"
+				{
+					"engineer"	"scenes/player/items/taunts/engys_new_chair_intro.vcd"
+				}
+				"custom_taunt_prop_outro_scene_per_class"
+				{
+					"engineer"	"scenes/player/items/taunts/engys_new_chair_outro.vcd"
+				}
+				"particle_attachment"		"taunt_effect"
+				"min_taunt_time"		"5"
+				"stop_taunt_if_moved"	"0"
+			}
+		}
+		"7288"
+		{
+			"name"			"The Loose Jumper"
+			"prefab"		"weapon_demo_cannon_jumper"
+			"first_sale_date"	"2012/12/19"
+			"particle_suffix" 	"loose_cannon"
+			"show_in_armory"	"1"
+			"tags"
+			{
+				"can_be_festivized"		"1"
+			}
+			"visuals"
+			{
+				"attached_models_festive"
+				{
+					"0"
+					{
+						"model"	"models/workshop/weapons/c_models/c_demo_cannon/c_demo_cannon_festivizer.mdl"
+					}
+				}
+			}
+		}
+		"7289"
+		{
+			"name"	"Jumper Sniper"
+			"prefab"	"valve"
+			"first_sale_date"	"2010/09/29"
+			"item_class"	"tf_weapon_rocketlauncher"
+			"craft_class"	"weapon"
+			"craft_material_type"	"weapon"
+			"capabilities"
+			{
+				"nameable"		"1"
+			}
+			"show_in_armory"	"1"
+			"item_type_name"	"#TF_Weapon_RocketLauncher"
+			"item_name"	"Jumper Sniper Rifle"
+			"item_description"	"A fun little Sniper Rifle"
+			"item_slot"	"primary"
+			"item_quality"	"unique"
+			"min_ilevel"	"1"
+			"max_ilevel"	"1"
+			"image_inventory"	"backpack/weapons/c_models/c_rocketjumper/c_rocketjumper"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"82"
+			"item_quality"		"unique"
+			"attach_to_hands"	"1"
+			"model_player"	"models/weapons/c_models/c_sniperrifle1/c_sniperrifle.mdl"
+			"used_by_classes"
+			{
+				"sniper"	"primary"
+			}
+			"static_attrs"
+			{
+				"min_viewmodel_offset"		"10 -3 -10"				
+			}
+			"mouse_pressed_sound"	"ui/item_heavy_gun_pickup.wav"
+			"drop_sound"		"ui/item_heavy_gun_drop.wav"
+			"attributes"
+			{
+				"damage penalty"
+				{
+					"attribute_class"	"mult_dmg"
+					"value"	"0"
+				}
+				"crit mod disabled"
+				{
+					"attribute_class"	"mult_crit_chance"
+					"value"	"0"
+				}
+				"no self blast dmg"
+				{
+					"attribute_class"	"no_self_blast_dmg"
+					"value" "2"
+				}
+				"maxammo primary increased"
+				{
+					"attribute_class"	"mult_maxammo_primary"
+					"value" "50.0"
+				}
+			}
+			"visuals"
+			{
+				"sound_single_shot"	"Weapon_Rocket_Jumper.Single"
+				"sound_special1"		"Weapon_Rocket_Jumper.Explode"
+			}
+		}
+		"7290"
+		{
+			"name"	"Direct Rocket Sniper"
+			"prefab"	"valve"
+			"first_sale_date"	"2010/09/29"
+			"item_class"	"tf_weapon_sniperrifle"
+			"craft_class"	"weapon"
+			"craft_material_type"	"weapon"
+			"capabilities"
+			{
+				"nameable"		"1"
+			}
+			"show_in_armory"	"1"
+			"item_type_name"	"##TF_Weapon_SniperRifle"
+			"item_name"	"Direct Rocket Rifle"
+			"item_description"	"KABOOM! Headshot"
+			"item_slot"	"primary"
+			"item_quality"	"unique"
+			"min_ilevel"	"1"
+			"max_ilevel"	"1"
+			"image_inventory"	"backpack/weapons/c_models/c_directhit/c_directhit"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"82"
+			"item_quality"		"unique"
+			"attach_to_hands"	"1"
+			"model_player"	"models/weapons/c_models/c_directhit/c_directhit.mdl"
+			"used_by_classes"
+			{
+				"sniper"	"primary"
+
+			}
+			"static_attrs"
+			{
+				"min_viewmodel_offset"		"10 -3 -10"				
+			}
+			"mouse_pressed_sound"	"ui/item_heavy_gun_pickup.wav"
+			"drop_sound"		"ui/item_heavy_gun_drop.wav"
+			"attributes"
+			{
+				"Blast radius decreased"
+				{
+					"attribute_class"	"mult_explosion_radius"
+					"value"	"0.3"
+				}
+				"Projectile speed increased"
+				{
+					"attribute_class"	"mult_projectile_speed"
+					"value"	"1.8"
+				}
+				"damage bonus"
+				{
+					"attribute_class"	"mult_dmg"
+					"value"	"1.25"
+				}
+				"mod mini-crit airborne"
+				{
+					"attribute_class"	"mini_crit_airborne"
+					"value" "1"
+				}
+				"override projectile type"
+				{
+					"attribute_class"	"override_projectile_type"
+					"value"				"2" 
+				}
+			}
+			"visuals"
+			{
+				"sound_single_shot"	"Weapon_Rocket_Jumper.Single"
+				"sound_special1"		"Weapon_Rocket_Jumper.Explode"
+			}
+		}
+		"7291"
+		{
+			"name"	"Rocket Sniper"
+			"prefab"	"valve"
+			"first_sale_date"	"2010/09/29"
+			"item_class"	"tf_weapon_sniperrifle"
+			"craft_class"	"weapon"
+			"craft_material_type"	"weapon"
+			"capabilities"
+			{
+				"nameable"		"1"
+			}
+			"show_in_armory"	"1"
+			"item_type_name"	"#TF_Weapon_SniperRifle"
+			"item_name"	"Rocket Rifle"
+			"item_description"	"KABOOM! Headshot"
+			"item_slot"	"primary"
+			"item_quality"	"unique"
+			"min_ilevel"	"1"
+			"max_ilevel"	"1"
+			"image_inventory"	"backpack/weapons/w_models/w_rocketlauncher"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"82"
+			"item_quality"		"unique"
+			"attach_to_hands"	"1"
+			"model_player"	"models/weapons/c_models/c_rocketlauncher/c_rocketlauncher.mdl"
+			"used_by_classes"
+			{
+				"sniper"	"primary"
+			}
+			"static_attrs"
+			{
+				"min_viewmodel_offset"		"10 -3 -10"				
+			}
+			"mouse_pressed_sound"	"ui/item_heavy_gun_pickup.wav"
+			"drop_sound"		"ui/item_heavy_gun_drop.wav"
+			"attributes"
+			{
+				"override projectile type"
+				{
+					"attribute_class"	"override_projectile_type"
+					"value"				"2" 
+				}
+			}
+			"visuals"
+			{
+				"sound_single_shot"	"Weapon_Rocket_Jumper.Single"
+				"sound_special1"		"Weapon_Rocket_Jumper.Explode"
+			}
+		}
+		"7292"
+		{
+			"name"	"The Robo-Sandvich"
+			"first_sale_date"	"2012/09/19"
+			"prefab"	"weapon_lunchbox"
+			"craft_class"	""		
+			"craft_material_type"	"weapon"
+			"capabilities"
+			{
+				"nameable"		"1"
+			}
+			"tags"
+			{
+				"can_heal_allies"		"1"
+			}
+			"item_name"	"#TF_Robot_Sandvich"
+			"item_description"	"#TF_Robot_Sandvich_Desc"
+			"show_in_armory"	"1"
+			"image_inventory"	"backpack/weapons/c_models/c_sandwich/c_robo_sandwich"
+			"model_player"	"models/weapons/c_models/c_sandwich/c_robo_sandwich.mdl"
+			"propername"	"1"
+			"used_by_classes"
+			{
+				"heavy"	"1"
+			}
+			"static_attrs"
+			{
+				"min_viewmodel_offset"		"10 0 -11"
+				"item_meter_charge_type"			"1"
+				"item_meter_charge_rate"			"30"
+				"meter_label"				"#TF_Sandwich"
+			}
+			"attributes"
+			{
+				"lunchbox adds minicrits"
+				{
+					"attribute_class"	"set_weapon_mode"
+					"value"	"3"
+				}
+				"special taunt"
+				{
+					"attribute_class"	"special_taunt"
+					"value" "1"
+				}
+				"allowed in medieval mode"
+				{
+					"attribute_class"	"allowed_in_medieval_mode"
+					"value"	"1"
+				}
+			}
+			"mouse_pressed_sound"	"ui/item_metal_weapon_pickup.wav"
+			"drop_sound"		"ui/item_metal_weapon_drop.wav"
+		}
+		"7293"
+		{
+			"name"	"Fishcake"
+			"prefab"	"weapon_lunchbox"
+			"craft_material_type"	"weapon"
+			"capabilities"
+			{
+				"nameable"		"1"
+			}
+			"item_type_name"	"#TF_SpaceChem_Fishcake_Type"
+			"item_name"	"#TF_SpaceChem_Fishcake"
+			"item_description"	"#TF_SpaceChem_Fishcake_Desc"
+			"show_in_armory"	"1"
+			"image_inventory"	"backpack/workshop/weapons/c_models/c_fishcake/c_fishcake"
+			"model_player"	"models/workshop/weapons/c_models/c_fishcake/c_fishcake.mdl"
+			"used_by_classes"
+			{
+				"heavy"	"1"
+			}
+			"static_attrs"
+			{
+				"min_viewmodel_offset"		"10 0 -11"
+				"item_meter_charge_type"		"1"
+				"item_meter_charge_rate"			"10"
+				"meter_label"			"#TF_Sandwich"
+			}
+			"attributes"
+			{
+				"lunchbox adds maxhealth bonus"
+				{
+					"attribute_class"	"set_weapon_mode"
+					"value"	"7"
+				}
+				"always tradable"
+				{
+					"attribute_class"	"always_tradable"
+					"value"				"1"
+				}
+				"special taunt"
+				{
+					"attribute_class"	"special_taunt"
+					"value" "1"
+				}
+				"allowed in medieval mode"
+				{
+					"attribute_class"	"allowed_in_medieval_mode"
+					"value"	"1"
+				}
+			}
+		}
+		"7294"
+		{
+			"name"	"Dessicated Sustenance Bar"
+			"prefab"	"weapon_lunchbox"
+			"craft_material_type"	"weapon"
+			"capabilities"
+			{
+				"nameable"		"1"
+			}
+			"item_type_name"	"#TF_SpaceChem_Fishcake_Type"
+			"item_name"	"Dessicated Sustenance Bar"
+			"item_description"	"Taste like Water!"
+			"show_in_armory"	"1"
+			"image_inventory"	"backpack/workshop/weapons/c_models/c_fishcake/c_fishcake"
+			"model_player"	"models/workshop/weapons/c_models/c_chocolate1/c_chocolate.mdl"
+			"used_by_classes"
+			{
+				"heavy"	"1"
+			}
+			"static_attrs"
+			{
+				"min_viewmodel_offset"		"10 0 -11"
+				"item_meter_charge_type"		"1"
+				"item_meter_charge_rate"			"10"
+				"meter_label"			"#TF_Sandwich"
+			}
+			"attributes"
+			{
+				"lunchbox adds maxhealth bonus"
+				{
+					"attribute_class"	"set_weapon_mode"
+					"value"	"7"
+				}
+				"always tradable"
+				{
+					"attribute_class"	"always_tradable"
+					"value"				"1"
+				}
+				"special taunt"
+				{
+					"attribute_class"	"special_taunt"
+					"value" "1"
+				}
+				"allowed in medieval mode"
+				{
+					"attribute_class"	"allowed_in_medieval_mode"
+					"value"	"1"
+				}
+			}
+		}
+		"7295"
+		{
+			"name"	"Rustbolt"
+			"prefab"	"valve"
+			"first_sale_date"	"2010/09/29"
+			"item_class"	"tf_weapon_sniperrifle"
+			"craft_class"	"weapon"
+			"craft_material_type"	"weapon"
+			"capabilities"
+			{
+				"nameable"		"1"
+			}
+			"tags"
+			{
+				"can_deal_damage"		"1"
+				"can_headshot"			"1"
+				"can_deal_mvm_penetration_damage"	"1"
+				"can_deal_long_distance_damage"	"1"
+				"can_deal_gib_damage"	"1"
+			}
+			"show_in_armory"	"1"
+			"item_type_name"	"#TF_Weapon_SniperRifle"
+			"item_name"		"Bolt Action Sniper"
+			"item_slot"	"primary"
+			"item_quality"	"unique"
+			"propername"	"1"
+			"min_ilevel"	"1"
+			"max_ilevel"	"100"
+			"image_inventory"	"backpack/weapons/w_models/w_sniperrifle"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"82"
+			"model_player"	"models/weapons/c_models/c_bolt_rifle/c_sniperrifle.mdl"
+			"attach_to_hands"	"1"
+			"visuals"
+			{
+				"show_player_bodygroup_name"	"bullets"
+			}
+			"used_by_classes"
+			{
+				"sniper"	"1"
+			}
+			"attributes"
+			{
+				"damage bonus"
+				{
+					"attribute_class"	"mult_dmg"
+					"value"	"1.15"
+				}
+				"fire rate penalty"
+				{
+					"attribute_class"	"mult_postfiredelay"
+					"value"	"1.5"
+				}
+				"crit mod disabled"
+				{
+					"attribute_class"	"mult_crit_chance"
+					"value"	"0"
+				}
+			}
+			"visuals"
+			{
+				"sound_single_shot" "Weapon_Ambassador.Single"
+				"sound_burst" "Weapon_Ambassador.SingleCrit"
+			}
+			"mouse_pressed_sound"	"ui/item_light_gun_pickup.wav"
+			"drop_sound"		"ui/item_light_gun_drop.wav"
+		}
+		"7296"
+		{
+			"name"	"The Vaccinator"
+			"first_sale_date"	"2012/12/19"
+			"item_class"	"tf_weapon_medigun"
+			"craft_class"	"weapon"
+			"craft_material_type"	"weapon"
+			"capabilities"
+			{
+				"nameable"		"1"
+			}
+			"tags"
+			{
+				"can_heal_allies"		"1"
+			}
+			"show_in_armory"	"1"
+			"item_type_name"	"#TF_Weapon_Medigun_Resist"
+			"item_name"		"#TF_Unique_MediGun_Resist"
+			"item_description"	"#TF_Unique_MediGun_Resist_Desc"
+			"propername"		"1"
+			"item_slot"		"secondary"
+			"equip_region"	"medigun_backpack"
+			"image_inventory"	"backpack/workshop/weapons/c_models/c_medigun_defense/c_medigun_defense"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"82"
+			"model_player"	"models/workshop/weapons/c_models/c_medigun_defense/c_medigun_defense.mdl"
+			"extra_wearable" "models/workshop/weapons/c_models/c_medigun_defense/c_medigun_defensepack.mdl"
+			"attach_to_hands"	"1"
+			"item_quality"	"unique"
+			"min_ilevel"	"8"
+			"max_ilevel"	"8"
+			"used_by_classes"
+			{
+				"medic"	"1"
+			}
+			"static_attrs"
+			{
+				"min_viewmodel_offset"		"10 0 -9"
+			}
+			"attributes"
+			{
+				"lunchbox adds minicrits"
+				{
+					"attribute_class"	"set_weapon_mode"
+					"value"	"3"
+				}
+				"ubercharge rate bonus"
+				{
+					"attribute_class"	"mult_medigun_uberchargerate"
+					"value"	"1.67"
+				}
+				"ubercharge overheal rate penalty"
+				{
+					"attribute_class"	"mult_medigun_overheal_uberchargerate"
+					"value"	"0.67"
+				}
+				"overheal fill rate reduced"
+				{
+					"attribute_class"	"overheal_fill_rate"
+					"value" "0.34"
+				}
+				"kill eater score type"
+				{
+					"attribute_class"	"kill_eater_score_type"
+					"value"				"1"								
+				}
+				"kill eater score type 2"
+				{
+					"attribute_class"	"kill_eater_score_type_2"
+					"value" 			"2"								
+				}
+				"medigun charge is resists"
+				{
+					"attribute_class"	"set_charge_type"
+					"value"	"3"
+				}
+				"medigun bullet resist passive"
+				{
+					"attribute_class"	"medigun_bullet_resist_passive"
+					"value" "0.1"
+				}
+				"medigun bullet resist deployed"
+				{
+					"attribute_class"	"medigun_bullet_resist_deployed"
+					"value" "0.75"
+				}
+				"medigun blast resist passive"
+				{
+					"attribute_class"	"medigun_blast_resist_passive"
+					"value" "0.1"
+				}
+				"medigun blast resist deployed"
+				{
+					"attribute_class"	"medigun_blast_resist_deployed"
+					"value" "0.75"
+				}
+				"medigun fire resist passive"
+				{
+					"attribute_class"	"medigun_fire_resist_passive"
+					"value" "0.1"
+				}
+				"medigun fire resist deployed"
+				{
+					"attribute_class"	"medigun_fire_resist_deployed"
+					"value" "0.75"
+				}
+			}
+			"visuals"
+			{
+				"player_bodygroups"
+				{
+					"medic_backpack"			"1"
+				}
+			}
+			"visuals_red"
+			{
+				"skin" "0"
+				"custom_particlesystem"
+				{
+					"system"	"medicgun_beam_attrib_overheal_red"
+				}
+			}
+			"visuals_blu"
+			{
+				"skin" "1"
+				"custom_particlesystem"
+				{
+					"system"	"medicgun_beam_attrib_overheal_blue"
+				}
+			}
+			"mouse_pressed_sound"	"ui/item_heavy_gun_pickup.wav"
+			"drop_sound"		"ui/item_heavy_gun_drop.wav"
+		}
+		"7297"
+		{
+			"name"	"The Wrap Assassin"
+			"first_sale_date"	"2011/12/19"
+			"item_class"	"tf_weapon_bat_wood"
+			"craft_class"	"weapon"
+			"craft_material_type"	"weapon"
+			"capabilities"
+			{
+				"nameable"		"1"
+				"can_craft_count"	"1"
+			}
+			"tags"
+			{
+				"can_deal_damage"			"1"
+				"can_deal_posthumous_damage"	"1"
+				"can_deal_critical_damage"	"1"
+				"can_deal_long_distance_damage"	"1"
+			}
+			"show_in_armory"	"1"
+			"item_type_name"	"#TF_Weapon_Bat"
+			"item_name"	"#TF_BallBuster"
+			"item_description"	"#TF_BallBuster_Desc"
+			"item_logname"	"wrap_assassin"
+			"item_iconname"	"wrap_assassin"
+			"item_slot"	"melee"
+			"item_quality"	"unique"
+			"propername"	"1"
+			"min_ilevel"	"15"
+			"max_ilevel"	"15"
+			"attach_to_hands"	"1"
+			"image_inventory"	"backpack/workshop/weapons/c_models/c_xms_giftwrap/c_xms_giftwrap"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"82"
+			"inspect_panel_dist"        "45"			
+			"model_player"	"models/workshop/weapons/c_models/c_xms_giftwrap/c_xms_giftwrap.mdl"
+			"used_by_classes"
+			{
+				"scout"	"1"
+			}
+			"static_attrs"
+			{
+				"min_viewmodel_offset"					"10 0 -6"
+			}
+			"attributes"
+			{
+				"mod bat launches ornaments"
+				{
+					"attribute_class"	"set_weapon_mode"
+					"value"	"1"
+				}
+				"damage penalty"
+				{
+					"attribute_class"	"mult_dmg"
+					"value"	"0.35"
+				}
+				"effect bar recharge rate increased"
+				{
+					"attribute_class"	"effectbar_recharge_rate"
+					"value" "0.75"
+				}
+			}
+			"visuals"
+			{
+				"sound_deploy"			"BallBuster.Ornament_DrawCatch"
+				"sound_melee_hit"		"BallBuster.HitFlesh"
+				"sound_melee_hit_world"	"BallBuster.HitWorld"
+				"sound_special2"		"BallBuster.HitBall"
+			}
+			"visuals_red"
+			{
+				"skin"	"2"
+				"sound_deploy"			"BallBuster.Ornament_DrawCatch"
+				"sound_melee_hit"		"BallBuster.HitFlesh"
+				"sound_melee_hit_world"	"BallBuster.HitWorld"
+				"sound_special2"		"BallBuster.HitBall"
+			}
+			"visuals_blu"
+			{
+				"skin"	"1"
+				"sound_deploy"			"BallBuster.Ornament_DrawCatch"
+				"sound_melee_hit"		"BallBuster.HitFlesh"
+				"sound_melee_hit_world"	"BallBuster.HitWorld"
+				"sound_special2"		"BallBuster.HitBall"
+			}
+			"mouse_pressed_sound"	"ui/item_cardboard_pickup.wav"
+			"drop_sound"			"ui/item_cardboard_drop.wav"
+		}
+				"7298"
+		{
+			"name" "Sentry Pistol"
+			"capabilities"
+			{
+				"nameable"		"1"
+				"can_craft_count"	"1"
+			}
+			"tags"
+			{
+				"can_deal_damage"			"1"
+				"can_deal_critical_damage"	"1"
+				"can_deal_mvm_penetration_damage"	"1"
+				"can_deal_long_distance_damage"	"1"
+			}
+			"first_sale_date" "2012/06/27"
+			"item_class"	"tf_weapon_handgun_scout_secondary"
+			"craft_class"	"weapon"
+			"craft_material_type"	"weapon"
+			"item_type_name"	"Handheld Sentry Gun"
+			"item_name"	"Sentry Pistol"
+			"item_description"	"#TF_Weapon_PEP_Pistol_Desc"
+			"item_logname"	"sentrypistol"
+			"item_iconname"	"sentry"
+			"item_slot"	"secondary"
+			"item_quality"	"unique"
+			"baseitem" "0"
+			"min_ilevel"	"10"
+			"max_ilevel"	"10"
+			"show_in_armory"	"1"
+			"attach_to_hands"	"1"
+			"image_inventory"	"backpack/workshop/weapons/c_models/c_pep_pistol/c_pep_pistol"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"82"
+			"inspect_panel_dist" 			"31"
+			"model_world"	"models/weapons/w_models/sentrypistol/w_pistol.mdl"
+			"model_player_per_class"
+			{
+				"scout"		"models/weapons/v_models/sentrypistol/v_pistol_scout.mdl"
+				"engineer"	"models/weapons/v_models/sentrypistol/v_pistol_engineera.mdl"
+			}
+			"capabilities"
+			{
+				"can_collect" "1"
+			}
+			"used_by_classes"
+			{
+				"scout"	"1"
+				"engineer"	"1"
+			}
+			"static_attrs"
+			{
+				"min_viewmodel_offset"					"10 0 -10"
+			}
+			"attributes"
+			{
+				"fire rate penalty"
+				{
+					"attribute_class"	"mult_postfiredelay"
+					"value" "1.6"
+				}
+				"mod use metal ammo type"
+				{
+					"attribute_class"	"mod_use_metal_ammo_type"
+					"value"	"1"
+				}
+				"mod no reload DISPLAY ONLY"
+				{
+					"attribute_class"	"mod_no_reload_display_only"
+					"value"				"1"
+				}
+				"mod max primary clip override"
+				{
+					"attribute_class"	"mod_max_primary_clip_override"
+					"value"	"-1"
+				}
+			}
+			"visuals"
+			{
+				"sound_single_shot"		"Building_Sentrygun.Fire"
+				"sound_burst"			"Building_Sentrygun.Fire"
+			}
+			"mouse_pressed_sound"	"ui/item_light_gun_pickup.wav"
+			"drop_sound"		"ui/item_light_gun_drop.wav"
 		}
 		"30570"
 		{
