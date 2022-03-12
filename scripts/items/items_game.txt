@@ -15161,10 +15161,11 @@
 			{
 				"nameable"		"1"
 			}
-			"show_in_armory"	"1"
+			"show_in_armory"	"0"
 			"item_type_name"	"#TF_Weapon_Parachute"
 			"item_name"	"#TF_Weapon_BaseJumper"
 			"item_description"	"#TF_Weapon_BaseJumper_Desc"
+			"extra_wearable" "models/workshop/weapons/c_models/c_paratooper_pack/c_paratrooper_pack.mdl"
 			"item_slot"		"secondary"
 			"equip_region"	"back"
 			"anim_slot"		"melee"
@@ -15178,7 +15179,6 @@
 			"act_as_wearable" "1"
 			"attach_to_hands"	"0"
 			"attach_to_hands_vm_only"	"0"
-			"extra_wearable" "models/workshop/weapons/c_models/c_paratooper_pack/c_paratrooper_pack.mdl"
 			"used_by_classes"
 			{
 				"soldier"	"secondary"
@@ -15193,6 +15193,11 @@
 				{
 					"attribute_class"	"parachute_attribute"
 					"value"	"1"
+				}
+				"cancel falling damage"
+				{
+					"attribute_class"	"cancel_falling_damage"
+					"value" "1"
 				}
 				"mod soldier buff type"
 				{
@@ -38014,6 +38019,7 @@
 			"mouse_pressed_sound"	"ui/item_cardboard_pickup.wav"
 			"drop_sound"			"ui/item_cardboard_drop.wav"
 		}
+
 				"7298"
 		{
 			"name" "Sentry Pistol"
@@ -38098,6 +38104,33 @@
 			}
 			"mouse_pressed_sound"	"ui/item_light_gun_pickup.wav"
 			"drop_sound"		"ui/item_light_gun_drop.wav"
+			
+		"7299"
+		{
+			"name"		"b_a_s_e jumper"
+			"prefab"		"misc"
+			"first_sale_date"		"2013/12/19"
+			"item_type_name"		"#TF_Wearable_Backpack"
+			"item_name"		"B.a.s.e Jumper"
+			"item_description"		"Parachute removed for reasons"
+			"item_slot"	"misc2"
+			"equip_region"		"back"
+			"visuals"
+			{
+				"player_bodygroups"
+				{
+					"backpack"		"1"
+				}
+			}
+			"image_inventory"		"backpack/workshop/weapons/c_models/c_paratrooper_pack/c_paratrooper_pack"
+			"model_player"		"models/workshop/weapons/c_models/c_paratooper_pack/c_paratrooper_pack.mdl"
+			"used_by_classes"
+			{
+				"Soldier"		"1"
+			}
+			"mouse_pressed_sound"		"ui/item_bag_pickup.wav"
+			"drop_sound"		"ui/item_bag_drop.wav"
+
 		}
 		"30570"
 		{
