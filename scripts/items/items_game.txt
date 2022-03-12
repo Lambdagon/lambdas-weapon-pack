@@ -2393,6 +2393,73 @@
 			}
 		}
 
+		"weapon_infernal_reward"
+		{
+			"prefab"	"weapon_spy_knife_item2"
+			"capabilities"
+			{
+				"nameable"		"1"
+			}
+			"tags"
+			{
+				"can_deal_damage"			"1"
+				"can_deal_taunt_damage"		"1"
+			}
+			"item_name"	"#TF_EternalReward"
+			"propername"	"0"
+			"item_logname"	"eternal_reward"
+			"item_iconname"	"eternal_reward"
+			"image_inventory"	"backpack/weapons/c_models/c_eternal_reward1/c_eternal_reward.vmt"
+			"model_player"	"models/weapons/c_models/c_eternal_reward1/c_eternal_reward.mdl"
+			"static_attrs"
+			{
+				"min_viewmodel_offset"					"5 0 -4"
+			}
+			"attributes"
+			{
+				"disguise on backstab"
+				{
+					"attribute_class"	"set_disguise_on_backstab"
+					"value" "1"
+				}
+				"lunchbox adds minicrits"
+				{
+					"attribute_class"	"set_weapon_mode"
+					"value" "1"
+				}
+				"special taunt"
+				{
+					"attribute_class"	"special_taunt"
+					"value" "1"
+				}
+				"mult cloak meter consume rate"
+				{
+					"attribute_class"	"mult_cloak_meter_consume_rate"
+					"value" "1.33"
+				}
+				"mod_disguise_consumes_cloak"
+				{
+					"attribute_class"	"mod_disguise_consumes_cloak"
+					"value"				"1"
+				}
+				"crit mod disabled"
+				{
+					"attribute_class"	"mult_crit_chance"
+					"value"	"0"
+				}
+				"max health additive penalty"
+				{
+					"attribute_class"	"add_maxhealth"
+					"value" "-10"
+				}
+				"damage penalty"
+				{
+					"attribute_class"	"mult_dmg"
+					"value" "0.75"
+				}
+			}
+		}
+
 		"weapon_eyelander"
 		{
 			"prefab"	"weapon_sword"
@@ -37268,7 +37335,7 @@
 		{
 			"name"	"Your Infernal Reward"
 			"first_sale_date"	"2010/09/29"
-			"prefab"	"weapon_eternal_reward"
+			"prefab"	"weapon_infernal_reward"
 			"capabilities"
 			{
 				"nameable"		"1"
@@ -37284,8 +37351,8 @@
 			"item_logname"	"eternal_reward"
 			"item_iconname"	"eternal_reward"
 			"inspect_panel_dist" "38"
-			"image_inventory"	"backpack/workshop/weapons/c_models/c_eternal_reward/c_eternal_reward"
-			"model_player"	"models/workshop/weapons/c_models/c_eternal_reward/c_eternal_reward.mdl"
+			"image_inventory"	"backpack/weapons/c_models/c_eternal_reward1/c_eternal_reward.vmt"
+			"model_player"	"models/weapons/c_models/c_eternal_reward1/c_eternal_reward.mdl"
 			"used_by_classes"
 			{
 				"pyro"	"1"
@@ -37301,6 +37368,11 @@
 				{
 					"attribute_class"	"set_dmgtype_ignite"
 					"value" "1"
+				}
+				"dmg taken from fire reduced on active"
+				{
+					"attribute_class"	"mult_dmgtaken_from_fire_active"
+					"value"			"0.50"
 				}
 			}
 		}
