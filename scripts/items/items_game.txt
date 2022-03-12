@@ -38176,7 +38176,7 @@
 			}
 			"mouse_pressed_sound"	"ui/item_light_gun_pickup.wav"
 			"drop_sound"		"ui/item_light_gun_drop.wav"
-			
+		}
 		"7299"
 		{
 			"name"		"b_a_s_e jumper"
@@ -38202,7 +38202,6 @@
 			}
 			"mouse_pressed_sound"		"ui/item_bag_pickup.wav"
 			"drop_sound"		"ui/item_bag_drop.wav"
-
 		}
 		"30570"
 		{
