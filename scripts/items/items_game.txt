@@ -9678,11 +9678,6 @@
 					"attribute_class"	"mult_dmg"
 					"value"	"0"
 				}
-				"crit mod disabled"
-				{
-					"attribute_class"	"mult_crit_chance"
-					"value"	"0"
-				}
 				"no self blast dmg"
 				{
 					"attribute_class"	"no_self_blast_dmg"
@@ -9840,11 +9835,6 @@
 				"damage penalty"
 				{
 					"attribute_class"	"mult_dmg"
-					"value"	"0"
-				}
-				"crit mod disabled"
-				{
-					"attribute_class"	"mult_crit_chance"
 					"value"	"0"
 				}
 				"no self blast dmg"
@@ -32026,6 +32016,7 @@
 				"heavy"	"1"
 				"engineer"	"1"
 				"sniper"	"secondary"
+				"demoman"	"secondary"
 			}
 			"attributes"
 			{
@@ -37388,8 +37379,8 @@
 			}
 			"show_in_armory"	"1"
 			"item_type_name"	"#TF_Weapon_RocketLauncher"
-			"item_name"	"Jumper Sniper"
-			"item_description"	"A fun little Shotgun"
+			"item_name"	"Jumper Sniper Rifle"
+			"item_description"	"A fun little Sniper Rifle"
 			"item_slot"	"primary"
 			"item_quality"	"unique"
 			"min_ilevel"	"1"
@@ -37399,7 +37390,7 @@
 			"image_inventory_size_h"		"82"
 			"item_quality"		"unique"
 			"attach_to_hands"	"1"
-			"model_player"	"models/weapons/c_models/c_sniperrifle/c_sniperrifle.mdl"
+			"model_player"	"models/weapons/c_models/c_sniperrifle1/c_sniperrifle.mdl"
 			"used_by_classes"
 			{
 				"sniper"	"primary"
@@ -37430,7 +37421,128 @@
 				"maxammo primary increased"
 				{
 					"attribute_class"	"mult_maxammo_primary"
-					"value" "3.0"
+					"value" "50.0"
+				}
+			}
+			"visuals"
+			{
+				"sound_single_shot"	"Weapon_Rocket_Jumper.Single"
+				"sound_special1"		"Weapon_Rocket_Jumper.Explode"
+			}
+		}
+		"7290"
+		{
+			"name"	"Direct Rocket Sniper"
+			"prefab"	"valve"
+			"first_sale_date"	"2010/09/29"
+			"item_class"	"tf_weapon_sniperrifle"
+			"craft_class"	"weapon"
+			"craft_material_type"	"weapon"
+			"capabilities"
+			{
+				"nameable"		"1"
+			}
+			"show_in_armory"	"1"
+			"item_type_name"	"##TF_Weapon_SniperRifle"
+			"item_name"	"Direct Rocket Rifle"
+			"item_description"	"KABOOM! Headshot"
+			"item_slot"	"primary"
+			"item_quality"	"unique"
+			"min_ilevel"	"1"
+			"max_ilevel"	"1"
+			"image_inventory"	"backpack/weapons/c_models/c_directhit/c_directhit"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"82"
+			"item_quality"		"unique"
+			"attach_to_hands"	"1"
+			"model_player"	"models/weapons/c_models/c_directhit/c_directhit.mdl"
+			"used_by_classes"
+			{
+				"sniper"	"primary"
+
+			}
+			"static_attrs"
+			{
+				"min_viewmodel_offset"		"10 -3 -10"				
+			}
+			"mouse_pressed_sound"	"ui/item_heavy_gun_pickup.wav"
+			"drop_sound"		"ui/item_heavy_gun_drop.wav"
+			"attributes"
+			{
+				"Blast radius decreased"
+				{
+					"attribute_class"	"mult_explosion_radius"
+					"value"	"0.3"
+				}
+				"Projectile speed increased"
+				{
+					"attribute_class"	"mult_projectile_speed"
+					"value"	"1.8"
+				}
+				"damage bonus"
+				{
+					"attribute_class"	"mult_dmg"
+					"value"	"1.25"
+				}
+				"mod mini-crit airborne"
+				{
+					"attribute_class"	"mini_crit_airborne"
+					"value" "1"
+				}
+				"override projectile type"
+				{
+					"attribute_class"	"override_projectile_type"
+					"value"				"2" 
+				}
+			}
+			"visuals"
+			{
+				"sound_single_shot"	"Weapon_Rocket_Jumper.Single"
+				"sound_special1"		"Weapon_Rocket_Jumper.Explode"
+			}
+		}
+		"7291"
+		{
+			"name"	"Rocket Sniper"
+			"prefab"	"valve"
+			"first_sale_date"	"2010/09/29"
+			"item_class"	"tf_weapon_sniperrifle"
+			"craft_class"	"weapon"
+			"craft_material_type"	"weapon"
+			"capabilities"
+			{
+				"nameable"		"1"
+			}
+			"show_in_armory"	"1"
+			"item_type_name"	"##TF_Weapon_SniperRifle"
+			"item_name"	"Rocket Rifle"
+			"item_description"	"KABOOM! Headshot"
+			"item_slot"	"primary"
+			"item_quality"	"unique"
+			"min_ilevel"	"1"
+			"max_ilevel"	"1"
+			"image_inventory"	"backpack/weapons/w_models/w_rocketlauncher"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"82"
+			"item_quality"		"unique"
+			"attach_to_hands"	"1"
+			"model_player"	"models/weapons/c_models/c_rocketlauncher/c_rocketlauncher.mdl"
+			"used_by_classes"
+			{
+				"sniper"	"primary"
+			}
+			"static_attrs"
+			{
+				"min_viewmodel_offset"		"10 -3 -10"				
+			}
+			"mouse_pressed_sound"	"ui/item_heavy_gun_pickup.wav"
+			"drop_sound"		"ui/item_heavy_gun_drop.wav"
+			"attributes"
+			{
+				"override projectile type"
+				{
+					"attribute_class"	"override_projectile_type"
+					"value"				"2" 
 				}
 			}
 			"visuals"
