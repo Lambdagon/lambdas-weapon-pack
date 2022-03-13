@@ -38184,7 +38184,7 @@
 			"first_sale_date"		"2013/12/19"
 			"item_type_name"		"#TF_Wearable_Backpack"
 			"item_name"		"B.a.s.e Jumper"
-			"item_description"		"Parachute removed for reasons"
+			"item_description"		"Parachute removed for legal reasons"
 			"item_slot"	"misc2"
 			"equip_region"		"back"
 			"visuals"
