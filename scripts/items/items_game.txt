@@ -2557,6 +2557,88 @@
 			"xifier_class_remap"	"eyelander"
 		}
 
+		"weapon_nessies_nine_iron"
+		{
+			"prefab"	"valve"
+			"item_class"	"tf_weapon_bat_wood"
+			"capabilities"
+			{
+				"nameable"		"1"
+			}
+			"tags"
+			{
+				"can_deal_damage"			"1"
+				"can_be_equipped_by_soldier_or_demo"	"1"
+				"can_deal_critical_damage"	"1"
+				"can_deal_taunt_damage"		"1"
+			}
+			"base_item_name"	"The Eyelander"
+			"item_name"	"Nessie's Nine Iron"
+			"item_description"	"Monty Gator Golf"
+			"show_in_armory"	"1"
+			"propername"	"1"
+			"image_inventory"	"backpack/workshop/weapons/c_models/c_golfclub/c_golfclub"
+			"model_player"	"models/workshop/weapons/c_models/c_golfclub/c_golfclub.mdl"
+			"used_by_classes"
+			{
+				"demoman"	"1"
+			}
+			"static_attrs"
+			{
+				"min_viewmodel_offset"					"12 -3 -10"
+			}
+			"visuals"
+			{
+				"sound_melee_miss"	"Weapon_Sword.Swing"
+				"sound_melee_hit"	"Weapon_Sword.HitFlesh"
+				"sound_melee_hit_world"	"Weapon_Sword.HitWorld"
+				"sound_burst"		"Weapon_Sword.SwingCrit"
+				"sound_special1"	"Sword.Hit"
+				"sound_special2"	"Sword.Idle"
+				"styles"
+				{
+					"0"
+					{
+						"skin_red" "0"
+						"skin_blu" "1"
+						"selectable"	"0"
+					}
+					"1"
+					{
+						"skin_red"	"2"
+						"skin_blu"	"3"
+						"selectable"	"0"
+						"image_inventory"	"backpack/weapons/c_models/c_claymore/c_claymore_gold"
+					}
+				}
+			}
+			"attributes"
+			{
+				"is_a_sword"
+				{
+					"attribute_class"	"is_a_sword"
+					"value"				"72"
+				}
+				"scattergun has knockback"
+				{
+					"attribute_class"	"set_scattergun_has_knockback"
+					"value"	"1"
+				}
+				"damage penalty"
+				{
+					"attribute_class"	"mult_dmg"
+					"value" "0.65"
+				}
+				"mod bat launches balls"
+				{
+					"attribute_class"	"set_weapon_mode"
+					"value"	"1"
+				}
+			}
+			"mouse_pressed_sound"	"ui/item_knife_large_pickup.wav"
+			"drop_sound"		"ui/item_metal_weapon_drop.wav"
+		}
+
 		"weapon_fireaxe"
 		{
 			"capabilities"
@@ -5496,6 +5578,8 @@
 				"pyro" "secondary"
 				"soldier" "secondary"
 				"heavy" "secondary"
+				"medic"	"primary"
+				"scout"	"primary"
 			}
 			"attributes"
 			{
@@ -23429,7 +23513,6 @@
 			}
 			"used_by_classes"
 			{
-				"scout"	"1"
 				"sniper"	"1"
 				"soldier"	"1"
 				"demoman"	"1"
@@ -24085,7 +24168,7 @@
 			"prefab"		"weapon_grenade_launcher"
 			"first_sale_date"	"2012/12/19"
 			"particle_suffix" 	"loose_cannon"
-			"item_name"		"cUM cANNON"
+			"item_name"		"Cum Cannon"
 			"item_description"		"#TF_Weapon_Cannon_desc"
 			"show_in_armory"	"0"
 			"image_inventory"	"backpack/workshop/weapons/c_models/c_demo_cannon/c_demo_cannon"
@@ -24101,6 +24184,11 @@
 				{
 					"attribute_class"	"override_projectile_type"
 					"value"				"23"
+				}
+				"stickybomb charge rate"
+				{
+					"attribute_class"	"stickybomb_charge_rate"
+					"value"	"-10"
 				}
 			}
 			"visuals"
@@ -34786,6 +34874,7 @@
 			"show_in_armory"	"1"
 			"item_type_name"	"#TF_Weapon_IndivisibleParticleSmasher"
 			"item_description"	"this is the last time i try i promise"
+			"show_in_armory"	"1"
 			"item_name"	"Cum Cannon"
 			"item_slot"	"secondary"
 			"anim_slot" "secondary2"
@@ -38274,6 +38363,104 @@
 			}
 			"mouse_pressed_sound"		"ui/item_bag_pickup.wav"
 			"drop_sound"		"ui/item_bag_drop.wav"
+		}
+		"7300"
+		{
+			"name"	"The Three-Rune Blade"
+			"item_class"	"tf_weapon_bat"
+			"craft_class"	"weapon"
+			"craft_material_type"	"weapon"
+			"capabilities"
+			{
+				"nameable"		"1"
+			}
+			"tags"
+			{
+				"can_deal_damage"			"1"
+				"can_deal_critical_damage"	"1"
+			}
+			"show_in_armory"	"1"
+			"item_type_name"	"bat"
+			"item_name"	"Three-Rune Blade"
+			"item_descrption" "Stab stab stab"
+			"item_logname"	"lead_pipe"
+			"item_iconname"	"lead_pipe"
+			"item_slot"		"melee"
+			"item_quality"	"unique"
+			"propername"	"1"
+			"min_ilevel"	"25"
+			"max_ilevel"	"25"
+			"attach_to_hands"	"1"
+			"image_inventory"	"backpack/workshop/weapons/c_models/c_scout_sword/c_scout_sword"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"82"
+			"inspect_panel_dist" 				"60"
+			"model_player"	"models/workshop/weapons/c_models/c_scout_sword/c_scout_sword.mdl"
+
+			"used_by_classes"
+			{
+				"scout"	"1"
+				"demoman"	"1"
+			}
+			"static_attrs"
+			{
+				"min_viewmodel_offset"					"10 0 -6"
+			}
+			"attributes"
+			{
+				"is_a_sword"
+				{
+					"attribute_class"	"is_a_sword"
+					"value"				"72"
+				}
+				"damage bonus"
+				{
+					"attribute_class"	"mult_dmg"
+					"value"	"1.35"
+				}
+				"max health additive bonus"
+				{
+					"attribute_class"	"add_maxhealth"
+					"value" "50"
+				}
+				"move speed bonus"
+				{
+					"attribute_class"	"mult_player_movespeed"
+					"value" "1.10"
+				}
+				"maxammo primary reduced"
+				{
+					"attribute_class"	"mult_maxammo_primary"
+					"value"				"-1"
+				}
+				"maxammo secondary reduced"
+				{
+					"attribute_class"	"mult_maxammo_secondary"
+					"value"				"-1"
+				}
+			}
+			
+			"mouse_pressed_sound"	"ui/item_wood_pole_pickup.wav"
+			"drop_sound"		"ui/item_wood_pole_drop.wav"
+			"visuals_red"
+			{
+				"skin"	"0"
+			}
+			"visuals_blu"
+			{
+				"skin"	"1"
+			}
+		}
+		"7301"
+		{
+			"name"	"The Nessie's Nine Iron"
+			"prefab"	"valve weapon_nessies_nine_iron"
+			"first_sale_date"	"2010/09/29"
+			"show_in_armory"	"1"
+			"static_attrs"
+			{
+				"min_viewmodel_offset"		"10 0 -11"				
+			}
 		}
 		"30570"
 		{
