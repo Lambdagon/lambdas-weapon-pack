@@ -33808,7 +33808,7 @@
 			"prefab"		"halloween2014 no_craft hat"
 			"item_name"		"#TF_sf14_the_rogues_rabbit"
 			"item_description"		"#TF_sf14_the_rogues_rabbit_Desc"
-			"item_slot"	"misc2"
+			"item_slot"	"head"
 			"equip_region"		"hat"
 			"propername"		"1"
 			"image_inventory"		"backpack/workshop/player/items/spy/sf14_the_rogues_rabbit/sf14_the_rogues_rabbit"
