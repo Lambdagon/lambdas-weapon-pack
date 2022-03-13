@@ -5938,6 +5938,26 @@
 					"attribute_class"	"mult_maxammo_secondary"
 					"value"	"3.1"
 				}
+				"damage penalty"
+				{
+					"attribute_class"	"mult_dmg"
+					"value"	"1.15"
+				}
+				"weapon spread penalty"
+				{
+					"attribute_class"	"mult_spread_scale"
+					"value"	"1.8"
+				}
+				"crit mod disabled"
+				{
+					"attribute_class"	"mult_crit_chance"
+					"value"	"0"
+				}
+				"fire rate penalty"
+				{
+					"attribute_class"	"mult_postfiredelay"
+					"value" "1.6"
+				}
 			}
 			"mouse_pressed_sound"		"#ui/item_heavy_gun_pickup.wav"
 			"drop_sound"				"#ui/item_heavy_gun_drop.wav"
@@ -24861,6 +24881,7 @@
 			"static_attrs"
 			{
 				"min_viewmodel_offset"					"10 -5 -10"
+				"crits_become_minicrits"				"1"
 			}
 			"model_player_per_class"
 			{
@@ -24888,6 +24909,11 @@
 					"attribute_class"	"mult_crit_chance"
 					"value"	"0"
 				}
+				"maxammo primary reduced"
+				{
+					"attribute_class"	"mult_maxammo_primary"
+					"value"				"0.20"
+				}
 				"special taunt"
 				{
 					"attribute_class"	"special_taunt"
@@ -24896,6 +24922,11 @@
 				"damage bonus"
 				{
 					"attribute_class"	"mult_dmg"
+					"value"	"1.2"
+				}
+				"fire rate penalty"
+				{
+					"attribute_class"	"mult_postfiredelay"
 					"value"	"1.2"
 				}
 				"revolver use hit locations"
@@ -32411,6 +32442,26 @@
 					"attribute_class"	"mult_maxammo_secondary"
 					"value"	"1.5"
 					"value"	"2.0"
+				}
+				"weapon spread penalty"
+				{
+					"attribute_class"	"mult_spread_scale"
+					"value"	"1.6"
+				}
+				"max health additive penalty"
+				{
+					"attribute_class"	"add_maxhealth"
+					"value" "-15"
+				}
+				"crit mod disabled"
+				{
+					"attribute_class"	"mult_crit_chance"
+					"value"	"0"
+				}
+				"deploy time increased"
+				{
+				"attribute_class"	"mult_deploy_time"
+				"value"		"1.3"
 				}
 			}
 		}
