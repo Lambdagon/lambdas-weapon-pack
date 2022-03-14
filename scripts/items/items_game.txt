@@ -38434,12 +38434,12 @@
 				"maxammo primary reduced"
 				{
 					"attribute_class"	"mult_maxammo_primary"
-					"value"				"-1"
+					"value"				"0"
 				}
 				"maxammo secondary reduced"
 				{
 					"attribute_class"	"mult_maxammo_secondary"
-					"value"				"-1"
+					"value"				"0"
 				}
 			}
 			
