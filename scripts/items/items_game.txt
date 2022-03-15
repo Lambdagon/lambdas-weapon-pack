@@ -2557,6 +2557,102 @@
 			"xifier_class_remap"	"eyelander"
 		}
 
+		"weapon_eyelander_golden"
+		{
+			"prefab"	"weapon_sword"
+			"capabilities"
+			{
+				"nameable"		"1"
+			}
+			"tags"
+			{
+				"can_deal_damage"			"1"
+				"can_be_equipped_by_soldier_or_demo"	"1"
+				"can_deal_critical_damage"	"1"
+				"can_deal_taunt_damage"		"1"
+			}
+			"base_item_name"	"The Eyelander"
+			"item_name"	"#TF_Unique_Achievement_Sword"
+			"item_description"	"#TF_Unique_Achievement_Sword_Desc"
+			"propername"	"1"
+			"image_inventory"	"backpack/weapons/c_models/c_claymore/c_claymore"
+			"model_player"	"models/weapons/c_models/c_claymore/c_claymore.mdl"
+			"used_by_classes"
+			{
+				"demoman"	"1"
+			}
+			"static_attrs"
+			{
+				"min_viewmodel_offset"					"12 -3 -10"
+			}
+			"visuals"
+			{
+				"sound_melee_miss"	"Weapon_Sword.Swing"
+				"sound_melee_hit"	"Weapon_Sword.HitFlesh"
+				"sound_melee_hit_world"	"Weapon_Sword.HitWorld"
+				"sound_burst"		"Weapon_Sword.SwingCrit"
+				"sound_special1"	"Sword.Hit"
+				"sound_special2"	"Sword.Idle"
+				"styles"
+				{
+					"0"
+					{
+						"skin_red" "0"
+						"skin_blu" "1"
+						"selectable"	"0"
+					}
+					"1"
+					{
+						"skin_red"	"2"
+						"skin_blu"	"3"
+						"selectable"	"0"
+						"image_inventory"	"backpack/weapons/c_models/c_claymore/c_claymore_gold"
+					}
+				}
+			}
+			"attributes"
+			{
+				"is_a_sword"
+				{
+					"attribute_class"	"is_a_sword"
+					"value"				"72"
+				}
+				"crit mod disabled"
+				{
+					"attribute_class"	"mult_crit_chance"
+					"value"	"0"
+				}
+				"max health additive penalty"
+				{
+					"attribute_class"	"add_maxhealth"
+					"value" "-25"
+				}
+				"decapitate type"
+				{
+					"attribute_class"	"decapitate_type"
+					"value"	"1"
+				}
+				"kill eater score type"
+				{
+					"attribute_class"	"kill_eater_score_type"
+					"value" 	"6"									
+				}
+				"kill eater kill type"
+				{
+					"attribute_class"	"kill_eater_kill_type"
+					"value"	"6"			
+				}
+				"special taunt"
+				{
+					"attribute_class"	"special_taunt"
+					"value" "1"
+				}
+			}
+			"mouse_pressed_sound"	"ui/item_knife_large_pickup.wav"
+			"drop_sound"		"ui/item_metal_weapon_drop.wav"
+			"xifier_class_remap"	"eyelander"
+		}
+
 		"weapon_nessies_nine_iron"
 		{
 			"prefab"	"valve"
@@ -3351,7 +3447,7 @@
 				"rocket jump damage reduction"
 				{
 					"attribute_class"	"rocket_jump_dmg_reduction"
-					"value" "0.5"
+					"value" "0.05"
 				}
 				"move speed penalty"
 				{
@@ -5851,7 +5947,115 @@
 			"particle_suffix"		"smg"
 		}
 
+		"weapon_smg_golden"
+		{
+			"enabled"	"1"
+			"item_class"	"tf_weapon_smg"
+			"craft_material_type"	"weapon"
+			"capabilities"
+			{
+				"nameable"		"1"
+			}
+			"tags"
+			{
+				"can_deal_damage"			"1"
+				"can_deal_critical_damage"	"1"
+				"can_deal_mvm_penetration_damage"	"1"
+				"can_deal_long_distance_damage"	"1"
+			}
+			"base_item_name"	"TF_WEAPON_SMG"
+			"inspect_panel_dist" "39"
+			"show_in_armory"	"1"
+			"item_type_name"	"#TF_Weapon_SMG"
+			"item_name"	"#TF_Weapon_SMG"
+			"item_slot"	"secondary"
+			"item_quality"		"unique"
+			"min_ilevel"	"1"
+			"max_ilevel"	"1"
+			"image_inventory"	"backpack/weapons/w_models/w_smg"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"82"
+			"model_player"	"models/weapons/c_models/c_smg/c_smg.mdl"
+			"attach_to_hands"	"1"
+			"used_by_classes"
+			{
+				"sniper"	"1"
+			}
+			"mouse_pressed_sound"	"ui/item_light_gun_pickup.wav"
+			"drop_sound"		"ui/item_light_gun_drop.wav"
+			"visuals"
+			{
+				"styles"
+				{
+					"0"
+					{
+						"skin_red"	"0"
+						"skin_blu"	"1"
+						"selectable"	"0"
+					}
+					"1"
+					{
+						"skin_red"	"2"
+						"skin_blu"	"3"
+						"selectable"	"0"
+						"image_inventory"	"backpack/weapons/c_models/c_smg/c_smg_gold"
+					}
+				}
+			}
+			"static_attrs"
+			{
+				"weapon_stattrak_module_scale"			"0.505"
+				"min_viewmodel_offset"					"10 0 -7"
+			}
+			"xifier_class_remap"	"weapon_smg"
+			"particle_suffix"		"smg"
+		}
+
 		"weapon_sniperrifle"
+		{
+			"capabilities"
+			{
+				"nameable"		"1"
+			}
+			"tags"
+			{
+				"can_deal_damage"			"1"
+				"can_headshot"				"1"
+				"can_deal_mvm_penetration_damage"	"1"
+				"can_deal_long_distance_damage"	"1"
+			}
+			"base_item_name"	"TF_WEAPON_SNIPERRIFLE"
+			"inspect_panel_dist" "71"
+			"enabled"	"1"
+			"item_class"	"tf_weapon_sniperrifle"
+			"craft_class"	"weapon"
+			"craft_material_type"	"weapon"
+			"item_type_name"	"#TF_Weapon_SniperRifle"
+			"item_name"	"#TF_Weapon_SniperRifle"
+			"item_slot"	"primary"
+			"item_quality"	"normal"
+			"min_ilevel"	"1"
+			"max_ilevel"	"1"
+			"image_inventory"	"backpack/weapons/w_models/w_sniperrifle"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"82"
+			"attach_to_hands" "1"
+			"model_player"	"models/weapons/c_models/c_sniperrifle/c_sniperrifle.mdl"
+			"used_by_classes"
+			{
+				"sniper"	"1"
+			}
+			"static_attrs"
+			{
+				"weapon_stattrak_module_scale"			"0.676"
+				"min_viewmodel_offset"					"10 0 -10"
+			}
+			"mouse_pressed_sound"	"ui/item_heavy_gun_pickup.wav"
+			"drop_sound"		"ui/item_heavy_gun_drop.wav"
+			"particle_suffix"		"sniperrifle"
+		}
+
+		"weapon_sniperrifle_golden"
 		{
 			"capabilities"
 			{
@@ -7318,6 +7522,7 @@
 			"item_name"	"#TF_Weapon_SMG"
 			"item_slot"	"secondary"
 			"item_quality"	"normal"
+			"show_in_armory"	"1"
 			"baseitem" "1"
 			"min_ilevel"	"1"
 			"max_ilevel"	"1"
@@ -7354,6 +7559,7 @@
 			"name"	"TF_WEAPON_GRENADELAUNCHER"
 			"first_sale_date"	"2010/09/29"
 			"prefab"	"weapon_grenade_launcher"
+			"show_in_armory"	"1"
 			"baseitem" "1"
 		}
 		"20"
@@ -7361,6 +7567,7 @@
 			"name"	"TF_WEAPON_PIPEBOMBLAUNCHER"
 			"first_sale_date"	"2010/09/29"
 			"prefab"	"weapon_stickybomb_launcher"
+			"show_in_armory"	"1"
 			"baseitem" "1"
 		}
 		"21"
@@ -39047,12 +39254,18 @@
 		"7310"
 		{
 			"name"	"Australium Rocket Launcher"
+			"item_name"		"Australium Rocket Launcher"
 			"show_in_armory"	"1"
 			"prefab"	"weapon_rocketlauncher_golden"
 			"baseitem"	"0"
 			"item_quality"	"unique"
 			"attributes"
 			{
+				"turn to gold"
+				{
+					"attribute_class"	"set_turn_to_gold"
+					"value" "1"
+				}
 				"is australium item"
 				{
 					"attribute_class"	"is_australium_item"
@@ -39067,14 +39280,506 @@
 			"prefab"	"weapon_flamethrower_golden"
 			"baseitem"	"0"
 			"item_quality"	"unique"
+			"show_in_armory"	"1"
 			"attributes"
 			{
+				"turn to gold"
+				{
+					"attribute_class"	"set_turn_to_gold"
+					"value" "1"
+				}
 				"is australium item"
 				{
 					"attribute_class"	"is_australium_item"
 					"value"				"1"
 				}
 			}
+		}
+		"7312"
+		{
+			"name"	"TF_Australium_WEAPON_SCATTERGUN"
+			"first_sale_date"	"2010/09/29"
+			"item_name"		"Australium Scattergun"
+			"prefab"	"weapon_scattergun"
+			"show_in_armory"	"1"
+			"baseitem" "0"
+			"attributes"
+			{
+				"turn to gold"
+				{
+					"attribute_class"	"set_turn_to_gold"
+					"value" "1"
+				}
+				"is australium item"
+				{
+					"attribute_class"	"is_australium_item"
+					"value"				"1"
+				}
+			}
+		}
+		"7313"
+		{
+			"name"	"The Australium Force-a-Nature"
+			"prefab"	"valve weapon_force_a_nature"
+			"item_name"		"Australium Force-A-Nature"
+			"first_sale_date"	"2010/09/29"
+			"baseitem"	"0"
+			"show_in_armory"	"1"
+			"attributes"
+			{
+				"turn to gold"
+				{
+					"attribute_class"	"set_turn_to_gold"
+					"value" "1"
+				}
+				"is australium item"
+				{
+					"attribute_class"	"is_australium_item"
+					"value"				"1"
+				}
+			}
+		}
+		"7314"
+		{
+			"name"	"The Australium Black Box"
+			"item_name"		"Australium Black Box"
+			"prefab" "weapon_lfe_blackbox"
+			"first_sale_date"	"2010/09/29"
+			"particle_suffix"	"black_box"
+			"show_in_armory"	"1"
+			"attributes"
+			{
+				"turn to gold"
+				{
+					"attribute_class"	"set_turn_to_gold"
+					"value" "1"
+				}
+				"is australium item"
+				{
+					"attribute_class"	"is_australium_item"
+					"value"				"1"
+				}
+			}
+		}
+		"7315"
+		{
+			"name"	"TF_Australium_WEAPON_GRENADELAUNCHER"
+			"item_name"		"Australium Grenade Launcher"
+			"first_sale_date"	"2010/09/29"
+			"prefab"	"weapon_grenade_launcher"
+			"baseitem" "1"
+			"show_in_armory"	"0"
+			"attributes"
+			{
+				"turn to gold"
+				{
+					"attribute_class"	"set_turn_to_gold"
+					"value" "1"
+				}
+				"is australium item"
+				{
+					"attribute_class"	"is_australium_item"
+					"value"				"1"
+				}
+			}
+		}
+		"7316"
+		{
+			"name"	"TF_Australium_WEAPON_PIPEBOMBLAUNCHER"
+			"item_name"		"Australium Stickybomb Launcher"
+			"first_sale_date"	"2010/09/29"
+			"prefab"	"weapon_stickybomb_launcher"
+			"baseitem" "1"
+			"show_in_armory"	"0"
+			"attributes"
+			{
+				"turn to gold"
+				{
+					"attribute_class"	"set_turn_to_gold"
+					"value" "1"
+				}
+				"is australium item"
+				{
+					"attribute_class"	"is_australium_item"
+					"value"				"1"
+				}
+			}
+		}
+		"7317"
+		{
+			"name"	"The Australium Eyelander"
+			"item_name"		"Australium Eyelander"
+			"prefab"	"valve weapon_eyelander_golden"
+			"first_sale_date"	"2010/09/29"
+			"show_in_armory"	"1"
+			"static_attrs"
+			{
+				"min_viewmodel_offset"		"10 0 -11"				
+			}
+			"attributes"
+			{
+				"turn to gold"
+				{
+					"attribute_class"	"set_turn_to_gold"
+					"value" "1"
+				}
+				"is australium item"
+				{
+					"attribute_class"	"is_australium_item"
+					"value"				"1"
+				}
+			}
+		}
+		"7318"
+		{
+			"name"	"TF_Australium_WEAPON_SNIPERRIFLE"
+			"item_name"		"Australium Sniper Rifle"
+			"first_sale_date"	"2010/09/29"
+			"prefab"	"weapon_sniperrifle_golden"
+			"baseitem" "0"
+			"show_in_armory"	"1"
+			"attributes"
+			{
+				"turn to gold"
+				{
+					"attribute_class"	"set_turn_to_gold"
+					"value" "1"
+				}
+				"is australium item"
+				{
+					"attribute_class"	"is_australium_item"
+					"value"				"1"
+				}
+			}
+		}
+		"7319"
+		{
+			"name"	"TF_Australium_WEAPON_MINIGUN"
+			"item_name"		"Australium Minigun"
+			"first_sale_date"	"2010/09/29"
+			"prefab"	"weapon_minigun"
+			"baseitem" "0"
+			"show_in_armory"	"1"
+			"attributes"
+			{
+				"turn to gold"
+				{
+					"attribute_class"	"set_turn_to_gold"
+					"value" "1"
+				}
+				"is australium item"
+				{
+					"attribute_class"	"is_australium_item"
+					"value"				"1"
+				}
+			}
+		}
+		"7320"
+		{
+			"name"	"Australium Tomislav"
+			"item_name"		"Australium Tomislav"
+			"prefab" "weapon_tomislav"
+			"first_sale_date"	"2011/04/14"
+			"particle_suffix"	"tomislav"
+			"tags"
+			{
+				"can_be_festivized"		"1"
+			}
+		}
+		"7321"
+		{
+			"name"	"The Australium Frontier Justice"
+			"item_name"		"Australium Frontier Justice"
+			"first_sale_date"	"2010/09/29"
+			"prefab"	"valve weapon_frontier_justice"
+			"static_attrs"
+			{
+				"min_viewmodel_offset"		"10 0 -9"
+			}
+			"show_in_armory"	"1"
+			"attributes"
+			{
+				"turn to gold"
+				{
+					"attribute_class"	"set_turn_to_gold"
+					"value" "1"
+				}
+				"is australium item"
+				{
+					"attribute_class"	"is_australium_item"
+					"value"				"1"
+				}
+			}
+			"visuals"
+			{
+				"styles"
+				{
+					"0"
+					{
+						"skin_red" "0"
+						"skin_blu" "1"
+						"selectable"	"0"
+					}
+					"1"
+					{
+						"skin_red"	"2"
+						"skin_blu"	"3"
+						"selectable"	"0"
+						"image_inventory"	"backpack/weapons/c_models/c_frontierjustice/c_frontierjustice_gold"
+					}
+				}
+			}
+			"xifier_class_remap"	"frontier_justice"
+		}
+		"7322"
+		{
+			"name"	"TF_Australium_WEAPON_MEDIGUN"
+			"item_name"		"Australium Medi-Gun"
+			"first_sale_date"	"2010/09/29"
+			"prefab"	"weapon_medigun"
+			"baseitem" "0"
+			"show_in_armory"	"1"
+			"attributes"
+			{
+				"turn to gold"
+				{
+					"attribute_class"	"set_turn_to_gold"
+					"value" "1"
+				}
+				"is australium item"
+				{
+					"attribute_class"	"is_australium_item"
+					"value"				"1"
+				}
+			}
+		}
+		"7323"
+		{
+			"name"	"The Australium Blutsauger"
+			"prefab"	"valve"
+			"first_sale_date"	"2010/09/29"
+			"item_class"	"tf_weapon_syringegun_medic"
+			"craft_class"	"weapon"
+			"craft_material_type"	"weapon"
+			"capabilities"
+			{
+				"nameable"		"1"
+			}
+			"tags"
+			{
+				"can_deal_damage"			"1"
+				"can_deal_posthumous_damage"	"1"
+				"can_deal_critical_damage"	"1"
+				"can_deal_long_distance_damage"	"1"
+			}
+			"item_logname"	"Australium_blutsauger"
+			"item_iconname"	"Australium_blutsauger"
+			"show_in_armory"	"1"
+			"item_type_name"	"#TF_Weapon_SyringeGun"
+			"item_name"	"Australium Blutsauger"
+			"item_slot"	"primary"
+			"image_inventory"	"backpack/weapons/c_models/c_leechgun/c_leechgun"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"82"
+			"model_player"	"models/weapons/c_models/c_leechgun/c_leechgun.mdl"
+			"attach_to_hands"	"1"
+			"inspect_panel_dist" "50"
+			"item_quality"	"unique"
+			"propername"	"1"
+			"min_ilevel"	"5"
+			"max_ilevel"	"5"
+			"used_by_classes"
+			{
+				"medic"	"1"
+			}
+			"static_attrs"
+			{
+				"min_viewmodel_offset"		"10 0 -12"				
+			}
+			"attributes"
+			{
+				"heal on hit for rapidfire"
+				{
+					"attribute_class"	"add_onhit_addhealth"
+					"value"	"3"
+				}
+				"health drain"
+				{
+					"attribute_class"	"add_health_regen"
+					"value"	"-2"
+				}
+				"turn to gold"
+				{
+					"attribute_class"	"set_turn_to_gold"
+					"value" "1"
+				}
+				"is australium item"
+				{
+					"attribute_class"	"is_australium_item"
+					"value"				"1"
+				}
+			}
+			"mouse_pressed_sound"	"ui/item_light_gun_pickup.wav"
+			"drop_sound"		"ui/item_light_gun_drop.wav"
+		}
+		"7324"
+		{
+			"name"	"TF_Australium_WEAPON_SMG"
+			"prefab"	"weapon_smg_golden"
+			"capabilities"
+			{
+				"nameable"		"1"
+			}
+			"tags"
+			{
+				"can_deal_damage"			"1"
+				"can_deal_mvm_penetration_damage"	"1"
+				"can_deal_long_distance_damage"	"1"
+			}
+			"first_sale_date"	"2010/09/29"
+			"item_class"	"tf_weapon_smg"
+			"craft_class"	"weapon"
+			"craft_material_type"	"weapon"
+			"item_type_name"	"Australium"
+			"show_in_armory"	"0"
+			"item_name"	"Australium SMG"
+			"item_slot"	"secondary"
+			"item_quality"	"normal"
+			"baseitem" "1"
+			"min_ilevel"	"1"
+			"max_ilevel"	"1"
+			"image_inventory"	"backpack/weapons/w_models/w_smg"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"82"
+			"model_player"	"models/weapons/c_models/c_smg/c_smg.mdl"
+			"attach_to_hands"	"1"
+			"used_by_classes"
+			{
+				"sniper"	"1"
+			}
+			"attributes"
+			{
+				"turn to gold"
+				{
+					"attribute_class"	"set_turn_to_gold"
+					"value" "1"
+				}
+				"is australium item"
+				{
+					"attribute_class"	"is_australium_item"
+					"value"				"1"
+				}
+			}
+			"mouse_pressed_sound"	"ui/item_light_gun_pickup.wav"
+			"drop_sound"		"ui/item_light_gun_drop.wav"
+		}
+		"7325"
+		{
+			"name"	"TF_Australium_WEAPON_KNIFE"
+			"item_name"	"Australium Knife"
+			"first_sale_date"	"2010/09/29"
+			"prefab"	"weapon_knife"
+			"baseitem" "0"
+			"show_in_armory"	"1"
+			"attributes"
+			{
+				"turn to gold"
+				{
+					"attribute_class"	"set_turn_to_gold"
+					"value" "1"
+				}
+				"is australium item"
+				{
+					"attribute_class"	"is_australium_item"
+					"value"				"1"
+				}
+			}
+		}
+		"7326"
+		{
+			"name"	"The Australium Ambassador"
+			"item_name"	"Australium Ambassador"
+			"first_sale_date"	"2010/09/29"
+			"prefab"	"valve weapon_ambassador"
+			"attributes"
+			{
+				"turn to gold"
+				{
+					"attribute_class"	"set_turn_to_gold"
+					"value" "1"
+				}
+				"is australium item"
+				{
+					"attribute_class"	"is_australium_item"
+					"value"				"1"
+				}
+			}
+			"visuals"
+			{
+				"styles"
+				{
+					"0"
+					{
+						"skin_red" "0"
+						"skin_blu" "1"
+						"selectable"	"0"
+					}
+					"1"
+					{
+						"skin_red"	"2"
+						"skin_blu"	"3"
+						"selectable"	"0"
+						"image_inventory"	"backpack/weapons/c_models/c_ambassador/c_ambassador_gold"
+					}
+				}
+			}
+			"xifier_class_remap"	"ambassador"
+			"show_in_armory"	"1"
+		}
+		"7327"
+		{
+			"name"	"The Australium Axtinguisher"
+			"item_name"	"Australium Axtinguisher"
+			"first_sale_date"	"2010/09/29"
+			"prefab"	"valve weapon_axtinguisher"
+			"show_in_armory"	"1"
+			"static_attrs"
+			{
+				"min_viewmodel_offset"					"10 0 -9"				
+			}
+			"attributes"
+			{
+				"turn to gold"
+				{
+					"attribute_class"	"set_turn_to_gold"
+					"value" "1"
+				}
+				"is australium item"
+				{
+					"attribute_class"	"is_australium_item"
+					"value"				"1"
+				}
+			}
+			"visuals"
+			{
+				"styles"
+				{
+					"0"
+					{
+						"skin_red" "0"
+						"skin_blu" "1"
+						"selectable"	"0"
+					}
+					"1"
+					{
+						"skin_red"	"2"
+						"skin_blu"	"3"
+						"selectable"	"0"
+						"image_inventory"	"backpack/weapons/c_models/c_axtinguisher/c_axtinguisher_pyro_gold"
+					}
+				}
+			}
+			"xifier_class_remap"	"axtinguisher"
 		}
 		"30570"
 		{
