@@ -2774,6 +2774,45 @@
 			"drop_sound"	"ui/item_heavy_gun_drop.wav"
 		}
 
+		"weapon_flamethrower_golden"
+		{
+			"prefab"	"weapon_baseflamethrower"
+			"capabilities"
+			{
+				"nameable"	"1"
+			}
+			"tags"
+			{
+				"can_deal_damage"	"1"
+				"can_reflect_projectiles"	"1"
+				"can_extinguish"	"1"
+				"can_deal_posthumous_damage"	"1"
+				"can_deal_critical_damage"	"1"
+				"is_flamethrower"	"1"
+			}
+			"item_class"	"tf_weapon_flamethrower"
+			"craft_class"	"weapon"
+			"craft_material_type"	"weapon"
+			"item_type_name"	"#TF_Weapon_FlameThrower"
+			"item_name"	"Australium Flame-Thrower"
+			"item_slot"	"primary"
+			"item_quality"	"normal"
+			"baseitem"	"1"
+			"min_ilevel"	"1"
+			"max_ilevel"	"1"
+			"image_inventory"	"backpack/weapons/c_models/c_flamethrower/c_flamethrower"
+			"image_inventory_size_w"	"128"
+			"image_inventory_size_h"	"82"
+			"model_player"	"models/weapons/c_models/c_flamethrower/c_flamethrower.mdl"
+			"attach_to_hands"	"1"
+			"used_by_classes"
+			{
+				"pyro"	"1"
+			}
+			"mouse_pressed_sound"	"ui/item_heavy_gun_pickup.wav"
+			"drop_sound"	"ui/item_heavy_gun_drop.wav"
+		}
+
 		"weapon_flaregun"
 		{
 			"enabled"	"1"
@@ -3262,6 +3301,62 @@
 				{
 					"attribute_class"	"rocket_jump_dmg_reduction"
 					"value" "0.4"
+				}
+				"allowed in medieval mode"
+				{
+					"attribute_class"	"allowed_in_medieval_mode"
+					"value"	"1"
+				}
+			}
+			"mouse_pressed_sound"	"ui/item_metal_weapon_pickup.wav"
+			"drop_sound"		"ui/item_metal_weapon_drop.wav"
+		}
+
+		"weapon_golden_gunboats"
+		{
+			"enabled"		"1"
+			"item_class"		"tf_wearable"
+			"craft_material_type"	"weapon"
+			"loadondemand" "1"
+			"capabilities"
+			{
+				"nameable"		"1"
+			}
+			"base_item_name"	"The Gunboats"
+			"item_type_name" 	"#TF_Wearable_Boots"
+			"item_name"		"#TF_Unique_Blast_Boots"
+			"item_slot"		"secondary"
+			"equip_region"	"feet"
+			"anim_slot"		"FORCE_NOT_USED"
+			"item_quality"		"unique"
+			"propername"	"1"
+			"min_ilevel"		"1"
+			"max_ilevel"		"99"
+			"image_inventory"	"backpack/weapons/c_models/c_rocketboots_soldier"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"82"
+			"model_player"		"models/weapons/c_models/c_rocketboots_soldier.mdl"
+			"act_as_wearable" "1"
+			"used_by_classes"
+			{
+				"soldier"	"secondary"
+				"demoman"	"primary"
+			}
+			"visuals"
+			{
+				"material_override"	"models/weapons/c_items/c_rocketboots_demo_lightwarp.vtf"
+			}
+			"attributes"
+			{
+				"rocket jump damage reduction"
+				{
+					"attribute_class"	"rocket_jump_dmg_reduction"
+					"value" "0"
+				}
+				"move speed penalty"
+				{
+					"attribute_class"	"mult_player_movespeed"
+					"value" "0.75"
 				}
 				"allowed in medieval mode"
 				{
@@ -4910,6 +5005,59 @@
 			"craft_material_type"	"weapon"
 			"item_type_name"	"#TF_Weapon_RocketLauncher"
 			"item_name"	"#TF_Weapon_RocketLauncher"
+			"item_slot"	"primary"
+			"item_quality"	"normal"
+			"baseitem" "0"
+			"min_ilevel"	"1"
+			"max_ilevel"	"1"
+			"image_inventory"	"backpack/weapons/w_models/w_rocketlauncher"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"82"
+			"attach_to_hands" "1"
+			"inspect_panel_dist" "68"
+			"model_player"	"models/weapons/c_models/c_rocketlauncher/c_rocketlauncher.mdl"
+			"used_by_classes"
+			{
+				"soldier"	"1"
+			}
+			"visuals_mvm_boss"
+			{
+				"sound_single_shot"	"MVM.GiantSoldierRocketShoot"
+				"sound_burst"		"MVM.GiantSoldierRocketShootCrit"
+				"sound_special1"	"MVM.GiantSoldierRocketExplode"
+			}
+			"static_attrs"
+			{
+				"weapon_stattrak_module_scale"			"1"
+				"min_viewmodel_offset"					"10 -3 -10"
+			}
+			"mouse_pressed_sound"	"ui/item_heavy_gun_pickup.wav"
+			"drop_sound"		"ui/item_heavy_gun_drop.wav"
+			"particle_suffix"		"rocketlauncher"
+		}
+
+		"weapon_rocketlauncher_golden"
+		{
+			"capabilities"
+			{
+				"nameable"		"1"
+			}
+			"tags"
+			{
+				"can_deal_gib_damage"	"1"
+				"can_deal_damage"		"1"
+				"can_be_equipped_by_soldier_or_demo"	"1"
+				"can_deal_posthumous_damage"	"1"
+				"can_deal_critical_damage"	"1"
+				"can_deal_long_distance_damage"	"1"
+			}
+			"base_item_name"	"TF_WEAPON_ROCKETLAUNCHER"
+			"enabled"	"1"
+			"item_class"	"tf_weapon_rocketlauncher"
+			"craft_class"	"weapon"
+			"craft_material_type"	"weapon"
+			"item_type_name"	"#TF_Weapon_RocketLauncher"
+			"item_name"	"Australium Rocket Launcher"
 			"item_slot"	"primary"
 			"item_quality"	"normal"
 			"baseitem" "0"
@@ -18072,7 +18220,7 @@
 				"can_deal_taunt_damage" "1"
 				"can_be_festivized"		"1"
 			}
-			"show_in_armory"	"0"
+			"show_in_armory"	"1"
 			"item_type_name"	"#TF_Weapon_Physcannon"
 			"item_name"		"#TF_Weapon_Physcannon"
 			"item_logname"	"physcannon_mega"
@@ -18157,7 +18305,7 @@
 				"can_deal_taunt_damage" "1"
 				"can_be_festivized"		"1"
 			}
-			"show_in_armory"	"0"
+			"show_in_armory"	"1"
 			"item_type_name"	"#TF_Weapon_Physgun"
 			"item_name"		"#TF_Weapon_Physgun"
 			"item_logname"	"physcannon"
@@ -18308,7 +18456,7 @@
 				"can_deal_taunt_damage" "1"
 				"can_be_festivized"		"1"
 			}
-			"show_in_armory"	"0"
+			"show_in_armory"	"1"
 			"item_type_name"	"#TF_Weapon_Portalgun"
 			"item_name"		"#TF_Weapon_Portalgun"
 			"item_logname"	"skull"
@@ -18368,6 +18516,7 @@
 		"9010"
 		{
 			"name"	"Extended Rocket Launcher"
+			"show_in_armory"	"0"
 			"prefab"	"weapon_rocketlauncher"
 			"baseitem"	"0"
 			"item_quality"	"developer"
@@ -18429,6 +18578,7 @@
 		"9011"
 		{
 			"name"	"Extended Flamethrower"
+			"show_in_armory"	"0"
 			"prefab"	"weapon_flamethrower"
 			"baseitem"	"0"
 			"item_quality"	"developer"
@@ -18479,6 +18629,11 @@
 				{
 					"atribute_class"	"set_attached_particle_name"
 					"value"	"burningplayer_flyingbits"
+				}
+				"is australium item"
+				{
+					"attribute_class"	"is_australium_item"
+					"value"				"1"
 				}
 			}
 		}
@@ -18562,6 +18717,7 @@
 		"9013"
 		{
 			"name"		"Cheat Gun"
+			"show_in_armory"	"1"
 			"item_class"	"tf_weapon_cheatgun"
 			"craft_class"	"weapon"
 			"craft_material_type"	"weapon"
@@ -26386,7 +26542,7 @@
 		{
 			"item_class"	"tf_weapon_lunchbox_drink"
 			"enabled"	"1"
-			"show_in_armory"	"0"
+			"show_in_armory"	"1"
 			"item_type_name"	"Penis"
 			"item_name"	"Troll Juice"
 			"item_description" "YOU JUST GOT TROLLED!11!!1!"
@@ -38768,6 +38924,157 @@
 			}
 			"mouse_pressed_sound" 	"ui/item_helmet_pickup.wav"
 			"drop_sound" 		"ui/item_helmet_drop.wav"
+		}
+		"7308"
+		{
+			"name"	"The Nostromo Napalmer"
+			"prefab"	"weapon_newflame"
+			"first_sale_date"	"2011/12/15"
+			"item_class"	"tf_weapon_flamethrower"
+			"craft_class"	"weapon"
+			"craft_material_type"	"weapon"
+			"capabilities"
+			{
+				"nameable"		"1"
+				"can_craft_count"	"1"
+			}
+			"tags"
+			{
+				"can_deal_damage"			"1"
+				"can_deal_posthumous_damage"	"1"
+				"can_deal_critical_damage"	"1"
+				"is_flamethrower" "1"
+			}
+			"item_logname"	"phlogistinator"
+			"item_iconname"	"phlogistinator"
+			"show_in_armory"	"1"
+			"item_type_name"	"#TF_Weapon_Flamethrower"
+			"item_name"	"Nostromo Napalmer"
+			"item_description"	"Now with Stats!"
+			"item_slot"	"primary"
+			"image_inventory"		"backpack/workshop_partner/weapons/c_models/c_ai_flamethrower/c_ai_flamethrower"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"82"
+			"model_player"		"models/workshop_partner/weapons/c_models/c_ai_flamethrower/c_ai_flamethrower.mdl"
+			"attach_to_hands"	"1"
+			"item_quality"	"unique"
+			"propername"	"1"
+			"min_ilevel"	"10"
+			"max_ilevel"	"10"
+			"used_by_classes"
+			{
+				"pyro"	"1"
+			}
+			"static_attrs"
+			{
+				"min_viewmodel_offset"					"10 0 -12"		
+			}
+			"visuals"
+			{
+				"sound_single_shot"	"Weapon_phlogistinator.FireStart"
+				"sound_special1"	"Weapon_phlogistinator.FireLoop"
+				"sound_special3"	"Weapon_phlogistinator.WindDown"
+				"sound_burst"		"Weapon_phlogistinator.FireLoopCrit"
+
+				"animation_replacement"
+				{
+					"ACT_PRIMARY_VM_INSPECT_START"		"ACT_PRIMARY_ALT1_VM_INSPECT_START"
+					"ACT_PRIMARY_VM_INSPECT_IDLE"		"ACT_PRIMARY_ALT1_VM_INSPECT_IDLE"
+					"ACT_PRIMARY_VM_INSPECT_END"		"ACT_PRIMARY_ALT1_VM_INSPECT_END"
+				}
+			}
+			"attributes"
+			{
+				"Projectile speed increased"
+				{
+					"atribute_class"	"mult_projectile_speed"
+					"value"	"1.5"
+				}
+				"maxammo primary reduced"
+				{
+					"attribute_class"	"mult_maxammo_primary"
+					"value"				"0.60"
+				}
+				"special taunt"
+				{
+					"attribute_class"	"special_taunt"
+					"value" "1"
+				}
+			}
+			"mouse_pressed_sound"	"ui/item_heavy_gun_pickup.wav"
+			"drop_sound"		"ui/item_heavy_gun_drop.wav"
+		}
+		"7309"
+		{
+			"name"			"The Golden Gunboats"
+			"prefab"	"valve weapon_golden_gunboats"
+			"first_sale_date"	"2010/09/29"
+			"item_class"		"tf_wearable"
+			"craft_class"	"weapon"
+			"craft_material_type"	"weapon"
+			"loadondemand" "1"
+			"capabilities"
+			{
+				"nameable"		"1"
+			}
+			"show_in_armory"	"1"
+			"item_type_name" 	"#TF_Wearable_Boots"
+			"item_name"		"Golden Gunboats"
+			"item_slot"		"secondary"
+			"equip_region"	"feet"
+			"anim_slot"		"FORCE_NOT_USED"
+			"item_quality"		"unique"
+			"propername"	"1"
+			"min_ilevel"		"10"
+			"max_ilevel"		"10"
+			"image_inventory"	"backpack/weapons/c_models/c_rocketboots_soldier"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"82"
+			"model_player"		"models/weapons/c_models/c_rocketboots_soldier.mdl"
+			"act_as_wearable" "1"
+			"used_by_classes"
+			{
+				"soldier"	"1"
+			}
+			"visuals"
+			{
+				"material_override"	"models/weapons/c_items/c_rocketboots_demo_phongwarp.vtf"
+			}
+			"mouse_pressed_sound"	"ui/item_metal_weapon_pickup.wav"
+			"drop_sound"		"ui/item_metal_weapon_drop.wav"
+		}
+
+		"7310"
+		{
+			"name"	"Australium Rocket Launcher"
+			"show_in_armory"	"1"
+			"prefab"	"weapon_rocketlauncher_golden"
+			"baseitem"	"0"
+			"item_quality"	"unique"
+			"attributes"
+			{
+				"is australium item"
+				{
+					"attribute_class"	"is_australium_item"
+					"value"				"1"
+				}
+			}
+		}
+		"7311"
+		{
+			"name"	"Australium Flamethrower"
+			"show_in_armory"	"1"
+			"prefab"	"weapon_flamethrower_golden"
+			"baseitem"	"0"
+			"item_quality"	"unique"
+			"attributes"
+			{
+				"is australium item"
+				{
+					"attribute_class"	"is_australium_item"
+					"value"				"1"
+				}
+			}
 		}
 		"30570"
 		{
