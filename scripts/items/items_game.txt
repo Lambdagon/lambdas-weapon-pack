@@ -3351,12 +3351,12 @@
 				"rocket jump damage reduction"
 				{
 					"attribute_class"	"rocket_jump_dmg_reduction"
-					"value" "0"
+					"value" "0.5"
 				}
 				"move speed penalty"
 				{
 					"attribute_class"	"mult_player_movespeed"
-					"value" "0.75"
+					"value" "0.70"
 				}
 				"allowed in medieval mode"
 				{
@@ -18846,7 +18846,7 @@
 			"image_inventory_size_h"		"82"
 			"model_world"	"models/weapons/w_crowbar.mdl"
 			"model_player"	"models/weapons/v_models/v_bat_scout.mdl"
-			"attach_to_hands"	"0"
+			"attach_to_hands"	"1"
 			"inspect_panel_dist" "40"
 			"item_quality"	"unique"
 			"propername"	"1"
