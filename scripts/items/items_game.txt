@@ -18846,7 +18846,7 @@
 			"image_inventory_size_h"		"82"
 			"model_world"	"models/weapons/w_crowbar.mdl"
 			"model_player"	"models/weapons/v_models/v_bat_scout.mdl"
-			"attach_to_hands"	"1"
+			"attach_to_hands"	"0"
 			"inspect_panel_dist" "40"
 			"item_quality"	"unique"
 			"propername"	"1"
