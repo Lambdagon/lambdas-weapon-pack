@@ -19096,7 +19096,7 @@
 				"can_deal_critical_damage"	"1"
 				"can_be_equipped_by_soldier_or_demo"	"1"
 			}
-			"show_in_armory"	"1"
+			"show_in_armory"	"0"
 			"item_type_name"	"#TF_Weapon_Crowbar"
 			"item_name"	"#TF_Weapon_Crowbar"
 			"item_slot"	"melee"
@@ -26862,7 +26862,7 @@
 			"item_name"	"Troll Juice"
 			"item_description" "YOU JUST GOT TROLLED!11!!1!"
 			"anim_slot"	"ITEM1"
-			"item_slot"	"secondary"
+			"item_slot"	"primary"
 			"image_inventory"	"backpack/weapons/c_models/c_energy_drink/c_energy_drink"
 			"image_inventory_size_w"		"128"
 			"image_inventory_size_h"		"82"
