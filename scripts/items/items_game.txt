@@ -21608,9 +21608,7 @@
 			"used_by_classes"
 			{
 				"engineer"	"primary"
-				"pyro" "secondary"
-				"soldier" "secondary"
-				"heavy" "primary"
+				"pyro" "primary"
 			}
 			"static_attrs"
 			{
@@ -25854,6 +25852,11 @@
 				"attribute_class"	"mult_clipsize"
 				"value"	"1.45"
 				}
+				"crit mod disabled"
+				{
+					"attribute_class"	"mult_crit_chance"
+					"value"	"0"
+				}
 				"fire rate penalty"
 				{
 				"attribute_class"	"mult_postfiredelay"
@@ -25863,6 +25866,11 @@
 				{
 					"attribute_class"	"mult_spread_scale"
 					"value"	"0.4"
+				}
+				"max health additive penalty"
+				{
+					"attribute_class"	"add_maxhealth"
+					"value" "-20"
 				}
 				"dmg bonus while half dead"
 				{
@@ -26177,7 +26185,7 @@
 			"item_quality"	"unique"
 			"min_ilevel"	"1"
 			"max_ilevel"	"1"
-			"image_inventory"	"backpack/weapons/c_models/c_rocketjumper/c_rocketjumper"
+			"image_inventory"	"backpack/weapons/w_models/w_rocketlauncher"
 			"image_inventory_size_w"		"128"
 			"image_inventory_size_h"		"82"
 			"item_quality"		"unique"
@@ -27122,7 +27130,12 @@
 				"reload time increased"
 				{
 				"attribute_class"	"mult_reload_time"
-				"value"	"3"
+				"value"	"3.5"
+				}
+				"move speed penalty"
+				{
+					"attribute_class"	"mult_player_movespeed"
+					"value" "0.90"
 				}
 				"clip size penalty"
 				{
@@ -27329,7 +27342,7 @@
 			"prefab"		"weapon_minigun"
 			"craft_class"	""
 			"baseitem"		"0"
-			"show_in_armory"	"0"
+			"show_in_armory"	"1"
 			"item_name"		"#TF_Minigun_Deflector"
 			"item_quality"	"unique"
 			"visuals"
