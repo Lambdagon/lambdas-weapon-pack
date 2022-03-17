@@ -2557,6 +2557,102 @@
 			"xifier_class_remap"	"eyelander"
 		}
 
+		"weapon_eyelander_golden"
+		{
+			"prefab"	"weapon_sword"
+			"capabilities"
+			{
+				"nameable"		"1"
+			}
+			"tags"
+			{
+				"can_deal_damage"			"1"
+				"can_be_equipped_by_soldier_or_demo"	"1"
+				"can_deal_critical_damage"	"1"
+				"can_deal_taunt_damage"		"1"
+			}
+			"base_item_name"	"The Eyelander"
+			"item_name"	"#TF_Unique_Achievement_Sword"
+			"item_description"	"#TF_Unique_Achievement_Sword_Desc"
+			"propername"	"1"
+			"image_inventory"	"backpack/weapons/c_models/c_claymore/c_claymore"
+			"model_player"	"models/weapons/c_models/c_claymore/c_claymore.mdl"
+			"used_by_classes"
+			{
+				"demoman"	"1"
+			}
+			"static_attrs"
+			{
+				"min_viewmodel_offset"					"12 -3 -10"
+			}
+			"visuals"
+			{
+				"sound_melee_miss"	"Weapon_Sword.Swing"
+				"sound_melee_hit"	"Weapon_Sword.HitFlesh"
+				"sound_melee_hit_world"	"Weapon_Sword.HitWorld"
+				"sound_burst"		"Weapon_Sword.SwingCrit"
+				"sound_special1"	"Sword.Hit"
+				"sound_special2"	"Sword.Idle"
+				"styles"
+				{
+					"0"
+					{
+						"skin_red" "0"
+						"skin_blu" "1"
+						"selectable"	"0"
+					}
+					"1"
+					{
+						"skin_red"	"2"
+						"skin_blu"	"3"
+						"selectable"	"0"
+						"image_inventory"	"backpack/weapons/c_models/c_claymore/c_claymore_gold"
+					}
+				}
+			}
+			"attributes"
+			{
+				"is_a_sword"
+				{
+					"attribute_class"	"is_a_sword"
+					"value"				"72"
+				}
+				"crit mod disabled"
+				{
+					"attribute_class"	"mult_crit_chance"
+					"value"	"0"
+				}
+				"max health additive penalty"
+				{
+					"attribute_class"	"add_maxhealth"
+					"value" "-25"
+				}
+				"decapitate type"
+				{
+					"attribute_class"	"decapitate_type"
+					"value"	"1"
+				}
+				"kill eater score type"
+				{
+					"attribute_class"	"kill_eater_score_type"
+					"value" 	"6"									
+				}
+				"kill eater kill type"
+				{
+					"attribute_class"	"kill_eater_kill_type"
+					"value"	"6"			
+				}
+				"special taunt"
+				{
+					"attribute_class"	"special_taunt"
+					"value" "1"
+				}
+			}
+			"mouse_pressed_sound"	"ui/item_knife_large_pickup.wav"
+			"drop_sound"		"ui/item_metal_weapon_drop.wav"
+			"xifier_class_remap"	"eyelander"
+		}
+
 		"weapon_nessies_nine_iron"
 		{
 			"prefab"	"valve"
@@ -2756,6 +2852,45 @@
 			"craft_material_type"	"weapon"
 			"item_type_name"	"#TF_Weapon_FlameThrower"
 			"item_name"	"#TF_Weapon_FlameThrower"
+			"item_slot"	"primary"
+			"item_quality"	"normal"
+			"baseitem"	"1"
+			"min_ilevel"	"1"
+			"max_ilevel"	"1"
+			"image_inventory"	"backpack/weapons/c_models/c_flamethrower/c_flamethrower"
+			"image_inventory_size_w"	"128"
+			"image_inventory_size_h"	"82"
+			"model_player"	"models/weapons/c_models/c_flamethrower/c_flamethrower.mdl"
+			"attach_to_hands"	"1"
+			"used_by_classes"
+			{
+				"pyro"	"1"
+			}
+			"mouse_pressed_sound"	"ui/item_heavy_gun_pickup.wav"
+			"drop_sound"	"ui/item_heavy_gun_drop.wav"
+		}
+
+		"weapon_flamethrower_golden"
+		{
+			"prefab"	"weapon_baseflamethrower"
+			"capabilities"
+			{
+				"nameable"	"1"
+			}
+			"tags"
+			{
+				"can_deal_damage"	"1"
+				"can_reflect_projectiles"	"1"
+				"can_extinguish"	"1"
+				"can_deal_posthumous_damage"	"1"
+				"can_deal_critical_damage"	"1"
+				"is_flamethrower"	"1"
+			}
+			"item_class"	"tf_weapon_flamethrower"
+			"craft_class"	"weapon"
+			"craft_material_type"	"weapon"
+			"item_type_name"	"#TF_Weapon_FlameThrower"
+			"item_name"	"Australium Flame-Thrower"
 			"item_slot"	"primary"
 			"item_quality"	"normal"
 			"baseitem"	"1"
@@ -3149,6 +3284,54 @@
 			"particle_suffix"		"grenade_launcher"
 		}
 
+		"weapon_grenade_launcher_golden"
+		{
+			"capabilities"
+			{
+				"nameable"		"1"
+			}
+			"tags"
+			{
+				"can_deal_damage"		"1"
+				"can_deal_critical_damage"	"1"
+				"can_deal_gib_damage"	"1"
+				"can_deal_posthumous_damage"	"1"
+				"can_deal_long_distance_damage"	"1"
+				"can_be_equipped_by_soldier_or_demo"	"1"
+			}
+			"base_item_name"	"TF_WEAPON_GRENADELAUNCHER"
+			"enabled"	"0"
+			"item_class"	"tf_weapon_grenadelauncher"
+			"craft_class"	"weapon"
+			"craft_material_type"	"weapon"
+			"item_type_name"	"#TF_Weapon_GrenadeLauncher"
+			"item_name"	"#TF_Weapon_GrenadeLauncher"
+			"item_slot"	"primary"
+			"anim_slot"	"secondary"
+			"item_quality"	"normal"
+			"baseitem" "0"
+			"min_ilevel"	"1"
+			"max_ilevel"	"1"
+			"image_inventory"	"backpack/weapons/w_models/w_grenadelauncher"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"82"
+			"model_player"	"models/weapons/c_models/c_grenadelauncher/c_grenadelauncher.mdl"
+			"attach_to_hands"	"1"
+			"inspect_panel_dist" "55"
+			"used_by_classes"
+			{
+				"demoman"	"1"
+			}
+			"static_attrs"
+			{
+				"weapon_stattrak_module_scale"			"1"
+				"min_viewmodel_offset"					"10 0 -10"
+			}
+			"mouse_pressed_sound"	"ui/item_heavy_gun_pickup.wav"
+			"drop_sound"		"ui/item_heavy_gun_drop.wav"
+			"particle_suffix"		"grenade_launcher"
+		}
+
 		"weapon_gru"
 		{
 			"enabled"	"0"
@@ -3262,6 +3445,62 @@
 				{
 					"attribute_class"	"rocket_jump_dmg_reduction"
 					"value" "0.4"
+				}
+				"allowed in medieval mode"
+				{
+					"attribute_class"	"allowed_in_medieval_mode"
+					"value"	"1"
+				}
+			}
+			"mouse_pressed_sound"	"ui/item_metal_weapon_pickup.wav"
+			"drop_sound"		"ui/item_metal_weapon_drop.wav"
+		}
+
+		"weapon_golden_gunboats"
+		{
+			"enabled"		"1"
+			"item_class"		"tf_wearable"
+			"craft_material_type"	"weapon"
+			"loadondemand" "1"
+			"capabilities"
+			{
+				"nameable"		"1"
+			}
+			"base_item_name"	"The Gunboats"
+			"item_type_name" 	"#TF_Wearable_Boots"
+			"item_name"		"#TF_Unique_Blast_Boots"
+			"item_slot"		"secondary"
+			"equip_region"	"feet"
+			"anim_slot"		"FORCE_NOT_USED"
+			"item_quality"		"unique"
+			"propername"	"1"
+			"min_ilevel"		"1"
+			"max_ilevel"		"99"
+			"image_inventory"	"backpack/weapons/c_models/c_rocketboots_soldier"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"82"
+			"model_player"		"models/weapons/c_models/c_rocketboots_soldier.mdl"
+			"act_as_wearable" "1"
+			"used_by_classes"
+			{
+				"soldier"	"secondary"
+				"demoman"	"primary"
+			}
+			"visuals"
+			{
+				"material_override"	"models/weapons/c_items/c_rocketboots_demo_lightwarp.vtf"
+			}
+			"attributes"
+			{
+				"rocket jump damage reduction"
+				{
+					"attribute_class"	"rocket_jump_dmg_reduction"
+					"value" "0.05"
+				}
+				"move speed penalty"
+				{
+					"attribute_class"	"mult_player_movespeed"
+					"value" "0.70"
 				}
 				"allowed in medieval mode"
 				{
@@ -4941,6 +5180,59 @@
 			"particle_suffix"		"rocketlauncher"
 		}
 
+		"weapon_rocketlauncher_golden"
+		{
+			"capabilities"
+			{
+				"nameable"		"1"
+			}
+			"tags"
+			{
+				"can_deal_gib_damage"	"1"
+				"can_deal_damage"		"1"
+				"can_be_equipped_by_soldier_or_demo"	"1"
+				"can_deal_posthumous_damage"	"1"
+				"can_deal_critical_damage"	"1"
+				"can_deal_long_distance_damage"	"1"
+			}
+			"base_item_name"	"TF_WEAPON_ROCKETLAUNCHER"
+			"enabled"	"1"
+			"item_class"	"tf_weapon_rocketlauncher"
+			"craft_class"	"weapon"
+			"craft_material_type"	"weapon"
+			"item_type_name"	"#TF_Weapon_RocketLauncher"
+			"item_name"	"Australium Rocket Launcher"
+			"item_slot"	"primary"
+			"item_quality"	"normal"
+			"baseitem" "0"
+			"min_ilevel"	"1"
+			"max_ilevel"	"1"
+			"image_inventory"	"backpack/weapons/w_models/w_rocketlauncher"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"82"
+			"attach_to_hands" "1"
+			"inspect_panel_dist" "68"
+			"model_player"	"models/weapons/c_models/c_rocketlauncher/c_rocketlauncher.mdl"
+			"used_by_classes"
+			{
+				"soldier"	"1"
+			}
+			"visuals_mvm_boss"
+			{
+				"sound_single_shot"	"MVM.GiantSoldierRocketShoot"
+				"sound_burst"		"MVM.GiantSoldierRocketShootCrit"
+				"sound_special1"	"MVM.GiantSoldierRocketExplode"
+			}
+			"static_attrs"
+			{
+				"weapon_stattrak_module_scale"			"1"
+				"min_viewmodel_offset"					"10 -3 -10"
+			}
+			"mouse_pressed_sound"	"ui/item_heavy_gun_pickup.wav"
+			"drop_sound"		"ui/item_heavy_gun_drop.wav"
+			"particle_suffix"		"rocketlauncher"
+		}
+
 		"weapon_russian_riot"
 		{
 			"enabled"	"1"
@@ -5703,7 +5995,115 @@
 			"particle_suffix"		"smg"
 		}
 
+		"weapon_smg_golden"
+		{
+			"enabled"	"1"
+			"item_class"	"tf_weapon_smg"
+			"craft_material_type"	"weapon"
+			"capabilities"
+			{
+				"nameable"		"1"
+			}
+			"tags"
+			{
+				"can_deal_damage"			"1"
+				"can_deal_critical_damage"	"1"
+				"can_deal_mvm_penetration_damage"	"1"
+				"can_deal_long_distance_damage"	"1"
+			}
+			"base_item_name"	"TF_WEAPON_SMG"
+			"inspect_panel_dist" "39"
+			"show_in_armory"	"1"
+			"item_type_name"	"#TF_Weapon_SMG"
+			"item_name"	"#TF_Weapon_SMG"
+			"item_slot"	"secondary"
+			"item_quality"		"unique"
+			"min_ilevel"	"1"
+			"max_ilevel"	"1"
+			"image_inventory"	"backpack/weapons/w_models/w_smg"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"82"
+			"model_player"	"models/weapons/c_models/c_smg/c_smg.mdl"
+			"attach_to_hands"	"1"
+			"used_by_classes"
+			{
+				"sniper"	"1"
+			}
+			"mouse_pressed_sound"	"ui/item_light_gun_pickup.wav"
+			"drop_sound"		"ui/item_light_gun_drop.wav"
+			"visuals"
+			{
+				"styles"
+				{
+					"0"
+					{
+						"skin_red"	"0"
+						"skin_blu"	"1"
+						"selectable"	"0"
+					}
+					"1"
+					{
+						"skin_red"	"2"
+						"skin_blu"	"3"
+						"selectable"	"0"
+						"image_inventory"	"backpack/weapons/c_models/c_smg/c_smg_gold"
+					}
+				}
+			}
+			"static_attrs"
+			{
+				"weapon_stattrak_module_scale"			"0.505"
+				"min_viewmodel_offset"					"10 0 -7"
+			}
+			"xifier_class_remap"	"weapon_smg"
+			"particle_suffix"		"smg"
+		}
+
 		"weapon_sniperrifle"
+		{
+			"capabilities"
+			{
+				"nameable"		"1"
+			}
+			"tags"
+			{
+				"can_deal_damage"			"1"
+				"can_headshot"				"1"
+				"can_deal_mvm_penetration_damage"	"1"
+				"can_deal_long_distance_damage"	"1"
+			}
+			"base_item_name"	"TF_WEAPON_SNIPERRIFLE"
+			"inspect_panel_dist" "71"
+			"enabled"	"1"
+			"item_class"	"tf_weapon_sniperrifle"
+			"craft_class"	"weapon"
+			"craft_material_type"	"weapon"
+			"item_type_name"	"#TF_Weapon_SniperRifle"
+			"item_name"	"#TF_Weapon_SniperRifle"
+			"item_slot"	"primary"
+			"item_quality"	"normal"
+			"min_ilevel"	"1"
+			"max_ilevel"	"1"
+			"image_inventory"	"backpack/weapons/w_models/w_sniperrifle"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"82"
+			"attach_to_hands" "1"
+			"model_player"	"models/weapons/c_models/c_sniperrifle/c_sniperrifle.mdl"
+			"used_by_classes"
+			{
+				"sniper"	"1"
+			}
+			"static_attrs"
+			{
+				"weapon_stattrak_module_scale"			"0.676"
+				"min_viewmodel_offset"					"10 0 -10"
+			}
+			"mouse_pressed_sound"	"ui/item_heavy_gun_pickup.wav"
+			"drop_sound"		"ui/item_heavy_gun_drop.wav"
+			"particle_suffix"		"sniperrifle"
+		}
+
+		"weapon_sniperrifle_golden"
 		{
 			"capabilities"
 			{
@@ -5848,6 +6248,53 @@
 		}
 
 		"weapon_stickybomb_launcher"
+		{
+			"capabilities"
+			{
+				"nameable"		"1"
+			}
+			"tags"
+			{
+				"can_deal_gib_damage"	"1"
+				"can_deal_damage"		"1"
+				"can_be_equipped_by_soldier_or_demo"	"1"
+				"can_deal_critical_damage"	"1"
+				"can_deal_long_distance_damage"	"1"
+			}
+			"base_item_name"	"TF_WEAPON_PIPEBOMBLAUNCHER"
+			"enabled"	"1"
+			"item_class"	"tf_weapon_pipebomblauncher"
+			"craft_class"	"weapon"
+			"craft_material_type"	"weapon"
+			"item_type_name"	"#TF_Weapon_PipebombLauncher"
+			"item_name"	"#TF_Weapon_PipebombLauncher"
+			"item_slot"	"secondary"
+			"anim_slot"	"primary"
+			"item_quality"	"normal"
+			"baseitem" "0"
+			"min_ilevel"	"1"
+			"max_ilevel"	"1"
+			"image_inventory"	"backpack/weapons/w_models/w_stickybomb_launcher"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"82"
+			"model_player"	"models/weapons/c_models/c_stickybomb_launcher/c_stickybomb_launcher.mdl"
+			"inspect_panel_dist" "50"
+			"attach_to_hands"	"1"
+			"used_by_classes"
+			{
+				"demoman"	"1"
+			}
+			"static_attrs"
+			{
+				"weapon_stattrak_module_scale"			"0.9"
+				"min_viewmodel_offset"					"10 0 -10"
+			}
+			"mouse_pressed_sound"	"ui/item_heavy_gun_pickup.wav"
+			"drop_sound"		"ui/item_heavy_gun_drop.wav"
+			"particle_suffix"		"stickybomb_launcher"
+		}
+
+		"weapon_stickybomb_launcher_golden"
 		{
 			"capabilities"
 			{
@@ -7170,6 +7617,7 @@
 			"item_name"	"#TF_Weapon_SMG"
 			"item_slot"	"secondary"
 			"item_quality"	"normal"
+			"show_in_armory"	"1"
 			"baseitem" "1"
 			"min_ilevel"	"1"
 			"max_ilevel"	"1"
@@ -7206,6 +7654,7 @@
 			"name"	"TF_WEAPON_GRENADELAUNCHER"
 			"first_sale_date"	"2010/09/29"
 			"prefab"	"weapon_grenade_launcher"
+			"show_in_armory"	"1"
 			"baseitem" "1"
 		}
 		"20"
@@ -7213,6 +7662,7 @@
 			"name"	"TF_WEAPON_PIPEBOMBLAUNCHER"
 			"first_sale_date"	"2010/09/29"
 			"prefab"	"weapon_stickybomb_launcher"
+			"show_in_armory"	"1"
 			"baseitem" "1"
 		}
 		"21"
@@ -10147,7 +10597,7 @@
 			"prefab" "weapon_lochnload"
 			"first_sale_date"	"2010/12/08"
 			"particle_suffix"	"loch_n_load"
-			"show_in_armory"	"0"
+			"show_in_armory"	"1"
 			"tags"
 			{
 				"can_be_festivized"		"1"
@@ -18072,7 +18522,7 @@
 				"can_deal_taunt_damage" "1"
 				"can_be_festivized"		"1"
 			}
-			"show_in_armory"	"0"
+			"show_in_armory"	"1"
 			"item_type_name"	"#TF_Weapon_Physcannon"
 			"item_name"		"#TF_Weapon_Physcannon"
 			"item_logname"	"physcannon_mega"
@@ -18157,7 +18607,7 @@
 				"can_deal_taunt_damage" "1"
 				"can_be_festivized"		"1"
 			}
-			"show_in_armory"	"0"
+			"show_in_armory"	"1"
 			"item_type_name"	"#TF_Weapon_Physgun"
 			"item_name"		"#TF_Weapon_Physgun"
 			"item_logname"	"physcannon"
@@ -18308,7 +18758,7 @@
 				"can_deal_taunt_damage" "1"
 				"can_be_festivized"		"1"
 			}
-			"show_in_armory"	"0"
+			"show_in_armory"	"1"
 			"item_type_name"	"#TF_Weapon_Portalgun"
 			"item_name"		"#TF_Weapon_Portalgun"
 			"item_logname"	"skull"
@@ -18368,6 +18818,7 @@
 		"9010"
 		{
 			"name"	"Extended Rocket Launcher"
+			"show_in_armory"	"0"
 			"prefab"	"weapon_rocketlauncher"
 			"baseitem"	"0"
 			"item_quality"	"developer"
@@ -18429,6 +18880,7 @@
 		"9011"
 		{
 			"name"	"Extended Flamethrower"
+			"show_in_armory"	"0"
 			"prefab"	"weapon_flamethrower"
 			"baseitem"	"0"
 			"item_quality"	"developer"
@@ -18479,6 +18931,11 @@
 				{
 					"atribute_class"	"set_attached_particle_name"
 					"value"	"burningplayer_flyingbits"
+				}
+				"is australium item"
+				{
+					"attribute_class"	"is_australium_item"
+					"value"				"1"
 				}
 			}
 		}
@@ -18562,6 +19019,7 @@
 		"9013"
 		{
 			"name"		"Cheat Gun"
+			"show_in_armory"	"1"
 			"item_class"	"tf_weapon_cheatgun"
 			"craft_class"	"weapon"
 			"craft_material_type"	"weapon"
@@ -18569,7 +19027,7 @@
 			{
 				"nameable"		"1"
 			}
-			"show_in_armory" "0"
+			"show_in_armory" "1"
 			"item_type_name"	"Kitchen Gun"
 			"item_name"	"Cheat Gun"
 			"item_description"	"yes"
@@ -18633,7 +19091,7 @@
 				"can_deal_critical_damage"	"1"
 				"can_be_equipped_by_soldier_or_demo"	"1"
 			}
-			"show_in_armory"	"0"
+			"show_in_armory"	"1"
 			"item_type_name"	"#TF_Weapon_Crowbar"
 			"item_name"	"#TF_Weapon_Crowbar"
 			"item_slot"	"melee"
@@ -18881,7 +19339,7 @@
 				"can_deal_critical_damage"	"1"
 				"can_deal_long_distance_damage"	"1"
 			}
-			"show_in_armory"	"1"
+			"show_in_armory"	"0"
 			"item_type_name"	"#TF_Weapon_Nailgun"
 			"item_name"		"#TF_Weapon_Nailgun"
 			"image_inventory"	"backpack/weapons/w_models/w_syringegun"
@@ -19003,7 +19461,7 @@
 			"item_class"	"tf_weapon_tfc_flamethrower"
 			"craft_class"	"weapon" 
 			"craft_material_type"	"weapon"
-			"show_in_armory"	"0"
+			"show_in_armory"	"1"
 			"tags"
 			{
 				"can_deal_damage"		"1"
@@ -19052,7 +19510,7 @@
 				"can_deal_long_distance_damage"	"1"
 				"can_deal_taunt_damage"		"1"
 			}
-			"show_in_armory"	"0"
+			"show_in_armory"	"1"
 			"item_type_name"	"#TF_Weapon_RocketLauncher"
 			"item_name"		"#TF_Weapon_TFC_IC"
 			"item_slot"	"action"
@@ -19238,7 +19696,7 @@
 				"can_deal_critical_damage"	"1"
 				"can_deal_long_distance_damage"	"1"
 			}
-			"show_in_armory"	"0"
+			"show_in_armory"	"1"
 			"item_type_name"	"#TF_Weapon_RocketLauncher"
 			"item_name"	"#TF_Weapon_RocketLauncher"
 			"item_slot"	"primary"
@@ -19247,10 +19705,10 @@
 			"min_ilevel"	"5"
 			"max_ilevel"	"5"
 			"inspect_panel_dist" "68"
-			"image_inventory"	"backpack/workshop_partner/weapons/c_models/c_bet_rocketlauncher/c_bet_rocketlauncher"
+			"image_inventory"	"backpack/workshop/weapons/c_models/c_atom_launcher/c_atom_launcher"
 			"image_inventory_size_w"		"128"
 			"image_inventory_size_h"		"82"
-			"model_world"	"models/weapons/c_models/c_syringegun/c_syringegun.mdl"
+			"model_world"	"models/workshop/weapons/c_models/c_atom_launcher/c_atom_launcher.mdl"
 			"model_player"	"models/weapons/tfc/v_tfc_rpg.mdl"
 			"attach_to_hands" "0"
 			"used_by_classes"
@@ -19460,10 +19918,10 @@
 				"can_deal_critical_damage"	"1"
 				"can_deal_long_distance_damage"	"1"
 			}
-			"show_in_armory"	"0"
+			"show_in_armory"	"1"
 			"item_type_name"	"#TF_Weapon_Railgun"
 			"item_name"		"#TF_Weapon_Railgun"
-			"item_slot"		"secondary"
+			"item_slot"		"primary"
 			"image_inventory"	"backpack/weapons/w_models/w_syringegun"
 			"image_inventory_size_w"		"128"
 			"image_inventory_size_h"		"82"
@@ -19565,6 +20023,7 @@
 			"item_type_name"	"#TF_Weapon_Shotgun"
 			"item_name"	"#TF_Weapon_Shotgun"
 			"item_slot"	"primary"
+			"show_in_armory"	"0"
 			"image_inventory"	"backpack/weapons/w_models/w_shotgun"
 			"image_inventory_size_w"		"128"
 			"image_inventory_size_h"		"82"
@@ -19619,6 +20078,7 @@
 			"item_type_name"	"Pulse Rifle"
 			"item_name"	"The Oppressor"
 			"item_description" "Model by Choev"
+			"show_in_armory"	"0"
 			"item_slot"	"misc2"
 			"image_inventory"	"backpack/weapons/w_models/w_smg"
 			"image_inventory_size_w"		"128"
@@ -19689,6 +20149,7 @@
 			"image_inventory_size_h"		"82"
 			"model_world"	"models/weapons/w_smg1.mdl"
 			"model_player"	"models/weapons/v_smg1.mdl"
+			"show_in_armory"	"0"
 			"attach_to_hands" "0"
 			"inspect_panel_dist" "40"
 			"item_quality"	"unique"
@@ -26386,7 +26847,7 @@
 		{
 			"item_class"	"tf_weapon_lunchbox_drink"
 			"enabled"	"1"
-			"show_in_armory"	"0"
+			"show_in_armory"	"1"
 			"item_type_name"	"Penis"
 			"item_name"	"Troll Juice"
 			"item_description" "YOU JUST GOT TROLLED!11!!1!"
@@ -32229,7 +32690,6 @@
 				"heavy"	"1"
 				"engineer"	"1"
 				"sniper"	"secondary"
-				"demoman"	"secondary"
 			}
 			"attributes"
 			{
@@ -32535,11 +32995,6 @@
 				{
 					"attribute_class"	"mult_spread_scale"
 					"value"	"1.6"
-				}
-				"max health additive penalty"
-				{
-					"attribute_class"	"add_maxhealth"
-					"value" "-15"
 				}
 				"crit mod disabled"
 				{
@@ -34446,11 +34901,12 @@
 			"image_inventory_size_w"		"128"
 			"image_inventory_size_h"		"82"
 			"inspect_panel_dist" 			"32"
-			"model_player"	"models/weapons/c_models/c_revolvero/c_revolver.mdl"
+			"model_player"	"models/weapons/v_357.mdl"
+			"model_world"	"models/weapons/w_357.mdl"
 			"attach_to_hands" "1"
 			"used_by_classes"
 			{
-				"combine"	"1"
+				"antlion"	"1"
 			}
 			"static_attrs"
 			{
@@ -34792,7 +35248,17 @@
 				"bleeding duration"
 				{
 					"attribute_class"	"bleeding_duration"
-					"value" "6"
+					"value" "8"
+				}
+				"deploy time increased"
+				{
+				"attribute_class"	"mult_deploy_time"
+				"value"		"1.3"
+				}
+				"max health additive penalty"
+				{
+					"attribute_class"	"add_maxhealth"
+					"value" "-15"
 				}
 			}
 			"mouse_pressed_sound"	"ui/item_knife_small_pickup.wav"
@@ -36273,13 +36739,6 @@
 			{
 				"animation_replacement"
 				{
-					"ACT_VM_DRAW"			"ACT_BREADSAPPER_VM_DRAW"
-					"ACT_VM_DRAW_DEPLOYED"	"ACT_BREADSAPPER_VM_DRAW"
-					"ACT_VM_IDLE"			"ACT_BREADSAPPER_VM_IDLE"
-
-					"ACT_BUILDING_VM_INSPECT_START"		"ACT_BREADMONSTER_VM_INSPECT_START"
-					"ACT_BUILDING_VM_INSPECT_IDLE"		"ACT_BREADMONSTER_VM_INSPECT_IDLE"
-					"ACT_BUILDING_VM_INSPECT_END"		"ACT_BREADMONSTER_VM_INSPECT_END"
 				}
 			}
 			"static_attrs"
@@ -38370,6 +38829,7 @@
 			"used_by_classes"
 			{
 				"Soldier"		"1"
+				"Demoman"		"1"
 			}
 			"mouse_pressed_sound"		"ui/item_bag_pickup.wav"
 			"drop_sound"		"ui/item_bag_drop.wav"
@@ -38441,12 +38901,12 @@
 				"maxammo primary reduced"
 				{
 					"attribute_class"	"mult_maxammo_primary"
-					"value"				"-1"
+					"value"				"0"
 				}
 				"maxammo secondary reduced"
 				{
 					"attribute_class"	"mult_maxammo_secondary"
-					"value"				"-1"
+					"value"				"0"
 				}
 			}
 			
@@ -38532,6 +38992,521 @@
 			{
 				"sound_single_shot"	"Weapon_Liberty_Launcher.Single"
 				"sound_burst"	"Weapon_Liberty_Launcher.SingleCrit"
+			}
+		}
+		"7303"
+		{
+			"name"			"The Mantreads Demoman Secondary"
+			"first_sale_date"	"2011/05/10"
+			"item_class"		"tf_wearable"
+			"craft_class"	"weapon"
+			"craft_material_type"	"weapon"
+			"capabilities"
+			{
+				"nameable"		"1"
+				"can_craft_count"	"1"
+			}
+			"tags"
+			{
+				"can_deal_damage"			"1"
+				"can_be_equipped_by_soldier_or_demo"	"1"
+				"cannot_damage_tanks"		"1"
+			}
+			"show_in_armory"	"1"
+			"item_type_name" 	"#TF_Wearable_Boots"
+			"item_logname" "mantreads"
+			"item_iconname" "mantreads"
+			"item_name"		"#TF_Mantreads"
+			"item_slot"		"secondary"
+			"equip_region"	"feet"
+			"anim_slot"		"FORCE_NOT_USED"
+			"item_quality"		"unique"
+			"propername"	"1"
+			"min_ilevel"		"10"
+			"max_ilevel"		"10"
+			"image_inventory"	"backpack/workshop/player/items/soldier/mantreads/mantreads"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"82"
+			"model_player"		"models/workshop/player/items/soldier/mantreads/mantreads.mdl"
+			"act_as_wearable" "1"
+			"used_by_classes"
+			{
+				"demoman"	"secondary"
+			}
+			"attributes"
+			{
+				"damage force reduction"
+				{
+					"attribute_class"	"damage_force_reduction"
+					"value"	"0.25"
+				}
+				"airblast vulnerability multiplier"
+				{
+					"attribute_class"	"airblast_vulnerability_multiplier"
+					"value"	"0.25"
+				}
+				"boots falling stomp"
+				{
+					"attribute_class"	"boots_falling_stomp"
+					"value" "1"
+				}
+				"kill eater score type"
+				{
+					"attribute_class"	"kill_eater_score_type"
+					"value"	"26"		
+				}
+				"kill eater kill type"
+				{
+					"attribute_class"	"kill_eater_kill_type"
+					"value"	"26"		
+				}
+				"allowed in medieval mode"
+				{
+					"attribute_class"	"allowed_in_medieval_mode"
+					"value"	"1"
+				}
+				"mod_air_control_blast_jump"
+				{
+					"attribute_class"	"mod_air_control_blast_jump"
+					"value" "3.0"
+				}
+			}
+			"mouse_pressed_sound"	"ui/item_metal_weapon_pickup.wav"
+			"drop_sound"		"ui/item_metal_weapon_drop.wav"
+		}
+
+		"7304"
+		{
+			"name"	"Heavy Topknot"
+			"prefab"		"base_hat"
+			"first_sale_date"	"2011/03/08"
+			"hidden"	"0"
+			"item_class"	"tf_wearable"
+			"craft_class"	"hat"
+			"craft_material_type"	"hat"
+			"loadondemand" "1"
+			"capabilities"
+			{
+				"nameable"		"1"
+				"can_craft_if_purchased"	"1"
+			}
+			"show_in_armory"	"1"
+			"item_type_name" "#TF_Wearable_Hair"
+			"item_name"	"#TF_HeavyTopknot"
+			"item_description"	"#TF_HeavyTopknot_Desc"
+			"item_slot"	"head"
+			"equip_region"	"hat"
+			"item_quality"	"unique"
+			"image_inventory"	"backpack/workshop_partner/player/items/heavy/heavy_shogun_topknot/heavy_shogun_topknot"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"82"
+			"model_player"	"models/workshop_partner/player/items/heavy/heavy_shogun_topknot/heavy_shogun_topknot.mdl"
+			"drop_type"	"none"
+			"propername"	"1"
+			"used_by_classes"
+			{
+				"heavy"	"1"
+			}
+			"visuals"
+			{
+				"player_bodygroups"
+				{
+					"hat"			"1"
+				}
+			}
+			"mouse_pressed_sound" 	"ui/item_hat_pickup.wav"
+			"drop_sound" 		"ui/item_hat_drop.wav"
+		}
+		"7305"
+		{
+			"name"	"Demo Kabuto"
+			"prefab"		"base_hat"
+			"first_sale_date"	"2011/03/08"
+			"hidden"	"0"
+			"item_class"	"tf_wearable"
+			"craft_class"	"hat"
+			"craft_material_type"	"hat"
+			"loadondemand" "1"
+			"capabilities"
+			{
+				"nameable"		"1"
+				"can_craft_if_purchased"	"1"
+			}
+			"show_in_armory"	"1"
+			"item_type_name" "#TF_Wearable_Helmet"
+			"item_name"	"#TF_DemoKabuto"
+			"item_description"	"#TF_DemoKabuto_Desc"
+			"item_slot"	"head"
+			"equip_region"	"hat"
+			"item_quality"	"unique"
+			"image_inventory"	"backpack/workshop_partner/player/items/demo/demo_shogun_kabuto/demo_shogun_kabuto"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"82"
+			"model_player"	"models/workshop_partner/player/items/demo/demo_shogun_kabuto/demo_shogun_kabuto.mdl"
+			"drop_type"	"drop"
+			"propername"	"1"
+			"used_by_classes"
+			{
+				"demoman"	"1"
+			}
+			"visuals"
+			{
+				"player_bodygroups"
+				{
+					"hat"			"1"
+				}
+			}
+			"mouse_pressed_sound" 	"ui/item_helmet_pickup.wav"
+			"drop_sound" 		"ui/item_helmet_drop.wav"
+		}
+
+		"7306"
+		{
+			"name"	"Hero's Hachimaki"
+			"prefab"		"base_hat"
+			"item_class"	"tf_wearable"
+			"craft_class"	"hat"
+			"craft_material_type"	"hat"
+			"capabilities"
+			{
+				"nameable"			"1"
+				"can_craft_count"	"1"
+				"paintable"		"1"
+			}
+			"loadondemand" "1"
+			"show_in_armory"	"1"
+			"item_type_name"	"#TF_Wearable_Bandana"
+			"item_name"	"#TF_Homefront_Blindfold"
+			"item_description"	"#TF_Homefront_Blindfold_Desc"
+			"item_slot"	"head"
+			"equip_region"	"glasses"
+			"item_quality"	"unique"
+			"image_inventory"	"backpack/player/items/soldier/homefront_blindfold"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"82"
+			"model_player"	"models/player/items/soldier/homefront_blindfold.mdl"
+			"drop_type"	"drop"
+			"used_by_classes"
+			{
+				"soldier"	"1"
+			}
+			"visuals"
+			{
+				"player_bodygroups"
+				{
+					"hat"			"1"
+				}
+			}
+			"mouse_pressed_sound" 	"ui/item_hat_pickup.wav"
+			"drop_sound" 		"ui/item_hat_drop.wav"
+		}
+
+		"7307"
+		{
+			"name"	"Spy Oni Mask"
+			"prefab"		"base_misc"
+			"first_sale_date"	"2011/03/08"
+			"hidden"	"0"
+			"item_class"	"tf_wearable"
+			"craft_class"	"hat"
+			"craft_material_type"	"hat"
+			"loadondemand" "1"
+			"capabilities"
+			{
+				"nameable"		"1"
+				"can_craft_if_purchased"	"1"
+			}
+			"show_in_armory"	"1"
+			"item_type_name" "#TF_Wearable_Mask"
+			"item_name"	"#TF_SpyOniMask"
+			"item_description"	"#TF_SpyOniMask_Desc"
+			"item_slot"	"misc2"
+			"equip_region"	"face"
+			"item_quality"	"unique"
+			"image_inventory"	"backpack/workshop_partner/player/items/spy/shogun_ninjamask/shogun_ninjamask"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"82"
+			"model_player"	"models/workshop_partner/player/items/spy/shogun_ninjamask/shogun_ninjamask.mdl"
+			"drop_type"	"none"
+			"propername"	"1"
+			"used_by_classes"
+			{
+				"spy" "1"
+			}
+			"mouse_pressed_sound" 	"ui/item_helmet_pickup.wav"
+			"drop_sound" 		"ui/item_helmet_drop.wav"
+		}
+		"7308"
+		{
+			"name"	"The Nostromo Napalmer"
+			"prefab"	"weapon_newflame"
+			"first_sale_date"	"2011/12/15"
+			"item_class"	"tf_weapon_flamethrower"
+			"craft_class"	"weapon"
+			"craft_material_type"	"weapon"
+			"capabilities"
+			{
+				"nameable"		"1"
+				"can_craft_count"	"1"
+			}
+			"tags"
+			{
+				"can_deal_damage"			"1"
+				"can_deal_posthumous_damage"	"1"
+				"can_deal_critical_damage"	"1"
+				"is_flamethrower" "1"
+			}
+			"item_logname"	"phlogistinator"
+			"item_iconname"	"phlogistinator"
+			"show_in_armory"	"1"
+			"item_type_name"	"#TF_Weapon_Flamethrower"
+			"item_name"	"Nostromo Napalmer"
+			"item_description"	"Now with Stats!"
+			"item_slot"	"primary"
+			"image_inventory"		"backpack/workshop_partner/weapons/c_models/c_ai_flamethrower/c_ai_flamethrower"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"82"
+			"model_player"		"models/workshop_partner/weapons/c_models/c_ai_flamethrower/c_ai_flamethrower.mdl"
+			"attach_to_hands"	"1"
+			"item_quality"	"unique"
+			"propername"	"1"
+			"min_ilevel"	"10"
+			"max_ilevel"	"10"
+			"used_by_classes"
+			{
+				"pyro"	"1"
+			}
+			"static_attrs"
+			{
+				"min_viewmodel_offset"					"10 0 -12"		
+			}
+			"visuals"
+			{
+				"sound_single_shot"	"Weapon_phlogistinator.FireStart"
+				"sound_special1"	"Weapon_phlogistinator.FireLoop"
+				"sound_special3"	"Weapon_phlogistinator.WindDown"
+				"sound_burst"		"Weapon_phlogistinator.FireLoopCrit"
+
+				"animation_replacement"
+				{
+					"ACT_PRIMARY_VM_INSPECT_START"		"ACT_PRIMARY_ALT1_VM_INSPECT_START"
+					"ACT_PRIMARY_VM_INSPECT_IDLE"		"ACT_PRIMARY_ALT1_VM_INSPECT_IDLE"
+					"ACT_PRIMARY_VM_INSPECT_END"		"ACT_PRIMARY_ALT1_VM_INSPECT_END"
+				}
+			}
+			"attributes"
+			{
+				"Projectile speed increased"
+				{
+					"atribute_class"	"mult_projectile_speed"
+					"value"	"1.5"
+				}
+				"maxammo primary reduced"
+				{
+					"attribute_class"	"mult_maxammo_primary"
+					"value"				"0.60"
+				}
+				"special taunt"
+				{
+					"attribute_class"	"special_taunt"
+					"value" "1"
+				}
+			}
+			"mouse_pressed_sound"	"ui/item_heavy_gun_pickup.wav"
+			"drop_sound"		"ui/item_heavy_gun_drop.wav"
+		}
+		"7309"
+		{
+			"name"			"The Golden Gunboats"
+			"prefab"	"valve weapon_golden_gunboats"
+			"first_sale_date"	"2010/09/29"
+			"item_class"		"tf_wearable"
+			"craft_class"	"weapon"
+			"craft_material_type"	"weapon"
+			"loadondemand" "1"
+			"capabilities"
+			{
+				"nameable"		"1"
+			}
+			"show_in_armory"	"1"
+			"item_type_name" 	"#TF_Wearable_Boots"
+			"item_name"		"Golden Gunboats"
+			"item_slot"		"secondary"
+			"equip_region"	"feet"
+			"anim_slot"		"FORCE_NOT_USED"
+			"item_quality"		"unique"
+			"propername"	"1"
+			"min_ilevel"		"10"
+			"max_ilevel"		"10"
+			"image_inventory"	"backpack/weapons/c_models/c_rocketboots_soldier"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"82"
+			"model_player"		"models/weapons/c_models/c_rocketboots_soldier.mdl"
+			"act_as_wearable" "1"
+			"used_by_classes"
+			{
+				"soldier"	"1"
+			}
+			"visuals"
+			{
+				"material_override"	"models/weapons/c_items/c_rocketboots_demo_phongwarp.vtf"
+			}
+			"mouse_pressed_sound"	"ui/item_metal_weapon_pickup.wav"
+			"drop_sound"		"ui/item_metal_weapon_drop.wav"
+		}
+
+		"7310"
+		{
+			"name"	"Australium Rocket Launcher"
+			"item_name"		"Australium Rocket Launcher"
+			"show_in_armory"	"1"
+			"prefab"	"weapon_rocketlauncher_golden"
+			"baseitem"	"0"
+			"item_quality"	"unique"
+			"attributes"
+			{
+				"turn to gold"
+				{
+					"attribute_class"	"set_turn_to_gold"
+					"value" "1"
+				}
+				"is australium item"
+				{
+					"attribute_class"	"is_australium_item"
+					"value"				"1"
+				}
+			}
+		}
+		"7311"
+		{
+			"name"	"Australium Flamethrower"
+			"show_in_armory"	"1"
+			"prefab"	"weapon_flamethrower_golden"
+			"baseitem"	"0"
+			"item_quality"	"unique"
+			"show_in_armory"	"1"
+			"attributes"
+			{
+				"turn to gold"
+				{
+					"attribute_class"	"set_turn_to_gold"
+					"value" "1"
+				}
+				"is australium item"
+				{
+					"attribute_class"	"is_australium_item"
+					"value"				"1"
+				}
+			}
+		}
+		"7312"
+		{
+			"name"	"TF_Australium_WEAPON_SCATTERGUN"
+			"first_sale_date"	"2010/09/29"
+			"item_name"		"Australium Scattergun"
+			"prefab"	"weapon_scattergun"
+			"show_in_armory"	"1"
+			"baseitem" "0"
+			"attributes"
+			{
+				"turn to gold"
+				{
+					"attribute_class"	"set_turn_to_gold"
+					"value" "1"
+				}
+				"is australium item"
+				{
+					"attribute_class"	"is_australium_item"
+					"value"				"1"
+				}
+			}
+		}
+		"7318"
+		{
+			"name"	"TF_Australium_WEAPON_SNIPERRIFLE"
+			"item_name"		"Australium Sniper Rifle"
+			"first_sale_date"	"2010/09/29"
+			"prefab"	"weapon_sniperrifle_golden"
+			"baseitem" "0"
+			"show_in_armory"	"1"
+			"attributes"
+			{
+				"turn to gold"
+				{
+					"attribute_class"	"set_turn_to_gold"
+					"value" "1"
+				}
+				"is australium item"
+				{
+					"attribute_class"	"is_australium_item"
+					"value"				"1"
+				}
+			}
+		}
+		"7319"
+		{
+			"name"	"TF_Australium_WEAPON_MINIGUN"
+			"item_name"		"Australium Minigun"
+			"first_sale_date"	"2010/09/29"
+			"prefab"	"weapon_minigun"
+			"baseitem" "0"
+			"show_in_armory"	"1"
+			"attributes"
+			{
+				"turn to gold"
+				{
+					"attribute_class"	"set_turn_to_gold"
+					"value" "1"
+				}
+				"is australium item"
+				{
+					"attribute_class"	"is_australium_item"
+					"value"				"1"
+				}
+			}
+		}
+		"7322"
+		{
+			"name"	"TF_Australium_WEAPON_MEDIGUN"
+			"item_name"		"Australium Medi-Gun"
+			"first_sale_date"	"2010/09/29"
+			"prefab"	"weapon_medigun"
+			"baseitem" "0"
+			"show_in_armory"	"1"
+			"attributes"
+			{
+				"turn to gold"
+				{
+					"attribute_class"	"set_turn_to_gold"
+					"value" "1"
+				}
+				"is australium item"
+				{
+					"attribute_class"	"is_australium_item"
+					"value"				"1"
+				}
+			}
+		}
+		"7325"
+		{
+			"name"	"TF_Australium_WEAPON_KNIFE"
+			"item_name"	"Australium Knife"
+			"first_sale_date"	"2010/09/29"
+			"prefab"	"weapon_knife"
+			"baseitem" "0"
+			"show_in_armory"	"1"
+			"attributes"
+			{
+				"turn to gold"
+				{
+					"attribute_class"	"set_turn_to_gold"
+					"value" "1"
+				}
+				"is australium item"
+				{
+					"attribute_class"	"is_australium_item"
+					"value"				"1"
+				}
 			}
 		}
 		"30570"
