@@ -6929,7 +6929,7 @@
 			"item_name"	"Panic Pistol"
 			"item_logname"	"panic_pistol"
 			"item_iconname"	"panic_pistol"
-			"item_slot"	"primary"
+			"item_slot"	"secondary"
 			"item_quality"		"unique"
 			"min_ilevel"	"1"
 			"max_ilevel"	"99"
@@ -7020,6 +7020,7 @@
 				"soldier" "secondary"
 				"heavy" "secondary"
 				"medic" "primary"
+				"scout" "primary"
 			}
 			"static_attrs"
 			{
@@ -15125,7 +15126,7 @@
 		{
 			"name"	"The Red-Tape Recorder"
 			"prefab"		"weapon_red_tape_recorder"
-			"show_in_armory"	"0"
+			"show_in_armory"	"1"
 		}
 		"811"
 		{
@@ -25012,6 +25013,7 @@
 			"image_inventory_size_h"		"82"
 			"model_world"	"models/weapons/c_models\c_oppressor\c_smg.mdl"
 			"model_player"	"models/weapons/c_models\c_oppressor\c_smg.mdl"
+			"show_in_armory" "0"
 			"attach_to_hands" "1"
 			"inspect_panel_dist" "40"
 			"item_quality"	"unique"
@@ -25029,20 +25031,20 @@
 			}
 			"attributes"
 			{
-					"mult_spread_scales_consecutive"
+				"mult_spread_scales_consecutive"
 				{
-					"attribute_class" 	"mult_spread_scales_consecutive"
-					"value" "1"
+				"attribute_class" 	"mult_spread_scales_consecutive"
+				"value" "1"
 				}
-					"damage bonus"
+				"damage bonus"
 				{
-					"attribute_class"	"mult_dmg"
-					"value"	"1.5"
+				"attribute_class"	"mult_dmg"
+				"value"	"1.5"
 				}
-								"clip size bonus"
+				"clip size bonus"
 				{
-					"attribute_class"	"mult_clipsize"
-					"value" "1.2"
+				"attribute_class"	"mult_clipsize"
+				"value" "1.2"
 				}
 				"maxammo primary increased"
 				{
@@ -28997,7 +28999,7 @@
 			"image_inventory_size_w"		"128"
 			"image_inventory_size_h"		"82"
                         "model_player"        "models/weapons/c_models/c_ar3/c_ar3.mdl"
-        	        "model_world"        "models/weapons/c_models/c_minigun/c_minigun_natascha.mdl"
+			"model_world"	"models/weapons/c_models\c_oppressor\c_smg.mdl"
 			"inspect_panel_dist" "88"
 			"attach_to_hands"	"0"
 			"item_quality"	"unique"
@@ -29048,6 +29050,11 @@
 				{
 					"attribute_class"	"add_maxhealth"
 					"value" "-30"
+				}
+				"spread penalty"
+				{
+					"attribute_class" 	"mult_spread_scale"
+					"value" "1.35"
 				}
 				"dmg taken from fire increased"
 				{
@@ -40167,6 +40174,58 @@
 					{
 						"model"	"models/workshop/weapons/c_models/c_trenchgun/c_trenchgun_festivizer.mdl"
 					}
+				}
+			}
+		}
+		"7333"
+		{
+			"name"	"The Ap-Sap"
+			"first_sale_date"	"2013/04/23"
+			"prefab"	"valve"
+			"capabilities"
+			{
+				"nameable"		"1"
+			}
+			"item_class"	"tf_weapon_sapper"
+			"prefab"	"weapon_sapper"
+			"craft_class"	"weapon"
+			"craft_material_type"	"weapon"
+			"show_in_armory"	"1"
+			"item_type_name"	"#TF_Weapon_Spy_Sapper"
+			"item_name"	"#TF_Weapon_Ap_Sap"
+			"item_description"	"Yes, I know its cum white!"
+			"item_slot"	"building"
+			"item_quality"	"unique"
+			"item_logname"	"psapper"
+			"item_iconname"	"psapper"
+			"image_inventory"	"backpack/weapons/c_models/c_p2rec/c_p2rec"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"82"
+			"inspect_panel_dist" 			"25"
+			"anim_slot"	"building"
+			"attach_to_hands"	"1"
+			"propername"	"1"
+			"model_player"	"models/weapons/c_models/c_p2rec/c_p2rec.mdl"
+			"model_world"	"models/weapons/c_models/c_p2rec/c_p2rec.mdl"
+			"used_by_classes"
+			{
+				"spy"	"1"
+			}
+			"static_attrs"
+			{
+				"min_viewmodel_offset"		"10 0 -6"				
+			}
+			"attributes"
+			{
+				"sapper voice pak"
+				{
+					"attribute_class"	"sapper_voice_pak"
+					"value" "1.0"
+				}
+				"sapper voice pak idle wait"
+				{
+					"attribute_class"	"sapper_voice_pak_idle_wait"
+					"value" "3.0"
 				}
 			}
 		}
