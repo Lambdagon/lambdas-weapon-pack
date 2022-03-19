@@ -4867,9 +4867,9 @@
 			"image_inventory_size_h"		"82"
 			"inspect_panel_dist" 			"25"
 			"anim_slot"	"building"
-			"attach_to_hands"	"0"
-			"propername"	"1"
 			"attach_to_hands"	"1"
+			"propername"	"1"
+			"attach_to_hands"	"0"
 			"model_player"	"models/workshop_partner/weapons/c_models/c_sd_sapper/c_sd_sapper.mdl"
 			"xifier_class_remap"	"red_tape_recorder"
 			"used_by_classes"
@@ -6859,7 +6859,6 @@
 				"pyro" "secondary"
 				"soldier" "secondary"
 				"heavy" "secondary"
-				"medic" "primary"
 				"scout" "primary"
 				"demoman" "primary"
 			}
@@ -7019,7 +7018,6 @@
 				"pyro" "secondary"
 				"soldier" "secondary"
 				"heavy" "secondary"
-				"medic" "primary"
 				"scout" "primary"
 			}
 			"static_attrs"
@@ -7038,6 +7036,167 @@
 				{
 					"attribute_class"	"mult_spread_scale"
 					"value"	"0.8"
+				}
+				"clip size penalty"
+				{
+					"attribute_class"	"mult_clipsize"
+					"value" "0.5"
+				}
+				"single wep deploy time increased"
+				{
+					"attribute_class"	"mult_single_wep_deploy_time"
+					"value"	"1.5"
+				}
+			}
+			"visuals"
+			{
+				"sound_single_shot"		"Weapon_BackShot_Shotty.Single"
+				"sound_burst"			"Weapon_BackShot_Shotty.SingleCrit"
+			}
+			"mouse_pressed_sound"	"ui/item_heavy_gun_pickup.wav"
+			"drop_sound"		"ui/item_heavy_gun_drop.wav"
+		}
+
+		"weapon_trenchgunmedic"
+		{
+			"enabled"	"1"
+			"item_class"	"tf_weapon_shotgun"
+			"craft_class"			"weapon"
+			"craft_material_type"	"weapon"
+			"capabilities"
+			{
+				"nameable"		"1"
+			}
+			"tags"
+			{
+				"can_deal_damage"			"1"
+				"can_be_equipped_by_soldier_or_demo"	"1"
+				"can_deal_critical_damage"	"1"
+				"can_deal_mvm_penetration_damage"	"1"
+				"can_deal_long_distance_damage"	"1"
+				"can_deal_taunt_damage"		"1"
+			}
+			"item_type_name"	"#TF_Weapon_Shotgun"
+			"item_name"	"#TF_Weapon_PanicAttack"
+			"item_logname"	"panic_attack"
+			"item_iconname"	"panic_attack"
+			"item_slot"	"primary"
+			"item_quality"		"unique"
+			"min_ilevel"	"1"
+			"max_ilevel"	"99"
+			"propername"		"1"
+			"attach_to_hands"	"1"
+			"inspect_panel_dist" "40"
+			"image_inventory"	"backpack/workshop/weapons/c_models/c_trenchgun/c_trenchgun"
+			"model_player"	"models/workshop/weapons/c_models/c_trenchgun/c_trenchgun.mdl"
+			"used_by_classes"
+			{
+				"medic" "primary"
+			}
+			"static_attrs"
+			{
+				"min_viewmodel_offset"					"10 0 -11"
+				"weapon_stattrak_module_scale"				"0.608"				
+			}
+			"attributes"
+			{
+				"damage penalty"
+				{
+					"attribute_class"	"mult_dmg"
+					"value"	"0.8"
+				}
+				"single wep deploy time decreased"
+				{
+					"attribute_class"	"mult_single_wep_deploy_time"
+					"value"	"0.5"
+				}
+				"reload time decreased"
+				{
+				"attribute_class"	"mult_reload_time"
+				"value"	"0.65"
+				}
+				"mult_spread_scales_consecutive"
+				{
+					"attribute_class" 	"mult_spread_scales_consecutive"
+					"value" "1"
+				}
+				"bullets per shot bonus"
+				{
+					"attribute_class" 	"mult_bullets_per_shot"
+					"value" "1.5"
+				}
+				"fixed_shot_pattern"
+				{
+					"attribute_class" 	"fixed_shot_pattern"
+					"value" "1"
+				}
+			}
+			"visuals"
+			{
+				"sound_single_shot"		"Weapon_BackShot_Shotty.Single"
+				"sound_burst"			"Weapon_BackShot_Shotty.SingleCrit"
+			}
+			"mouse_pressed_sound"	"ui/item_heavy_gun_pickup.wav"
+			"drop_sound"		"ui/item_heavy_gun_drop.wav"
+		}
+
+		"weapon_calmdefendgunmedic"
+		{
+			"enabled"	"1"
+			"item_class"	"tf_weapon_shotgun"
+			"craft_class"			"weapon"
+			"craft_material_type"	"weapon"
+			"capabilities"
+			{
+				"nameable"		"1"
+			}
+			"tags"
+			{
+				"can_deal_damage"			"1"
+				"can_be_equipped_by_soldier_or_demo"	"1"
+				"can_deal_critical_damage"	"1"
+				"can_deal_mvm_penetration_damage"	"1"
+				"can_deal_long_distance_damage"	"1"
+				"can_deal_taunt_damage"		"1"
+			}
+			"item_type_name"	"#TF_Weapon_Shotgun"
+			"item_name"	"Calm Defend"
+			"item_logname"	"calm_defend"
+			"item_iconname"	"calm_defend"
+			"item_slot"	"primary"
+			"item_quality"		"unique"
+			"min_ilevel"	"1"
+			"max_ilevel"	"99"
+			"propername"		"1"
+			"attach_to_hands"	"1"
+			"inspect_panel_dist" "40"
+			"image_inventory"	"backpack/workshop/weapons/c_models/c_trenchgun/c_trenchgun"
+			"model_player"	"models/workshop/weapons/c_models/c_trenchgun/c_trenchgun.mdl"
+			"used_by_classes"
+			{
+				"medic" "primary"
+			}
+			"static_attrs"
+			{
+				"min_viewmodel_offset"					"10 0 -11"
+				"weapon_stattrak_module_scale"				"0.608"				
+			}
+			"attributes"
+			{
+				"damage bonus"
+				{
+					"attribute_class"	"mult_dmg"
+					"value"	"1.2"
+				}
+				"weapon spread bonus"
+				{
+					"attribute_class"	"mult_spread_scale"
+					"value"	"0.8"
+				}
+				"reload time decreased"
+				{
+				"attribute_class"	"mult_reload_time"
+				"value"	"0.65"
 				}
 				"clip size penalty"
 				{
@@ -15126,7 +15285,7 @@
 		{
 			"name"	"The Red-Tape Recorder"
 			"prefab"		"weapon_red_tape_recorder"
-			"show_in_armory"	"1"
+			"show_in_armory"	"0"
 		}
 		"811"
 		{
@@ -40226,6 +40385,50 @@
 				{
 					"attribute_class"	"sapper_voice_pak_idle_wait"
 					"value" "3.0"
+				}
+			}
+		}
+		"7334"
+		{
+			"name"	"Calm Defend Shotgun"
+			"prefab"	"weapon_calmdefendgunmedic"
+			"first_sale_date"	"2014/12/23"
+			"particle_suffix"	"panic_attack"
+			"show_in_armory"	"1"
+			"tags"
+			{
+				"can_be_festivized"		"1"
+			}
+			"visuals"
+			{
+				"attached_models_festive"
+				{
+					"0"
+					{
+						"model"	"models/workshop/weapons/c_models/c_trenchgun/c_trenchgun_festivizer.mdl"
+					}
+				}
+			}
+		}
+		"7335"
+		{
+			"name"	"Panic Attack Shotgun"
+			"prefab"	"weapon_trenchgunmedic"
+			"first_sale_date"	"2014/12/23"
+			"particle_suffix"	"panic_attack"
+			"show_in_armory"	"1"
+			"tags"
+			{
+				"can_be_festivized"		"1"
+			}
+			"visuals"
+			{
+				"attached_models_festive"
+				{
+					"0"
+					{
+						"model"	"models/workshop/weapons/c_models/c_trenchgun/c_trenchgun_festivizer.mdl"
+					}
 				}
 			}
 		}
