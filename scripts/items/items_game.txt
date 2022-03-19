@@ -1789,6 +1789,7 @@
 			"used_by_classes"
 			{
 				"medic"	"1"
+				"sniper"	"1"
 			}
 			"static_attrs"
 			{
@@ -40107,7 +40108,7 @@
 				"can_deal_long_distance_damage"	"1"
 				"can_heal_allies"		"1"
 			}
-			"show_in_armory"	"1"
+			"show_in_armory"	"0"
 			"item_type_name"	"#TF_Weapon_SniperRifle"
 			"item_name"	"Crusader's Crossbow"
 			"item_description"	"100% easier to heal people!"
