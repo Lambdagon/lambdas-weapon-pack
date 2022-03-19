@@ -5303,6 +5303,90 @@
 			"drop_sound"		"ui/item_heavy_gun_drop.wav"
 		}
 
+		"weapon_big_boris"
+		{
+			"enabled"	"1"
+			"item_class"	"tf_weapon_shotgun"
+			"craft_class"	"weapon"
+			"craft_material_type"	"weapon"
+			"capabilities"
+			{
+				"nameable"		"1"
+				"can_craft_count"	"1"
+			}
+			"tags"
+			{
+				"can_deal_damage"			"1"
+				"can_deal_critical_damage"	"1"
+				"can_deal_mvm_penetration_damage"	"1"
+				"can_deal_long_distance_damage"	"1"
+			}
+			"item_type_name"	"#TF_Weapon_Shotgun"
+			"item_logname" "big_boris"
+			"item_iconname" "big_boris"
+			"item_name"	"Big Boris"
+			"item_slot"	"primary"
+			"item_quality"	"unique"
+			"propername"	"1"
+			"min_ilevel"	"10"
+			"max_ilevel"	"10"
+			"image_inventory"	"backpack/weapons/w_models/w_shotgun"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"82"
+			"model_player"	"models/weapons/c_models/c_shotgun/c_shotgun.mdl"
+			"attach_to_hands" "1"
+			"inspect_panel_dist" "45"
+			"used_by_classes"
+			{
+				"heavy"	"1"
+			}
+			"static_attrs"
+			{
+				"min_viewmodel_offset"				"10 0 -10"
+				"weapon_stattrak_module_scale"			"0.608"
+			}
+			"attributes"
+			{
+				"damage bonus"
+				{
+					"attribute_class"	"mult_dmg"			
+					"value" "4"
+				}
+				"crit kill will gib"
+				{
+					"attribute_class"	"crit_kill_will_gib"
+					"value"	"1"
+				}
+				"move speed bonus"
+				{
+					"attribute_class"	"mult_player_movespeed"
+					"value" "1.20"
+				}
+				"spread penalty"
+				{
+					"attribute_class" 	"mult_spread_scale"
+					"value" "2"
+				}
+				"crit mod disabled"
+				{
+					"attribute_class"	"mult_crit_chance"
+					"value"	"0"
+				}
+				"max health additive penalty"
+				{
+					"attribute_class"	"add_maxhealth"
+					"value" "-25"
+				}
+			}
+			"visuals"
+			{
+				"sound_single_shot"	"Weapon_FamilyBusiness.Single"
+				"sound_burst"	"Weapon_FamilyBusiness.SingleCrit"
+			}		"medic"	      "1"
+			"mouse_pressed_sound"	"ui/item_heavy_gun_pickup.wav"
+			"drop_sound"		"ui/item_heavy_gun_drop.wav"
+		}
+
 		"weapon_lunchbox"
 		{
 			"enabled"	"1"
@@ -7943,7 +8027,6 @@
             "used_by_classes"
             {
                 "engineer"    "1"
-		"medic" "primary"
 		"scout"	      "primary"
             }
         }
@@ -29197,8 +29280,8 @@
 				}
 				"spread penalty"
 				{
-					"attribute_class" 	"mult_spread_scale"
-					"value" "1.60"
+				"attribute_class" 	"mult_spread_scale"
+				"value" "1.60"
 				}
 				"crit mod disabled"
 				{
@@ -29209,11 +29292,6 @@
 				{
 					"attribute_class"	"add_maxhealth"
 					"value" "-30"
-				}
-				"spread penalty"
-				{
-					"attribute_class" 	"mult_spread_scale"
-					"value" "1.35"
 				}
 				"dmg taken from fire increased"
 				{
@@ -40430,6 +40508,18 @@
 						"model"	"models/workshop/weapons/c_models/c_trenchgun/c_trenchgun_festivizer.mdl"
 					}
 				}
+			}
+		}
+		"7336"
+		{
+			"name"	"Big Boris"
+			"prefab" "weapon_big_boris"
+			"show_in_armory"	"1"
+			"first_sale_date"	"2011/04/14"
+			"particle_suffix"	"tomislav"
+			"tags"
+			{
+				"can_be_festivized"		"1"
 			}
 		}
 		"30570"
