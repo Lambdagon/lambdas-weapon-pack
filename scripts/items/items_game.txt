@@ -19270,7 +19270,7 @@
 		"9013"
 		{
 			"name"		"Cheat Gun"
-			"show_in_armory"	"1"
+			"show_in_armory"	"0"
 			"item_class"	"tf_weapon_cheatgun"
 			"craft_class"	"weapon"
 			"craft_material_type"	"weapon"
@@ -19278,7 +19278,6 @@
 			{
 				"nameable"		"1"
 			}
-			"show_in_armory" "0"
 			"item_type_name"	"Kitchen Gun"
 			"item_name"	"Cheat Gun"
 			"item_description"	"yes"
@@ -24955,6 +24954,11 @@
 					"attribute_class"	"mult_maxammo_primary"
 					"value"	"15"
 				}
+				"allowed in medieval mode"
+				{
+					"attribute_class"	"allowed_in_medieval_mode"
+					"value"	"1"
+				}
 			}
 			"visuals"
 			{
@@ -25093,6 +25097,11 @@
 				{
 					"attribute_class" 	"mult_spread_scale"
 					"value" "0.01"
+				}
+				"allowed in medieval mode"
+				{
+					"attribute_class"	"allowed_in_medieval_mode"
+					"value"	"1"
 				}
 			}
 			"static_attrs"
@@ -32503,6 +32512,11 @@
 					"attribute_class"	"mult_crit_chance"
 					"value"	"0"
 				}
+				"allowed in medieval mode"
+				{
+					"attribute_class"	"allowed_in_medieval_mode"
+					"value"	"1"
+				}
 			}
 			"visuals"
 			{
@@ -32796,6 +32810,11 @@
 				{
 					"attribute_class"	"mult_dmgtaken"
 					"value"	"1.2"
+				}
+				"allowed in medieval mode"
+				{
+					"attribute_class"	"allowed_in_medieval_mode"
+					"value"	"1"
 				}		
 			}
 			"visuals"
@@ -32857,7 +32876,7 @@
 		}
 		"7151"
 		{
-			"name"		"The Last Banana"
+			"name"		"Last Banana"
 			"first_sale_date"		"2017/09/13"
 			"prefab"		"weapon_sandvich"
 			"craft_class"	"" 
@@ -32889,6 +32908,11 @@
 					"attribute_class"	"charge_recharge_rate"
 					"value"	"0.5"
 				}
+				"allowed in medieval mode"
+				{
+					"attribute_class"	"allowed_in_medieval_mode"
+					"value"	"1"
+				}
 			}
 		}
 		"7152"
@@ -32898,7 +32922,7 @@
 			"prefab"		"weapon_sandvich"
 			"craft_class"	"" 
 			"craft_material_type"	"weapon"
-			"item_name"		"The First Banana"
+			"item_name"		"First Banana"
 			"item_description"		"#TF_Lunchbox_Banana_desc"
 			"image_inventory"		"backpack/weapons/c_models/c_banana/c_banana"
 			"model_player"		"models/weapons/c_models/c_banana/c_banana.mdl"
@@ -32925,6 +32949,11 @@
 					"attribute_class"	"charge_recharge_rate"
 					"value"	"1.5"
 				}
+				"allowed in medieval mode"
+				{
+					"attribute_class"	"allowed_in_medieval_mode"
+					"value"	"1"
+				}	
 			}
 		}
 		"7154"
@@ -35898,6 +35927,11 @@
 				{
 					"attribute_class"	"mult_crit_chance"
 					"value"	"0"
+				}
+				"allowed in medieval mode"
+				{
+					"attribute_class"	"allowed_in_medieval_mode"
+					"value"	"1"
 				}
 			}
 		}
