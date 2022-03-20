@@ -3123,10 +3123,6 @@
 			{
 				"engineer"	"1"
 			}
-			"static_attrs"
-			{
-				"min_viewmodel_offset"		"10 0 -9
-			}
 			"attributes"
 			{
 				"mod sentry killed revenge"
@@ -26913,11 +26909,11 @@
 			"propername"	"1"
 			"min_ilevel"	"1"
 			"max_ilevel"	"100"
-			"image_inventory"	"backpack/weapons/c_models/c_tfc_sniperrifle/c_tfc_sniperrifle"
+			"image_inventory"	"backpack/weapons/c_models/c_frontierjustice/c_frontierjustice"
 			"image_inventory_size_w"		"128"
 			"image_inventory_size_h"		"82"
 			"model_player"	"models/weapons/v_shotgun.mdl"
-			"model_world"	"models/weapons/w_annabelle.mdl"
+			"model_world"	"models/weapons/c_models/c_frontierjustice/c_frontierjustice.mdl"
 			"attach_to_hands"	"0"
 			
 			"visuals"
