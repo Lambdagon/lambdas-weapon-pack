@@ -40673,9 +40673,9 @@
 			"craft_class"	"" 
 			"craft_material_type"	"weapon"
 			"item_name"		"ඞඞඞඞඞ"
-			"item_description"		"#TF_Lunchbox_Banana_desc"
-			"image_inventory"		"backpack/weapons/c_models/c_banana/c_banana"
-			"model_player"		"models/weapons/c_models/c_banana/c_banana.mdl"
+			"item_description"		"YOU. GOT. NO. AMONGඞUS!"
+			"image_inventory"		"backpack/weapons/c_models/c_sandwich/c_robo_sandwich"
+			"model_player"		"models/weapons/c_models/c_sandwich1/c_sandwich.mdl"
 			"propername"		"1"
 			"show_in_armory"	"1"
 			"static_attrs"
@@ -40689,15 +40689,20 @@
 					"attribute_class"	"set_weapon_mode"
 					"value"	"6"
 				}
-				"lunchbox healing increased"
+				"lunchbox adds maxhealth bonus"
+				{
+					"attribute_class"	"set_weapon_mode"
+					"value"	"9"
+				}
+				"lunchbox healing decreased"
 				{
 					"attribute_class" "lunchbox_healing_scale"
-					"value" "0.70"
+					"value" "0.31"
 				}
-				"charge recharge rate decreased"
+				"charge recharge rate increased"
 				{
 					"attribute_class"	"charge_recharge_rate"
-					"value"	"0.5"
+					"value"	"1.2"
 				}
 				"allowed in medieval mode"
 				{
