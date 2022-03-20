@@ -27910,19 +27910,6 @@
 				"heavy"		"1"
 			}
 			"mouse_pressed_sound"		"ui/item_bag_pickup.wav"
-			"attributes"
-			{
-				"health regen"
-				{
-					"attribute_class"	"add_health_regen"
-					"value"	"4"
-				}
-				"ammo regen"
-				{
-					"attribute_class"	"addperc_ammo_regen"
-					"value"	"0.05"
-				}
-			}
 			"drop_sound"		"ui/item_bag_drop.wav"
 		}
 		"6991"
@@ -27977,14 +27964,6 @@
 			"used_by_classes"
 			{
 				"engineer"		"1"
-			}
-			"attributes"
-			{
-				"move speed bonus"
-				{
-					"attribute_class"	"mult_player_movespeed"
-					"value" "1.10"
-				}
 			}
 			"visuals"
 			{
@@ -29500,54 +29479,6 @@
 			}
 			"mouse_pressed_sound"	"ui/item_hat_pickup.wav"
 			"drop_sound"		"ui/item_hat_drop.wav"
-		}
-		"7043"
-		{
-			"name"	"Baseball Bill's Sports Shine"
-			"prefab"	"valve base_hat"
-			"first_sale_date"	"2010/09/29"
-			"item_class"	"tf_wearable"
-			"craft_class"	"hat"
-			"craft_material_type"	"hat"
-			"capabilities"
-			{
-				"nameable"		"1"
-				"can_craft_if_purchased"	"1"
-			}
-			"show_in_armory"	"1"
-			"item_type_name"	"#TF_Wearable_CosmeticItem"
-			"item_name"	"#TF_Hatless_Scout"
-			"item_description"	"#TF_Hatless_Scout_Desc"
-			"item_slot"	"head"
-			"equip_region"	"hat"
-			"item_quality"	"unique"
-			"image_inventory"	"backpack/player/items/scout/scout_nohat"
-			"image_inventory_size_w"		"128"
-			"image_inventory_size_h"		"82"
-			"model_player"	"models/player/items/scout/scout_nohat.mdl"
-			"drop_type"	"none"
-			"used_by_classes"
-			{
-				"scout"		"1"
-			}
-			"attributes"
-			{
-				"move speed bonus"
-				{
-					"attribute_class"	"mult_player_movespeed"
-					"value" "1.10"
-				}
-			}
-			"visuals"
-			{
-				"player_bodygroups"
-				{
-					"hat"			"1"
-					"headphones"	"1"
-				}
-			}
-			"mouse_pressed_sound" 	"ui/item_hat_pickup.wav"
-			"drop_sound" 		"ui/item_hat_drop.wav"
 		}
 		"7044"
 		{
@@ -33582,7 +33513,7 @@
 			{
 				"nameable"		"1"
 			}
-			"show_in_armory" "1"
+			"show_in_armory" "0"
 			"item_type_name"	"memory"
 			"item_name"	"Lamb's Special item"
 			"item_description"	"yes"
@@ -34655,14 +34586,6 @@
 			"used_by_classes"
 			{
 				"sniper"	"1"
-			}
-			"attributes"
-			{
-				"move speed bonus"
-				{
-					"attribute_class"	"mult_player_movespeed"
-					"value" "1.10"
-				}
 			}
 			"visuals"
 			{
