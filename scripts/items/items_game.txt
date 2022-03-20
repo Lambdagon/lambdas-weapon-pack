@@ -3125,8 +3125,7 @@
 			}
 			"static_attrs"
 			{
-				"min_viewmodel_offset"		"10 0 -9"
-				"crits_become_minicrits"				"1"
+				"min_viewmodel_offset"		"10 0 -9
 			}
 			"attributes"
 			{
