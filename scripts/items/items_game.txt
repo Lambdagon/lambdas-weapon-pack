@@ -37227,32 +37227,9 @@
 			"item_iconname"	"sharp_dresser"
 			"inspect_panel_dist" "35"
 			"image_inventory"	"backpack/workshop/weapons/c_models/c_acr_hookblade/c_acr_hookblade"
-			"model_player"	"models/workshop/weapons/c_models/c_acr_hookblade/c_acr_hookblade.mdl"
-			"static_attrs"
-			{
-				"min_viewmodel_offset"		"10 0 -6"
-			}
-			"anim_slot"	"ITEM1"
-			"visuals"
-			{
-				"sound_melee_hit"	"Weapon_Assassin_Knife.HitFlesh"
-
-				"animation_replacement"
-				{
-					"ACT_VM_DRAW"	"ACT_ITEM1_VM_DRAW"
-					"ACT_VM_IDLE"	"ACT_ITEM1_VM_IDLE"
-					"ACT_VM_HITCENTER"	"ACT_ITEM1_VM_HITCENTER"
-					"ACT_VM_HITCENTER2"	"ACT_ITEM1_VM_HITCENTER2"
-					"ACT_VM_SWINGHARD"	"ACT_ITEM1_VM_SWINGHARD"
-					"ACT_BACKSTAB_VM_UP"	"ACT_ITEM1_BACKSTAB_VM_UP"
-					"ACT_BACKSTAB_VM_DOWN"	"ACT_ITEM1_BACKSTAB_VM_DOWN"
-					"ACT_BACKSTAB_VM_IDLE"	"ACT_ITEM1_BACKSTAB_VM_IDLE"
-					"ACT_MELEE_VM_STUN"	"ACT_MELEE_VM_ITEM1_STUN"
-					"ACT_MELEE_VM_INSPECT_START"	"ACT_ITEM1_VM_INSPECT_START"
-					"ACT_MELEE_VM_INSPECT_IDLE"		"ACT_ITEM1_VM_INSPECT_IDLE"
-					"ACT_MELEE_VM_INSPECT_END"		"ACT_ITEM1_VM_INSPECT_END"
-				}
-			}
+			"model_world"	"models/workshop/weapons/c_models/c_acr_hookblade/c_acr_hookblade.mdl"
+			"model_player"	"models/weapons/v_models/v_knife_spy.mdl"
+			"attach_to_hands" "0"
 			"attributes"
 			{
 				"increased jump height from weapon"
@@ -37264,11 +37241,6 @@
 				{
 					"attribute_class"	"cancel_falling_damage"
 					"value" "1"
-				}
-				"fire rate penalty"
-				{
-					"attribute_class"	"mult_postfiredelay"
-					"value" "1.20"
 				}
 				"special taunt"
 				{
@@ -40831,63 +40803,82 @@
 		}
 		"7341"
 		{
-			"name"	"Extended Grenade Launcher"
-			"show_in_armory"	"0"
-			"prefab"	"weapon_grenade_launcher"
-			"baseitem"	"0"
-			"item_quality"	"developer"
-			"extra_wearable" "models/player/items/all_class/ghostly_gibus_scout.mdl"
+            "name"    "super_shotgun"
+            "enabled"	"1"
+			"item_class"	"tf_weapon_scattergun"
+			"craft_class"	"weapon"
+			"craft_material_type"	"weapon"
+			"capabilities"
+			{
+				"nameable"		"1"
+				"can_collect" "1"
+			}
+			"tags"
+			{
+				"can_deal_damage"			"1"
+				"can_deal_critical_damage"	"1"
+				"can_deal_mvm_penetration_damage"	"1"
+				"can_deal_long_distance_damage"	"1"
+			}
+			"item_type_name"	"#TF_Weapon_Shotgun"
+			"item_quality"	"strange"
+			"item_slot"		"primary"
+			"item_name"	"Close Encounter"
+			"item_description"	"Doom"
+			"baseitem" "0"
+			"show_in_armory"	"1"
+			"min_ilevel"	"1"
+			"max_ilevel"	"1"
+			"attach_to_hands"	"0"
+			"inspect_panel_dist" "40"
+			"image_inventory"	"backpack/weapons/w_models/w_shotgun"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"82"
+			"model_player"    "models/weapons/v_supershotgun_mercenary.mdl"
+			"mouse_pressed_sound"	"ui/item_heavy_gun_pickup.wav"
+			"drop_sound"		"ui/item_heavy_gun_drop.wav"
+			"particle_suffix"		"shotgun"
+            "used_by_classes"
+            {
+                "engineer"    "1"
+				"sniper"	  "1"
+				"scout"		  "1"
+				"heavy"		  "secondary"
+				"medic"		  "1"
+				"spy"		  "1"
+				"soldier"	  "1"
+            }
 			"attributes"
 			{
-				"damage bonus"
+				"Set DamageType Ignite"
 				{
-					"attribute_class"	"mult_dmg"
-					"value"	"100.0"
-				}
-				"clip size bonus"
-				{
-					"attribute_class"	"mult_clipsize"
-					"value"	"1100.0"
+					"attribute_class"	"set_dmgtype_ignite"
+					"value" "1"
 				}
 				"fire rate bonus"
 				{
 					"attribute_class"	"mult_postfiredelay"
-					"value"	"0.25"
+					"value" "0.4"
 				}
-				"heal on hit for slowfire"
+				"clip size penalty"
 				{
-					"attribute_class"	"add_onhit_addhealth"
-					"value"	"250.0"
+					"attribute_class"	"mult_clipsize"
+					"value" "0.34"
 				}
-				"critboost on kill"
+				"scattergun no reload single"
 				{
-					"attribute_class"	"add_onkill_critboost_time"
-					"value"	"10.0"
+					"attribute_class"	"set_scattergun_no_reload_single"
+					"value"	"1"
 				}
-				"Projectile speed increased"
+				"Projectile range decreased"
 				{
-					"atribute_class"	"mult_projectile_speed"
-					"value"	"1.5"
+					"attribute_class"	"mult_projectile_range"
+					"value"	"0.15"
 				}
-				"move speed bonus"
+				"fixed_shot_pattern"
 				{
-					"attribute_class"	"mult_player_movespeed"
-					"value"	"2.0"
-				}
-				"attach particle effect name"
-				{
-					"atribute_class"	"set_attached_particle_name"
-					"value"	"burningplayer_flyingbits"
-				}
-				"cosmetic taunt sound"
-				{
-					"attribute_class"	"PortalPlayer.EnterPortal"
-					"value"				"scout.boombox"
-				}
-				"is australium item"
-				{
-					"attribute_class"	"is_australium_item"
-					"value"				"1"
+					"attribute_class" 	"fixed_shot_pattern"
+					"value" "1"
 				}
 			}
 		}
