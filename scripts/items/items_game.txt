@@ -40817,6 +40817,7 @@
 			"image_inventory_size_w"		"128"
 			"image_inventory_size_h"		"82"
 			"model_player"    "models/weapons/v_supershotgun_mercenary.mdl"
+			"model_world"    "models/weapons/v_supershotgun_mercenary.mdl"
 			"mouse_pressed_sound"	"ui/item_heavy_gun_pickup.wav"
 			"drop_sound"		"ui/item_heavy_gun_drop.wav"
 			"particle_suffix"		"shotgun"
@@ -40828,6 +40829,7 @@
 				"heavy"		  "secondary"
 				"medic"		  "1"
 				"soldier"	  "secondary"
+				"spy"		  "1"
             }
 			"attributes"
 			{
@@ -40839,7 +40841,7 @@
 				"fire rate bonus"
 				{
 					"attribute_class"	"mult_postfiredelay"
-					"value" "0.4"
+					"value" "0.6"
 				}
 				"clip size penalty"
 				{
