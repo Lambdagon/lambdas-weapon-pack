@@ -41224,6 +41224,31 @@
 			"mouse_pressed_sound"	"ui/item_light_gun_pickup.wav"
 			"drop_sound"		"ui/item_light_gun_drop.wav"
 		}
+				"7349"
+		{
+			"name"	"Crate"
+			"prefab"	"hat"
+			"craft_class"	""
+			"item_name"	"Mann Co. Supply Crate"
+			"item_description"	"Give us your fucking money for a shit item"
+			"image_inventory"	"backpack/player/items/crafting/crate"
+			"model_player"	"models/props_urban/urban_crate002.mdl"
+			"item_slot"	"misc2"
+			"propername"	"1"
+			"drop_type"	"none"
+			"used_by_classes"
+			{
+				"sniper"	"1"
+				"soldier"	"1"
+				"demoman"	"1"
+				"medic"	"1"
+				"heavy"	"1"
+				"spy" "1"
+				"pyro" "1"
+			}
+			"mouse_pressed_sound"	"ui/item_default_pickup.wav"
+			"drop_sound"		"ui/item_default_drop.wav"
+		}
 		"30570"
 		{
 			"name"		"Pool Party Taunt"
