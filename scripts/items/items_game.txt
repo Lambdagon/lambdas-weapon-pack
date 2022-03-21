@@ -18197,6 +18197,19 @@
 				"falling_impact_radius_pushback"	"1"
 				"thermal_thruster"					"1"
 			}
+			"attributes"
+			{
+				"increased jump height from weapon"
+				{
+					"attribute_class"	"mod_jump_height_from_weapon"
+					"value" "1.35"
+				}
+				"cancel falling damage"
+				{
+					"attribute_class"	"cancel_falling_damage"
+					"value" "1"
+				}
+			}
 			"taunt"
 			{
 				"custom_taunt_scene_per_class"
