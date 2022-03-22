@@ -27081,7 +27081,6 @@
 			"used_by_classes"
 			{
 				"sniper"	"1"
-				"engineer"	"1"
 			}
 			"static_attrs"
 			{
@@ -41492,6 +41491,81 @@
 			}
 			"mouse_pressed_sound"	"ui/item_bottle_pickup.wav"
 			"drop_sound"		"ui/item_bottle_drop.wav"
+		}
+		"7353"
+		{
+			"name"		"Hardhat Hazmat"
+			"prefab"		"no_craft misc marketable"
+			"item_name"		"Hardhat Hazmat"
+			"item_description"		"Welcome to the HEV Mark 4 Protective System"
+			"item_slot"	"misc"
+			"equip_region"		"shirt"
+			"item_type_name"		"#TF_Wearable_Augmentation"
+			"image_inventory"		"backpack/workshop/player/items/engineer/hwn2015_iron_lung/hwn2015_iron_lung"
+			"capabilities"
+			{
+				"can_craft_count"		"1"
+			}
+			"model_player"		"models/workshop/player/items/engineer/HEV suit/hwn2015_iron_lung.mdl"
+			"used_by_classes"
+			{
+				"engineer"		"1"
+			}
+			"mouse_pressed_sound"		"ui/item_robot_arm_pickup.wav"
+			"drop_sound"		"ui/item_robot_arm_drop.wav"
+		}
+		"7354"
+		{
+			"name"	"High-tech Haircut"
+			"first_sale_date"	"2011/09/07"
+			"prefab"	"misc"
+			"capabilities"
+			{
+				"can_craft_count"	"1"
+			}
+			"item_name"	"High-tech Haircut"
+			"item_description"	"Waiting for Half-Living 3"
+			"item_slot"	"head"
+			"item_type_name"		"#TF_Wearable_Hair"
+			"min_ilevel"	"10"
+			"max_ilevel"	"10"
+			"propername"	"1"
+			"image_inventory"	"backpack/player/items/all_class/heavy_thinker"
+			"model_player"	"models/workshop/player/items/engineer/gordon freeman hair/spr17_flash_of_inspiration.mdl"
+			"drop_type"		"none"
+			"used_by_classes"
+			{
+				"engineer"	"1"
+			}
+			"visuals"
+			{
+				"player_bodygroups"
+				{
+					"hat"			"1"
+				}
+			}
+		}
+		"7355"
+		{
+			"name"		"Le Manmaid"
+			"prefab"		"no_craft misc marketable"
+			"item_name"		"Le Manmaid"
+			"item_description"		"UwU"
+			"item_type_name"		"#TF_Wearable_Coat"
+			"equip_region"		"spy_coat"
+			"image_inventory"		"backpack/workshop/player/items/spy/dec15_chicago_overcoat/dec15_chicago_overcoat"
+			"capabilities"
+			{
+				"can_craft_count"		"1"
+				"paintable"		"1"
+			}
+			"model_player"		"models/player/items/spy/spy_openjacket.mdl"
+			"used_by_classes"
+			{
+				"spy"		"1"
+			}
+			"mouse_pressed_sound"		"ui/item_hat_pickup.wav"
+			"drop_sound"		"ui/item_hat_drop.wav"
 		}
 		"30570"
 		{
