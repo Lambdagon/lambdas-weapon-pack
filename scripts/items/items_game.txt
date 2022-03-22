@@ -4498,6 +4498,75 @@
 			"drop_sound"		"ui/item_bottle_drop.wav"
 		}	
 
+		"weapon_grenade_soldier"
+		{
+			"enabled"	"1"
+			"item_class"	"tf_weapon_jar_milk"
+			"craft_class"	"weapon"
+			"craft_material_type"	"weapon"
+			"capabilities"
+			{
+				"nameable"		"1"
+			}
+			"tags"
+			{
+				"can_extinguish"			"1"
+			}
+			"base_item_name"	"Mad Milk"
+			"item_type_name"	"#TF_Weapon_Jar_Milk"
+			"item_description"	"SPAM THEM, SPAM THE GRENADES"
+			"item_name"	"Grenade"
+			"item_slot"	"secondary"
+			"item_quality"	"unique"
+			"anim_slot"	"melee"
+			"min_ilevel"	"5"
+			"max_ilevel"	"5"
+			"attach_to_hands"	"0"
+			"image_inventory"	"backpack/weapons/c_models/urinejar"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"82"
+			"model_player"	"models/weapons/v_grenade.mdl"
+			"model_world"	"models/weapons/c_models/urinejar.mdl"
+			"used_by_classes"
+			{
+				"soldier"	"1"
+			}
+			"attributes"
+			{
+				"override projectile type"
+				{
+					"attribute_class"	"override_projectile_type"
+					"value"				"31"
+				}
+				"charge recharge rate increased"
+				{
+					"attribute_class"	"charge_recharge_rate"
+					"value"	"1.75"
+				}
+				"damage bonus"
+				{
+					"attribute_class"	"mult_dmg"
+					"value"	"1.20"
+				}
+				"allowed in medieval mode"
+				{
+					"attribute_class"	"allowed_in_medieval_mode"
+					"value"	"1"
+				}
+			}
+			"visuals"
+			{
+				"animation_replacement"
+				{
+					"ACT_SECONDARY_VM_INSPECT_START"	"ACT_ITEM1_VM_INSPECT_START"
+					"ACT_SECONDARY_VM_INSPECT_IDLE"		"ACT_ITEM1_VM_INSPECT_IDLE"
+					"ACT_SECONDARY_VM_INSPECT_END"		"ACT_ITEM1_VM_INSPECT_END"
+				}
+			}
+			"mouse_pressed_sound"	"ui/item_bottle_pickup.wav"
+			"drop_sound"		"ui/item_bottle_drop.wav"
+		}	
+
 		"weapon_medigun"
 		{
 			"capabilities"
@@ -41402,32 +41471,6 @@
 		{
 			"name"	"Grenade"
 			"prefab" "weapon_grenade_soldier"
-			"first_sale_date"	"2010/09/29"
-			"min_ilevel"	"5"
-			"max_ilevel"	"5"
-			"attach_to_hands"	"0"
-			"inspect_panel_dist" 	"25"
-			"show_in_armory"	"1"
-			"static_attrs"
-			{
-				"min_viewmodel_offset"					"10 0 -6"				
-			}
-			"visuals"
-			{
-				"skin" "2"
-				"custom_particlesystem"
-				{
-					"system"	"energydrink_milk_splash"
-				}
-				"sound_deploy"	"Weapon_MadMilk.Draw"
-			}
-			"mouse_pressed_sound"	"ui/item_bottle_pickup.wav"
-			"drop_sound"		"ui/item_bottle_drop.wav"
-		}
-		"7353"
-		{
-			"name"	"Grenade"
-			"prefab" "weapon_grenade_pyro"
 			"first_sale_date"	"2010/09/29"
 			"min_ilevel"	"5"
 			"max_ilevel"	"5"
