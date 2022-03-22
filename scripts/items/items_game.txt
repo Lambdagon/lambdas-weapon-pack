@@ -4448,14 +4448,18 @@
 			"anim_slot"	"item1"
 			"min_ilevel"	"5"
 			"max_ilevel"	"5"
-			"attach_to_hands"	"1"
-			"image_inventory"	"backpack/workshop/weapons/c_models/c_madmilk/c_madmilk"
+			"attach_to_hands"	"0"
+			"image_inventory"	"backpack/weapons/c_models/urinejar"
 			"image_inventory_size_w"		"128"
 			"image_inventory_size_h"		"82"
-			"model_player"	"models/workshop/weapons/c_models/c_madmilk/c_madmilk.mdl"
+			"model_player"	"models/weapons/v_grenade.mdl"
+			"model_world"	"models/weapons/c_models/urinejar.mdl"
 			"used_by_classes"
 			{
 				"scout"	"1"
+				"pyro"	"1"
+				"demoman"	"1"
+				"heavy"	"1"
 				"sniper"	"1"
 			}
 			"attributes"
@@ -4469,6 +4473,11 @@
 				{
 					"attribute_class"	"charge_recharge_rate"
 					"value"	"1.75"
+				}
+				"damage bonus"
+				{
+					"attribute_class"	"mult_dmg"
+					"value"	"1.20"
 				}
 				"allowed in medieval mode"
 				{
@@ -4487,7 +4496,7 @@
 			}
 			"mouse_pressed_sound"	"ui/item_bottle_pickup.wav"
 			"drop_sound"		"ui/item_bottle_drop.wav"
-		}
+		}	
 
 		"weapon_medigun"
 		{
@@ -41343,12 +41352,86 @@
 		}
 		"7350"
 		{
-			"name"	"Grendae"
+			"name"	"Grenade"
 			"prefab" "weapon_grenade"
 			"first_sale_date"	"2010/09/29"
 			"min_ilevel"	"5"
 			"max_ilevel"	"5"
-			"attach_to_hands"	"1"
+			"attach_to_hands"	"0"
+			"inspect_panel_dist" 	"25"
+			"show_in_armory"	"1"
+			"static_attrs"
+			{
+				"min_viewmodel_offset"					"10 0 -6"				
+			}
+			"visuals"
+			{
+				"skin" "2"
+				"custom_particlesystem"
+				{
+					"system"	"energydrink_milk_splash"
+				}
+				"sound_deploy"	"Weapon_MadMilk.Draw"
+			}
+			"mouse_pressed_sound"	"ui/item_bottle_pickup.wav"
+			"drop_sound"		"ui/item_bottle_drop.wav"
+		}
+		"7351"
+		{
+			"name"	"TF_Australium_WEAPON_GRENADELAUNCHER"
+			"item_name"		"Australium Grenade Launcher"
+			"first_sale_date"	"2010/09/29"
+			"prefab"	"weapon_grenade_launcher_golden"
+			"baseitem" "0	"
+			"show_in_armory"	"0"
+			"attributes"
+			{
+				"turn to gold"
+				{
+					"attribute_class"	"set_turn_to_gold"
+					"value" "1"
+				}
+				"is australium item"
+				{
+					"attribute_class"	"is_australium_item"
+					"value"				"1"
+				}
+			}
+		}
+		"7352"
+		{
+			"name"	"Grenade"
+			"prefab" "weapon_grenade_soldier"
+			"first_sale_date"	"2010/09/29"
+			"min_ilevel"	"5"
+			"max_ilevel"	"5"
+			"attach_to_hands"	"0"
+			"inspect_panel_dist" 	"25"
+			"show_in_armory"	"1"
+			"static_attrs"
+			{
+				"min_viewmodel_offset"					"10 0 -6"				
+			}
+			"visuals"
+			{
+				"skin" "2"
+				"custom_particlesystem"
+				{
+					"system"	"energydrink_milk_splash"
+				}
+				"sound_deploy"	"Weapon_MadMilk.Draw"
+			}
+			"mouse_pressed_sound"	"ui/item_bottle_pickup.wav"
+			"drop_sound"		"ui/item_bottle_drop.wav"
+		}
+		"7353"
+		{
+			"name"	"Grenade"
+			"prefab" "weapon_grenade_pyro"
+			"first_sale_date"	"2010/09/29"
+			"min_ilevel"	"5"
+			"max_ilevel"	"5"
+			"attach_to_hands"	"0"
 			"inspect_panel_dist" 	"25"
 			"show_in_armory"	"1"
 			"static_attrs"
