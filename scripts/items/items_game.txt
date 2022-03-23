@@ -13275,7 +13275,7 @@
 				"air dash count"
 				{
 					"attribute_class"	"air_dash_count"
-					"value"	"1"
+					"value"	"2"
 				}
 				"single wep deploy time increased"
 				{
