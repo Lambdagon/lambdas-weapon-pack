@@ -23999,8 +23999,6 @@
 				"engineer"	"1"
 				"demoman"	"1"
 				"spy"	"primary"
-				"sniper"	"1"
-				"soldier"	"1"
 			}
 			"mouse_pressed_sound"	"ui/item_light_gun_pickup.wav"
 			"drop_sound"		"ui/item_light_gun_drop.wav"
