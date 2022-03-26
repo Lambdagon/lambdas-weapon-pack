@@ -13386,7 +13386,7 @@
 				"can_deal_critical_damage"		"1"
 				"can_deal_taunt_damage"			"1"
 			}
-			"show_in_armory"	"0"
+			"show_in_armory"	"1"
 			"item_name"	"#TF_BigEarner"
 			"propername"	"1"
 			"item_logname"	"big_earner"
@@ -22061,7 +22061,7 @@
 			"item_iconname"	"Propulsion_knife"
 			"inspect_panel_dist" "35"
 			"image_inventory"	"backpack/workshop/weapons/c_models/c_ava_roseknife/c_ava_roseknife_v"
-			"model_player"	"models/workshop/weapons/c_models/c_ava_roseknife/c_ava_roseknife.mdl"
+			"model_player"	"models/workshop/weapons/c_models/c_eternal_reward/c_eternal_reward.mdl"
 			"static_attrs"
 			{
 				"min_viewmodel_offset"		"10 0 -6"
@@ -22073,6 +22073,11 @@
 				{
 					"attribute_class"	"mult_postfiredelay"
 					"value"	"0.70"
+				}
+				"speed_boost_on_kill"
+				{
+					"attribute_class"	"speed_boost_on_kill"
+					"value"	"3"
 				}
 				"move speed bonus"
 				{
@@ -35649,8 +35654,8 @@
 			"item_name"	"gradient knife"
 			"item_description"	"Part Of Lambda's Weapon Pack"
 			"propername"	"0"
-			"item_logname"	"Propulsion_knife"
-			"item_iconname"	"Propulsion_knife"
+			"item_logname"	"counter_knife"
+			"item_iconname"	"counter_knife"
 			"inspect_panel_dist" "35"
 			"image_inventory"	"backpack/workshop/weapons/c_models/c_ava_roseknife/c_ava_roseknife_v"
 			"model_player"	"models/weapons/v_knife1.mdl"
@@ -41592,7 +41597,7 @@
 			"item_type_name"	"shotgun"
 			"item_quality"	"normal"
 			"baseitem" "0"
-			"show_in_armory"	"1"
+			"show_in_armory"	"0"
 			"min_ilevel"	"1"
 			"max_ilevel"	"1"
 			"attach_to_hands"	"0"
