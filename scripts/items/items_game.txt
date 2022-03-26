@@ -4457,9 +4457,6 @@
 			"used_by_classes"
 			{
 				"scout"	"1"
-				"pyro"	"1"
-				"demoman"	"1"
-				"heavy"	"1"
 				"sniper"	"1"
 			}
 			"attributes"
@@ -4498,7 +4495,7 @@
 			"drop_sound"		"ui/item_bottle_drop.wav"
 		}	
 
-		"weapon_grenade_soldier"
+		"weapon_grenade_alt"
 		{
 			"enabled"	"1"
 			"item_class"	"tf_weapon_jar_milk"
@@ -4518,7 +4515,7 @@
 			"item_name"	"Grenade"
 			"item_slot"	"secondary"
 			"item_quality"	"unique"
-			"anim_slot"	"melee"
+			"anim_slot"	"MELEE_ALLCLASS"
 			"min_ilevel"	"5"
 			"max_ilevel"	"5"
 			"attach_to_hands"	"0"
@@ -4530,6 +4527,9 @@
 			"used_by_classes"
 			{
 				"soldier"	"1"
+				"pyro"	"1"
+				"demoman"	"1"
+				"heavy"	"1"
 			}
 			"attributes"
 			{
@@ -40268,7 +40268,7 @@
 			"image_inventory"	"backpack/weapons/w_models/w_smg"
 			"image_inventory_size_w"		"128"
 			"image_inventory_size_h"		"82"
-			"model_player"	"models/weapons/c_models/c_smg/c_smg.mdl"
+			"model_player"	"models/weapons/c_models/c_smg0/c_smg.mdl"
 			"attach_to_hands" "1"
 			"used_by_classes"
 			{
@@ -41470,7 +41470,7 @@
 		"7352"
 		{
 			"name"	"Grenade"
-			"prefab" "weapon_grenade_soldier"
+			"prefab" "weapon_grenade_alt"
 			"first_sale_date"	"2010/09/29"
 			"min_ilevel"	"5"
 			"max_ilevel"	"5"
