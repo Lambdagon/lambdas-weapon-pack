@@ -21323,7 +21323,6 @@
 				"can_deal_mvm_penetration_damage"	"1"
 				"can_deal_long_distance_damage"	"1"
 			}
-			"show_in_armory"	"1"
 			"item_type_name"	"#TF_Weapon_Revolver"
 			"item_name"	"#TF_DEX_Revolver"
 			"item_description"	"#TF_DEX_Revolver_Desc"
@@ -41567,6 +41566,105 @@
 			}
 			"mouse_pressed_sound"		"ui/item_hat_pickup.wav"
 			"drop_sound"		"ui/item_hat_drop.wav"
+		}
+		"7356"
+		{
+          		"name"    "Annabelle"
+          		"prefab"    "weapon_shotgun"
+           		"item_name"	"Annabelle"
+			"item_description"	"You have already met... my congregation."
+           		 "item_slot"    "primary"
+			"capabilities"
+			{
+				"nameable"		"1"
+			}
+			"tags"
+			{
+				"can_deal_damage"			"1"
+				"can_deal_mvm_penetration_damage"	"1"
+				"can_deal_long_distance_damage"	"1"
+			}
+			"base_item_name"	"TF_WEAPON_SHOTGUN_PRIMARY"
+			"enabled"	"1"
+			"item_class"	"tf_weapon_shotgun"
+			"craft_class"	"weapon"
+			"craft_material_type"	"weapon"
+			"item_type_name"	"shotgun"
+			"item_quality"	"normal"
+			"baseitem" "0"
+			"show_in_armory"	"1"
+			"min_ilevel"	"1"
+			"max_ilevel"	"1"
+			"attach_to_hands"	"0"
+			"inspect_panel_dist" "40"
+			"image_inventory"	"backpack/weapons/c_models/c_frontierjustice/c_frontierjustice"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"82"
+			"model_player"	"models/weapons/v_shotgun.mdl"
+			"model_world"	"models/weapons/c_models/c_frontierjustice/c_frontierjustice.mdl"
+			"mouse_pressed_sound"	"ui/item_heavy_gun_pickup.wav"
+			"drop_sound"		"ui/item_heavy_gun_drop.wav"
+			"particle_suffix"		"shotgun"
+			"static_attrs"
+			{
+				"min_viewmodel_offset"		"10 0 -9"
+			}
+			"visuals"
+			{
+				"show_player_bodygroup_name"	"bullets"
+				"sound_empty"				"HL2_Weapon_Shotgun.Empty"
+				"sound_reload"			"HL2_Weapon_Shotgun.Reload"
+				"sound_special1"			"HL2_Weapon_Shotgun.Special1"
+				"sound_single_shot"		"HL2_Weapon_Shotgun.Single"
+				"sound_burst"		"HL2_Weapon_Shotgun.Single"
+				"sound_double_shot"		"HL2_Weapon_Shotgun.Double"
+			}
+            "used_by_classes"
+            {
+                "engineer"    "1"
+            }
+			"static_attrs"
+			{
+				"min_viewmodel_offset"		"10 0 -9"
+			}
+			"attributes"
+			{
+				"revolver use hit locations"
+				{
+					"attribute_class"	"set_weapon_mode"
+					"value" "1"
+				}
+				"scattergun no reload single"
+				{
+					"attribute_class"	"set_scattergun_no_reload_single"
+					"value"	"0"
+				}
+				"clip size penalty"
+				{
+					"attribute_class"	"mult_clipsize"
+					"value"	"0.33"
+				}
+				"fire rate penalty"
+				{
+				"attribute_class"	"mult_postfiredelay"
+				"value"	"2"
+				}
+				"damage penalty on bodyshot"
+				{
+					"attribute_class"	"bodyshot_damage_modify"
+					"value"	"0.70"
+				}
+				"weapon spread bonus"
+				{
+					"attribute_class"	"mult_spread_scale"
+					"value"	"0.30"
+				}
+				"damage bonus"
+				{
+					"attribute_class"	"mult_dmg"
+					"value"	"1.35"
+				}
+			}
 		}
 		"30570"
 		{
