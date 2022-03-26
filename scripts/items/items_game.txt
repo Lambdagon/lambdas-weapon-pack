@@ -4457,6 +4457,7 @@
 			"used_by_classes"
 			{
 				"scout"	"1"
+				"heavy"	"1"
 				"sniper"	"1"
 			}
 			"attributes"
@@ -4529,7 +4530,6 @@
 				"soldier"	"1"
 				"pyro"	"1"
 				"demoman"	"1"
-				"heavy"	"1"
 			}
 			"attributes"
 			{
