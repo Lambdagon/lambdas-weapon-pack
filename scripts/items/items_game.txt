@@ -41825,7 +41825,7 @@
 				"damage bonus"
 				{
 					"attribute_class"	"mult_dmg"
-					"value"	"30.69	"
+					"value"	"30"
 				}
 				"bullets per shot bonus"
 				{
