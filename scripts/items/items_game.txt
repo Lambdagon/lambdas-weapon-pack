@@ -19570,6 +19570,11 @@
 					"attribute_class"	"mult_dmg"
 					"value"	"10100.0"
 				}
+				"max health additive bonus"
+				{
+					"attribute_class"	"add_maxhealth"
+					"value" "550"
+				}
 				"clip size bonus"
 				{
 					"attribute_class"	"mult_clipsize"
@@ -19588,12 +19593,17 @@
 				"critboost on kill"
 				{
 					"attribute_class"	"add_onkill_critboost_time"
-					"value"	"10.0"
+					"value"	"25.0"
 				}
 				"Projectile speed increased"
 				{
 					"atribute_class"	"mult_projectile_speed"
-					"value"	"1.5"
+					"value"	"1.75"
+				}
+				"rocket jump damage reduction"
+				{
+					"attribute_class"	"rocket_jump_dmg_reduction"
+					"value" "0.5"
 				}
 				"move speed bonus"
 				{
@@ -19614,6 +19624,41 @@
 				{
 					"attribute_class"	"is_australium_item"
 					"value"				"1"
+				}
+				"damage force reduction"
+				{
+					"attribute_class"	"damage_force_reduction"
+					"value"	"0.25"
+				}
+				"airblast vulnerability multiplier"
+				{
+					"attribute_class"	"airblast_vulnerability_multiplier"
+					"value"	"0.25"
+				}
+				"boots falling stomp"
+				{
+					"attribute_class"	"boots_falling_stomp"
+					"value" "1"
+				}
+				"kill eater score type"
+				{
+					"attribute_class"	"kill_eater_score_type"
+					"value"	"26"		
+				}
+				"kill eater kill type"
+				{
+					"attribute_class"	"kill_eater_kill_type"
+					"value"	"26"		
+				}
+				"allowed in medieval mode"
+				{
+					"attribute_class"	"allowed_in_medieval_mode"
+					"value"	"1"
+				}
+				"mod_air_control_blast_jump"
+				{
+					"attribute_class"	"mod_air_control_blast_jump"
+					"value" "3.0"
 				}
 			}
 		}
