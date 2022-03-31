@@ -1,0 +1,34 @@
+VertexlitGeneric
+{
+	$basetexture "models/survivors/octoling\octoking_hk_alb"
+	$bumpmap "models/survivors/octoling\octoking_hk_nrm"
+	$blendtintbybasealpha 1
+
+	$phong 1
+	$phongboost 1
+	$phongexponenttexture "models/survivors/octoling\octoking_hk_exp"
+	$phongfresnelranges "[0 .4 1]"
+	$phongalbedotint 1
+	$halflambert 1
+
+	$rimlight 1
+	$rimlightboost .3
+	$rimlightexponent 18
+
+	$colortint_base "{ 255 255 255 }"
+	$colortint_tmp "[0 0 0]"
+
+	proxies
+	{
+		ItemTintColor
+		{
+			resultVar $colortint_tmp
+		}
+		SelectFirstIfNonZero
+		{
+			srcVar1 $colortint_tmp
+			srcVar2 $colortint_base
+			resultVar $color2
+		}
+	}
+}

@@ -1,0 +1,11 @@
+"VertexLitGeneric"
+{
+$basetexture "models\DPFilms\Metropolice\Weapons\HD_stunbaton\stunbaton"
+$bumpmap "models\DPFilms\Metropolice\Weapons\HD_stunbaton\stunbaton_n"
+$phong "1"
+$phongboost ".45"
+$phongexponent "7"
+$halflambert 0
+$phongfresnelranges "[1 1 10]"
+$ambientocclusion 1
+}

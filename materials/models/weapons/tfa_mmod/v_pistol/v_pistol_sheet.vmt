@@ -1,0 +1,33 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "Models/Weapons/tfa_mmod/V_pistol/v_pistol_sheet"
+	"$bumpmap" "Models/Weapons/tfa_mmod/V_pistol/v_pistol_sheet_normal"
+	$phongexponenttexture "Models/Weapons/tfa_mmod/V_pistol/v_pistol_sheet_s"
+	"$envmap" "env_cubemap"
+
+	"$normalmapalphaenvmapmask" 1
+	"$envmaptint"			"[0.55 0.55 0.75]"
+	// 	"$envmaptint"			"[0.75 0.75 1.0]"
+	$envmapfresnel 1
+	"$selfillum" "1"
+
+//$phong 1
+//$phongboost 15
+//$phongalbedotint 1
+//$phongfresnelranges "[.1 .4 1]"
+//"$halflambert"			"1"
+//"$rimlight"			"1"
+//"$rimlightexponent"			"40"
+//"$rimlightboost"			".5"
+//"$rimmask"			"1"
+
+	"$phong"				"1"
+	"$phongboost"			"1.5"
+	"$phongfresnelranges"		"[1 3 4]"
+	"$halflambert"			"0"
+	"$rimlight"			"1"
+	"$rimlightexponent"			"100"
+	"$rimlightboost"			".5"
+	"$rimmask"			"1"
+}
+

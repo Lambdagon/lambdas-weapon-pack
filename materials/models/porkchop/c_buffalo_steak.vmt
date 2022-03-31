@@ -1,0 +1,42 @@
+"VertexlitGeneric"
+{
+	"$baseTexture" "models\weapons\c_items/c_buffalo_steak"
+	"$normalmapalphaenvmapmask" 1
+	"$lightwarptexture" "models\lightwarps\weapon_lightwarp"
+	
+	//phong properties
+	"$phong"	"1"
+	"$phongboost"	"1"
+	"$phongexponent"	"0"
+	"$phongfresnelranges"	"[1 2 2.5]"
+	"$rimlight"	"1"
+	"$rimlightexponent"	"1"
+
+
+	"$glowcolor" "1"
+
+	// Cloaking
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"weapon_invis"
+		{
+		}
+		"ModelGlowColor"
+		{
+			"resultVar" "$glowcolor"
+		}
+		"Equals"
+		{
+			"srcVar1"  "$glowcolor"
+			"resultVar" "$selfillumtint"
+		}
+		"Equals"
+		{
+			"srcVar1"  "$glowcolor"
+			"resultVar" "$color2"
+		}
+	}
+ "$translucent" "1"
+ "$alphatest" "1"
+}

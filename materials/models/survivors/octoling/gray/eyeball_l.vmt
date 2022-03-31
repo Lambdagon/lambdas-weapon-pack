@@ -1,0 +1,32 @@
+"EyeRefract"
+{
+	"$Iris"               "models/survivors/octoling\eye_gray"			  // Iris color in RGB with cornea noise in A
+	"$AmbientOcclTexture" "models/survivors/octoling/eye-extra"				  // Ambient occlusion in RGB, A unused
+	"$Envmap"             "Engine/eye-reflection-cubemap-"     // Reflection environment map
+	"$CorneaTexture"      "models/survivors/octoling/eye-cornea"                 // Special texture that has 2D cornea normal in RG and other data in BA
+	"$lightwarptexture"   "models/survivors/octoling/eye_lightwarp"        	      // This enables TF NPR lighting
+
+	"$EyeballRadius" "0.9"				// Default 0.5
+	"$AmbientOcclColor" "[1.0 1.0 1.0]"	// Default 0.33, 0.33, 0.33
+	"$Dilation" "1"					// Default 0.5
+//	"$ParallaxStrength" "0.25"          // Default 0.25
+	"$ParallaxStrength" "0.2"          // Default 0.25
+//	"$CorneaBumpStrength" "1.0"			// Default 1.0
+	"$CorneaBumpStrength" "1.5"			// Default 1.0
+
+	"$halflambert" "1"
+	"$nodecal" "1"
+
+	// These effects are only available in ps.2.0b and later
+	"$RaytraceSphere" "0"				// Default 1 - Enables raytracing in the pixel shader to make the eyeball look round
+	"$SphereTexkillCombo" "0"			// Default 1 - Enables killing pixels that don't ray-intersect the sphere
+
+	// Cloaking
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"spy_invis"
+		{
+		}
+	}
+}

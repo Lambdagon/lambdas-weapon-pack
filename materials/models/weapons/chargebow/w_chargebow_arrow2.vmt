@@ -1,0 +1,22 @@
+"UnLitGeneric"
+{
+	// Original shader: VertexLitMaskedEnvMappedTexture
+	"$baseTexture" "models\weapons\chargebow\w_chargebow_Arrow2"
+	"$model" "1"
+    "Proxies"
+	{
+        	"TextureScroll"
+		{
+			"texturescrollvar" "$baseTexturetransform"
+			"texturescrollrate" -.50
+			"texturescrollangle" 70
+		}
+		"Sine"
+		{
+			"sineperiod"	1.0
+			"sinemin"	".8"
+			"sinemax"	"1.0"
+			"resultVar"	"$color"
+		}
+	}
+}

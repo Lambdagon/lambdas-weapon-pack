@@ -1,0 +1,80 @@
+"VertexLitGeneric"
+{
+//Main
+	$basetexture					"models/weapons/c_items/c_uberdosis/Uberdosis_BLU_D"
+	$bumpmap						"models/weapons/c_items/c_uberdosis/Uberdosis_N"
+
+//Other
+	$halflambert					"1"
+	$glowcolor						"1"
+	$lightwarptexture				"models/lightwarps/weapon_lightwarp"
+
+//EnvMap
+	$envmap							"env_cubemap"
+	$envmaptint						"[0.25 0.25 0.25]"
+	$normalmapalphaenvmapmask		"1"
+
+//Phong
+	$phong							"1"
+	$phongboost						"50"
+//	$phongexponent					"25"
+	$phongexponenttexture			"models/weapons/c_items/c_uberdosis/Uberdosis_E"
+	$phongexponentfactor			"135"
+	$phongalbedotint				"5"
+
+//Rimlight
+	$rimlight						"1"
+	$rimlightexponent				"155"	
+	$rimlightboost					"0.5"
+
+//Cloaking
+	$cloakPassEnabled				"1"
+	$sheenPassEnabled				"1"
+
+//Killstreak Sheen
+	$sheenmap						"cubemaps\cubemap_sheen001"
+	$sheenmapmask					"Effects\AnimatedSheen\animatedsheen0"
+	$sheenmaptint					"[ 1 1 1 ]"
+	$sheenmapmaskframe				"0"
+	$sheenindex						"0"
+
+	$yellow							"0"
+
+	"Proxies"
+	{
+		"AnimatedWeaponSheen"
+		{
+			"animatedtexturevar" 		"$sheenmapmask"
+			"animatedtextureframenumvar" 	"$sheenmapmaskframe"
+			"animatedtextureframerate" 		"40"
+		}
+		"invis"
+		{
+		}
+		"ModelGlowColor"
+		{
+			"resultVar" "$glowcolor"
+		}
+		"Equals"
+		{
+			"srcVar1"  "$glowcolor"
+			"resultVar" "$selfillumtint"
+		}
+		"Equals"
+		{
+			"srcVar1"  "$glowcolor"
+			"resultVar" "$color2"
+		}
+		"YellowLevel"
+		{
+			"resultVar" "$yellow"
+		}
+		"Multiply"
+		{
+			"srcVar1" "$color2"
+			"srcVar2" "$yellow"
+			"resultVar" "$color2"
+		}
+	}
+}
+}

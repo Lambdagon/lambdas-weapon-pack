@@ -1,0 +1,6 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models/krazy/spin_to_win_bodypilloe/bodypillow"
+	"$bumpmap" "models/krazy/spin_to_win_bodypillow/bodypillow_normal"
+	"$nolod" 1
+}

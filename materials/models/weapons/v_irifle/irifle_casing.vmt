@@ -1,0 +1,18 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "Models/Weapons/TFA_MMOD/V_IRifle/irifle_casing"
+	
+	
+	"$phong" "1"
+	"$phongboost"	"5"
+	"$phongfresnelranges"	"[6 8 12]"
+	"$PhongAlbedoTint" "1"
+
+	"$surfaceprop" "metal"
+
+	
+	"$rimlight" "1"
+	"$rimlightexponent" "4"
+	"$rimlightboost" "1"
+	"$rimmask" "1"
+}

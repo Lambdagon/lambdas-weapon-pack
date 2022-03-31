@@ -1,0 +1,21 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "models/survivors/octoling/m_eyelid"
+	"$bumpmap" "models/survivors/octoling/m_eyelid_nrm"
+
+	"$lightwarptexture" "models/survivors/octoling/inkling_lightwarp5"
+
+	"$phong" "1"
+	"$phongexponent" "15"
+	"$phongboost" ".95"	
+	"$phongfresnelranges"	"[.005 .25 .75]"
+	"$halflambert" "1"
+
+	"$color2" "{50 16 0}"
+
+	"$rimlight" "1"
+	"$rimlightexponent" "4"
+	"$rimlightboost" ".2"
+	"$nocull" "1"
+
+}
