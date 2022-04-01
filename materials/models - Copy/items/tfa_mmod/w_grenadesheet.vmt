@@ -1,0 +1,23 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "Models/items/TFA_MMOD/W_grenadesheet"
+	"$bumpmap" "Models/items/TFA_MMOD/w_grenadesheet_nrm"	
+	"$model" 1
+	
+	"$phong"				"1"
+	"$phongexponent"			"100"
+	"$phongboost"	"0.9986979"
+	"$phongfresnelranges"	"[2 10 22.5]"
+	"$phongtint"			"[0.85 0.9 1.15]"
+	"$phongalbedotint"			"1"	
+	"$halflambert"			"1"
+	"$specularexponent"		"20"
+	"$specularscale"		 	"0"
+	"$specularcolor" 			"[.8 1 1]"
+	"$rimlight"			"1"
+	"$rimlightexponent"			"50"	
+	"$rimlightboost"			"0.2"			
+	"$envmap"			"env_cubemap"
+	"$normalmapalphaenvmapmask"	"1"
+	"$envmaptint"			"[1.25 1.25 1.4]"
+}

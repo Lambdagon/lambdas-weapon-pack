@@ -1,0 +1,33 @@
+// envmaptint_fix
+"VertexLitGeneric"
+{
+	"$basetexture" "Models/Weapons/tfa_mmod/v_crowbar/head"
+	"$bumpmap" "Models/Weapons/tfa_mmod/v_crowbar/head_normal"
+	"$phongexponenttexture" "Models/Weapons/tfa_mmod/v_crowbar/head_s"
+
+	"$phongalbedotint" 1
+	"$phong" "1"
+	"$phongboost"	"0.9986979"
+	"$phongfresnelranges"	"[2 10 22.5]"
+
+
+
+	"$envmap" "env_cubemap"
+	"$normalmapalphaenvmapmask"	"1"
+	"$envmaptint"	"[0.045 0.045 0.045]"
+	"$envmapfresnel"	"1"
+
+	"$specularexponent"		"20"
+	"$specularscale"		 	"0"
+	"$specularcolor" 			"[.8 1 1]"
+
+	"$rimlight"			"1"
+	"$rimlightexponent"			"50"	
+	"$rimlightboost"			"0.2"
+	"$rimlightcolor" 			"[.8 1 1]"
+
+	"$halflambert"			"1"
+
+//	"$lightwarptexture" "models\weapons\tfa_mmod\weapon_lightwarp"
+
+}

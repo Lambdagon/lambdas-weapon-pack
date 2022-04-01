@@ -1,0 +1,37 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "models/survivors/octoling/m_mouth_alb"
+	"$bumpmap" "models/survivors/octoling/m_mouth_nrm"
+
+	"$lightwarptexture" "models/survivors/octoling/inkling_lightwarp6"
+
+	"$phong" "1"
+	"$phongexponent" "20"
+	"$phongboost" ".3"	
+	"$phongfresnelranges"	"[.3 1 8]"
+	"$halflambert" "0"
+	"$nocull" "0"
+
+	"$blendtintbybasealpha"		"1"
+	"$blendtintcoloroverbase"		"0"
+	"$colortint_base"		"{ 140 12 127 }"
+//	"$colortint_base"		"{ 211 2 26 }"
+	"$colortint_tmp"		"[140 12 127]"
+	"$color2"		"{ 140 12 127 }"
+//	"$color2"		"{ 211 2 26 }"
+
+	"proxies"
+	{
+		"ItemTintColor"
+		{
+			"resultVar"		"$colortint_tmp"
+		}
+		"SelectFirstIfNonZero"
+		{
+			"srcVar1"		"$colortint_tmp"
+			"srcVar2"		"$colortint_base"
+			"resultVar"		"$color2"
+		}
+	}
+
+}

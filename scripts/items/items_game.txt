@@ -535,7 +535,7 @@
 			}
 		}
 		
-		"weapon_atom_launcher"
+		"weapon_atom_launcher
 		{
 			"enabled"	"1"
 			"item_class"	"tf_weapon_rocketlauncher_airstrike"

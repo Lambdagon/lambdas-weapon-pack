@@ -1,0 +1,24 @@
+"Unlittwotexture"
+{
+	"$baseTexture" "models\weapons\chargebow\chargebow_Arrow_01"
+        "$texture2" "models\weapons\chargebow\w_HealthCharge_op"
+	"$translucent" "1"
+	"$additive" 1
+ 	"$model" 1
+	"$nocull" 1
+	"Proxies"
+	{
+		"TextureScroll"
+		{
+			"texturescrollvar" "$texture2transform"
+			"texturescrollrate" -.50
+			"texturescrollangle" 70
+		}
+		"TextureScroll"
+		{
+			"texturescrollvar" "$basetexturetransform"
+			"texturescrollrate" .50
+			"texturescrollangle" 0
+		}
+	}
+}

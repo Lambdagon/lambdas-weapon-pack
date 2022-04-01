@@ -1,0 +1,15 @@
+ "VertexlitGeneric"
+{
+"$basetexture" "models/spring trap/skull red"
+"$selfillummask" "models/spring trap/skullredglow"
+
+"$basealphaenvmapmask" "1"
+
+"$selfillum" "1" 
+"$ambientocclusion" "1"
+
+"$phong" "1"	
+"$phongboost""1"
+
+"$phongfresnelranges""[0.5 1 1]"
+}

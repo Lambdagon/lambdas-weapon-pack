@@ -1,0 +1,23 @@
+"VertexlitGeneric"
+{
+	"$baseTexture" "models\weapons\c_items/c_minishield_liquid"
+//	"$alphatest" 1
+	$additive 1
+	"$envmap" "cubemaps/cubemap_specular002"
+	"$envmaptint" "[0 .5 .75]"
+//	$halflambert 1
+
+	$nocull 1
+	"$phong" "1"
+	"$phongexponent" 50
+	"$phongfresnelranges" "[1 2 3]"
+	"$lightwarptexture" "models\lightwarps\jarate_lightwarp"
+	"$phongboost" "5"
+//	"$basemapalphaphongmask" "1"
+
+	"$rimlight" "1"						
+	"$rimlightexponent" "20"				
+	"$rimlightboost" ".25"
+
+
+}
