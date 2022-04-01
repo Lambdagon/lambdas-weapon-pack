@@ -1,6 +1,0 @@
-"VertexLitGeneric"
-{
-	"$baseTexture" "models\weapons\357 magnum\Frame"
-	"$bumpmap" "models\weapons\357 magnum\Frame norm"
-    	"$envmap" "env_cubemap"
-    	"$normalmapalphaenvmapmask" 1
