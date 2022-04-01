@@ -4745,7 +4745,7 @@
 				}
 			}
 		}
-	
+
 		"weapon_maxgun"
 		{
 			"item_class"	"tf_weapon_pistol"
@@ -18536,7 +18536,7 @@
 			{
 				"can_deal_damage"			"1"
 			}
-			"show_in_armory"	"0"
+			"show_in_armory"	"1"
 			"item_class"	"tf_weapon_slap"
 			"craft_class"	"" 
 			"craft_material_type"	"weapon"
@@ -42484,6 +42484,90 @@
 			"mouse_pressed_sound"		"ui/item_bag_pickup.wav"
 			"drop_sound"		"ui/item_bag_drop.wav"
                 }
+		"7368"
+		{
+			"name"	"The Equalizer Plan"
+			"prefab"	"valve"
+			"first_sale_date"	"2012/06/29"
+			"item_class"	"tf_weapon_shovel"
+			"craft_class"	"weapon"
+			"craft_material_type"	"weapon"
+			"capabilities"
+			{
+				"nameable"		"1"
+			}
+			"tags"
+			{
+				"can_deal_damage"			"1"
+				"can_be_equipped_by_soldier_or_demo"	"1"
+				"can_deal_critical_damage"	"1"
+				"can_deal_taunt_damage"		"1"
+			}
+			"show_in_armory"	"1"
+			"item_type_name"	"#TF_Weapon_Pickaxe"
+			"item_name"	"Equalizer Plan"
+			"item_logname"	"unique_pickaxe_equalizer_plan"
+			"item_slot"	"melee"
+			"item_quality"	"unique"
+			"propername"	"1"
+			"min_ilevel"	"10"
+			"max_ilevel"	"10"
+			"image_inventory" "backpack/weapons/c_models/c_pickaxe/c_pickaxe_s2"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"82"
+			"inspect_panel_dist" 			  "50"			
+			"model_player"	"models/weapons/c_models/c_pickaxe/c_pickaxe.mdl"
+			"attach_to_hands" "1"
+			"used_by_classes"
+			{
+				"soldier"	"1"
+			}
+			"static_attrs"
+			{
+				"min_viewmodel_offset"		"10 -3 -11"
+			}
+			"attributes"
+			{
+				"provide on active"
+				{
+					"attribute_class"	"provide_on_active"
+					"value" "1"
+				}
+				"mod shovel damage boost"
+				{
+					"attribute_class"	"set_weapon_mode"
+					"value"	"1"
+				}	
+				"mod shovel speed boost"
+				{
+					"attribute_class"	"set_weapon_mode"
+					"value"	"2"
+				}
+				"reduced_healing_from_medics"
+				{
+					"attribute_class"	"mult_healing_from_medics"
+					"value" "0.01"
+				}
+				"self mark for death"
+				{
+					"attribute_class"	"self_mark_for_death"
+					"value"	"1"
+				}
+				"special taunt"
+				{
+					"attribute_class"	"special_taunt"
+					"value" "1"
+				}
+			}
+			"visuals"
+			{
+				"sound_melee_miss"	"Weapon_PickAxe.Swing"
+				"sound_melee_hit"	"Weapon_PickAxe.HitFlesh"
+				"sound_burst"		"Weapon_PickAxe.SwingCrit"
+			}
+			"mouse_pressed_sound"	"ui/item_metal_weapon_pickup.wav"
+			"drop_sound"		"ui/item_metal_weapon_drop.wav"
+		}
 		"30570"
 		{
 			"name"		"Pool Party Taunt"
