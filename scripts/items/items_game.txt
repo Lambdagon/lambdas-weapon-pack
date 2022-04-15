@@ -4252,6 +4252,16 @@
 					"attribute_class" 	"mult_dmg"
 					"value" "0.9"
 				}
+				"maxammo primary reduced"
+				{
+					"attribute_class"	"mult_maxammo_primary"
+					"value"				"0.75"
+				}
+				"maxammo secondary reduced"
+				{
+					"attribute_class"	"mult_maxammo_secondary"
+					"value"				"0.35"
+				}
 				"damage bonus vs burning"
 				{
 					"attribute_class"	"mult_dmg_vs_burning"
@@ -28405,6 +28415,7 @@
 			"prefab"	"hat_decoration"
 			"item_name"	"#TF_ColoredLights"
 			"item_description"	"Drgregs seems to love this hat"
+			"extra_wearable" "models/player/items/mvm_loot/engineer/robo_engy_hat.mdl"
 			"image_inventory"	"backpack/player/items/engineer/engineer_colored_lights"
 			"model_player"	"models/player/items/engineer/engineer_colored_lights.mdl"
 			"used_by_classes"
@@ -39778,7 +39789,7 @@
 				"is_a_sword"
 				{
 					"attribute_class"	"is_a_sword"
-					"value"				"72"
+					"value"				"70"
 				}
 				"damage bonus"
 				{
@@ -39804,6 +39815,16 @@
 				{
 					"attribute_class"	"mult_maxammo_secondary"
 					"value"				"0"
+				}
+				"crit mod disabled"
+				{
+					"attribute_class"	"mult_crit_chance"
+					"value"	"0"
+				}
+				"fire rate penalty"
+				{
+				"attribute_class"	"mult_postfiredelay"
+				"value"	"1.2"
 				}
 			}
 			
@@ -41204,9 +41225,7 @@
 				"sniper"	  "1"
 				"scout"		  "1"
 				"heavy"		  "secondary"
-				"medic"		  "1"
 				"soldier"	  "secondary"
-				"spy"		  "1"
             }
 			"attributes"
 			{
@@ -42040,12 +42059,12 @@
 			
 			"visuals"
 			{
-				"sound_single_shot"		"HL2_Weapon_Shotgun.Single"
-				"sound_double_shot"		"HL2_Weapon_Shotgun.Double"
+				"sound_single_shot"		"Weapon_Shotgun.NPC_Single"
+				"sound_double_shot"		"Weapon_Shotgun.Double"
 				"sound_burst"			"HL2_Weapon_Shotgun.Single"
-				"sound_empty"			"HL2_Weapon_Shotgun.Empty"
-				"sound_reload"			"HL2_Weapon_Shotgun.Reload"
-				"sound_special1"		"HL2_Weapon_Shotgun.Special1"
+				"sound_empty"			"Weapon_Shotgun.Empty"
+				"sound_reload"			"Weapon_Shotgun.Reload"
+				"sound_special1"		"Weapon_Shotgun.Special1"
 			}
 			"attributes"
 			{
@@ -42062,7 +42081,7 @@
 				"damage bonus"
 				{
 					"attribute_class"	"mult_dmg"
-					"value"	"30"
+					"value"	"1.3"
 				}
 				"bullets per shot bonus"
 				{
@@ -42082,7 +42101,7 @@
 				"fire rate penalty"
 				{
 				"attribute_class"	"mult_postfiredelay"
-				"value"	"1.5"
+				"value"	"1.25"
 				}	
 				"reload time increased"
 				{
