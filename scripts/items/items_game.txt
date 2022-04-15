@@ -42061,9 +42061,9 @@
 			{
 				"sound_single_shot"		"Weapon_Shotgun.NPC_Single"
 				"sound_double_shot"		"Weapon_Shotgun.Double"
-				"sound_burst"			"HL2_Weapon_Shotgun.Single"
+				"sound_burst"			"Bounce.ShotgunShell"
 				"sound_empty"			"Weapon_Shotgun.Empty"
-				"sound_reload"			"Weapon_Shotgun.Reload"
+				"sound_reload"			"Weapon_Shotgun.NPC_Reload"
 				"sound_special1"		"Weapon_Shotgun.Special1"
 			}
 			"attributes"
@@ -42081,7 +42081,7 @@
 				"damage bonus"
 				{
 					"attribute_class"	"mult_dmg"
-					"value"	"1.3"
+					"value"	"1.2"
 				}
 				"bullets per shot bonus"
 				{
@@ -42091,7 +42091,7 @@
 				"spread penalty"
 				{
 					"attribute_class" 	"mult_spread_scale"
-					"value" "1.70"
+					"value" "1.75"
 				}
 				"maxammo primary reduced"
 				{
@@ -42281,7 +42281,7 @@
 				"can_heal_allies"		"1"
 				"can_be_festivized"		"1"
 			}
-			"show_in_armory"	"1"
+			"show_in_armory"	"0"
 			"item_type_name"	"#TF_Weapon_Medigun_Prototype"
 			"item_name"		"Medkit"
 			"item_description"	"Here patch yourself up"
