@@ -5,7 +5,7 @@ Install instructions:
 3. Extract the pack to the custom folder
 4. The end
 
-Github desktop install instructions (better):
+Github desktop install instructions (Recomended):
 1. Download Github desktop: https://desktop.github.com/
 2. Create custom folder in your tf_coop_extended folder (ignore this step if you already have a custom folder)
 3. Add > Clone repository > URL > Paste this in text box:https://github.com/bluedogz162/lambdas-weapon-pack
