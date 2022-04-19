@@ -6,7 +6,7 @@ Install instructions:
 4. The end
 
 Github desktop install instructions (better):
-1. Download Github desktop
+1. Download Github desktop: https://desktop.github.com/
 2. Create custom folder in your tf_coop_extended folder (ignore this step if you already have a custom folder)
 3. Add > Clone repository > URL > Paste this in text box:https://github.com/bluedogz162/lambdas-weapon-pack
 4. Choose Local Path to: C:\Program Files (x86)\Steam\steamapps\sourcemods\tf_coop_extended\custom
