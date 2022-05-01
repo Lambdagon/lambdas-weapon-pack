@@ -28415,7 +28415,7 @@
 			"prefab"	"hat_decoration"
 			"item_name"	"#TF_ColoredLights"
 			"item_description"	"Drgregs seems to love this hat"
-			"extra_wearable" "models/player/items/mvm_loot/engineer/robo_engy_hat.mdl"
+			"extra_wearable" "models/player/items/engineer/engineer_colored_lights.mdl"
 			"image_inventory"	"backpack/player/items/engineer/engineer_colored_lights"
 			"model_player"	"models/player/items/engineer/engineer_colored_lights.mdl"
 			"used_by_classes"
@@ -40522,8 +40522,8 @@
 			"item_slot"	"secondary"
 			"item_quality"	"unique"
 			"propername"	"1"
-			"item_logname"	"ak47"
-			"item_iconname"	"ak47"
+			"item_logname"	"LR-300"
+			"item_iconname"	"LR-300"
 			"min_ilevel"	"5"
 			"max_ilevel"	"5"
 			"image_inventory"	"backpack/weapons/w_models/w_smg"
@@ -42811,6 +42811,19 @@
 			"mouse_pressed_sound"	"ui/item_heavy_gun_pickup.wav"
 			"drop_sound"		"ui/item_heavy_gun_drop.wav"
 		}
+		"7371"
+		{
+			"name"	"The Pomson 6009"
+			"first_sale_date"	"2011/12/15"
+			"item_class"	"tf_weapon_drg_pomson"
+			"craft_class"	"weapon"
+			"craft_material_type"	"weapon"
+			"capabilities"
+			{
+				"nameable"		"1"
+				"can_craft_count"	"1"
+			}
+			"tags"
 		"30570"
 		{
 			"name"		"Pool Party Taunt"
