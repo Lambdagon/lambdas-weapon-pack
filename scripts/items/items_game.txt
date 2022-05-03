@@ -20109,7 +20109,7 @@
 			"image_inventory_size_h"		"82"
 			"inspect_panel_dist" 				"53"
 			"model_world"	"models/weapons/w_crowbar.mdl"
-			"model_player"	"models/weapons/tfc/v_tfc_medkit.mdl"
+			"model_player"	"models/weapons/c_models/c_proto_medigun/c_proto_medigun.mdl"
 			"attach_to_hands"	"0"
 			"item_quality"	"unique"
 			"propername"	"1"
