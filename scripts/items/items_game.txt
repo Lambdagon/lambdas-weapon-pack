@@ -42293,8 +42293,8 @@
 			"image_inventory_size_w"		"128"
 			"image_inventory_size_h"		"82"
 			"model_world"	"models/weapons/c_models/c_gascan/c_gascan.mdl"
-			"model_player"	"models/weapons/tfc/v_tfc_medkit.mdl"
-			"attach_to_hands"	"0"
+			"model_player"	"models/weapons/c_models/c_gascan/c_gascan.mdl"
+			"attach_to_hands"	"1"
 			"item_quality"	"unusual"
 			"min_ilevel"	"8"
 			"max_ilevel"	"8"
@@ -42316,7 +42316,7 @@
 				"heal rate bonus"
 				{
 					"attribute_class"	"mult_medigun_healrate"
-					"value" "11"
+					"value" "6"
 				}
 				"ubercharge rate penalty"
 				{
@@ -42326,12 +42326,12 @@
 				"max health additive penalty"
 				{
 					"attribute_class"	"add_maxhealth"
-					"value" "-50"
+					"value" "-75"
 				}
 				"allowed in medieval mode"
 				{
 					"attribute_class"	"allowed_in_medieval_mode"
-					"value"	"1"
+					"value"	"0"
 				}
 				"move speed penalty"
 				{
