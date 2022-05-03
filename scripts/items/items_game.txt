@@ -10061,6 +10061,11 @@
 					"attribute_class"	"add_player_capturevalue"
 					"value"	"1"
 				}
+				"damage bonus"
+				{
+				"attribute_class"	"mult_dmg"
+				"value"	"1.10"
+				}
 				"dmg taken from bullets increased"
 				{
 					"attribute_class"	"mult_dmgtaken_from_bullets"
@@ -11431,6 +11436,11 @@
 			"drop_sound"		"ui/item_metal_weapon_drop.wav"
 			"attributes"
 			{
+				"damage bonus"
+				{
+				"attribute_class"	"mult_dmg"
+				"value"	"1.20"
+				}
 				"fire rate penalty"
 				{
 					"attribute_class"	"mult_postfiredelay"
@@ -11440,11 +11450,6 @@
 				{
 					"attribute_class"	"mult_single_wep_deploy_time"
 					"value"	"2.0"
-				}
-				"crit mod disabled"
-				{
-					"attribute_class"	"mult_crit_chance"
-					"value"	"0"
 				}
 			}
 		}
