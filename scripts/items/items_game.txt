@@ -42269,141 +42269,6 @@
 			"mouse_pressed_sound"	"ui/item_heavy_gun_pickup.wav"
 			"drop_sound"		"ui/item_heavy_gun_drop.wav"
 		}
-		"7361"
-		{
-			"name"	"The Medkit"
-			"prefab"	"valve"
-			"first_sale_date"	"2011/03/22"
-			"item_class"	"tf_weapon_medigun"
-			"craft_class"	"weapon"
-			"craft_material_type"	"weapon"
-			"capabilities"
-			{
-				"nameable"		"1"
-			}
-			"tags"
-			{
-				"can_heal_allies"		"1"
-				"can_be_festivized"		"1"
-			}
-			"show_in_armory"	"0"
-			"item_type_name"	"#TF_Weapon_Medigun_Prototype"
-			"item_name"		"Medkit"
-			"item_description"	"Here patch yourself up"
-			"propername"		"1"
-			"item_slot"		"secondary"
-			"anim_slot"	"Primary"
-			"equip_region"	"medigun_backpack"
-			"image_inventory"	"backpack/workshop/player/items/engineer/spr18_cold_case/spr18_cold_case"
-			"image_inventory_size_w"		"128"
-			"image_inventory_size_h"		"82"
-			"model_world"	"models/weapons/c_models/c_gascan/c_gascan.mdl"
-			"model_player"	"models/weapons/c_models/c_gascan/c_gascan.mdl"
-			"attach_to_hands"	"1"
-			"item_quality"	"unusual"
-			"min_ilevel"	"8"
-			"max_ilevel"	"8"
-			"used_by_classes"
-			{
-				"medic"	"1"
-			}
-			"static_attrs"
-			{
-				"min_viewmodel_offset"		"10 0 -9"
-			}
-			"attributes"
-			{
-				"lunchbox adds minicrits"
-				{
-					"attribute_class"	"set_weapon_mode"
-					"value"	"2"
-				}
-				"heal rate bonus"
-				{
-					"attribute_class"	"mult_medigun_healrate"
-					"value" "6"
-				}
-				"ubercharge rate penalty"
-				{
-					"attribute_class"	"mult_medigun_uberchargerate"
-					"value"	"0"
-				}
-				"max health additive penalty"
-				{
-					"attribute_class"	"add_maxhealth"
-					"value" "-75"
-				}
-				"allowed in medieval mode"
-				{
-					"attribute_class"	"allowed_in_medieval_mode"
-					"value"	"0"
-				}
-				"move speed penalty"
-				{
-					"attribute_class"	"mult_player_movespeed"
-					"value" "1.25"
-				}
-				"maxammo primary reduced"
-				{
-					"attribute_class"	"mult_maxammo_primary"
-					"value"				"0"
-				}
-				"single wep deploy time increased"
-				{
-					"attribute_class"	"mult_single_wep_deploy_time"
-					"value"	"11"
-				}
-				"kill eater score type"
-				{
-					"attribute_class"	"kill_eater_score_type"
-					"value"				"1"								
-				}
-				"kill eater score type 2"
-				{
-					"attribute_class"	"kill_eater_score_type_2"
-					"value" 			"2"								
-				}
-			}
-			"visuals"
-			{
-				"player_bodygroups"
-				{
-					"medic_backpack"			"1"
-				}
-			}
-			"visuals_red"
-			{
-				"attached_models_festive"
-				{
-					"0"
-					{
-						"model"	"models/weapons/c_models/c_proto_medigun/c_proto_medigun_festivizer.mdl"
-					}
-				}
-				"skin" "0"
-				"custom_particlesystem"
-				{
-					"system"	"medicgun_beam_attrib_overheal_red"
-				}
-			}
-			"visuals_blu"
-			{
-				"attached_models_festive"
-				{
-					"0"
-					{
-						"model"	"models/weapons/c_models/c_proto_medigun/c_proto_medigun_festivizer.mdl"
-					}
-				}
-				"skin" "1"
-				"custom_particlesystem"
-				{
-					"system"	"medicgun_beam_attrib_overheal_blue"
-				}
-			}
-			"mouse_pressed_sound"	"ui/item_heavy_gun_pickup.wav"
-			"drop_sound"		"ui/item_heavy_gun_drop.wav"
-		}
 		"7362"
 		{
 			"name"		"The Cold Case"
@@ -43180,25 +43045,74 @@
 		}
 		"7373"
 		{
-			"name"	"The Rescue Ranger"
-			"prefab" "weapon_rescue_ranger"
-			"first_sale_date"	"2012/12/19"
-			"particle_suffix"	"rescue_ranger"
-			"show_in_armory"	"0"
+			"name"	"The Fly"
+			"first_sale_date"	"2011/05/10"
+			"item_class"	"tf_weapon_bat"
+			"craft_class"	"weapon"
+			"craft_material_type"	"weapon"
+			"capabilities"
+			{
+				"nameable"		"1"
+				"can_craft_count"	"1"
+			}
 			"tags"
 			{
-				"can_be_festivized"		"1"
+				"can_deal_damage"			"1"
+				"can_deal_critical_damage"	"1"
+				"can_deal_taunt_damage" "1"
 			}
-			"visuals"
+			"item_type_name"	"#TF_Weapon_Bat"
+			"item_logname" "atomizer"
+			"item_iconname" "atomizer"
+			"item_name"	"Fly"
+			"item_slot"	"melee"
+			"item_quality"	"unique"
+			"min_ilevel"	"10"
+			"max_ilevel"	"10"
+			"propername" "1"
+			"image_inventory"	"backpack/workshop/weapons/c_models/c_bonk_bat/c_bonk_bat"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"82"
+			"inspect_panel_dist"        "45"			
+			"attach_to_hands"	"1"
+			"model_player"	"models/workshop/weapons/c_models/c_bonk_bat/c_bonk_bat.mdl"
+			"show_in_armory"	"0"
+			"used_by_classes"
 			{
-				"attached_models_festive"
+				"scout"	"1"
+			}
+			"static_attrs"
+			{
+				"min_viewmodel_offset"					"10 0 -7"
+			}
+			"visuals_red"
+			{
+				"skin" "0"
+			}
+			"visuals_blu"
+			{
+				"skin" "1"
+			}
+			"attributes"
+			{
+				"air dash count"
 				{
-					"0"
-					{
-						"model"	"models/workshop/weapons/c_models/c_tele_shotgun/c_tele_shotgun_festivizer.mdl"
-					}
+					"attribute_class"	"air_dash_count"
+					"value"	"50"
+				}
+				"dmg penalty vs players"
+				{
+					"attribute_class"	"mult_dmg_vs_players"
+					"value"	"2"
+				}
+				"special taunt"
+				{
+					"attribute_class"	"special_taunt"
+					"value" "1"
 				}
 			}
+			"mouse_pressed_sound"	"ui/item_metal_weapon_pickup.wav"
+			"drop_sound"		"ui/item_metal_weapon_drop.wav"
 		}
 		"30570"
 		{
