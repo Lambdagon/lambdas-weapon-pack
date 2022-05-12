@@ -52,7 +52,7 @@
 }
 "lambda.dicks"
 {
-	"channel"	"CHAN_BODY"
+	"channel"	"CHAN_STATIC"
 	"volume"	"1.0"
 	"soundlevel"	"SNDLVL_75dB"
 	"pitch"		"PITCH_NORM"
@@ -61,13 +61,42 @@
 }
 "lambda.jetstreamsam"
 {
-	"channel"	"CHAN_BODY"
+	"channel"	"CHAN_STATIC"
 	"volume"	"1.0"
 	"soundlevel"	"SNDLVL_75dB"
 	"pitch"		"PITCH_NORM"
 
 	"wave"		"#music/lambda/therewillbeblood.mp3"
 }
+"lambda.largeamby_fire"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"1.0"
+	"soundlevel"	"SNDLVL_75dB"
+	"pitch"		"PITCH_NORM"
+
+	"wave"		"#weapons/revolverrifle_shoot.wav"
+}
+"lambda.largeamby_firecrit"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"1.0"
+	"soundlevel"	"SNDLVL_75dB"
+	"pitch"		"PITCH_NORM"
+
+	"wave"		"#weapons/revolverrifle_shootcrit.wav"
+}
+"lambda.mariohammer_hit"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"1.0"
+	"soundlevel"	"SNDLVL_95dB"
+	"pitch"		"90, 110"
+
+	"wave"		"#ml/hammer_hit.wav"
+}
+
+
 
 
 

@@ -24,8 +24,8 @@
 
 	"$blendtintbybasealpha"		"1"
 	"$blendtintcoloroverbase"		"0"
-	"$colortint_base"		"{ 254 31 137 }"
+	"$colortint_base"		"{ 98 32 31 }"
 	"$colortint_tmp"		"[0 0 0]"
-	"$color2"		"{ 254 31 137 }"
+	"$color2"		"{ 198 82 81 }"
 
 }

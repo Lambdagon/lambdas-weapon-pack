@@ -24,22 +24,8 @@
 
 	"$blendtintbybasealpha"		"1"
 	"$blendtintcoloroverbase"		"0"
-	"$colortint_base"		"{ 254 31 137 }"
+	"$colortint_base"		"{ 98 32 31 }"
 	"$colortint_tmp"		"[0 0 0]"
-	"$color2"		"{ 254 31 137 }"
-
-	"proxies"
-	{
-		"ItemTintColor"
-		{
-			"resultVar"		"$colortint_tmp"
-		}
-		"SelectFirstIfNonZero"
-		{
-			"srcVar1"		"$colortint_tmp"
-			"srcVar2"		"$colortint_base"
-			"resultVar"		"$color2"
-		}
-	}
+	"$color2"		"{ 198 132 131 }"
 
 }
