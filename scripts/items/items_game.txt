@@ -12489,7 +12489,7 @@
 		}
 		"411"
 		{
-			"name"	"Quick-Fix"
+			"name"	"The Quick-Fix"
 			"prefab"	"valve"
 			"first_sale_date"	"2011/03/22"
 			"item_class"	"tf_weapon_medigun"
@@ -12506,8 +12506,8 @@
 			}
 			"show_in_armory"	"1"
 			"item_type_name"	"#TF_Weapon_Medigun_Prototype"
-			"item_name"		"Quick-Fix"
-			"item_description"	"Part of Lambda's Weapon pack"
+			"item_name"		"#TF_Unique_MediGun_QuickFix"
+			"item_description"	"#TF_Unique_MediGun_QuickFix_Desc"
 			"propername"		"1"
 			"item_slot"		"secondary"
 			"equip_region"	"medigun_backpack"
@@ -12538,7 +12538,7 @@
 				"heal rate bonus"
 				{
 					"attribute_class"	"mult_medigun_healrate"
-					"value" "1.6"
+					"value" "1.4"
 				}
 				"medigun charge is megaheal"
 				{
@@ -12548,7 +12548,7 @@
 				"ubercharge rate bonus"
 				{
 					"attribute_class"	"mult_medigun_uberchargerate"
-					"value"	"1.3"
+					"value"	"1.1"
 				}
 				"overheal penalty"
 				{
@@ -19782,7 +19782,7 @@
 				}
 			}
 		}
-		"9011"
+		"9011	"
 		{
 			"name"	"Extended Flamethrower"
 			"show_in_armory"	"0"
@@ -43039,7 +43039,7 @@
 			"mouse_pressed_sound"	"ui/item_metal_weapon_pickup.wav"
 			"drop_sound"		"ui/item_metal_weapon_drop.wav"
 		}
-		"30494"
+		"7374"
 		{
 			"name"		"Head Hunter"
 			"prefab"		"halloween2014 no_craft hat"
@@ -43076,7 +43076,7 @@
 			"mouse_pressed_sound"		"ui/item_gooey_pickup.wav"
 			"drop_sound"		"ui/item_gooey_pickup.wav"
 		}
-		"30495"
+		"7375"
 		{
 			"name"		"Claws And Infect"
 			"prefab"		"halloween2014 no_craft misc"
@@ -43099,7 +43099,7 @@
 			"mouse_pressed_sound"		"ui/item_gooey_pickup.wav"
 			"drop_sound"		"ui/item_gooey_pickup.wav"
 		}
-		"30496"
+		"7376"
 		{
 			"name"		"Crazy Legs"
 			"prefab"		"halloween2014 no_craft misc"
@@ -43133,7 +43133,7 @@
 			"mouse_pressed_sound"		"ui/item_gooey_pickup.wav"
 			"drop_sound"		"ui/item_gooey_pickup.wav"
 		}
-		"30767"
+		"7377"
 		{
 			"name"		"The Airdog"
 			"prefab"		"no_craft hat marketable"
@@ -43164,7 +43164,7 @@
 			"mouse_pressed_sound"		"ui/item_helmet_pickup.wav"
 			"drop_sound"		"ui/item_helmet_drop.wav"
 		}
-		"30636"
+		"7378"
 		{
 			"name"		"Fortunate Son"
 			"prefab"		"no_craft hat marketable"
