@@ -7137,6 +7137,96 @@
 			}
 		}
 
+		"weapon_tomislav_meme_gun"
+		{
+			"enabled"	"1"
+			"item_class"	"tf_weapon_minigun"
+			"craft_class"	"weapon"
+			"craft_material_type"	"weapon"
+			"capabilities"
+			{
+				"nameable"		"1"
+				"can_craft_count"	"1"
+			}
+			"tags"
+			{
+				"can_deal_damage"			"1"
+				"can_deal_critical_damage"	"1"
+				"can_deal_mvm_penetration_damage"	"1"
+				"can_deal_long_distance_damage"	"1"
+			}
+			"show_in_armory"	"1"
+			"item_type_name"	"#TF_Weapon_Minigun"
+			"item_name"	"Gun"
+			"item_slot"	"primary"
+			"item_logname"	"tomislav"
+			"item_iconname"	"tomislav"
+			"image_inventory"	"backpack/weapons/w_models/w_pistol"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"82"
+			"model_world"	"models/weapons/c_models/c_pistol/c_pistol.mdl"
+			"model_player"	"models/weapons/v_models/v_pistol_scout.mdl"
+			"attach_to_hands"	"1"
+			"inspect_panel_dist" "88"
+			"item_quality"	"unique"
+			"min_ilevel"	"5"
+			"max_ilevel"	"5"
+			"used_by_classes"
+			{
+				"heavy"	"1"
+			}
+			"static_attrs"
+			{
+				"min_viewmodel_offset"		"10 0 -9"
+			}
+			"visuals"
+			{
+				"sound_reload"	"Weapon_Gatling.Reload"
+				"sound_empty"	"Weapon_Tomislav.WindDown"
+				"sound_double_shot"	"Weapon_Tomislav.Fire"
+				"sound_burst"	"Weapon_Tomislav.FireCrit"
+				"sound_special1"	"Weapon_Tomislav.WindUp"
+				"sound_special2"	"Weapon_Tomislav.WindDown"
+				"sound_special3"	"Weapon_Tomislav.Spin"
+				"styles"
+				{
+					"0"
+					{
+						"skin_red" "0"
+						"skin_blu" "1"
+						"selectable"	"0"
+					}
+					"1"
+					{
+						"skin_red"	"2"
+						"skin_blu"	"3"
+						"selectable"	"0"
+						"image_inventory"	"backpack/workshop/weapons/c_models/c_tomislav/c_tomislav_gold"
+					}
+				}
+			}
+			"mouse_pressed_sound"	"ui/item_heavy_gun_pickup.wav"
+			"drop_sound"		"ui/item_heavy_gun_drop.wav"
+			"attributes"
+			{
+				"minigun spinup time decreased"
+				{
+					"attribute_class"	"mult_minigun_spinup_time"
+					"value" "0.9"
+				}
+				"fire rate penalty"
+				{
+					"attribute_class"	"mult_postfiredelay"
+					"value"	"1.69"
+				}
+				"weapon spread bonus"
+				{
+					"attribute_class"	"mult_spread_scale"
+					"value"	"0.01"
+				}
+			}
+		}
+
 		"weapon_tommyslave"
 		{
 			"enabled"	"1"
@@ -43505,6 +43595,50 @@
 					"attribute_class"	"special_taunt"
 					"value" "1"
 				}
+			}
+		}
+		"7383"
+		{
+			"name" "Purity Fist Promo"
+			"item_class"	"bundle"
+			"bundle"
+			{
+				"The Purity Fist"		"1"
+			}
+			"item_type_name"	"#TF_StoreBundle"
+			"item_name"		"#TF_PurityFist_Promo"
+			"item_description"	"#TF_PurityFist_Promo_Desc"
+			"item_slot"	"misc2"
+			"image_inventory"	"backpack/workshop_partner/player/items/heavy/dex_sarifarm/dex_sarifarm"
+			"image_inventory_size_w"	"128"
+			"image_inventory_size_h"	"82"
+			"item_quality"		"unique"
+			"min_ilevel"	"50"
+			"max_ilevel"	"50"
+			"used_by_classes"
+			{
+				"heavy"	"1"
+			}
+			"attributes"
+			{
+				"elevate quality"
+				{
+					"attribute_class"	"set_elevated_quality"
+					"value"	"1"
+				}
+			}
+			"mouse_pressed_sound"	"ui/item_bag_pickup.wav"
+			"drop_sound"		"ui/item_bag_drop.wav"
+		}
+		"7384"
+		{
+			"name"	"Gun"
+			"prefab" "weapon_tomislav_meme_gun"
+			"first_sale_date"	"2011/04/14"
+			"particle_suffix"	"tomislav"
+			"tags"
+			{
+				"can_be_festivized"		"1"
 			}
 		}
 		"30570"
