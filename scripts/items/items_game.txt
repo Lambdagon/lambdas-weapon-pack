@@ -698,6 +698,95 @@
 			"drop_sound"		"ui/item_light_gun_drop.wav"
 		}
 
+		"weapon_true_revolver"
+		{
+ 			"enabled"	"1"
+			"item_class"	"tf_weapon_revolver"
+			"craft_class"	"weapon"
+			"craft_material_type"	"weapon"
+			"capabilities"
+			{
+				"nameable"		"1"
+			}
+			"tags"
+			{
+				"can_deal_damage"		"1"
+				"can_headshot"			"1"
+				"can_deal_critical_damage"	"1"
+				"can_deal_mvm_penetration_damage"	"1"
+				"can_deal_long_distance_damage"	"1"
+			}
+			"base_item_name"	"The True Revolver"
+			"item_type_name"	"#TF_Weapon_Revolver"
+			"item_name"	"True Revolver"
+			"item_slot"	"secondary"
+			"item_quality"	"unique"
+			"propername"	"1"
+			"item_logname"	"true_revolver"
+			"item_iconname"	"ambassador"
+			"min_ilevel"	"5"
+			"max_ilevel"	"5"
+			"image_inventory"	"backpack/workshop_partner/weapons/c_models/c_dex_revolver/c_dex_revolver"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"82"
+			"model_player"	"models/workshop_partner/weapons/c_models/c_dex_revolver/c_dex_revolver.mdl"
+			"attach_to_hands" "1"
+			"inspect_panel_dist" "32"
+			"used_by_classes"
+			{
+				"spy"	"1"
+			}
+			"static_attrs"
+			{
+				"min_viewmodel_offset"		"10 0 -6"
+			}
+			"attributes"
+			{
+				"revolver use hit locations"
+				{
+					"attribute_class"	"set_weapon_mode"
+					"value"	"1"
+				}
+				"cloak consume rate decreased"
+				{
+					"attribute_class"	"mult_cloak_meter_consume_rate"
+					"value" "0.6"
+				}
+				"dmg pierces resists absorbs"
+				{
+					"attribute_class"	"mod_pierce_resists_absorbs"
+					"value"	"1"
+				}
+				"damage bonus while disguised"
+				{
+					"attribute_class"	"mult_dmg_disguised"
+					"value"	"1.2"
+				}
+				"damage penalty"
+				{
+					"attribute_class"	"mult_dmg"
+					"value" "0.70"
+				}
+				"fire rate penalty"
+				{
+					"attribute_class"	"mult_postfiredelay"
+					"value"	"1.4"
+				}
+				"crit mod disabled"
+				{
+					"attribute_class"	"mult_crit_chance"
+					"value"	"0"
+				}
+			}
+			"visuals"
+			{
+				"sound_single_shot" "Weapon_Ambassador.Single"
+				"sound_burst" "Weapon_Ambassador.SingleCrit"
+			}
+			"mouse_pressed_sound"	"ui/item_light_gun_pickup.wav"
+			"drop_sound"		"ui/item_light_gun_drop.wav"
+		}
+
  		"weapon_amputator"
 		{
 			"enabled"		"1"
@@ -10742,7 +10831,7 @@
 				"can_deal_critical_damage"	"1"
 				"can_deal_long_distance_damage"	"1"
 			}
-			"show_in_armory"	"0"
+			"show_in_armory"	"1"
 			"item_type_name"	"#TF_Weapon_Revolver"
 			"item_name"	"#TF_LEtranger"
 			"item_slot"	"secondary"
@@ -10770,15 +10859,10 @@
 			"drop_sound"		"ui/item_light_gun_drop.wav"
 			"attributes"
 			{
-				"add cloak on hit"
-				{
-					"attribute_class"	"add_cloak_on_hit"
-					"value" "15"
-				}
 				"damage penalty"
 				{
 					"attribute_class"	"mult_dmg"
-					"value"	"0.8"
+					"value"	"0.9"
 				}
 				"cloak consume rate decreased"
 				{
@@ -26726,7 +26810,7 @@
 			"item_iconname"	"357"
 			"min_ilevel"	"5"
 			"max_ilevel"	"5"
-			"image_inventory"	"backpack/workshop_partner/weapons/w_models/w_revolver"
+			"image_inventory"	"backpack/workshop/weapons/c_models/c_snub_nose/c_snub_nose"
 			"image_inventory_size_w"		"128"
 			"image_inventory_size_h"		"82"
 			"inspect_panel_dist" 			"32"
@@ -27308,7 +27392,7 @@
             "image_inventory_size_h"        "82"
             "attach_to_hands"            "2"
             "model_player"        "models/weapons/v_models/v_toolgun.mdl"
-            "model_world"        "models/weapons/c_models/c_revolver/c_revolver.mdl"
+            "model_world"        "models/weapons/c_models/c_revolver/c_revolver_xmas.mdl"
 			"used_by_classes"
 			{
 				"engineer"				"secondary"
@@ -27860,7 +27944,7 @@
             "image_inventory_size_h"        "82"
             "attach_to_hands"            "2"
             "model_player"        "models/weapons/v_models/v_toolgun.mdl"
-            "model_world"        "models/weapons/c_models/c_revolver/c_revolver.mdl"
+            "model_world"        "models/weapons/c_models/c_revolver/c_revolver_xmas.mdl"
 			"used_by_classes"
 			{
 				"spy" "1"
@@ -35677,7 +35761,7 @@
 			"item_iconname"	"357"
 			"min_ilevel"	"5"
 			"max_ilevel"	"5"
-			"image_inventory"	"backpack/workshop_partner/weapons/w_models/w_revolver"
+			"image_inventory"	"backpack/workshop/weapons/c_models/c_snub_nose/c_snub_nose"
 			"image_inventory_size_w"		"128"
 			"image_inventory_size_h"		"82"
 			"inspect_panel_dist" 			"32"
@@ -43194,7 +43278,7 @@
 			"mouse_pressed_sound"		"ui/item_helmet_pickup.wav"
 			"drop_sound"		"ui/item_helmet_drop.wav"
 		}
-				"13371"
+		"7379"
 		{
 			"name"	"Comically Large Ambassador"
 			"prefab"	""
@@ -43271,7 +43355,7 @@
 			"mouse_pressed_sound"	"ui/item_heavy_gun_pickup.wav"
 			"drop_sound"		"ui/item_heavy_gun_drop.wav"
 		}
-				"371"
+		"7380"
 		{
 			"name" "Pistol for other classes"
 			"first_sale_date" "2007/06/27"
@@ -43305,7 +43389,6 @@
 				"heavy"	"1"
 				"pyro"	"1"
 				"soldier"	"1"
-				"demoman"	"1"
 			}
 			"static_attrs"
 			{
@@ -43320,6 +43403,33 @@
 			}
 			"mouse_pressed_sound"	"ui/item_light_gun_pickup.wav"
 			"drop_sound"		"ui/item_light_gun_drop.wav"
+		}
+		"7381"
+		{
+			"name"	"The True Revolver"
+			"first_sale_date"	"2010/09/29"
+			"prefab"	"valve weapon_true_revolver"
+			"visuals"
+			{
+				"styles"
+				{
+					"0"
+					{
+						"skin_red" "0"
+						"skin_blu" "1"
+						"selectable"	"0"
+					}
+					"1"
+					{
+						"skin_red"	"2"
+						"skin_blu"	"3"
+						"selectable"	"0"
+						"image_inventory"	"backpack/weapons/c_models/c_ambassador/c_ambassador_gold"
+					}
+				}
+			}
+			"xifier_class_remap"	"ambassador"
+			"show_in_armory"	"1"
 		}
 		"30570"
 		{
