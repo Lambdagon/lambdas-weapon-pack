@@ -39132,7 +39132,7 @@
 			"image_inventory"			"backpack/weapons/c_models/c_scattergun"
 			"image_inventory_size_w"	"128"
 			"image_inventory_size_h"	"82"
-			"attach_to_hands"			"1"
+			"attach_to_hands"			"0"
 			"attach_to_hands_vm_only"	"0"
 			"model_player"				"models/weapons/v_models/v_scattergunalt_scout.mdl"
 			"model_world"				"models/weapons/w_models/w_scattergunalt.mdl"
@@ -40832,7 +40832,7 @@
 				"damage bonus"
 				{
 				"attribute_class"	"mult_dmg"
-				"value"	"1.25"
+				"value"	"1.10"
 				}
 				"bullets per shot bonus"
 				{
@@ -42403,16 +42403,15 @@
 			"static_attrs"
 			{
 				"min_viewmodel_offset"		"10 0 -9"
-			}
-			
+			}	
 			"visuals"
 			{
-				"sound_single_shot"		"Weapon_Shotgun.NPC_Single"
-				"sound_double_shot"		"Weapon_Shotgun.Double"
-				"sound_burst"			"Bounce.ShotgunShell"
-				"sound_empty"			"Weapon_Shotgun.Empty"
-				"sound_reload"			"Weapon_Shotgun.NPC_Reload"
-				"sound_special1"		"Weapon_Shotgun.Special1"
+				"sound_single_shot"		"HL2_Weapon_Shotgun.Single"
+				"sound_double_shot"		"HL2_Weapon_Shotgun.Double"
+				"sound_burst"		"HL2_Weapon_Shotgun.Single"
+				"sound_empty"				"HL2_Weapon_Shotgun.Empty"
+				"sound_reload"			"HL2_Weapon_Shotgun.Reload"
+				"sound_special1"			"HL2_Weapon_Shotgun.Special1"
 			}
 			"attributes"
 			{
@@ -44084,7 +44083,7 @@
 				"air dash count"
 				{
 					"attribute_class"	"air_dash_count"
-					"value"	"3"
+					"value"	"2"
 				}
 				"single wep deploy time increased"
 				{
