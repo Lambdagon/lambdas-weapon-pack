@@ -21705,7 +21705,7 @@
 				"can_be_equipped_by_soldier_or_demo"	"1"
 				"can_deal_critical_damage"	"1"
 			}
-			"show_in_armory"	"0	"
+			"show_in_armory"	"0"
 			"item_type_name"	"#TF_Weapon_Sign"
 			"item_name"	"Conscientious Objector"
 			"item_description"	"Part OF Lambda's Weapon pack"
