@@ -2646,6 +2646,79 @@
 			"xifier_class_remap"	"eyelander"
 		}
 
+		"weapon_eyedagger"
+		{
+			"prefab"	"weapon_sword"
+			"capabilities"
+			{
+				"nameable"		"1"
+			}
+			"tags"
+			{
+				"can_deal_damage"			"1"
+				"can_be_equipped_by_soldier_or_demo"	"1"
+				"can_deal_critical_damage"	"1"
+				"can_deal_taunt_damage"		"1"
+			}
+			"base_item_name"	"The Eyelander"
+			"item_name"	"#TF_Unique_Achievement_Sword"
+			"item_description"	"#TF_Unique_Achievement_Sword_Desc"
+			"propername"	"1"
+			"image_inventory"	"backpack/weapons/c_models/c_claymore/c_claymore"
+			"model_player"	"models/weapons/c_models/c_claymore/c_claymore.mdl"
+			"used_by_classes"
+			{
+				"demoman"	"1"
+				"scout"		"1"
+			}
+			"static_attrs"
+			{
+				"min_viewmodel_offset"					"12 -3 -10"
+				"crits_become_minicrits"				"1"
+			}
+			"visuals"
+			{
+				"sound_melee_miss"	"Weapon_Sword.Swing"
+				"sound_melee_hit"	"Weapon_Sword.HitFlesh"
+				"sound_melee_hit_world"	"Weapon_Sword.HitWorld"
+				"sound_burst"		"Weapon_Sword.SwingCrit"
+				"sound_special1"	"Sword.Hit"
+				"sound_special2"	"Sword.Idle"
+				"styles"
+				{
+					"0"
+					{
+						"skin_red" "0"
+						"skin_blu" "1"
+						"selectable"	"0"
+					}
+					"1"
+					{
+						"skin_red"	"2"
+						"skin_blu"	"3"
+						"selectable"	"0"
+						"image_inventory"	"backpack/weapons/c_models/c_claymore/c_claymore_gold"
+					}
+				}
+			}
+			"attributes"
+			{
+				"max health additive penalty"
+				{
+					"attribute_class"	"add_maxhealth"
+					"value" "-25"
+				}
+				"decapitate type"
+				{
+					"attribute_class"	"decapitate_type"
+					"value"	"1"
+				}
+			}
+			"mouse_pressed_sound"	"ui/item_knife_large_pickup.wav"
+			"drop_sound"		"ui/item_metal_weapon_drop.wav"
+			"xifier_class_remap"	"eyelander"
+		}
+
 		"weapon_eyelander_golden"
 		{
 			"prefab"	"weapon_sword"
@@ -5375,7 +5448,7 @@
 		"weapon_rescue_ranger"
 		{
 			"enabled"	"1"
-			"item_class"	"tf_weapon_shotgun_building_rescue"
+			"item_class"	"tf_weapon_shotgun"
 			"craft_class"	"weapon"
 			"craft_material_type"	"weapon"
 			"capabilities"
@@ -5416,11 +5489,6 @@
 			}
 			"attributes"
 			{
-				"engineer building teleporting pickup"
-				{
-					"attribute_class"	"building_teleporting_pickup"
-					"value"	"100"
-				}
 				"arrow heals buildings"
 				{
 					"attribute_class"	"arrow_heals_buildings"
@@ -11771,6 +11839,7 @@
 				"can_deal_damage"		"1"
 				"can_deal_gib_damage"	"1"
 				"can_be_equipped_by_soldier_or_demo"	"1"
+				"can_deal_taunt_damage" "1"
 			}
 			"show_in_armory"	"1"
 			"item_type_name"	"#TF_Weapon_StickBomb"
@@ -20243,8 +20312,9 @@
 			"image_inventory"	"backpack/error"
 			"image_inventory_size_w"		"128"
 			"image_inventory_size_h"		"82"
-			"model_player"	"models/error.mdl"
-			"attach_to_hands"	"1"
+			"model_world"	"models/error.mdl"
+			"model_player"	"models/weapons/v_superphyscannon.mdl"
+			"attach_to_hands"	"0	"
 			"inspect_panel_dist" "40"
 			"item_quality"	"developer"
 			"propername"	"1"
@@ -21635,7 +21705,7 @@
 				"can_be_equipped_by_soldier_or_demo"	"1"
 				"can_deal_critical_damage"	"1"
 			}
-			"show_in_armory"	"1"
+			"show_in_armory"	"0	"
 			"item_type_name"	"#TF_Weapon_Sign"
 			"item_name"	"Conscientious Objector"
 			"item_description"	"Part OF Lambda's Weapon pack"
@@ -31319,7 +31389,7 @@
 			"inspect_panel_dist"        "45"			
 			"attach_to_hands"	"1"
 			"model_player"	"models/workshop/weapons/c_models/c_invasion_bat/c_invasion_bat.mdl"
-			"show_in_armory"	"0"
+			"show_in_armory"	"1"
 			"used_by_classes"
 			{
 				"scout"	"1"
@@ -31338,21 +31408,6 @@
 			}
 			"attributes"
 			{
-				"air dash count"
-				{
-					"attribute_class"	"air_dash_count"
-					"value"	"1"
-				}
-				"single wep deploy time increased"
-				{
-					"attribute_class"	"mult_single_wep_deploy_time"
-					"value"	"1.5"
-				}
-				"dmg penalty vs players"
-				{
-					"attribute_class"	"mult_dmg_vs_players"
-					"value"	"0.85"
-				}
 				"special taunt"
 				{
 					"attribute_class"	"special_taunt"
@@ -41368,7 +41423,7 @@
 			}
 			"item_logname"	"necro_smasher"
 			"item_iconname"	"necro_smasher"
-			"show_in_armory"	"1"
+			"show_in_armory"	"0"
 			"item_type_name"	"#TF_Weapon_Hammer"
 			"item_name"	"#TF_Weapon_Necro_Smasher"
 			"item_description"	"#TF_Weapon_Necro_Smasher_Desc"
@@ -44246,7 +44301,7 @@
 			"image_inventory_size_h"		"82"
 			"model_world"	"models/weapons/c_models/c_smg/c_smg.mdl"
 			"model_player"	"models/weapons/v_models/v_smg_sniper.mdl"
-			"attach_to_hands"	"0"
+			"attach_to_hands"	"1"
 			"used_by_classes"
 			{
 				"scout"	"1"
@@ -44455,6 +44510,76 @@
 			}
 			"mouse_pressed_sound"	"ui/item_light_gun_pickup.wav"
 			"drop_sound"		"ui/item_light_gun_drop.wav"
+		}
+		"7394"
+		{
+			"name"	"The True Nuker"
+                        "item_description"	"Part of Lambda's  Weapon pack"
+			"prefab"	"valve"
+			"first_sale_date"	"2010/09/29"
+			"item_class"	"tf_weapon_rocketlauncher_directhit"
+			"craft_class"	"weapon"
+			"craft_material_type"	"weapon"
+			"capabilities"
+			{
+				"nameable"		"1"
+			}
+			"tags"
+			{
+				"can_deal_damage"		"1"
+				"can_deal_gib_damage"	"1"
+				"can_be_equipped_by_soldier_or_demo"	"1"
+				"can_deal_posthumous_damage"	"1"
+				"can_deal_critical_damage"	"1"
+				"can_deal_long_distance_damage"	"1"
+			}
+			"show_in_armory"	"0"
+			"item_type_name"	"#TF_Weapon_RocketLauncher"
+			"item_name"	"True Nuker"
+			"item_slot"	"primary"
+			"item_quality"	"developer"
+			"propername"	"1"
+			"min_ilevel"	"1"
+			"max_ilevel"	"1"
+			"image_inventory"	"backpack/workshop/weapons/c_models/c_blackbox/c_blackbox"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"82"
+			"model_player"	"models/workshop/weapons/c_models/c_blackbox/c_blackbox.mdl"
+			"attach_to_hands" "1"
+			"used_by_classes"
+			{
+				"soldier"	"1"
+			}
+			"static_attrs"
+			{
+				"min_viewmodel_offset"					"10 -3 -10"				
+			}
+			"attributes"
+			{
+				"Blast radius increased"
+				{
+					"attribute_class"	"mult_explosion_radius"
+					"value"	"10001"
+				}
+				"damage bonus"
+				{
+					"attribute_class"	"mult_dmg"
+					"value"	"10001"
+				}
+			}
+			"mouse_pressed_sound"	"ui/item_heavy_gun_pickup.wav"
+			"drop_sound"		"ui/item_heavy_gun_drop.wav"
+		}
+		"7395"
+		{
+			"name"	"The Eyedagger"
+			"prefab"	"valve weapon_eyedagger"
+			"first_sale_date"	"2010/09/29"
+			"show_in_armory"	"1"
+			"static_attrs"
+			{
+				"min_viewmodel_offset"		"10 0 -11"				
+			}
 		}
 		"30570"
 		{
