@@ -16765,7 +16765,7 @@
 			}
 			"item_logname"	"ham_shank"
 			"item_iconname"	"ham_shank"
-			"show_in_armory"	"1"
+			"show_in_armory"	"0"
 			"item_type_name"	"#TF_Weapon_Pork_Product"
 			"item_name"	"#TF_HamShank"
 			"item_description"	"#TF_HamShank_Desc"
@@ -20294,7 +20294,7 @@
 				}
 			}
 		}
-		"9011	"
+		"9011"
 		{
 			"name"	"Extended Flamethrower"
 			"show_in_armory"	"0"
@@ -21639,7 +21639,7 @@
 			"image_inventory_size_w"		"128"
 			"image_inventory_size_h"		"82"
 			"model_player"	"models/weapons/gmod/c_stunstick.mdl"
-			"model_world"	"models/weapons/w_stunstick.mdl"
+			"model_world"	"models/weapons/w_stunbaton.mdl"
 			"attach_to_hands"	"2"
 			"inspect_panel_dist" "40"
 			"item_quality"	"unique"
@@ -41493,7 +41493,7 @@
 			}
 			"item_logname"	"necro_smasher"
 			"item_iconname"	"necro_smasher"
-			"show_in_armory"	"0"
+			"show_in_armory"	"1"
 			"item_type_name"	"#TF_Weapon_Hammer"
 			"item_name"	"#TF_Weapon_Necro_Smasher"
 			"item_description"	"#TF_Weapon_Necro_Smasher_Desc"
@@ -44808,12 +44808,12 @@
 				"add uber charge on hit red"
 				{
 					"attribute_class"	"add_onhit_ubercharge_red"
-					"value"	"0.02"
+					"value"	"0.01"
 				}
 				"add uber charge on hit blu"
 				{
 					"attribute_class"	"add_onhit_ubercharge_blu"
-					"value"	"0.02"
+					"value"	"0.01"
 				}
 				"fire rate penalty"
 				{
