@@ -22353,7 +22353,7 @@
 			}
 			"item_logname"		"prinny_machete"
 			"item_iconname"		"prinny_machete"
-			"show_in_armory"		"1"
+			"show_in_armory"		"0"
 			"item_name"		"Baguette"
 			"item_description"		"mmm ddddeicious bredd"
 			"item_type_name"		"#TF_Weapon_Machete"
@@ -25461,7 +25461,7 @@
 				"can_be_equipped_by_soldier_or_demo"	"1"
 				"can_deal_critical_damage"	"1"
 			}
-			"show_in_armory"	"0	"
+			"show_in_armory"	"1"
 			"item_type_name"	"#TF_Weapon_Sign"
 			"item_name"	"Objector - YOW's Sussy Objector"
 			"item_description"	"Uhhhhhhhhhhhhhhhhhhhhhhhhhhhhh"
