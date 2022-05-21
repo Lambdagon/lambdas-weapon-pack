@@ -20415,7 +20415,7 @@
 				"fire rate bonus"
 				{
 					"attribute_class"	"mult_postfiredelay"
-					"value"	"0.25"
+					"value"	"0.75"
 				}
 				"heal on hit for slowfire"
 				{
@@ -43565,7 +43565,7 @@
 				"air dash count"
 				{
 					"attribute_class"	"air_dash_count"
-					"value"	"50"
+					"value"	"150"
 				}
 				"special taunt"
 				{
