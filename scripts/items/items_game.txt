@@ -30054,6 +30054,8 @@
 			"static_attrs"
 			{
 				"min_viewmodel_offset"		"10 0 -6"
+				"energy weapon no hurt building"		"1"
+				"crits_become_minicrits"				"1"
 			}
 			"visuals"
 			{
@@ -44977,6 +44979,8 @@
 			"static_attrs"
 			{
 				"min_viewmodel_offset"		"10 -3 -7"
+				"energy weapon no hurt building"		"1"
+				"crits_become_minicrits"				"1"
 			}
 			"attributes"
 			{
