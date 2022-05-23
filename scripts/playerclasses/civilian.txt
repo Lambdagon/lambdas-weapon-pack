@@ -10,7 +10,7 @@ PlayerClass
 	"model_tfc"		"models/player/civilian.mdl"
 	"model_hands"		"models/weapons/c_models/c_scout_arms.mdl"
 	"localize_name"		"TF_Class_Name_Civilian"
-	"speed_max"		"500"
+	"speed_max"		"335"
 	"health_max"		"500"
 	"armor_max"		"0"
 
@@ -18,8 +18,8 @@ PlayerClass
 
 	// Weapons.
 	"weapon1"		"TF_WEAPON_TFC_UMBRELLA"
-	"weapon2"		""
-	"weapon3"		""
+	"weapon2"		"The Sandvich"
+	"weapon3"		"Glock"
 
 	//Thirdperson
 	"cameraoffset_forward"	"85"
@@ -29,8 +29,8 @@ PlayerClass
 	AmmoMax
 	{
 		"tf_ammo_primary"	"20"
-		"tf_ammo_secondary"	"0"
-		"tf_ammo_metal"		"0"
+		"tf_ammo_secondary"	"40"
+		"tf_ammo_metal"		"20"
 		"tf_ammo_grenades1"	"0"
 		"tf_ammo_grenades2"	"0"
 	}	
