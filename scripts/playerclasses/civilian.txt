@@ -10,16 +10,16 @@ PlayerClass
 	"model_tfc"		"models/player/civilian.mdl"
 	"model_hands"		"models/weapons/c_models/c_scout_arms.mdl"
 	"localize_name"		"TF_Class_Name_Civilian"
-	"speed_max"		"335"
+	"speed_max"		"500"
 	"health_max"		"500"
-	"armor_max"		"0"
+	"armor_max"		"5"
 
 	// Grenades.
 
 	// Weapons.
 	"weapon1"		"TF_WEAPON_TFC_UMBRELLA"
-	"weapon2"		"The Sandvich"
-	"weapon3"		"Glock"
+	"weapon2"		"TF_WEAPON_TFC_UMBRELLA"
+	"weapon3"		"TF_WEAPON_TFC_UMBRELLA"
 
 	//Thirdperson
 	"cameraoffset_forward"	"85"
