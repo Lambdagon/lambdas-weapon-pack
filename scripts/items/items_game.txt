@@ -13364,7 +13364,7 @@
 				"damage penalty"
 				{
 					"attribute_class"	"mult_dmg"
-					"value" "0.75"
+					"value" "0.80"
 				}
 				"clip size bonus"
 				{
@@ -20529,7 +20529,7 @@
 				"fire rate bonus"
 				{
 					"attribute_class"	"mult_postfiredelay"
-					"value"	"0.75"
+					"value"	"0.80"
 				}
 				"heal on hit for slowfire"
 				{
@@ -45043,7 +45043,7 @@
 		}
 		"7400"
 		{
-			"name"	"Butter Frying Pan"
+			"name"	"Butter Pan"
 			"item_class"	"saxxy"
 			"prefab"	"weapon_melee_allclass"
 			"capabilities"
@@ -45058,9 +45058,9 @@
 			}
 			"item_logname"	"butter_fryingpan"
 			"item_iconname"	"golden_fryingpan"
-			"show_in_armory"	"1"
+			"show_in_armory"	"0	"
 			"item_type_name"	"#TF_Weapon_GoldFryingPan"
-			"item_name"	"Butter Frying Pan"
+			"item_name"	"Butter Pan"
 			"item_slot"	"melee"
 			"image_inventory"	"backpack/weapons/c_models/c_frying_pan/c_frying_pan_gold"
 			"image_inventory_size_w"		"128"
@@ -45102,17 +45102,12 @@
 				"fire rate bonus"
 				{
 					"attribute_class"	"mult_postfiredelay"
-					"value"	"-1"
-				}
-				"crit mod disabled"
-				{
-					"attribute_class"	"mult_crit_chance"
-					"value"	"0"
+					"value"	"0.40"
 				}
 				"damage penalty"
 				{
 					"attribute_class"	"mult_dmg"
-					"value" "0.04"
+					"value" "0.1"
 				}
 			}
 			"visuals"
