@@ -16357,7 +16357,7 @@
 		{
 			"name"	"The Red-Tape Recorder"
 			"prefab"		"weapon_red_tape_recorder"
-			"show_in_armory"	"0"
+			"show_in_armory"	"1"
 		}
 		"811"
 		{
@@ -41309,7 +41309,7 @@
 			"show_in_armory"	"1"
 			"item_type_name"	"#TF_Weapon_Spy_Sapper"
 			"item_name"	"#TF_Weapon_Ap_Sap"
-			"item_description"	"Yes, I know its cum white!"
+			"item_description"	"Aperture science"
 			"item_slot"	"building"
 			"item_quality"	"unique"
 			"item_logname"	"psapper"
