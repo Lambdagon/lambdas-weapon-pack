@@ -2661,7 +2661,7 @@
 				"can_deal_taunt_damage"		"1"
 			}
 			"base_item_name"	"The Eyelander"
-			"item_name"	"#TF_Unique_Achievement_Sword"
+			"item_name"	"Eyedagger"
 			"item_description"	"#TF_Unique_Achievement_Sword_Desc"
 			"propername"	"1"
 			"image_inventory"	"backpack/weapons/c_models/c_claymore/c_claymore"
@@ -3612,7 +3612,7 @@
 				"heal on hit for slowfire"
 				{
 					"attribute_class"	"add_onhit_addhealth"
-					"value"	"20.0"
+					"value"	"30.0"
 				}
 				"lunchbox adds minicrits"
 				{
@@ -4152,6 +4152,78 @@
 			"used_by_classes"
 			{
 				"sniper"	"1"
+			}
+			"static_attrs"
+			{
+				"min_viewmodel_offset"		"10 0 -9"
+			}
+			"attributes"
+			{
+				"jarate description"
+				{
+					"attribute_class"	"desc_jarate_description"
+					"value"	"1"
+				}
+				"kill eater score type"
+				{
+					"attribute_class"	"kill_eater_score_type"
+					"value" 	"4"									
+				}
+				"extinguish reduces cooldown"
+				{
+					"attribute_class" "extinguish_reduces_cooldown"
+					"value" "0.8"
+				}
+				"allowed in medieval mode"
+				{
+					"attribute_class"	"allowed_in_medieval_mode"
+					"value"	"1"
+				}
+			}
+			"visuals"
+			{
+				"animation_replacement"
+				{
+					"ACT_SECONDARY_VM_INSPECT_START"	"ACT_ITEM1_VM_INSPECT_START"
+					"ACT_SECONDARY_VM_INSPECT_IDLE"		"ACT_ITEM1_VM_INSPECT_IDLE"
+					"ACT_SECONDARY_VM_INSPECT_END"		"ACT_ITEM1_VM_INSPECT_END"
+				}
+			}
+			"xifier_class_remap"	"jarate"
+			"mouse_pressed_sound"	"ui/item_bottle_pickup.wav"
+			"drop_sound"		"ui/item_bottle_drop.wav"
+		}
+
+		"weapon_jarate_scout"
+		{
+			"enabled"	"1"
+			"item_class"	"tf_weapon_jar"
+			"craft_class"	"weapon"
+			"craft_material_type"	"weapon"
+			"capabilities"
+			{
+				"nameable"		"1"
+			}
+			"tags"
+			{
+				"can_extinguish"			"1"
+			}
+			"base_item_name"	"Jarate"
+			"item_type_name"	"#TF_Weapon_Jar"
+			"item_name"	"#TF_Unique_Achievement_Jar"
+			"item_slot"	"secondary"
+			"item_quality"	"unique"
+			"anim_slot"	"item1"
+			"min_ilevel"	"5"
+			"max_ilevel"	"5"
+			"attach_to_hands"	"1"
+			"image_inventory"	"backpack/weapons/c_models/urinejar"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"82"
+			"inspect_panel_dist" 			"22"
+			"model_player"	"models/weapons/c_models/urinejar.mdl"
+			"used_by_classes"
+			{
 				"scout"	"1"
 			}
 			"static_attrs"
@@ -4570,24 +4642,54 @@
 			}
 			"attributes"
 			{
-				"sniper penetrate players when charged"
+				"sniper penetrate players when charged HIDDEN"
 				{
 					"attribute_class"	"sniper_penetrate_players_when_charged"
 					"value"	"1"
 				}
-				"sniper only fire zoomed"
+				"projectile penetration heavy"
 				{
-					"attribute_class"	"sniper_only_fire_zoomed"
+					"attribute_class"	"shot_penetrate_all_players"
 					"value"	"1"
 				}
-				"sniper full charge damage bonus"
+				"projectile penetration"
 				{
-					"attribute_class"	"sniper_full_charge_damage_bonus"
-					"value"				"1.15"
- 				}
+					"attribute_class"	"projectile_penetration"
+					"value"	"1"
+				}
+				"shot penetrate all players"
+				{
+					"attribute_class"	"shot_penetrate_all_players"
+					"value"	"1"
+				}
+				"energy weapon penetration"
+				{
+					"attribute_class"	"energy_weapon_penetration"
+					"value"	"1"
+				}
+				"fire rate bonus"
+				{
+					"attribute_class"	"mult_postfiredelay"
+					"value"	"0.50"
+				}
+				"damage bonus"
+				{
+					"attribute_class"	"mult_dmg"
+					"value"	"1.15"
+				}
  				"sniper fires tracer"
  				{
 					"attribute_class"	"sniper_fires_tracer"
+					"value"	"1"
+				}
+				"clip size penalty"
+				{
+					"attribute_class"	"mult_clipsize"
+					"value" "0.66"
+				}
+				"sniper only fire zoomed HIDDEN"
+				{
+					"attribute_class"	"sniper_only_fire_zoomed"
 					"value"	"1"
 				}
 				"lunchbox adds minicrits"
@@ -6253,14 +6355,24 @@
 					"attribute_class"	"mult_maxammo_secondary"
 					"value"		"0.5"
 				}
-				"self dmg push force decreased"
-				{
-					"attribute_class"	"mult_dmgself_push_force"
-					"value"		"0.65"
-				}
 				"minicrit vs burning player"
 				{
 					"attribute_class"	"or_minicrit_vs_playercond_burning"
+					"value"	"1"
+				}
+				"fire rate bonus"
+				{
+					"attribute_class"	"mult_postfiredelay"
+					"value"	"0.50"
+				}
+				"slow enemy on hit"
+				{
+					"attribute_class"	"mult_onhit_enemyspeed"
+					"value"	"0.25"
+				}
+				"scattergun has knockback"
+				{
+					"attribute_class"	"set_scattergun_has_knockback"
 					"value"	"1"
 				}
 				"damage penalty"
@@ -6268,10 +6380,10 @@
 					"attribute_class"	"mult_dmg"
 					"value"	"0.65"
 				}
-				"mod flaregun fires pellets with knockback"
+				"self dmg push force decreased"
 				{
-					"attribute_class"	"set_weapon_mode"
-					"value"	"3"
+					"attribute_class"	"mult_dmgself_push_force"
+					"value"		"0.65"
 				}
 				"special taunt"
 				{
@@ -11754,6 +11866,97 @@
 				"sound_burst"	"Weapon_BoxingGloves.MissCrit"
 			}
 		}
+		"240"
+		{
+			"name"	"Worms Gear"
+			"loadondemand"	"1"
+			"prefab"		"base_hat"
+			"hidden"	"0"
+			"item_class"	"tf_wearable"
+			"capabilities"
+			{
+				"nameable"		"1"
+			}
+			"show_in_armory"	"1"
+			"item_type_name" "#TF_Wearable_Helmet"
+			"item_name"	"#TF_Worms_Gear"
+			"item_description"	"#TF_Worms_Gear_Desc"
+			"show_in_armory"	"1"
+			"item_slot"	"head"
+			"equip_regions"
+			{
+				"hat"	"1"
+				"grenades"	"1"
+			}
+			"item_quality"	"unique"
+			"image_inventory"	"backpack/player/items/soldier/worms_gear"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"82"
+			"model_player"	"models/player/items/soldier/worms_gear.mdl"
+			"drop_type"	"none"
+			"min_ilevel"	"10"
+			"max_ilevel"	"10"
+			"used_by_classes"
+			{
+				"soldier"	"1"
+			}
+			"visuals"
+			{
+				"player_bodygroups"
+				{
+					"hat"			"1"
+					"grenades"		"1"
+				}
+			}
+			"static_attrs"
+			{
+				"limited quantity item"		"1"
+			}
+			"mouse_pressed_sound"	"ui/item_helmet_pickup.wav"
+			"drop_sound"		"ui/item_helmet_drop.wav"
+		}
+		"266"
+		{
+			"name"	"The Horseless Headless Horseman's Headtaker"
+			"prefab"	"weapon_eyelander"
+			"capabilities"
+			{
+				"nameable"		"1"
+			}
+			"tags"
+			{
+				"can_deal_damage"			"1"
+				"can_be_equipped_by_soldier_or_demo"	"1"
+				"can_deal_critical_damage"	"1"
+				"can_deal_taunt_damage"		"1"
+			}
+			"item_type_name"	"#TF_Weapon_Axe"
+			"item_name"	"#TF_HalloweenBoss_Axe"
+			"item_description"	"#TF_HalloweenBoss_Axe_Desc"
+			"show_in_armory"	"1"
+			"item_quality"	"rarity4"
+			"item_logname"	"headtaker"
+			"item_iconname"	"headtaker"
+			"propername"	"1"
+			"image_inventory"	"backpack/weapons/c_models/c_headtaker/c_headtaker"
+			"model_player"	"models/weapons/c_models/c_headtaker/c_headtaker.mdl"
+			"used_by_classes"
+			{
+				"demoman"	"1"
+			}
+			"visuals"
+			{
+				"sound_melee_miss"	"Weapon_Sword.Swing"
+				"sound_melee_hit"	"Halloween.HeadlessBossAxeHitFlesh"
+				"sound_melee_hit_world"	"Halloween.HeadlessBossAxeHitWorld"
+				"sound_burst"		"Weapon_Sword.SwingCrit"
+				"sound_special1"	"Sword.Hit"
+				"sound_special2"	"Sword.Idle"
+			}
+			"mouse_pressed_sound"	"ui/item_knife_large_pickup.wav"
+			"drop_sound"		"ui/item_metal_weapon_drop.wav"
+			"xifier_class_remap"	"Horseman's Headtaker"
+		}
 		"264"
 		{
 			"name"	"Frying Pan"
@@ -11891,6 +12094,45 @@
 			{
 				"sound_single_shot"	"Weapon_Sticky_Jumper.Single"
 				"sound_special1"		"Weapon_Sticky_Jumper.Explode"
+			}
+		}
+		"297"
+		{
+			"name"	"TTG Watch"
+			"item_class"	"tf_weapon_invis"
+			"prefab"	"weapon_invis"
+			"capabilities"
+			{
+				"nameable"		"1"
+			}
+			"show_in_armory"	"1"	
+			"item_type_name"	"#TF_Weapon_Watch"
+			"item_name"	"#TF_TTG_Watch"
+			"item_slot"	"pda2"
+			"anim_slot"	"FORCE_NOT_USED"
+			"item_quality"	"unique"
+			"propername"	"1"
+			"min_ilevel"	"5"
+			"max_ilevel"	"5"
+			"craft_class"	""
+			"craft_material_type"		""
+			"image_inventory"	"backpack/weapons/c_models/c_ttg_watch/c_ttg_watch"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"82"
+			"model_player"	"models/weapons/v_models/v_ttg_watch_spy.mdl"
+			"used_by_classes"
+			{
+				"spy"	"1"
+			}
+			"mouse_pressed_sound"	"ui/item_watch_pickup.wav"
+			"drop_sound"		"ui/item_watch_drop.wav"
+			"attributes"
+			{
+				"cannot trade"
+				{
+					"attribute_class"	"cannot_trade"
+					"value"				"1"
+				}
 			}
 		}
 		"304"
@@ -12475,7 +12717,7 @@
 				"can_deal_posthumous_damage"	"1"
 				"can_deal_critical_damage"	"1"
 			}
-			"show_in_armory"	"0"
+			"show_in_armory"	"1"
 			"item_type_name"	"#TF_Weapon_RiftFireAxe"
 			"item_name"	"#TF_Unique_RiftFireAxe"
 			"item_description"	"#TF_RiftFireAxe_Desc"
@@ -12568,12 +12810,12 @@
 				"damage penalty"
 				{
 					"attribute_class"	"mult_dmg"
-					"value"	"0.75"
+					"value"	"0.35"
 				}
 				"dmg taken from fire reduced on active"
 				{
 					"attribute_class"	"mult_dmgtaken_from_fire_active"
-					"value"			"0.75"
+					"value"			"0.50"
 				}
 			}
 		}
@@ -13184,7 +13426,7 @@
 			}
 			"item_logname"	"proto_syringe"
 			"item_iconname"	"proto_syringe"
-			"show_in_armory"	"0"
+			"show_in_armory"	"1"
 			"item_type_name"	"#TF_Weapon_SyringeGun_Prototype"
 			"item_name"		"#TF_Overdose"
 			"item_description"	"#TF_Overdose_Desc"
@@ -13212,6 +13454,11 @@
 				{
 					"attribute_class"	"mult_player_movespeed_resource_level"
 					"value"	"1.2"
+				}
+				"move speed bonus"
+				{
+					"attribute_class"	"mult_player_movespeed"
+					"value" "1.15"
 				}
 				"lunchbox adds minicrits"
 				{
@@ -13776,15 +14023,15 @@
 				"can_deal_critical_damage"	"1"
 				"can_deal_long_distance_damage"	"1"
 			}
-			"show_in_armory"	"0"
+			"show_in_armory"	"1"
 			"item_type_name"	"#TF_Weapon_IndivisibleParticleSmasher"
-			"item_description"	"#TF_RighteousBison_Desc"
+			"item_description"	"Fires a Energy Beam that explodes on impact"
 			"item_name"	"#TF_RighteousBison"
 			"item_slot"	"secondary"
 			"anim_slot" "secondary2"
 			"item_quality"	"unique"
 			"item_logname"	"righteous_bison"
-			"item_iconname"	"righteous_bison"
+			"item_iconname"	"righteous_bison_newicon"
 			"propername"	"1"
 			"min_ilevel"	"30"
 			"max_ilevel"	"30"
@@ -13804,25 +14051,60 @@
 			}
 			"attributes"
 			{
-				"energy weapon no ammo"
+				"energy weapon no ammo DISPLAY ONLY"
 				{
 					"attribute_class"	"energy_weapon_no_ammo"
 					"value" "1"
 				}
-				"energy weapon penetration"
+				"damage bonus HIDDEN"
+				{
+					"attribute_class"	"mult_dmg"
+					"value"	"13"
+				}
+				"energy weapon penetration HIDDEN"
 				{
 					"attribute_class"	"energy_weapon_penetration"
 					"value"	"1"
 				}
-				"energy weapon no hurt building"
+				"clip size bonus"
 				{
-					"attribute_class"	"energy_weapon_no_hurt_building"
-					"value" "1"
+					"attribute_class"	"mult_clipsize"
+					"value"	"9999.0"
+				}
+				"mod max primary clip override"
+				{
+					"attribute_class"	"mod_max_primary_clip_override"
+					"value"	"9999"
 				}
 				"energy weapon no deflect"
 				{
 					"attribute_class"	"energy_weapon_no_deflect"
 					"value" "1"
+				}	
+				"energy weapon no hurt building"
+				{
+					"attribute_class"	"energy_weapon_no_hurt_building"
+					"value" "1"
+				}
+				"Blast radius decreased HIDDEN"
+				{
+					"attribute_class"	"mult_explosion_radius"
+					"value"	"0.15"
+				}
+				"fire rate penalty"
+				{
+					"attribute_class"	"mult_postfiredelay"
+					"value"	"1.35"
+				}
+				"override projectile type"
+				{
+				"attribute_class"    "override_projectile_type"
+				"value"                "2"
+				}
+				"custom projectile model"
+				{
+				"attribute_class"    "custom_projectile_model"
+				"value"                "models/weapons/c_models/c_crusaders_crossbow/c_crusaders_crossbow_xmas_proj.mdl"
 				}
 			}
 			"visuals"
@@ -14414,6 +14696,64 @@
 			"prefab"	"weapon_machina"
 			"item_name"	"#TF_DEX_Rifle"
 			"item_description"	"#TF_DEX_Rifle_Desc"
+			"attributes"
+			{
+				"sniper penetrate players when charged HIDDEN"
+				{
+					"attribute_class"	"sniper_penetrate_players_when_charged"
+					"value"	"1"
+				}
+				"projectile penetration heavy"
+				{
+					"attribute_class"	"shot_penetrate_all_players"
+					"value"	"1"
+				}
+				"projectile penetration"
+				{
+					"attribute_class"	"projectile_penetration"
+					"value"	"1"
+				}
+				"shot penetrate all players"
+				{
+					"attribute_class"	"shot_penetrate_all_players"
+					"value"	"1"
+				}
+				"energy weapon penetration"
+				{
+					"attribute_class"	"energy_weapon_penetration"
+					"value"	"1"
+				}
+				"fire rate bonus"
+				{
+					"attribute_class"	"mult_postfiredelay"
+					"value"	"0.50"
+				}
+				"damage bonus"
+				{
+					"attribute_class"	"mult_dmg"
+					"value"	"1.15"
+				}
+ 				"sniper fires tracer"
+ 				{
+					"attribute_class"	"sniper_fires_tracer"
+					"value"	"1"
+				}
+				"clip size penalty"
+				{
+					"attribute_class"	"mult_clipsize"
+					"value" "0.66"
+				}
+				"sniper only fire zoomed HIDDEN"
+				{
+					"attribute_class"	"sniper_only_fire_zoomed"
+					"value"	"1"
+				}
+				"lunchbox adds minicrits"
+				{
+					"attribute_class"	"set_weapon_mode"
+					"value"	"2"
+				}
+			}
 			"visuals"
 			{
 				"sound_single_shot"	"Weapon_SniperRailgun_Large.Single"
@@ -14475,7 +14815,7 @@
 				"damage bonus bullet vs sentry target"
 				{
 					"attribute_class"	"mult_dmg_bullet_vs_sentry_target"
-					"value"	"1.1"
+					"value"	"1.5"
 				}
 				"mod ammo per shot"
 				{
@@ -16742,6 +17082,111 @@
 				}
 			}
 		}
+		"947"
+		{
+			"name"	"The Quackenbirdt"
+			"first_sale_date"	"2012/11/28"
+			"item_class"	"tf_weapon_invis"
+			"prefab"	"weapon_invis"
+			"craft_class"	"weapon"
+			"craft_material_type"	"weapon"
+			"capabilities"
+			{
+				"nameable"			"1"
+				"can_craft_count"	"1"
+			}
+			"show_in_armory"	"1"
+			"min_ilevel"	"1"
+			"max_ilevel"	"100"
+			"item_type_name"	"#TF_Weapon_Watch"
+			"item_name"	"#TF_HM_Watch"
+			"item_description"	"#TF_HM_Watch_Desc"
+			"item_slot"	"pda2"
+			"anim_slot"	"FORCE_NOT_USED"
+			"item_quality"	"unique"
+			"propername"	"1"
+			"image_inventory"	"backpack/workshop_partner/weapons/v_models/v_hm_watch/v_hm_watch"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"82"
+			"model_player"	"models/workshop_partner/weapons/v_models/v_hm_watch/v_hm_watch.mdl"
+			"used_by_classes"
+			{
+				"spy"	"1"
+			}
+			"static_attrs"
+			{
+				"min_viewmodel_offset"					"8 0 -6"	
+			}
+			"mouse_pressed_sound"	"ui/item_watch_pickup.wav"
+			"drop_sound"		"ui/item_watch_drop.wav"
+		}
+		"948"
+		{
+			"name"	"The Deadliest Duckling"
+			"first_sale_date"	"2012/11/28"
+			"prefab"	"misc"
+			"capabilities"
+			{
+				"paintable"			"1"
+				"can_craft_count"	"1"
+			}
+			"item_type_name"	"#TF_Wearable_Duck"
+			"item_name"	"#TF_HM_Duck"
+			"item_description"	"#TF_HM_Duck_Desc"
+			"item_slot"	"misc2"
+			"equip_regions"
+			{
+				"sniper_pocket"		"1"
+				"engineer_pocket"	"1"
+				"grenades"			"1"
+			}
+			"propername"	"1"
+			"image_inventory"	"backpack/workshop_partner/player/items/all_class/hm_duck/hm_duck_demo"
+			"model_player_per_class"
+			{
+				"basename"	"models/workshop_partner/player/items/all_class/hm_duck/hm_duck_%s.mdl"
+			}
+			"used_by_classes"
+			{
+				"sniper"	"1"
+				"soldier"	"1"
+				"demoman"	"1"
+				"engineer" "1"
+				"pyro" "1"
+			}
+			"attributes"
+			{
+				"counts as assister is some kind of pet this update is going to be awesome"
+				{
+					"attribute_class"	"counts_as_assister"
+					"value"				"1"
+				}
+			}
+			"visuals"
+			{
+				"player_bodygroups"
+				{
+					"grenades"		"1"
+				}
+				"styles"
+				{
+					"0"
+					{
+						"skin_red"	"2"
+						"skin_blu"	"3"
+						"name"		"#TF_HM_Duck_Style0"
+					}
+					"1"
+					{
+						"skin_red"	"0"
+						"skin_blu"	"1"
+						"name"		"#TF_HM_Duck_Style1"
+					}
+				}
+			}
+			"mouse_pressed_sound" 	"ui/item_hat_pickup.wav"
+			"drop_sound" 		"ui/item_hat_drop.wav"
+		}
 		"995"
 		{
 			"name"	"Pet Reindoonicorn"
@@ -17255,6 +17700,82 @@
 			"mouse_pressed_sound"	"ui/item_wood_pole_pickup.wav"
 			"drop_sound"		"ui/item_wood_pole_drop.wav"
 		}
+		"1100"
+		{
+			"name"		"The Bread Bite"
+			"prefab"	"valve weapon_gru"
+			"first_sale_date"		"2014/06/18"
+			"propername"	"1"
+			"craft_class"	""
+			"capabilities"
+			{
+				"nameable"		"1"
+			}
+			"tags"
+			{
+				"can_deal_damage"			"1"
+				"can_deal_critical_damage"	"1"
+			}
+			"item_class"	"tf_weapon_fists"
+			"item_name"			"#TF_Weapon_BreadBite"
+			"item_description"	"#TF_Weapon_BreadBite_Desc"
+			"show_in_armory"	"1"
+			"item_slot"	"melee"
+			"item_quality"	"unique"
+			"item_logname"	"bread_bite"
+			"item_iconname"	"bread_bite"
+			"min_ilevel"	"1"
+			"max_ilevel"	"100"
+			"image_inventory"	"backpack/weapons/c_models/c_breadmonster_gloves/c_breadmonster_gloves"
+			"model_player"		"models/weapons/c_models/c_breadmonster_gloves/c_breadmonster_gloves.mdl"
+			"attach_to_hands"	"1"
+			"used_by_classes"
+			{
+				"heavy"	"1"
+			}
+			"static_attrs"
+			{
+				"min_viewmodel_offset"		"15 0 -12"
+			}
+			"hide_bodygroups_deployed_only"	"1"
+			"attributes"
+			{
+				"breadgloves properties"
+				{
+					"attribute_class"	"breadgloves_properties"
+					"value"				"1"
+				}
+				"allowed in medieval mode"
+				{
+					"attribute_class"	"allowed_in_medieval_mode"
+					"value"	"1"
+				}
+			}
+			"visuals"
+			{
+				"player_bodygroups"
+				{
+					"hands"			"1"
+				}
+				"animation_replacement"
+				{
+					"ACT_VM_HITLEFT"		"ACT_BREADGLOVES_VM_HITLEFT"
+					"ACT_VM_HITRIGHT"		"ACT_BREADGLOVES_VM_HITRIGHT"
+					"ACT_VM_SWINGHARD"		"ACT_BREADGLOVES_VM_SWINGHARD"
+					"ACT_VM_IDLE"			"ACT_BREADGLOVES_VM_IDLE"
+					"ACT_VM_DRAW"			"ACT_BREADGLOVES_VM_DRAW"
+					"ACT_MELEE_VM_INSPECT_START"	"ACT_MELEE_ALT2_VM_INSPECT_START"
+					"ACT_MELEE_VM_INSPECT_IDLE"		"ACT_MELEE_ALT2_VM_INSPECT_IDLE"
+					"ACT_MELEE_VM_INSPECT_END"		"ACT_MELEE_ALT2_VM_INSPECT_END"
+				}
+				"sound_deploy"	"Weapon_bm_gloves.draw"
+			}
+			"static_attrs"
+			{
+				"limited quantity item"		"1"
+			}
+			"xifier_class_remap"	""
+		}
 		"1101"
 		{
 			"name"	"The B.A.S.E Jumper"
@@ -17448,6 +17969,64 @@
 					{
 						"model"	"models/workshop/weapons/c_models/c_atom_launcher/c_atom_launcher_festivizer.mdl"
 					}
+				}
+			}
+		}
+		"1105"	
+		{
+			"name"	"The Self-Aware Beauty Mark"
+			"prefab"	"valve weapon_jarate"
+			"craft_class" ""
+			"first_sale_date"		"2014/06/18"
+			"show_in_armory"	"1"
+			"propername" "1"
+			"item_name"	"#TF_Weapon_SelfAwareBeautyMark"
+			"item_description"	"#TF_Weapon_SelfAwareBeautyMark_Desc"
+			"image_inventory"	"backpack/weapons/c_models/c_breadmonster/c_breadmonster"
+			"model_player"		"models/weapons/c_models/c_breadmonster/c_breadmonster.mdl"
+			"show_in_armory"	"1"
+			"item_slot"			"secondary"
+			"anim_slot" "MELEE_ALLCLASS"
+			"attach_to_hands"	"1"
+			"min_ilevel"	"1"
+			"max_ilevel"	"100"
+			"inspect_panel_dist" 			"35"
+			"used_by_classes"
+			{
+				"sniper"	"1"
+			}
+			"attributes"
+			{
+				"override projectile type"
+				{
+					"attribute_class"	"override_projectile_type"
+					"value"				"24" 
+				}
+			}
+			"static_attrs"
+			{
+				"limited quantity item"		"1"
+				"min_viewmodel_offset"		"10 0 -10"				
+			}
+			"visuals"
+			{
+				"animation_replacement"
+				{
+					"ACT_MP_ATTACK_STAND_MELEE_ALLCLASS"	"ACT_MP_THROW"
+					"ACT_VM_DRAW" 							"ACT_BREADMONSTER_VM_DRAW"
+					"ACT_VM_IDLE" 							"ACT_BREADMONSTER_VM_IDLE"
+					"ACT_VM_PRIMARYATTACK" 					"ACT_BREADMONSTER_VM_PRIMARYATTACK"
+					"ACT_SECONDARY_VM_INSPECT_START"		"ACT_BREADMONSTER_VM_INSPECT_START"
+					"ACT_SECONDARY_VM_INSPECT_IDLE"			"ACT_BREADMONSTER_VM_INSPECT_IDLE"
+					"ACT_SECONDARY_VM_INSPECT_END"			"ACT_BREADMONSTER_VM_INSPECT_END"
+				}
+				"player_poseparam"
+				{
+					"r_hand_grip"		"13"
+				}
+				"item_poseparam"
+				{
+					"r_hand_grip"		"13"
 				}
 			}
 		}
@@ -18438,6 +19017,64 @@
 					"demoman"	"models/player/items/taunts/beer_crate/beer_crate.mdl"
 				}
 			}
+		}
+		"1121"	
+		{
+			"name"	"Mutated Milk"
+			"prefab"	"weapon_madmilk"
+			"first_sale_date"		"2014/06/18"
+			"craft_class" ""
+			"item_name"	"#TF_Weapon_MutatedMilk"
+			"item_description"	"#TF_Weapon_MutatedMilk_Desc"
+			"image_inventory"	"backpack/weapons/c_models/c_breadmonster/c_breadmonster_milk"
+			"model_player"		"models/weapons/c_models/c_breadmonster/c_breadmonster_milk.mdl"
+			"show_in_armory"	"1"
+			"item_slot"			"secondary"
+			"min_ilevel"	"1"
+			"max_ilevel"	"99"
+			"anim_slot" "MELEE_ALLCLASS"
+			"attach_to_hands"	"1"
+			"inspect_panel_dist" 			"32"
+			"used_by_classes"
+			{
+				"scout"	"1"
+			}
+			"static_attrs"
+			{
+				"limited quantity item"		"1"
+				"min_viewmodel_offset"					"10 4 -10"
+			}
+			"attributes"
+			{
+				"override projectile type"
+				{
+					"attribute_class"	"override_projectile_type"
+					"value"				"25" 
+				}
+			}
+			"visuals"
+			{
+				"animation_replacement"
+				{
+					"ACT_MP_ATTACK_STAND_MELEE_ALLCLASS"	"ACT_MP_THROW"
+					"ACT_VM_DRAW" 							"ACT_BREADMONSTER_VM_DRAW"
+					"ACT_VM_IDLE" 							"ACT_BREADMONSTER_VM_IDLE"
+					"ACT_VM_PRIMARYATTACK" 					"ACT_BREADMONSTER_VM_PRIMARYATTACK"
+					"ACT_SECONDARY_VM_INSPECT_START"		"ACT_BREADMONSTER_VM_INSPECT_START"
+					"ACT_SECONDARY_VM_INSPECT_IDLE"			"ACT_BREADMONSTER_VM_INSPECT_IDLE"
+					"ACT_SECONDARY_VM_INSPECT_END"			"ACT_BREADMONSTER_VM_INSPECT_END"
+				}
+				"player_poseparam"
+				{
+					"r_hand_grip"		"13"
+				}
+				"item_poseparam"
+				{
+					"r_hand_grip"		"13"
+				}
+				"skin"	"1"
+			}
+			"set_item_remap"	"Mad Milk"
 		}
 		"1150"
 		{
@@ -22176,7 +22813,7 @@
 			"prefab"	"weapon_jarate"
 			"propername"	"0"
 			"craft_class"	""
-			"show_in_armory" "0"
+			"show_in_armory" "1"
 			"item_name"			"Festive Jarate"
 			"min_ilevel"	"1"
 			"max_ilevel"	"99"
@@ -23460,7 +24097,7 @@
 			}
 			"show_in_armory"	"1"
 			"item_type_name"	"#TF_Weapon_SniperRifle"
-			"item_name"	"Sex"
+			"item_name"	"Machina"
 			"item_description"	"pew pew"
 			"item_slot"	"primary"
 			"item_quality"	"unique"
@@ -23484,25 +24121,45 @@
 			}
 			"attributes"
 			{
-				"sniper penetrate players when charged"
+				"sniper penetrate players when charged HIDDEN"
 				{
 					"attribute_class"	"sniper_penetrate_players_when_charged"
 					"value"	"1"
 				}
-				"sniper only fire zoomed"
+				"fire rate bonus"
 				{
-					"attribute_class"	"sniper_only_fire_zoomed"
-					"value"	"1"
+					"attribute_class"	"mult_postfiredelay"
+					"value"	"0.50"
 				}
-				"sniper full charge damage bonus"
+				"damage bonus"
 				{
-					"attribute_class"	"sniper_full_charge_damage_bonus"
-					"value"				"1.15"
- 				}
+					"attribute_class"	"mult_dmg"
+					"value"	"1.15"
+				}
  				"sniper fires tracer"
  				{
 					"attribute_class"	"sniper_fires_tracer"
 					"value"	"1"
+				}
+				"deploy time increased"
+				{
+				"attribute_class"	"mult_deploy_time"
+				"value"		"1.3"
+				}
+				"single wep deploy time increased"
+				{
+					"attribute_class"	"mult_single_wep_deploy_time"
+					"value"	"1.5"
+				}
+				"sniper only fire zoomed HIDDEN"
+				{
+					"attribute_class"	"sniper_only_fire_zoomed"
+					"value"	"1"
+				}
+				"lunchbox adds minicrits"
+				{
+					"attribute_class"	"set_weapon_mode"
+					"value"	"2"
 				}
 				"lunchbox adds minicrits"
 				{
@@ -24697,13 +25354,9 @@
 			{
 				"scout"	"1"
 				"sniper"	"1"
-				"soldier"	"1"
 				"demoman"	"1"
 				"medic"	"1"
-				"heavy"	"1"
 				"spy" "1"
-				"engineer" "1"
-				"pyro" "1"
 			}
 			"mouse_pressed_sound"	"ui/item_default_pickup.wav"
 			"drop_sound"		"ui/item_default_drop.wav"
@@ -25127,13 +25780,9 @@
 			"used_by_classes"
 			{
 				"scout"	"1"
-				"sniper"	"1"
-				"soldier"	"1"
 				"demoman"	"1"
 				"medic"	"1"
 				"spy" "1"
-				"engineer" "1"
-				"pyro" "1"
 			}
 			"mouse_pressed_sound"	"sound\npc\headcrab\idle1.wav"
 			"drop_sound"		"ui/item_default_drop.wav"
@@ -25706,7 +26355,6 @@
 			"model_player_per_class"
 			{
 				"scout"	"models/player/items/all_class/yeti_park_cap_scout.mdl"
-				"soldier"	"models/player/items/all_class/yeti_park_cap_soldier.mdl"
 				"pyro"	"models/player/items/all_class/yeti_park_cap_pyro.mdl"
 				"demoman"	"models/player/items/all_class/yeti_park_cap_demo.mdl"
 				"heavy"	"models/player/items/all_class/yeti_park_cap_heavy.mdl"
@@ -30269,7 +30917,7 @@
 				"move speed bonus"
 				{
 					"attribute_class"	"mult_player_movespeed"
-					"value" "1.35"
+					"value" "1.25"
 				}
 				"bullets per shot bonus"
 				{
@@ -38938,7 +39586,7 @@
 				"can_craft_count"		"1"
 				"can_craft_if_purchased"	"1"
 			}
-			"show_in_armory"	"1"
+			"show_in_armory"	"0"
 			"item_type_name" "#TF_Wearable_Headgear"
 			"item_name"	"#TF_SteelJaw"
 			"item_description"	"#TF_SteelJaw_Desc"
@@ -40532,7 +41180,7 @@
 				"nameable"		"1"
 				"can_craft_if_purchased"	"1"
 			}
-			"show_in_armory"	"1"
+			"show_in_armory"	"0"
 			"item_type_name" "#TF_Wearable_Hair"
 			"item_name"	"#TF_HeavyTopknot"
 			"item_description"	"#TF_HeavyTopknot_Desc"
@@ -42096,7 +42744,6 @@
 			"tags"
 			{
 				"can_deal_damage"			"1"
-				"can_deal_critical_damage"	"1"
 				"can_headshot"				"1"
 				"can_deal_mvm_penetration_damage"	"1"
 				"can_deal_long_distance_damage"	"1"
@@ -42140,25 +42787,25 @@
 					"attribute_class"	"bodyshot_damage_modify"
 					"value" "0.80"
 				}
-				"rage on kill"
+				"aiming knockback resistance"
 				{
-					"attribute_class"	"rage_on_kill"
-					"value" "35"
+					"attribute_class"	"mult_aiming_knockback_resistance"
+					"value"	"0.75"
 				}
-				"rage on assists"
+				"aiming no flinch"
 				{
-					"attribute_class"	"rage_on_assists"
-					"value" "15"
+					"attribute_class"	"aiming_no_flinch"
+					"value" "1"
 				}
-				"mod soldier buff type"
+				"heal on kill"
 				{
-					"attribute_class"	"set_buff_type"
-					"value" "6"			
+					"attribute_class"	"heal_on_kill"
+					"value"	"10"
 				}
-				"sniper rage DISPLAY ONLY"
+				"fire rate bonus"
 				{
-					"attribute_class"	"sniper_rage_DISPLAY_ONLY"
-					"value" "0"
+					"attribute_class"	"mult_postfiredelay"
+					"value" "0.85"
 				}
 			}
 			"visuals"
@@ -45120,6 +45767,356 @@
 			}
 			"mouse_pressed_sound"	"ui/item_metal_weapon_pickup.wav"
 			"drop_sound"		"ui/item_metal_weapon_drop.wav"
+		}
+		"7401"
+		{
+			"name"	"The Pomson 6000"
+			"first_sale_date"	"2011/12/15"
+			"item_class"	"tf_weapon_particle_cannon"
+			"craft_class"	"weapon"
+			"craft_material_type"	"weapon"
+			"capabilities"
+			{
+				"nameable"		"1"
+				"can_craft_count"	"1"
+			}
+			"tags"
+			{
+				"can_deal_damage"			"1"
+				"can_deal_posthumous_damage"	"1"
+				"can_deal_critical_damage"	"1"
+				"can_deal_long_distance_damage"	"1"
+			}
+			"item_type_name"	"#TF_Weapon_IndivisibleParticleSmasher"
+			"item_name"	"#TF_Pomson"
+			"item_description"	"#TF_Pomson_Desc"
+			"item_slot"	"primary"
+			"item_logname"	"pomson"
+			"item_iconname"	"pomson"
+			"show_in_armory"	"1"
+			"item_quality"	"unique"
+			"propername"	"1"
+			"min_ilevel"	"10"
+			"max_ilevel"	"10"
+			"attach_to_hands"	"1"
+			"image_inventory"	"backpack/workshop/weapons/c_models/c_drg_pomson/c_drg_pomson"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"82"
+			"inspect_panel_dist" 			"55"
+			"model_player"	"models/workshop/weapons/c_models/c_drg_pomson/c_drg_pomson.mdl"
+			"used_by_classes"
+			{
+				"engineer"	"1"
+			}
+			"static_attrs"
+			{
+				"min_viewmodel_offset"		"10 0 -10"
+			}
+			"attributes"
+			{
+				"energy weapon no ammo"
+				{
+					"attribute_class"	"energy_weapon_no_ammo"
+					"value" "1"
+				}
+				"energy weapon no deflect"
+				{
+					"attribute_class"	"energy_weapon_no_deflect"
+					"value" "1"
+				}
+				"subtract victim medigun charge on hit"
+				{
+					"attribute_class"	"subtract_victim_medigun_charge_onhit"
+					"value" "15"
+				}
+				"subtract victim cloak on hit"
+				{
+					"attribute_class"	"subtract_victim_cloak_on_hit"
+					"value" "25"
+				}
+				"energy weapon no hurt building"
+				{
+					"attribute_class"	"energy_weapon_no_hurt_building"
+					"value" "10"
+				}
+				"Blast radius decreased HIDDEN"
+				{
+					"attribute_class"	"mult_explosion_radius"
+					"value"	"0.15"
+				}
+				"dmg penalty vs players HIDDEN"
+				{
+					"attribute_class"	"mult_dmg_vs_players"
+					"value"	"0.20"
+				}
+			}
+			"visuals"
+			{
+				"sound_single_shot"	"Weapon_Pomson.Single"
+				"sound_burst"		"Weapon_Pomson.SingleCrit"
+				"sound_reload"		"Weapon_Pomson.Reload"
+				"muzzle_flash"		"drg_pomson_muzzleflash"
+
+				"animation_replacement"
+				{
+					"ACT_VM_IDLE"	"ACT_SECONDARY2_VM_IDLE"
+					"ACT_VM_DRAW"	"ACT_SECONDARY2_VM_DRAW"
+					"ACT_VM_PRIMARYATTACK"	"ACT_SECONDARY2_VM_PRIMARYATTACK"
+					"ACT_RELOAD_START"	"ACT_SECONDARY2_RELOAD_START"
+					"ACT_RELOAD_FINISH"	"ACT_SECONDARY2_RELOAD_FINISH"
+					"ACT_VM_RELOAD"	"ACT_SECONDARY2_VM_RELOAD"
+					"ACT_MP_RELOAD_STAND"	"ACT_MP_RELOAD_STAND_SECONDARY2"
+					"ACT_MP_RELOAD_STAND_LOOP"	"ACT_MP_RELOAD_STAND_SECONDARY2_LOOP"
+					"ACT_MP_RELOAD_STAND_END"	"ACT_MP_RELOAD_STAND_SECONDARY2_END"
+					"ACT_MP_RELOAD_CROUCH"	"ACT_MP_RELOAD_CROUCH_SECONDARY2"
+					"ACT_MP_RELOAD_CROUCH_LOOP"	"ACT_MP_RELOAD_CROUCH_SECONDARY2_LOOP"
+					"ACT_MP_RELOAD_CROUCH_END"	"ACT_MP_RELOAD_CROUCH_SECONDARY2_END"
+					"ACT_MP_RELOAD_SWIM"	"ACT_MP_RELOAD_SWIM_SECONDARY2"
+					"ACT_MP_RELOAD_SWIM_LOOP"	"ACT_MP_RELOAD_SWIM_SECONDARY2_LOOP"
+					"ACT_MP_RELOAD_SWIM_END"	"ACT_MP_RELOAD_SWIM_SECONDARY2_END"
+					"ACT_MP_RELOAD_AIRWALK"	"ACT_MP_RELOAD_AIRWALK_SECONDARY2"
+					"ACT_MP_RELOAD_AIRWALK_LOOP"	"ACT_MP_RELOAD_AIRWALK_SECONDARY2_LOOP"
+					"ACT_MP_RELOAD_AIRWALK_END"	"ACT_MP_RELOAD_AIRWALK_SECONDARY2_END"
+					"ACT_PRIMARY_VM_INSPECT_START"	"ACT_SECONDARY_ALT1_VM_INSPECT_START"
+					"ACT_PRIMARY_VM_INSPECT_IDLE"	"ACT_SECONDARY_ALT1_VM_INSPECT_IDLE"
+					"ACT_PRIMARY_VM_INSPECT_END"	"ACT_SECONDARY_ALT1_VM_INSPECT_END"
+				}
+			}
+			"mouse_pressed_sound"	"ui/item_heavy_gun_pickup.wav"
+			"drop_sound"		"ui/item_heavy_gun_drop.wav"
+		}
+		"7402"
+		{
+			"name"	"Jarate"
+			"prefab"	"valve weapon_jarate_scout"
+			"first_sale_date"	"2010/09/29"
+			"show_in_armory"	"1"
+		}
+		"7403"
+		{
+			"name"	"TTG Max Hat"
+			"first_sale_date"	"2010/09/29"
+			"prefab"		"base_hat"
+			"loadondemand"	"1"
+			"hidden"	"0"
+			"item_class"	"tf_wearable"
+			"capabilities"
+			{
+				"nameable"		"1"
+				"paintable"		"1"
+			}
+			"show_in_armory"	"1"
+			"item_type_name" "#TF_Wearable_Hat"
+			"item_name"	"#TF_TTG_MaxsHat"
+			"item_description"	"#TF_TTG_MaxsHat_Desc"
+			"item_slot"	"head"
+			"item_quality"	"unique"
+			"image_inventory"	"backpack/player/items/medic/medic_ttg_max"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"82"
+			"model_player_per_class"
+			{
+				"basename"	"models/player/items/%s/%s_ttg_max.mdl"
+			}
+			"drop_type"	"drop"
+			"used_by_classes"
+			{
+				"scout"	"models/player/items/scout/scout_ttg_max.mdl"
+				"sniper"	"models/player/items/sniper/sniper_ttg_max.mdl"
+				"soldier"	"models/player/items/soldier/soldier_ttg_max.mdl"
+				"demoman"	"models/player/items/demo/demo_ttg_max.mdl"
+				"medic"	"models/player/items/medic/medic_ttg_max.mdl"
+				"heavy"	"models/player/items/heavy/heavy_ttg_max.mdl"
+				"spy" "models/player/items/spy/spy_ttg_max.mdl"
+				"engineer" "models/player/items/engineer/engineer_ttg_max.mdl"
+				"pyro" "models/player/items/pyro/pyro_ttg_max.mdl"
+			}
+			"mouse_pressed_sound"	"ui/item_hat_pickup.wav"
+			"drop_sound"		"ui/item_hat_drop.wav"
+			"visuals"
+			{
+				"player_bodygroups"
+				{
+					"hat"			"1"
+					"headphones"	"1"
+				}
+			}
+			"static_attrs"
+			{
+				"limited quantity item"		"1"
+			}
+		}
+		"7404"
+		{
+			"name"		"The Virtual Viewfinder"
+			"prefab"		"misc"
+			"first_sale_date"		"2013/08/26"
+			"item_type_name"		"#TF_Wearable_Headset"
+			"item_name"		"#TF_jul13_se_headset"
+			"item_description"		"#TF_jul13_se_headset_Desc"
+			"item_slot"	"head"
+			"show_in_armory"	"1"
+			"equip_region"		"glasses"
+			"propername"		"1"
+			"visuals"
+			{
+				"player_bodygroups"
+				{
+					"hat"		"1"
+					"headphones"		"1"
+				}
+			}
+			"image_inventory"		"backpack/workshop/player/items/all_class/jul13_se_headset/jul13_se_headset"
+			"capabilities"
+			{
+				"paintable"		"1"
+				"can_craft_count"		"1"
+			}
+			"model_player_per_class"
+			{
+				"basename"		"models/workshop/player/items/all_class/jul13_se_headset/jul13_se_headset_%s.mdl"
+			}
+			"used_by_classes"
+			{
+				"scout"		"models/workshop/player/items/all_class/jul13_se_headset/jul13_se_headset_scout.mdl"
+				"sniper"		"models/workshop/player/items/all_class/jul13_se_headset/jul13_se_headset_sniper.mdl"
+				"soldier"		"models/workshop/player/items/all_class/jul13_se_headset/jul13_se_headset_soldier.mdl"
+				"demoman"		"models/workshop/player/items/all_class/jul13_se_headset/jul13_se_headset_demo.mdl"
+				"medic"		"models/workshop/player/items/all_class/jul13_se_headset/jul13_se_headset_medic.mdl"
+				"heavy"		"models/workshop/player/items/all_class/jul13_se_headset/jul13_se_headset_heavy.mdl"
+				"pyro"		"models/workshop/player/items/all_class/jul13_se_headset/jul13_se_headset_pyro.mdl"
+				"spy"		"models/workshop/player/items/all_class/jul13_se_headset/jul13_se_headset_spy.mdl"
+				"engineer"		"models/workshop/player/items/all_class/jul13_se_headset/jul13_se_headset_engineer.mdl"
+			}
+			"mouse_pressed_sound"		"ui/item_helmet_pickup.wav"
+			"drop_sound"		"ui/item_helmet_drop.wav"
+		}
+		"7405"
+		{
+			"name"	"The TF2VRH"
+			"prefab"		"base_misc"
+			"first_sale_date"	"2013/03/19"
+			"capabilities"
+			{
+				"nameable"		"1"
+			}
+			"craft_class"	""		
+			"item_class"	"tf_wearable"
+			"show_in_armory"	"1"
+			"item_type_name" "#TF_Wearable_Headset"
+			"item_name"	"#TF_TF2VRH"
+			"item_description"	"#TF_TF2VRH_Desc"
+			"item_slot"	"head"
+			"propername"	"1"
+			"equip_region"	"glasses"
+			"item_slot"	"misc"
+			"item_quality"	"unique"
+			"image_inventory"	"backpack/player/items/all_class/all_class_oculus_demo"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"82"
+			"drop_type"	"none"
+			"model_player_per_class"
+			{
+				"basename"	"models/player/items/all_class/all_class_oculus_%s.mdl"
+			}
+			"model_player_per_class_alt"
+			{
+				"scout"		"models/player/items/all_class/all_class_oculus_scout_on.mdl"
+				"sniper"	"models/player/items/all_class/all_class_oculus_sniper_on.mdl"
+				"soldier"	"models/player/items/all_class/all_class_oculus_soldier_on.mdl"
+				"demoman"	"models/player/items/all_class/all_class_oculus_demo_on.mdl"
+				"medic"		"models/player/items/all_class/all_class_oculus_medic_on.mdl"
+				"heavy"		"models/player/items/all_class/all_class_oculus_heavy_on.mdl"
+				"spy"		"models/player/items/all_class/all_class_oculus_spy_on.mdl"
+				"engineer"	"models/player/items/all_class/all_class_oculus_engineer_on.mdl"
+				"pyro"		"models/player/items/all_class/all_class_oculus_pyro_on.mdl"
+			}
+			"used_by_classes"
+			{
+				"scout"	"1"
+				"sniper"	"1"
+				"soldier"	"1"
+				"demoman"	"1"
+				"medic"	"1"
+				"heavy"	"1"
+				"spy" "1"
+				"engineer" "1"
+				"pyro" "1"
+			}
+			"visuals"
+			{
+				"player_bodygroups"
+				{
+					"hat"			"1"
+				}
+				"styles"
+				{
+					"0"
+					{
+						"model_player_per_class"
+						{
+							"basename"	"models/player/items/all_class/all_class_oculus_%s.mdl"
+						}
+						"model_player_per_class_alt"
+						{
+							"scout"		"models/player/items/all_class/all_class_oculus_scout_on.mdl"
+							"sniper"	"models/player/items/all_class/all_class_oculus_sniper_on.mdl"
+							"soldier"	"models/player/items/all_class/all_class_oculus_soldier_on.mdl"
+							"demoman"	"models/player/items/all_class/all_class_oculus_demo_on.mdl"
+							"medic"		"models/player/items/all_class/all_class_oculus_medic_on.mdl"
+							"heavy"		"models/player/items/all_class/all_class_oculus_heavy_on.mdl"
+							"spy"		"models/player/items/all_class/all_class_oculus_spy_on.mdl"
+							"engineer"	"models/player/items/all_class/all_class_oculus_engineer_on.mdl"
+							"pyro"		"models/player/items/all_class/all_class_oculus_pyro_on.mdl"
+						}
+						"name"	"#TF_TF2VRH_Style0"
+					}
+					"1"
+					{
+						"model_player_per_class"
+						{
+							"scout"		"models/player/items/all_class/all_class_oculus_scout_on.mdl"
+							"sniper"	"models/player/items/all_class/all_class_oculus_sniper_on.mdl"
+							"soldier"	"models/player/items/all_class/all_class_oculus_soldier_on.mdl"
+							"demoman"	"models/player/items/all_class/all_class_oculus_demo_on.mdl"
+							"medic"		"models/player/items/all_class/all_class_oculus_medic_on.mdl"
+							"heavy"		"models/player/items/all_class/all_class_oculus_heavy_on.mdl"
+							"spy"		"models/player/items/all_class/all_class_oculus_spy_on.mdl"
+							"engineer"	"models/player/items/all_class/all_class_oculus_engineer_on.mdl"
+							"pyro"		"models/player/items/all_class/all_class_oculus_pyro_on.mdl"
+						}
+						"model_player_per_class_alt"
+						{
+							"scout"		"models/player/items/all_class/all_class_oculus_scout_on.mdl"
+							"sniper"	"models/player/items/all_class/all_class_oculus_sniper_on.mdl"
+							"soldier"	"models/player/items/all_class/all_class_oculus_soldier_on.mdl"
+							"demoman"	"models/player/items/all_class/all_class_oculus_demo_on.mdl"
+							"medic"		"models/player/items/all_class/all_class_oculus_medic_on.mdl"
+							"heavy"		"models/player/items/all_class/all_class_oculus_heavy_on.mdl"
+							"spy"		"models/player/items/all_class/all_class_oculus_spy_on.mdl"
+							"engineer"	"models/player/items/all_class/all_class_oculus_engineer_on.mdl"
+							"pyro"		"models/player/items/all_class/all_class_oculus_pyro_on.mdl"
+						}
+						"skin_red" "0"
+						"skin_blu" "1"
+						"name"	"#TF_TF2VRH_Style1"
+					}
+				}
+			}
+			"attributes"
+			{
+				"cannot trade"		
+				{
+					"attribute_class"	"cannot_trade"
+					"value"				"1"
+				}
+			}
+			"static_attrs"
+			{
+				"limited quantity item"		"1"
+			}
+			"mouse_pressed_sound" 	"ui/item_helmet_pickup.wav"
+			"drop_sound" 		"ui/item_helmet_drop.wav"
 		}
 		"30570"
 		{
