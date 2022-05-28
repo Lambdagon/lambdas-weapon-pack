@@ -45657,12 +45657,12 @@
 				"add uber charge on hit red"
 				{
 					"attribute_class"	"add_onhit_ubercharge_red"
-					"value"	"0.01"
+					"value"	"0.02"
 				}
 				"add uber charge on hit blu"
 				{
 					"attribute_class"	"add_onhit_ubercharge_blu"
-					"value"	"0.01"
+					"value"	"0.02"
 				}
 				"fire rate penalty"
 				{
