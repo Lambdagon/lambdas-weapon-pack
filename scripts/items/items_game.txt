@@ -15995,7 +15995,7 @@
 				"can_deal_damage"			"1"
 				"can_be_festivized"		"1"
 			}
-			"show_in_armory"	"0"
+			"show_in_armory"	"1"
 			"item_name"	"#TF_SpyCicle"
 			"item_description"	"#TF_SpyCicle_Desc"
 			"propername"	"1"
@@ -16010,26 +16010,32 @@
 			}
 			"attributes"
 			{
+				"dmg taken from fire reduced"
+				{
+					"attribute_class"	"mult_dmgtaken_from_fire"
+					"value"			"0.8"
+				}
 				"freeze backstab victim"
 				{
 					"attribute_class"	"freeze_backstab_victim"
 					"value" "1"
 				}
-				"melts in fire"
+				"melts in fire HIDDEN"
 				{
 					"attribute_class"	"melts_in_fire"
 					"value" "15"
 				}
-				"become fireproof on hit by fire"
+				"become fireproof on hit by fire HIDDEN"
 				{
 					"attribute_class"	"become_fireproof_on_hit_by_fire"
 					"value" "10"
 				}
-				"set icicle knife mode"
+				"set icicle knife mode HIDDEN"
 				{
 					"attribute_class"	"set_weapon_mode"
 					"value" "3"
 				}
+
 			}
 			"visuals"
 			{
