@@ -21014,7 +21014,7 @@
 		"9010"
 		{
 			"name"	"Extended Rocket Launcher"
-			"show_in_armory"	"1"
+			"show_in_armory"	"0"
 			"prefab"	"weapon_rocketlauncher"
 			"baseitem"	"0"
 			"item_quality"	"developer"
@@ -21121,7 +21121,7 @@
 		"9011"
 		{
 			"name"	"Extended Flamethrower"
-			"show_in_armory"	"1"
+			"show_in_armory"	"0"
 			"prefab"	"weapon_flamethrower"
 			"baseitem"	"0"
 			"item_quality"	"developer"
