@@ -95,9 +95,30 @@
 
 	"wave"		"#ml/hammer_hit.wav"
 }
+"drgregs.crabsfuckyouscatterguncrit"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"1.0"
+	"soundlevel"	"SNDLVL_95dB"
+	"pitch"		"99, 101"
 
+	"wave"		"#weapons/MrcrabsFuckScattergunCrit.wav"
+}
+"drgregs.crabsfuckyouscattergunreload"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"1.0"
+	"soundlevel"	"SNDLVL_95dB"
+	"pitch"		"99, 101"
 
+	"wave"		"#weapons/MrcrabsFuckScattergunReload.wav"
+}
+"drgregs.crabsfuckyouscattergunshoot"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"1.0"
+	"soundlevel"	"SNDLVL_95dB"
+	"pitch"		"99, 101"
 
-
-
-
+	"wave"		"#weapons/MrcrabsFuckScattergunShoot.wav"
+}

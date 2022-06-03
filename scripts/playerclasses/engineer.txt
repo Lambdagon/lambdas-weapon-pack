@@ -32,7 +32,6 @@ PlayerClass
 	"buildable1"	"OBJ_SENTRYGUN"
 	"buildable2"	"OBJ_DISPENSER"
 	"buildable3"	"OBJ_TELEPORTER"
-	"buildable4"	"OBJ_ATTACHMENT_SAPPER"
 
 	//Thirdperson
 	"cameraoffset_forward"	"85"
@@ -44,7 +43,7 @@ PlayerClass
 	{
 		"tf_ammo_primary"	"32"
 		"tf_ammo_secondary"	"200"
-		"tf_ammo_metal"		"200"
+		"tf_ammo_metal"		"225"
 		"tf_ammo_grenades1"	"1"
 		"tf_ammo_grenades2"	"1"
 	}	

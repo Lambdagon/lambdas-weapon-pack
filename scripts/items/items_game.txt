@@ -1123,56 +1123,6 @@
 			"xifier_class_remap"	"weapon_backburner"
 		}
 
-		"weapon_frontburner"
-		{
-			"enabled"	"1"	
-			"prefab"	"weapon_baseflamethrower"
-			"capabilities"
-			{
-				"nameable"		"1"
-			}
-			"tags"
-			{
-				"can_deal_damage"			"1"
-				"can_reflect_projectiles"	"1"
-				"can_extinguish"			"1"
-				"can_deal_posthumous_damage"	"1"
-				"can_deal_critical_damage"	"1"
-				"is_flamethrower" "1"
-			}
-			"base_item_name"	"The Backburner"
-			"item_logname"	"backburner"
-			"item_iconname"	"backburner"
-			"show_in_armory"	"1"
-			"item_name"	"#TF_Unique_Achievement_Flamethrower"
-			"image_inventory"	"backpack/weapons/c_models/c_backburner/c_backburner"
-			"image_inventory_size_w"		"128"
-			"image_inventory_size_h"		"82"
-			"model_player"	"models/weapons/c_models/c_flamethrower/c_backburner.mdl"
-			"attach_to_hands"	"1"
-			"item_quality"	"unique"
-			"propername"	"1"
-			"min_ilevel"	"1"
-			"max_ilevel"	"99"
-			"static_attrs"
-			{
-				"min_viewmodel_offset"					"10 -3 -10"
-				"airblast cost increased"				"1.75"
-				"mod flamethrower back crit"			"1"
-				"crit mod disabled hidden"				"0"
-				"crits_become_minicrits"				"1"
-			}
-			"visuals"
-			{
-				"sound_single_shot"	"Weapon_BackBurner.FireStart"
-				"sound_special1"	"Weapon_BackBurner.FireLoop"
-				"sound_burst"	"Weapon_BackBurner.FireLoopCrit"
-			}
-			"mouse_pressed_sound"	"ui/item_heavy_gun_pickup.wav"
-			"drop_sound"		"ui/item_heavy_gun_drop.wav"
-			"xifier_class_remap"	"weapon_backburner"
-		}
-
 		"weapon_bat"
 		{
 			"capabilities"
@@ -3376,6 +3326,106 @@
 				"muzzle_flash"	"muzzle_bignasty"
 				"tracer_effect"	"bullet_bignasty_tracer01"
 
+				"animation_replacement"
+				{
+					"ACT_PRIMARY_VM_INSPECT_START"		"ACT_ITEM2_VM_INSPECT_START"
+					"ACT_PRIMARY_VM_INSPECT_IDLE"		"ACT_ITEM2_VM_INSPECT_IDLE"
+					"ACT_PRIMARY_VM_INSPECT_END"		"ACT_ITEM2_VM_INSPECT_END"
+				}
+			}
+			"mouse_pressed_sound"	"ui/item_heavy_gun_pickup.wav"
+			"drop_sound"		"ui/item_heavy_gun_drop.wav"
+			"xifier_class_remap"	"force_a_nature"
+		}
+
+		"weapon_fuck_a_you"
+		{
+			"enabled"	"1"
+			"item_class"	"tf_weapon_scattergun"
+			"craft_class"	"weapon"
+			"craft_material_type"	"weapon"
+			"capabilities"
+			{
+				"nameable"		"1"
+				"can_collect" "1"
+			}
+			"tags"
+			{
+				"can_deal_damage"			"1"
+				"can_deal_critical_damage"	"1"
+				"can_deal_mvm_penetration_damage"	"1"
+				"can_deal_long_distance_damage"	"1"
+			}
+			"base_item_name"	"The Fuck You"
+			"item_type_name"	"Fuck You"
+			"item_name"	"Fuck You"
+			"item_description"	"Made by: BaconThatDude"
+			"item_logname"	"fuck_a_you"
+			"item_iconname"	"force_a_nature"
+			"item_slot"	"primary"
+			"anim_slot"	"item2"
+			"item_quality"	"unique"
+			"propername"	"1"
+			"min_ilevel"	"10"
+			"max_ilevel"	"10"
+			"image_inventory"	"backpack/weapons/c_models/c_double_barrel"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"82"
+			"model_player"	"models/weapons/c_models/c_double_barrel.mdl"
+			"model_world"	"models/weapons/c_models/c_double_barrel.mdl"
+			"attach_to_hands" "1"
+			"inspect_panel_dist" "38"
+			"used_by_classes"
+			{
+				"scout"	"1"
+			}
+			"static_attrs"
+			{
+				"min_viewmodel_offset"					"10 0 -10"
+			}
+			"attributes"
+			{
+				"damage penalty"
+				{
+					"attribute_class"	"mult_dmg"
+					"value" "0.75"
+				}
+				"crit mod disabled"
+				{
+					"attribute_class"	"mult_crit_chance"
+					"value"	"0"
+				}
+				"scattergun has knockback"
+				{
+					"attribute_class"	"set_scattergun_has_knockback"
+					"value"	"1"
+				}
+				"clip size bonus"
+				{
+				"attribute_class"	"mult_clipsize"
+				"value"	"1.2"
+				}
+				"slow enemy on hit"
+				{
+					"attribute_class"	"mult_onhit_enemyspeed"
+					"value"	"0.75"
+				}
+				"reload time decreased"
+				{
+				"attribute_class"	"mult_reload_time"
+				"value"	"0.35"
+				}
+				"disable fancy class select anim"
+				{
+					"attribute_class"	"disable_fancy_class_select_anim"
+					"value"	"1"
+				}
+			}
+			"visuals"
+			{
+			"sound_burst"        "drgregs.crabsfuckyouscatterguncrit"
+			"sound_single_shot"		"drgregs.crabsfuckyouscattergunshoot"
+			"sound_reload"			"drgregs.crabsfuckyouscattergunreload"
 				"animation_replacement"
 				{
 					"ACT_PRIMARY_VM_INSPECT_START"		"ACT_ITEM2_VM_INSPECT_START"
@@ -7922,99 +7972,7 @@
 			"mouse_pressed_sound"	"ui/item_heavy_gun_pickup.wav"
 			"drop_sound"		"ui/item_heavy_gun_drop.wav"
 		}
-		
-		"weapon_trenchgun_phantom"
-		{
-			"enabled"	"1"
-			"item_class"	"tf_weapon_shotgun"
-			"craft_class"			"weapon"
-			"craft_material_type"	"weapon"
-			"capabilities"
-			{
-				"nameable"		"1"
-			}
-			"tags"
-			{
-				"can_deal_damage"			"1"
-				"can_be_equipped_by_soldier_or_demo"	"1"
-				"can_deal_critical_damage"	"1"
-				"can_deal_mvm_penetration_damage"	"1"
-				"can_deal_long_distance_damage"	"1"
-				"can_deal_taunt_damage"		"1"
-			}
-			"item_type_name"	"#TF_Weapon_Shotgun"
-			"item_name"	"I AeR has painc atakc"
-			"item_logname"	"panic_attack"
-			"item_iconname"	"panic_attack"
-			"item_slot"	"primary"
-			"item_quality"		"unique"
-			"min_ilevel"	"1"
-			"max_ilevel"	"99"
-			"propername"		"1"
-			"attach_to_hands"	"1"
-			"inspect_panel_dist" "40"
-			"image_inventory"	"backpack/workshop/weapons/c_models/c_trenchgun/c_trenchgun"
-			"model_player"	"models/workshop/weapons/c_models/c_trenchgun/c_trenchgun.mdl"
-			"used_by_classes"
-			{
-				"engineer"	"primary"
-				"pyro" "secondary"
-				"soldier" "secondary"
-				"heavy" "secondary"
-				"scout" "primary"
-			}
-			"static_attrs"
-			{
-				"min_viewmodel_offset"					"10 0 -11"
-				"weapon_stattrak_module_scale"				"0.608"				
-			}
-			"attributes"
-			{
-				"damage penalty"
-				{
-					"attribute_class"	"mult_dmg"
-					"value"	"0.8"
-				}
-				"clip size bonus"
-				{
-					"attribute_class"	"mult_clipsize"
-					"value"	"1.25"
-				}
-				"fire rate bonus"
-				{
-					"attribute_class"	"mult_postfiredelay"
-					"value"	"0.25"
-				}
-				"single wep deploy time decreased"
-				{
-					"attribute_class"	"mult_single_wep_deploy_time"
-					"value"	"0.5"
-				}
-				"mult_spread_scales_consecutive"
-				{
-					"attribute_class" 	"mult_spread_scales_consecutive"
-					"value" "1"
-				}
-				"bullets per shot bonus"
-				{
-					"attribute_class" 	"mult_bullets_per_shot"
-					"value" "1.5"
-				}
-				"fixed_shot_pattern"
-				{
-					"attribute_class" 	"fixed_shot_pattern"
-					"value" "1"
-				}
-			}
-			"visuals"
-			{
-				"sound_single_shot"		"Weapon_BackShot_Shotty.Single"
-				"sound_burst"			"Weapon_BackShot_Shotty.SingleCrit"
-			}
-			"mouse_pressed_sound"	"ui/item_heavy_gun_pickup.wav"
-			"drop_sound"		"ui/item_heavy_gun_drop.wav"
-		}
-		
+
 		"weapon_trenchgun_prenerf"
 		{
 			"enabled"	"1"
@@ -13570,12 +13528,12 @@
 				"move speed bonus resource level"
 				{
 					"attribute_class"	"mult_player_movespeed_resource_level"
-					"value"	"1.2"
+					"value"	"1.35"
 				}
 				"move speed bonus"
 				{
 					"attribute_class"	"mult_player_movespeed"
-					"value" "1.35"
+					"value" "1.15"
 				}
 				"lunchbox adds minicrits"
 				{
@@ -23023,16 +22981,6 @@
 					"attribute_class"	"sapper_kills_collect_crits"
 					"value"	"1"
 				}
-				"mod soldier buff type"
-				{
-					"attribute_class"	"set_buff_type"
-					"value" "5"	
-				}
-				"lunchbox adds minicrits"
-				{
-					"attribute_class"	"set_weapon_mode"
-					"value"	"1"
-				}
 				"damage penalty"
 				{
 					"attribute_class"	"mult_dmg"
@@ -31049,9 +30997,15 @@
 			"static_attrs"
 			{
 				"min_viewmodel_offset"		"10 0 -9"
+				"crits_become_minicrits"				"1"
 			}
 			"attributes"
 			{
+				"damage bonus"
+				{
+					"attribute_class"	"mult_dmg"
+					"value"	"1.15"
+				}
 				"move speed bonus"
 				{
 					"attribute_class"	"mult_player_movespeed"
@@ -31060,22 +31014,12 @@
 				"bullets per shot bonus"
 				{
 					"attribute_class" 	"mult_bullets_per_shot"
-					"value" "1.20"
-				}
-				"minigun spinup time decreased"
-				{
-					"attribute_class"	"mult_minigun_spinup_time"
-					"value" "0.8"
-				}
-				"maxammo primary increased"
-				{
-					"attribute_class"	"mult_maxammo_primary"
-					"value"				"1.5"
+					"value" "1.10"
 				}
 				"fire rate bonus"
 				{
 				"attribute_class"	"mult_postfiredelay"
-				"value"	"0.75"
+				"value"	"0.8"
 				}
 				"spread penalty"
 				{
@@ -31090,22 +31034,12 @@
 				"max health additive penalty"
 				{
 					"attribute_class"	"add_maxhealth"
-					"value" "-25"
+					"value" "-30"
 				}
-				"crits_become_minicrits"
+				"dmg taken from fire increased"
 				{
-					"attribute_class"	"crits_become_minicrits"
-					"value" "1"
-				}
-				"reduced_healing_from_medics"
-				{
-					"attribute_class"	"mult_healing_from_medics"
-					"value" "0.5"
-				}
-				"damage force increase"
-				{
-					"attribute_class"	"damage_force_reduction"
-					"value" "1.25"
+					"attribute_class"	"mult_dmgtaken_from_fire"
+					"value"			"1.75"
 				}
 			}
 			"visuals"
@@ -32909,6 +32843,61 @@
 			}
 			"mouse_pressed_sound"		"ui/item_gooey_pickup.wav"
 			"drop_sound"		"ui/item_gooey_pickup.wav"
+		}
+		"7093"
+		{
+			"name"		"Creature's Grin"
+			"prefab"		"halloween2014 no_craft misc"
+			"item_name"		"#TF_sf14_the_creatures_grin"
+			"item_description"		"#TF_sf14_the_creatures_grin_Desc"
+			"item_slot"	"head"
+			"item_type_name"		"#TF_Wearable_Mask"
+			"equip_region"		"pyro_head_replacement"
+			"propername"		"1"
+			"visuals"
+			{
+				"player_bodygroups"
+				{
+					"head"		"1"
+				}
+			}
+			"image_inventory"		"backpack/workshop/player/items/pyro/sf14_the_creatures_grin/sf14_the_creatures_grin"
+			"capabilities"
+			{
+				"can_craft_count"		"1"
+				"paintable"		"1"
+			}
+			"model_player"		"models/workshop/player/items/pyro/sf14_the_creatures_grin/sf14_the_creatures_grin.mdl"
+			"used_by_classes"
+			{
+				"pyro"		"1"
+			}
+		}
+		"7094"
+		{
+			"name"		"The Hollowhead"
+			"prefab"		"halloween2013 misc"
+			"item_type_name"		"#TF_Wearable_Mask"
+			"item_name"		"#TF_hw2013_hollowhead"
+			"item_description"		"#TF_hw2013_hollowhead_Desc"
+			"item_slot"	"head"
+			"equip_region"		"pyro_head_replacement"
+			"propername"		"1"
+			"visuals"
+			{
+				"player_bodygroups"
+				{
+					"head"		"1"
+				}
+			}
+			"image_inventory"		"backpack/workshop/player/items/pyro/hw2013_hollowhead/hw2013_hollowhead"
+			"model_player"		"models/workshop/player/items/pyro/hw2013_hollowhead/hw2013_hollowhead.mdl"
+			"used_by_classes"
+			{
+				"pyro"		"1"
+			}
+			"mouse_pressed_sound"		"ui/item_helmet_pickup.wav"
+			"drop_sound"		"ui/item_helmet_drop.wav"
 		}
 		"7095"
 		{
@@ -42731,6 +42720,11 @@
 					"attribute_class"	"add_maxhealth"
 					"value" "-25"
 				}
+				"dmg taken from fire increased"
+				{
+					"attribute_class"	"mult_dmgtaken_from_fire"
+					"value"			"1.75"
+				}
 				"reload time increased"
 				{
 					"attribute_class"	"mult_reload_time_hidden"
@@ -43392,7 +43386,6 @@
 				"sound_double_shot"		"HL2_Weapon_Shotgun.Double"
 				"sound_burst"			"HL2_Weapon_Shotgun.Single"
 				"sound_empty"			"HL2_Weapon_Shotgun.Empty"
-				"sound_reload"			"HL2_Weapon_Shotgun.Reload"
 				"sound_special1"		"HL2_Weapon_Shotgun.Special1"
 			}
 			"attributes"
@@ -46240,519 +46233,23 @@
 		}
 		"7407"
 		{
-			"name"	"phantom_flamethrower"
-			"show_in_armory"	"1"
-			"prefab"	"weapon_flamethrower"
-			"baseitem"	"0"
-			"item_name"	"Fuck You-inator"
-			"item_quality"	"strange"
-			"extra_wearable" "models/workshop/player/items/pyro/short2014_the_gas_guzzler/short2014_the_gas_guzzler.mdl"
-			"attributes"
+			"name"	"The Sandvich"
+			"first_sale_date"	"2010/09/29"
+			"prefab"	"valve weapon_sandvich_civilian"
+			"baseitem" "0"
+			"show_in_armory"	"0"
+			"used_by_classes"
 			{
-				"damage bonus"
-				{
-					"attribute_class"	"mult_dmg"
-					"value"	"10100.0"
-				}
-				"clip size bonus"
-				{
-					"attribute_class"	"mult_clipsize"
-					"value"	"1100.0"
-				}
-				"fire rate bonus"
-				{
-					"attribute_class"	"mult_postfiredelay"
-					"value"	"0.25"
-				}
-				"heal on hit for slowfire"
-				{
-					"attribute_class"	"add_onhit_addhealth"
-					"value"	"15.0"
-				}
-				"critboost on kill"
-				{
-					"attribute_class"	"add_onkill_critboost_time"
-					"value"	"10.0"
-				}
-				"Projectile speed increased"
-				{
-					"atribute_class"	"mult_projectile_speed"
-					"value"	"1.5"
-				}
-				"move speed bonus"
-				{
-					"attribute_class"	"mult_player_movespeed"
-					"value"	"2.0"
-				}
-				"is australium item"
-				{
-					"attribute_class"	"is_australium_item"
-					"value"				"1"
-				}
-				"turn to gold"
-				{
-					"attribute_class"	"set_turn_to_gold"
-					"value" "1"
-				}
+			"civilian"    "1"
 			}
 		}
 		"7408"
 		{
-			"name"	"missing_mann"
-			"prefab"		"base_hat"
-			"first_sale_date"	"2011/03/16"
-			"item_class"	"tf_wearable"
-			"craft_class"	"hat"
-			"craft_material_type"	"hat"
-			"capabilities"
-			{
-				"nameable"		"1"
-				"paintable"		"1"
-				"can_craft_if_purchased"	"1"
-			}
-			"loadondemand" "1"
+			"name"	"The Fuck-You"
+			"prefab"	"valve weapon_fuck_a_you"
+			"first_sale_date"	"420/69/69"
+			"baseitem"	"0"
 			"show_in_armory"	"1"
-			"item_type_name"	"#TF_Wearable_Hat"
-			"item_name"	"Missing Mann"
-			"item_description"	"i forgor to download source"
-			"item_slot"	"head"
-			"equip_region"	"hat"
-			"item_quality"	"unique"
-			"image_inventory"	"backpack/player/items/spy/spy_charmers_chapeau"
-			"image_inventory_size_w"		"128"
-			"image_inventory_size_h"		"82"
-			"model_player"	"models/player/items/spy/missing/spy_charmers_chapeau.mdl"
-			"drop_type"	"drop"
-			"used_by_classes"
-			{
-				"spy"	"1"
-			}
-			"visuals"
-			{
-				"player_bodygroups"
-				{
-					"hat"			"1"
-				}
-			}
-			"mouse_pressed_sound" 	"ui/item_hat_pickup.wav"
-			"drop_sound" 		"ui/item_hat_drop.wav"
-		}
-		"7409"
-		{
-			"name"	"shag_rug"
-			"prefab"		"base_hat"
-			"first_sale_date"	"2011/03/16"
-			"item_class"	"tf_wearable"
-			"craft_class"	"hat"
-			"craft_material_type"	"hat"
-			"capabilities"
-			{
-				"nameable"		"1"
-				"paintable"		"1"
-				"can_craft_if_purchased"	"1"
-			}
-			"loadondemand" "1"
-			"show_in_armory"	"1"
-			"item_type_name"	"#TF_Wearable_Hat"
-			"item_name"	"Shag rug"
-			"item_slot"	"head"
-			"equip_region"	"hat"
-			"item_quality"	"unique"
-			"image_inventory"	"backpack/player/items/spy/spy_charmers_chapeau"
-			"image_inventory_size_w"		"128"
-			"image_inventory_size_h"		"82"
-			"model_player"	"models/player/items/spy/shag/spy_charmers_chapeau.mdl"
-			"drop_type"	"drop"
-			"used_by_classes"
-			{
-				"spy"	"1"
-			}
-			"visuals"
-			{
-				"player_bodygroups"
-				{
-					"hat"			"1"
-				}
-			}
-			"mouse_pressed_sound" 	"ui/item_hat_pickup.wav"
-			"drop_sound" 		"ui/item_hat_drop.wav"
-		}
-		"7500"
-		{
-			"name"		"power_suit"
-			"prefab"		"no_craft misc marketable"
-			"item_name"		"Power Suit"
-			"item_description"		"baby"
-			"item_type_name"		"#TF_Wearable_Coat"
-			"equip_region"		"spy_coat"
-			"image_inventory"		"backpack/workshop/player/items/spy/cc_summer2015_lurkers_leathers/cc_summer2015_lurkers_leathers"
-			"capabilities"
-			{
-				"can_craft_count"		"1"
-				"paintable"		"1"
-			}
-			"model_player"		"models/player/items/spy/cc_summer2015_lurkers_leathers/cc_summer2015_lurkers_leathers.mdl"
-			"used_by_classes"
-			{
-				"spy"		"1"
-			}
-			"mouse_pressed_sound"		"ui/item_leather_pickup.wav"
-			"drop_sound"		"ui/item_hat_drop.wav"
-			"visuals"
-			{
-				"styles"
-				{
-					"0"
-					{
-						"model_player"		"models/workshop/player/items/spy/cc_summer2015_lurkers_leathers/cc_summer2015_lurkers_leathers.mdl"
-						"name"		"#TF_cc_summer2015_lurkers_leathers_style0"
-						"image_inventory"		"backpack/workshop/player/items/spy/cc_summer2015_lurkers_leathers/cc_summer2015_lurkers_leathers"
-						"skin_red"		"0"
-						"skin_blu"		"1"
-					}
-					"1"
-					{
-						"model_player"		"models/workshop/player/items/spy/cc_summer2015_lurkers_leathers_2/cc_summer2015_lurkers_leathers_2.mdl"
-						"name"		"#TF_cc_summer2015_lurkers_leathers_style1"
-						"image_inventory"		"backpack/workshop/player/items/spy/cc_summer2015_lurkers_leathers_2/cc_summer2015_lurkers_leathers_2"
-						"skin_red"		"0"
-						"skin_blu"		"1"
-					}
-				}
-			}
-		}
-		"7501"
-		{
-			"name"		"protogen"
-			"propername"		"1"
-			"prefab"		"no_craft misc marketable"
-			"item_slot"		"misc"
-			"show_in_armory"	"1"
-			"item_type_name"		"#TF_Wearable_Apparel"
-			"item_name"		"Proto"
-			"item_description"		"don't boop it"
-			"equip_region"		"pyro_head_replacement"
-			"visuals"
-			{
-				"player_bodygroups"
-				{
-					"head"		"1"
-				}
-			}
-			"image_inventory"		"backpack/workshop/player/items/all_class/sbox2014_zipper_suit/sbox2014_zipper_suit"
-			"capabilities"
-			{
-				"can_craft_count"		"1"
-				"paintable"		"0"
-			}
-			"model_player_per_class"
-			{
-				"engineer"		"models/proto/sbox2014_zipper_suit_engineer.mdl"
-				"sniper"		"models/proto/sbox2014_zipper_suit_engineer.mdl"
-				"pyro"		"models/proto/sbox2014_zipper_suit_pyro.mdl"
-			}
-			"used_by_classes"
-			{
-				"pyro"		"1"
-				"engineer"		"1"
-				"sniper"		"1"
-			}
-			"mouse_pressed_sound"		"ui/item_rubber_pickup.wav"
-			"drop_sound"		"ui/item_hat_drop.wav"
-			"visuals"
-			{
-				"styles"
-				{
-					"0"
-					{
-						"name"		"#TF_sbox2014_pyro_zipper_suit_style0"
-						"skin_red"		"0"
-						"skin_blu"		"1"
-					}
-					"1"
-					{
-						"name"		"#TF_sbox2014_pyro_zipper_suit_style1"
-						"skin_red"		"0"
-						"skin_blu"		"1"
-						"additional_hidden_bodygroups"
-						{
-							"hat"		"1"
-						}
-					}
-				}
-			}
-		}
-		"7502"
-		{
-			"name"		"The Seared Sorcerer"
-			"prefab"		"no_craft hat marketable"
-			"item_name"		"Seared Sorcerer" 
-			"item_description"		"#TF_hwn2020_seared_sorcerer_Desc"
-			"propername"		"1"
-			"item_slot"			"misc2"
-			"image_inventory"		"backpack/workshop/player/items/pyro/hwn2020_seared_sorcerer/hwn2020_seared_sorcerer"
-			"capabilities"
-			{
-				"can_craft_count"		"1"
-				"paintable"		"1"
-			}
-			"model_player"		"models/workshop/player/items/pyro/hwn2020_seared_sorcerer/hwn2020_seared_sorcerer.mdl"
-			"used_by_classes"
-			{
-				"pyro"		"1"
-			}
-			"visuals"
-			{
-				"styles"
-				{
-					"0"
-					{
-						"name"		"#TF_hwn2020_seared_sorcerer_style1"
-						"model_player"		"models/workshop/player/items/pyro/hwn2020_seared_sorcerer/hwn2020_seared_sorcerer.mdl"
-						"skin_red"		"0"
-						"skin_blu"		"1"
-						"additional_hidden_bodygroups"
-						{
-							"head"		"1"
-						}
-					}
-					"1"
-					{
-						"name"		"#TF_hwn2020_seared_sorcerer_style2"
-						"model_player"		"models/workshop/player/items/pyro/hwn2020_seared_sorcerer_style2/hwn2020_seared_sorcerer_style2.mdl"
-						"skin_red"		"0"
-						"skin_blu"		"1"
-					}
-				}
-			}
-		}
-		"7503"
-		{
-			"name"	"Pyromancer's Mask"
-			"prefab"		"base_hat"
-			"first_sale_date"	"2010/12/20"
-			"loadondemand"	"1"
-			"item_class"	"tf_wearable"
-			"craft_class"	"hat"
-			"craft_material_type"	"hat"
-			"capabilities"
-			{
-				"nameable"		"1"
-				"paintable"		"1"
-				"can_craft_if_purchased"	"1"
-			}
-			"show_in_armory"	"1"
-			"item_type_name" "#TF_Wearable_Mask"
-			"item_name"	"Pyromancer's Mask"
-			"item_slot"	"head"
-			"equip_region"	"beard"			
-			"item_quality"	"unique"
-			"image_inventory"	"backpack/player/items/pyro/pyro_pyromancers_mask"
-			"image_inventory_size_w"		"128"
-			"image_inventory_size_h"		"82"
-			"model_player"	"models/player/items/pyro/pyro_pyromancers_mask.mdl"
-			"drop_type"	"drop"
-			"used_by_classes"
-			{
-				"pyro"	"1"
-			}
-			"visuals"
-			{
-				"styles"
-				{
-					"0"
-					{
-						"skin"	"0"
-						"name"	"#TF_Pyromancer_Style1"
-					}
-					"1"
-					{
-						"skin"	"1"
-						"name"	"#TF_Pyromancer_Style2"
-					}
-					"2"
-					{
-						"skin"	"2"
-						"name"	"#TF_Pyromancer_Style3"
-					}
-				}
-			}
-			"mouse_pressed_sound" 	"ui/item_helmet_pickup.wav"
-			"drop_sound" 		"ui/item_helmet_drop.wav"
-		}
-		"7504"
-		{
-			"name"	"I AeR painc atakc"
-			"prefab"	"weapon_trenchgun_phantom"
-			"first_sale_date"	"2014/12/23"
-			"particle_suffix"	"panic_attack"
-			"show_in_armory"	"1"
-			"tags"
-			{
-				"can_be_festivized"		"1"
-			}
-			"visuals"
-			{
-				"attached_models"
-				{
-					"0"
-					{
-						"model"	"models/workshop/weapons/c_models/c_trenchgun/c_trenchgun_festivizer.mdl"
-					}
-				}
-			}
-		}
-		"7505"
-		{
-			"name"	"The Slogistinator"
-			"prefab"	"weapon_newflame"
-			"first_sale_date"	"2011/12/15"
-			"item_class"	"tf_weapon_flamethrower"
-			"craft_class"	"weapon"
-			"craft_material_type"	"weapon"
-			"capabilities"
-			{
-				"nameable"		"1"
-				"can_craft_count"	"1"
-			}
-			"tags"
-			{
-				"can_deal_damage"			"1"
-				"can_deal_posthumous_damage"	"1"
-				"can_deal_critical_damage"	"1"
-				"is_flamethrower" "1"
-			}
-			"item_logname"	"phlogistinator"
-			"item_iconname"	"phlogistinator"
-			"show_in_armory"	"0"
-			"item_type_name"	"#TF_Weapon_Flamethrower"
-			"item_name"	"Slogistinator"
-			"item_description"	"#TF_Phlogistinator_Desc"
-			"item_slot"	"primary"
-			"image_inventory"	"backpack/workshop/weapons/c_models/c_drg_phlogistinator/c_drg_phlogistinator"
-			"image_inventory_size_w"		"128"
-			"image_inventory_size_h"		"82"
-			"model_player"	"models/workshop/weapons/c_models/c_drg_phlogistinator/c_drg_phlogistinator.mdl"
-			"attach_to_hands"	"1"
-			"item_quality"	"unique"
-			"propername"	"1"
-			"min_ilevel"	"10"
-			"max_ilevel"	"10"
-			"used_by_classes"
-			{
-				"pyro"	"1"
-			}
-			"static_attrs"
-			{
-				"min_viewmodel_offset"					"10 0 -12"
-				"dragons fury negative properties"		"1"
-				"airblast cost increased"				"1.25"
-			}
-			"visuals"
-			{
-				"sound_single_shot"	"Weapon_phlogistinator.FireStart"
-				"sound_special1"	"Weapon_phlogistinator.FireLoop"
-				"sound_special3"	"Weapon_phlogistinator.WindDown"
-				"sound_burst"		"Weapon_phlogistinator.FireLoopCrit"
-
-				"animation_replacement"
-				{
-					"ACT_PRIMARY_VM_INSPECT_START"		"ACT_PRIMARY_ALT1_VM_INSPECT_START"
-					"ACT_PRIMARY_VM_INSPECT_IDLE"		"ACT_PRIMARY_ALT1_VM_INSPECT_IDLE"
-					"ACT_PRIMARY_VM_INSPECT_END"		"ACT_PRIMARY_ALT1_VM_INSPECT_END"
-				}
-			}
-			"attributes"
-			{
-				"burn damage earns rage"
-				{
-					"attribute_class"	"burn_damage_earns_rage"
-					"value" "1"
-				}
-				"mod soldier buff type"
-				{
-					"attribute_class"	"set_buff_type"
-					"value" "5"	
-				}
-				"crits_become_minicrits"
-				{
-					"attribute_class"	"crits_become_minicrits"
-					"value" "1"
-				}
-				"lunchbox adds minicrits"
-				{
-					"attribute_class"	"set_weapon_mode"
-					"value"	"1"
-				}
-				"special taunt"
-				{
-					"attribute_class"	"special_taunt"
-					"value" "1"
-				}
-			}
-			"mouse_pressed_sound"	"ui/item_heavy_gun_pickup.wav"
-			"drop_sound"		"ui/item_heavy_gun_drop.wav"
-		}
-		"7506"
-		{
-			"name"	"The Frontburner"
-			"prefab"	"valve weapon_frontburner"
-			"first_sale_date"	"2010/09/29"
-			"item_class"	"tf_weapon_flamethrower"
-			"craft_class"	"weapon"
-			"craft_material_type"	"weapon"
-			"capabilities"
-			{
-				"nameable"		"1"
-			}
-			"tags"
-			{
-				"can_deal_damage"			"1"
-				"can_reflect_projectiles"	"1"
-				"can_extinguish"			"1"
-				"can_deal_posthumous_damage"	"1"
-				"can_deal_critical_damage"	"1"
-				"is_flamethrower" "1"
-			}
-			"item_logname"	"backburner"
-			"item_iconname"	"backburner"
-			"show_in_armory"	"1"
-			"item_type_name"	"#TF_Weapon_Flamethrower"
-			"item_name"	"Frontburner"
-			"item_slot"	"primary"
-			"image_inventory"	"backpack/weapons/c_models/c_backburner/c_backburner"
-			"image_inventory_size_w"		"128"
-			"image_inventory_size_h"		"82"
-			"model_player"	"models/weapons/c_models/c_flamethrower/c_backburner.mdl"
-			"attach_to_hands"	"1"
-			"item_quality"	"unique"
-			"propername"	"1"
-			"min_ilevel"	"10"
-			"max_ilevel"	"10"
-			"used_by_classes"
-			{
-				"pyro"	"1"
-			}
-			"static_attrs"
-			{
-				"min_viewmodel_offset"					"10 -3 -10"
-			}
-			"visuals"
-			{
-				"sound_single_shot"	"Weapon_BackBurner.FireStart"
-				"sound_special1"	"Weapon_BackBurner.FireLoop"
-				"sound_burst"	"Weapon_BackBurner.FireLoopCrit"
-				"attached_models"
-				{
-					"0"
-					{
-						"model"	"models/weapons/c_models/c_flamethrower/c_flamethrower_pilotlight.mdl"
-					}
-				}
-			}
-			"mouse_pressed_sound"	"ui/item_heavy_gun_pickup.wav"
-			"drop_sound"		"ui/item_heavy_gun_drop.wav"
-			"xifier_class_remap"	"weapon_backburner"
 		}
 		"30570"
 		{
