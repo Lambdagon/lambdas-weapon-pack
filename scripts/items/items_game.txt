@@ -1123,6 +1123,56 @@
 			"xifier_class_remap"	"weapon_backburner"
 		}
 
+		"weapon_frontburner"
+		{
+			"enabled"	"1"	
+			"prefab"	"weapon_baseflamethrower"
+			"capabilities"
+			{
+				"nameable"		"1"
+			}
+			"tags"
+			{
+				"can_deal_damage"			"1"
+				"can_reflect_projectiles"	"1"
+				"can_extinguish"			"1"
+				"can_deal_posthumous_damage"	"1"
+				"can_deal_critical_damage"	"1"
+				"is_flamethrower" "1"
+			}
+			"base_item_name"	"The Backburner"
+			"item_logname"	"backburner"
+			"item_iconname"	"backburner"
+			"show_in_armory"	"1"
+			"item_name"	"#TF_Unique_Achievement_Flamethrower"
+			"image_inventory"	"backpack/weapons/c_models/c_backburner/c_backburner"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"82"
+			"model_player"	"models/weapons/c_models/c_flamethrower/c_backburner.mdl"
+			"attach_to_hands"	"1"
+			"item_quality"	"unique"
+			"propername"	"1"
+			"min_ilevel"	"1"
+			"max_ilevel"	"99"
+			"static_attrs"
+			{
+				"min_viewmodel_offset"					"10 -3 -10"
+				"airblast cost increased"				"1.75"
+				"mod flamethrower back crit"			"1"
+				"crit mod disabled hidden"				"0"
+				"crits_become_minicrits"				"1"
+			}
+			"visuals"
+			{
+				"sound_single_shot"	"Weapon_BackBurner.FireStart"
+				"sound_special1"	"Weapon_BackBurner.FireLoop"
+				"sound_burst"	"Weapon_BackBurner.FireLoopCrit"
+			}
+			"mouse_pressed_sound"	"ui/item_heavy_gun_pickup.wav"
+			"drop_sound"		"ui/item_heavy_gun_drop.wav"
+			"xifier_class_remap"	"weapon_backburner"
+		}
+
 		"weapon_bat"
 		{
 			"capabilities"
@@ -22973,6 +23023,16 @@
 					"attribute_class"	"sapper_kills_collect_crits"
 					"value"	"1"
 				}
+				"mod soldier buff type"
+				{
+					"attribute_class"	"set_buff_type"
+					"value" "5"	
+				}
+				"lunchbox adds minicrits"
+				{
+					"attribute_class"	"set_weapon_mode"
+					"value"	"1"
+				}
 				"damage penalty"
 				{
 					"attribute_class"	"mult_dmg"
@@ -30989,15 +31049,9 @@
 			"static_attrs"
 			{
 				"min_viewmodel_offset"		"10 0 -9"
-				"crits_become_minicrits"				"1"
 			}
 			"attributes"
 			{
-				"damage bonus"
-				{
-					"attribute_class"	"mult_dmg"
-					"value"	"1.15"
-				}
 				"move speed bonus"
 				{
 					"attribute_class"	"mult_player_movespeed"
@@ -31006,12 +31060,22 @@
 				"bullets per shot bonus"
 				{
 					"attribute_class" 	"mult_bullets_per_shot"
-					"value" "1.10"
+					"value" "1.20"
+				}
+				"minigun spinup time decreased"
+				{
+					"attribute_class"	"mult_minigun_spinup_time"
+					"value" "0.8"
+				}
+				"maxammo primary increased"
+				{
+					"attribute_class"	"mult_maxammo_primary"
+					"value"				"1.5"
 				}
 				"fire rate bonus"
 				{
 				"attribute_class"	"mult_postfiredelay"
-				"value"	"0.8"
+				"value"	"0.75"
 				}
 				"spread penalty"
 				{
@@ -31026,12 +31090,22 @@
 				"max health additive penalty"
 				{
 					"attribute_class"	"add_maxhealth"
-					"value" "-30"
+					"value" "-25"
 				}
-				"dmg taken from fire increased"
+				"crits_become_minicrits"
 				{
-					"attribute_class"	"mult_dmgtaken_from_fire"
-					"value"			"1.75"
+					"attribute_class"	"crits_become_minicrits"
+					"value" "1"
+				}
+				"reduced_healing_from_medics"
+				{
+					"attribute_class"	"mult_healing_from_medics"
+					"value" "0.5"
+				}
+				"damage force increase"
+				{
+					"attribute_class"	"damage_force_reduction"
+					"value" "1.25"
 				}
 			}
 			"visuals"
@@ -46511,7 +46585,7 @@
 			"mouse_pressed_sound" 	"ui/item_helmet_pickup.wav"
 			"drop_sound" 		"ui/item_helmet_drop.wav"
 		}
-		"5204"
+		"7504"
 		{
 			"name"	"I AeR painc atakc"
 			"prefab"	"weapon_trenchgun_phantom"
@@ -46532,6 +46606,158 @@
 					}
 				}
 			}
+		}
+		"7505"
+		{
+			"name"	"The Slogistinator"
+			"prefab"	"weapon_newflame"
+			"first_sale_date"	"2011/12/15"
+			"item_class"	"tf_weapon_flamethrower"
+			"craft_class"	"weapon"
+			"craft_material_type"	"weapon"
+			"capabilities"
+			{
+				"nameable"		"1"
+				"can_craft_count"	"1"
+			}
+			"tags"
+			{
+				"can_deal_damage"			"1"
+				"can_deal_posthumous_damage"	"1"
+				"can_deal_critical_damage"	"1"
+				"is_flamethrower" "1"
+			}
+			"item_logname"	"phlogistinator"
+			"item_iconname"	"phlogistinator"
+			"show_in_armory"	"0"
+			"item_type_name"	"#TF_Weapon_Flamethrower"
+			"item_name"	"Slogistinator"
+			"item_description"	"#TF_Phlogistinator_Desc"
+			"item_slot"	"primary"
+			"image_inventory"	"backpack/workshop/weapons/c_models/c_drg_phlogistinator/c_drg_phlogistinator"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"82"
+			"model_player"	"models/workshop/weapons/c_models/c_drg_phlogistinator/c_drg_phlogistinator.mdl"
+			"attach_to_hands"	"1"
+			"item_quality"	"unique"
+			"propername"	"1"
+			"min_ilevel"	"10"
+			"max_ilevel"	"10"
+			"used_by_classes"
+			{
+				"pyro"	"1"
+			}
+			"static_attrs"
+			{
+				"min_viewmodel_offset"					"10 0 -12"
+				"dragons fury negative properties"		"1"
+				"airblast cost increased"				"1.25"
+			}
+			"visuals"
+			{
+				"sound_single_shot"	"Weapon_phlogistinator.FireStart"
+				"sound_special1"	"Weapon_phlogistinator.FireLoop"
+				"sound_special3"	"Weapon_phlogistinator.WindDown"
+				"sound_burst"		"Weapon_phlogistinator.FireLoopCrit"
+
+				"animation_replacement"
+				{
+					"ACT_PRIMARY_VM_INSPECT_START"		"ACT_PRIMARY_ALT1_VM_INSPECT_START"
+					"ACT_PRIMARY_VM_INSPECT_IDLE"		"ACT_PRIMARY_ALT1_VM_INSPECT_IDLE"
+					"ACT_PRIMARY_VM_INSPECT_END"		"ACT_PRIMARY_ALT1_VM_INSPECT_END"
+				}
+			}
+			"attributes"
+			{
+				"burn damage earns rage"
+				{
+					"attribute_class"	"burn_damage_earns_rage"
+					"value" "1"
+				}
+				"mod soldier buff type"
+				{
+					"attribute_class"	"set_buff_type"
+					"value" "5"	
+				}
+				"crits_become_minicrits"
+				{
+					"attribute_class"	"crits_become_minicrits"
+					"value" "1"
+				}
+				"lunchbox adds minicrits"
+				{
+					"attribute_class"	"set_weapon_mode"
+					"value"	"1"
+				}
+				"special taunt"
+				{
+					"attribute_class"	"special_taunt"
+					"value" "1"
+				}
+			}
+			"mouse_pressed_sound"	"ui/item_heavy_gun_pickup.wav"
+			"drop_sound"		"ui/item_heavy_gun_drop.wav"
+		}
+		"7506"
+		{
+			"name"	"The Frontburner"
+			"prefab"	"valve weapon_frontburner"
+			"first_sale_date"	"2010/09/29"
+			"item_class"	"tf_weapon_flamethrower"
+			"craft_class"	"weapon"
+			"craft_material_type"	"weapon"
+			"capabilities"
+			{
+				"nameable"		"1"
+			}
+			"tags"
+			{
+				"can_deal_damage"			"1"
+				"can_reflect_projectiles"	"1"
+				"can_extinguish"			"1"
+				"can_deal_posthumous_damage"	"1"
+				"can_deal_critical_damage"	"1"
+				"is_flamethrower" "1"
+			}
+			"item_logname"	"backburner"
+			"item_iconname"	"backburner"
+			"show_in_armory"	"1"
+			"item_type_name"	"#TF_Weapon_Flamethrower"
+			"item_name"	"Frontburner"
+			"item_slot"	"primary"
+			"image_inventory"	"backpack/weapons/c_models/c_backburner/c_backburner"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"82"
+			"model_player"	"models/weapons/c_models/c_flamethrower/c_backburner.mdl"
+			"attach_to_hands"	"1"
+			"item_quality"	"unique"
+			"propername"	"1"
+			"min_ilevel"	"10"
+			"max_ilevel"	"10"
+			"used_by_classes"
+			{
+				"pyro"	"1"
+			}
+			"static_attrs"
+			{
+				"min_viewmodel_offset"					"10 -3 -10"
+			}
+			"visuals"
+			{
+				"sound_single_shot"	"Weapon_BackBurner.FireStart"
+				"sound_special1"	"Weapon_BackBurner.FireLoop"
+				"sound_burst"	"Weapon_BackBurner.FireLoopCrit"
+				"attached_models"
+				{
+					"0"
+					{
+						"model"	"models/weapons/c_models/c_flamethrower/c_flamethrower_pilotlight.mdl"
+					}
+				}
+			}
+			"mouse_pressed_sound"	"ui/item_heavy_gun_pickup.wav"
+			"drop_sound"		"ui/item_heavy_gun_drop.wav"
+			"xifier_class_remap"	"weapon_backburner"
 		}
 		"30570"
 		{
