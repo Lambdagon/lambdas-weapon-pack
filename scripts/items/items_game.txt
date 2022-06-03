@@ -21198,7 +21198,7 @@
 			}
 			"item_logname"	"have_an_error"
 			"item_iconname"	"have_an_error"
-			"show_in_armory"	"1"
+			"show_in_armory"	"0"
 			"item_type_name"	"ERROR"
 			"item_name"	"ERROR"
 			"item_slot"	"melee"
