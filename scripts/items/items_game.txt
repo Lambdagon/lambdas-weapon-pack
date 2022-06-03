@@ -19101,7 +19101,7 @@
 			"item_description"	"#TF_Weapon_MutatedMilk_Desc"
 			"image_inventory"	"backpack/weapons/c_models/c_breadmonster/c_breadmonster_milk"
 			"model_player"		"models/weapons/c_models/c_breadmonster/c_breadmonster_milk.mdl"
-			"show_in_armory"	"1"
+			"show_in_armory"	"0"
 			"item_slot"			"secondary"
 			"min_ilevel"	"1"
 			"max_ilevel"	"99"
