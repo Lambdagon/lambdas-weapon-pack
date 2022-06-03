@@ -6188,59 +6188,6 @@
 			}
 		}
 
-		"weapon_sandvich_civilian"
-		{
-			"prefab"	"weapon_lunchbox"
-			"craft_class"	"weapon"
-			"craft_material_type"	"weapon"
-			"capabilities"
-			{
-				"nameable"		"1"
-			}
-			"tags"
-			{
-				"can_heal_allies"		"1"
-				"can_extinguish"		"1"
-			}
-			"base_item_name"	"The Sandvich"
-			"item_name"	"#TF_Unique_Achievement_LunchBox"
-			"item_description"	"#TF_Sandvich_desc"
-			"inspect_panel_dist" "31"
-			"baseitem" "1"
-			"image_inventory"	"backpack/weapons/c_models/c_sandwich/c_sandwich"
-			"model_player"	"models/weapons/c_models/c_sandwich/c_sandwich.mdl"			
-			"propername"	"1"
-			"used_by_classes"
-			{
-				"civilian"	"1"
-			}
-			"static_attrs"
-			{
-				"min_viewmodel_offset"					"10 0 -11"
-				"item_meter_charge_type"						"1"
-				"item_meter_charge_rate"			"30"
-				"meter_label"							"#TF_Sandwich"
-			}
-			"attributes"
-			{
-				"kill eater score type"
-				{
-					"attribute_class"	"kill_eater_score_type"
-					"value" 	"50" 
-				}
-				"special taunt"
-				{
-					"attribute_class"	"special_taunt"
-					"value" "1"
-				}
-				"allowed in medieval mode"
-				{
-					"attribute_class"	"allowed_in_medieval_mode"
-					"value"	"1"
-				}
-			}
-		}
-
 		"weapon_sapper"
 		{
 			"enabled"	"1"
@@ -6268,7 +6215,6 @@
 			"used_by_classes"
 			{
 				"spy"	"1"
-				"civilian"	"1"
 			}
 			"static_attrs"
 			{
@@ -7884,7 +7830,6 @@
 				"soldier" "secondary"
 				"heavy" "secondary"
 				"scout" "primary"
-				"demoman" "primary"
 			}
 			"static_attrs"
 			{
@@ -7967,7 +7912,6 @@
 				"soldier" "secondary"
 				"heavy" "secondary"
 				"scout" "primary"
-				"demoman" "primary"
 			}
 			"static_attrs"
 			{
@@ -8588,66 +8532,6 @@
 			}
 			"mouse_pressed_sound"	"ui/item_light_gun_pickup.wav"
 			"drop_sound"		"ui/item_light_gun_drop.wav"
-		}
-
-		"GlockWeaponCivilian"
-		{
-			"first_sale_date"	"2010/09/29"
-			"item_class"	"tf_weapon_pistol"
-			"prefab"	"weapon_pistol"
-			"craft_class"	""
-			"craft_material_type"		""
-			"capabilities"
-			{
-				"nameable"		"1"
-			}
-			"tags"
-			{
-				"can_deal_damage"			"1"
-				"can_deal_critical_damage"	"1"
-				"can_deal_long_distance_damage"	"1"
-			}
-			"show_in_armory"	"0"
-			"item_type_name"	"#TF_Weapon_Pistol"
-			"item_name"	"Glock"
-			"item_description"	"Just a Glock, I guess. Animation is broken on Demoman."
-			"item_slot"	"Primary"
-			"item_logname"	"GlockCivilian"
-			"item_iconname"	"pistol"
-			"image_inventory"	"backpack/weapons/c_models/c_pistol"
-			"image_inventory_size_w"		"128"
-			"image_inventory_size_h"		"82"
-			"model_player"	"models/weapons/c_models/c_pistolg/c_pistolg.mdl"
-			"attach_to_hands"	"1"
-			"item_quality"	"rarity3"
-			"propername"	"1"
-			"min_ilevel"	"5"
-			"max_ilevel"	"5"
-			"used_by_classes"
-			{
-				"civilian"	"1"
-			}
-			"mouse_pressed_sound"	"ui/item_light_gun_pickup.wav"
-			"drop_sound"		"ui/item_light_gun_drop.wav"
-			"xifier_class_remap"	"TTG Max Pistol"
-						"visuals"
-			{
-				"sound_single_shot"	"Weapon_Pistol.Single"
-				"sound_burst"	"Weapon_Pistol.SingleCrit"
-			}
-						"attributes"
-			{
-				"clip size bonus"
-				{
-					"attribute_class"	"mult_clipsize"
-					"value" "1.45"
-				}
-				"spread penalty"
-				{
-					"attribute_class" 	"mult_spread_scale"
-					"value" "1.20"
-				}
-			}
 		}
 
 		"weapon_wrangler"
@@ -13641,7 +13525,7 @@
 				"move speed bonus"
 				{
 					"attribute_class"	"mult_player_movespeed"
-					"value" "1.15"
+					"value" "1.35"
 				}
 				"lunchbox adds minicrits"
 				{
@@ -22145,11 +22029,10 @@
 			"item_type_name"	"#TF_Weapon_TFC_Umbrella"
 			"item_name"	"#TF_Weapon_TFC_Umbrella"
 			"item_slot"	"melee"
-			"image_inventory"	"backpack/player/items/all_class/all_pan"
+			"image_inventory"	"backpack/workshop/weapons/c_models/c_xms_giftwrap/c_xms_giftwrap"
 			"image_inventory_size_w"		"128"
 			"image_inventory_size_h"		"82"
-			"model_world"	"models/weapons/w_crowbar.mdl"
-			"model_player"	"models/weapons/tfc/v_umbrella.mdl"
+			"model_player"	"models/weapons/w_models/w_umbrella.mdl"
 			"attach_to_hands"	"0"
 			"inspect_panel_dist" "40"
 			"item_quality"	"unique"
@@ -22163,6 +22046,19 @@
 			"static_attrs"
 			{
 				"min_viewmodel_offset"		"10 0 -7"
+			}
+			"attributes"
+			{
+				"increase player capture value"
+				{
+					"attribute_class"	"add_player_capturevalue"
+					"value"	"2"
+				}
+				"damage bonus"
+				{
+				"attribute_class"	"mult_dmg"
+				"value"	"1.25"
+				}
 			}
 			"mouse_pressed_sound"	"ui/item_metal_weapon_pickup.wav"
 			"drop_sound"		"ui/item_metal_weapon_drop.wav"
@@ -40974,7 +40870,6 @@
 			"model_world"	"models/weapons/w_models/sentrypistol/w_pistol.mdl"
 			"model_player_per_class"
 			{
-				"scout"		"models/weapons/v_models/sentrypistol/v_pistol_scout.mdl"
 				"engineer"	"models/weapons/v_models/sentrypistol/v_pistol_engineer.mdl"
 			}
 			"capabilities"
@@ -43426,10 +43321,10 @@
 			{
 				"sound_single_shot"		"HL2_Weapon_Shotgun.Single"
 				"sound_double_shot"		"HL2_Weapon_Shotgun.Double"
-				"sound_burst"		"HL2_Weapon_Shotgun.Single"
-				"sound_empty"				"HL2_Weapon_Shotgun.Empty"
+				"sound_burst"			"HL2_Weapon_Shotgun.Single"
+				"sound_empty"			"HL2_Weapon_Shotgun.Empty"
 				"sound_reload"			"HL2_Weapon_Shotgun.Reload"
-				"sound_special1"			"HL2_Weapon_Shotgun.Special1"
+				"sound_special1"		"HL2_Weapon_Shotgun.Special1"
 			}
 			"attributes"
 			{
