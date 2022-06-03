@@ -6188,7 +6188,6 @@
 			}
 		}
 
-<<<<<<< HEAD
 		"weapon_sandvich_civilian"
 		{
 			"prefab"	"weapon_lunchbox"
@@ -6242,8 +6241,6 @@
 			}
 		}
 
-=======
->>>>>>> parent of 3f60a9a (ugh)
 		"weapon_sapper"
 		{
 			"enabled"	"1"
@@ -6271,10 +6268,7 @@
 			"used_by_classes"
 			{
 				"spy"	"1"
-<<<<<<< HEAD
 				"civilian"	"1"
-=======
->>>>>>> parent of 3f60a9a (ugh)
 			}
 			"static_attrs"
 			{
@@ -7890,10 +7884,7 @@
 				"soldier" "secondary"
 				"heavy" "secondary"
 				"scout" "primary"
-<<<<<<< HEAD
 				"demoman" "primary"
-=======
->>>>>>> parent of 3f60a9a (ugh)
 			}
 			"static_attrs"
 			{
@@ -8506,7 +8497,6 @@
 			"drop_sound"		"ui/item_light_gun_drop.wav"
 		}
 
-<<<<<<< HEAD
 		"GlockWeaponCivilian"
 		{
 			"first_sale_date"	"2010/09/29"
@@ -8567,8 +8557,6 @@
 			}
 		}
 
-=======
->>>>>>> parent of 3f60a9a (ugh)
 		"weapon_wrangler"
 		{
 			"enabled"	"1"
@@ -13555,11 +13543,7 @@
 				"move speed bonus resource level"
 				{
 					"attribute_class"	"mult_player_movespeed_resource_level"
-<<<<<<< HEAD
 					"value"	"1.2"
-=======
-					"value"	"1.35"
->>>>>>> parent of 3f60a9a (ugh)
 				}
 				"move speed bonus"
 				{
@@ -22068,18 +22052,11 @@
 			"item_type_name"	"#TF_Weapon_TFC_Umbrella"
 			"item_name"	"#TF_Weapon_TFC_Umbrella"
 			"item_slot"	"melee"
-<<<<<<< HEAD
 			"image_inventory"	"backpack/player/items/all_class/all_pan"
 			"image_inventory_size_w"		"128"
 			"image_inventory_size_h"		"82"
 			"model_world"	"models/weapons/w_crowbar.mdl"
 			"model_player"	"models/weapons/tfc/v_umbrella.mdl"
-=======
-			"image_inventory"	"backpack/workshop/weapons/c_models/c_xms_giftwrap/c_xms_giftwrap"
-			"image_inventory_size_w"		"128"
-			"image_inventory_size_h"		"82"
-			"model_player"	"models/weapons/w_models/w_umbrella.mdl"
->>>>>>> parent of 3f60a9a (ugh)
 			"attach_to_hands"	"0"
 			"inspect_panel_dist" "40"
 			"item_quality"	"unique"
@@ -22094,22 +22071,6 @@
 			{
 				"min_viewmodel_offset"		"10 0 -7"
 			}
-<<<<<<< HEAD
-=======
-			"attributes"
-			{
-				"increase player capture value"
-				{
-					"attribute_class"	"add_player_capturevalue"
-					"value"	"2"
-				}
-				"damage bonus"
-				{
-				"attribute_class"	"mult_dmg"
-				"value"	"1.25"
-				}
-			}
->>>>>>> parent of 3f60a9a (ugh)
 			"mouse_pressed_sound"	"ui/item_metal_weapon_pickup.wav"
 			"drop_sound"		"ui/item_metal_weapon_drop.wav"
 		}
@@ -40975,10 +40936,7 @@
 			"model_world"	"models/weapons/w_models/sentrypistol/w_pistol.mdl"
 			"model_player_per_class"
 			{
-<<<<<<< HEAD
 				"scout"		"models/weapons/v_models/sentrypistol/v_pistol_scout.mdl"
-=======
->>>>>>> parent of 3f60a9a (ugh)
 				"engineer"	"models/weapons/v_models/sentrypistol/v_pistol_engineer.mdl"
 			}
 			"capabilities"
@@ -43430,17 +43388,10 @@
 			{
 				"sound_single_shot"		"HL2_Weapon_Shotgun.Single"
 				"sound_double_shot"		"HL2_Weapon_Shotgun.Double"
-<<<<<<< HEAD
 				"sound_burst"		"HL2_Weapon_Shotgun.Single"
 				"sound_empty"				"HL2_Weapon_Shotgun.Empty"
 				"sound_reload"			"HL2_Weapon_Shotgun.Reload"
 				"sound_special1"			"HL2_Weapon_Shotgun.Special1"
-=======
-				"sound_burst"			"HL2_Weapon_Shotgun.Single"
-				"sound_empty"			"HL2_Weapon_Shotgun.Empty"
-				"sound_reload"			"HL2_Weapon_Shotgun.Reload"
-				"sound_special1"		"HL2_Weapon_Shotgun.Special1"
->>>>>>> parent of 3f60a9a (ugh)
 			}
 			"attributes"
 			{
@@ -46285,21 +46236,6 @@
 				}
 			}
 		}
-<<<<<<< HEAD
-=======
-		"7407"
-		{
-			"name"	"The Sandvich"
-			"first_sale_date"	"2010/09/29"
-			"prefab"	"valve weapon_sandvich_civilian"
-			"baseitem" "1"
-			"show_in_armory"	"1"
-			"used_by_classes"
-			{
-			"civilian"    "1"
-			}
-		}
->>>>>>> parent of 3f60a9a (ugh)
 		"30570"
 		{
 			"name"		"Pool Party Taunt"
