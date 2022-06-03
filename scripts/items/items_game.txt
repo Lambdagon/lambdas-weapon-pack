@@ -42731,11 +42731,6 @@
 					"attribute_class"	"add_maxhealth"
 					"value" "-25"
 				}
-				"dmg taken from fire increased"
-				{
-					"attribute_class"	"mult_dmgtaken_from_fire"
-					"value"			"1.75"
-				}
 				"reload time increased"
 				{
 					"attribute_class"	"mult_reload_time_hidden"
