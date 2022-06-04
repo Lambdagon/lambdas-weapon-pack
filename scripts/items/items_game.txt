@@ -46251,6 +46251,119 @@
 			"baseitem"	"0"
 			"show_in_armory"	"1"
 		}
+		"7409"
+		{
+			"name"	"The Balls"
+			"prefab"	"valve"
+			"first_sale_date"	"2010/09/29"
+			"item_class"	"tf_weapon_bat_wood"
+			"craft_class"	"weapon"
+			"craft_material_type"	"weapon"
+			"capabilities"
+			{
+				"nameable"		"1"
+				"can_collect"	"1"
+			}
+			"tags"
+			{
+				"can_deal_damage"			"1"
+				"can_deal_critical_damage"	"1"
+				"can_deal_posthumous_damage"	"1"
+				"can_deal_long_distance_damage"	"1"
+				"can_deal_taunt_damage" "1"
+				"can_be_festivized"		"1"
+			}
+			"show_in_armory"	"1"
+			"item_type_name"	"#TF_Weapon_Bat"
+			"item_name"	"Balls"
+			"item_logname"	"Balls"
+			"item_iconname"	"sandman"
+			"item_slot"	"melee"
+			"item_quality"	"unique"
+			"propername"	"1"
+			"min_ilevel"	"15"
+			"max_ilevel"	"15"
+			"inspect_panel_dist" "45"
+			"attach_to_hands"	"1"
+			"image_inventory"	"backpack/weapons/c_models/c_wooden_bat/c_wooden_bat"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"82"
+			"model_player"	"models/weapons/c_models/c_wooden_bat/c_wooden_bat.mdl"
+			"visuals"
+			{
+				"styles"
+				{
+					"0"
+					{
+						"skin_red"		"0"
+						"skin_blu"		"1"
+					}
+				}
+			}
+			"used_by_classes"
+			{
+				"scout"	"1"
+			}
+			"static_attrs"
+			{
+				"min_viewmodel_offset"					"10 0 -6"
+			}
+			"attributes"
+			{
+				"override projectile type"
+				{
+					"attribute_class"	"override_projectile_type"
+					"value"				"10" 
+				}
+				"mod bat launches balls"
+				{
+					"attribute_class"	"set_weapon_mode"
+					"value"	"1"
+				}
+				"effect bar recharge rate increased"
+				{
+					"attribute_class"	"effectbar_recharge_rate"
+					"value" "0.25"
+				}
+				"minicrits become crits"
+				{
+					"attribute_class"	"minicrits_become_crits"
+					"value" "1"
+				}
+				"mark for death"
+				{
+					"attribute_class"	"mark_for_death"
+					"value"	"1"
+				}
+				"damage penalty"
+				{
+					"attribute_class"	"mult_dmg"
+					"value"	"0.50"
+				}
+				"max health additive penalty"
+				{
+					"attribute_class"	"add_maxhealth"
+					"value" "-5"
+				}
+				"dmg taken from blast increased"
+				{
+					"attribute_class"	"mult_dmgtaken_from_explosions"
+					"value"			"1.25"
+				}
+				"hit self on miss"
+				{
+					"attribute_class"	"hit_self_on_miss"
+					"value"	"1"
+				}
+				"special taunt"
+				{
+					"attribute_class"	"special_taunt"
+					"value" "1"
+				}
+			}
+			"mouse_pressed_sound"	"ui/item_wood_pole_pickup.wav"
+			"drop_sound"		"ui/item_wood_pole_drop.wav"
+		}
 		"30570"
 		{
 			"name"		"Pool Party Taunt"
