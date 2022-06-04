@@ -43,7 +43,7 @@ PlayerClass
 	{
 		"tf_ammo_primary"	"32"
 		"tf_ammo_secondary"	"200"
-		"tf_ammo_metal"		"225"
+		"tf_ammo_metal"		"200"
 		"tf_ammo_grenades1"	"1"
 		"tf_ammo_grenades2"	"1"
 	}	
