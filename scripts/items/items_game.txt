@@ -13084,6 +13084,10 @@
 			"inspect_panel_dist" "35"
 			"image_inventory"	"backpack/workshop_partner/weapons/c_models/c_shogun_kunai/c_shogun_kunai"
 			"model_player"	"models/workshop_partner/weapons/c_models/c_shogun_kunai/c_shogun_kunai.mdl"
+			"used_by_classes"
+			{
+				"spy"	"1"
+			}
 			"static_attrs"
 			{
 				"min_viewmodel_offset"		"10 0 -6"
