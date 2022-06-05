@@ -26442,10 +26442,10 @@
 			"armory_desc" "can_customize_texture"
 			"attributes"
 			{
-				"mod crit while airborne"
+				"provide on active"
 				{
-					"attribute_class"	"crit_while_airborne"
-					"value"	"1"
+					"attribute_class"	"provide_on_active"
+					"value" "1"
 				}
 				"heal on kill"
 				{
@@ -26457,16 +26457,6 @@
 					"attribute_class"	"mult_player_movespeed"
 					"value" "1.15"
 				}
-				"dmg taken increased"
-				{
-					"attribute_class"	"mult_dmgtaken"
-					"value"	"1.2"
-				}
-				"provide on active"
-				{
-					"attribute_class"	"provide_on_active"
-					"value" "1"
-				}
 				"critboost on kill"
 				{
 					"attribute_class"	"add_onkill_critboost_time"
@@ -26476,6 +26466,11 @@
 				{
 					"attribute_class"	"speed_boost_on_hit"
 					"value"	"15"
+				}
+				"dmg taken increased"
+				{
+					"attribute_class"	"mult_dmgtaken"
+					"value"	"1.2"
 				}
 				
 			}
@@ -44720,7 +44715,7 @@
 				"can_deal_long_distance_damage"	"1"
 				"can_deal_gib_damage"	"1"
 			}
-			"item_logname"	"ambassador"
+			"item_logname"	"big_ambassador"
 			"item_iconname"	"ambassador"
 			"show_in_armory"	"1"
 			"item_type_name"	"Revolver???????"
@@ -44736,7 +44731,7 @@
 			"image_inventory_size_w"		"128"
 			"image_inventory_size_h"		"82"
 			"model_player"	"models/weapons/v_models/v_revrifle_sniper.mdl"
-			"model_world"	"models/weapons/w_models/w_revrifle_sniper.mdl"
+			"model_world"	"models/weapons/c_models/c_ambassador/c_ambassador.mdl"
 			"attach_to_hands"	"2"
 			"visuals"
 			{
