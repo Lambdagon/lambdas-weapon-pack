@@ -7972,7 +7972,7 @@
 			"mouse_pressed_sound"	"ui/item_heavy_gun_pickup.wav"
 			"drop_sound"		"ui/item_heavy_gun_drop.wav"
 		}
-		
+
 		"weapon_trenchgun_phantom"
 		{
 			"enabled"	"1"
@@ -8056,15 +8056,16 @@
 					"value" "1"
 				}
 				"single wep deploy time increased"
-                {
-                    "attribute_class"    "mult_single_wep_deploy_time"
-                    "value"    "1.5"
-                }
+				{
+				"attribute_class"    "mult_single_wep_deploy_time"
+				"value"    "1.2"
+				}
 				"single wep holster time increased"
-                {
-                    "attribute_class"    "mult_switch_from_wep_deploy_time"
-                    "value"    "1.5"
-                }
+				{
+				"attribute_class"    "mult_switch_from_wep_deploy_time"
+				"value"    "1.2"
+				}
+			}
 			"visuals"
 			{
 				"sound_single_shot"		"Weapon_BackShot_Shotty.Single"
@@ -8073,7 +8074,7 @@
 			"mouse_pressed_sound"	"ui/item_heavy_gun_pickup.wav"
 			"drop_sound"		"ui/item_heavy_gun_drop.wav"
 		}
-		
+
 		"weapon_trenchgun_prenerf"
 		{
 			"enabled"	"1"
@@ -47092,60 +47093,7 @@
 			"tags"
 			{
 				"can_be_festivized"		"1"
-			}
-			"attributes"
-			{
-				"crit mod disabled"
-				{
-					"attribute_class"	"mult_crit_chance"
-					"value"	"0"
-				}
-				"damage penalty"
-				{
-					"attribute_class"	"mult_dmg"
-					"value"	"0.8"
-				}
-				"clip size bonus"
-				{
-					"attribute_class"	"mult_clipsize"
-					"value"	"1.25"
-				}
-				"fire rate bonus"
-				{
-					"attribute_class"	"mult_postfiredelay"
-					"value"	"0.85"
-				}
-				"single wep deploy time decreased"
-				{
-					"attribute_class"	"mult_single_wep_deploy_time"
-					"value"	"0.5"
-				}
-				"mult_spread_scales_consecutive"
-				{
-					"attribute_class" 	"mult_spread_scales_consecutive"
-					"value" "1"
-				}
-				"bullets per shot bonus"
-				{
-					"attribute_class" 	"mult_bullets_per_shot"
-					"value" "1.5"
-				}
-				"fixed_shot_pattern"
-				{
-					"attribute_class" 	"fixed_shot_pattern"
-					"value" "1"
-				}
-				"single wep deploy time increased"
-                {
-                    "attribute_class"    "mult_single_wep_deploy_time"
-                    "value"    "1.5"
-                }
-				"single wep holster time increased"
-                {
-                    "attribute_class"    "mult_switch_from_wep_deploy_time"
-                    "value"    "1.5"
-                }
-			}
+			}	
 			"visuals"
 			{
 				"attached_models"
@@ -47181,7 +47129,12 @@
 				"clip size penalty"
 				{
 					"attribute_class"	"mult_clipsize"
-					"value" "0.70"
+					"value" "0.65"
+				}
+				"airblast disabled"
+				{
+					"attribute_class"	"airblast_disabled"
+					"value" "1"
 				}
 				"heal on hit for slowfire"
 				{
