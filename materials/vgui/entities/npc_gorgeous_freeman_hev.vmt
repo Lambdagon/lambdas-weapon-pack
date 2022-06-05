@@ -1,7 +1,0 @@
-"UnlitGeneric" 
-{ 
-	"$basetexture"		"vgui/entities/npc_gorgeous_freeman_hev" 
-	"$vertexcolor" 		1 
-	"$vertexalpha" 		1 
-	"$nolod" 			1 
-} 
