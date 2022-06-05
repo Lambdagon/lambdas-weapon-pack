@@ -26402,9 +26402,9 @@
 				}
 			}
 		}			
-				"6928"
+		"6928"
 		{
-			"name"	"Objector - YOW's Sussy Objector"
+			"name"	"genderfluid_sign"
 			"first_sale_date"	"2011/09/07"
 			"item_class"	"saxxy"
 			"prefab"	"weapon_melee_allclass"
@@ -26424,8 +26424,7 @@
 			}
 			"show_in_armory"	"1"
 			"item_type_name"	"#TF_Weapon_Sign"
-			"item_name"	"Objector - YOW's Sussy Objector"
-			"item_description"	"Uhhhhhhhhhhhhhhhhhhhhhhhhhhhhh"
+			"item_name"	"Genderfluid Pride"
 			"item_slot"	"melee"
 			"item_quality"	"unique"
 			"min_ilevel"	"25"
@@ -26441,21 +26440,31 @@
 			"model_player"	"models/workshop/weapons/c_models/c_picket1/c_picket3/c_picket.mdl"
 			"anim_slot" "MELEE_ALLCLASS"
 			"armory_desc" "can_customize_texture"
-						"attributes"
+			"attributes"
 			{
 				"mod crit while airborne"
 				{
 					"attribute_class"	"crit_while_airborne"
 					"value"	"1"
 				}
-				"crit mod disabled"
+				"heal on kill"
 				{
-					"attribute_class"	"mult_crit_chance"
-					"value"	"0"
+					"attribute_class"	"heal_on_kill"
+					"value"	"25"
 				}
-				"special taunt"
+				"move speed bonus"
 				{
-					"attribute_class"	"special_taunt"
+					"attribute_class"	"mult_player_movespeed"
+					"value" "1.15"
+				}
+				"dmg taken increased"
+				{
+					"attribute_class"	"mult_dmgtaken"
+					"value"	"1.2"
+				}
+				"provide on active"
+				{
+					"attribute_class"	"provide_on_active"
 					"value" "1"
 				}
 				"critboost on kill"
@@ -26506,7 +26515,7 @@
 				}
 			}
 		}			
-				"6929"
+		"6929"
 		{
 			"name"		"Six Pack Abs"
 			"prefab"		"valve grenades"
@@ -46935,6 +46944,7 @@
 			"item_name"		"Proto"
 			"item_description"		"don't boop it"
 			"equip_region"		"pyro_head_replacement"
+			"extra_wearable"	"models/player/items/sniper/sniper_nohat.mdl"
 			"visuals"
 			{
 				"player_bodygroups"
