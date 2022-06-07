@@ -122,3 +122,57 @@
 
 	"wave"		"#weapons/MrcrabsFuckScattergunShoot.wav"
 }
+"HL2_D_Weapon_RPG.Single"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"1.0"
+	"soundlevel"	"SNDLVL_95dB"
+	"pitch"		"99, 101"
+
+	"wave"		"#weapons/rpg/rocket1.wav"
+}
+"Weapon_D_SMG1.Empty"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"1.0"
+	"soundlevel"	"SNDLVL_95dB"
+	"pitch"		"99, 101"
+
+	"wave"		"#weapons/MrcrabsFuckScattergunShoot.wav"
+}
+"HL2_D_Weapon_Shotgun.Empty"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"1.0"
+	"soundlevel"	"SNDLVL_95dB"
+	"pitch"		"99, 101"
+
+	"wave"		"#weapons/shotgun/shotgun_empty.wav"
+}
+"HL2_D_Weapon_Shotgun.Double"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"1.0"
+	"soundlevel"	"SNDLVL_95dB"
+	"pitch"		"99, 101"
+
+	"wave"		"#weapons/shotgun/shotgun_dbl_fire7.wav"
+}
+"HL2_D_Weapon_Shotgun.Reload"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"1.0"
+	"soundlevel"	"SNDLVL_95dB"
+	"pitch"		"99, 101"
+
+	"wave"		"#weapons/shotgun/shotgun_reload1.wav"
+}
+"HL2_D_Weapon_Shotgun.Single"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"1.0"
+	"soundlevel"	"SNDLVL_95dB"
+	"pitch"		"99, 101"
+
+	"wave"		"#weapons/shotgun/shotgun_fire7.wav"
+}
