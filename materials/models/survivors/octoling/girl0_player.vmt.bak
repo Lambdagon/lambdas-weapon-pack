@@ -1,0 +1,73 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "models/survivors/octoling/girl0_alb"
+	"$bumpmap" "models/survivors/octoling/girl0_nrm"
+
+	"$lightwarptexture" "models/survivors/octoling/inkling_lightwarp6"
+
+	"$phong" "1"
+	"$phongexponent" "200"
+	"$phongboost" "24"	
+	"$phongfresnelranges"	"[.3 1 8]"
+	"$halflambert" "1"
+
+	"$envmap" "env_cubemap"
+	"$basealphaenvmapmask" "0"
+	"$normalmapalphaenvmapmask" "1"
+	"$envmaptint" "[.1 .1 .1]"
+
+	// Rim lighting parameters
+	"$rimlight" "1"												// To enable rim lighting (requires phong)
+	"$rimlightexponent" "4"										// Exponent for phong component of rim lighting	
+	"$rimlightboost" "2"										// Boost for ambient cube component of rim lighting
+
+	"$blendtintbybasealpha"		"1"
+	"$blendtintcoloroverbase"		"0"
+	"$colortint_base"		"{ 98 32 31 }"
+	"$colortint_tmp"		"[0 0 0]"
+	"$color2"		"{ 254 31 137 }"
+
+	"$PhongBrightnessScalar" "0.5" // see below. "0.5" will get overwritten.
+	
+	Proxies
+	{
+		PlayerColor
+		{
+			resultVar	$color2 // pass the player color value to Gmod
+//			default		0.23 0.35 0.41 // unused for now.
+			default		254 31 137 // unused for now.
+		}
+		Clamp // clamp the chosen color between 1% and 125% (usually)
+		{
+			min 0.01
+			max 1.25
+			srcVar1 "$color2"
+			resultVar "$color2"
+		}
+		Clamp // copy this value to phong tint, clamp it to 50% min.
+		{
+			min 0.5
+			max 1.0
+			srcVar1 "$color2"
+			resultVar "$phongtint"
+		}
+		Equals // copy $color2 value to exterior variable. this makes it
+		{      // no longer a RGB array but a single float instead (!??)
+			srcVar1 "$color2"
+			resultVar "$PhongBrightnessScalar"
+		}
+		Multiply // multiply $phongtint by this new float value.
+		{
+			srcVar1 "$phongtint"
+			srcVar2 "$phongBrightnessScalar"
+			resultVar "$phongtint"
+		}
+		Clamp // the result of this multiply doesn't go any lower than 20%
+		{
+			min 0.25
+			max 1.00
+			srcVar1 "$phongtint"
+			resultVar "$phongtint"
+		}
+	}
+}

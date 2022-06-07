@@ -1,0 +1,18 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "models/survivors/octoling/M_TankTop"
+	"$bumpmap" "models/survivors/octoling/M_TankTop_Nrm"
+
+	"$lightwarptexture" "models/survivors/octoling/inkling_lightwarp1"
+
+	"$phong" "1"
+	"$phongexponent" "15"
+	"$phongboost" ".5"	
+	"$phongfresnelranges"	"[.005 .25 .75]"
+	"$halflambert" "1"
+
+	"$rimlight" "1"
+	"$rimlightexponent" "4"
+	"$rimlightboost" ".2"
+
+}
