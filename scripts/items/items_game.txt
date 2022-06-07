@@ -47340,7 +47340,7 @@
 			"image_inventory_size_w"		"128"
 			"image_inventory_size_h"		"82"
 			"inspect_panel_dist" 			"35"
-			"model_player"	"models/player/hwm/scout.mdl"
+			"model_player"	"models/player/scout.mdl"
 			"act_as_wearable" "1"
 			"attach_to_hands"	"0"
 			"attach_to_hands_vm_only"	"1"
@@ -47431,8 +47431,8 @@
 			"item_description"	"Knights of Hyrule"
 			"prefab"	"valve weapon_eyelander"
 			"first_sale_date"	"2010/09/29"
-			"show_in_armory"	"1"
-			"image_inventory"	"backpack/workshop/weapons/c_models/c_persian_shield/c_persian_shield"
+			"show_in_armory"	"0"
+			"image_inventory"	"backpack/weapons/c_models/c_claymore/c_claymore"
 			"image_inventory_size_w"		"128"
 			"image_inventory_size_h"		"82"
 			"inspect_panel_dist" 			"35"
@@ -47441,6 +47441,69 @@
 			{
 				"min_viewmodel_offset"		"10 0 -11"				
 			}
+		}
+		"7512"
+		{
+			"name"		"Like Father Like Son"
+			"prefab"		"no_craft misc marketable"
+			"item_name"		"Like Father Like Son"
+			"item_description"		"Cosmetic"
+			"item_slot"	"misc2"
+			"image_inventory"		"backpack/workshop/player/items/scout/hwn2021_corpse_carrier/hwn2021_corpse_carrier"
+			"propername"		"1"
+			"capabilities"
+			{
+				"can_craft_count"		"1"
+			}
+			"model_player"		"models/player/hwm/spy.mdl"
+			"used_by_classes"
+			{
+				"scout"		"1"
+			}
+			"mouse_pressed_sound"		"ui/item_hat_pickup.wav"
+			"drop_sound"		"ui/item_hat_drop.wav"
+		}
+		"7513"
+		{
+			"name"		"Like Son Like Father"
+			"prefab"		"no_craft misc marketable"
+			"item_name"		"Like Son Like Father"
+			"item_description"		"Cosmetic"
+			"item_slot"	"misc2"
+			"image_inventory"		"backpack/workshop/player/items/scout/hwn2021_corpse_carrier/hwn2021_corpse_carrier"
+			"propername"		"1"
+			"capabilities"
+			{
+				"can_craft_count"		"1"
+			}
+			"model_player"		"models/player/hwm/scout.mdl"
+			"used_by_classes"
+			{
+				"spy"		"1"
+			}
+			"mouse_pressed_sound"		"ui/item_hat_pickup.wav"
+			"drop_sound"		"ui/item_hat_drop.wav"
+		}
+		"7514"
+		{
+			"name"		"Robot Spy"
+			"prefab"		"no_craft misc marketable"
+			"item_name"		"Robot Spy"
+			"item_description"		"Cosmetic"
+			"item_slot"	"misc2"
+			"image_inventory"		"backpack/workshop/player/items/scout/hwn2021_corpse_carrier/hwn2021_corpse_carrier"
+			"propername"		"1"
+			"capabilities"
+			{
+				"can_craft_count"		"1"
+			}
+			"model_player"		"models/bots/spy/bot_spy.mdl"
+			"used_by_classes"
+			{
+				"spy"		"1"
+			}
+			"mouse_pressed_sound"		"ui/item_hat_pickup.wav"
+			"drop_sound"		"ui/item_hat_drop.wav"
 		}
 		"30570"
 		{
