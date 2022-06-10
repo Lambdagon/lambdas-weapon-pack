@@ -42684,6 +42684,16 @@
 				}
 				"attributes"
 				{
+				"scattergun has knockback"
+				{
+					"attribute_class"	"set_scattergun_has_knockback"
+					"value"	"1"
+				}
+				"bullets per shot bonus"
+				{
+					"attribute_class"	"mult_bullets_per_shot"
+					"value" "1.1"
+				}
 				"fire rate bonus"
 				{
 				"attribute_class"	"mult_postfiredelay"
