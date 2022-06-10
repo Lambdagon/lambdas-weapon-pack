@@ -4762,7 +4762,7 @@
 				"maxammo secondary reduced"
 				{
 					"attribute_class"	"mult_maxammo_secondary"
-					"value"				"0.35"
+					"value"				"0.65"
 				}
 				"damage bonus vs burning"
 				{
@@ -24390,6 +24390,7 @@
 			"min_ilevel"	"5"
 			"max_ilevel"	"5"
 			"attach_to_hands"	"1"
+			"show_in_armory"	"0"
 			"image_inventory"	"backpack/workshop/weapons/c_models/c_madmilk/c_madmilk"
 			"image_inventory_size_w"		"128"
 			"image_inventory_size_h"		"82"
@@ -28604,6 +28605,7 @@
 			"image_inventory_size_w"		"128"
 			"image_inventory_size_h"		"82"
 			"model_player"	"models/workshop/weapons/c_models/c_ttg_max_gun/c_ttg_max_gun.mdl"
+			"show_in_armory"	"0"
 			"propername"	"1"
 			"used_by_classes"
 			{
@@ -29237,6 +29239,7 @@
 			"item_description" "YOU JUST GOT TROLLED!11!!1!"
 			"anim_slot"	"ITEM1"
 			"item_slot"	"primary"
+			"show_in_armory"	"0"
 			"image_inventory"	"backpack/weapons/c_models/c_energy_drink/c_energy_drink"
 			"image_inventory_size_w"		"128"
 			"image_inventory_size_h"		"82"
@@ -39349,7 +39352,7 @@
 			"craft_material_type"	"weapon"
 			"item_type_name"	"#TF_Weapon_Pistol"
 			"item_name"	"Festive Lugermorph"
-			"item_description"	"FINALLY FESTIVE"
+			"item_description"	"Fuckin Festive Fun"
 			"item_logname"	"maxgun"
 			"item_iconname"	"maxgun"
 			"item_slot"	"secondary"
@@ -42523,11 +42526,11 @@
 			}
 			"mouse_pressed_sound"	"ui/item_heavy_gun_pickup.wav"
 			"drop_sound"		"ui/item_heavy_gun_drop.wav"
-		}
-		"7341"
-		{
-            "name"    "super_shotgun"
-            "enabled"	"1"
+			}
+			"7341"
+			{
+			"name"    "super_shotgun"
+			"enabled"	"1"
 			"item_class"	"tf_weapon_scattergun"
 			"craft_class"	"weapon"
 			"craft_material_type"	"weapon"
@@ -42544,10 +42547,9 @@
 				"can_deal_long_distance_damage"	"1"
 			}
 			"item_type_name"	"#TF_Weapon_Shotgun"
-			"item_quality"	"strange"
 			"item_slot"		"primary"
 			"item_name"	"Close Encounter"
-			"item_description"	"Doom"
+			"item_description"	"Encountering people Close"
 			"baseitem" "0"
 			"show_in_armory"	"1"
 			"min_ilevel"	"1"
@@ -42568,40 +42570,62 @@
 				"sound_single_shot"	"HL2_Weapon_Shotgun.Double"
 				"sound_reload"	"HL2_Weapon_Shotgun.Reload"
 			}
-            "used_by_classes"
-            {
-                "engineer"    "1"
-				"sniper"	  "1"
+				"used_by_classes"
+				{
+				"engineer"    "1"
 				"scout"		  "1"
-				"heavy"		  "secondary"
-				"soldier"	  "secondary"
-            }
-			"attributes"
-			{
+				}
+				"attributes"
+				{
+				"Projectile speed increased"
+				{
+					"attribute_class"	"mult_projectile_speed"
+					"value"	"3"
+				}
+				"override projectile type"
+				{
+					"attribute_class"	"override_projectile_type"
+					"value"				"2"
+				}
+				"fire rate bonus"
+				{
+				"attribute_class"	"mult_postfiredelay"
+				"value"	"0.6"
+				}
+				"weapon spread bonus"
+				{
+					"attribute_class"	"mult_spread_scale"
+					"value"	"0"
+				}
 				"clip size penalty"
 				{
 					"attribute_class"	"mult_clipsize"
-					"value" "0.34"
-				}
-				"scattergun no reload single"
-				{
-					"attribute_class"	"set_scattergun_no_reload_single"
-					"value"	"1"
+					"value" "0.20"
 				}
 				"Projectile range decreased"
 				{
 					"attribute_class"	"mult_projectile_range"
 					"value"	"0.15"
 				}
-				"bullets per shot bonus"
+				"maxammo primary reduced"
 				{
-					"attribute_class" 	"mult_bullets_per_shot"
-					"value" "2.2"
+					"attribute_class"	"mult_maxammo_primary"
+					"value"				"0.75"
 				}
-				"mod ammo per shot"
+				"Blast radius decreased"
 				{
-					"attribute_class"	"mod_ammo_per_shot"
-					"value"	"2"
+					"attribute_class"	"mult_explosion_radius"
+					"value"	"0.10"
+				}
+				"scattergun no reload single"
+				{
+					"attribute_class"	"set_scattergun_no_reload_single"
+					"value"	"1"
+				}
+				"centerfire projectile"
+				{
+					"attribute_class"	"centerfire_projectile"
+					"value"	"1"
 				}
 			}
 		}
@@ -47578,6 +47602,108 @@
 			}
 			"mouse_pressed_sound"		"ui/item_hat_pickup.wav"
 			"drop_sound"		"ui/item_hat_drop.wav"
+		}
+		"7518"
+		{
+			"name"    "super_shotgun"
+			"enabled"	"1"
+			"item_class"	"tf_weapon_scattergun"
+			"craft_class"	"weapon"
+			"craft_material_type"	"weapon"
+			"capabilities"
+			{
+				"nameable"		"1"
+				"can_collect" "1"
+			}
+			"tags"
+			{
+				"can_deal_damage"			"1"
+				"can_deal_critical_damage"	"1"
+				"can_deal_mvm_penetration_damage"	"1"
+				"can_deal_long_distance_damage"	"1"
+			}
+			"item_type_name"	"#TF_Weapon_Shotgun"
+			"item_slot"		"secondary"
+			"item_name"	"Close Encounter"
+			"item_description"	"Encountering people Close"
+			"baseitem" "0"
+			"show_in_armory"	"1"
+			"min_ilevel"	"1"
+			"max_ilevel"	"1"
+			"attach_to_hands"	"2"
+			"inspect_panel_dist" "40"
+			"image_inventory"	"backpack/weapons/w_models/w_shotgun"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"82"
+			"model_player"    "models/weapons/v_supershotgun_mercenary.mdl"
+			"model_world"    "models/weapons/v_supershotgun_mercenary.mdl"
+			"mouse_pressed_sound"	"ui/item_heavy_gun_pickup.wav"
+			"drop_sound"		"ui/item_heavy_gun_drop.wav"
+			"particle_suffix"		"shotgun"
+			"visuals"
+			{
+				"sound_single_shot"	"HL2_Weapon_Shotgun.Double"
+				"sound_single_shot"	"HL2_Weapon_Shotgun.Double"
+				"sound_reload"	"HL2_Weapon_Shotgun.Reload"
+			}
+				"used_by_classes"
+				{
+				"heavy"		  "1"
+				"soldier"	  "1"
+				}
+				"attributes"
+				{
+				"Projectile speed increased"
+				{
+					"attribute_class"	"mult_projectile_speed"
+					"value"	"3"
+				}
+				"override projectile type"
+				{
+					"attribute_class"	"override_projectile_type"
+					"value"				"2"
+				}
+				"fire rate bonus"
+				{
+				"attribute_class"	"mult_postfiredelay"
+				"value"	"0.6"
+				}
+				"weapon spread bonus"
+				{
+					"attribute_class"	"mult_spread_scale"
+					"value"	"0"
+				}
+				"clip size penalty"
+				{
+					"attribute_class"	"mult_clipsize"
+					"value" "0.20"
+				}
+				"Projectile range decreased"
+				{
+					"attribute_class"	"mult_projectile_range"
+					"value"	"0.15"
+				}
+				"maxammo primary reduced"
+				{
+					"attribute_class"	"mult_maxammo_primary"
+					"value"				"0.75"
+				}
+				"Blast radius decreased"
+				{
+					"attribute_class"	"mult_explosion_radius"
+					"value"	"0.10"
+				}
+				"scattergun no reload single"
+				{
+					"attribute_class"	"set_scattergun_no_reload_single"
+					"value"	"1"
+				}
+				"centerfire projectile"
+				{
+					"attribute_class"	"centerfire_projectile"
+					"value"	"1"
+				}
+			}
 		}
 		"30570"
 		{
