@@ -42838,11 +42838,6 @@
 					"attribute_class"	"set_scattergun_no_reload_single"
 					"value"	"1"
 				}
-				"centerfire projectile"
-				{
-					"attribute_class"	"centerfire_projectile"
-					"value"	"1"
-				}
 			}
 		}
 		"7342"
@@ -47869,15 +47864,15 @@
 				}
 				"attributes"
 				{
-				"Projectile speed increased"
+				"scattergun has knockback"
 				{
-					"attribute_class"	"mult_projectile_speed"
-					"value"	"3"
+					"attribute_class"	"set_scattergun_has_knockback"
+					"value"	"1"
 				}
-				"override projectile type"
+				"bullets per shot bonus"
 				{
-					"attribute_class"	"override_projectile_type"
-					"value"				"2"
+					"attribute_class"	"mult_bullets_per_shot"
+					"value" "1.1"
 				}
 				"fire rate bonus"
 				{
@@ -47897,26 +47892,16 @@
 				"Projectile range decreased"
 				{
 					"attribute_class"	"mult_projectile_range"
-					"value"	"0.70"
+					"value"	"0.15"
 				}
 				"maxammo primary reduced"
 				{
 					"attribute_class"	"mult_maxammo_primary"
 					"value"				"0.75"
 				}
-				"Blast radius decreased"
-				{
-					"attribute_class"	"mult_explosion_radius"
-					"value"	"0.30"
-				}
 				"scattergun no reload single"
 				{
 					"attribute_class"	"set_scattergun_no_reload_single"
-					"value"	"1"
-				}
-				"centerfire projectile"
-				{
-					"attribute_class"	"centerfire_projectile"
 					"value"	"1"
 				}
 			}
