@@ -47522,12 +47522,22 @@
 				"is_a_sword"
 				{
 					"attribute_class"	"is_a_sword"
-					"value"				"100"
+					"value"				"150"
+				}
+				"kill refills meter"
+				{
+					"attribute_class"	"kill_refills_meter"
+					"value"			"0.30"
+				}
+				"charge time increased"
+				{
+					"attribute_class"	"mod_charge_time"
+					"value" "1"
 				}
 				"damage bonus"
 				{
 					"attribute_class"	"mult_dmg"
-					"value"	"100000"
+					"value"	"100001"
 				}
 				"ammo gives charge"
 				{
@@ -47840,7 +47850,7 @@
 			"baseitem" "0"
 			"show_in_armory"	"1"
 			"min_ilevel"	"1"
-			"max_ilevel"	"1"
+			"max_ilevel"	"1"	
 			"attach_to_hands"	"2"
 			"inspect_panel_dist" "40"
 			"image_inventory"	"backpack/weapons/w_models/w_shotgun"
