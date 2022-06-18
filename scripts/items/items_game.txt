@@ -4096,11 +4096,6 @@
 					"attribute_class"	"mult_crit_chance"
 					"value"	"0"
 				}
-				"Blast radius decreased"
-				{
-					"attribute_class"	"mult_explosion_radius"
-					"value"	"0.3"
-				}
 				"allowed in medieval mode"
 				{
 					"attribute_class"	"allowed_in_medieval_mode"
@@ -4114,7 +4109,7 @@
 				"override projectile type"
 				{
 				"attribute_class"    "override_projectile_type"
-				 "value"                "2"
+				 "value"                "1"
 				}
 			}
 			"visuals"
@@ -11939,6 +11934,27 @@
 					"ACT_SECONDARY_VM_INSPECT_START"	"ACT_ITEM1_VM_INSPECT_START"
 					"ACT_SECONDARY_VM_INSPECT_IDLE"		"ACT_ITEM1_VM_INSPECT_IDLE"
 					"ACT_SECONDARY_VM_INSPECT_END"		"ACT_ITEM1_VM_INSPECT_END"
+				}
+			}
+		}
+		"227"
+		{
+			"name"	"The Black Box"
+			"prefab" "weapon_blackbox paintkit_base"
+			"first_sale_date"	"2010/09/29"
+			"particle_suffix"	"black_box"
+			"tags"
+			{
+				"can_be_festivized"		"1"
+			}
+			"visuals"
+			{
+				"attached_models_festive"
+				{
+					"0"
+					{
+						"model"	"models/workshop/weapons/c_models/c_blackbox/c_blackbox_festivizer.mdl"
+					}
 				}
 			}
 		}
