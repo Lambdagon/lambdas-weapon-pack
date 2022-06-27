@@ -16,3 +16,6 @@ Github desktop install instructions (Recomended):
 
 Note: I know the second one might be alot harder but it does save alot of time
 
+
+
+THIS IS NO LONGER SUPPORTED (as of currently) I may make a server in the future but for now it is unsupported
