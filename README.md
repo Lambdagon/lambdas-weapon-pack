@@ -26,4 +26,4 @@ THIS IS NO LONGER SUPPORTED (as of currently) I may make a server in the future 
 
 
 
-Hello! I probably will continue this
+Hello! I'm one of the developers for this weapon pack and if I continue this I will probably make a new github page, anyway I probably wont continue unless there is a server, also piss taunt/??? Can is coming
