@@ -19,7 +19,11 @@ Uninstall instructions:
 
 Step 1. Locate your Custom folder that is inside of TF_COOP_EXTENDED 
 Step 2. Remove the "Lambda's Weapon Pack" folder
-Step 3. Enjoy a 25% less buggy experience with 75% less weapons, 15% less fixes
+Step 3. Enjoy a 25% less buggy experience with 75% less weapons, 15% less fixes.
+
+
+
+
 
 Note: I know the second one might be alot harder but it does save alot of time
 
