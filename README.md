@@ -14,6 +14,7 @@ Github desktop install instructions (Recomended):
 4. Change Local Path to: C:\Program Files (x86)\Steam\steamapps\sourcemods\tf_coop_extended\custom (or whatever your TF_COOP_EXTENDED Custom folder Directory is)
 5. Clone
 6. Now you can easily update the pack by doing: Fetch origin > Pull origin
+7. Enjoy
 
 Note: I know the second one might be alot harder but it does save alot of time and disc space
 
