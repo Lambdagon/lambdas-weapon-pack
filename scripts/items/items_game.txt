@@ -23588,7 +23588,7 @@
 				"can_deal_critical_damage"	"1"
 				"can_deal_long_distance_damage"	"1"
 			}
-			"show_in_armory"	"0"
+			"show_in_armory"	"1"
 			"item_type_name"	"#TF_Weapon_Pistol"
 			"item_name"	"Dragon's Colt"
 			"item_description"	"Part of Lambda's  Weapon pack"
@@ -23647,7 +23647,7 @@
 			}
 			"item_logname"		"prinny_machete"
 			"item_iconname"		"prinny_machete"
-			"show_in_armory"		"0"
+			"show_in_armory"		"1"
 			"item_name"		"Baguette"
 			"item_description"		"mmm ddddeicious bredd"
 			"item_type_name"		"#TF_Weapon_Machete"
@@ -26736,114 +26736,6 @@
 				"sound_melee_miss"	"Weapon_Machete.Miss"
 				"sound_melee_hit"	"Weapon_Machete.HitFlesh"
 				"sound_burst"		"Weapon_Machete.MissCrit"
-			}
-			"mouse_pressed_sound"	"ui/item_wood_pole_pickup.wav"
-			"drop_sound"		"ui/item_wood_pole_drop.wav"
-			"custom_texture_blend_steps"
-			{
-				"1"
-				{
-					"op"	"normal"
-					"image"	"scripts/items/custom_texture_blend_layers/paper_overlay.png"
-				}
-			}
-		}			
-		"6928"
-		{
-			"name"	"genderfluid_sign"
-			"first_sale_date"	"2011/09/07"
-			"item_class"	"saxxy"
-			"prefab"	"weapon_melee_allclass"
-			"craft_class"		"weapon"
-			"craft_material_type"	"weapon"
-			"capabilities"
-			{
-				"nameable"		"1"
-				"can_customize_texture"	"1"
-				"can_craft_count"	"1"
-			}
-			"tags"
-			{
-				"can_deal_damage"			"1"
-				"can_be_equipped_by_soldier_or_demo"	"1"
-				"can_deal_critical_damage"	"1"
-			}
-			"show_in_armory"	"1"
-			"item_type_name"	"#TF_Weapon_Sign"
-			"item_name"	"Genderfluid Pride"
-			"item_slot"	"melee"
-			"item_quality"	"unique"
-			"min_ilevel"	"25"
-			"max_ilevel"	"25"
-			"propername"	"1"
-			"attach_to_hands"	"1"
-			"item_logname"	"nonnonviolent_protest"
-			"item_iconname"	"nonnonviolent_protest"
-			"image_inventory"	"backpack/workshop/weapons/c_models/c_picket/c_picket"
-			"image_inventory_size_w"		"128"
-			"image_inventory_size_h"		"82"
-			"inspect_panel_dist" 				"80"			
-			"model_player"	"models/workshop/weapons/c_models/c_picket1/c_picket3/c_picket.mdl"
-			"anim_slot" "MELEE_ALLCLASS"
-			"armory_desc" "can_customize_texture"
-			"attributes"
-			{
-				"provide on active"
-				{
-					"attribute_class"	"provide_on_active"
-					"value" "1"
-				}
-				"heal on kill"
-				{
-					"attribute_class"	"heal_on_kill"
-					"value"	"25"
-				}
-				"move speed bonus"
-				{
-					"attribute_class"	"mult_player_movespeed"
-					"value" "1.15"
-				}
-				"critboost on kill"
-				{
-					"attribute_class"	"add_onkill_critboost_time"
-					"value"	"3"
-				}
-				"speed_boost_on_hit"
-				{
-					"attribute_class"	"speed_boost_on_hit"
-					"value"	"15"
-				}
-				"dmg taken increased"
-				{
-					"attribute_class"	"mult_dmgtaken"
-					"value"	"1.2"
-				}
-				
-			}
-			"used_by_classes"
-			{
-				"scout"	"1"
-				"sniper"	"1"
-				"soldier"	"1"
-				"demoman"	"1"
-				"medic"	"1"
-				"heavy"	"1"
-				"pyro" "1"
-				"engineer" "1"
-				"spy" "1"
-			}
-			"static_attrs"
-			{
-				"min_viewmodel_offset"					"10 0 -5"
-				"inspect_viewmodel_offset"				"0 0 -18"
-			}
-			"visuals"
-			{
-				"sound_melee_hit_world"	"Weapon_Machete.HitWorld"
-				"sound_melee_miss"	"Weapon_Machete.Miss"
-				"sound_melee_hit"	"Weapon_Machete.HitFlesh"
-				"sound_burst"		"Weapon_Machete.MissCrit"
-				"sound_taunt"	"Taunt.MedicViolinUber"
 			}
 			"mouse_pressed_sound"	"ui/item_wood_pole_pickup.wav"
 			"drop_sound"		"ui/item_wood_pole_drop.wav"
@@ -32793,7 +32685,7 @@
 			"inspect_panel_dist"        "45"			
 			"attach_to_hands"	"1"
 			"model_player"	"models/workshop/weapons/c_models/c_invasion_bat/c_invasion_bat.mdl"
-			"show_in_armory"	"1"
+			"show_in_armory"	"0"
 			"used_by_classes"
 			{
 				"scout"	"1"
@@ -38041,7 +37933,7 @@
 				"can_deal_critical_damage"	"1"
 				"can_deal_long_distance_damage"	"1"
 			}
-			"show_in_armory"	"0"
+			"show_in_armory"	"1"
 			"item_type_name"	"Reproductive Organ"
 			"item_name"	"Cock Gun"
 			"item_description"	"DICKS!"
@@ -38124,7 +38016,7 @@
 				"can_deal_critical_damage"	"1"
 				"can_deal_long_distance_damage"	"1"
 			}
-			"show_in_armory"	"1"
+			"show_in_armory"	"0 "
 			"item_type_name"	"#TF_Weapon_Pistol"
 			"item_name"	"Stick Gun"
 			"item_description"	"We all remember that perfect stick...."
@@ -41571,7 +41463,7 @@
 		}
 		"7303"
 		{
-			"name"			"The Mantreads Demoman Secondary"
+			"name"			"The MantreadsMantreads Demoman Secondary"
 			"first_sale_date"	"2011/05/10"
 			"item_class"		"tf_wearable"
 			"craft_class"	"weapon"
@@ -43003,7 +42895,7 @@
 				"can_deal_critical_damage"	"1"
 				"can_deal_long_distance_damage"	"1"
 			}
-			"show_in_armory"	"1"
+			"show_in_armory"	"0"
 			"item_type_name"	"#TF_Weapon_Pistol"
 			"item_name"	"Desert Texan"
 			"item_description"	"Use a gun... and if that dont work, use this gun."
@@ -45964,7 +45856,7 @@
 				"can_deal_critical_damage"	"1"
 				"can_deal_long_distance_damage"	"1"
 			}
-			"show_in_armory"	"1"
+			"show_in_armory"	"0"
 			"item_type_name"	"#TF_Weapon_Pistol"
 			"item_name"	"Child Hood Trauma"
 			"item_description"	"'Go, give  em hell, BOYS!'"
