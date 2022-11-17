@@ -19878,6 +19878,7 @@
 				"spy" "1"
 				"engineer" "1"
 				"pyro" "1"
+				"zombiefast" "1"
 			}
 			"attributes"
 			{
@@ -19914,6 +19915,7 @@
 					"scout"		"scenes\player\scout\low\taunt_russian.vcd"
 					"sniper"	"scenes\player\sniper\low\taunt_russian.vcd"
 					"soldier"	"scenes\player\soldier\low\taunt_russian.vcd"
+					"zombiefast"	"scenes\player\soldier\low\taunt_russian.vcd"
 					"demoman"	"scenes\player\demoman\low\taunt_russian.vcd"
 					"medic"		"scenes\player\medic\low\taunt_russian.vcd"
 					"heavy"		"scenes\player\heavy\low\taunt_russian.vcd"
