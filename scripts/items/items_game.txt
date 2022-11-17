@@ -6213,7 +6213,60 @@
 			"drop_sound"		"ui/item_heavy_gun_drop.wav"
 			"particle_suffix"		"rocketlauncher"
 		}
-
+		
+		"weapon_rocketlauncher_merc"
+		{
+			"capabilities"
+			{
+				"nameable"		"1"
+			}
+			"tags"
+			{
+				"can_deal_gib_damage"	"1"
+				"can_deal_damage"		"1"
+				"can_be_equipped_by_soldier_or_demo"	"1"
+				"can_deal_posthumous_damage"	"1"
+				"can_deal_critical_damage"	"1"
+				"can_deal_long_distance_damage"	"1"
+			}
+			"base_item_name"	"TF_WEAPON_ROCKETLAUNCHER"
+			"enabled"	"1"
+			"item_class"	"tf_weapon_rocketlauncher"
+			"craft_class"	"weapon"
+			"craft_material_type"	"weapon"
+			"item_type_name"	"#TF_Weapon_RocketLauncher"
+			"item_name"	"#TF_Weapon_RocketLauncher"
+			"item_slot"	"primary"
+			"item_quality"	"normal"
+			"baseitem" "1"
+			"min_ilevel"	"1"
+			"max_ilevel"	"1"
+			"image_inventory"	"backpack/weapons/w_models/w_rocketlauncher"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"82"
+			"attach_to_hands" "2"
+			"inspect_panel_dist" "68"
+			"model_player"	"models/weapons/v_models/v_rocketlauncher_dm.mdl"
+			"used_by_classes"
+			{
+				"zombiefast"	"1"
+			}
+			"visuals_mvm_boss"
+			{
+				"sound_single_shot"	"MVM.GiantSoldierRocketShoot"
+				"sound_burst"		"MVM.GiantSoldierRocketShootCrit"
+				"sound_special1"	"MVM.GiantSoldierRocketExplode"
+			}
+			"static_attrs"
+			{
+				"weapon_stattrak_module_scale"			"1"
+				"min_viewmodel_offset"					"10 -3 -10"
+			}
+			"mouse_pressed_sound"	"ui/item_heavy_gun_pickup.wav"
+			"drop_sound"		"ui/item_heavy_gun_drop.wav"
+			"particle_suffix"		"rocketlauncher"
+		}
+		
 		"weapon_rocketlauncher_golden"
 		{
 			"capabilities"
@@ -7342,7 +7395,73 @@
 			"xifier_class_remap"	"weapon_smg"
 			"particle_suffix"		"smg"
 		}
-
+		
+		"weapon_smg_merc"
+		{
+			"enabled"	"1"
+			"item_class"	"tf_weapon_smg"
+			"craft_material_type"	"weapon"
+			"capabilities"
+			{
+				"nameable"		"1"
+			}
+			"tags"
+			{
+				"can_deal_damage"			"1"
+				"can_deal_critical_damage"	"1"
+				"can_deal_mvm_penetration_damage"	"1"
+				"can_deal_long_distance_damage"	"1"
+			}
+			"base_item_name"	"TF_WEAPON_SMG"
+			"inspect_panel_dist" "39"
+			"show_in_armory"	"1"
+			"baseitem"	"1"
+			"item_type_name"	"#TF_Weapon_SMG"
+			"item_name"	"SMG"
+			"item_slot"	"secondary"
+			"item_quality"		"unique"
+			"min_ilevel"	"1"
+			"max_ilevel"	"1"
+			"image_inventory"	"backpack/weapons/w_models/w_smg"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"82"
+			"model_world"	"models/weapons/c_models/c_smg/c_smg.mdl"
+			"model_player"	"models/weapons/v_models/v_smg_merc.mdl"
+			"attach_to_hands"	"1"
+			"used_by_classes"
+			{
+				"zombiefast"	"1"
+			}
+			"mouse_pressed_sound"	"ui/item_light_gun_pickup.wav"
+			"drop_sound"		"ui/item_light_gun_drop.wav"
+			"visuals"
+			{
+				"styles"
+				{
+					"0"
+					{
+						"skin_red"	"0"
+						"skin_blu"	"1"
+						"selectable"	"0"
+					}
+					"1"
+					{
+						"skin_red"	"2"
+						"skin_blu"	"3"
+						"selectable"	"0"
+						"image_inventory"	"backpack/weapons/c_models/c_smg/c_smg_gold"
+					}
+				}
+			}
+			"static_attrs"
+			{
+				"weapon_stattrak_module_scale"			"0.505"
+				"min_viewmodel_offset"					"10 0 -7"
+			}
+			"xifier_class_remap"	"weapon_smg"
+			"particle_suffix"		"smg"
+		}
+		
 		"weapon_sniperrifle"
 		{
 			"capabilities"
@@ -8501,6 +8620,7 @@
 			"max_ilevel"	"99"
 			"propername"		"1"
 			"attach_to_hands"	"1"
+			"show_in_armory"	"0"
 			"inspect_panel_dist" "40"
 			"image_inventory"	"backpack/workshop/weapons/c_models/c_shortstop/c_shortstop"
 			"image_inventory_size_w"		"128"
@@ -22659,7 +22779,7 @@
 		{
 			"name"	"Zombie Claw"
 			"item_class"	"tf_weapon_zombie_claw"
-			"baseitem" "1"
+			"baseitem" "0"
 			"enabled"	"0"
 			"tags"
 			{
@@ -22683,7 +22803,6 @@
 			"used_by_classes"
 			{
 				"zombie"		"1"
-				"zombiefast"	"1"
 			}
 			"static_attrs"
 			{
@@ -28179,97 +28298,6 @@
 			"mouse_pressed_sound"		"ui/item_hat_pickup.wav"
 			"drop_sound"		"ui/item_hat_drop.wav"
 		}
-
-						"6957"
-		{
-			"name"		"Scout reads fine literature"
-			"prefab"		"no_craft taunt"
-			"first_sale_date"		"2021/10/02"
-			"item_name"		"#TF_taunt_the_homerunners_hobby"
-			"item_description"		"#TF_taunt_the_homerunners_hobby_Desc"
-			"ad_text"		"#TF_taunt_the_homerunners_hobby_AdText"
-			"attributes"
-			{
-				"taunt is press and hold"
-				{
-					"attribute_class"		"enable_misc2_holdtaunt"
-					"value"		"1"
-				}
-			}
-			"image_inventory"		"backpack/workshop/player/items/scout/taunt_the_homerunners_hobby/taunt_the_homerunners_hobby"
-			"capabilities"
-			{
-				"can_craft_count"		"1"
-			}
-			"used_by_classes"
-			{
-				"scout"		"1"
-			}
-			"taunt"
-			{
-				"custom_taunt_scene_per_class"
-				{
-					"scout"		"scenes/workshop/player/scout/low/taunt_the_homerunners_hobby.vcd"
-				}
-				"custom_taunt_outro_scene_per_class"
-				{
-					"scout"		"scenes/workshop/player/scout/low/taunt_the_homerunners_hobby_outro.vcd"
-				}
-				"custom_taunt_prop_per_class"
-				{
-					"scout"		"models/workshop/player/items/scout/taunt_the_homerunners_hobby_alt/taunt_the_homerunners_hobby.mdl"
-				}
-			}
-		}
-								"6958"
-		{
-			"name"		"G-Man Possession"
-			"prefab"		"no_craft taunt"
-			"first_sale_date"		"2021/10/02"
-			"item_name"		"#TF_taunt_the_homerunners_hobby"
-			"item_description"		"#TF_taunt_the_homerunners_hobby_Desc"
-			"ad_text"		"#TF_taunt_the_homerunners_hobby_AdText"
-			"attributes"
-			{
-			}
-			"image_inventory"		"backpack/workshop/player/items/scout/taunt_the_homerunners_hobby/taunt_the_homerunners_hobby"
-			"capabilities"
-			{
-				"can_craft_count"		"1"
-			}
-			"used_by_classes"
-			{
-				"scout"		"1"
-				"soldier"		"1"
-				"pyro"		"1"
-				"demoman"		"1"
-				"heavy"		"1"
-				"engineer"		"1"
-				"medic"		"1"
-				"sniper"		"1"
-				"spy"		"1"
-				"combine"		"1"
-				"antlion"		"1"
-				
-			}
-			"taunt"
-			{
-				"custom_taunt_scene_per_class"
-				{
-					"scout"				"scenes/npc/Gman/gman_intro.vcd"
-					"soldier"				"scenes/npc/Gman/gman_intro.vcd"
-					"pyro"				"scenes/npc/Gman/gman_intro.vcd"
-					"demoman"				"scenes/npc/Gman/gman_intro.vcd"
-					"heavy"				"scenes/npc/Gman/gman_intro.vcd"
-					"medic"				"scenes/npc/Gman/gman_intro.vcd"
-					"sniper"				"scenes/npc/Gman/gman_intro.vcd"
-					"spy"				"scenes/npc/Gman/gman_intro.vcd"
-					"engineer"				"scenes/npc/Gman/gman_intro.vcd"
-					"combine"				"scenes/npc/Gman/gman_intro.vcd"
-					"antlion"				"scenes/npc/Gman/gman_intro.vcd"
-				}
-			}
-		}
 				"6959"
 		{
 			"first_sale_date"	"2012/08/02"
@@ -29593,6 +29621,7 @@
 				"pyro"			"secondary"
 				"soldier"			"secondary"
 				"heavy"			"secondary"
+				"medic"			"primary"
 			}
 			"particle_suffix"		"shotgun"
 			"mouse_pressed_sound"	"ui/item_heavy_gun_pickup.wav"
@@ -35350,7 +35379,7 @@
 				"can_deal_critical_damage"	"1"
 				"can_deal_long_distance_damage"	"1"
 			}
-			"show_in_armory"	"1"
+			"show_in_armory"	"0"
 			"item_type_name"	"#TF_Weapon_Pistol"
 			"item_name"	"HL2 Akimbo Pistol"
 			"item_description"	"Part of Lambda's  Weapon pack"
@@ -39618,7 +39647,7 @@
 			"baseitem" "0"
 			"min_ilevel"	"10"
 			"max_ilevel"	"10"
-			"show_in_armory"	"1"
+			"show_in_armory"	"0"
 			"attach_to_hands"	"1"
 			"image_inventory"	"backpack/workshop/weapons/c_models/c_ttg_max_gun/c_ttg_max_gun"
 			"image_inventory_size_w"		"128"
@@ -47968,103 +47997,6 @@
 				}
 			}
 		}
-		"7519"
-		{
-			"name"	"New Old Baby Face's Blaster"
-			"prefab"		"weapon_scattergun"
-			"first_sale_date"	"2012/06/27"
-			"item_class"	"tf_weapon_pep_brawler_blaster"
-			"capabilities"
-			{
-				"can_craft_count"	"1"
-			}
-			"tags"
-			{
-				"can_deal_damage"			"1"
-				"can_deal_critical_damage"	"1"
-				"can_deal_mvm_penetration_damage"	"1"
-				"can_deal_long_distance_damage"	"1"
-			}
-			"show_in_armory"	"1"
-			"item_type_name"	"#TF_Weapon_Scattergun"
-			"item_name"	"New Old Baby Face's Blaster"
-			"item_description"	"#TF_Weapon_PEP_Scattergun_Desc"
-			"item_logname"	"pep_brawlerblaster"
-			"item_iconname"	"pep_brawlerblaster"
-			"item_quality"	"unique"
-			"baseitem" "0"
-			"min_ilevel"	"10"
-			"max_ilevel"	"10"
-			"inspect_panel_dist" "38"
-			"image_inventory"	"backpack/workshop/weapons/c_models/c_pep_scattergun/c_pep_scattergun"
-			"model_player"	"models/workshop/weapons/c_models/c_pep_scattergun/c_pep_scattergun.mdl"
-			"attach_to_hands" "1"
-			"static_attrs"
-			{
-				"min_viewmodel_offset"					"10 0 -12"
-			}
-			"attributes"
-			{
-				"move speed bonus"
-				{
-					"attribute_class"	"mult_player_movespeed"
-					"value" "1.15"
-				}
-				"dmg taken increased"
-				{
-					"attribute_class"	"mult_dmgtaken"
-					"value"	"1.15"
-				}
-				"clip size penalty"
-				{
-					"attribute_class"	"mult_clipsize"
-					"value"				"0.67"
-				}
-			}
-			"visuals"
-			{
-				"sound_single_shot"	"Weapon_Brawler_Blaster.Single"
-				"sound_burst"		"Weapon_Brawler_Blaster.SingleCrit"
-			}
-		}
-		"7520"
-		{
-			"name"	"The New Old Shortstop"
-			"prefab" "weapon_shortstop_new_old"
-			"first_sale_date"	"2010/09/29"
-			"particle_suffix"	"shortstop"
-			"show_in_armory"	"1"
-			"tags"
-			{
-				"can_be_festivized"		"1"
-			}
-			"visuals"
-			{
-				"styles"
-				{
-					"0"
-					{
-						"skin_red"	"0"
-						"skin_blu"	"1"
-						"selectable"	"0"
-					}
-				}
-				"attached_models_festive"
-				{
-					"0"
-					{
-						"model"	"models/workshop/weapons/c_models/c_shortstop/c_shortstop_festivizer.mdl"
-					}
-				}
-			}
-		}
- 		"7521"
-		{
-			"name"	"The Flying Guillotine"
-			"prefab"		"weapon_guillotine_working"
-			"show_in_armory"	"1"
-			"inspect_panel_dist" 			"40"
-		}
 		"7522"
 		{
 			"name"	"Mug"
@@ -48090,6 +48022,101 @@
 			}
 			"mouse_pressed_sound"	"ui/item_bottle_pickup.wav"
 			"drop_sound"		"ui/item_bottle_drop.wav"
+		}
+		"7523"
+		{
+			"name"	"Merc crowbar"
+			"item_class"	"tf_weapon_tfc_crowbar"
+			"capabilities"
+			{
+				"nameable"		"1"
+			}
+			"tags"
+			{
+				"can_deal_damage"			"1"
+				"can_deal_critical_damage"	"1"
+				"can_be_equipped_by_soldier_or_demo"	"1"
+			}
+			"show_in_armory"	"1"
+			"baseitem"	"1"
+			"item_type_name"	"#TF_Weapon_Crowbar"
+			"item_name"	"#TF_Weapon_Crowbar"
+			"item_slot"	"melee"
+			"image_inventory"	"backpack/player/items/all_class/all_pan"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"82"
+			"model_world"	"models/weapons/w_crowbar.mdl"
+			"model_player"	"models/weapons/v_models/v_crowbar_mercenary.mdl"
+			"attach_to_hands"	"2"
+			"inspect_panel_dist" "40"
+			"item_quality"	"unique"
+			"propername"	"1"
+			"min_ilevel"	"5"
+			"max_ilevel"	"5"
+			"used_by_classes"
+			{
+				"zombiefast" "1"
+			}
+			"static_attrs"
+			{
+				"min_viewmodel_offset"		"10 0 -7"
+			}
+			"visuals"
+			{
+				"sound_melee_hit"		"Weapon_Crowbar.HitFlesh"
+				"sound_melee_hit_world"	"Weapon_Crowbar.HitWorld"
+				"sound_melee_miss"		"Weapon_Crowbar.Miss"
+				"sound_burst"			"Weapon_Machete.MissCrit"
+			}
+			"mouse_pressed_sound"	"ui/item_metal_weapon_pickup.wav"
+			"drop_sound"		"ui/item_metal_weapon_drop.wav"
+		}
+		"7524"
+		{
+			"name"	"merc_smg"
+			"prefab"	"weapon_smg_merc"
+			"capabilities"
+			{
+				"nameable"		"1"
+			}
+			"tags"
+			{
+				"can_deal_damage"			"1"
+				"can_deal_mvm_penetration_damage"	"1"
+				"can_deal_long_distance_damage"	"1"
+			}
+			"first_sale_date"	"2010/12/69"
+			"item_class"	"tf_weapon_smg"
+			"craft_class"	"weapon"
+			"craft_material_type"	"weapon"
+			"item_type_name"	"#TF_Weapon_SMG"
+			"item_name"	"SMG"
+			"item_slot"	"secondary"
+			"item_quality"	"normal"
+			"show_in_armory"	"1"
+			"baseitem" 		"1"
+			"min_ilevel"	"1"
+			"max_ilevel"	"1"
+			"image_inventory"	"backpack/weapons/w_models/w_smg"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"82"
+			"model_world"	"models/weapons/c_models/c_smg/c_smg.mdl"
+			"model_player"	"models/weapons/v_models/v_smg_merc.mdl"
+			"attach_to_hands"	"2"
+			"used_by_classes"
+			{
+				"zombiefast"	"1"
+			}
+			"mouse_pressed_sound"	"ui/item_light_gun_pickup.wav"
+			"drop_sound"		"ui/item_light_gun_drop.wav"
+		}
+		"7525"
+		{
+			"name"	"TF_WEAPON_ROCKETLAUNCHER_MERC"
+			"first_sale_date"	"2010/09/29"
+			"prefab"	"weapon_rocketlauncher_merc"
+			"xifier_class_remap"	"rocket_launcher"
+			"baseitem" "1"
 		}
 		"30570"
 		{
@@ -49373,47 +49400,6 @@
 				}
 			}
 		}
-				"31233"
-		{
-			"name"		"Taunt: The Homerunner's Hobby"
-			"prefab"		"no_craft taunt"
-			"first_sale_date"		"2021/10/02"
-			"item_name"		"#TF_taunt_the_homerunners_hobby"
-			"item_description"		"#TF_taunt_the_homerunners_hobby_Desc"
-			"ad_text"		"#TF_taunt_the_homerunners_hobby_AdText"
-			"attributes"
-			{
-				"taunt is press and hold"
-				{
-					"attribute_class"		"enable_misc2_holdtaunt"
-					"value"		"1"
-				}
-			}
-			"image_inventory"		"backpack/workshop/player/items/scout/taunt_the_homerunners_hobby/taunt_the_homerunners_hobby"
-			"capabilities"
-			{
-				"can_craft_count"		"1"
-			}
-			"used_by_classes"
-			{
-				"scout"		"1"
-			}
-			"taunt"
-			{
-				"custom_taunt_scene_per_class"
-				{
-					"scout"		"scenes/workshop/player/scout/low/taunt_the_homerunners_hobby.vcd"
-				}
-				"custom_taunt_outro_scene_per_class"
-				{
-					"scout"		"scenes/workshop/player/scout/low/taunt_the_homerunners_hobby_outro.vcd"
-				}
-				"custom_taunt_prop_per_class"
-				{
-					"scout"		"models/workshop/player/items/scout/taunt_the_homerunners_hobby/taunt_the_homerunners_hobby.mdl"
-				}
-			}
-		}
 				"31237"
 		{
 			"name"		"Taunt: Shooter's Stakeout"
@@ -49706,141 +49692,6 @@
 				"custom_taunt_prop_per_class"
 				{
 					"heavy"		"models/workshop/player/items/heavy/taunt_bare_knuckle_beatdown/taunt_bare_knuckle_beatdown.mdl"
-				}
-			}
-		}
-				"200001"
-		{
-			"name"	"Conga Taunt"
-			"prefab"	"valve taunt"
-			"first_sale_date"		"2014/06/17"
-			"item_name"	"#TF_TauntAllClassConga"
-			"item_description"	"#TF_TauntAllClassConga_Desc"
-			"image_inventory"	"backpack/player/items/all_class/taunt_conga"
-			"image_inventory_size_w"	"128"
-			"image_inventory_size_h"	"82"
-			"item_quality"		"unique"
-			"min_ilevel"	"1"
-			"max_ilevel"	"100"
-			"valid_for_shuffle"	"1"
-			"used_by_classes"
-			{
-				"scout"	"1"
-				"sniper"	"1"
-				"soldier"	"1"
-				"demoman"	"1"
-				"medic"	"1"
-				"heavy"	"1"
-				"spy" "1"
-				"engineer" "1"
-				"pyro" "1"
-			}
-			"attributes"
-			{
-				"taunt is press and hold"
-				{
-					"attribute_class"	"enable_misc2_holdtaunt"
-					"value"				"1"
-				}
-				"taunt force move forward"
-				{
-					"attribute_class"	"taunt_force_move_forward"
-					"value"				"1"
-				}
-				"taunt move speed"
-				{
-					"attribute_class"	"taunt_move_speed"
-					"value"				"50"
-				}
-				"taunt turn speed"
-				{
-					"attribute_class"	"taunt_turn_speed"
-					"value"				"50"
-				}
-				"taunt mimic"
-				{
-					"attribute_class"	"taunt_mimic"
-					"value"				"1"
-				}
-				"taunt success sound loop"
-				{
-					"attribute_class"	"taunt_success_sound_loop"
-					"value"				"lambda.bananaman"
-				}
-			}
-			"taunt"
-			{
-				"custom_taunt_scene_per_class"
-				{
-					"scout"		"scenes\player\scout\low\conga.vcd"
-					"sniper"	"scenes\player\sniper\low\conga.vcd"
-					"soldier"	"scenes\player\soldier\low\conga.vcd"
-					"demoman"	"scenes\player\demoman\low\conga.vcd"
-					"medic"		"scenes\player\medic\low\conga.vcd"
-					"heavy"		"scenes\player\heavy\low\conga.vcd"
-					"spy"		"scenes\player\spy\low\conga.vcd"
-					"engineer"	"scenes\player\engineer\low\conga.vcd"
-					"pyro"		"scenes\player\pyro\low\conga.vcd"
-				}
-				"is_partner_taunt" "1"
-			}
-			"visuals"
-			{
-				"custom_sound0"		"lambda.bananaman"
-			}
-		}
-				"200000"
-		{
-			"name"	"Taunt: The Table Tantrum Alt"
-			"prefab"	"valve taunt"
-			"first_sale_date"		"2016/12/15"
-			"item_name"		"#TF_TauntTableTantrum"
-			"item_description"	"#TF_TauntTableTantrum_Desc"
-			"ad_text"			"#TF_TauntTableTantrum_AdText"
-			"image_inventory"		"backpack/player/items/all_class/taunt_table_flip"
-			"image_inventory_size_w"		"128"
-			"image_inventory_size_h"		"82"
-			"item_quality"		"unique"
-			"min_ilevel"		"1"
-			"max_ilevel"		"100"
-			"used_by_classes"
-			{
-				"heavy"		"1"
-			}
-			"attributes"
-			{
-				"taunt is press and hold"
-				{
-					"attribute_class"	"enable_misc2_holdtaunt"
-					"value"				"1"
-				}
-				"taunt success sound loop"
-				{
-					"attribute_class"		"taunt_success_sound_loop"
-					"value"		"lambda.careless"
-				}
-			}
-			"taunt"
-			{
-				"custom_taunt_scene_per_class"
-				{
-					"heavy"	"scenes/player/heavy/low/taunt_table_flip_intro.vcd"
-				}
-				"custom_taunt_outro_scene_per_class"
-				{
-					"heavy"	"scenes/player/heavy/low/taunt_table_flip_outro.vcd"
-				}
-				"custom_taunt_prop_per_class"
-				{
-					"heavy"	"models/player/items/heavy/table_flip_alt/heavy_table_flip_prop.mdl"
-				}
-				"custom_taunt_prop_scene_per_class"
-				{
-					"heavy"	"scenes/player/items/taunts/taunt_table_flip_prop_intro.vcd"
-				}
-				"custom_taunt_prop_outro_scene_per_class"
-				{
-					"heavy"	"scenes/player/items/taunts/taunt_table_flip_prop_outro_nojoule.vcd"
 				}
 			}
 		}

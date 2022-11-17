@@ -1,6 +1,0 @@
-"VertexLitGeneric"
-{
-	"$basetexture" "Models/Weapons/TFA_MMOD/V_IRifle_greg/V_IRifle_core"
-	"$surfaceprop" "metal"
-	"$selfillum" 1
-}
