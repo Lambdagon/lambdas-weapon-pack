@@ -47489,7 +47489,7 @@
 				"Projectile speed increased"
 				{
 					"attribute_class"	"mult_projectile_speed"
-					"value"	"3"
+					"value"	"2"
 				}
 				"minicrits become crits"
 				{
@@ -47530,6 +47530,11 @@
 				{
 					"attribute_class"	"rocket_jump_dmg_reduction"
 					"value" "11"
+				}
+				"mod projectile homing"	
+				{
+					"attribute_class"	"mod_projectile_homing"
+					"value" "1"
 				}
 				"centerfire projectile"
 				{
