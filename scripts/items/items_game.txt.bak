@@ -23189,7 +23189,7 @@
 				"can_be_equipped_by_soldier_or_demo"	"1"
 				"can_deal_critical_damage"	"1"
 			}
-			"show_in_armory"	"0"
+			"show_in_armory"	"1"
 			"item_type_name"	"#TF_Weapon_Sign"
 			"item_name"	"Conscientious Objector"
 			"item_description"	"Part OF Lambda's Weapon pack"
@@ -23214,9 +23214,11 @@
 				"sniper"	"1"
 				"soldier"	"1"
 				"demoman"	"1"
+				"engineer"	"1"
 				"medic"	"1"
 				"heavy"	"1"
 				"pyro" "1"
+				"spy"	"1"
 			}
 			"static_attrs"
 			{
@@ -47489,7 +47491,7 @@
 				"Projectile speed increased"
 				{
 					"attribute_class"	"mult_projectile_speed"
-					"value"	"3"
+					"value"	"2"
 				}
 				"minicrits become crits"
 				{
