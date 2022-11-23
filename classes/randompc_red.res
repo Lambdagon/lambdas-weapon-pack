@@ -65,19 +65,19 @@
 		
 		"model"
 		{
-			"modelname"	"models/player/soldier.mdl"
-			"modelname_hwm"	"models/player/hwm/soldier.mdl"
-			"origin_z" "-45"
-			"vcd"		"scenes/Player/Soldier/low/class_select.vcd"		
+			"modelname"	"models/combine_soldier.mdl"
+			"modelname_hwm"	"models/combine_soldier.mdl"
+			"origin_z" "-51"
+			"vcd"		"null"		
 
 			"animation"
 			{
-				"sequence"		"selectionMenu_Anim0l"
+				"sequence"		"idle1"
 			}
 			
 			"attached_model"
 			{
-				"modelname" "models/weapons/w_models/w_rocketlauncher.mdl"
+				"modelname" "models/weapons/w_models/w_smg1.mdl"
 			}
             "angles_x" "0"
             "angles_y" "180"

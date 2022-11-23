@@ -1,0 +1,17 @@
+"vertexlitgeneric"
+{
+	// Original shader: VertexLitTexture
+	"$basetexture" "models/combine_arms_regular/c_hands_combinesoldier_regular_player"
+	"$bumpmap" "models/combine_hands_base/c_hands_combinesoldier_normal"
+	//"$envmap" "env_cubemap"
+	//"$envmaptint" "[ .64 .64 .64 ]"
+	//"$normalmapalphaenvmapmask" 1
+
+// -- From here down is new stuff which will only be applied if $phong is set to 1 --
+	"$phong" "1"
+	"$phongexponent" "25"
+	"$phongboost"	"1"
+	"$phongfresnelranges"	"[.2 0.4 1]"
+
+
+}

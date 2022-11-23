@@ -1,25 +1,25 @@
 //
-// Lambda Fortress - Combine Soldier Alt Loadout Player Class
+// Lambda Fortress - Combine Soldier Player Class
 //
 PlayerClass
 {
 	// Attributes.
-	"name"			"combinesoldieralt"
+	"name"			"combinesoldier"
 	"model"			"models/combine_soldier.mdl"
 	"model_hwm"		"models/combine_soldier.mdl"
 	"model_tfc"		"models/hl1port/hgruntbs.mdl"
 	"model_hands"		"models/arms/c_arms_combine_regular.mdl"
-	"localize_name"		"TF_Class_Name_CombineSoldieralt"
+	"localize_name"		"TF_Class_Name_CombineSoldier"
 	"speed_max"		"250"
 	"health_max"		"200"
 	"armor_max"		"0"
 
 	// Grenades.
-	"grenade1"		"npc_kleiner"
+	"grenade1"		"NPC_KLEINER"
 
 	// Weapons.
-	"weapon1"		"tf_weapon_syringegun_medic"
-	"weapon2"		"tf_weapon_pistol"
+	"weapon1"		"tf_weapon_smg"
+	"weapon2"		"tf_weapon_shotgun_soldier"
 	"weapon3"		"weapon_melee_allclass"
 
 	//Thirdperson
@@ -29,8 +29,8 @@ PlayerClass
 	
 	AmmoMax
 	{
-		"tf_ammo_primary"	"120"
-		"tf_ammo_secondary"	"36"
+		"tf_ammo_primary"	"225"
+		"tf_ammo_secondary"	"30"
 		"tf_ammo_metal"		"200"
 		"tf_ammo_grenades1"	"2"
 		"tf_ammo_grenades2"	"0"

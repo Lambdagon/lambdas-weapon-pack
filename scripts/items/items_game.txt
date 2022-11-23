@@ -22597,7 +22597,7 @@
 		{
 			"name"	"TFC Umbrella"
 			"item_class"	"tf_weapon_tfc_umbrella"
-			"baseitem" "1"
+			"baseitem" "0"
 			"capabilities"
 			{
 				"nameable"		"1"
@@ -22849,7 +22849,7 @@
 		"9041"
 		{
 			"name"	"HL2 Shotgun"
-			"item_class"	"tf_weapon_shotgun_primary"
+			"item_class"	"tf_weapon_shotgun_soldier"
 			"baseitem" "1"
 			"tags"
 			{
@@ -22859,14 +22859,16 @@
 			}
 			"item_type_name"	"#TF_Weapon_Shotgun"
 			"item_name"	"#TF_Weapon_Shotgun"
-			"item_slot"	"primary"
+			"item_iconname"	"shotgun"
+			"item_logname" "Shotgun"
+			"item_slot"	"secondary"
 			"show_in_armory"	"0"
 			"image_inventory"	"backpack/weapons/w_models/w_shotgun"
 			"image_inventory_size_w"		"128"
 			"image_inventory_size_h"		"82"
 			"model_world"	"models/weapons/w_shotgun.mdl"
-			"model_player"	"models/weapons/v_shotgun.mdl"
-			"attach_to_hands" "0"
+			"model_player"	"models/weapons/gmod/c_shotgun.mdl"
+			"attach_to_hands" "2"
 			"inspect_panel_dist" "40"
 			"item_quality"	"unique"
 			"propername"	"1"
@@ -22897,7 +22899,7 @@
 			{
 				"custom_taunt_scene_per_class"
 				{
-					"combine"		"scenes/player/combinesoldier/low/taunt01_v3.vcd"
+					"combine"		"scenes/player/combinesoldier/low/taunt02.vcd"
 				}
 			}
 		}
@@ -22913,17 +22915,19 @@
 				"can_deal_long_distance_damage"	"1"
 			}
 			"item_type_name"	"Pulse Rifle"
-			"item_name"	"The Oppressor"
-			"item_description" "Model by Choev"
+			"item_name"	"HL2 AR2"
+			"item_iconname"	"ar2"
+			"item_logname"	"AR2"
+			"item_description" "Overwatch standard AR2 pulse rifle. Somehow laser accurate and packs a punch."
 			"show_in_armory"	"0"
-			"item_slot"	"misc2"
+			"item_slot"	"primary"
 			"anim_slot"	"ar2"
 			"image_inventory"	"backpack/weapons/w_models/w_smg"
 			"image_inventory_size_w"		"128"
 			"image_inventory_size_h"		"82"
 			"model_world"	"models/weapons/w_irifle.mdl"
-			"model_player"	"models/weapons/v_models/v_irifle.mdl"
-			"attach_to_hands" "0"
+			"model_player"	"models/weapons/gmod/c_irifle.mdl"
+			"attach_to_hands" "2"
 			"inspect_panel_dist" "40"
 			"item_quality"	"unique"
 			"propername"	"1"
@@ -22931,7 +22935,7 @@
 			"max_ilevel"	"5"
 			"used_by_classes"
 			{
-				"combine"			"1"
+				"civilian"			"1"
 			}
 			"visuals"
 			{
@@ -22943,7 +22947,7 @@
 					"mult_spread_scales_consecutive"
 				{
 					"attribute_class" 	"mult_spread_scales_consecutive"
-					"value" "1"
+					"value" "0"
 				}
 					"damage bonus"
 				{
@@ -22953,14 +22957,18 @@
 					"clip size penalty"
 				{
 					"attribute_class"	"mult_clipsize"
-					"value" "0.975"
+					"value" "0.75"
 				}
 				"override projectile type"
 				{
 					"attribute_class"	"override_projectile_type"
 					"value"				"1" 
 				}
-				
+				"projectile spread angle penalty"
+				{
+					"attribute_class"	"additive"
+					"value"				"0.03" 
+				}
 			}
 			"static_attrs"
 			{
@@ -22970,7 +22978,7 @@
 							"9043"
 		{
 			"name"	"HL2 SMG"
-			"item_class"	"tf_weapon_smg"
+			"item_class"	"tf_weapon_syringegun_medic"
 			"baseitem" "1"
 			"tags"
 			{
@@ -22978,10 +22986,12 @@
 				"can_deal_mvm_penetration_damage"	"1"
 				"can_deal_long_distance_damage"	"1"
 			}
-			"item_type_name"	"Pulse Rifle"
-			"item_name"	"SMG1"
-			"item_description" ""
-			"item_slot"	"secondary"
+			"item_type_name"	"SMG1"
+			"item_name"	"HL2 SMG1"
+			"item_logname"	"SMG1"
+			"item_iconname"	"smg1"
+			"item_description" "Overwatch standard MP7 Submachine Gun. Good for encounters your shotgun can't quite reach."
+			"item_slot"	"primary"
 			"image_inventory"	"backpack/weapons/w_models/w_smg"
 			"image_inventory_size_w"		"128"
 			"image_inventory_size_h"		"82"
@@ -22996,7 +23006,7 @@
 			"max_ilevel"	"5"
 			"used_by_classes"
 			{
-				"combine"			"1"
+				"combine"			"primary"
 				"antlion"			"1"
 				"hl2citizen"		"1"
 			}
@@ -23015,12 +23025,22 @@
 				"clip size bonus"
 				{
 					"attribute_class"	"mult_clipsize"
-					"value" "1.8"
+					"value" "1.12"
 				}
 				"fire rate bonus"
 				{
 					"attribute_class"	"mult_postfiredelay"
 					"value"	"0.7"
+				}
+				"override projectile type"
+				{
+					"attribute_class"	"override_projectile_type"
+					"value"				"1" 
+				}
+				"projectile spread angle penalty"
+				{
+					"attribute_class"	"additive"
+					"value"				"0.01" 
 				}
 			}
 			"static_attrs"
@@ -23043,12 +23063,12 @@
 				"can_deal_critical_damage"	"1"
 				"can_be_equipped_by_soldier_or_demo"	"1"
 			}
-			"item_logname"	"fryingpan"
-			"item_iconname"	"fryingpan"
+			"item_logname"	"Stunstick"
+			"item_iconname"	"stunstick"
 			"show_in_armory"	"1"
 			"baseitem"	"1"
 			"item_type_name"	"Baton"
-			"item_name"	"Stunstick"
+			"item_name"	"HL2 Stunstick"
 			"item_slot"	"melee"
 			"image_inventory"	"backpack/player/items/all_class/all_pan"
 			"image_inventory_size_w"		"128"
@@ -23066,6 +23086,7 @@
 			"used_by_classes"
 			{
 				"combine"	 "1"
+				"civilian"	"1"
 			}
 			"static_attrs"
 			{
@@ -23083,10 +23104,15 @@
 					"attribute_class"	"mult_onhit_enemyspeed"
 					"value"	"1.0"
 				}
-				"damage penalty"
+				"damage bonus"
 				{
 					"attribute_class"	"mult_dmg"
-					"value"	"0.75"
+					"value"	"1"
+				}
+				"fire rate penalty"
+				{
+					"attribute_class"	"mult_postfiredelay"
+					"value"	"1.5"
 				}
 			}
 			"visuals"
@@ -27471,6 +27497,11 @@
 					"attribute_class"	"mult_maxammo_primary"
 					"value" "3.0"
 				}
+				"projectile spread angle penalty"
+				{
+					"attribute_class"	"additive"
+					"value" "3.0"
+				}
 			}
 			"static_attrs"
 			{
@@ -28504,6 +28535,7 @@
 			}
 			"tags"
 			{
+				"can_headshot"			"1"
 				"can_deal_damage"			"1"
 				"can_deal_critical_damage"	"1"
 				"can_deal_mvm_penetration_damage"	"1"
@@ -35384,11 +35416,12 @@
 				"can_deal_long_distance_damage"	"1"
 			}
 			"show_in_armory"	"0"
+			"baseitem"		"0"
 			"item_type_name"	"#TF_Weapon_Pistol"
-			"item_name"	"HL2 Akimbo Pistol"
+			"item_name"	"Get rid of this thing for god's sake"
 			"item_description"	"Part of Lambda's  Weapon pack"
-			"item_slot"	"secondary"
-			"item_logname"	"maxgun"
+			"item_slot"	"misc2"
+			"item_logname"	"CURSEDWEAPON_DOESNOTWANTTODIE"
 			"item_iconname"	"pistol"
 			"image_inventory"	"backpack/weapons/c_models/c_pistol"
 			"image_inventory_size_w"		"128"
@@ -35404,8 +35437,6 @@
 			{
 				"scout"	"1"
 				"engineer"	"1"
-				"combine"	"1"
-				"combinesoldier"	"1"
 			}
 			"mouse_pressed_sound"	"ui/item_light_gun_pickup.wav"
 			"drop_sound"		"ui/item_light_gun_drop.wav"
@@ -35460,7 +35491,7 @@
 			"name"	"dualpistol_combine"
 			"first_sale_date"	"2010/09/29"
 			"item_class"	"tf_weapon_pistol"
-			"baseitem"		"1"
+			"baseitem"		"0"
 			"prefab"	"weapon_pistol"
 			"craft_class"	""
 			"craft_material_type"		""
@@ -35493,8 +35524,8 @@
 			"max_ilevel"	"5"
 			"used_by_classes"
 			{
-				"combine"	"1"
-				"combinesoldier"	"1"
+				"combine"	"0"
+				"combinesoldier"	"0"
 			}
 			"mouse_pressed_sound"	"ui/item_light_gun_pickup.wav"
 			"drop_sound"		"ui/item_light_gun_drop.wav"
@@ -37369,7 +37400,7 @@
 		{
 			"name"	"The .357"
 			"first_sale_date"	"2011/08/11"
-			"item_class"	"tf_weapon_revolver"
+			"item_class"	"tf_weapon_pistol"
 			"craft_material_type"	"weapon"
 			"craft_class"	"weapon"
 			"capabilities"
@@ -37379,16 +37410,18 @@
 			}
 			"tags"
 			{
+				"can_headshot"			"1"
 				"can_deal_damage"			"1"
 				"can_deal_critical_damage"	"1"
 				"can_deal_mvm_penetration_damage"	"1"
 				"can_deal_long_distance_damage"	"1"
 			}
 			"show_in_armory"	"1"
-			"item_type_name"	"#TF_Weapon_Revolver"
+			"item_type_name"	"#TF_Weapon_pistol"
 			"item_name" ".357 Magnum"
-			"item_description"	""
-			"item_slot"	"primary"
+			"baseitem" "1"
+			"item_description"	"Pinpoint accurate and in a high caliber, this revolver is perfect for a quick takedown."
+			"item_slot"	"secondary"
 			"item_quality"	"rarity4"
 			"propername"	"1"
 			"item_logname"	"357"
@@ -37399,11 +37432,12 @@
 			"image_inventory_size_w"		"128"
 			"image_inventory_size_h"		"82"
 			"inspect_panel_dist" 			"32"
-			"model_player"	"models/weapons/c_models/c_revolvero/c_revolver.mdl"
-			"attach_to_hands" "1"
+			"model_player"	"models/weapons/gmod/c_357.mdl"
+			"model_world"	"models/weapons/w_357.mdl"
+			"attach_to_hands" "2"
 			"used_by_classes"
 			{
-				"combine"	"1"
+				"civilian"	"1"
 			}
 			"static_attrs"
 			{
@@ -37419,16 +37453,26 @@
 				"fire rate penalty"
 				{
 					"attribute_class"	"mult_postfiredelay"
-					"value"	"2.1"
+					"value"	"5"
 				}
 				"weapon spread bonus"
 				{
 					"attribute_class"	"mult_spread_scale"
 					"value"	"0.01"
 				}
-				"elevate quality"
+				"damage bonus"
 				{
-					"attribute_class"	"set_elevated_quality"
+					"attribute_class"	"mult_dmg"
+					"value"	"5"
+				}
+				"clip size penalty"
+				{
+					"attribute_class"	"mult_clipsize"
+					"value"	"0.5"
+				}
+				"dmg falofff decreased"
+				{
+					"attribute_class"	"mult_dmg_falloff"
 					"value"	"1"
 				}
 			}
