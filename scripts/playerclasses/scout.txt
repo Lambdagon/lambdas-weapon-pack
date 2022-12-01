@@ -12,7 +12,7 @@ PlayerClass
 	"model_hands"	"models/weapons/c_models/c_scout_arms.mdl"
 	"localize_name"	"TF_Class_Name_Scout"
 //	"speed_max"		"500"
-	"speed_max"		"450"
+	"speed_max"		"400"
 //	"health_max"		"75"
 //	"armor_max"		"25"
 	"health_max"		"125"
