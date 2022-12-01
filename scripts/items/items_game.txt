@@ -47485,64 +47485,6 @@
 				}
 			}
 		}
-		"7505"
-		{
-			"name"	"phantom_flamethrower"
-			"show_in_armory"	"1"
-			"prefab"	"weapon_flamethrower"
-			"baseitem"	"0"
-			"item_name"	"Fuck You-inator"
-			"item_quality"	"strange"
-			"extra_wearable" "models/workshop/player/items/pyro/short2014_the_gas_guzzler/short2014_the_gas_guzzler.mdl"
-			"attributes"
-			{
-				"damage bonus"
-				{
-					"attribute_class"	"mult_dmg"
-					"value"	"1.15"
-				}
-				"crit mod disabled"
-				{
-					"attribute_class"	"mult_crit_chance"
-					"value"	"0"
-				}
-				"clip size penalty"
-				{
-					"attribute_class"	"mult_clipsize"
-					"value" "0.65"
-				}
-				"dmg taken from fire increased"
-				{
-					"attribute_class"	"mult_dmgtaken_from_fire"
-					"value"			"1.75"
-				}
-				"airblast disabled"
-				{
-					"attribute_class"	"airblast_disabled"
-					"value" "1"
-				}
-				"heal on hit for slowfire"
-				{
-					"attribute_class"	"add_onhit_addhealth"
-					"value"	"15.0"
-				}
-				"critboost on kill"
-				{
-					"attribute_class"	"add_onkill_critboost_time"
-					"value"	"1.0"
-				}
-				"is australium item"
-				{
-					"attribute_class"	"is_australium_item"
-					"value"				"1"
-				}
-				"turn to gold"
-				{
-					"attribute_class"	"set_turn_to_gold"
-					"value" "1"
-				}
-			}
-		}
 		"7506"
 		{
 			"name"	"lambda_sniper_rifle"
