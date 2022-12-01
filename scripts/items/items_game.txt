@@ -5973,7 +5973,7 @@
 			"item_name"	"#TF_Weapon_Shotgun_Building_Rescue"
 			"item_slot"	"primary"
 			"item_quality"	"unique"
-			"show_in_armory"	"0"
+			"show_in_armory"	"1"
 			"propername"	"1"
 			"min_ilevel"	"1"
 			"max_ilevel"	"100"
@@ -9336,7 +9336,7 @@
 				"nameable"			"1"
 			}
 			"item_type_name"	"#TF_VoodooCursedSoul_Type"
-			"show_in_armory"	"0"
+			"show_in_armory"	"1"
 			"armory_remap"		"Voodoo-Cursed Soul (Armory)"
 			"image_inventory_size_w"		"128"
 			"image_inventory_size_h"		"82"
@@ -9371,7 +9371,7 @@
 			{
 				"nameable"		"1"
 			}
-			"show_in_armory"	"0"
+			"show_in_armory"	"1"
 			"item_name"	"#TF_Pyrovision_Goggles"
 			"item_type_name"	"#TF_Wearable_Pyrovision_Goggles_Type"
 			"item_description"	"#TF_Pyrovision_Goggles_Desc"
@@ -11451,7 +11451,7 @@
 				"can_heal_allies"		"1"
 				"can_extinguish"		"1"
 			}
-			"show_in_armory"	"0"
+			"show_in_armory"	"1"
 			"item_name"	"#TF_Unique_Lunchbox_Chocolate"
 			"item_description" "#TF_Lunchbox_Chocolate_desc"
 			"image_inventory"	"backpack/workshop/weapons/c_models/c_chocolate/c_chocolate"
@@ -11828,7 +11828,7 @@
 			}
 			"item_logname"	"battleneedle"
 			"item_iconname"	"battleneedle"
-			"show_in_armory"	"0"
+			"show_in_armory"	"1"
 			"item_type_name"	"#TF_Weapon_Bonesaw"
 			"item_name"	"#TF_Unique_BattleSaw"
 			"item_description" "#TF_Unique_BattleSaw_Desc"
@@ -11957,7 +11957,7 @@
 			"prefab"	"weapon_holymackerel"
 			"first_sale_date"	"2010/09/29"
 			"particle_suffix"	"holy_mackerel"
-			"show_in_armory"	"0"
+			"show_in_armory"	"1"
 			"tags"
 			{
 				"can_be_festivized"		"1"
@@ -12208,7 +12208,7 @@
 			}
 			"item_logname"	"sydney_sleeper"
 			"item_iconname"	"sydney_sleeper"
-			"show_in_armory"	"0"
+			"show_in_armory"	"1"
 			"item_type_name"	"#TF_Weapon_SniperRifle"
 			"item_name"	"#TF_SydneySleeper"
 			"item_slot"	"primary"
@@ -12600,7 +12600,7 @@
 			}
 			"item_logname"	"fryingpan"
 			"item_iconname"	"fryingpan"
-			"show_in_armory"	"0"
+			"show_in_armory"	"1"
 			"item_type_name"	"#TF_Weapon_FryingPan"
 			"item_name"	"#TF_Unique_FryingPan"
 			"item_slot"	"melee"
@@ -14361,7 +14361,7 @@
 				"can_deal_critical_damage"	"1"
 				"can_deal_taunt_damage"		"1"
 			}
-			"show_in_armory"	"0"
+			"show_in_armory"	"1"
 			"item_type_name"	"#TF_Weapon_Award"
 			"item_name"	"#TF_Saxxy"
 			"item_slot"	"melee"
@@ -14770,7 +14770,7 @@
 				"can_be_equipped_by_soldier_or_demo"	"1"
 				"cannot_damage_tanks"		"1"
 			}
-			"show_in_armory"	"0"
+			"show_in_armory"	"1"
 			"item_type_name" 	"#TF_Wearable_Boots"
 			"item_logname" "mantreads"
 			"item_iconname" "mantreads"
@@ -15674,7 +15674,7 @@
 				"can_deal_damage"			"1"
 				"can_deal_critical_damage"	"1"
 			}
-			"show_in_armory"	"0"
+			"show_in_armory"	"1"
 			"item_type_name"	"#TF_Weapon_Severed_Arm"
 			"item_name"	"Unarmed Combat"
 			"item_description"	"Part of Lambda's Weapon Pack"
@@ -15752,7 +15752,7 @@
 				"can_deal_taunt_damage"		"1"
 			}
 			"item_name"	"#TF_VoodooPin"
-			"show_in_armory"	"0"
+			"show_in_armory"	"1"
 			"propername"	"0"
 			"min_ilevel"	"1"
 			"max_ilevel"	"100"
@@ -15869,7 +15869,7 @@
 			"item_slot"	"primary"
 			"item_logname"	"pomson"
 			"item_iconname"	"pomson"
-			"show_in_armory"	"0"
+			"show_in_armory"	"1"
 			"item_quality"	"unique"
 			"propername"	"1"
 			"min_ilevel"	"10"
@@ -15969,7 +15969,7 @@
 				"can_deal_critical_damage"	"1"
 				"can_destroy_sappers"		"1"
 			}
-			"show_in_armory"	"0"
+			"show_in_armory"	"1"
 			"item_type_name"	"#TF_Weapon_Wrench"
 			"item_name"	"#TF_Wrenchmotron"
 			"item_description"	"#TF_Wrenchmotron_Desc"
@@ -16220,7 +16220,7 @@
 			}
 			"item_logname"	"manmelter"
 			"item_iconname"	"manmelter"
-			"show_in_armory"	"0"
+			"show_in_armory"	"1"
 			"item_type_name"	"#TF_Weapon_IndivisibleParticleSmasher"
 			"item_name"	"#TF_ManMelter"
 			"item_description"	"#TF_ManMelter_Desc"
@@ -16338,7 +16338,7 @@
 				"can_be_equipped_by_soldier_or_demo"	"1"
 				"can_deal_critical_damage"	"1"
 			}
-			"show_in_armory"	"0"
+			"show_in_armory"	"1"
 			"item_type_name"	"#TF_Weapon_Bottle"
 			"item_name"	"#TF_ScottishHandshake"
 			"item_description"	"#TF_ScottishHandshake_Desc"
@@ -16436,7 +16436,7 @@
 		{
 			"name"	"The Wrap Assassin"
 			"first_sale_date"	"2011/12/19"
-			"item_class"	"tf_weapon_bat_giftwrap"
+			"item_class"	"tf_weapon_bat_wood"
 			"craft_class"	"weapon"
 			"craft_material_type"	"weapon"
 			"capabilities"
@@ -16451,7 +16451,7 @@
 				"can_deal_critical_damage"	"1"
 				"can_deal_long_distance_damage"	"1"
 			}
-			"show_in_armory"	"0"
+			"show_in_armory"	"1"
 			"item_type_name"	"#TF_Weapon_Bat"
 			"item_name"	"#TF_BallBuster"
 			"item_description"	"#TF_BallBuster_Desc"
@@ -16478,6 +16478,11 @@
 			}
 			"attributes"
 			{
+				"bleeding duration"
+				{
+					"attribute_class"	"set_weapon_mode"
+					"value"	"10"
+				}
 				"mod bat launches ornaments"
 				{
 					"attribute_class"	"set_weapon_mode"
@@ -16785,7 +16790,7 @@
 				"can_deal_damage"			"1"
 				"can_deal_taunt_damage"		"1"
 			}
-			"show_in_armory"	"0"
+			"show_in_armory"	"1"
 			"item_type_name"	"#TF_Weapon_Knife"
 			"propername"	"1"
 			"item_quality"	"unique"
@@ -16955,7 +16960,7 @@
 			}
 			"item_logname"	"lollichop"
 			"item_iconname"	"lollichop"
-			"show_in_armory"	"0"
+			"show_in_armory"	"1"
 			"item_type_name"	"#tf_weapon_fireaxe"
 			"item_name"	"#TF_Lollichop"
 			"item_description"	"#TF_Lollichop_Desc"
@@ -17346,7 +17351,7 @@
 		{
 			"name"	"The Flying Guillotine"
 			"prefab"		"weapon_guillotine"
-			"show_in_armory"	"0"
+			"show_in_armory"	"1"
 			"inspect_panel_dist" 			"40"
 		}
  		"813"
@@ -17375,7 +17380,7 @@
 				"can_deal_critical_damage"	"1"
 				"can_be_equipped_by_soldier_or_demo"	"1"
 			}
-			"show_in_armory"	"0"
+			"show_in_armory"	"1"
 			"item_type_name"	"#TF_Weapon_Staff"
 			"item_name"	"#TF_TW_Staff"
 			"item_description"	"#TF_TW_Staff_Desc"
@@ -17439,7 +17444,7 @@
 			}
 			"item_logname"	"skullbat"
 			"item_iconname"	"skullbat"
-			"show_in_armory"	"0"
+			"show_in_armory"	"1"
 			"item_type_name"	"#TF_Weapon_Skullbat"
 			"item_name"	"#TF_BatOuttaHell"
 			"item_slot"	"melee"
@@ -17923,7 +17928,7 @@
 			"prefab" "weapon_rescue_ranger"
 			"first_sale_date"	"2012/12/19"
 			"particle_suffix"	"rescue_ranger"
-			"show_in_armory"	"0"
+			"show_in_armory"	"1"
 			"tags"
 			{
 				"can_be_festivized"		"1"
@@ -17960,7 +17965,7 @@
 			}
 			"item_logname"	"ham_shank"
 			"item_iconname"	"ham_shank"
-			"show_in_armory"	"0"
+			"show_in_armory"	"1"
 			"item_type_name"	"#TF_Weapon_Pork_Product"
 			"item_name"	"#TF_HamShank"
 			"item_description"	"#TF_HamShank_Desc"
@@ -19680,7 +19685,7 @@
 			"item_description"	"#TF_Weapon_MutatedMilk_Desc"
 			"image_inventory"	"backpack/weapons/c_models/c_breadmonster/c_breadmonster_milk"
 			"model_player"		"models/weapons/c_models/c_breadmonster/c_breadmonster_milk.mdl"
-			"show_in_armory"	"0"
+			"show_in_armory"	"1"
 			"item_slot"			"secondary"
 			"min_ilevel"	"1"
 			"max_ilevel"	"99"
@@ -30909,7 +30914,7 @@
 				"can_deal_long_distance_damage"	"1"
 				"can_deal_gib_damage"	"1"
 			}
-			"show_in_armory"	"0"
+			"show_in_armory"	"1"
 			"item_type_name"	"#TF_Weapon_SniperRifle"
 			"item_name"		"AWPer Hand"
 			"item_slot"	"primary"
@@ -42333,7 +42338,7 @@
 				"can_deal_long_distance_damage"	"1"
 				"can_heal_allies"		"1"
 			}
-			"show_in_armory"	"0"
+			"show_in_armory"	"1"
 			"item_type_name"	"#TF_Weapon_SniperRifle"
 			"item_name"	"Crusader's Crossbow"
 			"item_description"	"100% easier to heal people!"
