@@ -48930,6 +48930,7 @@
 		{
 			"name"		"Like Father Like Son"
 			"prefab"		"no_craft misc marketable"
+			"item_class"			"tf_wearable"
 			"item_name"		"Like Father Like Son"
 			"item_description"		"Cosmetic"
 			"item_slot"	"misc2"
@@ -48951,6 +48952,7 @@
 		{
 			"name"		"Like Son Like Father"
 			"prefab"		"no_craft misc marketable"
+			"item_class"			"tf_wearable"
 			"item_name"		"Like Son Like Father"
 			"item_description"		"Cosmetic"
 			"item_slot"	"misc2"
@@ -48971,6 +48973,7 @@
 		"7514"
 		{
 			"name"		"Robot"
+			"item_class"			"tf_wearable"
 			"prefab"		"no_craft misc marketable"
 			"item_name"		"Robot"
 			"item_description"		"Cosmetic"
@@ -49000,6 +49003,7 @@
 		"7515"
 		{
 			"name"		"Sream Fortress"
+			"item_class"			"tf_wearable"
 			"prefab"		"no_craft misc marketable"
 			"item_name"		"Sream Fortress"
 			"item_description"		"Cosmetic"
@@ -49023,6 +49027,7 @@
 		{
 			"name"		"Sentry Buster"
 			"prefab"		"no_craft misc marketable"
+			"item_class"			"tf_wearable"
 			"item_name"		"Sentry Buster"
 			"item_description"		"Cosmetic"
 			"item_slot"	"misc2"
@@ -49044,6 +49049,7 @@
 		{
 			"name"		"Skeleton"
 			"prefab"		"no_craft misc marketable"
+			"item_class"			"tf_wearable"
 			"item_name"		"Skeleton"
 			"item_description"		"Cosmetic"
 			"item_slot"	"misc2"
