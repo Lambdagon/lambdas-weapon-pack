@@ -7852,11 +7852,11 @@
 			"propername"				"1"
 			"min_ilevel"				"5"
 			"max_ilevel"				"5"
-			"image_inventory"			"backpack/weapons/w_models/w_nailgun"
+			"image_inventory"			"backpack/weapons/w_models/c_smg"
 			"image_inventory_size_w"	"128"
 			"image_inventory_size_h"	"82"
 			"attach_to_hands"			"2"
-			"model_world"				"models/weapons/w_models/w_nailgun.mdl"
+			"model_world"				"models/weapons/w_models/sten/w_pistol.mdl"
 			"model_player"				"models/weapons/v_models/v_pistol_scout.mdl"
 			"used_by_classes"
 			{
@@ -7864,110 +7864,25 @@
 			}
 			"attributes"
 			{
-							"hidden secondary max ammo bonus"
+				"hidden secondary max ammo bonus"
 				{
 					"attribute_class"	"mult_maxammo_secondary"
-					"value"	"3.1"
+					"value"	"3."
 				}
 				"damage penalty"
 				{
 					"attribute_class"	"mult_dmg"
-					"value"	"1.15"
+					"value"	"1.10"
 				}
-				"weapon spread penalty"
-				{
-					"attribute_class"	"mult_spread_scale"
-					"value"	"1.8"
-				}
-				"crit mod disabled"
-				{
-					"attribute_class"	"mult_crit_chance"
-					"value"	"0"
-				}
-				"fire rate penalty"
+				"fire rate bonus"
 				{
 					"attribute_class"	"mult_postfiredelay"
-					"value" "1.6"
+					"value" "0.9"
 				}
 			}
 			"mouse_pressed_sound"		"#ui/item_heavy_gun_pickup.wav"
 			"drop_sound"				"#ui/item_heavy_gun_drop.wav"
 		}
-		
-		"weapon_uzi"
-		{
-			"tags"
-			{
-				"can_deal_damage"						"1"
-				"can_deal_critical_damage"				"1"
-				"can_deal_mvm_penetration_damage"		"1"
-				"can_deal_long_distance_damage"			"1"
-			}
-			"show_in_armory"			"1"
-			"item_class"				"tf_weapon_smg"
-			"item_type_name"			"Uzi"
-			"item_name"					"Uzi"
-			"item_slot"					"secondary"
-			"anim_slot"					"item2"
-			"item_quality"				"normal"
-			"propername"				"1"
-			"min_ilevel"				"5"
-			"max_ilevel"				"5"
-			"image_inventory"			"sprites/smg"
-			"image_inventory_size_w"	"128"
-			"image_inventory_size_h"	"82"
-			"attach_to_hands"			"2"
-			"model_world"				"models/weapons/w_models/w_smg.mdl"
-			"model_player"				"models/weapons/v_models/UZI/v_smg_sniper.mdl"
-			"used_by_classes"
-			{
-				"sniper"					"1"
-			}
-			"attributes"
-			{
-							"hidden secondary max ammo bonus"
-				{
-					"attribute_class"	"mult_maxammo_secondary"
-					"value"	"3.1"
-				}
-			}
-			"mouse_pressed_sound"		"#ui/item_heavy_gun_pickup.wav"
-			"drop_sound"				"#ui/item_heavy_gun_drop.wav"
-		}
-		
-		"weapon_leaverrifle"
-		{
-			"tags"
-			{
-				"can_deal_damage"						"1"
-				"can_deal_critical_damage"				"1"
-				"can_deal_mvm_penetration_damage"		"1"
-				"can_deal_long_distance_damage"			"1"
-			}
-			"show_in_armory"			"1"
-			"item_class"				"tf_weapon_scattergun"
-			"item_type_name"			"Leaver Action rifle"
-			"item_name"					"Leaver Action"
-			"item_slot"					"primary"
-			"anim_slot"					"item2"
-			"item_quality"				"normal"
-			"propername"				"1"
-			"min_ilevel"				"5"
-			"max_ilevel"				"5"
-			"image_inventory"			"backpack/weapons/c_models/c_scattergun"
-			"image_inventory_size_w"	"128"
-			"image_inventory_size_h"	"82"
-			"attach_to_hands"			"2"
-			"model_player"				"models/weapons/v_models/v_scattergun_scout.mdl"
-			"model_world"				"models/weapons/w_models/w_scattergun.mdl"
-			"used_by_classes"
-			{
-				"scout"					"1"
-			}
-			"mouse_pressed_sound"		"#ui/item_heavy_gun_pickup.wav"
-			"drop_sound"				"#ui/item_heavy_gun_drop.wav"
-		}
-		
 		"weapon_targe"
 		{
 			"enabled"		"1"
@@ -29828,7 +29743,6 @@
 			"name"						"Sten"
 			"prefab"					"weapon_stengun"
 			"item_description"			"Stengun"
-			"image_inventory" "backpack\weapons\w_models\w_nailgun_large.vtf"
 			"used_by_classes"
 			{
 				"scout"					"1"
@@ -29838,79 +29752,14 @@
 				"clip size bonus"
 				{
 				"attribute_class"	"mult_clipsize"
-				"value"	"0.75"
+				"value"	"1.2"
 				}
 				"maxammo secondary increased"
 				{
 				"attribute_class"	"mult_maxammo_secondary"
-				"value"	"2"
+				"value"	"3"
 				}
 			}
-		}
-		"6971"
-		{
-			"name"						"Uzi"
-			"prefab"					"weapon_uzi"
-			"item_description"			"Stengun"
-			"image_inventory" "sprites/w_smg.vtf"
-			"used_by_classes"
-			{
-				"sniper"					"1"
-			}
-			"attributes"
-			{
-				"clip size bonus"
-				{
-				"attribute_class"	"mult_clipsize"
-				"value"	"0.75"
-				}
-				"maxammo secondary increased"
-				{
-				"attribute_class"	"mult_maxammo_secondary"
-				"value"	"2"
-				}
-			}
-		}
-		"6972"
-		{
-			"name"						"Leaver"
-			"prefab"					"weapon_leaverrifle"
-			"item_description"			"Leaver Action rifle"
-			"image_inventory"			"backpack/weapons/c_models/c_scattergun"
-			"image_inventory_size_w"	"128"
-			"image_inventory_size_h"	"82"
-			"attach_to_hands"			"2"
-			"model_player"				"models/weapons/v_models/v_scattergun_scout.mdl"
-			"model_world"				"models/weapons/w_models/w_scattergun.mdl"
-			"used_by_classes"
-			{
-				"scout"					"1"
-			}
-			"attributes"
-			{
-				"damage bonus"
-				{
-					"attribute_class"	"mult_dmg"
-					"value"	"2.25"
-				}
-				"reload time decreased"
-				{
-				"attribute_class"	"mult_reload_time"
-				"value"	"0.90"
-				}
-				"clip size penalty"
-				{
-					"attribute_class"	"mult_clipsize"
-					"value"				"0.67"
-				}
-				"spread penalty"
-				{
-					"attribute_class" 	"mult_spread_scale"
-					"value" "1.60"
-				}
-			}
-			"mouse_pressed_sound"		"#ui/item_heavy_gun_pickup.wav"
-			"drop_sound"				"#ui/item_heavy_gun_drop.wav"
 		}
 		"6973"
 		{
@@ -49297,6 +49146,107 @@
 			"prefab"	"weapon_rocketlauncher_merc"
 			"xifier_class_remap"	"rocket_launcher"
 			"baseitem" "1"
+		}
+		"7526"
+		{
+			"name"			"Festive Jag"
+			"prefab"		"weapon_wrench"
+			"show_in_armory"	"1"
+			"craft_class"	""
+			"baseitem"		"0"
+			"item_quality"	"unique"
+			"item_name"			"Festive Jag"
+			"image_inventory"	"backpack/weapons/c_models/c_wrench/c_wrench_xmas"
+			"visuals"
+			{
+				"attached_models"
+				{
+					"0"
+					{
+						"model"	"models/weapons/c_models/c_wrench/c_wrench_xmas.mdl"
+					}
+				}
+			}
+			"model_player"	"models/workshop/weapons/c_models/c_jag/c_jag.mdl"
+			"used_by_classes"
+			{
+				"engineer"	"1"
+			}
+			"static_attrs"
+			{
+				"min_viewmodel_offset"			"10 -2 -9"	
+				"weapon_stattrak_module_scale"		"0.756"			
+			}
+			"mouse_pressed_sound"	"ui/item_metal_weapon_pickup.wav"
+			"drop_sound"		"ui/item_metal_weapon_drop.wav"
+			"attributes"
+			{
+				"Construction rate increased"
+				{
+					"attribute_class"	"mult_construction_value"
+					"value"		"1.3"
+				}
+				"fire rate bonus"
+				{
+					"attribute_class"	"mult_postfiredelay"
+					"value"	"0.85"
+				}
+				"Repair rate decreased"
+				{
+					"attribute_class"	"mult_repair_value"
+					"value"	"0.80"
+				}
+				"damage penalty"
+				{
+					"attribute_class"	"mult_dmg"
+					"value"	"0.75"
+				}
+				"dmg penalty vs buildings"
+				{
+					"attribute_class"	"mult_dmg_vs_buildings"
+					"value" "0.67"
+				}
+				"kill eater score type"
+				{
+					"attribute_class"	"kill_eater_score_type"
+					"value" 	"3"									
+				}
+				"kill eater score type 2"
+				{
+					"attribute_class"	"kill_eater_score_type_2"
+					"value" 	"0"									
+				}
+			}
+		}
+		"7527"
+		{
+			"name"						"thompson_sniper"
+			"prefab"					"weapon_stengun"
+			"item_description"			"A WWII classic"
+			"item_name"					"Thompson"
+			"image_inventory"			"backpack/weapons/w_models/thompson/c_smg"
+			"image_inventory_size_w"	"128"
+			"image_inventory_size_h"	"82"
+			"attach_to_hands"			"2"
+			"model_world"				"models/weapons/thompson/w_models/w_smg.mdl"
+			"model_player"				"models/weapons/thompson/v_models/v_smg_sniper.mdl"
+			"used_by_classes"
+			{
+				"sniper"					"1"
+			}
+			"attributes"
+			{
+				"clip size bonus"
+				{
+				"attribute_class"	"mult_clipsize"
+				"value"	"1.2"
+				}
+				"maxammo secondary increased"
+				{
+				"attribute_class"	"mult_maxammo_secondary"
+				"value"	"3"
+				}
+			}
 		}
 		"30570"
 		{
