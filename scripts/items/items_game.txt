@@ -16203,7 +16203,7 @@
 		{
 			"name"	"The Manmelter"
 			"first_sale_date"	"2011/12/15"
-			"item_class"	"tf_weapon_flaregun_revenge"
+			"item_class"	"tf_weapon_flaregun"
 			"craft_class"	"weapon"
 			"craft_material_type"	"weapon"
 			"capabilities"
@@ -18160,6 +18160,710 @@
 			}
 			"mouse_pressed_sound"	"ui/item_metal_weapon_pickup.wav"
 			"drop_sound"		"ui/item_metal_weapon_drop.wav"
+		}
+		
+		"658"
+		{
+			"name"			"Festive Rocket Launcher 2011"
+			"prefab"		"weapon_rocketlauncher"
+			"craft_class"	""
+			"baseitem"		"0"
+			"item_quality"		"unique"
+			"item_name"			"#TF_Weapon_RocketLauncher_Festive2011"
+			"image_inventory"	"backpack/weapons/c_models/c_rocketlauncher/c_rocketlauncher_xmas"
+			"visuals"
+			{
+				"attached_models"
+				{
+					"0"
+					{
+						"model"	"models/weapons/c_models/c_rocketlauncher/c_rocketlauncher_xmas.mdl"
+					}
+				}
+			}
+			"static_attrs"
+			{
+				"limited quantity item"		"1"
+			}
+			"xifier_class_remap"	"rocket_launcher"
+		}
+		"659"
+		{
+			"name"			"Festive Flamethrower 2011"
+			"prefab"		"weapon_flamethrower"
+			"craft_class"	""
+			"baseitem"		"0"
+			"item_quality"	"unique"
+			"item_name"			"#TF_Weapon_Flamethrower_Festive2011"
+			"image_inventory"	"backpack/weapons/c_models/c_flamethrower/c_flamethrower_xmas"
+			"visuals"
+			{
+				"attached_models"
+				{
+					"0"
+					{
+						"model"	"models/weapons/c_models/c_flamethrower/c_flamethrower_xmas.mdl"
+					}
+					"1"
+					{
+						"model"	"models/weapons/c_models/c_flamethrower/c_flamethrower_pilotlight.mdl"
+					}
+				}
+			}
+			"static_attrs"
+			{
+				"limited quantity item"		"1"
+			}
+			"xifier_class_remap"	"flamethrower"
+		}
+		"660"
+		{
+			"name"			"Festive Bat 2011"
+			"prefab"		"weapon_bat"
+			"craft_class"	""
+			"baseitem"		"0"
+			"item_quality"	"unique"
+			"item_name"			"#TF_Weapon_Bat_Festive2011"
+			"image_inventory"	"backpack/weapons/c_models/c_bat/c_bat_xmas"
+			"visuals"
+			{
+				"attached_models"
+				{
+					"0"
+					{
+						"model"	"models/weapons/c_models/c_bat/c_bat_xmas.mdl"
+					}
+				}
+			}
+			"static_attrs"
+			{
+				"limited quantity item"		"1"
+			}
+			"xifier_class_remap"	"bat"
+		}
+		"661"
+		{
+			"name"			"Festive Stickybomb Launcher 2011"
+			"prefab"		"weapon_stickybomb_launcher"
+			"craft_class"	""
+			"baseitem"		"0"
+			"item_quality"	"unique"
+			"item_name"			"#TF_Weapon_StickybombLauncher_Festive2011"
+			"image_inventory"	"backpack/weapons/c_models/c_stickybomb_launcher/c_stickybomb_launcher_xmas"
+			"attach_to_hands"	"1"
+			"visuals"
+			{
+				"attached_models"
+				{
+					"0"
+					{
+						"model"	"models/weapons/c_models/c_stickybomb_launcher/c_stickybomb_launcher_xmas.mdl"
+					}
+				}
+				"styles"
+				{
+					"0"
+					{
+						"name"		"#TF_Weapon_StickybombLauncher_Festive2011_Style0"
+						"skin_red"	"0"
+						"skin_blu"	"1"
+					}
+					"1"
+					{
+						"name"		"#TF_Weapon_StickybombLauncher_Festive2011_Style1"
+						"skin_red"	"2"
+						"skin_blu"	"3"
+					}
+				}
+			}
+			"static_attrs"
+			{
+				"limited quantity item"		"1"
+			}
+			"xifier_class_remap"	"stickybomb_launcher"
+		}
+		"662"
+		{
+			"name"			"Festive Wrench 2011"
+			"prefab"		"weapon_wrench"
+			"craft_class"	""
+			"baseitem"		"0"
+			"item_quality"	"unique"
+			"item_name"			"#TF_Weapon_Wrench_Festive2011"
+			"image_inventory"	"backpack/weapons/c_models/c_wrench/c_wrench_xmas"
+			"visuals"
+			{
+				"attached_models"
+				{
+					"0"
+					{
+						"model"	"models/weapons/c_models/c_wrench/c_wrench_xmas.mdl"
+					}
+				}
+			}
+			"static_attrs"
+			{
+				"limited quantity item"		"1"
+			}
+			"xifier_class_remap"	"wrench"
+		}
+		"663"
+		{
+			"name"			"Festive Medigun 2011"
+			"prefab"		"weapon_medigun"
+			"craft_class"	""
+			"baseitem"		"0"
+			"item_quality"	"unique"
+			"item_name"			"#TF_Weapon_Medigun_Festive2011"
+			"image_inventory"	"backpack/weapons/c_models/c_medigun/c_medigun_xmas"
+			"visuals"
+			{
+				"attached_models"
+				{
+					"0"
+					{
+						"model"	"models/weapons/c_models/c_medigun/c_medigun_xmas.mdl"
+					}
+				}
+			}
+			"static_attrs"
+			{
+				"limited quantity item"		"1"
+			}
+			"xifier_class_remap"	"medigun"
+		}
+		"664"
+		{
+			"name"			"Festive Sniper Rifle 2011"
+			"prefab"		"weapon_sniperrifle"
+			"craft_class"	""
+			"baseitem"		"0"
+			"item_quality"	"unique"
+			"item_name"			"#TF_Weapon_SniperRifle_Festive2011"
+			"image_inventory"	"backpack/weapons/c_models/c_sniperrifle/c_sniperrifle_xmas"
+			"visuals"
+			{
+				"attached_models"
+				{
+					"0"
+					{
+						"model"	"models/weapons/c_models/c_sniperrifle/c_sniperrifle_xmas.mdl"
+					}
+				}
+			}
+			"static_attrs"
+			{
+				"limited quantity item"		"1"
+			}
+			"xifier_class_remap"	"sniper_rifle"
+		}
+		"669"
+		{
+			"name"			"Festive Scattergun 2011"
+			"prefab"		"weapon_scattergun"
+			"craft_class"	""
+			"baseitem"		"0"
+			"item_quality"	"unique"
+			"item_name"			"#TF_Weapon_Scattergun_Festive2011"
+			"image_inventory"	"backpack/weapons/c_models/c_scattergun/c_scattergun_xmas"
+			"visuals"
+			{
+				"attached_models"
+				{
+					"0"
+					{
+						"model"	"models/weapons/c_models/c_scattergun/c_scattergun_xmas.mdl"
+					}
+				}
+			}
+			"static_attrs"
+			{
+				"limited quantity item"		"1"
+			}
+			"xifier_class_remap"	"scattergun"
+		}
+		"999"
+		{
+			"name"			"Festive Holy Mackerel"
+			"prefab"		"weapon_holymackerel"
+			"craft_class"	""
+			"item_name"			"#TF_Weapon_HolyMackerel_Festive2012"
+			"image_inventory"	"backpack/workshop/weapons/c_models/c_holymackerel/c_holymackerel_xmas"
+			"model_player"		"models/workshop/weapons/c_models/c_holymackerel/c_holymackerel_xmas.mdl"
+			"set_item_remap"	"The Holy Mackerel"
+			"visuals_red"
+			{
+				"skin" "0"
+				"sound_melee_hit"	"Weapon_HolyMackerel.HitFlesh"
+				"sound_melee_hit_world"	"Weapon_HolyMackerel.HitWorld"
+			}
+			"visuals_blu"
+			{
+				"skin" "1"
+				"sound_melee_hit"	"Weapon_HolyMackerel.HitFlesh"
+				"sound_melee_hit_world"	"Weapon_HolyMackerel.HitWorld"
+			}
+			"static_attrs"
+			{
+				"limited quantity item"		"1"
+			}
+			"xifier_class_remap"	"holymackerel"
+		}
+		"1000"
+		{
+			"name"			"Festive Axtinguisher"
+			"prefab"		"weapon_axtinguisher"
+			"craft_class"	""
+			"item_name"			"#TF_Weapon_Axtinguisher_Festive2012"
+			"image_inventory"	"backpack/weapons/c_models/c_fireaxe_pyro/c_fireaxe_pyro_xmas"
+			"model_player"		"models/weapons/c_models/c_fireaxe_pyro/c_fireaxe_pyro_xmas.mdl"
+			"xifier_class_remap"	"axtinguisher"
+			"static_attrs"
+			{
+				"limited quantity item"		"1"
+				"min_viewmodel_offset"					"10 0 -9"	
+			}
+		}
+		"1001"
+		{
+			"name"			"Festive Buff Banner"
+			"prefab"		"weapon_buff_banner"
+			"craft_class"	""
+			"item_name"			"#TF_Weapon_BuffBanner_Festive2012"
+			"image_inventory"	"backpack/weapons/c_models/c_buffpack/c_buffpack_xmas"
+			"extra_wearable"	"models/weapons/c_models/c_buffpack/c_buffpack_xmas.mdl"
+			"xifier_class_remap"	"buff_banner"
+			"static_attrs"
+			{
+				"limited quantity item"		"1"
+				"min_viewmodel_offset"		"10 -2 -5"
+			}
+		}
+		"1002"
+		{
+			"name"			"Festive Sandvich"
+			"prefab"		"weapon_sandvich"
+			"craft_class"	""
+			"item_name"			"#TF_Weapon_Sandvich_Festive2012"
+			"image_inventory"	"backpack/weapons/c_models/c_sandwich/c_sandwich_xmas"
+			"model_player"		"models/weapons/c_models/c_sandwich/c_sandwich_xmas.mdl"
+			"attributes"
+			{
+				"lunchbox adds minicrits"
+				{
+					"attribute_class"	"set_weapon_mode"
+					"value"	"4"
+				}
+			}
+			"static_attrs"
+			{
+				"limited quantity item"		"1"
+			}
+		}
+		"1003"
+		{
+			"name"			"Festive Ubersaw"
+			"prefab"		"weapon_ubersaw"
+			"craft_class"	""
+			"item_name"			"#TF_Weapon_Ubersaw_Festive2012"
+			"image_inventory"	"backpack/weapons/c_models/c_ubersaw/c_ubersaw_xmas"
+			"model_player"		"models/weapons/c_models/c_ubersaw/c_ubersaw_xmas.mdl"
+			"xifier_class_remap"	"ubersaw"
+			"static_attrs"
+			{		
+				"limited quantity item"		"1"
+				"min_viewmodel_offset"		"10 0 -12"				
+			}
+		}
+		"1004"
+		{
+			"name"			"Festive Frontier Justice"
+			"prefab"		"weapon_frontier_justice"
+			"craft_class"	""
+			"item_name"			"#TF_Weapon_FrontierJustice_Festive2012"
+			"image_inventory"	"backpack/weapons/c_models/c_frontierjustice/c_frontierjustice_xmas"
+			"model_player"		"models/weapons/c_models/c_frontierjustice/c_frontierjustice_xmas.mdl"
+			"xifier_class_remap"	"frontier_justice"
+			"static_attrs"
+			{
+				"limited quantity item"		"1"
+				"min_viewmodel_offset"		"10 0 -10"
+			}
+		}
+		"1005"
+		{
+			"name"			"Festive Huntsman"
+			"prefab"		"weapon_huntsman"
+			"craft_class"	""
+			"item_name"			"#TF_Weapon_Huntsman_Festive2012"
+			"image_inventory"	"backpack/weapons/c_models/c_bow/c_bow_xmas"
+			"model_player"		"models/weapons/c_models/c_bow/c_bow_xmas.mdl"
+			"set_item_remap"	"The Huntsman"
+			"xifier_class_remap"	"huntsman"
+			"attributes"
+			{
+				"override projectile type"
+				{
+					"attribute_class"	"override_projectile_type"
+					"value"				"19" 
+				}
+			}
+			"static_attrs"
+			{
+				"limited quantity item"		"1"
+			}
+		}
+		"1006"
+		{
+			"name"			"Festive Ambassador"
+			"prefab"		"weapon_ambassador"
+			"craft_class"	""
+			"item_name"			"#TF_Weapon_Ambassador_Festive2012"
+			"image_inventory"	"backpack/weapons/c_models/c_ambassador/c_ambassador_xmas"
+			"model_player"	"models/weapons/c_models/c_ambassador/c_ambassador_xmas.mdl"
+			"xifier_class_remap"	"ambassador"
+			"static_attrs"
+			{
+				"limited quantity item"		"1"
+				"min_viewmodel_offset"		"5 0 -4"				
+			}
+		}
+		"1078"
+		{
+			"name"			"Festive Force-a-Nature"
+			"prefab"	"weapon_force_a_nature"
+			"propername"	"0"
+			"craft_class"	""
+			"item_name"			"#TF_Weapon_ForceANature_Festive2013"
+			"min_ilevel"	"1"
+			"max_ilevel"	"99"
+			"image_inventory"	"backpack/weapons/c_models/c_xms_double_barrel"
+			"model_player"		"models/weapons/c_models/c_xms_double_barrel.mdl"
+			"static_attrs"
+			{
+				"limited quantity item"		"1"
+			}
+		}
+		"1079"
+		{
+			"name"			"Festive Crusader's Crossbow"
+			"prefab"	"weapon_crusaders_crossbow"
+			"propername"	"0"
+			"craft_class"	""
+			"item_name"			"#TF_Weapon_CrusaderCrossbow_Festive2013"
+			"min_ilevel"	"1"
+			"max_ilevel"	"99"
+			"image_inventory"	"backpack/workshop/weapons/c_models/c_crusaders_crossbow/c_crusaders_crossbow_xmas"
+			"model_player"		"models/workshop/weapons/c_models/c_crusaders_crossbow/c_crusaders_crossbow_xmas.mdl"
+			"attributes"
+			{
+				"override projectile type"
+				{
+					"attribute_class"	"override_projectile_type"
+					"value"				"23" 
+				}
+			}
+			"static_attrs"
+			{
+				"limited quantity item"		"1"
+				"min_viewmodel_offset"		"10 0 -14"				
+			}
+			"set_item_remap"		"The Crusader's Crossbow"
+		}
+		"1080"
+		{
+			"name"			"Festive Sapper"
+			"prefab"	"weapon_sapper"
+			"item_class"	"tf_weapon_sapper"		
+			"propername"	"0"
+			"craft_class"	""
+			"item_name"			"#TF_Weapon_Sapper_Festive2013"
+			"min_ilevel"	"1"
+			"max_ilevel"	"99"
+			"image_inventory"	"backpack/weapons/c_models/c_sapper/c_sapper_xmas"
+			"model_player"	"models/weapons/c_models/c_sapper/c_sapper_xmas.mdl"
+			"model_world"	"models/weapons/c_models/c_sapper/c_sapper_xmas.mdl"
+			"static_attrs"
+			{
+				"limited quantity item"		"1"
+				"min_viewmodel_offset"		"10 0 -6"				
+			}
+		}
+		"1081"
+		{
+			"name"			"Festive Flare Gun"
+			"prefab"	"weapon_flaregun"
+			"propername"	"0"
+			"craft_class"	""
+			"item_name"			"#TF_Weapon_Flaregun_Festive2013"
+			"min_ilevel"	"1"
+			"max_ilevel"	"99"
+			"image_inventory"	"backpack/weapons/c_models/c_xms_flaregun/c_xms_flaregun"
+			"model_player"		"models/weapons/c_models/c_xms_flaregun/c_xms_flaregun.mdl"
+			"static_attrs"
+			{
+				"limited quantity item"		"1"
+			}
+		}
+		"1083"
+		{
+			"name"		"Festive Jarate"
+			"prefab"	"weapon_jarate"
+			"propername"	"0"
+			"craft_class"	""
+			"item_name"			"#TF_Weapon_Jarate_Festive2013"
+			"min_ilevel"	"1"
+			"max_ilevel"	"99"
+			"image_inventory"	"backpack/weapons/c_models/c_xms_urinejar"
+			"model_player"		"models/weapons/c_models/c_xms_urinejar.mdl"
+			"attributes"
+			{
+				"override projectile type"
+				{
+					"attribute_class"	"override_projectile_type"
+					"value"				"22" 
+				}
+			}
+			"static_attrs"
+			{
+				"limited quantity item"		"1"
+			}
+		}
+		"1007"
+		{
+			"name"			"Festive Grenade Launcher"
+			"prefab"		"weapon_grenade_launcher"
+			"craft_class"	""
+			"baseitem"		"0"
+			"item_quality"	"unique"
+			"xifier_class_remap"	"grenade_launcher"
+			"item_name"			"#TF_Weapon_GrenadeLauncher_Festive2012"
+			"image_inventory"	"backpack/weapons/c_models/c_grenadelauncher/c_grenadelauncher_xmas"
+			"model_player"	"models/weapons/c_models/c_grenadelauncher/c_grenadelauncher_xmas.mdl"
+			"static_attrs"
+			{
+				"limited quantity item"		"1"
+			}
+		}
+		"665"
+		{
+			"name"			"Festive Knife 2011"
+			"prefab"		"weapon_knife"
+			"craft_class"	""
+			"baseitem"		"0"
+			"item_quality"	"unique"
+			"item_name"			"#TF_Weapon_Knife_Festive2011"
+			"image_inventory"	"backpack/weapons/c_models/c_knife/c_knife_xmas"
+			"attach_to_hands"	"1"
+			"visuals"
+			{
+				"attached_models"
+				{
+					"0"
+					{
+						"model"	"models/weapons/c_models/c_knife/c_knife_xmas.mdl"
+					}
+				}
+			}
+			"static_attrs"
+			{
+				"limited quantity item"		"1"
+			}
+			"xifier_class_remap"	"knife"
+		}
+		"1141"
+		{
+			"name"	"Festive Shotgun 2014"
+			"prefab"	"no_craft weapon_shotgun_multiclass"
+			"item_name"	"#TF_Weapon_FestiveShotgun"
+			"image_inventory"	"backpack/weapons/c_models/c_shotgun/c_shotgun_xmas"
+			"visuals"
+			{
+				"attached_models"
+				{
+					"0"
+					{
+						"model"	"models/weapons/c_models/c_shotgun/c_shotgun_xmas.mdl"
+					}
+				}
+			}
+			"static_attrs"
+			{
+				"limited quantity item"		"1"
+				"min_viewmodel_offset"		"10 0 -9"	
+			}
+		}
+		"1142"
+		{
+			"name"	"Festive Revolver 2014"
+			"prefab"	"no_craft weapon_revolver"
+			"item_name"	"#TF_Weapon_FestiveRevolver"
+			"image_inventory"	"backpack/weapons/c_models/c_revolver/c_revolver_xmas"
+			"model_player"	"models/weapons/c_models/c_revolver/c_revolver_xmas.mdl"
+			"static_attrs"
+			{
+				"limited quantity item"		"1"
+			}
+		}
+		"1143"
+		{
+			"name"	"Festive Bonesaw 2014"
+			"prefab"	"no_craft weapon_bonesaw"
+			"item_name"	"#TF_Weapon_FestiveBonesaw"
+			"image_inventory"	"backpack/weapons/c_models/c_bonesaw/c_bonesaw_xmas"
+			"model_player"	"models/weapons/c_models/c_bonesaw/c_bonesaw_xmas.mdl"
+			"static_attrs"
+			{
+				"limited quantity item"		"1"
+			}
+		}
+		"1144"
+		{
+			"name"	"Festive Targe 2014"	
+			"prefab"	"no_craft weapon_targe"
+			"item_name"	"#TF_Weapon_FestiveTarge"
+			"image_inventory"	"backpack/weapons/c_models/c_targe/c_targe_xmas"
+			"model_player"	"models/weapons/c_models/c_targe/c_targe_xmas.mdl"
+			"propername"	"0"
+			"static_attrs"
+			{
+				"limited quantity item"		"1"
+			}
+			"visuals_red"
+			{
+				"skin"	"0"
+			}
+			"visuals_blu"
+			{
+				"skin"	"1"
+			}
+		}
+		"1145"
+		{
+			"name"	"Festive Bonk 2014"
+			"prefab"	"no_craft weapon_bonk"
+			"item_name"	"#TF_Weapon_FestiveBonk"
+			"item_description" "#TF_Unique_Achievement_EnergyDrink_desc"
+			"image_inventory"	"backpack/weapons/c_models/c_xms_energy_drink/c_xms_energy_drink"
+			"model_player"	"models/weapons/c_models/c_xms_energy_drink/c_xms_energy_drink.mdl"
+			"static_attrs"
+			{
+				"limited quantity item"		"1"
+			}
+		}
+		"1146"
+		{
+			"name"	"Festive Backburner 2014"
+			"prefab"	"no_craft weapon_backburner"
+			"item_name"	"#TF_Weapon_FestiveBackburner"
+			"image_inventory"	"backpack/weapons/c_models/c_flamethrower/c_backburner_xmas"
+			"model_player"	"models/weapons/c_models/c_flamethrower/c_backburner_xmas.mdl"
+			"static_attrs"
+			{
+				"limited quantity item"		"1"
+				"min_viewmodel_offset"		"10 0 -16"		
+			}
+			"visuals"
+			{
+				"attached_models"
+				{
+					"0"
+					{
+						"model"	"models/weapons/c_models/c_flamethrower/c_flamethrower_pilotlight.mdl"
+					}
+				}
+			}
+		}
+		"1149"
+		{
+			"name"	"Festive SMG 2014"
+			"prefab"	"no_craft weapon_smg"
+			"item_name"	"#TF_Weapon_FestiveSMG"
+			"image_inventory"	"backpack/weapons/c_models/c_smg/c_smg_xmas"
+			"visuals"
+			{
+				"attached_models"
+				{
+					"0"
+					{
+						"model"	"models/weapons/c_models/c_smg/c_smg_xmas.mdl"
+					}
+				}
+			}
+			"static_attrs"
+			{
+				"limited quantity item"		"1"
+				"min_viewmodel_offset"		"10 0 -7"							
+			}
+		}
+		"1084"
+		{
+			"name"		"Festive Gloves of Running Urgently"
+			"prefab"	"weapon_gru"
+			"propername"	"0"
+			"craft_class"	""
+			"item_name"			"#TF_Weapon_GRU_Festive2013"
+			"min_ilevel"	"1"
+			"max_ilevel"	"99"
+			"image_inventory"	"backpack/weapons/c_models/c_boxing_gloves\c_boxing_gloves_xmas"
+			"model_player"		"models/weapons/c_models/c_boxing_gloves/c_boxing_gloves_xmas.mdl"
+			"visuals_red"
+			{
+				"use_visualsblock_as_base"	"visuals"
+				"skin"	"2"
+				"sound_melee_miss"	"Weapon_BoxingGloves.Miss"
+				"sound_melee_hit"	"Weapon_BoxingGloves.HitFlesh"
+				"sound_melee_hit_world"	"Weapon_BoxingGloves.HitWorld"
+				"sound_burst"	"Weapon_BoxingGloves.MissCrit"
+			}
+			"visuals_blu"
+			{
+				"use_visualsblock_as_base"	"visuals"
+				"skin"	"3"
+				"sound_melee_miss"	"Weapon_BoxingGloves.Miss"
+				"sound_melee_hit"	"Weapon_BoxingGloves.HitFlesh"
+				"sound_melee_hit_world"	"Weapon_BoxingGloves.HitWorld"
+				"sound_burst"	"Weapon_BoxingGloves.MissCrit"
+			}
+			"static_attrs"
+			{
+				"limited quantity item"		"1"
+				"min_viewmodel_offset"		"10 0 -10"
+			}
+		}
+		"1085"
+		{
+			"name"		"Festive Black Box"
+			"prefab"	"weapon_blackbox"
+			"propername"	"0"
+			"craft_class"	""
+			"item_name"			"#TF_Weapon_Blackbox_Festive2013"
+			"min_ilevel"	"1"
+			"max_ilevel"	"99"
+			"image_inventory"	"backpack/workshop/weapons/c_models/c_blackbox/c_blackbox_xmas"
+			"model_player"		"models/workshop/weapons/c_models/c_blackbox/c_blackbox_xmas.mdl"
+			"set_item_remap"	"The Black Box"
+			"static_attrs"
+			{
+				"limited quantity item"		"1"
+			}
+		}
+		"1086"
+		{
+			"name"		"Festive Wrangler"
+			"prefab"	"weapon_wrangler"
+			"propername"	"0"
+			"craft_class"	""
+			"item_name"			"#TF_Weapon_Wrangler_Festive2013"
+			"min_ilevel"	"1"
+			"max_ilevel"	"99"
+			"image_inventory"	"backpack/weapons/c_models/c_wrangler_xmas"
+			"model_player"		"models/weapons/c_models/c_wrangler_xmas.mdl"
+			"static_attrs"
+			{
+				"limited quantity item"		"1"
+				"min_viewmodel_offset"		"12 0 -8"
+			}
 		}
 		"1085"
 		{
@@ -31201,6 +31905,75 @@
 				}
 			}
 		}
+		"1084"
+		{
+			"name"		"Festive Gloves of Running Urgently"
+			"prefab"	"weapon_gru"
+			"propername"	"0"
+			"craft_class"	""
+			"item_name"			"#TF_Weapon_GRU_Festive2013"
+			"min_ilevel"	"1"
+			"max_ilevel"	"99"
+			"image_inventory"	"backpack/weapons/c_models/c_boxing_gloves\c_boxing_gloves_xmas"
+			"model_player"		"models/weapons/c_models/c_boxing_gloves/c_boxing_gloves_xmas.mdl"
+			"visuals_red"
+			{
+				"use_visualsblock_as_base"	"visuals"
+				"skin"	"2"
+				"sound_melee_miss"	"Weapon_BoxingGloves.Miss"
+				"sound_melee_hit"	"Weapon_BoxingGloves.HitFlesh"
+				"sound_melee_hit_world"	"Weapon_BoxingGloves.HitWorld"
+				"sound_burst"	"Weapon_BoxingGloves.MissCrit"
+			}
+			"visuals_blu"
+			{
+				"use_visualsblock_as_base"	"visuals"
+				"skin"	"3"
+				"sound_melee_miss"	"Weapon_BoxingGloves.Miss"
+				"sound_melee_hit"	"Weapon_BoxingGloves.HitFlesh"
+				"sound_melee_hit_world"	"Weapon_BoxingGloves.HitWorld"
+				"sound_burst"	"Weapon_BoxingGloves.MissCrit"
+			}
+			"static_attrs"
+			{
+				"limited quantity item"		"1"
+				"min_viewmodel_offset"		"10 0 -10"
+			}
+		}
+		"1085"
+		{
+			"name"		"Festive Black Box"
+			"prefab"	"weapon_blackbox"
+			"propername"	"0"
+			"craft_class"	""
+			"item_name"			"#TF_Weapon_Blackbox_Festive2013"
+			"min_ilevel"	"1"
+			"max_ilevel"	"99"
+			"image_inventory"	"backpack/workshop/weapons/c_models/c_blackbox/c_blackbox_xmas"
+			"model_player"		"models/workshop/weapons/c_models/c_blackbox/c_blackbox_xmas.mdl"
+			"set_item_remap"	"The Black Box"
+			"static_attrs"
+			{
+				"limited quantity item"		"1"
+			}
+		}
+		"1086"
+		{
+			"name"		"Festive Wrangler"
+			"prefab"	"weapon_wrangler"
+			"propername"	"0"
+			"craft_class"	""
+			"item_name"			"#TF_Weapon_Wrangler_Festive2013"
+			"min_ilevel"	"1"
+			"max_ilevel"	"99"
+			"image_inventory"	"backpack/weapons/c_models/c_wrangler_xmas"
+			"model_player"		"models/weapons/c_models/c_wrangler_xmas.mdl"
+			"static_attrs"
+			{
+				"limited quantity item"		"1"
+				"min_viewmodel_offset"		"12 0 -8"
+			}
+		}
 		"30668"
 		{
 			"name"		"The Giger Counter"
@@ -31230,6 +32003,20 @@
 						"skin_blu"		"1"
 					}
 				}
+			}
+		}
+		"850"
+		{
+			"name"			"Deflector"
+			"prefab"		"weapon_minigun"
+			"craft_class"	""
+			"baseitem"		"0"
+			"show_in_armory"	"0"
+			"item_name"		"#TF_Minigun_Deflector"
+			"item_quality"	"unique"
+			"visuals"
+			{
+				"tracer_effect"	"bullet_tracer02"
 			}
 		}
 		"851"
