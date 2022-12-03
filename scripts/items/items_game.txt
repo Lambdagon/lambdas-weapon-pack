@@ -25251,7 +25251,7 @@
 			"show_in_armory"	"1"
 			"item_type_name"	"bat"
 			"item_name"	"Lead Pipe"
-			"item_descrption" "models/workshop/weapons/c_models/c_lead_pipe/c_candy_cane.mdl"
+			"item_description" "models/workshop/weapons/c_models/c_lead_pipe/c_candy_cane.mdl"
 			"item_logname"	"lead_pipe"
 			"item_iconname"	"lead_pipe"
 			"item_slot"		"melee"
@@ -31808,8 +31808,14 @@
 			"craft_class"	""
 			"baseitem"		"0"
 			"show_in_armory"	"0"
+			"item_description"	"The rarest kind of a MvM weapon. It has only been used by Robots."
 			"item_name"		"#TF_Minigun_Deflector"
 			"item_quality"	"unique"
+			"static_attrs"
+			{
+				"damage bonus"	"1.5"
+				"attack projectiles" "1"
+			}
 			"visuals"
 			{
 				"tracer_effect"	"bullet_tracer02"
@@ -42397,7 +42403,7 @@
 			"show_in_armory"	"1"
 			"item_type_name"	"bat"
 			"item_name"	"Three-Rune Blade"
-			"item_descrption" "Stab stab stab"
+			"item_description" "Stab stab stab"
 			"item_logname"	"lead_pipe"
 			"item_iconname"	"lead_pipe"
 			"item_slot"		"melee"
