@@ -43788,7 +43788,7 @@
 			"image_inventory_size_w"		"128"
 			"image_inventory_size_h"		"82"
 			"inspect_panel_dist" 				"46"			
-			"model_player"	"models/weapons/c_models/c_carnival_mallet/c_carnival_mallet.mdl"
+			"model_player"	"models/custom/weapons/c_models/c_carnival_mallet/c_carnival_mallet.mdl"
 			"attach_to_hands"	"1"
 			"item_quality"	"unique"
 			"propername"	"1"
