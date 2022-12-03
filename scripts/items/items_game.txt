@@ -48997,6 +48997,18 @@
 				"sniper"		"models/bots/sniper/bot_sniper.mdl"
 				"spy"		"models/bots/spy/bot_spy.mdl"
 			}
+			"model_player_per_class"
+			{
+				"scout"		"models/bots/scout/bot_scout.mdl"
+				"soldier"		"models/bots/soldier/bot_soldier.mdl"
+				"pyro"		"models/bots/pyro/bot_pyro.mdl"
+				"demoman"		"models/bots/demo/bot_demo.mdl"
+				"heavy"		"models/bots/heavy/bot_heavy.mdl"
+				"engineer"		"models/bots/engineer/bot_engineer.mdl"
+				"medic"		"models/bots/medic/bot_medic.mdl"
+				"sniper"		"models/bots/sniper/bot_sniper.mdl"
+				"spy"		"models/bots/spy/bot_spy.mdl"
+			}
 			"mouse_pressed_sound"		"ui/item_hat_pickup.wav"
 			"drop_sound"		"ui/item_hat_drop.wav"
 		}
@@ -49016,6 +49028,11 @@
 				"can_craft_count"		"1"
 			}
 			"used_by_classes"
+			{
+				"demoman"		"models/bots/headless_hatman.mdl"
+				"sniper"		"models/bots/merasmus/merasmus.mdl"
+			}
+			"model_player_per_class"
 			{
 				"demoman"		"models/bots/headless_hatman.mdl"
 				"sniper"		"models/bots/merasmus/merasmus.mdl"
