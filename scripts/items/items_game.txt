@@ -18386,6 +18386,7 @@
 		{
 			"name"			"Festive Holy Mackerel"
 			"prefab"		"weapon_holymackerel"
+			"show_in_armory"	"1"
 			"craft_class"	""
 			"item_name"			"#TF_Weapon_HolyMackerel_Festive2012"
 			"image_inventory"	"backpack/workshop/weapons/c_models/c_holymackerel/c_holymackerel_xmas"
@@ -18413,6 +18414,7 @@
 		{
 			"name"			"Festive Axtinguisher"
 			"prefab"		"weapon_axtinguisher"
+			"show_in_armory"	"1"
 			"craft_class"	""
 			"item_name"			"#TF_Weapon_Axtinguisher_Festive2012"
 			"image_inventory"	"backpack/weapons/c_models/c_fireaxe_pyro/c_fireaxe_pyro_xmas"
@@ -18428,6 +18430,7 @@
 		{
 			"name"			"Festive Buff Banner"
 			"prefab"		"weapon_buff_banner"
+			"show_in_armory"	"1"
 			"craft_class"	""
 			"item_name"			"#TF_Weapon_BuffBanner_Festive2012"
 			"image_inventory"	"backpack/weapons/c_models/c_buffpack/c_buffpack_xmas"
@@ -18443,6 +18446,7 @@
 		{
 			"name"			"Festive Sandvich"
 			"prefab"		"weapon_sandvich"
+			"show_in_armory"	"1"
 			"craft_class"	""
 			"item_name"			"#TF_Weapon_Sandvich_Festive2012"
 			"image_inventory"	"backpack/weapons/c_models/c_sandwich/c_sandwich_xmas"
@@ -18464,6 +18468,7 @@
 		{
 			"name"			"Festive Ubersaw"
 			"prefab"		"weapon_ubersaw"
+			"show_in_armory"	"1"
 			"craft_class"	""
 			"item_name"			"#TF_Weapon_Ubersaw_Festive2012"
 			"image_inventory"	"backpack/weapons/c_models/c_ubersaw/c_ubersaw_xmas"
@@ -18479,6 +18484,7 @@
 		{
 			"name"			"Festive Frontier Justice"
 			"prefab"		"weapon_frontier_justice"
+			"show_in_armory"	"1"
 			"craft_class"	""
 			"item_name"			"#TF_Weapon_FrontierJustice_Festive2012"
 			"image_inventory"	"backpack/weapons/c_models/c_frontierjustice/c_frontierjustice_xmas"
@@ -18494,6 +18500,7 @@
 		{
 			"name"			"Festive Huntsman"
 			"prefab"		"weapon_huntsman"
+			"show_in_armory"	"1"
 			"craft_class"	""
 			"item_name"			"#TF_Weapon_Huntsman_Festive2012"
 			"image_inventory"	"backpack/weapons/c_models/c_bow/c_bow_xmas"
@@ -18517,6 +18524,7 @@
 		{
 			"name"			"Festive Ambassador"
 			"prefab"		"weapon_ambassador"
+			"show_in_armory"	"1"
 			"craft_class"	""
 			"item_name"			"#TF_Weapon_Ambassador_Festive2012"
 			"image_inventory"	"backpack/weapons/c_models/c_ambassador/c_ambassador_xmas"
@@ -18531,6 +18539,7 @@
 		"1078"
 		{
 			"name"			"Festive Force-a-Nature"
+			"show_in_armory"	"1"
 			"prefab"	"weapon_force_a_nature"
 			"propername"	"0"
 			"craft_class"	""
@@ -18547,6 +18556,7 @@
 		"1079"
 		{
 			"name"			"Festive Crusader's Crossbow"
+			"show_in_armory"	"1"
 			"prefab"	"weapon_crusaders_crossbow"
 			"propername"	"0"
 			"craft_class"	""
@@ -18573,6 +18583,7 @@
 		"1080"
 		{
 			"name"			"Festive Sapper"
+			"show_in_armory"	"1"
 			"prefab"	"weapon_sapper"
 			"item_class"	"tf_weapon_sapper"		
 			"propername"	"0"
@@ -18592,6 +18603,7 @@
 		"1081"
 		{
 			"name"			"Festive Flare Gun"
+			"show_in_armory"	"1"
 			"prefab"	"weapon_flaregun"
 			"propername"	"0"
 			"craft_class"	""
@@ -18608,6 +18620,7 @@
 		"1083"
 		{
 			"name"		"Festive Jarate"
+			"show_in_armory"	"1"
 			"prefab"	"weapon_jarate"
 			"propername"	"0"
 			"craft_class"	""
@@ -18632,6 +18645,7 @@
 		"1007"
 		{
 			"name"			"Festive Grenade Launcher"
+			"show_in_armory"	"1"
 			"prefab"		"weapon_grenade_launcher"
 			"craft_class"	""
 			"baseitem"		"0"
@@ -18648,6 +18662,7 @@
 		"665"
 		{
 			"name"			"Festive Knife 2011"
+			"show_in_armory"	"1"
 			"prefab"		"weapon_knife"
 			"craft_class"	""
 			"baseitem"		"0"
@@ -18674,6 +18689,7 @@
 		"1141"
 		{
 			"name"	"Festive Shotgun 2014"
+			"show_in_armory"	"1"
 			"prefab"	"no_craft weapon_shotgun_multiclass"
 			"item_name"	"#TF_Weapon_FestiveShotgun"
 			"image_inventory"	"backpack/weapons/c_models/c_shotgun/c_shotgun_xmas"
@@ -18696,6 +18712,7 @@
 		"1142"
 		{
 			"name"	"Festive Revolver 2014"
+			"show_in_armory"	"1"
 			"prefab"	"no_craft weapon_revolver"
 			"item_name"	"#TF_Weapon_FestiveRevolver"
 			"image_inventory"	"backpack/weapons/c_models/c_revolver/c_revolver_xmas"
@@ -18708,6 +18725,7 @@
 		"1143"
 		{
 			"name"	"Festive Bonesaw 2014"
+			"show_in_armory"	"1"
 			"prefab"	"no_craft weapon_bonesaw"
 			"item_name"	"#TF_Weapon_FestiveBonesaw"
 			"image_inventory"	"backpack/weapons/c_models/c_bonesaw/c_bonesaw_xmas"
@@ -18720,6 +18738,7 @@
 		"1144"
 		{
 			"name"	"Festive Targe 2014"	
+			"show_in_armory"	"1"
 			"prefab"	"no_craft weapon_targe"
 			"item_name"	"#TF_Weapon_FestiveTarge"
 			"image_inventory"	"backpack/weapons/c_models/c_targe/c_targe_xmas"
@@ -18741,6 +18760,7 @@
 		"1145"
 		{
 			"name"	"Festive Bonk 2014"
+			"show_in_armory"	"1"
 			"prefab"	"no_craft weapon_bonk"
 			"item_name"	"#TF_Weapon_FestiveBonk"
 			"item_description" "#TF_Unique_Achievement_EnergyDrink_desc"
@@ -18754,6 +18774,7 @@
 		"1146"
 		{
 			"name"	"Festive Backburner 2014"
+			"show_in_armory"	"1"
 			"prefab"	"no_craft weapon_backburner"
 			"item_name"	"#TF_Weapon_FestiveBackburner"
 			"image_inventory"	"backpack/weapons/c_models/c_flamethrower/c_backburner_xmas"
@@ -18777,6 +18798,7 @@
 		"1149"
 		{
 			"name"	"Festive SMG 2014"
+			"show_in_armory"	"1"
 			"prefab"	"no_craft weapon_smg"
 			"item_name"	"#TF_Weapon_FestiveSMG"
 			"image_inventory"	"backpack/weapons/c_models/c_smg/c_smg_xmas"
@@ -18800,6 +18822,7 @@
 		{
 			"name"		"Festive Gloves of Running Urgently"
 			"prefab"	"weapon_gru"
+			"show_in_armory"	"1"
 			"propername"	"0"
 			"craft_class"	""
 			"item_name"			"#TF_Weapon_GRU_Festive2013"
@@ -18831,27 +18854,11 @@
 				"min_viewmodel_offset"		"10 0 -10"
 			}
 		}
-		"1085"
-		{
-			"name"		"Festive Black Box"
-			"prefab"	"weapon_blackbox"
-			"propername"	"0"
-			"craft_class"	""
-			"item_name"			"#TF_Weapon_Blackbox_Festive2013"
-			"min_ilevel"	"1"
-			"max_ilevel"	"99"
-			"image_inventory"	"backpack/workshop/weapons/c_models/c_blackbox/c_blackbox_xmas"
-			"model_player"		"models/workshop/weapons/c_models/c_blackbox/c_blackbox_xmas.mdl"
-			"set_item_remap"	"The Black Box"
-			"static_attrs"
-			{
-				"limited quantity item"		"1"
-			}
-		}
 		"1086"
 		{
 			"name"		"Festive Wrangler"
 			"prefab"	"weapon_wrangler"
+			"show_in_armory"	"1"
 			"propername"	"0"
 			"craft_class"	""
 			"item_name"			"#TF_Weapon_Wrangler_Festive2013"
@@ -18869,6 +18876,7 @@
 		{
 			"name"		"Festive Black Box"
 			"prefab"	"weapon_blackbox"
+			"show_in_armory"	"1"
 			"propername"	"0"
 			"craft_class"	""
 			"item_name"			"#TF_Weapon_Blackbox_Festive2013"
@@ -31903,75 +31911,6 @@
 						"skin_blu"		"1"
 					}
 				}
-			}
-		}
-		"1084"
-		{
-			"name"		"Festive Gloves of Running Urgently"
-			"prefab"	"weapon_gru"
-			"propername"	"0"
-			"craft_class"	""
-			"item_name"			"#TF_Weapon_GRU_Festive2013"
-			"min_ilevel"	"1"
-			"max_ilevel"	"99"
-			"image_inventory"	"backpack/weapons/c_models/c_boxing_gloves\c_boxing_gloves_xmas"
-			"model_player"		"models/weapons/c_models/c_boxing_gloves/c_boxing_gloves_xmas.mdl"
-			"visuals_red"
-			{
-				"use_visualsblock_as_base"	"visuals"
-				"skin"	"2"
-				"sound_melee_miss"	"Weapon_BoxingGloves.Miss"
-				"sound_melee_hit"	"Weapon_BoxingGloves.HitFlesh"
-				"sound_melee_hit_world"	"Weapon_BoxingGloves.HitWorld"
-				"sound_burst"	"Weapon_BoxingGloves.MissCrit"
-			}
-			"visuals_blu"
-			{
-				"use_visualsblock_as_base"	"visuals"
-				"skin"	"3"
-				"sound_melee_miss"	"Weapon_BoxingGloves.Miss"
-				"sound_melee_hit"	"Weapon_BoxingGloves.HitFlesh"
-				"sound_melee_hit_world"	"Weapon_BoxingGloves.HitWorld"
-				"sound_burst"	"Weapon_BoxingGloves.MissCrit"
-			}
-			"static_attrs"
-			{
-				"limited quantity item"		"1"
-				"min_viewmodel_offset"		"10 0 -10"
-			}
-		}
-		"1085"
-		{
-			"name"		"Festive Black Box"
-			"prefab"	"weapon_blackbox"
-			"propername"	"0"
-			"craft_class"	""
-			"item_name"			"#TF_Weapon_Blackbox_Festive2013"
-			"min_ilevel"	"1"
-			"max_ilevel"	"99"
-			"image_inventory"	"backpack/workshop/weapons/c_models/c_blackbox/c_blackbox_xmas"
-			"model_player"		"models/workshop/weapons/c_models/c_blackbox/c_blackbox_xmas.mdl"
-			"set_item_remap"	"The Black Box"
-			"static_attrs"
-			{
-				"limited quantity item"		"1"
-			}
-		}
-		"1086"
-		{
-			"name"		"Festive Wrangler"
-			"prefab"	"weapon_wrangler"
-			"propername"	"0"
-			"craft_class"	""
-			"item_name"			"#TF_Weapon_Wrangler_Festive2013"
-			"min_ilevel"	"1"
-			"max_ilevel"	"99"
-			"image_inventory"	"backpack/weapons/c_models/c_wrangler_xmas"
-			"model_player"		"models/weapons/c_models/c_wrangler_xmas.mdl"
-			"static_attrs"
-			{
-				"limited quantity item"		"1"
-				"min_viewmodel_offset"		"12 0 -8"
 			}
 		}
 		"30668"
