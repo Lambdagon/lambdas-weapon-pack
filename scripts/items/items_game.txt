@@ -18165,6 +18165,7 @@
 		"658"
 		{
 			"name"			"Festive Rocket Launcher 2011"
+			"show_in_armory"	"1"
 			"prefab"		"weapon_rocketlauncher"
 			"craft_class"	""
 			"baseitem"		"0"
@@ -18190,6 +18191,7 @@
 		"659"
 		{
 			"name"			"Festive Flamethrower 2011"
+			"show_in_armory"	"1"
 			"prefab"		"weapon_flamethrower"
 			"craft_class"	""
 			"baseitem"		"0"
@@ -18220,6 +18222,7 @@
 		{
 			"name"			"Festive Bat 2011"
 			"prefab"		"weapon_bat"
+			"show_in_armory"	"1"
 			"craft_class"	""
 			"baseitem"		"0"
 			"item_quality"	"unique"
@@ -18245,6 +18248,7 @@
 		{
 			"name"			"Festive Stickybomb Launcher 2011"
 			"prefab"		"weapon_stickybomb_launcher"
+			"show_in_armory"	"1"
 			"craft_class"	""
 			"baseitem"		"0"
 			"item_quality"	"unique"
@@ -18286,6 +18290,7 @@
 		{
 			"name"			"Festive Wrench 2011"
 			"prefab"		"weapon_wrench"
+			"show_in_armory"	"1"
 			"craft_class"	""
 			"baseitem"		"0"
 			"item_quality"	"unique"
@@ -18311,6 +18316,7 @@
 		{
 			"name"			"Festive Medigun 2011"
 			"prefab"		"weapon_medigun"
+			"show_in_armory"	"1"
 			"craft_class"	""
 			"baseitem"		"0"
 			"item_quality"	"unique"
@@ -18336,6 +18342,7 @@
 		{
 			"name"			"Festive Sniper Rifle 2011"
 			"prefab"		"weapon_sniperrifle"
+			"show_in_armory"	"1"
 			"craft_class"	""
 			"baseitem"		"0"
 			"item_quality"	"unique"
@@ -18361,6 +18368,7 @@
 		{
 			"name"			"Festive Scattergun 2011"
 			"prefab"		"weapon_scattergun"
+			"show_in_armory"	"1"
 			"craft_class"	""
 			"baseitem"		"0"
 			"item_quality"	"unique"
