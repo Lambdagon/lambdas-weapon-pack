@@ -49329,7 +49329,7 @@
 		"7527"
 		{
 			"name"						"thompson_sniper"
-			"prefab"					"weapon_stengun"
+			"prefab"					"weapon_smg"
 			"item_description"			"A WWII classic"
 			"item_name"					"Thompson"
 			"image_inventory"			"backpack/weapons/w_models/thompson/c_smg"
