@@ -176,3 +176,43 @@
 
 	"wave"		"#weapons/shotgun/shotgun_fire7.wav"
 }
+"Weapon_M1.Single"
+{
+	"channel"	"CHAN_WEAPON"
+	"soundlevel"	"SNDLVL_94dB"
+	"volume"	"1.0"
+	"wave"		"#weapons/garand/sniper_shoot.wav"
+}
+
+"Weapon_M1..SingleCrit"
+{
+	"channel"	"CHAN_WEAPON"
+	"soundlevel"	"SNDLVL_94dB"
+	"volume"	"1.0"
+	"wave"		"#weapons/garand/sniper_shoot_crit.wav"
+}
+
+"Weapon_M1.WorldReload"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"0.35"
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"		"#weapons/garand/sniper_worldreload.wav"
+}
+
+"Weapon_M1.BoltForward"
+{
+	"channel"	"CHAN_STATIC"
+	"soundlevel"	"SNDLVL_74dB"
+	"volume"	".45"
+	"wave"		"#weapons/garand/sniper_bolt_back.wav"
+}
+
+"Weapon_M1.BoltBack"
+{
+	"channel"	"CHAN_STATIC"
+	"soundlevel"	"SNDLVL_74dB"
+	"volume"	".45"
+	"wave"		"#weapons/garand/sniper_bolt_forward.wav"
+}

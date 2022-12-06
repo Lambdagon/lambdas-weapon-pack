@@ -30121,8 +30121,16 @@
 					"value"	"0.70"
 				}
 			}
+			"visuals"
+			{
+				"sound_single_shot"	"Weapon_M1.Single"
+				"sound_burst"		"Weapon_M1.SingleCrit"
+				"sound_reload"		"Weapon_M1.WorldReload"
+				"sound_special3"	"Weapon_M1.Single"
+			}
 			"mouse_pressed_sound"	"ui/item_heavy_gun_pickup.wav"
 			"drop_sound"		"ui/item_heavy_gun_drop.wav"
+			
 		}
 		"6979"
 		{
