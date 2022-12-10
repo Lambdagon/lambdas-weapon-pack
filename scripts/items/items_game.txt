@@ -2663,7 +2663,6 @@
 			"used_by_classes"
 			{
 				"demoman"	"1"
-				"scout"		"1"
 			}
 			"static_attrs"
 			{
@@ -10840,7 +10839,7 @@
 			"first_sale_date"	"2010/09/29"
 			"prefab"	"valve weapon_buff_banner"
 			"xifier_class_remap"	"buff_banner"
-			"show_in_armory"	"1"
+			"show_in_armory"	"0"
 		}
 		"130"
 		{
@@ -15591,7 +15590,7 @@
 				"can_deal_damage"			"1"
 				"can_deal_critical_damage"	"1"
 			}
-			"show_in_armory"	"1"
+			"show_in_armory"	"0"
 			"item_type_name"	"#TF_Weapon_Severed_Arm"
 			"item_name"	"Unarmed Combat"
 			"item_description"	"Part of Lambda's Weapon Pack"
@@ -16353,7 +16352,7 @@
 		{
 			"name"	"The Wrap Assassin"
 			"first_sale_date"	"2011/12/19"
-			"item_class"	"tf_weapon_bat_wood"
+			"item_class"	"tf_weapon_bat"
 			"craft_class"	"weapon"
 			"craft_material_type"	"weapon"
 			"capabilities"
@@ -16368,7 +16367,7 @@
 				"can_deal_critical_damage"	"1"
 				"can_deal_long_distance_damage"	"1"
 			}
-			"show_in_armory"	"1"
+			"show_in_armory"	"0"
 			"item_type_name"	"#TF_Weapon_Bat"
 			"item_name"	"#TF_BallBuster"
 			"item_description"	"#TF_BallBuster_Desc"
@@ -17268,7 +17267,7 @@
 		{
 			"name"	"The Flying Guillotine"
 			"prefab"		"weapon_guillotine"
-			"show_in_armory"	"1"
+			"show_in_armory"	"0"
 			"inspect_panel_dist" 			"40"
 		}
  		"813"
@@ -17297,7 +17296,7 @@
 				"can_deal_critical_damage"	"1"
 				"can_be_equipped_by_soldier_or_demo"	"1"
 			}
-			"show_in_armory"	"1"
+			"show_in_armory"	"0"
 			"item_type_name"	"#TF_Weapon_Staff"
 			"item_name"	"#TF_TW_Staff"
 			"item_description"	"#TF_TW_Staff_Desc"
@@ -17361,7 +17360,7 @@
 			}
 			"item_logname"	"skullbat"
 			"item_iconname"	"skullbat"
-			"show_in_armory"	"1"
+			"show_in_armory"	"0"
 			"item_type_name"	"#TF_Weapon_Skullbat"
 			"item_name"	"#TF_BatOuttaHell"
 			"item_slot"	"melee"
@@ -17882,7 +17881,7 @@
 			}
 			"item_logname"	"ham_shank"
 			"item_iconname"	"ham_shank"
-			"show_in_armory"	"1"
+			"show_in_armory"	"0"
 			"item_type_name"	"#TF_Weapon_Pork_Product"
 			"item_name"	"#TF_HamShank"
 			"item_description"	"#TF_HamShank_Desc"
@@ -17900,7 +17899,6 @@
 			"anim_slot" "MELEE_ALLCLASS"
 			"used_by_classes"
 			{
-				"scout"	"1"
 				"sniper"	"1"
 				"soldier"	"1"
 				"demoman"	"1"
@@ -18137,7 +18135,7 @@
 		{
 			"name"			"Festive Bat 2011"
 			"prefab"		"weapon_bat"
-			"show_in_armory"	"1"
+			"show_in_armory"	"0"
 			"craft_class"	""
 			"baseitem"		"0"
 			"item_quality"	"unique"
@@ -18309,7 +18307,7 @@
 		{
 			"name"			"Festive Holy Mackerel"
 			"prefab"		"weapon_holymackerel"
-			"show_in_armory"	"1"
+			"show_in_armory"	"0"
 			"craft_class"	""
 			"item_name"			"#TF_Weapon_HolyMackerel_Festive2012"
 			"image_inventory"	"backpack/workshop/weapons/c_models/c_holymackerel/c_holymackerel_xmas"
@@ -18337,7 +18335,7 @@
 		{
 			"name"			"Festive Axtinguisher"
 			"prefab"		"weapon_axtinguisher"
-			"show_in_armory"	"1"
+			"show_in_armory"	"0"
 			"craft_class"	""
 			"item_name"			"#TF_Weapon_Axtinguisher_Festive2012"
 			"image_inventory"	"backpack/weapons/c_models/c_fireaxe_pyro/c_fireaxe_pyro_xmas"
@@ -30595,7 +30593,7 @@
 				"can_deal_critical_damage"	"1"
 				"can_deal_taunt_damage"		"1"
 			}
-			"show_in_armory"	"1"
+			"show_in_armory"	"0"
 			"item_type_name"	"Bitches"
 			"item_name"	"Bitches"
 			"item_slot"	"melee"
@@ -30678,7 +30676,7 @@
 				"can_deal_critical_damage"	"1"
 				"can_deal_long_distance_damage"	"1"
 			}
-			"show_in_armory"	"1"
+			"show_in_armory"	"0"
 			"item_type_name"	"#TF_Weapon_RocketLauncher"
 			"item_name"	"rehcnuaL tekcoR"
 			"item_slot"	"primary"
@@ -35887,7 +35885,7 @@
 			}
 			"item_logname"	"Battle_Banana_epic"
 			"item_iconname"	"Battle_Banana_epic"
-			"show_in_armory"	"1"
+			"show_in_armory"	"0"
 			"item_type_name"	"#TF_Weapon_GoldFryingPan"
 			"item_name"	"Battle Banana"
 			"item_slot"	"melee"
@@ -35962,7 +35960,7 @@
 			"min_ilevel"	"25"
 			"max_ilevel"	"25"
 			"propername"	"1"
-			"attach_to_hands"	"1"
+			"attach_to_hands"	"0"
 			"item_logname"	"wrench_Banananana"
 			"item_iconname"	"wrench_Banananana"
 			"image_inventory"	"backpack/weapons/c_models/c_banana/c_banana"
@@ -36185,6 +36183,7 @@
 			"item_name"				"#TF_Powerup_Precision"
 			"item_description"		"#TF_Powerup_Precision_Desc"
 			"image_inventory"		"Effects/powerup_precision_hud"
+			"show_in_armory" 	"0"
 			"item_slot"	"action"
 			"used_by_classes"
 			{
@@ -36309,7 +36308,7 @@
 				"can_be_equipped_by_soldier_or_demo"	"1"
 				"cannot_damage_tanks"		"1"
 			}
-			"show_in_armory"	"1"
+			"show_in_armory"	"0"
 			"item_type_name" 	"#TF_Wearable_Boots"
 			"item_logname" "mantreads"
 			"item_iconname" "mantreads"
@@ -46467,7 +46466,7 @@
 			"inspect_panel_dist"        "45"			
 			"attach_to_hands"	"1"
 			"model_player"	"models/workshop/weapons/c_models/c_bonk_bat/c_bonk_bat.mdl"
-			"show_in_armory"	"1"
+			"show_in_armory"	"0"
 			"used_by_classes"
 			{
 				"scout"	"1"
@@ -46733,7 +46732,7 @@
 			"image_inventory_size_h"		"82"
 			"model_world"	"models/weapons/c_models/c_smg/c_smg.mdl"
 			"model_player"	"models/weapons/v_models/v_smg_sniper.mdl"
-			"attach_to_hands"	"1"
+			"attach_to_hands"	"2"
 			"used_by_classes"
 			{
 				"scout"	"1"
@@ -46819,7 +46818,7 @@
 			{
 				"min_viewmodel_offset"		"10 0 -9"
 			}
-			"show_in_armory"	"1"
+			"show_in_armory"	"0"
 			"visuals"
 			{
 				"styles"
@@ -46927,7 +46926,7 @@
 			}
 			"used_by_classes"
 			{
-				"scout"	"1"
+				"spy"	"1"
 			}
 			"static_attrs"
 			{
