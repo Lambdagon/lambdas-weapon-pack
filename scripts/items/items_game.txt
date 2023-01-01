@@ -39713,7 +39713,7 @@
 			"show_in_armory"	"1"
 			"item_type_name"	"#TF_Weapon_Pistol"
 			"item_name"	"Peashooter"
-			"item_description"	"Cuphead"
+			"item_description"	"A grand slam and thensome!"
 			"item_slot"	"secondary"
 			"item_logname"	"Peashooter_gun"
 			"item_iconname"	"Peashooter_gun"
