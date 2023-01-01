@@ -216,3 +216,13 @@
 	"volume"	".45"
 	"wave"		"#weapons/garand/sniper_bolt_forward.wav"
 }
+"CupheadGun.Fire"
+{
+	"channel"	"CHAN_STATIC"
+	"soundlevel"	"SNDLVL_74dB"
+	"volume"	".45"
+	"wave"		"#weapons/cupheadgun/fire01.wav"
+	"wave"		"#weapons/cupheadgun/fire02.wav"
+	"wave"		"#weapons/cupheadgun/fire03.wav"
+	"wave"		"#weapons/cupheadgun/fire04.wav"
+}
