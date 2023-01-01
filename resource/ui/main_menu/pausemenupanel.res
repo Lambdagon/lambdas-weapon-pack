@@ -61,23 +61,6 @@
 		//"bgcolor_override"	"100 255 150 55"
 		"mouseinputenabled"	"0"
 	}
-	"PlayLabel"
-	{
-		"ControlName"	"CExLabel"
-		"fieldName"		"PlayLabel"
-		"font"			"HudFontSmallBold"
-		"labelText"		"#MMenu_Play"
-		"textAlignment"	"west"
-		"xpos"			"40"
-		"ypos"			"160"
-		"wide"			"140"
-		"tall"			"30"
-		"autoResize"	"0"
-		"pinCorner"		"0"
-		"visible"		"1"
-		"enabled"		"1"
-		"fgcolor_override"	"235 227 203 255"
-	}
 
 	//"BlogPanel"
 	//{
