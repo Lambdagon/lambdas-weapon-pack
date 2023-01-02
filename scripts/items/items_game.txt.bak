@@ -41702,7 +41702,7 @@
 				"sound_melee_hit_world"	"Weapon_Machete.HitWorld"
 				"sound_melee_miss"	"lambda.goku"
 				"sound_melee_hit"	"Weapon_Machete.HitFlesh"
-				"sound_burst"		"Weapon_Machete.MissCrit"
+				"sound_burst"		"lambda.goku"
 			}
 			"mouse_pressed_sound"	"ui/item_metal_weapon_pickup.wav"
 			"drop_sound"		"ui/item_metal_weapon_drop.wav"
