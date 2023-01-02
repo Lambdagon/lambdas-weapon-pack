@@ -10,6 +10,16 @@
 	"wave"		"*#music/lambda/banana.wav"
 }
 
+"lambda.mrbeast"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"1.0"
+	"soundlevel"	"SNDLVL_75dB"
+	"pitch"		"PITCH_NORM"
+
+	"wave"		"*#weapons/rapbattle/mrbeast.mp3"
+}
+
 "lambda.goku"
 {
 	"channel"	"CHAN_STATIC"
