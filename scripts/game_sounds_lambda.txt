@@ -10,6 +10,16 @@
 	"wave"		"*#music/lambda/banana.wav"
 }
 
+"lambda.goku"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"1.0"
+	"soundlevel"	"SNDLVL_75dB"
+	"pitch"		"PITCH_NORM"
+
+	"wave"		"*#weapons/heyitsme/goku.mp3"
+}
+
 "lambda.careless"
 {
 	"channel"		"CHAN_STATIC"
