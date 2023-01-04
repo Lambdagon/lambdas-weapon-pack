@@ -1,7 +1,7 @@
 "VertexLitGeneric"
 {
 //Main
-	"$basetexture"					"models/weapons/c_items/c_gluon_medigun/Monitors_BLU_D"
+	"$basetexture"					"models/weapons/c_items/c_gluon_medigun/Monitors_GRN_D"
 	"$bumpmap"						"models/weapons/c_items/c_gluon_medigun/Monitors_N"
 
 //Other
