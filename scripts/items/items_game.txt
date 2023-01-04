@@ -45901,7 +45901,7 @@
 				}
 			}
 		}
-				"7528"
+		"7528"
 		{
 			"name"	"pipebomb launcher"
 			"prefab"	"weapon_grenade_launcher"
@@ -45974,6 +45974,35 @@
 				{
 				"attribute_class"    "override_projectile_type"
 				 "value"                "3"
+				}
+			}
+		}
+		"7529"
+		{
+			"name"	"lambdas bow"
+			"first_sale_date"	"2014/03/07"
+			"prefab"	"weapon_huntsman"
+			"capabilities"
+			{
+				"can_craft_count"	"1"
+			}
+			"static_attrs"
+			{
+				"min_viewmodel_offset"		"10 -4 -10"				
+			}
+			"item_name"	"Lambda's Bow"
+			"show_in_armory" 	"1"
+			"item_description"	"#TF_FortifiedCompound_Desc"
+			"image_inventory"	"backpack/weapons/w_models/w_bow"
+			"model_player"	"models/weapons/v_models/v_lbow/v_bow.mdl"
+			"model_world"	"models/weapons/w_models/w_lbow/w_bow.mdl"
+			"inspect_panel_dist" 			"55"
+			"attributes"
+			{
+				"Set DamageType Ignite"
+				{
+					"attribute_class"	"set_dmgtype_ignite"
+					"value" "1"
 				}
 			}
 		}
