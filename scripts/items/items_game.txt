@@ -46053,7 +46053,7 @@
 				"damage bonus"
 				{
 					"attribute_class"	"mult_dmg"
-					"value"	"1.9"
+					"value"	"3.50"
 				}
 				"clip size penalty"
 				{
