@@ -46304,6 +46304,77 @@
 				"sound_burst" "lambda.sterlingburst"
 			}
 		}
+		"7535"
+		{
+			"name"	"lever"
+			"prefab"	"valve"
+			"first_sale_date"	"2010/09/29"
+			"item_class"	"tf_weapon_sniperrifle"
+			"craft_class"	"weapon"
+			"craft_material_type"	"weapon"
+			"capabilities"
+			{
+				"nameable"		"1"
+			}
+			"tags"
+			{
+				"can_deal_damage"		"1"
+				"can_headshot"			"1"
+				"can_deal_mvm_penetration_damage"	"1"
+				"can_deal_long_distance_damage"	"1"
+				"can_deal_gib_damage"	"1"
+			}
+			"show_in_armory"	"1"
+			"item_type_name"	"#TF_Weapon_SniperRifle"
+			"item_name"		"Canberra Carbine"
+			"item_slot"	"primary"
+			"item_quality"	"unique"
+			"propername"	"1"
+			"min_ilevel"	"1"
+			"max_ilevel"	"100"
+			"image_inventory"	"backpack/weapons/w_models/lever/w_sniperrifle"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"82"
+			"model_player"	"models/weapons/v_models/v_lever/v_sniperrifle_sniper.mdl"
+			"model_world"	"models/weapons/w_models/w_lever/w_sniperrifle.mdl"
+			"attach_to_hands"	"2"
+			"visuals"
+			{
+				"show_player_bodygroup_name"	"bullets"
+			}
+			"used_by_classes"
+			{
+				"sniper"	"1"
+			}
+			"attributes"
+			{
+				"damage penalty"
+				{
+					"attribute_class"	"mult_dmg"
+					"value"	"0.85"
+				}
+				"mod see enemy health"
+				{
+					"attribute_class"	"see_enemy_health"
+					"value" "1"
+				}
+				"crit mod disabled"
+				{
+					"attribute_class"	"mult_crit_chance"
+					"value"	"0"
+				}
+			}
+			"visuals"
+			{
+				"sound_single_shot"	"Weapon_M1.Single"
+				"sound_burst"		"Weapon_M1.SingleCrit"
+				"sound_reload"		"Weapon_M1.WorldReload"
+				"sound_special3"	"Weapon_M1.Single"
+			}
+			"mouse_pressed_sound"	"ui/item_heavy_gun_pickup.wav"
+			"drop_sound"		"ui/item_heavy_gun_drop.wav"
+			
+		}
 		"30570"
 		{
 			"name"		"Pool Party Taunt"
