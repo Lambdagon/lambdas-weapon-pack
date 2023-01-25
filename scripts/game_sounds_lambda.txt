@@ -30,6 +30,16 @@
 	"wave"		"*#weapons/heyitsme/goku.mp3"
 }
 
+"lambda.deaglesingle"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"1.0"
+	"soundlevel"	"SNDLVL_75dB"
+	"pitch"		"PITCH_NORM"
+
+	"wave"		"*#weapons/deagle/deagle-1.wav"
+}
+
 "lambda.careless"
 {
 	"channel"		"CHAN_STATIC"
