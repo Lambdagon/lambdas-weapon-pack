@@ -27249,11 +27249,6 @@
 					"attribute_class"	"mult_crit_chance"
 					"value"	"0"
 				}
-				"maxammo primary reduced"
-				{
-					"attribute_class"	"mult_maxammo_primary"
-					"value"				"0.20"
-				}
 				"special taunt"
 				{
 					"attribute_class"	"special_taunt"
@@ -38008,7 +38003,7 @@
 					"ACT_MELEE_VM_INSPECT_END"		"ACT_ITEM1_VM_INSPECT_END"
 				}
 			}
-			"attach_to_hands" "0"
+			"attach_to_hands" "2"
 			"attributes"
 			{
 				"increased jump height from weapon"
@@ -45059,7 +45054,7 @@
 					"head"		"1"
 				}
 			}
-			"image_inventory"		"backpack/workshop/player/items/all_class/sbox2014_zipper_suit/sbox2014_zipper_suit"
+			"image_inventory"		"backpack/workshop/player/items/all_class/2021_cringy_pyrogen_owo/2021_cringy_pyrogen_owo"
 			"capabilities"
 			{
 				"can_craft_count"		"1"
@@ -46127,6 +46122,187 @@
 			{
 				"sound_single_shot"	"lambda.deaglesingle"
 			}	
+		}
+		"7532"
+		{
+			"enabled"	"1"
+			"item_class"	"tf_weapon_shotgun"
+			"craft_class"	"weapon"
+			"craft_material_type"	"weapon"
+			"capabilities"
+			{
+				"nameable"		"1"
+			}
+			"tags"
+			{
+				"can_deal_damage"		"1"
+				"can_headshot"			"1"
+				"can_deal_critical_damage"	"1"
+				"can_deal_mvm_penetration_damage"	"1"
+				"can_deal_long_distance_damage"	"1"
+			}
+			"base_item_name"	"Shotgun Revolver"
+			"item_type_name"	"#TF_Weapon_Revolver"
+			"item_name"	"Executioner"
+			"item_slot"	"secondary"
+			"item_quality"	"unique"
+			"show_in_armory"	"1"
+			"propername"	"1"
+			"item_logname"	"ambassador"
+			"item_iconname"	"ambassador"
+			"min_ilevel"	"5"
+			"max_ilevel"	"5"
+			"image_inventory"	"backpack/weapons/c_models/c_executioner/parts/c_ambassador_opt"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"82"
+			"model_player"		"models/weapons/c_models/c_executioner/c_ambassador.mdl"
+			"attach_to_hands" "1"
+			"inspect_panel_dist" "32"
+			"used_by_classes"
+			{
+				"spy"	"1"
+			}
+			"static_attrs"
+			{
+				"min_viewmodel_offset"		"10 0 -6"
+			}
+			"attributes"
+			{
+				"crit mod disabled"
+				{
+					"attribute_class"	"mult_crit_chance"
+					"value"	"0"
+				}
+				"damage bonus" 
+				{
+					"attribute_class"	"mult_dmg"
+					"value" "1.65"
+				}
+				"clip size penalty"
+				{
+					"attribute_class"	"mult_clipsize"
+					"value" "0.85"
+				}
+				"reload time decreased"
+				{
+					"attribute_class"	"mult_reload_time"
+					"value"	"0.65"
+				}
+			}
+			"visuals"
+			{
+				"sound_single_shot" "lambda.executioner"
+				"sound_burst" "lambda.executioner"
+			}
+			"mouse_pressed_sound"	"ui/item_light_gun_pickup.wav"
+			"drop_sound"		"ui/item_light_gun_drop.wav"
+		}
+		"7533"
+		{
+			"enabled"	"1"
+			"item_class"	"tf_weapon_shotgun"
+			"craft_class"	"weapon"
+			"craft_material_type"	"weapon"
+			"capabilities"
+			{
+				"nameable"		"1"
+			}
+			"tags"
+			{
+				"can_deal_damage"		"1"
+				"can_headshot"			"1"
+				"can_deal_critical_damage"	"1"
+				"can_deal_mvm_penetration_damage"	"1"
+				"can_deal_long_distance_damage"	"1"
+			}
+			"base_item_name"	"Shotgun"
+			"item_type_name"	"#TF_Weapon_shotgun"
+			"item_name"	"Model 37"
+			"item_slot"	"primary"
+			"item_quality"	"unique"
+			"show_in_armory"	"1"
+			"propername"	"1"
+			"item_logname"	"model37"
+			"item_iconname"	"shotgun"
+			"min_ilevel"	"5"
+			"max_ilevel"	"5"
+			"image_inventory"	"backpack/weapons/w_models/w_shotgun"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"82"
+			"model_player"		"models/weapons/c_models/c_m37/c_shotgun.mdl"
+			"attach_to_hands" "1"
+			"inspect_panel_dist" "32"
+			"used_by_classes"
+			{
+				"engineer"	"primary"
+				"pyro" "secondary"
+				"soldier" "secondary"
+				"heavy" "secondary"
+				"medic"	"primary"
+			}
+			"static_attrs"
+			{
+				"min_viewmodel_offset"		"10 0 -6"
+			}
+			"attributes"
+			{
+				"clip size penalty"
+				{
+					"attribute_class"	"mult_clipsize"
+					"value" "0.85"
+				}
+				"reload time decreased"
+				{
+					"attribute_class"	"mult_reload_time"
+					"value"	"0.55"
+				}
+				"fire rate bonus"
+				{
+					"attribute_class"	"mult_postfiredelay"
+					"value" "0.6"
+				}
+			}
+			"visuals"
+			{
+				"sound_single_shot" "lambda.executioner"
+				"sound_burst" "lambda.executioner"
+			}
+			"mouse_pressed_sound"	"ui/item_light_gun_pickup.wav"
+			"drop_sound"		"ui/item_light_gun_drop.wav"
+		}
+		"7534"
+		{
+			"name"						"outback_sniper"
+			"prefab"					"weapon_smg"
+			"item_name"					"Outback Defender"
+			"image_inventory"			"backpack/weapons/w_models/sterling/c_smg"
+			"image_inventory_size_w"	"128"
+			"image_inventory_size_h"	"82"
+			"attach_to_hands"			"2"
+			"model_world"				"models/weapons/w_models/w_sterling/w_smg.mdl"
+			"model_player"				"models/weapons/v_models/v_sterling/v_smg_sniper.mdl"
+			"used_by_classes"
+			{
+				"sniper"					"1"
+			}
+			"attributes"
+			{
+				"clip size bonus"
+				{
+				"attribute_class"	"mult_clipsize"
+				"value"	"1.2"
+				}
+				"maxammo secondary increased"
+				{
+				"attribute_class"	"mult_maxammo_secondary"
+				"value"	"3"
+				}
+			}
+			"visuals"
+			{
+				"sound_single_shot" "lambda.sterling"
+				"sound_burst" "lambda.sterlingburst"
+			}
 		}
 		"30570"
 		{

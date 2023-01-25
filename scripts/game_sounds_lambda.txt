@@ -30,6 +30,36 @@
 	"wave"		"*#weapons/heyitsme/goku.mp3"
 }
 
+"lambda.executioner"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"1.0"
+	"soundlevel"	"SNDLVL_75dB"
+	"pitch"		"PITCH_NORM"
+
+	"wave"		"*#weapons/executioner_shoot.wav"
+}
+
+"lambda.sterling"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"1.0"
+	"soundlevel"	"SNDLVL_75dB"
+	"pitch"		"PITCH_NORM"
+
+	"wave"		"*#weapons/sterling/smg_shoot.wav"
+}
+
+"lambda.sterlingburst"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"1.0"
+	"soundlevel"	"SNDLVL_75dB"
+	"pitch"		"PITCH_NORM"
+
+	"wave"		"*#weapons/sterling/smg_shoot_crit.wav"
+}
+
 "lambda.deaglesingle"
 {
 	"channel"	"CHAN_STATIC"
