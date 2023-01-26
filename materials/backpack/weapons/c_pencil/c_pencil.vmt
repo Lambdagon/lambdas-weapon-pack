@@ -1,5 +1,7 @@
 "LightmappedGeneric"
 {
 	"$basetexture" "backpack/weapons/c_pencil/c_pencil"
-	$translucent 1
+	"$translucent" 1
+	"$vertexcolor" 1
+	"$ignorez" 1
 }

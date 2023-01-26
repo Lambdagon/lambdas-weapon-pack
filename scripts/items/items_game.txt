@@ -22226,7 +22226,7 @@
 				"can_deal_critical_damage"	"1"
 				"can_deal_long_distance_damage"	"1"
 			}
-			"show_in_armory"	"1"
+			"show_in_armory"	"0"
 			"item_type_name"	"#TF_Weapon_Railgun"
 			"item_name"		"#TF_Weapon_Railgun"
 			"item_slot"		"primary"
@@ -28285,11 +28285,6 @@
 				{
 					"attribute_class"	"mult_dmgtaken_from_fire"
 					"value"			"2"
-				}
-				"damage penalty on bodyshot"
-				{
-					"attribute_class"	"bodyshot_damage_modify"
-					"value"	"0.70"
 				}
 				"attach particle effect"
 				{
