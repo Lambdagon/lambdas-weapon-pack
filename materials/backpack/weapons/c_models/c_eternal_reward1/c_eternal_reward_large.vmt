@@ -1,5 +1,5 @@
 "UnlitGeneric"
 {
-	"$baseTexture" "backpack\weapons\c_models\c_eternal_reward/gemblade_large"
+	"$baseTexture" "backpack\weapons\c_models\c_eternal_reward1/gemblade_large"
 	$translucent 1
 }
