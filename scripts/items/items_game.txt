@@ -43152,11 +43152,11 @@
 			"propername"	"1"
 			"min_ilevel"	"1"
 			"max_ilevel"	"100"
-			"image_inventory"	"backpack/weapons/c_models/c_frontierjustice/c_frontierjustice"
+			"image_inventory"	"backpack/weapons/c_models/c_ambassador/parts/c_ambassador_opt"
 			"image_inventory_size_w"		"128"
 			"image_inventory_size_h"		"82"
 			"model_player"	"models/weapons/v_models/v_revrifle_sniper.mdl"
-			"model_world"	"models/weapons/c_models/c_ambassador/c_ambassador.mdl"
+			"model_world"	"models/weapons/w_models/w_revrifle_sniper.mdl"
 			"attach_to_hands"	"2"
 			"visuals"
 			{
