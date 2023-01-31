@@ -1,0 +1,7 @@
+"LightmappedGeneric"
+{
+	"$basetexture" "backpack/weapons/lambda/syringe_tommy/c_tommy_large"
+	"$translucent" 1
+	"$vertexcolor" 1
+	"$ignorez" 1
+}

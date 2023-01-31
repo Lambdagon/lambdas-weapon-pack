@@ -22356,7 +22356,6 @@
 			{
 				"min_viewmodel_offset"		"10 0 -9"
 			}
-			
 			"visuals"
 			{
 				"sound_single_shot"		"HL2_Weapon_Shotgun.Single"
@@ -22365,13 +22364,6 @@
 				"sound_empty"			"HL2_Weapon_Shotgun.Empty"
 				"sound_reload"			"HL2_Weapon_Shotgun.Reload"
 				"sound_special1"		"HL2_Weapon_Shotgun.Special1"
-			}
-			"taunt"
-			{
-				"custom_taunt_scene_per_class"
-				{
-					"combine"		"scenes/player/combinesoldier/low/taunt02.vcd"
-				}
 			}
 		}
 				"9042"
@@ -46246,6 +46238,77 @@
 			"mouse_pressed_sound"	"ui/item_heavy_gun_pickup.wav"
 			"drop_sound"		"ui/item_heavy_gun_drop.wav"
 			
+		}
+		"7536"
+		{
+			"name"	"The Rottenburg Typewriter"
+			"prefab"	"valve"
+			"first_sale_date"	"2010/09/29"
+			"item_class"	"tf_weapon_syringegun_medic"
+			"craft_class"	"weapon"
+			"craft_material_type"	"weapon"
+			"capabilities"
+			{
+				"nameable"		"1"
+			}
+			"tags"
+			{
+				"can_deal_damage"			"1"
+				"can_deal_posthumous_damage"	"1"
+				"can_deal_critical_damage"	"1"
+				"can_deal_long_distance_damage"	"1"
+			}
+			"item_logname"	"blutsauger"
+			"item_iconname"	"blutsauger"
+			"show_in_armory"	"1"
+			"item_type_name"	"#TF_Weapon_SyringeGun"
+			"item_name"	"Rottenburg Typewriter"
+			"item_slot"	"primary"
+			"image_inventory"	"backpack/weapons/lambda/syringe_tommy/c_tommy"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"82"
+			"model_player"	"models/weapons/lambda/syringe_tommy/v_syringe_tommy.mdl"
+			"model_world"	"models/weapons/lambda/syringe_tommy/c_leechgun.mdl"
+			"attach_to_hands"	"2"
+			"inspect_panel_dist" "50"
+			"item_quality"	"unique"
+			"propername"	"1"
+			"min_ilevel"	"5"
+			"max_ilevel"	"5"
+			"used_by_classes"
+			{
+				"medic"	"1"
+			}
+			"attributes"
+			{
+				"hidden primary max ammo bonus"
+				{
+					"attribute_class"	"mult_maxammo_primary"
+					"value"	"0.5"
+				}
+				"fire rate bonus"
+				{
+					"attribute_class"	"mult_postfiredelay"
+					"value" "0.8"
+				}
+				"damage bonus"
+				{
+					"attribute_class"	"mult_dmg"
+					"value"	"1.20"
+				}
+				"clip size penalty"
+				{
+					"attribute_class"	"mult_clipsize"
+					"value" "0.90"
+				}
+				"crit mod disabled"
+				{
+					"attribute_class"	"mult_crit_chance"
+					"value"	"0"
+				}
+			}
+			"mouse_pressed_sound"	"ui/item_light_gun_pickup.wav"
+			"drop_sound"		"ui/item_light_gun_drop.wav"
 		}
 		"30570"
 		{

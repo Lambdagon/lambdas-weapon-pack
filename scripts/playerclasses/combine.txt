@@ -18,9 +18,9 @@ PlayerClass
 	"grenade1"		"NPC_KLEINER"
 
 	// Weapons.
-	"weapon1"		"tf_weapon_smg"
-	"weapon2"		"tf_weapon_shotgun_soldier"
-	"weapon3"		"weapon_melee_allclass"
+	"weapon1"		"TF_WEAPON_TFC_CROWBAR"
+	"weapon2"		"TF_WEAPON_SMG"
+	"weapon3"		""
 
 	//Thirdperson
 	"cameraoffset_forward"	"85"
