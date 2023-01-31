@@ -1,4 +1,4 @@
-"LightmappedGeneric"
+"UnlitGeneric"
 {
 	"$basetexture" "backpack/weapons/c_models/c_executioner/parts/c_ambassador_opt_large"
 	"$translucent"	"1"
