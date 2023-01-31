@@ -23253,7 +23253,7 @@
 			"image_inventory"	"backpack/weapons/w_models/colt/colt"
 			"image_inventory_size_w"		"128"
 			"image_inventory_size_h"		"82"
-			"model_player"	"models/weapons/1911/w_models/w_pistol.mdl"
+			"model_player"	"models/weapons/lambda/1911/c_1911/c_pistol.mdl"
 			"attach_to_hands"	"1"
 			"item_quality"	"unique"
 			"propername"	"1"
