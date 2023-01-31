@@ -1,0 +1,54 @@
+"VertexlitGeneric"
+{
+	"$baseTexture" "models/weapons/rifle/rifle"
+
+	
+
+	"$yellow" "0"
+	"$lightwarptexture" "models/lightwarps/weapon_lightwarp"
+
+	"$phong" "1"
+	"$phongexponent" "20"
+	"$phongboost" "1"
+	"$phongtint" "[1 .85 .75]"
+	"$phongfresnelranges" "[.25 .5 1]"
+	"$basemapalphaphongmask" "1"
+	"$rimlight" "0"
+	"$rimlightexponent" "0"
+	"$rimlightboost" "0"
+	"$halflambert" "0"
+	"$ambientocclusion" "0"
+	"$glowcolor" "0"
+	
+	"$cloakPassEnabled" "1"
+
+	"Proxies"
+	{
+		"weapon_invis"
+		{
+		}
+
+		"AnimatedTexture"
+		{
+			"animatedtexturevar" "$detail"
+			"animatedtextureframenumvar" "$detailframe"
+			"animatedtextureframerate" 30
+		}
+
+		"BurnLevel"
+		{
+			"resultVar" "$detailblendfactor"
+		}
+
+		"YellowLevel"
+		{
+			"resultVar" "$yellow"
+		}
+
+		"Equals"
+		{
+			"srcVar1" "$yellow"
+			"resultVar" "$color2"
+		}
+	}
+}
