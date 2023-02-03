@@ -1,0 +1,60 @@
+"VertexLitGeneric"
+{
+	"$basetexture"	"models/weapons/c_models/c_50cal/c_sniperrifle"
+//	//"$bumpmap" "models/weapons/w_sniperrifle/w_sniperrifle_normal"
+
+	"$basemapalphaphongmask" "1"
+	"$phong" "1"
+	"$phongexponent" "200"
+	"$phongboost" "0.1"	
+	"$lightwarptexture" "models/lightwarps/weapon_lightwarp"
+	"$phongfresnelranges"	"[1 1 1]"
+
+	"$tempvar" "0"
+
+	"$basephongexponent" "200"
+	"$basephongboost" "1"
+
+	"$rimlight" "1"
+	"$rimlightexponent" "40"	
+	"$rimlightboost" ".25"
+
+	"$glowcolor" "1"
+
+	// Cloaking
+	"$cloakPassEnabled" "1"
+	"$sheenPassEnabled" "1"
+	
+	"$sheenmap"	"cubemaps\cubemap_sheen001"
+	"$sheenmapmask"  "Effects\AnimatedSheen\animatedsheen0"
+	"$sheenmaptint"    "[ 1 1 1 ]"
+	"$sheenmapmaskframe"     "0"
+	"$sheenindex"         "0"
+	
+	"Proxies"
+	{
+		"AnimatedWeaponSheen"
+    		{
+       		 "animatedtexturevar"         "$sheenmapmask"
+       		 "animatedtextureframenumvar"     "$sheenmapmaskframe"
+     		 "animatedtextureframerate"         "40"
+    		}
+		"vm_invis"
+		{
+		}
+		"ModelGlowColor"
+		{
+			"resultVar" "$glowcolor"
+		}
+		"Equals"
+		{
+			"srcVar1"  "$glowcolor"
+			"resultVar" "$selfillumtint"
+		}
+		"Equals"
+		{
+			"srcVar1"  "$glowcolor"
+			"resultVar" "$color2"
+		}
+	}
+}

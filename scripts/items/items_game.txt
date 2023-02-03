@@ -16180,7 +16180,7 @@
 			"item_type_name"	"#TF_Weapon_Knife"
 			"propername"	"1"
 			"item_quality"	"unique"
-			"item_name"			"#TF_BlackRose"
+			"item_name"			"Australium Rose"
 			"item_description"	"#TF_BlackRose_Desc"
 			"item_slot"	"melee"
 			"item_logname"	"black_rose"
@@ -23136,11 +23136,12 @@
 			"item_iconname"	"ak47"
 			"min_ilevel"	"5"
 			"max_ilevel"	"5"
-			"image_inventory"	"backpack/weapons/w_models/w_smg"
+			"image_inventory"	"backpack/weapons/lambda/ak47/w_smg"
 			"image_inventory_size_w"		"128"
 			"image_inventory_size_h"		"82"
-			"model_player"	"models/weapons/c_models/c_ak47/c_smg.mdl"
-			"attach_to_hands" "1"
+			"model_player"	"models/weapons/lambda/ak47/v_smg_sniper.mdl"
+			"model_world"	"models/weapons/lambda/ak47/w_smg.mdl"
+			"attach_to_hands" "0"
 			"used_by_classes"
 			{
 				"sniper"  "1"
@@ -23174,7 +23175,7 @@
 				"reload time increased"
 				{
 				"attribute_class"	"mult_reload_time"
-				"value"	"2"
+				"value"	"1.6"
 				}
 			}
 			"visuals"
@@ -23680,9 +23681,8 @@
 		"9078"
 		{
 			"name"	"The Lead Pipe"
-			"item_class"	"tf_weapon_bat"
-			"craft_class"	"weapon"
-			"craft_material_type"	"weapon"
+			"item_class"	"saxxy"
+			"prefab"	"weapon_melee_allclass"
 			"capabilities"
 			{
 				"nameable"		"1"
@@ -23691,11 +23691,12 @@
 			{
 				"can_deal_damage"			"1"
 				"can_deal_critical_damage"	"1"
+				"can_be_equipped_by_soldier_or_demo"	"1"
 			}
 			"show_in_armory"	"1"
 			"item_type_name"	"bat"
 			"item_name"	"Lead Pipe"
-			"item_description" "models/workshop/weapons/c_models/c_lead_pipe/c_candy_cane.mdl"
+			"item_description" "Stop hitting my child"
 			"item_logname"	"lead_pipe"
 			"item_iconname"	"lead_pipe"
 			"item_slot"		"melee"
@@ -23704,19 +23705,24 @@
 			"min_ilevel"	"25"
 			"max_ilevel"	"25"
 			"attach_to_hands"	"1"
-			"image_inventory"	"backpack/workshop/weapons/c_models/c_candy_cane/c_candy_cane"
+			"image_inventory"	"backpack/weapons/lambda/leadpipe/leadpipe"
 			"image_inventory_size_w"		"128"
 			"image_inventory_size_h"		"82"
 			"inspect_panel_dist"        "45"					
-			"model_player"	"models/workshop/weapons/c_models/c_lead_pipe/c_candy_cane.mdl"
-
+			"model_player"	"models/weapons/lambda/leadpipe/c_lead_pipe/c_candy_cane.mdl"
+			"anim_slot" "MELEE_ALLCLASS"
+			"xifier_class_remap"	"Frying Pan"
 			"used_by_classes"
 			{
 				"scout"	"1"
-			}
-			"static_attrs"
-			{
-				"min_viewmodel_offset"					"10 0 -6"
+				"sniper"	"1"
+				"soldier"	"1"
+				"demoman"	"1"
+				"medic"	"1"
+				"heavy"	"1"
+				"pyro" "1"
+				"engineer" "1"
+				"spy" "1"
 			}
 			"attributes"
 			{
@@ -25419,7 +25425,7 @@
 		}
 				"6920"
 		{
-			"name"		"Fortunate Son"
+			"name"		"Hat Fortunate Son"
 			"prefab"		"no_craft hat marketable"
 			"item_name"		"#TF_cc_summer2015_fortunate_son"
 			"item_description"		"#TF_cc_summer2015_fortunate_son_Desc"
@@ -28082,7 +28088,7 @@
 			"image_inventory"	"backpack/weapons/w_models/w_sniperrifle"
 			"image_inventory_size_w"		"128"
 			"image_inventory_size_h"		"82"
-			"model_player"	"models/weapons/c_models/c_garand/c_sniperrifle.mdl"
+			"model_player"	"models/weapons/lambda/garand/c_sniperrifle.mdl"
 			"attach_to_hands"	"1"
 			"visuals"
 			{
@@ -36384,7 +36390,7 @@
 				"reload time increased"
 				{
 				"attribute_class"	"mult_reload_time"
-				"value"	"2"
+				"value"	"1.7"
 				}
 				"max health additive penalty"
 				{
@@ -45990,7 +45996,7 @@
 		"7532"
 		{
 			"enabled"	"1"
-			"item_class"	"tf_weapon_shotgun"
+			"item_class"	"tf_weapon_scattergun"
 			"craft_class"	"weapon"
 			"craft_material_type"	"weapon"
 			"capabilities"
@@ -46047,10 +46053,10 @@
 					"attribute_class"	"mult_clipsize"
 					"value" "0.85"
 				}
-				"reload time decreased"
+				"scattergun no reload single"
 				{
-					"attribute_class"	"mult_reload_time"
-					"value"	"0.65"
+					"attribute_class"	"set_scattergun_no_reload_single"
+					"value"	"1"
 				}
 			}
 			"visuals"
@@ -46095,10 +46101,10 @@
 			"image_inventory_size_h"		"82"
 			"model_player"		"models/weapons/lambda/model37/c_m37/c_shotgun.mdl"
 			"attach_to_hands" "1"
+			"anim_slot"	"secondary"
 			"inspect_panel_dist" "32"
 			"used_by_classes"
 			{
-				"engineer"	"primary"
 				"pyro" "secondary"
 				"soldier" "secondary"
 				"heavy" "secondary"
@@ -46413,10 +46419,10 @@
 			"image_inventory_size_h"		"82"
 			"model_player"		"models/weapons/lambda/mauzer/w_shotgun.mdl"
 			"attach_to_hands" "1"
+			"anim_slot"	"secondary"
 			"inspect_panel_dist" "32"
 			"used_by_classes"
 			{
-				"engineer"	"primary"
 				"pyro" "secondary"
 				"soldier" "secondary"
 				"heavy" "secondary"
@@ -46514,6 +46520,415 @@
 			"mouse_pressed_sound"	"ui/item_light_gun_pickup.wav"
 			"drop_sound"		"ui/item_light_gun_drop.wav"
 			"xifier_class_remap"	"grappling_hook"
+		}
+		"7540"
+		{
+			"name"	"50cal"
+			"prefab"	"valve"
+			"first_sale_date"	"2010/09/29"
+			"item_class"	"tf_weapon_sniperrifle"
+			"craft_class"	"weapon"
+			"craft_material_type"	"weapon"
+			"capabilities"
+			{
+				"nameable"		"1"
+			}
+			"tags"
+			{
+				"can_deal_damage"		"1"
+				"can_headshot"			"1"
+				"can_deal_mvm_penetration_damage"	"1"
+				"can_deal_long_distance_damage"	"1"
+				"can_deal_gib_damage"	"1"
+			}
+			"show_in_armory"	"1"
+			"item_type_name"	"#TF_Weapon_SniperRifle"
+			"item_name"		"Anti-mann Rifle"
+			"item_slot"	"primary"
+			"item_quality"	"unique"
+			"propername"	"1"
+			"min_ilevel"	"1"
+			"max_ilevel"	"100"
+			"image_inventory"	"backpack/weapons/lambda/50cal/50cal"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"82"
+			"model_player"	"models/weapons/lambda/50cal/c_sniperrifle.mdl"
+			"attach_to_hands"	"1"
+			"visuals"
+			{
+				"show_player_bodygroup_name"	"bullets"
+			}
+			"used_by_classes"
+			{
+				"sniper"	"1"
+			}
+			"attributes"
+			{
+				"fire rate penalty"
+				{
+				"attribute_class"	"mult_postfiredelay"
+				"value"	"1.50"
+				}
+				"critboost on kill"
+				{
+					"attribute_class"	"add_onkill_critboost_time"
+					"value"	"5"
+				}
+			}
+			"visuals"
+			{
+				"sound_single_shot"	"lambda.deaglesingle"
+				"sound_burst"	"lambda.deaglesingle"
+			}
+			"mouse_pressed_sound"	"ui/item_heavy_gun_pickup.wav"
+			"drop_sound"		"ui/item_heavy_gun_drop.wav"
+		}
+		"7541"
+		{
+			"name"						"TF_WEAPON_ELITES"
+			"prefab"					"weapon_pistol"
+//			"item_class"				"tf_weapon_smg"
+			"propername"				"1"
+			"show_in_armory"			"1"
+			"item_quality"				"rarity2"
+			"item_logname"				"elites"
+			"item_iconname"				"elites"
+			"item_name"					".40 Dual Elites"
+			"item_type_name"			"Dual Pistols"
+			"item_slot"					"secondary"
+			"image_inventory"			"backpack/weapons/c_models/c_elites"
+			"model_world"				"models/weapons/lambda/dualpistol/w_elites.mdl"
+			"model_player"				"models/weapons/lambda/dualpistol/v_elites.mdl"
+			"attach_to_hands"			"2"
+			"used_by_classes"
+			{
+				"scout"                "secondary"
+			}
+			"static_attrs"
+			{
+				"min_viewmodel_offset"		"10 0 -6"
+				"hidden secondary max ammo penalty"		"1.33333333333"
+			}
+           	"attributes"
+            {				
+				"provide on active"
+				{
+					"attribute_class"	"provide_on_active"
+					"value" 			"1"
+				}
+				"dmg pierces resists absorbs"
+				{
+					"attribute_class"	"mod_pierce_resists_absorbs"
+					"value"				"1"
+				}
+				"fire rate bonus"
+				{
+					"attribute_class"	"mult_postfiredelay"
+					"value"				"0.9"
+				}
+				"clip size bonus"
+				{
+					"attribute_class"	"mult_clipsize"
+					"value"				"2.0"
+				}
+				"damage penalty"
+				{
+					"attribute_class"	"mult_dmg"
+					"value"				"0.85"
+				}
+				"spread penalty"
+				{
+					"attribute_class"	"mult_spread_scale"
+					"value"				"1.33"
+				}
+				"reload time increased"	
+				{
+					"attribute_class"	"mult_reload_time"
+					"value"				"1.75"
+				}
+                "crit mod disabled"
+				{
+					"attribute_class"	"mult_crit_chance"
+					"value"				"0"
+				}				
+			}
+		}
+		"7542"
+		{
+			"name"						"The Hunting Revolver"
+			"prefab"					"weapon_sniperrifle"
+			"show_in_armory"			"1"
+			"item_class"				"tf_weapon_revolver"
+			"item_logname"				"hunterrifle"
+			"item_iconname"				"hunterrifle"
+			"item_type_name"			"#TF_Weapon_SniperRifle"
+			"item_name"					"Hunting Revolver"
+			"propername"				"1"
+			"min_ilevel"				"8"
+			"max_ilevel"				"8"
+			"image_inventory"			"backpack/weapons/w_models/w_revrifle"
+			"model_world"				"models/weapons/lambda/revrifletf2c/w_revrifle_sniper.mdl"
+			"model_player"				"models/weapons/lambda/revrifletf2c/v_revrifle_sniper.mdl"
+			"attach_to_hands"			"2"
+			"attributes"
+			{
+				"no scope" // 360
+				{
+					"attribute_class"	"mod_no_scope"
+					"value"				"1"
+				}
+				"soft zoom"
+				{
+					"attribute_class"	"mod_sniper_soft_zoom"
+					"value"				"1"
+				}
+				"max health additive bonus"
+				{
+					"attribute_class"	"add_maxhealth"
+					"value"				"25"
+				}
+				"fire rate bonus"
+				{
+					"attribute_class"	"mult_postfiredelay"
+					"value"				"0.45"
+				}
+				"sniper no dmg charge DISPLAY ONLY"
+				{
+					"attribute_class"	"mod_sniper_no_dmg_charge"
+					"value"				"1"
+				}
+				"no damage falloff over distance"
+				{
+					"attribute_class"	"mod_no_dmg_falloff"
+					"value"				"1"
+				}
+			}
+		}
+		"7543"
+		{
+			"name"						"Fortunate Son"
+			"show_in_armory"			"1"
+			"item_class"				"tf_weapon_smg"
+			"item_slot"					"secondary"
+			"item_quality"				"rarity2"
+			"image_inventory_size_w"	"128"
+			"image_inventory_size_h"	"82"
+			"item_logname"				"m4_soldier"
+			"item_iconname"				"m4_soldier"
+			"item_type_name"			"Assault Rifle"
+			"item_name"					"Fortunate Son"
+			"item_description"			"Some folks are born made to wave the flag"
+			"propername"				"1"
+			"anim_slot"					"secondary"
+			"image_inventory"			"backpack/weapons/w_models/w_assaultrifle"
+			"model_world"				"models/weapons/lambda/assaultrifle/w_assault_rifle_soldier.mdl"
+			"model_player"				"models/weapons/lambda/assaultrifle/v_assault_rifle_soldier_new.mdl"
+			"attach_to_hands"			"2"
+			"used_by_classes"
+			{
+				"soldier"               "1"
+				"demoman"				"1"
+				"pyro"					"1"
+				"sniper"				"1"
+				"medic"					"1"
+				"heavy"					"1"
+				"engineer"				"1"
+			}
+			"static_attrs"
+			{
+				"override projectile type" 				"1"
+				"hidden primary max ammo bonus"			"5"
+				"class select override vcd"				"taunt02_v1"
+				"min_viewmodel_offset"					"5 0 -10"
+			}
+           	"attributes"
+            {
+				"heal on hit for rapidfire"
+				{
+					"attribute_class"	"add_onhit_addhealth"
+					"value"				"2"
+				}
+				"fire rate bonus"
+				{
+					"attribute_class"	"mult_postfiredelay"
+					"value"				"0.85"
+				}
+				"max health additive penalty"
+				{
+					"attribute_class"	"add_maxhealth"
+					"value"				"-25"
+				}
+                "no damage falloff over distance"
+				{
+					"attribute_class"	"mod_no_dmg_falloff"
+					"value"				"1"
+				}
+				"clip size bonus"
+				{
+					"attribute_class"	"mult_clipsize"
+					"value"				"1.3"
+				}
+                "crit mod disabled"
+				{
+					"attribute_class"	"mult_crit_chance"
+					"value"				"0"
+				}	
+				"maxammo secondary increased"
+				{
+				"attribute_class"	"mult_maxammo_secondary"
+				"value"	"3"
+				}
+			}
+			"visuals"
+			{
+				"sound_single_shot"		"Weapon_AR.Single"
+				"sound_burst"			"Weapon_AR.SingleCrit"
+				"sound_reload"			"Weapon_AR.WorldReload"
+				"muzzle_flash"			"muzzle_scattergun"
+				"tracer_effect"			"bullet_scattergun_tracer01"
+			}
+			"mouse_pressed_sound"		"ui/item_light_gun_pickup.wav"
+			"drop_sound"				"ui/item_light_gun_drop.wav"
+		}
+		"7544"
+		{
+			"enabled"	"1"
+			"item_class"	"tf_weapon_shotgun"
+			"craft_class"	"weapon"
+			"craft_material_type"	"weapon"
+			"capabilities"
+			{
+				"nameable"		"1"
+			}
+			"tags"
+			{
+				"can_deal_damage"		"1"
+				"can_headshot"			"1"
+				"can_deal_critical_damage"	"1"
+				"can_deal_mvm_penetration_damage"	"1"
+				"can_deal_long_distance_damage"	"1"
+			}
+			"base_item_name"	"Shotgun"
+			"item_type_name"	"#TF_Weapon_shotgun"
+			"item_name"	"Model 37"
+			"item_slot"	"primary"
+			"item_quality"	"unique"
+			"show_in_armory"	"1"
+			"propername"	"1"
+			"item_logname"	"model37"
+			"item_iconname"	"shotgun"
+			"min_ilevel"	"5"
+			"max_ilevel"	"5"
+			"image_inventory"	"backpack/weapons/w_models/w_shotgun"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"82"
+			"model_player"		"models/weapons/lambda/model37/c_m37/c_shotgun.mdl"
+			"attach_to_hands" "1"
+			"anim_slot"	"primary"
+			"inspect_panel_dist" "32"
+			"used_by_classes"
+			{
+				"engineer"	"primary"
+			}
+			"static_attrs"
+			{
+				"min_viewmodel_offset"		"10 0 -6"
+			}
+			"attributes"
+			{
+				"clip size penalty"
+				{
+					"attribute_class"	"mult_clipsize"
+					"value" "0.85"
+				}
+				"reload time decreased"
+				{
+					"attribute_class"	"mult_reload_time"
+					"value"	"0.55"
+				}
+				"fire rate bonus"
+				{
+					"attribute_class"	"mult_postfiredelay"
+					"value" "0.6"
+				}
+			}
+			"visuals"
+			{
+				"sound_single_shot" "lambda.executioner"
+				"sound_burst" "lambda.executioner"
+			}
+			"mouse_pressed_sound"	"ui/item_light_gun_pickup.wav"
+			"drop_sound"		"ui/item_light_gun_drop.wav"
+		}
+		"7545"
+		{
+			"enabled"	"1"
+			"item_class"	"tf_weapon_shotgun"
+			"craft_class"	"weapon"
+			"craft_material_type"	"weapon"
+			"capabilities"
+			{
+				"nameable"		"1"
+			}
+			"tags"
+			{
+				"can_deal_damage"		"1"
+				"can_headshot"			"1"
+				"can_deal_critical_damage"	"1"
+				"can_deal_mvm_penetration_damage"	"1"
+				"can_deal_long_distance_damage"	"1"
+			}
+			"base_item_name"	"Shotgun"
+			"item_type_name"	"#TF_Weapon_shotgun"
+			"item_name"	"Makeshift Mauzer"
+			"item_slot"	"primary"
+			"item_quality"	"unique"
+			"show_in_armory"	"1"
+			"propername"	"1"
+			"item_logname"	"model37"
+			"item_iconname"	"shotgun"
+			"min_ilevel"	"5"
+			"max_ilevel"	"5"
+			"image_inventory"	"backpack/weapons/w_models/w_shotgun"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"82"
+			"model_player"		"models/weapons/lambda/mauzer/w_shotgun.mdl"
+			"attach_to_hands" "1"
+			"anim_slot"	"primary"
+			"inspect_panel_dist" "32"
+			"used_by_classes"
+			{
+				"engineer" "primary"
+			}
+			"static_attrs"
+			{
+				"min_viewmodel_offset"		"10 0 -6"
+			}
+			"attributes"
+			{
+				"clip size penalty"
+				{
+					"attribute_class"	"mult_clipsize"
+					"value" "0.85"
+				}
+				"reload time decreased"
+				{
+					"attribute_class"	"mult_reload_time"
+					"value"	"0.55"
+				}
+				"fire rate bonus"
+				{
+					"attribute_class"	"mult_postfiredelay"
+					"value" "0.6"
+				}
+			}
+			"visuals"
+			{
+				"sound_single_shot" "lambda.executioner"
+				"sound_burst" "lambda.executioner"
+			}
+			"mouse_pressed_sound"	"ui/item_light_gun_pickup.wav"
+			"drop_sound"		"ui/item_light_gun_drop.wav"
 		}
 		"30570"
 		{
@@ -56412,7 +56827,16 @@
 			"hidden"	"0"
 			"effect_type"	"positive"
 		}
-
+		"2068"
+		{
+			"name"	"noscopeheadshot"
+			"attribute_class"	"set_weapon_mode"
+			"description_string"	"This weapon can NOT zoom in"
+			"description_format"	"value_is_additive"
+			"hidden"	"0"
+			"effect_type"	"positive"
+			"stored_as_integer"	"0"
+		}
 		"3000"
 		{
 			"name"	"item slot criteria 1"
