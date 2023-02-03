@@ -35347,8 +35347,7 @@
 			}
 			"show_in_armory"	"1"
 			"item_type_name"	"#TF_Wearable_CosmeticItem"
-			"item_name"	"#TF_Hatless_Sniper"
-			"item_description"	"#TF_Hatless_Sniper_Desc"
+			"item_name"	"Killer's Cut"
 			"item_slot"	"head"
 			"equip_region"	"hat"
 			"item_quality"	"unique"
@@ -35356,6 +35355,7 @@
 			"image_inventory_size_w"		"128"
 			"image_inventory_size_h"		"82"
 			"model_player"	"models/player/items/sniper/sniper_nohat.mdl"
+			"extra_wearable"	"models/player/items/sniper/sniper_nohat.mdl"
 			"drop_type"	"none"
 			"used_by_classes"
 			{
@@ -46791,6 +46791,28 @@
 				"value"	"3"
 				}
 			}
+			"taunt"
+			{
+				"custom_taunt_scene_per_class"
+				{
+					"scout"		"scenes\player\scout\low\taunt_laugh.vcd"
+					"sniper"	"scenes\player\sniper\low\taunt_laugh.vcd"
+					"soldier"	"scenes\player\soldier\low\taunt_laugh.vcd"
+					"demoman"	"scenes\player\demoman\low\taunt_laugh.vcd"
+					"medic"		"scenes\player\medic\low\taunt_laugh.vcd"
+					"heavy"		"scenes\player\heavy\low\taunt_laugh.vcd"
+					"spy"		"scenes\player\spy\low\taunt_laugh.vcd"
+					"engineer"	"scenes\player\engineer\low\taunt_laugh.vcd"
+					"pyro"		"scenes\player\pyro\low\taunt_laugh.vcd"
+				}
+			}
+			"visuals"
+			{
+				"animation_replacement"
+				{
+					"taunt_concept"	"TLK_TAUNT_LAUGH"
+				}
+			}
 			"visuals"
 			{
 				"sound_single_shot"		"Weapon_AR.Single"
@@ -46870,6 +46892,28 @@
 				{
 				"attribute_class"	"mult_maxammo_secondary"
 				"value"	"3"
+				}
+			}
+			"taunt"
+			{
+				"custom_taunt_scene_per_class"
+				{
+					"scout"		"scenes\player\scout\low\taunt_laugh.vcd"
+					"sniper"	"scenes\player\sniper\low\taunt_laugh.vcd"
+					"soldier"	"scenes\player\soldier\low\taunt_laugh.vcd"
+					"demoman"	"scenes\player\demoman\low\taunt_laugh.vcd"
+					"medic"		"scenes\player\medic\low\taunt_laugh.vcd"
+					"heavy"		"scenes\player\heavy\low\taunt_laugh.vcd"
+					"spy"		"scenes\player\spy\low\taunt_laugh.vcd"
+					"engineer"	"scenes\player\engineer\low\taunt_laugh.vcd"
+					"pyro"		"scenes\player\pyro\low\taunt_laugh.vcd"
+				}
+			}
+			"visuals"
+			{
+				"animation_replacement"
+				{
+					"taunt_concept"	"TLK_TAUNT_LAUGH"
 				}
 			}
 			"visuals"
