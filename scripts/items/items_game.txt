@@ -23447,8 +23447,9 @@
 			"item_class"	"tf_weapon_grenadelauncher"
 			"craft_class"	"weapon"
 			"craft_material_type"	"weapon"
+			"propername"	"1"
 			"item_type_name"	"#TF_Weapon_GrenadeLauncher"
-			"item_name"	"Taco Bell"
+			"item_name"	"Incendiary Grenade Launcher"
 			"item_slot"	"primary"
 			"anim_slot"	"secondary"
 			"show_in_armory"	"1"
@@ -23489,11 +23490,6 @@
 				{
 					"attribute_class"	"mult_crit_chance"
 					"value"	"0"
-				}
-				"max health additive penalty"
-				{
-					"attribute_class"	"add_maxhealth"
-					"value" "-25"
 				}
 				"decapitate type"
 				{
@@ -47202,6 +47198,108 @@
 			}
 			"item_description"	"#TF_Item_ZombiePyro_Desc"
 			"image_inventory"	"backpack/player/items/pyro/pyro_zombie"
+		}
+		"7553"
+		{
+			"name"	"FireGrenade"
+			"prefab"	"weapon_scorch_shot"
+			"item_slot"	"secondary"
+			"first_sale_date"	"2010/09/29"
+			"min_ilevel"	"5"
+			"max_ilevel"	"5"
+			"attach_to_hands"	"1"
+			"inspect_panel_dist" 	"25"
+			"item_name" 	"Incendiary Grenade"
+			"item_description" "spam it" 
+			"show_in_armory"	"0"
+			"image_inventory"	"backpack/weapons/w_models/grenade/w_grenade"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"82"
+			"model_player"	"models/weapons/c_grenade.mdl"
+			"model_world"	"models/weapons/c_grenade.mdl"
+			"anim_slot" 	"secondary2"
+			"used_by_classes"
+			{
+				"scout"	"1"
+				"sniper"	"1"
+			}
+			"mouse_pressed_sound"	"ui/item_heavy_gun_pickup.wav"
+			"drop_sound"		"ui/item_heavy_gun_drop.wav"
+			"particle_suffix"		"grenade_launcher"
+			"attributes"
+			{
+				"Set DamageType Ignite"
+				{
+					"attribute_class"	"set_dmgtype_ignite"
+					"value" "1"
+				}
+				"damage penalty"
+				{
+					"attribute_class"	"mult_dmg"
+					"value"	"0.1"
+				}
+				"crit mod disabled"
+				{
+					"attribute_class"	"mult_crit_chance"
+					"value"	"0"
+				}
+				"clip size penalty"																
+				{
+					"attribute_class"	"mult_clipsize"
+					"value" 			"0.5"
+				}
+			}
+			"visuals"
+			{
+				"animation_replacement"
+				{
+					"ACT_SECONDARY_VM_INSPECT_START"	"ACT_ITEM1_VM_INSPECT_START"
+					"ACT_SECONDARY_VM_INSPECT_IDLE"		"ACT_ITEM1_VM_INSPECT_IDLE"
+					"ACT_SECONDARY_VM_INSPECT_END"		"ACT_ITEM1_VM_INSPECT_END"
+				}
+			}
+		}
+		"7554"
+		{
+			"name"	"boombow"
+			"first_sale_date"	"2014/03/07"
+			"prefab"	"weapon_huntsman"
+			"capabilities"
+			{
+				"can_craft_count"	"1"
+			}
+			"static_attrs"
+			{
+				"min_viewmodel_offset"		"10 -4 -10"				
+			}
+			"item_name"	"Lambda's Boom Bow"
+			"show_in_armory" 	"1"
+			"propername"				"1"
+			"item_description"	"#TF_FortifiedCompound_Desc"
+			"image_inventory"	"backpack/weapons/w_models/w_bow"
+			"model_player"	"models/weapons/lambda/lbow/v_lbow/v_bow.mdl"
+			"model_world"	"models/weapons/lambda/lbow/w_lbow/w_bow.mdl"
+			"inspect_panel_dist" 			"55"
+			"attributes"
+			{
+				"override projectile type"
+				{
+					"attribute_class"	"override_projectile_type"
+					"value"				"2"
+				}
+				"Projectile speed increased"
+				{
+					"attribute_class"	"mult_projectile_speed"
+					"value"	"1.9"
+				}
+				"damage bonus"
+				{
+					"attribute_class"	"mult_dmg"
+					"value"	"1.25"
+				}
+			}
+			"mouse_pressed_sound"	"ui/item_heavy_gun_pickup.wav"
+			"drop_sound"		"ui/item_heavy_gun_drop.wav"
 		}
 		"30570"
 		{
