@@ -47142,6 +47142,67 @@
 				"sound_burst" "lambda.executioner"
 			}
 		}
+		"7551"
+		{
+			"name"	"Drippin"
+			"first_sale_date"	"2012/02/22"
+			"prefab"	"misc"
+			"capabilities"
+			{
+				"paintable"		"1"
+			}
+			"equip_regions"
+			{
+				"shirt"	"1"
+				"arm_tattoos" "1"
+			}
+			"item_name"	"Boston Drip Fr"
+			"item_type_name"	"#TF_Wearable_Shirt"
+			"image_inventory"	"backpack/player/items/scout/scout_prep_shirt"
+			"model_player"	"models/player/items/scout/scout_prep_shirt.mdl"
+			"extra_wearable"	"models/player/items/scout/scout_prep_shirt.mdl"
+			"propername"	"1"
+			"visuals"
+			{
+				"styles"
+				{
+					"0"
+					{
+						"skin"	"0"
+						"name"	"#TF_ScoutPrepShirt_Style0"
+					}
+					"1"
+					{
+						"skin"	"1"
+						"name"	"#TF_ScoutPrepShirt_Style1"
+					}
+				}
+			}
+			"used_by_classes"
+			{
+				"scout"	"1"
+			}
+		}
+		"7552"
+		{
+			"name"		"FemPyro"
+			"show_in_armory"	"1"
+			"prefab"	"zombie"
+			"item_name"	"Fem"
+			"item_slot"	"misc2"
+			"model_player"	"models/player/fem/pyro.mdl"
+			"equip_regions"
+			{
+				"zombie_body"			"0"
+				"pyro_head_replacement"	"1"
+			}
+			"used_by_classes"
+			{
+				"pyro"	"1"
+			}
+			"item_description"	"#TF_Item_ZombiePyro_Desc"
+			"image_inventory"	"backpack/player/items/pyro/pyro_zombie"
+		}
 		"30570"
 		{
 			"name"		"Pool Party Taunt"
