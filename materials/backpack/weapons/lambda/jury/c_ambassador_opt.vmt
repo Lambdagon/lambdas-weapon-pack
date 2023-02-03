@@ -1,0 +1,7 @@
+"UnlitGeneric"
+{
+	"$basetexture" "backpack/weapons/lambda/jury/c_ambassador_opt"
+	"$translucent" 1
+	"$vertexcolor" 1
+	"$ignorez" 1
+}

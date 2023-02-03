@@ -4491,7 +4491,7 @@
 			"image_inventory"	"backpack/weapons/c_models/c_overhealer/c_overhealer"
 			"image_inventory_size_w"		"128"
 			"image_inventory_size_h"		"82"
-			"model_player"	"models/weapons/c_models/c_kritzkrieg/c_kritzkrieg.mdl"
+			"model_player"	"models/weapons/c_models/c_medigun/c_medigun.mdl"
 			"attach_to_hands"	"1"
 			"item_quality"	"unique"
 			"propername"	"1"
@@ -4535,6 +4535,13 @@
 			}
 			"visuals_red"
 			{
+				"attached_models"
+				{
+					"0"
+					{
+						"model"	"models/weapons/c_models/c_overhealer/c_overhealer.mdl"
+					}
+				}
 				"custom_particlesystem"
 				{
 					"system"	"medicgun_beam_attrib_overheal_red"
@@ -4542,6 +4549,13 @@
 			}
 			"visuals_blu"
 			{
+				"attached_models"
+				{
+					"0"
+					{
+						"model"	"models/weapons/c_models/c_overhealer/c_overhealer.mdl"
+					}
+				}
 				"custom_particlesystem"
 				{
 					"system"	"medicgun_beam_attrib_overheal_blue"
@@ -46730,9 +46744,7 @@
 				"demoman"				"1"
 				"pyro"					"1"
 				"sniper"				"1"
-				"medic"					"1"
 				"heavy"					"1"
-				"engineer"				"1"
 			}
 			"static_attrs"
 			{
@@ -46791,6 +46803,87 @@
 			"drop_sound"				"ui/item_light_gun_drop.wav"
 		}
 		"7544"
+		{
+			"name"						"Fortunate Son alt"
+			"show_in_armory"			"1"
+			"item_class"				"tf_weapon_smg"
+			"item_slot"					"secondary"
+			"item_quality"				"rarity2"
+			"image_inventory_size_w"	"128"
+			"image_inventory_size_h"	"82"
+			"item_logname"				"m4_soldier"
+			"item_iconname"				"m4_soldier"
+			"item_type_name"			"Assault Rifle"
+			"item_name"					"Fortunate Son"
+			"item_description"			"Some folks are born made to wave the flag"
+			"propername"				"1"
+			"anim_slot"					"primary"
+			"image_inventory"			"backpack/weapons/w_models/w_assaultrifle"
+			"model_world"				"models/weapons/lambda/assaultrifle/w_assault_rifle_soldier.mdl"
+			"model_player"				"models/weapons/lambda/assaultrifle/v_assault_rifle_soldier_new.mdl"
+			"attach_to_hands"			"2"
+			"used_by_classes"
+			{
+				"medic"					"1"
+				"engineer"				"1"
+			}
+			"static_attrs"
+			{
+				"override projectile type" 				"1"
+				"hidden primary max ammo bonus"			"5"
+				"class select override vcd"				"taunt02_v1"
+				"min_viewmodel_offset"					"5 0 -10"
+			}
+           	"attributes"
+            {
+				"heal on hit for rapidfire"
+				{
+					"attribute_class"	"add_onhit_addhealth"
+					"value"				"2"
+				}
+				"fire rate bonus"
+				{
+					"attribute_class"	"mult_postfiredelay"
+					"value"				"0.85"
+				}
+				"max health additive penalty"
+				{
+					"attribute_class"	"add_maxhealth"
+					"value"				"-25"
+				}
+                "no damage falloff over distance"
+				{
+					"attribute_class"	"mod_no_dmg_falloff"
+					"value"				"1"
+				}
+				"clip size bonus"
+				{
+					"attribute_class"	"mult_clipsize"
+					"value"				"1.3"
+				}
+                "crit mod disabled"
+				{
+					"attribute_class"	"mult_crit_chance"
+					"value"				"0"
+				}	
+				"maxammo secondary increased"
+				{
+				"attribute_class"	"mult_maxammo_secondary"
+				"value"	"3"
+				}
+			}
+			"visuals"
+			{
+				"sound_single_shot"		"Weapon_AR.Single"
+				"sound_burst"			"Weapon_AR.SingleCrit"
+				"sound_reload"			"Weapon_AR.WorldReload"
+				"muzzle_flash"			"muzzle_scattergun"
+				"tracer_effect"			"bullet_scattergun_tracer01"
+			}
+			"mouse_pressed_sound"		"ui/item_light_gun_pickup.wav"
+			"drop_sound"				"ui/item_light_gun_drop.wav"
+		}
+		"7546"
 		{
 			"enabled"	"1"
 			"item_class"	"tf_weapon_shotgun"
@@ -46860,7 +46953,7 @@
 			"mouse_pressed_sound"	"ui/item_light_gun_pickup.wav"
 			"drop_sound"		"ui/item_light_gun_drop.wav"
 		}
-		"7545"
+		"7547"
 		{
 			"enabled"	"1"
 			"item_class"	"tf_weapon_shotgun"
@@ -46929,6 +47022,81 @@
 			}
 			"mouse_pressed_sound"	"ui/item_light_gun_pickup.wav"
 			"drop_sound"		"ui/item_light_gun_drop.wav"
+		}
+		"7550"	
+		{
+			"name"						"Spy Jury"
+			"enabled"	"1"
+			"item_class"	"tf_weapon_scattergun"
+			"craft_class"	"weapon"
+			"craft_material_type"	"weapon"
+			"capabilities"
+			{
+				"nameable"		"1"
+			}
+			"tags"
+			{
+				"can_deal_damage"		"1"
+				"can_headshot"			"1"
+				"can_deal_critical_damage"	"1"
+				"can_deal_mvm_penetration_damage"	"1"
+				"can_deal_long_distance_damage"	"1"
+			}
+			"base_item_name"	"Shotgun Revolver"
+			"item_type_name"	"#TF_Weapon_Revolver"
+			"item_slot"	"secondary"
+			"item_quality"	"unique"
+			"show_in_armory"	"1"
+			"prefab"                    "weapon_revolver"
+			"anim_slot"					"secondary"
+			"image_inventory_size_w"	"128"
+			"image_inventory_size_h"	"82"
+			"item_quality"				"rarity2"
+			"item_logname"				"jury"
+			"item_iconname"				"jury"
+			"item_type_name"			"Shotgun Cartridge Revolver"
+			"item_name"				    "Jury"
+			"propername"				"1"
+			"image_inventory"			"backpack/weapons/lambda/jury/c_ambassador_opt"
+			"model_player"				"models/weapons/lambda/jury/c_ambassador.mdl"
+			"attach_to_hands"			"1"
+			"used_by_classes"
+			{
+				"spy"                "1"
+			}
+			"attributes"
+			{
+				"bullets per shot bonus"																
+				{
+					"attribute_class"	"mult_flame_life"
+					"value" 			"2.0"
+				}
+				"reload time decreased"	
+				{
+					"attribute_class"	"mult_reload_time"
+					"value"				"0.9"
+				}
+				"clip size penalty"																
+				{
+					"attribute_class"	"mult_clipsize"
+					"value" 			"0.5"
+				}				
+                "scattergun no reload single"													
+				{
+					"attribute_class"	"set_scattergun_no_reload_single"
+					"value"				"1"
+				}
+                "crit mod disabled"															
+				{
+					"attribute_class"	"mult_crit_chance"
+					"value"				"0"
+				}				
+			}
+			"visuals"
+			{
+				"sound_single_shot" "lambda.executioner"
+				"sound_burst" "lambda.executioner"
+			}
 		}
 		"30570"
 		{
