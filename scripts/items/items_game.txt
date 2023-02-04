@@ -47297,9 +47297,285 @@
 					"attribute_class"	"mult_dmg"
 					"value"	"1.25"
 				}
+				"custom projectile model"
+				{
+					"attribute_class"	"custom_projectile_model"
+					"value"				"models/weapons/w_models/w_arrow.mdl"
+				}
 			}
 			"mouse_pressed_sound"	"ui/item_heavy_gun_pickup.wav"
 			"drop_sound"		"ui/item_heavy_gun_drop.wav"
+		}
+		"7555"																			
+		{
+			"name"						"TF_WEAPON_MACHINEGUN"
+			"prefab"					"weapon_minigun"
+			"show_in_armory"			"1"
+			"anim_slot"					"secondary"									
+
+			"propername"				"1"
+			"item_name"					"Heavy Machine Gun"
+			"item_type_name"			"Machine Gun"
+			"item_logname" 				"machinegun"
+			"item_iconname" 			"machinegun"
+			"image_inventory"			"backpack/weapons/w_models/w_machinegun"
+			"model_world"				"models/weapons/w_models/w_machinegun.mdl"
+			"model_player"				"models/weapons/v_models/v_machinegun_heavy.mdl"	
+			"attach_to_hands"			"2"
+			"used_by_classes"
+			{
+				"heavy"					"1"
+			}
+			"static_attrs"
+			{
+				"class select override vcd"				"taunt02"						
+			}
+			"attributes"
+			{
+				"aiming movespeed increased"											
+				{
+					"attribute_class"	"mult_player_aiming_movespeed"
+					"value"				"1.9"
+				}
+				"minigun spinup time decreased"
+				{
+					"attribute_class"	"mult_minigun_spinup_time"
+					"value"				"0.7"
+				}
+				"minigun spindown time decreased"
+				{
+					"attribute_class"	"mult_minigun_spindown_time"
+					"value"				"0.5"
+				}
+				"weapon spread bonus"
+				{
+					"attribute_class"	"mult_spread_scale"
+					"value"				"0.6" 
+				}
+				"damage bonus"
+				{
+					"attribute_class"	"mult_dmg"
+					"value"				"1.10"
+				}
+				"voice pitch scale"
+				{
+					"attribute_class"	"mult_bullets_per_shot"
+					"value"				"0.5"
+				}
+				"maxammo primary reduced"
+				{
+					"attribute_class"	"mult_maxammo_primary"
+					"value"				"0.6"
+				}
+				"crit mod disabled"
+				{
+					"attribute_class"	"mult_crit_chance"
+					"value"				"0"
+				}	
+			}
+			"visuals"																		
+			{
+				"sound_empty"			"Weapon_MachineGun.ClipEmpty"
+				"sound_double_shot"		"Weapon_MachineGun.Fire"
+				"sound_burst"			"Weapon_MachineGun.FireCrit"
+				"sound_special1"		"Weapon_MachineGun.WindUp"
+				"sound_special2"		"Weapon_MachineGun.WindDown"
+				"sound_special3"		"Weapon_MachineGun.Spin"
+				"animation_replacement" 													
+				{
+					//The Attacking Animations
+					"ACT_MP_ATTACK_STAND_SECONDARY"				"ACT_MP_ATTACK_STAND_PRIMARY"
+					"ACT_MP_ATTACK_STAND_PREFIRE"				"ACT_MP_GESTURE_VC_FISTPUMP_SECONDARY"
+					"ACT_MP_ATTACK_STAND_POSTFIRE"				"ACT_MP_GESTURE_FLINCH_CHEST"
+
+					"ACT_MP_ATTACK_CROUCH_SECONDARY"			"ACT_MP_ATTACK_CROUCH_PRIMARY"
+					"ACT_MP_ATTACK_CROUCH_PREFIRE"				"ACT_MP_GESTURE_VC_FISTPUMP_SECONDARY"
+					"ACT_MP_ATTACK_CROUCH_POSTFIRE"				"ACT_MP_GESTURE_FLINCH_CHEST"
+
+					"ACT_MP_ATTACK_SWIM_SECONDARY"				"ACT_MP_ATTACK_SWIM_PRIMARY"
+					"ACT_MP_ATTACK_SWIM_PREFIRE"				"ACT_MP_GESTURE_VC_FISTPUMP_SECONDARY"
+					"ACT_MP_ATTACK_SWIM_POSTFIRE"				"ACT_MP_GESTURE_FLINCH_CHEST"
+					//Deployed
+					"ACT_MP_DEPLOYED_IDLE"						"ACT_MP_STAND_SECONDARY"
+					"ACT_MP_DEPLOYED_PRIMARY"					"ACT_MP_RUN_SECONDARY"
+					"ACT_MP_DEPLOYED"							"ACT_MP_RUN_SECONDARY" 
+
+					"ACT_MP_CROUCH_DEPLOYED_IDLE"				"ACT_MP_CROUCH_SECONDARY"
+					"ACT_MP_SWIM_DEPLOYED_PRIMARY"				"ACT_MP_SWIM_SECONDARY"
+					"ACT_MP_SWIM_DEPLOYED"						"ACT_MP_SWIM_SECONDARY"
+				}
+			}
+			"mouse_pressed_sound"		"#ui/item_heavy_gun_pickup.wav"
+			"drop_sound"				"#ui/item_heavy_gun_drop.wav"
+		}
+		"7556"
+		{
+			"name"						"TF_WEAPON_LMG"
+			"show_in_armory"			"1"
+			"item_slot"					"secondary"
+			"anim_slot"					"secondary"
+			"item_class"				"tf_weapon_smg"
+
+			"image_inventory_size_w"	"128"
+			"image_inventory_size_h"	"82"
+
+			"propername"				"1"
+			"item_quality"				"rarity3"
+			"item_name"					"Screaming Eagle"
+			"item_type_name"			"Machine Gun"
+			"item_logname" 				"lmg"
+			"item_iconname" 			"lmg"
+			"image_inventory"			"backpack/weapons/w_models/w_lmg"
+			"model_world"				"models/weapons/w_models/w_lmg.mdl"
+			"model_player"				"models/weapons/v_models/v_lmg_soldier.mdl"
+			"extra_wearable"			"models/player/items/custom/soldier/going_commando.mdl"
+			"attach_to_hands"			"2"
+			"used_by_classes"
+			{
+				"soldier"				"1"
+			}
+			"static_attrs"
+			{
+				"min_viewmodel_offset"					"0 0 -8"
+				"class select override vcd"				"taunt07"
+			}
+			"attributes"
+			{
+			    "voice pitch scale"
+				{
+					"attribute_class"	"mult_dmg"
+					"value" 			"0.45"
+				}
+				"voice pitch scale"
+				{
+					"attribute_class"	"mult_clipsize"
+					"value"				"13.33333333333"
+				}
+				"voice pitch scale"
+				{
+					"attribute_class"	"mult_postfiredelay"
+					"value" 			"0.084"
+				}
+				"voice pitch scale"
+				{
+					"attribute_class"	"mult_maxammo_secondary"
+					"value" 			"6.66666666667"
+				}
+				"voice pitch scale"
+				{
+					"attribute_class"	"mult_reload_time"
+					"value" 			"1.65"
+				}
+				"strange restriction type 1"
+				{
+					"attribute_class"	"mult_spread_scale"
+					"value"				"0.025"
+				}
+				"crit mod disabled"
+				{
+					"attribute_class"	"mult_crit_chance"
+					"value"				"0"
+				}	
+			}
+			"visuals"
+			{
+				"sound_single_shot"		"Weapon_LMG.Single"
+				"sound_burst"			"Weapon_LMG.SingleCrit"
+				"sound_reload"			"Weapon_LMG.WorldReload"
+			}
+			"mouse_pressed_sound"		"#ui/item_heavy_gun_pickup.wav"
+			"drop_sound"				"#ui/item_heavy_gun_drop.wav"
+		}
+		"7557"
+		{
+			"name"						"TF_WEAPON_SCOUT_THROWABLE"
+			"item_class"	"tf_weapon_jar_milk"
+			"craft_class"	"weapon"
+			"craft_material_type"	"weapon"
+			"capabilities"
+			{
+				"nameable"		"1"
+				"can_craft_count"	"1"
+			}
+			"tags"
+			{
+				"can_deal_damage"			"1"
+				"can_deal_critical_damage"	"1"
+				"can_deal_posthumous_damage"	"1"
+				"can_deal_long_distance_damage"	"1"
+				"cannot_damage_buildings"		"1"
+			}
+			"show_in_armory"			"1"
+			
+			"item_quality"				"rarity3"
+			
+			"item_slot"					"secondary"
+			"anim_slot"					"melee"
+			
+			"image_inventory_size_w"	"128"
+			"image_inventory_size_h"	"82"
+			
+			"item_logname"				"throwing_knives"
+			"item_iconname"				"throwing_knives"
+			"item_type_name"			"Throwable"
+			"item_name"					"Throwing Knife"
+			"propername"	"1"
+			"image_inventory"			"backpack/weapons/c_models/c_throwingknife"
+			"model_world"				"models/weapons/lambda/throwknife/c_throwingknife/c_throwingknife.mdl"
+			"model_player"				"models/weapons/lambda/throwknife/v_throwingknife/v_throwingknife.mdl"
+			"attach_to_hands"			"2"
+			"used_by_classes"
+			{
+				"scout"					"1"
+			}
+			"xifier_class_remap"	"guillotine"
+			"static_attrs"
+			{
+				"min_viewmodel_offset"					"10 0 -8"
+			}
+			"attributes"
+			{
+				"custom projectile model"													
+				{
+					"attribute_class"	"custom_projectile_model"
+					"value"				"models/weapons/lambda/throwknife/c_throwingknife/c_throwingknife_pro.mdl"	
+				}
+				"override projectile type"
+				{
+				"attribute_class"    "override_projectile_type"
+				 "value"                "2"
+				}
+				"dmg bonus vs buildings"
+				{
+					"attribute_class"	"mult_dmg_vs_buildings"
+					"value"	"1.2"
+				}
+				"Projectile speed increased"
+				{
+					"attribute_class"	"mult_projectile_speed"
+					"value" "1.25"
+				}
+				"sticky air burst mode"
+				{
+					"attribute_class"	"set_detonate_mode"
+					"value"	"2"
+				}
+				"grenade no spin"
+				{
+					"attribute_class"	"grenade_no_spin"
+					"value"	"1"
+				}
+			}
+			"visuals"
+			{
+				"sound_single_shot"		"Cleaver.Single"
+				"sound_burst"			"Cleaver.Single"
+				"sound_special1"		"Weapon_Crowbar_HL1.HitWorld"
+				"sound_special2"		"Weapon_Crowbar_HL1.HitWorld"
+				"sound_special3"		"Cleaver.Single"
+			}
+			"mouse_pressed_sound"		"#ui/item_knife_small_pickup.wav"
+			"drop_sound"				"#ui/item_light_gun_drop.wav"
 		}
 		"30570"
 		{
