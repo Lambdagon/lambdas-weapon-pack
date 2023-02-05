@@ -7528,7 +7528,7 @@
 			"image_inventory_size_h"	"82"
 			"attach_to_hands"			"2"
 			"model_world"				"models/weapons/w_models/sten/w_pistol.mdl"
-			"model_player"				"models/weapons/v_models/v_pistol_scout.mdl"
+			"model_player"				"models/weapons/lambda/sten/v_pistol_scout.mdl"
 			"used_by_classes"
 			{
 				"scout"					"1"
@@ -16750,7 +16750,7 @@
  		"812"
 		{
 			"name"	"The Flying Guillotine"
-			"prefab"		"weapon_guillotine"
+			"prefab"		"weapon_guillotine_working"
 			"show_in_armory"	"0"
 			"inspect_panel_dist" 			"40"
 		}
@@ -35330,7 +35330,7 @@
 		}
 		"7195"
 		{
-			"name"	"Ritzy Rick's Hair Fixative"
+			"name"	"Killer's Cut"
 			"prefab"	"valve base_hat"
 			"first_sale_date"	"2010/09/29"
 			"item_class"	"tf_wearable"
@@ -35362,6 +35362,14 @@
 				"player_bodygroups"
 				{
 					"hat"			"1"
+				}
+			}
+			"attributes"
+			{
+				"attach particle effect name"
+				{
+					"atribute_class"	"set_attached_particle_name"
+					"value"	"burningplayer_flyingbits"
 				}
 			}
 			"mouse_pressed_sound" 	"ui/item_hat_pickup.wav"
@@ -42709,9 +42717,6 @@
 					"attribute_class"	"energy_weapon_no_ammo"
 					"value" "1"
 				{
-					"attribute_class"	"rocket_jump_dmg_reduction"
-					"value" "0.001"
-				}
 				"energy weapon no deflect"
 				{
 					"attribute_class"	"energy_weapon_no_deflect"
@@ -47312,30 +47317,29 @@
 			"prefab"					"weapon_minigun"
 			"show_in_armory"			"1"
 			"anim_slot"					"secondary"									
-
 			"propername"				"1"
 			"item_name"					"Heavy Machine Gun"
 			"item_type_name"			"Machine Gun"
 			"item_logname" 				"machinegun"
 			"item_iconname" 			"machinegun"
 			"image_inventory"			"backpack/weapons/w_models/w_machinegun"
-			"model_world"				"models/weapons/w_models/w_machinegun.mdl"
-			"model_player"				"models/weapons/v_models/v_machinegun_heavy.mdl"	
+			"model_world"				"models/weapons/lambda/machinegun/w_machinegun.mdl"
+			"model_player"				"models/weapons/lambda/machinegun/v_machinegun_heavy.mdl"	
 			"attach_to_hands"			"2"
+			"static_attrs"
+			{
+				"mult_player_movespeed_active"	"1.4"
+			}
 			"used_by_classes"
 			{
 				"heavy"					"1"
-			}
-			"static_attrs"
-			{
-				"class select override vcd"				"taunt02"						
 			}
 			"attributes"
 			{
 				"aiming movespeed increased"											
 				{
 					"attribute_class"	"mult_player_aiming_movespeed"
-					"value"				"1.9"
+					"value"				"1.4"
 				}
 				"minigun spinup time decreased"
 				{
@@ -47356,11 +47360,6 @@
 				{
 					"attribute_class"	"mult_dmg"
 					"value"				"1.10"
-				}
-				"voice pitch scale"
-				{
-					"attribute_class"	"mult_bullets_per_shot"
-					"value"				"0.5"
 				}
 				"maxammo primary reduced"
 				{
@@ -47426,56 +47425,35 @@
 			"item_logname" 				"lmg"
 			"item_iconname" 			"lmg"
 			"image_inventory"			"backpack/weapons/w_models/w_lmg"
-			"model_world"				"models/weapons/w_models/w_lmg.mdl"
-			"model_player"				"models/weapons/v_models/v_lmg_soldier.mdl"
-			"extra_wearable"			"models/player/items/custom/soldier/going_commando.mdl"
+			"model_world"				"models/weapons/lambda/lmg/w_lmg.mdl"
+			"model_player"				"models/weapons/lambda/lmg/v_lmg_soldier.mdl"
 			"attach_to_hands"			"2"
 			"used_by_classes"
 			{
 				"soldier"				"1"
+				"heavy"					"1"
 			}
 			"static_attrs"
 			{
 				"min_viewmodel_offset"					"0 0 -8"
-				"class select override vcd"				"taunt07"
 			}
 			"attributes"
 			{
-			    "voice pitch scale"
-				{
-					"attribute_class"	"mult_dmg"
-					"value" 			"0.45"
-				}
-				"voice pitch scale"
+				"clip size bonus"
 				{
 					"attribute_class"	"mult_clipsize"
-					"value"				"13.33333333333"
+					"value"				"2.0"
 				}
-				"voice pitch scale"
-				{
-					"attribute_class"	"mult_postfiredelay"
-					"value" 			"0.084"
-				}
-				"voice pitch scale"
-				{
-					"attribute_class"	"mult_maxammo_secondary"
-					"value" 			"6.66666666667"
-				}
-				"voice pitch scale"
-				{
-					"attribute_class"	"mult_reload_time"
-					"value" 			"1.65"
-				}
-				"strange restriction type 1"
-				{
-					"attribute_class"	"mult_spread_scale"
-					"value"				"0.025"
-				}
-				"crit mod disabled"
+                "crit mod disabled"
 				{
 					"attribute_class"	"mult_crit_chance"
 					"value"				"0"
 				}	
+				"maxammo secondary increased"
+				{
+					"attribute_class"	"mult_maxammo_secondary"
+					"value"	"5"
+				}
 			}
 			"visuals"
 			{
@@ -47505,7 +47483,7 @@
 				"can_deal_long_distance_damage"	"1"
 				"cannot_damage_buildings"		"1"
 			}
-			"show_in_armory"			"1"
+			"show_in_armory"			"0"
 			
 			"item_quality"				"rarity3"
 			
@@ -47576,6 +47554,108 @@
 			}
 			"mouse_pressed_sound"		"#ui/item_knife_small_pickup.wav"
 			"drop_sound"				"#ui/item_light_gun_drop.wav"
+		}
+		"7558"
+		{
+			"name"	"RaygunCodbo2"
+			"first_sale_date"	"2011/07/13"
+			"item_class"	"tf_weapon_pistol"
+			"craft_class"	"weapon"
+			"craft_material_type"	"weapon"
+			"capabilities"
+			{
+				"nameable"		"1"
+			}
+			"tags"
+			{
+				"can_deal_damage"			"1"
+				"can_be_equipped_by_soldier_or_demo"	"1"
+				"can_deal_posthumous_damage"	"1"
+				"can_deal_critical_damage"	"1"
+				"can_deal_long_distance_damage"	"1"
+			}
+			"show_in_armory"	"1"
+			"item_type_name"	"Raygun"
+			"item_name"	"Raygun"
+			"item_slot"	"secondary"
+			"item_quality"	"unique"
+			"item_logname"	"righteous_bison"
+			"item_iconname"	"righteous_bison_newicon"
+			"propername"	"1"
+			"min_ilevel"	"30"
+			"max_ilevel"	"30"
+			"image_inventory"	"backpack/weapons/lambda/raygun/raygun"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"82"
+			"inspect_panel_dist" 			"45"
+			"model_player"	"models/weapons/lambda/raygun/c_invasion_pistol.mdl"
+			"attach_to_hands" "1"
+			"used_by_classes"
+			{
+				"scout"		"1"
+				"engineer"	"1"
+			}
+			"static_attrs"
+			{
+				"min_viewmodel_offset"					"10 0 -9"
+			}
+			"attributes"
+			{
+				"energy weapon no ammo"
+				{
+					"attribute_class"	"energy_weapon_no_ammo"
+					"value" "1"
+				}
+				"energy weapon no deflect"
+				{
+					"attribute_class"	"energy_weapon_no_deflect"
+					"value" "1"
+				}
+				"fire rate penalty"
+				{
+					"attribute_class"	"mult_postfiredelay"
+					"value"	"1.2"
+				}
+				"crit mod disabled"
+				{
+					"attribute_class"	"mult_crit_chance"
+					"value"	"0"
+				}
+				"clip size bonus"
+				{
+					"attribute_class"	"mult_clipsize"
+					"value"	"9999.0"
+				}
+			}
+			"visuals"
+			{
+				"sound_single_shot"		"Weapon_Capper.Single"
+				"sound_burst"		"Weapon_Capper.SingleCrit"
+				"styles"
+				{
+					"0"
+					{
+						"skin_red"		"0"
+						"skin_blu"		"1"
+					}
+				}
+			}
+			"visuals_red"
+			{
+				"skin"		"0"
+				"sound_single_shot"		"Weapon_Capper.Single"
+				"sound_burst"		"Weapon_Capper.SingleCrit"
+				"muzzle_flash"		"muzzle_raygun_red"
+				"tracer_effect"		"bullet_tracer_raygun"
+			}
+			"visuals_blu"
+			{
+				"skin"		"1"
+				"sound_single_shot"		"Weapon_Capper.Single"
+				"sound_burst"		"Weapon_Capper.SingleCrit"
+				"muzzle_flash"		"muzzle_raygun_blue"
+				"tracer_effect"		"bullet_tracer_raygun"
+			}
 		}
 		"30570"
 		{
