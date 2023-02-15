@@ -1,8 +1,0 @@
-"VertexLitGeneric"
-//"Modulate"
-{
-	"$basetexture" "models\player\mercenary/invis"
-	"$translucent" 1
-	"$nocull" "1"
-}
-

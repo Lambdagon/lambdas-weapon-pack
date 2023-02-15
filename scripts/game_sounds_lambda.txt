@@ -1,4 +1,24 @@
 
+"Weapon_Viper.Single"
+{
+	"channel"	"CHAN_WEAPON"
+	"soundlevel"	"SNDLVL_94dB"
+	"volume"	"1.0"
+	"pitch"		"95, 100"
+	
+	"wave"		")weapons/viper/smg_shoot.wav"
+}
+
+"Weapon_Viper.SingleCrit"
+{
+	"channel"	"CHAN_WEAPON"
+	"soundlevel"	"SNDLVL_94dB"
+	"volume"	"1.0"
+	"pitch"		"95, 100"
+	
+	"wave"		")weapons/viper/smg_shoot_crit.wav"
+}
+
 "Weapon_AR.Single"
 {
 	"channel"	"CHAN_WEAPON"

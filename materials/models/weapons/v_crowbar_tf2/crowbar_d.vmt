@@ -1,0 +1,83 @@
+VertexLitGeneric
+{
+	$basetexture "models/weapons/v_crowbar_tf2/crowbar_d"
+	$bumpmap "models/weapons/v_crowbar_tf2/crowbar_n"
+
+	$envmap "env_cubemap"
+	$normalmapalphaenvmapmask 1
+	$envmaptint "[0.10 0.10 0.10]"
+
+	$phong 1
+	$phongfresnelranges "[1.5 4.5 8]"
+	$phongalbedotint 1
+	$phongexponent 15
+	$phongboost 0.5
+
+	$rimlight 1
+	$rimlightexponent 25
+	$rimlightboost 0.23
+
+	$cloakpassenabled 1
+	$glowcolor 1
+	$model 1
+	$sheenindex 0
+	$sheenmap "cubemaps\cubemap_sheen001"
+	$sheenmapmask "effects\animatedsheen\animatedsheen0"
+	$sheenmapmaskframe 0
+	$sheenmaptint "[ 1 1 1 ]"
+	$sheenpassenabled 1
+	$yellow 0
+
+
+
+
+
+
+
+	Proxies
+	{
+		ModelDetailFx
+		{
+		}
+
+		AnimatedWeaponSheen
+		{
+			animatedtexturevar "$sheenmapmask"
+			animatedtextureframenumvar "$sheenmapmaskframe"
+			animatedtextureframerate 40
+		}
+
+		invis
+		{
+		}
+
+		ModelGlowColor
+		{
+			resultVar "$glowcolor"
+		}
+
+		Equals
+		{
+			srcVar1 "$glowcolor"
+			resultVar "$selfillumtint"
+		}
+
+		Equals
+		{
+			srcVar1 "$glowcolor"
+			resultVar "$color2"
+		}
+
+		YellowLevel
+		{
+			resultVar "$yellow"
+		}
+
+		Multiply
+		{
+			srcVar1 "$color2"
+			srcVar2 "$yellow"
+			resultVar "$color2"
+		}
+	}
+}

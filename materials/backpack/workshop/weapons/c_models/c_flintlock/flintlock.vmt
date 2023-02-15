@@ -1,0 +1,7 @@
+"UnlitGeneric"
+{
+	"$basetexture" "backpack\workshop\weapons\c_models\c_flintlock\flintlock.vtf"
+	"$translucent" 1
+	"$vertexcolor" 1
+	"$ignorez" 1
+}
