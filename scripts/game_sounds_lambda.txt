@@ -19,6 +19,26 @@
 	"wave"		")weapons/viper/smg_shoot_crit.wav"
 }
 
+"Weapon_Heythere.Single"
+{
+	"channel"	"CHAN_WEAPON"
+	"soundlevel"	"SNDLVL_94dB"
+	"volume"	"1.0"
+	"pitch"		"95, 100"
+	
+	"wave"		")weapons/heythere/petition.wav"
+}
+
+"Weapon_heythere.SingleCrit"
+{
+	"channel"	"CHAN_WEAPON"
+	"soundlevel"	"SNDLVL_94dB"
+	"volume"	"1.0"
+	"pitch"		"95, 100"
+	
+	"wave"		")weapons/heythere/petition_crit.wav"
+}
+
 "Weapon_AR.Single"
 {
 	"channel"	"CHAN_WEAPON"

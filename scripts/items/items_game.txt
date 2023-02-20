@@ -22427,6 +22427,67 @@
 				"min_viewmodel_offset"		"10 0 -7"
 			}
 		}
+		"9104"
+		{
+			"name"	"Hey There"
+			"item_class"	"saxxy"
+			"prefab"	"weapon_melee_allclass"
+			"capabilities"
+			{
+				"nameable"		"1"
+			}
+			"tags"
+			{
+				"can_deal_damage"			"1"
+				"can_deal_critical_damage"	"1"
+				"can_be_equipped_by_soldier_or_demo"	"1"
+			}
+			"show_in_armory"	"1"
+			"item_type_name"	"Chore"
+			"item_name"	"Petition"
+			"item_description" "Are you going to sign this
+			or will it be your surviving family members"
+			"item_logname"	"lead_pipe"
+			"item_iconname"	"lead_pipe"
+			"item_slot"		"melee"
+			"item_quality"	"unique"
+			"propername"	"1"
+			"min_ilevel"	"25"
+			"max_ilevel"	"25"
+			"attach_to_hands"	"1"
+			"image_inventory"	"backpack/weapons/lambda/postal/petition"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"82"
+			"inspect_panel_dist"        "45"					
+			"model_player"	"models/weapons/lambda/postal/clipboard.mdl"
+			"extra_wearable"	"models/player/sniper/sniper_nohat.mdl"
+			"anim_slot" "MELEE_ALLCLASS"
+			"xifier_class_remap"	"Frying Pan"
+			"used_by_classes"
+			{
+				"sniper"	"1"
+			}
+			"attributes"
+			{
+				"fire rate penalty"
+				{
+					"attribute_class"	"mult_postfiredelay"
+					"value"	"1.4"
+				}
+				"damage bonus"
+				{
+					"attribute_class"	"mult_dmg"
+					"value"	"1.4"
+				}
+			}
+			"mouse_pressed_sound"	"ui/item_wood_pole_pickup.wav"
+			"drop_sound"		"ui/item_wood_pole_drop.wav"
+			"visuals"
+			{
+				"sound_single_shot"	"Weapon_Heythere.Single"
+				"sound_burst"	"Weapon_Heythere.SingleCrit"
+			}
+		}
 		"30570"
 		{
 			"name"		"Pool Party Taunt"
