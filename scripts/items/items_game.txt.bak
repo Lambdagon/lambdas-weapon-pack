@@ -20577,16 +20577,6 @@
 			"attach_to_hands"			"2"
 			"attributes"
 			{
-				"no scope" // 360
-				{
-					"attribute_class"	"mod_no_scope"
-					"value"				"1"
-				}
-				"soft zoom"
-				{
-					"attribute_class"	"mod_sniper_soft_zoom"
-					"value"				"1"
-				}
 				"max health additive bonus"
 				{
 					"attribute_class"	"add_maxhealth"
@@ -20597,12 +20587,12 @@
 					"attribute_class"	"mult_postfiredelay"
 					"value"				"0.45"
 				}
-				"sniper no dmg charge DISPLAY ONLY"
+				"revolver use hit locations"
 				{
-					"attribute_class"	"mod_sniper_no_dmg_charge"
-					"value"				"1"
+					"attribute_class"	"set_weapon_mode"
+					"value"	"1"
 				}
-				"no damage falloff over distance"
+				 "dmg falloff reduced"
 				{
 					"attribute_class"	"mod_no_dmg_falloff"
 					"value"				"1"
@@ -22487,6 +22477,126 @@
 				"sound_single_shot"	"Weapon_Heythere.Single"
 				"sound_burst"	"Weapon_Heythere.SingleCrit"
 			}
+		}
+						"5949"
+		{
+			"name"	"The Confuse Ray"
+			"prefab"	"weapon_newflame"
+			"first_sale_date"	"2011/12/15"
+			"item_class"	"tf_weapon_flamethrower"
+			"craft_class"	"weapon"
+			"craft_material_type"	"weapon"
+			"capabilities"
+			{
+				"nameable"		"1"
+				"can_craft_count"	"1"
+			}
+			"tags"
+			{
+				"can_deal_damage"			"1"
+				"can_deal_posthumous_damage"	"1"
+				"can_deal_critical_damage"	"1"
+				"is_flamethrower" "1"
+			}
+			"item_logname"	"phlogistinator"
+			"item_iconname"	"phlogistinator"
+			"show_in_armory"	"1"
+			"item_type_name"	"Gas Spitter"
+			"item_name"	"Confuse Ray"
+			"item_description"	"Temporary model, always crits."
+			"item_slot"	"primary"
+			"image_inventory"	"backpack/workshop/weapons/c_models/c_drg_phlogistinator/c_drg_phlogistinator"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"82"
+			"model_player"	"models/workshop/weapons/c_models/c_drg_phlogistinator/c_drg_phlogistinator.mdl"
+			"attach_to_hands"	"1"
+			"item_quality"	"unique"
+			"propername"	"1"
+			"min_ilevel"	"10"
+			"max_ilevel"	"10"
+			"used_by_classes"
+			{
+				"pyro"	"1"
+			}
+			"static_attrs"
+			{
+				"min_viewmodel_offset"					"10 0 -12"		
+			}
+			"visuals"
+			{
+				"sound_single_shot"	"Weapon_phlogistinator.FireStart"
+				"sound_special1"	"Weapon_phlogistinator.FireLoop"
+				"sound_special3"	"Weapon_phlogistinator.WindDown"
+				"sound_burst"		"Weapon_phlogistinator.FireLoopCrit"
+
+				"animation_replacement"
+				{
+					"ACT_PRIMARY_VM_INSPECT_START"		"ACT_PRIMARY_ALT1_VM_INSPECT_START"
+					"ACT_PRIMARY_VM_INSPECT_IDLE"		"ACT_PRIMARY_ALT1_VM_INSPECT_IDLE"
+					"ACT_PRIMARY_VM_INSPECT_END"		"ACT_PRIMARY_ALT1_VM_INSPECT_END"
+				}
+			}
+			"attributes"
+			{
+				"flame_gravity"
+				{
+					"attribute_class"	"flame_gravity"
+					"value"			"10"
+				}
+				"weapon burn dmg reduced"
+				{
+					"attribute_class"	"mult_wpn_burndmg"
+					"value"			"0"
+				}
+				"weapon burn time reduced"
+				{
+					"attribute_class"	"mult_wpn_burntime"
+					"value"			"0"
+				}
+				"flame_particle_name"
+				{
+					"attribute_class"	"flame_particle_name"
+					"value"			"Advisor_Psychic_Beam_02"
+				}
+				"flame_crit_particle_name"
+				{
+					"attribute_class"	"flame_crit_particle_name"
+					"value"			"eb_beam_angry_core04"
+				}
+				"flame_core_particle_name"
+				{
+					"attribute_class"	"flame_core_particle_name"
+					"value"			"eb_beam_angry_core04"
+				}
+				"damage penalty"
+				{
+					"attribute_class"	"mult_dmg"
+					"value"	"0"
+				}
+				"crit forces victim to laugh"
+				{
+					"attribute_class"	"crit_forces_victim_to_laugh"
+					"value" "1"
+				}
+				"crit mod disabled"
+				{
+					"attribute_class"	"mult_crit_chance"
+					"value"	"0"
+				}
+				"crit vs burning players"
+				{
+					"attribute_class"	"or_crit_vs_playercond"
+					"value"	"1"
+				}
+				"fire rate penalty"
+				{
+				"attribute_class"	"mult_postfiredelay"
+				"value"	"10"
+				}
+				
+			}
+			"mouse_pressed_sound"	"ui/item_heavy_gun_pickup.wav"
+			"drop_sound"		"ui/item_heavy_gun_drop.wav"
 		}
 		"30570"
 		{

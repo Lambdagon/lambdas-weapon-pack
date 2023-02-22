@@ -20577,16 +20577,6 @@
 			"attach_to_hands"			"2"
 			"attributes"
 			{
-				"no scope" // 360
-				{
-					"attribute_class"	"mod_no_scope"
-					"value"				"1"
-				}
-				"soft zoom"
-				{
-					"attribute_class"	"mod_sniper_soft_zoom"
-					"value"				"1"
-				}
 				"max health additive bonus"
 				{
 					"attribute_class"	"add_maxhealth"
@@ -20597,15 +20587,15 @@
 					"attribute_class"	"mult_postfiredelay"
 					"value"				"0.45"
 				}
-				"sniper no dmg charge DISPLAY ONLY"
+				"revolver use hit locations"
 				{
-					"attribute_class"	"mod_sniper_no_dmg_charge"
-					"value"				"1"
+					"attribute_class"	"set_weapon_mode"
+					"value"	"1"
 				}
-				"no damage falloff over distance"
+				 "dmg falloff reduced"
 				{
-					"attribute_class"	"mod_no_dmg_falloff"
-					"value"				"1"
+					"attribute_class"	"mult_dmg_falloff"
+					"value"				"0"
 				}
 			}
 		}
