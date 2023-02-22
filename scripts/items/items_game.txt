@@ -20585,7 +20585,7 @@
 				"fire rate bonus"
 				{
 					"attribute_class"	"mult_postfiredelay"
-					"value"				"0.45"
+					"value"				"1.5"
 				}
 				"revolver use hit locations"
 				{

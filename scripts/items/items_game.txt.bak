@@ -20594,8 +20594,8 @@
 				}
 				 "dmg falloff reduced"
 				{
-					"attribute_class"	"mod_no_dmg_falloff"
-					"value"				"1"
+					"attribute_class"	"mult_dmg_falloff"
+					"value"				"0"
 				}
 			}
 		}
