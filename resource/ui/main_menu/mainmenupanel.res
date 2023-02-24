@@ -701,7 +701,7 @@
 		"pinCorner"			"0"
 		"visible"			"1"
 		"enabled"			"1"
-		"labelText"			"Lambda's Weapon Pack"
+		"labelText"			"Lambda's Weapon Pack v2.2"
 		"textAlignment"		"east"
 		"fgcolor"			"HudOffWhite"
 		"font"				"MenuSmallFont"

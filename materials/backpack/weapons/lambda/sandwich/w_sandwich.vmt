@@ -1,0 +1,7 @@
+"UnlitGeneric"
+{
+	"$basetexture" "backpack/weapons/lambda/sandwich/w_sandwich"
+	"$translucent" 1
+	"$vertexcolor" 1
+	"$ignorez" 1
+}
