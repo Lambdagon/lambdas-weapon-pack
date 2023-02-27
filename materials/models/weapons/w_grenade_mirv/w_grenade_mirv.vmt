@@ -1,0 +1,9 @@
+"Patch"
+{
+	include "materials\models\weapons\v_grenade_mirv\v_grenade_mirv.vmt"
+	
+	insert
+	{
+	"$rimlightboost" "1"
+	}
+}
