@@ -3,7 +3,7 @@
 	"game_info"
 	{
 		"first_valid_class"	"1"
-		"last_valid_class"	"9"
+		"last_valid_class"	"11"
 		"account_class_index"	"16"
 		"account_first_valid_item_slot"	"0"
 		"account_last_valid_item_slot"	"3"
@@ -7249,7 +7249,53 @@
 			"drop_sound"		"ui/item_light_gun_drop.wav"
 			"xifier_class_remap"	"grappling_hook"
 		}
-
+		"9955"
+		{
+			"name"		"base action slot itemK"
+			"item_class"	"tf_wearable"
+			"craft_class"	"weapon"
+			"craft_material_type"	"weapon"
+			"capabilities"
+			{
+				"nameable"		"1"
+			}
+			"show_in_armory" "1"
+			"baseitem"		"1"
+			"item_type_name"	""
+			"item_name"	"NO ITEM YET"
+			"item_description"	""
+			"item_logname"	"grappling_hook"
+			"item_iconname"	"grappling_hook"
+			"item_slot"	"action"
+			"item_quality"	"normal"
+			"min_ilevel"	"1"
+			"max_ilevel"	"1"
+			"image_inventory"	""
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"82"
+			"model_player"	""
+			"attach_to_hands"	"1"
+			"act_as_weapon"		"1"
+			"anim_slot" "FORCE_NOT_USED"
+			"used_by_classes"
+			{
+				"scout"		"1"
+				"sniper"	"1"
+				"soldier"	"1"
+				"demoman"	"1"
+				"medic"		"1"
+				"heavy"		"1"
+				"spy" 		"1"
+				"engineer" 	"1"
+				"pyro" 		"1"
+			}
+			"attributes"
+			{
+			}
+			"mouse_pressed_sound"	"ui/item_light_gun_pickup.wav"
+			"drop_sound"		"ui/item_light_gun_drop.wav"
+			"xifier_class_remap"	"grappling_hook"
+		}
 		"35"
 		{
 			"name"	"The Kritzkrieg"
@@ -11254,6 +11300,13 @@
 			"mouse_pressed_sound"	"ui/item_shovel_pickup.wav"
 			"drop_sound"		"ui/item_shovel_drop.wav"
 		}
+				"41669"
+		{
+			"name"	"The Market Gardener"
+			"first_sale_date"	"2011/03/23"
+			"prefab" "taunt"
+			"item_class"	"npc_vortigaunt"
+		}
 		"424"
 		{
 			"name"	"Tomislav"
@@ -13516,7 +13569,7 @@
 				"usable"		"1"
 				"usable_gc"		"1"
 			}
-			"show_in_armory"	"0"
+			"show_in_armory"	"1"
 			"armory_desc"		"action noisemaker"
 			"item_type_name"	"#TF_Party_Favor"
 			"item_name"	"#TF_NoiseMaker_Winter2011"
@@ -13527,7 +13580,6 @@
 			"item_quality"		"unique"
 			"min_ilevel"	"5"
 			"max_ilevel"	"5"
-			"holiday_restriction"	"christmas"
 			"used_by_classes"
 			{
 				"scout"		"1"
@@ -14713,6 +14765,11 @@
 					"attribute_class"	"taunt_attack_time"
 					"value"				"0"
 				}
+				"max health additive penalty"
+				{
+					"attribute_class"	"add_maxhealth"
+					"value" "-10"
+				}
 			}
 			"taunt"
 			{
@@ -14819,15 +14876,8 @@
 				"sound_melee_hit_world"	"FryingPan.HitWorld"
 				"sound_melee_miss"	"Weapon_Machete.Miss"
 				"sound_burst"		"Weapon_Machete.MissCrit"
-
-				"styles"
-				{
-					"0"
-					{
-						"skin_red" "2"
-						"skin_blu" "3"
-					}
-				}
+				"skin_red" "2"
+				"skin_blu" "3"
 			}
 			"mouse_pressed_sound"	"ui/item_metal_weapon_pickup.wav"
 			"drop_sound"		"ui/item_metal_weapon_drop.wav"
@@ -19343,6 +19393,7 @@
 				"heavy"	"1"
 				"pyro" "1"
 				"spy"	"1"
+				"civilian" "1"
 			}
 			"static_attrs"
 			{
@@ -22045,6 +22096,24 @@
 			"model_player"				"models/weapons/lambda/v_smg1/v_smg1.mdl"
 			"baseitem"	"1"
 			"baseitem"					"1"
+			"attributes"
+			{
+				"damage bonus"
+				{
+					"attribute_class"	"mult_dmg"
+					"value"	"0.7"
+				}
+				"clip size bonus"
+				{
+				"attribute_class"	"mult_clipsize"
+				"value"	"1.8"
+				}
+				"fire rate bonus"
+				{
+					"attribute_class"	"mult_postfiredelay"
+					"value"	"0.75"
+				}
+			}
 			"used_by_classes"
 			{
 				"zombiefast"			"primary"
@@ -23578,6 +23647,291 @@
 			"mouse_pressed_sound"	"ui/item_bottle_pickup.wav"
 			"drop_sound"		"ui/item_bottle_drop.wav"
 		}
+
+				"9120"
+		{
+			"name" "Engy Revolver"
+			"capabilities"
+			{
+				"nameable"		"1"
+				"can_craft_count"	"1"
+			}
+			"tags"
+			{
+				"can_deal_damage"			"1"
+				"can_deal_critical_damage"	"1"
+				"can_deal_mvm_penetration_damage"	"1"
+				"can_deal_long_distance_damage"	"1"
+			}
+			"first_sale_date" "2007/06/27"
+			"item_class"	"tf_weapon_pistol"
+			"craft_class"	"weapon"
+			"craft_material_type"	"weapon"
+			"item_type_name"	"#TF_Weapon_Revolver"
+			"item_name"	"Revolver"
+			"item_description"	""
+			"item_logname"	"revolver"
+			"item_iconname"	"revolver"
+			"item_slot"	"secondary"
+			"anim_slot"		"secondary"
+			"baseitem" "0"
+			"min_ilevel"	"10"
+			"max_ilevel"	"10"
+			"image_inventory"	"backpack/weapons/w_models/w_revolver"
+			"show_in_armory"	"1"
+			"attach_to_hands"	"2"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"82"
+			"inspect_panel_dist" 			"31"
+			"model_player"	"models/weapons/v_models/v_revolver_spy.mdl"
+			"model_world"	"models/weapons/w_models/w_revolver.mdl"
+			"capabilities"
+			{
+				"can_collect" "1"
+			}
+			"used_by_classes"
+			{
+				"engineer"	"1"
+			}
+			"static_attrs"
+			{
+				"min_viewmodel_offset"					"10 0 -10"
+			}
+			"attributes"
+			{
+				"clip size penalty HIDDEN"
+				{
+					"attribute_class"	"mult_clipsize"
+					"value" "0.5"
+				}
+				"fire rate penalty HIDDEN"
+				{
+					"attribute_class"	"mult_postfiredelay"
+					"value"	"3.5"
+				}
+				"damage bonus HIDDEN"
+				{
+					"attribute_class"	"mult_dmg"
+					"value"	"3"
+				}
+			}
+						"visuals"																		
+			{
+				"sound_double_shot"		"Weapon_Revolver.Fire"
+				"sound_burst"			"Weapon_Revolver.FireCrit"
+			}
+			"mouse_pressed_sound"	"ui/item_light_gun_pickup.wav"
+			"drop_sound"		"ui/item_light_gun_drop.wav"
+		}
+				"9121"
+		{
+			"name"	"Gnome Chompski"
+			"prefab"	"valve weapon_grenade"
+			"first_sale_date"	"2010/09/29"
+			"min_ilevel"	"5"
+			"max_ilevel"	"5"
+			"attach_to_hands"	"1"
+			"inspect_panel_dist" 	"25"
+			"item_type_name"	"Duende"
+			"item_name" 	"Gnome Chompski"
+			"item_description"	"Everybody wanna be a superstar, get a lotta money, drive a fancy car"
+			"show_in_armory"	"1"
+			"anim_slot"			"melee"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"82"
+			"image_inventory"			"backpack/weapons/w_models/w_grenade_mirv_demo"
+			"model_player"				"models/weapons/w_models/w_pda_engineer.mdl"
+			"static_attrs"
+			{
+				"item_meter_charge_type"						"1"
+				"item_meter_charge_rate"			"40"
+				"meter_label"							"Dynamite"
+			}
+			"used_by_classes"
+			{
+				"demoman"	"1"
+			}
+			"attributes"
+			{
+				"override projectile type"
+				{
+					"attribute_class"	"override_projectile_type"
+					"value"				"3"
+				}
+				"charge recharge rate increased"
+				{
+					"attribute_class"	"charge_recharge_rate"
+					"value"	"4"
+				}
+				"damage bonus"
+				{
+					"attribute_class"	"mult_dmg"
+					"value"	"120"
+				}
+				"allowed in medieval mode"
+				{
+					"attribute_class"	"allowed_in_medieval_mode"
+					"value"	"1"
+				}
+				"custom projectile model"
+				{
+					"attribute_class"	"custom_projectile_model"
+					"value"				"models/props_junk/gnome.mdl"
+				}
+				"Blast radius decreased"
+				{
+					"attribute_class"	"mult_explosion_radius"
+					"value"	"0.1"
+				}
+				"projectile particle name"
+				{
+					"attribute_class"	"projectile_particle_name"
+					"value"		"bday_confetti"
+				}
+			}
+			"visuals"																		
+			{
+					"attached_models"
+				{
+					"0"
+					{
+						"model"	"models/props_junk/gnome.mdl"
+					}
+				}
+				"animation_replacement"
+				{
+					"ACT_ITEM1_VM_PRIMARYATTACK"	"ACT_BALL_VM_THROW_END"
+					"ACT_MELEE_VM_IDLE"	"ACT_THROWABLE_VM_IDLE"
+					"ACT_MELEE_VM_DRAW"	"ACT_THROWABLE_VM_DRAW"
+				}
+			}
+			"mouse_pressed_sound"	"ui/item_bottle_pickup.wav"
+			"drop_sound"		"ui/item_bottle_drop.wav"
+		}
+		"9122"
+		{
+			"name"	"projectiletester"
+			"first_sale_date"	"2014/03/07"
+			"prefab"	"weapon_rocketlauncher"
+			"item_class"	"tf_weapon_rocketlauncher"
+			"capabilities"
+			{
+				"can_craft_count"	"1"
+			}
+			"static_attrs"
+			{
+				"min_viewmodel_offset"		"10 -4 -10"		
+			}
+			"used_by_classes"
+			{
+				"soldier"	"1"
+			}
+			"item_name"	"Projectile Tester"
+			"show_in_armory" 	"1"
+			"propername"				"1"
+			"item_description"	"#TF_FortifiedCompound_Desc"
+			"image_inventory"	"backpack/weapons/w_models/w_bow"
+			"inspect_panel_dist" 			"55"
+			"attributes"
+			{
+				"override projectile type"
+				{
+					"attribute_class"	"override_projectile_type"
+					"value"				"31"
+				}
+				"projectile entity name"
+				{
+					"attribute_class"	"projectile_entity_name"
+					"value"				"garg_stomp"
+				}
+				//"custom projectile model"
+				//{
+				//	"attribute_class"	"custom_projectile_model"
+				//	"value"				"models/workshop/weapons/c_models/c_quadball/w_quadball_grenade.mdl"
+				//}
+			}
+			"mouse_pressed_sound"	"ui/item_heavy_gun_pickup.wav"
+			"drop_sound"		"ui/item_heavy_gun_drop.wav"
+		}
+		"9123"
+		{
+			"name"	"base_pyro_playermodel"
+			"first_sale_date"	"2014/03/07"
+			"prefab"	"misc"
+			"used_by_classes"
+			{
+				"pyro"	"1"
+			}
+			"item_name"	"Pyro"
+			"show_in_armory" 	"1"
+			"item_slot"		"misc2"
+			"baseitem"		"1"
+			"extra_wearable" "models/player/fakepyro.mdl"
+			"model_player"	"models/player/fakepyro.mdl"
+			"image_inventory"	"passtime/hud/portrait_pyro_red"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"128"
+			"inspect_panel_dist" 			"55"
+			"attributes"
+			{
+			
+			}
+			"mouse_pressed_sound"	"ui/item_heavy_gun_pickup.wav"
+			"drop_sound"		"ui/item_heavy_gun_drop.wav"
+		}
+		"9124"
+		{
+			"name"	"fem_pyro_playermodel"
+			"first_sale_date"	"2014/03/07"
+			"prefab"	"misc"
+			"used_by_classes"
+			{
+				"pyro"	"1"
+			}
+			"item_name"	"Alternate Fem Pyro"
+			"show_in_armory" 	"1"
+			"item_slot"		"misc2"
+			"baseitem"		"0"
+			"model_player"	"models/player/fempyro_alt/pyro.mdl"
+			"extra_wearable" "models/player/fempyro_alt/pyro.mdl"
+			"image_inventory"	"passtime/hud/portrait_pyro_red"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"128"
+			"inspect_panel_dist" 			"55"
+			"attributes"
+			{
+			
+			}
+			"mouse_pressed_sound"	"ui/item_heavy_gun_pickup.wav"
+			"drop_sound"		"ui/item_heavy_gun_drop.wav"
+		}
+				"9125"
+		{
+			"name"	"mokou_playermodel"
+			"first_sale_date"	"2014/03/07"
+			"prefab"	"misc"
+			"used_by_classes"
+			{
+				"pyro"	"1"
+			}
+			"item_name"	"Mokou"
+			"show_in_armory" 	"1"
+			"item_slot"		"misc2"
+			"baseitem"		"0"
+			"extra_wearable" "models/player/mokou/pyro.mdl"
+			"model_player"	"models/player/mokou/pyro.mdl"
+			"image_inventory"	"passtime/hud/portrait_pyro_red"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"128"
+			"inspect_panel_dist" 			"55"
+			"attributes"
+			{
+			
+			}
+			"mouse_pressed_sound"	"ui/item_heavy_gun_pickup.wav"
+			"drop_sound"		"ui/item_heavy_gun_drop.wav"
+		}
+
 		"30570"
 		{
 			"name"		"Pool Party Taunt"
