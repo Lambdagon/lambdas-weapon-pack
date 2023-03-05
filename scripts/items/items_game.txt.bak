@@ -23919,7 +23919,7 @@
 			"item_slot"		"misc2"
 			"baseitem"		"0"
 			"extra_wearable" "models/player/mokou/pyro.mdl"
-			"model_player"		""models/player/mokou/pyro.mdl""
+			"model_player"	"models/player/mokou/pyro.mdl"
 			"image_inventory"	"passtime/hud/portrait_pyro_red"
 			"image_inventory_size_w"		"128"
 			"image_inventory_size_h"		"128"
