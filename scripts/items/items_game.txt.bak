@@ -23853,85 +23853,71 @@
 			"mouse_pressed_sound"	"ui/item_heavy_gun_pickup.wav"
 			"drop_sound"		"ui/item_heavy_gun_drop.wav"
 		}
-		"9123"
+				"9123"
 		{
-			"name"	"base_pyro_playermodel"
-			"first_sale_date"	"2014/03/07"
-			"prefab"	"misc"
+			"name"	"Linked Sword"
+			"first_sale_date"	"2012/10/09"
+			"item_class"	"tf_weapon_sword"
+			"prefab"	"weapon_sword"
+			"craft_class"		"weapon"
+			"craft_material_type"	"weapon"
+			"capabilities"
+			{
+				"nameable"		"1"
+				"can_craft_count"	"1"
+			}
+			"tags"
+			{
+				"can_deal_damage"			"1"
+				"can_deal_critical_damage"	"1"
+				"can_be_equipped_by_soldier_or_demo"	"1"
+			}
+			"show_in_armory"	"1"
+			"item_type_name"	"Gear"
+			"item_name"	"Linked Sword"
+			"item_description"	""
+			"item_slot"	"melee"
+			"item_quality"	"unique"
+			"min_ilevel"	"25"
+			"max_ilevel"	"25"
+			"attach_to_hands"	"1"
+			"item_logname"	"freedom_staff"
+			"item_iconname"	"freedom_staff"
+			"image_inventory"	"backpack/weapons/robloxsword/sword"
+			"image_inventory_size_w"		"256"
+			"image_inventory_size_h"		"256"
+			"inspect_panel_dist" 				"80"			
+			"model_player"	"models/weapons/robloxsword/sword.mdl"
 			"used_by_classes"
 			{
-				"pyro"	"1"
+				"demoman"	"1"
 			}
-			"item_name"	"Pyro"
-			"show_in_armory" 	"1"
-			"item_slot"		"misc2"
-			"baseitem"		"1"
-			"extra_wearable" "models/player/fakepyro.mdl"
-			"model_player"	"models/player/fakepyro.mdl"
-			"image_inventory"	"passtime/hud/portrait_pyro_red"
-			"image_inventory_size_w"		"128"
-			"image_inventory_size_h"		"128"
-			"inspect_panel_dist" 			"55"
+			"static_attrs"
+			{
+				"min_viewmodel_offset"					"20 0 -10"
+				"inspect_viewmodel_offset"				"5 0 -18"				
+			}
 			"attributes"
 			{
+				"is_a_sword"
+				{
+					"attribute_class"	"is_a_sword"
+					"value"				"72"
+				}
 			
 			}
-			"mouse_pressed_sound"	"ui/item_heavy_gun_pickup.wav"
-			"drop_sound"		"ui/item_heavy_gun_drop.wav"
+			"visuals"
+			{
+				"sound_melee_miss"		"RobloxSword.Fire"
+				"sound_melee_burst"			"RobloxSword.FireCrit"
+				"sound_burst"			"RobloxSword.FireCrit"
+				"sound_deploy"			"RobloxSword.Deploy"
+				"sound_melee_hit"	"Weapon_Sword.HitFlesh"
+				"sound_melee_hit_world"	"Weapon_Sword.HitWorld"
+			}
+			"mouse_pressed_sound"	"ui/item_wood_pole_pickup.wav"
+			"drop_sound"		"ui/item_wood_pole_drop.wav"
 		}
-		"9124"
-		{
-			"name"	"fem_pyro_playermodel"
-			"first_sale_date"	"2014/03/07"
-			"prefab"	"misc"
-			"used_by_classes"
-			{
-				"pyro"	"1"
-			}
-			"item_name"	"Alternate Fem Pyro"
-			"show_in_armory" 	"1"
-			"item_slot"		"misc2"
-			"baseitem"		"0"
-			"model_player"	"models/player/fempyro_alt/pyro.mdl"
-			"extra_wearable" "models/player/fempyro_alt/pyro.mdl"
-			"image_inventory"	"passtime/hud/portrait_pyro_red"
-			"image_inventory_size_w"		"128"
-			"image_inventory_size_h"		"128"
-			"inspect_panel_dist" 			"55"
-			"attributes"
-			{
-			
-			}
-			"mouse_pressed_sound"	"ui/item_heavy_gun_pickup.wav"
-			"drop_sound"		"ui/item_heavy_gun_drop.wav"
-		}
-				"9125"
-		{
-			"name"	"mokou_playermodel"
-			"first_sale_date"	"2014/03/07"
-			"prefab"	"misc"
-			"used_by_classes"
-			{
-				"pyro"	"1"
-			}
-			"item_name"	"Mokou"
-			"show_in_armory" 	"1"
-			"item_slot"		"misc2"
-			"baseitem"		"0"
-			"extra_wearable" "models/player/mokou/pyro.mdl"
-			"model_player"	"models/player/mokou/pyro.mdl"
-			"image_inventory"	"passtime/hud/portrait_pyro_red"
-			"image_inventory_size_w"		"128"
-			"image_inventory_size_h"		"128"
-			"inspect_panel_dist" 			"55"
-			"attributes"
-			{
-			
-			}
-			"mouse_pressed_sound"	"ui/item_heavy_gun_pickup.wav"
-			"drop_sound"		"ui/item_heavy_gun_drop.wav"
-		}
-
 		"30570"
 		{
 			"name"		"Pool Party Taunt"
