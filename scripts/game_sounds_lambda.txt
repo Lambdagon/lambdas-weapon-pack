@@ -18,7 +18,25 @@
 	
 	"wave"		")weapons/viper/smg_shoot_crit.wav"
 }
+"Weapon_CLIR.Fire"
+{
+	"channel"	"CHAN_WEAPON"
+	"soundlevel"	"SNDLVL_94dB"
+	"volume"	"1.0"
+	"pitch"		"100"
+	
+	"wave"		")weapons/clir/revolver_shoot.wav"
+}
 
+"Weapon_CLIR.FireCrit"
+{
+	"channel"	"CHAN_WEAPON"
+	"soundlevel"	"SNDLVL_94dB"
+	"volume"	"1.0"
+	"pitch"		"100"
+	
+	"wave"		")weapons/clir/revolver_shoot_crit.wav"
+}
 "Weapon_Heythere.Single"
 {
 	"channel"	"CHAN_WEAPON"
