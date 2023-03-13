@@ -24878,7 +24878,7 @@
 			}
 			"base_item_name"	"The Huntsman"
 			"show_in_armory"	"1"
-			"item_type_name"	"Just a bullet??"
+			"item_type_name"	"bullet??"
 			"item_name"	"Bullet"
 			"item_slot"	"primary"
 			"item_quality"	"unique"
@@ -24891,7 +24891,8 @@
 			"image_inventory_size_h"		"82"
 			"inspect_panel_dist"	 			"65"
 			"model_player"	"models/weapons/lambda/bullet/c_bow.mdl"
-			"attach_to_hands"	"1"
+			"anim_slot"		"item2"
+			"attach_to_hands"	"2"
 			"flip_viewmodel"	"1"
 			"used_by_classes"
 			{
