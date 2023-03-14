@@ -22336,20 +22336,28 @@
 				"sound_single_shot"	"HL2_Weapon_Pistol.Single"
 				"sound_burst"	"HL2_Weapon_Pistol.NPC_Single"
 				"sound_reload"	"HL2_Weapon_Pistol.Reload"
+				"animation_replacement"
+				{
+					"ACT_RELOAD_START"	""
+					"ACT_VM_RELOAD"	""
+					"ACT_RELOAD" ""
+					"ACT_RELOAD_FINISH"	"ACT_RELOAD"
+				}
 			}
 			"xifier_class_remap"	"TTG Max Pistol"
 			"attributes"
 			{
-				"damage bonus"
-				{
-					"attribute_class"	"mult_dmg"
-					"value"	"1.2"
-				}
 				"clip size bonus"
 				{
 				"attribute_class"	"mult_clipsize"
-				"value"	"1.45"
+				"value"	"1.8"
 				}
+				"override projectile type"
+				{
+					"attribute_class"	"override_projectile_type"
+					"value"				"1"
+				}
+
 			}
 		}
 		"9099"
@@ -23358,6 +23366,7 @@
 				"sound_burst"	"HL2_Weapon_Pistol.NPC_Single"
 				"sound_reload"	"HL2_Weapon_Pistol.Reload"
 			}
+			
 			"xifier_class_remap"	"TTG Max Pistol"
 			"attributes"
 			{
@@ -23396,6 +23405,12 @@
 					"attribute_class"	"mult_dmg_bonus_while_half_dead"
 					"value"	"1.25"
 				}
+				"scattergun no reload single"
+				{
+					"attribute_class"	"set_scattergun_no_reload_single"
+					"value"	"1"
+				}
+			
 			}
 		}
 		"9113"
@@ -24769,7 +24784,7 @@
 				"sound_burst"			"Weapon_CLIR.FireCrit"
 				"animation_replacement"
 				{
-
+						
 				}
 			}
 			"mouse_pressed_sound"	"ui/item_light_gun_pickup.wav"
@@ -24932,6 +24947,86 @@
 			}
 			"mouse_pressed_sound"	"ui/item_wood_pole_pickup.wav"
 			"drop_sound"		"ui/item_wood_pole_drop.wav"
+		}
+				"9140"
+		{
+			"name"	"The Pipegun Pipebomber"
+			"prefab"	"valve"
+			"first_sale_date"	"2010/09/29"
+			"item_class"	"tf_weapon_pipebomblauncher"
+			"craft_class"	"weapon"
+			"craft_material_type"	"weapon"
+			"capabilities"
+			{
+				"nameable"		"1"
+			}
+			"tags"
+			{
+				"can_deal_damage"		"1"
+				"can_deal_gib_damage"	"1"
+				"can_be_equipped_by_soldier_or_demo"	"1"
+				"can_deal_critical_damage"	"1"
+				"can_deal_long_distance_damage"	"1"
+				"can_be_festivized"		"1"
+			}
+			"show_in_armory"	"1"
+			"item_type_name"	"#TF_Weapon_PipebombLauncher"
+			"item_name"	"Pipe-Gun Pipebomber"
+			"item_description"	"Best used with the Gravity Gun"
+			"item_slot"	"secondary"
+			"anim_slot"	"primary"
+			"item_quality"	"unique"
+			"propername"	"1"
+			"item_logname"	"stickybomb_defender"
+			"min_ilevel"	"5"
+			"max_ilevel"	"5"
+			"image_inventory"	"backpack/weapons/lambda/pipegun/pipegun"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"82"
+			"attach_to_hands"	"1"
+			"inspect_panel_dist" "50"
+			"model_player"	"models/weapons/pipegun_pipebomb/c_scottish_resistance.mdl"
+			"visuals"
+			{
+			}
+			"used_by_classes"
+			{
+				"demoman"	"1"
+			}
+			"static_attrs"
+			{
+				"min_viewmodel_offset"		"10 0 -10"				
+			}
+			"attributes"
+			{
+				"clip size penalty"
+				{
+					"attribute_class"	"mult_clipsize"
+					"value"	"0.2"
+				}
+				"override projectile type"
+				{
+					"attribute_class"	"override_projectile_type"
+					"value"				"3"
+				}
+				"damage bonus"
+				{
+					"attribute_class"	"mult_dmg"
+					"value"	"3"
+				}
+				"stickybomb charge rate"
+				{
+					"attribute_class"	"stickybomb_charge_rate"
+					"value"	"3"
+				}
+				"Projectile speed decreased"
+				{
+					"attribute_class"	"mult_projectile_speed"
+					"value"	"0.2"
+				}
+			}
+			"mouse_pressed_sound"	"ui/item_heavy_gun_pickup.wav"
+			"drop_sound"		"ui/item_heavy_gun_drop.wav"
 		}
 		"30570"
 		{
