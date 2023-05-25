@@ -1,0 +1,83 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "models/weapons/c_models/c_m1_garand/c_m1_garand_sniper_scope_lens"
+	
+	"$phong" "1"
+	//commented out to use the exponent mask
+	//"$phongexponent" "2"
+	"$phongboost" "2.5"	
+	
+	//scales up the exponent texture which usually only has about 120 levels of exponent
+	"$phongexponentfactor"  "150"
+	"$phongalbedotint" "1"
+	
+	"$lightwarptexture" "models/lightwarps/softened_weapon_lightwarp"
+			
+	"$phongfresnelranges"	"[.3 .5 3]"
+	"$halflambert" "1"
+	"$glowcolor" "1"
+	
+                "$envmap" "env_cubemap"
+	"$envmaptint" "[.85.85.85]"	
+
+	"$tempvar" "0"
+
+	//commented out to use the exponent mask
+	//"$basephongexponent" "15"
+	//"$basephongboost" "3"
+
+	"$basemapalphaphongmask" "1"
+	
+	"$rimlight" "1"						
+	"$rimlightexponent" "1"				
+	"$rimlightboost" "2.25"
+	"$rimmask" "1"
+	
+
+	// Cloaking
+	"$cloakPassEnabled" "1"
+	"$sheenPassEnabled" "1"
+
+	"$yellow" "0"
+
+	"Proxies"
+	{
+		"AnimatedWeaponSheen"
+		{
+			"animatedtexturevar" 		"$sheenmapmask"
+			"animatedtextureframenumvar" 	"$sheenmapmaskframe"
+			"animatedtextureframerate" 		"40"
+		}
+		"invis"
+		{
+		}
+		"ModelGlowColor"
+		{
+			"resultVar" "$glowcolor"
+		}
+		"Equals"
+		{
+			"srcVar1"  "$glowcolor"
+			"resultVar" "$selfillumtint"
+		}
+		"Equals"
+		{
+			"srcVar1"  "$glowcolor"
+			"resultVar" "$color2"
+		}
+		"YellowLevel"
+		{
+			"resultVar" "$yellow"
+		}
+		"Multiply"
+		{
+			"srcVar1" "$color2"
+			"srcVar2" "$yellow"
+			"resultVar" "$color2"
+		}
+	
+	
+		"WeaponSkin" {
+		}
+	}
+}
